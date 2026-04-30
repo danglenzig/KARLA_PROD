@@ -1,0 +1,26 @@
+# Exclude virtual environment folder
+venv/
+
+# Exclude qdrant storage
+qdrant_storage/
+
+# Exclude .env files
+.env
+
+# Exclude the main docker-compose config, but keep all .txt examples
+/docker-compose.yml
+
+# Allow .txt files, even if patterns above would normally match
+!*.txt
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code workspace files
+.vscode/
+
+# macOS & Linux system files
+.DS_Store
+*.swp

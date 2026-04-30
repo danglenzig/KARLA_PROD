@@ -68,6 +68,7 @@ class OutputSchema(BaseModel):
     output_dict: dict   = Field(..., description="A Python dictionary of the agent output")
     reasoning_dump: str = Field(..., description="All the reasoning steps the agent took")
 
+
 #===============
 # Function Tools
 #===============
@@ -123,35 +124,64 @@ narrative_design_agent = Agent(
     tools=[get_uuid_string]
 )
 
-# Code entry point.
-async def run_workflow(workflow_text_input: WorkflowTextInput) -> OutputSchema:
+
+# This module's main class
+class NarrativeDesignAgent:
+    def __init__(self):
+        self.agent: Agent = narrative_design_agent
+
+    async def run_workflow(self, workflow_text_input: WorkflowTextInput) -> OutputSchema:
+        workflow = workflow_text_input.model_dump()
+        input_text = workflow["input_as_text"]
+
+        run_result: RunResult = await Runner.run(
+            narrative_design_agent,
+            input=input_text
+        )
+
+        # TODO: fix this...
+        _reasoning_dump = ""
+        for item in run_result.new_items:
+            if item.type == "reasoning_item":
+                _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
+        
+        return OutputSchema(
+            output_text=run_result.final_output.model_dump_json(),
+            output_dict=run_result.final_output.model_dump(),
+            reasoning_dump=_reasoning_dump
+        )
+
+# # Code entry point.
+# async def run_workflow(workflow_text_input: WorkflowTextInput) -> OutputSchema:
     
-    workflow = workflow_text_input.model_dump()
-    input_text = workflow["input_as_text"]
+#     workflow = workflow_text_input.model_dump()
+#     input_text = workflow["input_as_text"]
 
-    run_result: RunResult = await Runner.run(
-        narrative_design_agent,
-        input=input_text
-    )
+#     run_result: RunResult = await Runner.run(
+#         narrative_design_agent,
+#         input=input_text
+#     )
 
-    _reasoning_dump = ""
-    for item in run_result.new_items:
-        if item.type == "reasoning_item":
-            _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
+#     _reasoning_dump = ""
+#     for item in run_result.new_items:
+#         if item.type == "reasoning_item":
+#             _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
 
-    return OutputSchema(
-        output_text=run_result.final_output.model_dump_json(),
-        output_dict=run_result.final_output.model_dump(),
-        reasoning_dump=_reasoning_dump
-    )
+#     return OutputSchema(
+#         output_text=run_result.final_output.model_dump_json(),
+#         output_dict=run_result.final_output.model_dump(),
+#         reasoning_dump=_reasoning_dump
+#     )
 
 #===============
 # Testing logic
 #===============
 
 
-test_input: str = "A scary story about a derelict deep space station called the U.S.S. Calliope, where xeno-biological research was conducted." \
-"The player character is tasked with investigating why the station went dark, and recovering the precious research data."
+test_input: str = "A sequel to the cult film Manos, The Hands Of Fate"
+
+# test_input: str = "A scary story about a derelict deep space station called the U.S.S. Calliope, where xeno-biological research was conducted." \
+# "The player character is tasked with investigating why the station went dark, and recovering the precious research data."
 
 async def main():
     #user_input: str = input("--> ")
@@ -160,7 +190,10 @@ async def main():
         input_as_text=test_input
     )
 
-    output: OutputSchema = await run_workflow(wf_input)
+    test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
+    output: OutputSchema = await test_agent.run_workflow(wf_input)
+
+    # output: OutputSchema = await run_workflow(wf_input)
 
     print(f"{json.dumps(output.output_dict, indent=2)}")
 

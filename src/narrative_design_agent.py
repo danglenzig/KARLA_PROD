@@ -49,6 +49,12 @@ class SceneData(BaseModel):
 class Scene(BaseModel):
     scene_data: SceneData            = Field(..., description="The data for the scene, including location, non-player characters, and narrative summary")
 
+# class LocationsByUUID(BaseModel):
+#     location_catalog: Optional[dict[str, LocationData]] = Field(..., description="All the story locations, indexed by UUID")
+
+# class CharactersByUUID(BaseModel):
+#     character_catalog: Optional[dict[str, CharacterData]] = Field(..., description="All the game's characters, indexed by UUID")
+
 class NarrativeDesignOutputSchema(BaseModel):
     story_title: str                                = Field(..., description="The title of the story")
     synopsis: str                                   = Field(..., description="A brief overview of the plot, setting, tone, and characters")
@@ -102,10 +108,11 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n  LOCATION: {loc_name}\n"
 
         if 'non_player_character_uuids' in self.intro_scene.scene_data.__dict__:
-            output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
-            for npc_uuid in self.intro_scene.scene_data.non_player_character_uuids:
-                npc_name = self.get_npc_name(npc_uuid)
-                output_str += f"    {npc_name}\n"
+            if not self.intro_scene.scene_data.non_player_character_uuids is None:
+                output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
+                for npc_uuid in self.intro_scene.scene_data.non_player_character_uuids:
+                    npc_name = self.get_npc_name(npc_uuid)
+                    output_str += f"    {npc_name},\n"
 
         output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrtive_summary}\n"
 
@@ -116,10 +123,12 @@ class NarrativeDesignOutputSchema(BaseModel):
             output_str += f"\n  SCENE {scene_idx}, LOCATION {loc_name}\n"
 
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
-                output_str += f"\n  NON-PLAYER CHARACTERS:\n"
-                for npc_uuid in scene.scene_data.non_player_character_uuids:
-                    npc_name = self.get_npc_name(npc_uuid)
-                    output_str += f"    {npc_name}\n"
+
+                if not scene.scene_data.non_player_character_uuids is None:
+                    output_str += f"\n  NON-PLAYER CHARACTERS:\n"
+                    for npc_uuid in scene.scene_data.non_player_character_uuids:
+                        npc_name = self.get_npc_name(npc_uuid)
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -131,10 +140,11 @@ class NarrativeDesignOutputSchema(BaseModel):
             output_str += f"\n  SCENE {scene_idx}, LOCATION {loc_name}\n"
 
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
-                output_str += f"\n  NON-PLAYER CHARACTERS:\n"
-                for npc_uuid in scene.scene_data.non_player_character_uuids:
-                    npc_name = self.get_npc_name(npc_uuid)
-                    output_str += f"    {npc_name}\n"
+                if not scene.scene_data.non_player_character_uuids is None:
+                    output_str += f"\n  NON-PLAYER CHARACTERS:\n"
+                    for npc_uuid in scene.scene_data.non_player_character_uuids:
+                        npc_name = self.get_npc_name(npc_uuid)
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -145,10 +155,11 @@ class NarrativeDesignOutputSchema(BaseModel):
             loc_name = self.get_location_name(scene.scene_data.location_uuid)
             output_str += f"\n  SCENE {scene_idx}, LOCATION {loc_name}\n"
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
-                output_str += f"\n  NON-PLAYER CHARACTERS:\n"
-                for npc_uuid in scene.scene_data.non_player_character_uuids:
-                    npc_name = self.get_npc_name(npc_uuid)
-                    output_str += f"    {npc_name}\n"
+                if not scene.scene_data.non_player_character_uuids is None:
+                    output_str += f"\n  NON-PLAYER CHARACTERS:\n"
+                    for npc_uuid in scene.scene_data.non_player_character_uuids:
+                        npc_name = self.get_npc_name(npc_uuid)
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -158,14 +169,45 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n  LOCATION: {loc_name}\n"
 
         if 'non_player_character_uuids' in self.outro_scene.scene_data.__dict__:
-            output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
-            for npc_uuid in self.outro_scene.scene_data.non_player_character_uuids:
-                npc_name = self.get_npc_name(npc_uuid)
-                output_str += f"    {npc_name}\n"
+            if not self.outro_scene.scene_data.non_player_character_uuids is None:
+                output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
+                for npc_uuid in self.outro_scene.scene_data.non_player_character_uuids:
+                    npc_name = self.get_npc_name(npc_uuid)
+                    output_str += f"    {npc_name},\n"
         
         output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
 
         return output_str
+    
+    def get_location_catalog(self) -> dict[dict]:
+        """Returns a catalog of game locations, indexed by UUID"""
+        data: dict = {}
+
+        for loc in self.locations:
+            loc_key: str = loc.location_data.uuid
+            loc_data: dict = {}
+            loc_data["name"] = loc.location_data.name
+            loc_data["visual_description"] = loc.location_data.location_image_prompt
+            data[loc_key] = loc_data
+        return data
+
+    def get_character_catalog(self) -> dict[dict]:
+        """Returns a catalog of game characters, indexed by UUID"""
+        data: dict = {}
+
+        player_key = self.player_character.character_data.uuid
+        player_data: dict = {}
+        player_data["name"] = self.player_character.character_data.name
+        player_data["visual_description"] = self.player_character.character_data.portrait_image_prompt
+        data[player_key] = player_data
+
+        for npc in self.non_player_characters:
+            npc_key = npc.character_data.uuid
+            npc_data: dict = {}
+            npc_data["name"] = npc.character_data.name
+            npc_data["visual_description"] = npc.character_data.portrait_image_prompt
+            data[npc_key] = npc_data
+        return data
 
 
 
@@ -259,19 +301,21 @@ class NarrativeDesignAgent:
 
 #test_input: str = "A sequel to the cult film Manos, The Hands Of Fate"
 
-test_input: str = "A scary story about a derelict deep space station called the U.S.S. Calliope, where xeno-biological research was conducted." \
-"The player character is tasked with investigating why the station went dark, and recovering the precious research data."
+#test_input: str = "A scary story about a derelict deep space station called the U.S.S. Calliope, where xeno-biological research was conducted." \
+#"The player character is tasked with investigating why the station went dark, and recovering the precious research data."
 
-#test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
+
 
 async def main():
+
+    test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
 
     wf_input = WorkflowTextInput(
         input_as_text=test_input
     )
 
-    test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
-    output: NarrativeDesignOutputSchema = await test_agent.run_workflow(wf_input)
+    #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
+    output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
 
     print(f"{json.dumps(output.model_dump(), indent=2)}") # model_dump(): BaseModel -> Python dictionary
     print(output.human_readable())

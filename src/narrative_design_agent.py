@@ -4,12 +4,6 @@
 # design agent, which will be used to structure the output data that is given to downstream agents.
 
 
-# TODO: Check for NoneType, not len() > 0
-#   File "/mnt/c/PYTHON_AI/KARLA_PROD/src/narrative_design_agent.py", line 121, in human_readable
-#     if len(scene.scene_data.non_player_character_uuids) > 0:
-#        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-# TypeError: object of type 'NoneType' has no len()
-
 import asyncio
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -109,7 +103,7 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n  LOCATION: {loc_name}\n"
 
         if 'non_player_character_uuids' in self.intro_scene.scene_data.__dict__:
-            if len(self.intro_scene.scene_data.non_player_character_uuids) > 0:
+            if not self.intro_scene.scene_data.non_player_character_uuids is None:
                 output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
                 for npc_uuid in self.intro_scene.scene_data.non_player_character_uuids:
                     npc_name = self.get_npc_name(npc_uuid)
@@ -125,7 +119,7 @@ class NarrativeDesignOutputSchema(BaseModel):
 
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
 
-                if len(scene.scene_data.non_player_character_uuids) > 0:
+                if not scene.scene_data.non_player_character_uuids is None:
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
@@ -141,7 +135,7 @@ class NarrativeDesignOutputSchema(BaseModel):
             output_str += f"\n  SCENE {scene_idx}, LOCATION {loc_name}\n"
 
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
-                if len(scene.scene_data.non_player_character_uuids) > 0:
+                if not scene.scene_data.non_player_character_uuids is None:
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
@@ -156,7 +150,7 @@ class NarrativeDesignOutputSchema(BaseModel):
             loc_name = self.get_location_name(scene.scene_data.location_uuid)
             output_str += f"\n  SCENE {scene_idx}, LOCATION {loc_name}\n"
             if 'non_player_character_uuids' in scene.scene_data.__dict__:
-                if len(scene.scene_data.non_player_character_uuids) > 0:
+                if not scene.scene_data.non_player_character_uuids is None:
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
@@ -170,7 +164,7 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n  LOCATION: {loc_name}\n"
 
         if 'non_player_character_uuids' in self.outro_scene.scene_data.__dict__:
-            if len(self.outro_scene.scene_data.non_player_character_uuids) > 0:
+            if not self.outro_scene.scene_data.non_player_character_uuids is None:
                 output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
                 for npc_uuid in self.outro_scene.scene_data.non_player_character_uuids:
                     npc_name = self.get_npc_name(npc_uuid)
@@ -219,7 +213,7 @@ Use the get_uuid_string tool to get UUID strings
 # Model strings
 #==============
 
-NARRATIVE_DESIGN_AGENT_MODEL: str   = "gpt-5.4-mini"
+NARRATIVE_DESIGN_AGENT_MODEL: str   = "gpt-5.4"
 MINI_MODEL: str                     = "gpt-5.4-mini"
 
 #=======
@@ -275,16 +269,18 @@ class NarrativeDesignAgent:
 #test_input: str = "A scary story about a derelict deep space station called the U.S.S. Calliope, where xeno-biological research was conducted." \
 #"The player character is tasked with investigating why the station went dark, and recovering the precious research data."
 
-test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
+
 
 async def main():
+
+    test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
 
     wf_input = WorkflowTextInput(
         input_as_text=test_input
     )
 
-    test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
-    output: NarrativeDesignOutputSchema = await test_agent.run_workflow(wf_input)
+    #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
+    output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
 
     print(f"{json.dumps(output.model_dump(), indent=2)}") # model_dump(): BaseModel -> Python dictionary
     print(output.human_readable())

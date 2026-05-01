@@ -3,7 +3,6 @@
 # characters, and dialogue for the visual novel game. It will also define the output schema for the narrative 
 # design agent, which will be used to structure the output data that is given to downstream agents.
 
-
 import asyncio
 from pydantic import BaseModel, Field
 from typing import Optional
@@ -49,6 +48,12 @@ class SceneData(BaseModel):
 
 class Scene(BaseModel):
     scene_data: SceneData            = Field(..., description="The data for the scene, including location, non-player characters, and narrative summary")
+
+# class LocationsByUUID(BaseModel):
+#     location_catalog: Optional[dict[str, LocationData]] = Field(..., description="All the story locations, indexed by UUID")
+
+# class CharactersByUUID(BaseModel):
+#     character_catalog: Optional[dict[str, CharacterData]] = Field(..., description="All the game's characters, indexed by UUID")
 
 class NarrativeDesignOutputSchema(BaseModel):
     story_title: str                                = Field(..., description="The title of the story")
@@ -173,6 +178,36 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
 
         return output_str
+    
+    def get_location_catalog(self) -> dict[dict]:
+        """Returns a catalog of game locations, indexed by UUID"""
+        data: dict = {}
+
+        for loc in self.locations:
+            loc_key: str = loc.location_data.uuid
+            loc_data: dict = {}
+            loc_data["name"] = loc.location_data.name
+            loc_data["visual_description"] = loc.location_data.location_image_prompt
+            data[loc_key] = loc_data
+        return data
+
+    def get_character_catalog(self) -> dict[dict]:
+        """Returns a catalog of game characters, indexed by UUID"""
+        data: dict = {}
+
+        player_key = self.player_character.character_data.uuid
+        player_data: dict = {}
+        player_data["name"] = self.player_character.character_data.name
+        player_data["visual_description"] = self.player_character.character_data.portrait_image_prompt
+        data[player_key] = player_data
+
+        for npc in self.non_player_characters:
+            npc_key = npc.character_data.uuid
+            npc_data: dict = {}
+            npc_data["name"] = npc.character_data.name
+            npc_data["visual_description"] = npc.character_data.portrait_image_prompt
+            data[npc_key] = npc_data
+        return data
 
 
 

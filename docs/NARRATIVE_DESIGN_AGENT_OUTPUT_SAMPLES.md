@@ -8,6 +8,7 @@ Run as python module from terminal:
 $ python3 -m src.narrative_design_agent
 ```
 
+### Code:
 ```python
 async def main():
 
@@ -32,71 +33,85 @@ if __name__ == "__main__":
 
 ```json
 {
-  "story_title": "Last Light at Red Mesa",
-  "synopsis": "In 1982, stranded radio stringer Mara Bell seeks shelter near Dry Wells, New Mexico, at the long-abandoned Red Mesa Motor Lodge, only to find a ghostly night clerk still checking in guests from a ledger that should have burned years ago. With a dust storm sealing the highway and the motel replaying a buried fire, Mara must work with wary locals and a runaway hiding on the property to uncover the truth behind the missing travelers before Red Mesa makes her one more permanent guest. The tone is slow-burn desert gothic horror with haunted Americana, analog-era unease, and escalating supernatural dread.",
+  "story_title": "Vacancy at Lost Mesa",
+  "synopsis": "In 1982, Albuquerque radio repair technician Rosa Medina becomes stranded on a lonely stretch of rural New Mexico highway beside the long-abandoned Lost Mesa Motor Lodge. Drawn in by a voice on a dead radio frequency, she finds a terrified young photographer, a superstitious deputy, a guilt-ridden former housekeeper, and the ghost of the motel's last night clerk all circling the same secret: something beneath the motel has learned how to lure travelers, record their names, and keep the night from ending. The tone is slow-burn, dusty, claustrophobic supernatural horror with analog-radio unease, shifting architecture, and a haunted roadside Americana atmosphere.",
   "player_character": {
     "character_data": {
-      "uuid": "b2931ee3-23d9-4c71-beef-abe9cfe96e24",
-      "name": "Mara Bell",
-      "portrait_image_prompt": "A semi-realistic visual novel portrait of a 27-year-old woman in 1982, a traveling radio journalist and field recordist with dusty brown hair tied back, tired intelligent eyes, sun-worn skin, denim jacket over a plaid shirt, small cassette recorder slung on a strap, anxious but determined expression, subtle desert dust on her clothes, moody horror lighting, rural New Mexico atmosphere",
+      "uuid": "a3e929b5-3f88-4e9b-b289-3b39b57bc277",
+      "name": "Rosa Medina",
+      "portrait_image_prompt": "Bust portrait of a Latina woman in her late 20s, practical and sharp-eyed, dark curly hair tied back loosely, denim jacket over a faded mechanic's work shirt, a small toolkit and cassette recorder strap visible, desert dust on her clothes, tired but determined expression, 1982 roadside aesthetic, cinematic visual novel style, moody horror lighting",
       "dialogue_examples": [
-        "I came looking for a bed and a phone. If I get a ghost story instead, I'd at least like the truth.",
-        "Static I can explain. A motel that changes shape when I blink, not so much.",
-        "Don't tell me to leave unless you're willing to tell me what happened here in '71.",
-        "If this place wants my name in that ledger, it'll have to spell it wrong."
+        "A dead battery I can fix. A dead radio station calling my name is new.",
+        "If this place is abandoned, then who keeps answering the phone?",
+        "Don't tell me to relax while the room numbers keep changing.",
+        "I work with wires, switches, and signals. If this thing can talk, it can be answered.",
+        "We're getting out before sunrise, even if I have to pull this motel apart one circuit at a time."
       ]
     }
   },
   "non_player_characters": [
     {
       "character_data": {
-        "uuid": "9ed7eb88-598b-477f-8db1-b2ded4ca9c85",
-        "name": "Deputy Rosa Salazar",
-        "portrait_image_prompt": "A semi-realistic visual novel portrait of a Hispanic woman in her late 40s, rural New Mexico county deputy in 1982, weathered face, dark hair streaked with gray pulled back, tan uniform shirt under a worn denim jacket, silver badge, steady stern gaze, practical no-nonsense posture, desert night shadows and patrol car light glow, grounded horror mood",
+        "uuid": "f0e64695-7782-42e0-9d44-a7586752ee1d",
+        "name": "June Mercer",
+        "portrait_image_prompt": "Bust portrait of a young white woman around 20, bleached blonde hair with dark roots, thrift-store jacket over a band tee, camera strap around her neck, smudged eyeliner, scared but defiant expression, 1982 desert punk style, harsh motel neon and moonlight, visual novel horror portrait",
         "dialogue_examples": [
-          "Folks in Dry Wells know better than to chase lights in the desert after midnight.",
-          "That motel should be empty. Problem is, it never learned how.",
-          "My father wore this badge before me, and some sins stain deeper than silver.",
-          "If we're ending this tonight, we do it clean and we do it before dawn."
+          "I stopped for pictures before sunset. Then the road stopped making sense.",
+          "Don't open any door that's already unlocked. I'm serious.",
+          "The motel likes people who look lost. You look very lost.",
+          "If you hear an ice machine, run. There isn't one."
         ]
       }
     },
     {
       "character_data": {
-        "uuid": "cc71cb60-e397-4893-9f29-9e7f04d28df6",
-        "name": "Eli Navarro",
-        "portrait_image_prompt": "A semi-realistic visual novel portrait of a man in his early 30s, New Mexico mechanic and gas station attendant in 1982, grease-smudged hands, dark curly hair, faded work shirt with rolled sleeves, gentle but uneasy expression, fluorescent diner and gas pump lighting, dusty roadside atmosphere, subtle horror tension",
+        "uuid": "dba0ae9f-5de9-469d-8d9c-804de340d580",
+        "name": "Deputy Tom Baca",
+        "portrait_image_prompt": "Bust portrait of a Hispanic man in his early 40s, rural sheriff's deputy uniform from 1982, thick mustache, weathered face, flashlight and hat in hand, stern posture hiding deep unease, dusty New Mexico lawman aesthetic, dim patrol-car light and motel neon glow, visual novel style",
         "dialogue_examples": [
-          "Your distributor cap's shot. I can have you rolling by sunup, if the wind doesn't bury us first.",
-          "I don't drive past Red Mesa after dark, and I sure don't stop there.",
-          "People around here call it bad luck. That's easier than calling it what it is.",
-          "Take the keys, Ms. Bell. And if the radio starts talking back, don't answer."
+          "Folks around here know better than to stop at Lost Mesa after dark.",
+          "I've seen coyotes strip a car to bones. This place scares me more.",
+          "Stay where I can see you. If the lights come on by themselves, we leave.",
+          "In this county, the desert keeps what it wants."
         ]
       }
     },
     {
       "character_data": {
-        "uuid": "86207f8b-564d-4d70-a769-03802e1c0819",
-        "name": "Danny Pike",
-        "portrait_image_prompt": "A semi-realistic visual novel portrait of a 17-year-old runaway boy in 1982, skinny and sunburned, shaggy hair, oversized denim vest over a faded band shirt, wary eyes, dirt on his face, nervous posture like he is ready to bolt, harsh moonlight and motel neon, tense desert horror atmosphere",
+        "uuid": "955507a9-601f-48fa-909d-154de2de5a63",
+        "name": "Dolores Varela",
+        "portrait_image_prompt": "Bust portrait of an elderly Latina woman in her late 60s, deeply lined face, gray braid, worn cardigan, rosary wrapped around one hand, old flashlight in the other, solemn and haunted expression, desert wind and motel dust, candlelike warm rim light against cold night shadows, visual novel horror portrait",
         "dialogue_examples": [
-          "I never checked in, okay? That's why it can't keep me.",
-          "The hallway's longer after midnight. I counted.",
-          "She smiles first. That's how you know you're in trouble.",
-          "If you hear knocking from the wall, don't knock back."
+          "It was a decent place once, before the water went bad and the prayers stopped working.",
+          "Names matter in that office. Don't give the building yours.",
+          "I buried the ledger years ago. I should have burned it.",
+          "The dead don't haunt this motel, mija. Something else taught them how."
         ]
       }
     },
     {
       "character_data": {
-        "uuid": "29905c95-87da-455d-822a-2abc5659394a",
-        "name": "Miriam Voss",
-        "portrait_image_prompt": "A semi-realistic visual novel portrait of a woman appearing in her 50s, eerie motel clerk from another era, immaculate faded turquoise uniform dress, carefully set hair, pale skin, red lipstick, polite smile that feels wrong, faint soot stains at the collar, lit by flickering neon and desk lamp, uncanny ghostly horror mood",
+        "uuid": "7cde0937-9599-4023-be55-c15a836222b9",
+        "name": "Virgil Bell",
+        "portrait_image_prompt": "Bust portrait of a gaunt middle-aged man in a faded motel clerk blazer, combed hair, hollow eyes, cigarette-stained fingers, polite smile that feels wrong, caught between 1950s hospitality and ghostly decay, flickering fluorescent office light, eerie visual novel portrait",
         "dialogue_examples": [
-          "Welcome to Red Mesa Motor Lodge. We are always pleased to receive weary travelers.",
-          "There is no need to be afraid, dear. Morning is such a short distance away.",
-          "Guests who wander tend to lose themselves.",
-          "I have kept the rooms ready for years. It would be rude of you not to stay."
+          "Welcome to the Lost Mesa Motor Lodge. Vacancy has a way of finding people.",
+          "You needn't trouble yourself with signing in. I've already prepared your key.",
+          "We never had a Room 7 until the night it asked for one.",
+          "If the radio asks for a name, please give it mine."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "ea2a30ce-0037-4e78-9edc-570d3b54b380",
+        "name": "The Mother Road Voice",
+        "portrait_image_prompt": "Surreal dialogue portrait of a human face half-formed from radio static, motel neon, and black water reflections, features shifting and indistinct, no clear age or gender, analog distortion, CRT scanlines, threatening calm expression, supernatural desert horror aesthetic",
+        "dialogue_examples": [
+          "Driver, you have reached your final vacancy.",
+          "Please sign clearly. We dislike errors in the register.",
+          "Morning has been delayed for your convenience.",
+          "Every guest returns. Some simply take the long road."
         ]
       }
     }
@@ -104,118 +119,133 @@ if __name__ == "__main__":
   "locations": [
     {
       "location_data": {
-        "uuid": "0c49de68-2f98-4f5e-9031-d8cb4e0992f4",
-        "name": "Dry Wells Diner & Gas",
-        "location_image_prompt": "A lonely roadside diner and two-pump gas station in rural New Mexico desert, year 1982, sunset turning to night, dust storm building on the horizon, flickering fluorescent sign, old pickup trucks, cracked asphalt, telephone poles, warm diner windows against vast empty desert, cinematic horror atmosphere"
+        "uuid": "06f305cb-1ddc-4711-b267-340c4bac597f",
+        "name": "Highway Pullout at Lost Mesa",
+        "location_image_prompt": "1982 rural New Mexico desert highway at dusk, empty two-lane road, faded turquoise roadside sign for LOST MESA MOTOR LODGE, dusty station wagon with hood up, telephone poles, red mesas on the horizon, gathering storm clouds, lonely roadside horror atmosphere, cinematic background art"
       }
     },
     {
       "location_data": {
-        "uuid": "0a7ad73a-720c-4259-8963-d6a47c4fc4d0",
-        "name": "Red Mesa Motor Lodge Exterior",
-        "location_image_prompt": "An abandoned U-shaped roadside motel in the rural New Mexico desert, year 1982, cracked neon VACANCY sign still glowing, boarded windows mixed with a few mysteriously lit rooms, rusted ice machine, drifting sand, empty courtyard, hints of a drained swimming pool, night dust storm, analog horror mood"
+        "uuid": "e5afbf45-d4d0-47cf-b354-dd8f1781cf9d",
+        "name": "Motel Lobby and Office",
+        "location_image_prompt": "Abandoned roadside motel office in 1982, dusty wood paneling, cracked vinyl chairs, front desk with brass bell, key cubbies, rotary phone, analog tabletop radio, faded tourist brochures, dead neon glow and flickering fluorescent light, eerie analog horror background"
       }
     },
     {
       "location_data": {
-        "uuid": "3f1e0854-6cfa-4750-8c62-d979859e639f",
-        "name": "Motel Office and Corridor",
-        "location_image_prompt": "The front office of an abandoned roadside motel blending into an impossible corridor, faux-wood paneling, rotary phone, brass room key wall, faded tourist brochures, dusty check-in ledger, patterned carpet stretching too far into darkness, sickly green fluorescent lighting, year 1982, eerie visual novel background"
+        "uuid": "471f21d5-1f21-419e-af27-793ba40bde2a",
+        "name": "Exterior Walkway and Room 7",
+        "location_image_prompt": "Nighttime exterior of a decaying desert motel, cracked stucco walls, long shadowy walkway, mismatched room numbers, an ominous Room 7 door where it should not fit, flickering red VACANCY sign, windblown dust, deep pools of darkness, supernatural horror background"
       }
     },
     {
       "location_data": {
-        "uuid": "179cf9f5-59e6-4458-93a6-13c33d623ccc",
-        "name": "Room 8",
-        "location_image_prompt": "A 1982 motel room interior in rural New Mexico, twin bed with floral bedspread, cigarette burns, analog clock radio, buzzing lamp, stained wallpaper shifting between clean and fire-scorched, ominous mirror, cheap wooden dresser, desert moonlight through venetian blinds, intimate supernatural horror atmosphere"
+        "uuid": "f4348bb0-923a-49e8-a982-188341042800",
+        "name": "Drained Pool Courtyard",
+        "location_image_prompt": "Desert motel courtyard under pale moonlight, empty cracked swimming pool full of weeds and blown sand, rusted lounge chairs, dry palm tree, broken chain-link fence, open New Mexico sky, eerie stillness and drifting debris, cinematic horror background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "5403788c-b106-462a-8d51-7416173b4f62",
+        "name": "Pump House and Black-Water Cistern",
+        "location_image_prompt": "Subterranean motel pump house beneath the desert, concrete stairs, rusted pipes, dangling bare bulbs, jury-rigged radio transmitter equipment, black water cistern reflecting weak light, cramped oppressive shadows, analog supernatural horror background"
       }
     }
   ],
   "intro_scene": {
     "scene_data": {
-      "location_uuid": "0c49de68-2f98-4f5e-9031-d8cb4e0992f4",
+      "location_uuid": "06f305cb-1ddc-4711-b267-340c4bac597f",
       "non_player_character_uuids": [
-        "9ed7eb88-598b-477f-8db1-b2ded4ca9c85",
-        "cc71cb60-e397-4893-9f29-9e7f04d28df6"
+        "f0e64695-7782-42e0-9d44-a7586752ee1d",
+        "ea2a30ce-0037-4e78-9edc-570d3b54b380"
       ],
-      "narrtive_summary": "Near sundown outside Dry Wells, Mara Bell coasts her failing sedan into the only diner and gas station for miles. Eli tells her the car will not be drivable until morning, while Deputy Rosa Salazar warns her not to seek shelter at the abandoned Red Mesa Motor Lodge because travelers connected to that place have a habit of vanishing from local memory as surely as they vanish from the highway. When a dust storm rolls in, the phone lines sputter, and every spare room in town is gone, Mara is forced toward the motel despite the warnings."
+      "narrtive_summary": "Rosa's station wagon dies on a deserted highway after her dashboard radio crackles to life on an unused frequency and guides her toward the abandoned Lost Mesa Motor Lodge. At the roadside sign she meets June Mercer, a frightened young photographer who claims she has already tried to leave several times and somehow keeps returning to the same pullout. The intro establishes the 1982 desert setting, Rosa's practical need for a phone or help, and the first impossible hint that the motel is calling stranded travelers by name."
     }
   },
   "act_one": [
     {
       "scene_data": {
-        "location_uuid": "0a7ad73a-720c-4259-8963-d6a47c4fc4d0",
+        "location_uuid": "e5afbf45-d4d0-47cf-b354-dd8f1781cf9d",
         "non_player_character_uuids": [
-          "86207f8b-564d-4d70-a769-03802e1c0819",
-          "29905c95-87da-455d-822a-2abc5659394a"
+          "f0e64695-7782-42e0-9d44-a7586752ee1d",
+          "955507a9-601f-48fa-909d-154de2de5a63",
+          "7cde0937-9599-4023-be55-c15a836222b9"
         ],
-        "narrtive_summary": "Mara crosses the storm-lashed road to Red Mesa and finds the supposedly abandoned motel lit by a flickering VACANCY sign, with fresh footprints in the dust and one office lamp burning. A gaunt runaway teen named Danny whispers from the shadows that she must not accept a room, but before he can explain, the front door opens and Miriam Voss greets Mara with the polished courtesy of a clerk who believes the motel is still in business. Drawn by equal parts fear, exhaustion, and professional curiosity, Mara steps inside."
+        "narrtive_summary": "Searching for a phone, Rosa and June enter the motel office and find it shifting between dust-choked ruin and a fully lit version of itself from decades earlier. Virgil Bell, the courteous night clerk, behaves as though the motel is open and tries to coax Rosa into signing the guest ledger, while Dolores Varela appears outside and urgently warns her not to write her name anywhere. The scene introduces the motel's rules, its unsettling hospitality, and the idea that accepting shelter here may be more dangerous than the desert outside."
       }
     },
     {
       "scene_data": {
-        "location_uuid": "3f1e0854-6cfa-4750-8c62-d979859e639f",
+        "location_uuid": "471f21d5-1f21-419e-af27-793ba40bde2a",
         "non_player_character_uuids": [
-          "86207f8b-564d-4d70-a769-03802e1c0819",
-          "29905c95-87da-455d-822a-2abc5659394a"
+          "f0e64695-7782-42e0-9d44-a7586752ee1d",
+          "dba0ae9f-5de9-469d-8d9c-804de340d580",
+          "ea2a30ce-0037-4e78-9edc-570d3b54b380"
         ],
-        "narrtive_summary": "Inside the office, Miriam checks Mara in using a guest ledger whose most recent normal entries stop in 1971, and the corridor beyond the desk stretches farther than the building's exterior should allow. Danny slips in through a side door and urgently explains that he has been hiding on the property for days, watching the motel replay the same night and trap anyone who accepts a key after midnight. Mara takes the room key anyway, deciding to investigate the ledger's missing names and the motel's impossible geometry before the storm or the ghost can close around her."
+        "narrtive_summary": "Deputy Tom Baca arrives after spotting Rosa's stranded car, but every attempt to drive the women away bends the road back to the same cracked motel walkway. Room numbers shift when nobody is looking, and the impossible Room 7 appears under the flickering VACANCY sign as radios in the nearby rooms begin broadcasting the Mother Road Voice. The act closes with the cast realizing they are trapped on motel grounds until they understand what is holding them there."
       }
     }
   ],
   "act_two": [
     {
       "scene_data": {
-        "location_uuid": "179cf9f5-59e6-4458-93a6-13c33d623ccc",
+        "location_uuid": "f4348bb0-923a-49e8-a982-188341042800",
         "non_player_character_uuids": [
-          "29905c95-87da-455d-822a-2abc5659394a"
+          "f0e64695-7782-42e0-9d44-a7586752ee1d",
+          "955507a9-601f-48fa-909d-154de2de5a63",
+          "7cde0937-9599-4023-be55-c15a836222b9"
         ],
-        "narrtive_summary": "Room 8 shifts around Mara as she searches it: burnt wallpaper becomes pristine for a heartbeat, the clock radio spits out emergency calls and half-heard pleas, and mirror reflections lag behind her movements. Miriam appears in flashes as both gracious hostess and soot-streaked corpse while Mara witnesses fragments of the motel fire and hears guests pounding at locked doors that no longer exist. Hidden inside the mattress lining, Mara finds a postcard, scorched receipts, and a newspaper clipping that claims only two people died at Red Mesa, contradicting the many voices she heard."
+        "narrtive_summary": "In the moonlit courtyard, Dolores admits she once worked at Lost Mesa and explains that after a deadly flood and a string of vanished motorists, the motel began changing at night. June shows Rosa her Polaroids, each one revealing extra figures around the drained pool and one image that seems to include Rosa before she ever arrived. Virgil appears at the poolside in a moment of cracked lucidity, suggesting that something beneath the motel learned how to speak through radios, intercoms, and guest records."
       }
     },
     {
       "scene_data": {
-        "location_uuid": "0a7ad73a-720c-4259-8963-d6a47c4fc4d0",
+        "location_uuid": "471f21d5-1f21-419e-af27-793ba40bde2a",
         "non_player_character_uuids": [
-          "86207f8b-564d-4d70-a769-03802e1c0819",
-          "9ed7eb88-598b-477f-8db1-b2ded4ca9c85"
+          "dba0ae9f-5de9-469d-8d9c-804de340d580",
+          "7cde0937-9599-4023-be55-c15a836222b9",
+          "ea2a30ce-0037-4e78-9edc-570d3b54b380"
         ],
-        "narrtive_summary": "Guided by Danny, Mara searches the courtyard and drained pool area, uncovering luggage tags, license plates, and personal effects from travelers who should have been reported missing years earlier. Rosa arrives through the storm and admits that her late father, then a county deputy, helped bury evidence after the motel owner illegally chained a rear exit during the fire panic to stop guests from fleeing without paying. The three realize Miriam's spirit is trapped between guilt and denial, and that the motel's guest ledger anchors the haunting by binding every new check-in to the dead already waiting there."
+        "narrtive_summary": "Rosa investigates Room 7 and discovers a space that is larger inside than the building allows, filled with suitcases and keepsakes belonging to missing travelers from many different years. Virgil confesses that he kept checking people in under orders from the Voice, which promises the night will end if a new clerk agrees to take his place. When Deputy Baca tries to burn the ledger and break the pattern by force, the hallway warps and drags him toward the pump house while the Mother Road Voice calmly announces that the motel is preparing a permanent reservation."
       }
     }
   ],
   "act_three": [
     {
       "scene_data": {
-        "location_uuid": "3f1e0854-6cfa-4750-8c62-d979859e639f",
+        "location_uuid": "5403788c-b106-462a-8d51-7416173b4f62",
         "non_player_character_uuids": [
-          "86207f8b-564d-4d70-a769-03802e1c0819",
-          "29905c95-87da-455d-822a-2abc5659394a"
+          "f0e64695-7782-42e0-9d44-a7586752ee1d",
+          "dba0ae9f-5de9-469d-8d9c-804de340d580",
+          "955507a9-601f-48fa-909d-154de2de5a63",
+          "ea2a30ce-0037-4e78-9edc-570d3b54b380"
         ],
-        "narrtive_summary": "Mara returns to the office to confront Miriam with the hidden names, the false death count, and the truth of the chained exit. Miriam first pleads with trembling sincerity for Mara to stay until morning, then turns possessive and monstrous when Mara reaches for the ledger and the master keys. As Danny distracts the shifting corridor and the motel begins folding in on itself, Mara learns the final rule of Red Mesa: destroying the ledger before dawn can free the trapped guests, but the last person to sign in risks being taken in their place."
+        "narrtive_summary": "Guided by Dolores, Rosa and June descend into the pump house and discover an old emergency radio relay wired into a black-water cistern beneath the motel. Deputy Baca is found alive but injured, and Dolores reveals that the motel's owner once used the transmitter to lure stranded motorists before something in the water began answering back and taking control of the place. Rosa realizes her knowledge of radios gives her a chance either to overload the system or retune it long enough to free the trapped voices tied to the ledger."
       }
     },
     {
       "scene_data": {
-        "location_uuid": "0a7ad73a-720c-4259-8963-d6a47c4fc4d0",
+        "location_uuid": "e5afbf45-d4d0-47cf-b354-dd8f1781cf9d",
         "non_player_character_uuids": [
-          "9ed7eb88-598b-477f-8db1-b2ded4ca9c85",
-          "86207f8b-564d-4d70-a769-03802e1c0819",
-          "29905c95-87da-455d-822a-2abc5659394a"
+          "f0e64695-7782-42e0-9d44-a7586752ee1d",
+          "dba0ae9f-5de9-469d-8d9c-804de340d580",
+          "955507a9-601f-48fa-909d-154de2de5a63",
+          "7cde0937-9599-4023-be55-c15a836222b9",
+          "ea2a30ce-0037-4e78-9edc-570d3b54b380"
         ],
-        "narrtive_summary": "In the heart of the storm beneath the flickering VACANCY sign, Mara uses her cassette recorder to play back the voices of the victims, forcing Miriam to relive the night she failed to save them. Rosa overloads the sign's failing transformer while Danny hurls the guest ledger into the shower of sparks, igniting decades of paper, dust, and denial. As the motel peels back from welcoming illusion to blackened ruin, Miriam must choose between dragging Mara into the fire as a replacement guest or opening the way for the dead to finally leave Red Mesa behind."
+        "narrtive_summary": "As the motel fully reanimates around them with blazing lights, phantom guests, and doors slamming in sequence, Rosa uses the office intercom and the retuned transmitter to call every stolen name back out of the building. Virgil rebels against the Voice long enough for Rosa to destroy the guest ledger and sever Room 7 from the rest of the motel, while Dolores stays behind to shut the office and hold the entity in place. The climax forces the cast to choose survival over certainty as the illusion of hospitality collapses into darkness and rushing black water."
       }
     }
   ],
   "outro_scene": {
     "scene_data": {
-      "location_uuid": "0c49de68-2f98-4f5e-9031-d8cb4e0992f4",
+      "location_uuid": "06f305cb-1ddc-4711-b267-340c4bac597f",
       "non_player_character_uuids": [
-        "9ed7eb88-598b-477f-8db1-b2ded4ca9c85",
-        "cc71cb60-e397-4893-9f29-9e7f04d28df6",
-        "86207f8b-564d-4d70-a769-03802e1c0819"
+        "f0e64695-7782-42e0-9d44-a7586752ee1d",
+        "dba0ae9f-5de9-469d-8d9c-804de340d580"
       ],
-      "narrtive_summary": "At dawn, Red Mesa is nothing but a collapsed shell half-buried in sand, with no sign that its lights ever burned through the night. Rosa quietly commits to reopening the old case, Danny accepts a ride out of Dry Wells and his first real chance to start over, and Eli returns Mara's repaired car keys beside a stack of warped cassette tapes recovered from the wreckage. Mara drives east into the sunrise believing she escaped, until Miriam's velvet voice bleeds through the static of the car radio with one final promise: there are still vacancies."
+      "narrtive_summary": "At dawn, Rosa, June, and Deputy Baca reach the highway and find the Lost Mesa Motor Lodge reduced to old concrete slabs and a fallen sign, as if it has been abandoned for decades. June's photographs develop almost completely blank except for one frame showing the office light still burning, and Rosa's repaired radio whispers the word vacancy one last time before going silent. The story ends with the survivors driving toward town unsure whether Dolores and Virgil were finally laid to rest, leaving relief and lingering dread in equal measure."
     }
   }
 }
@@ -225,178 +255,205 @@ if __name__ == "__main__":
 
 `NarrativeDesignAgent().run_workflow(wf_input).human_readable()`
 
-TITLE: Last Light at Red Mesa
+TITLE: Vacancy at Lost Mesa
 
 
-SYNOPSIS: In 1982, stranded radio stringer Mara Bell seeks shelter near Dry Wells, New Mexico, at the long-abandoned Red Mesa Motor Lodge, only to find a ghostly night clerk still checking in guests from a ledger that should have burned years ago. With a dust storm sealing the highway and the motel replaying a buried fire, Mara must work with wary locals and a runaway hiding on the property to uncover the truth behind the missing travelers before Red Mesa makes her one more permanent guest. The tone is slow-burn desert gothic horror with haunted Americana, analog-era unease, and escalating supernatural dread.
+SYNOPSIS: In 1982, Albuquerque radio repair technician Rosa Medina becomes stranded on a lonely stretch of rural New Mexico highway beside the long-abandoned Lost Mesa Motor Lodge. Drawn in by a voice on a dead radio frequency, she finds a terrified young photographer, a superstitious deputy, a guilt-ridden former housekeeper, and the ghost of the motel's last night clerk all circling the same secret: something beneath the motel has learned how to lure travelers, record their names, and keep the night from ending. The tone is slow-burn, dusty, claustrophobic supernatural horror with analog-radio unease, shifting architecture, and a haunted roadside Americana atmosphere.
 
 
-PLAYER CHARCTER: Mara Bell
+PLAYER CHARCTER: Rosa Medina
 
-  VISUAL: A semi-realistic visual novel portrait of a 27-year-old woman in 1982, a traveling radio journalist and field recordist with dusty brown hair tied back, tired intelligent eyes, sun-worn skin, denim jacket over a plaid shirt, small cassette recorder slung on a strap, anxious but determined expression, subtle desert dust on her clothes, moody horror lighting, rural New Mexico atmosphere
+  VISUAL: Bust portrait of a Latina woman in her late 20s, practical and sharp-eyed, dark curly hair tied back loosely, denim jacket over a faded mechanic's work shirt, a small toolkit and cassette recorder strap visible, desert dust on her clothes, tired but determined expression, 1982 roadside aesthetic, cinematic visual novel style, moody horror lighting
 
   DIALOGUE EXAMPLES:
-    'I came looking for a bed and a phone. If I get a ghost story instead, I'd at least like the truth.'
-    'Static I can explain. A motel that changes shape when I blink, not so much.'
-    'Don't tell me to leave unless you're willing to tell me what happened here in '71.'
-    'If this place wants my name in that ledger, it'll have to spell it wrong.'
+    'A dead battery I can fix. A dead radio station calling my name is new.'
+    'If this place is abandoned, then who keeps answering the phone?'
+    'Don't tell me to relax while the room numbers keep changing.'
+    'I work with wires, switches, and signals. If this thing can talk, it can be answered.'
+    'We're getting out before sunrise, even if I have to pull this motel apart one circuit at a time.'
 
-  UUID: b2931ee3-23d9-4c71-beef-abe9cfe96e24
+  UUID: a3e929b5-3f88-4e9b-b289-3b39b57bc277
 
 
 NON-PLAYER CHARACTERS:
 
-  NPC: Deputy Rosa Salazar
+  NPC: June Mercer
 
-    VISUAL: A semi-realistic visual novel portrait of a Hispanic woman in her late 40s, rural New Mexico county deputy in 1982, weathered face, dark hair streaked with gray pulled back, tan uniform shirt under a worn denim jacket, silver badge, steady stern gaze, practical no-nonsense posture, desert night shadows and patrol car light glow, grounded horror mood
-
-    DIALOGUE EXAMPLES:
-      'Folks in Dry Wells know better than to chase lights in the desert after midnight.'
-      'That motel should be empty. Problem is, it never learned how.'
-      'My father wore this badge before me, and some sins stain deeper than silver.'
-      'If we're ending this tonight, we do it clean and we do it before dawn.'
-
-    UUID: 9ed7eb88-598b-477f-8db1-b2ded4ca9c85
-
-  NPC: Eli Navarro
-
-    VISUAL: A semi-realistic visual novel portrait of a man in his early 30s, New Mexico mechanic and gas station attendant in 1982, grease-smudged hands, dark curly hair, faded work shirt with rolled sleeves, gentle but uneasy expression, fluorescent diner and gas pump lighting, dusty roadside atmosphere, subtle horror tension
+    VISUAL: Bust portrait of a young white woman around 20, bleached blonde hair with dark roots, thrift-store jacket over a band tee, camera strap around her neck, smudged eyeliner, scared but defiant expression, 1982 desert punk style, harsh motel neon and moonlight, visual novel horror portrait
 
     DIALOGUE EXAMPLES:
-      'Your distributor cap's shot. I can have you rolling by sunup, if the wind doesn't bury us first.'
-      'I don't drive past Red Mesa after dark, and I sure don't stop there.'
-      'People around here call it bad luck. That's easier than calling it what it is.'
-      'Take the keys, Ms. Bell. And if the radio starts talking back, don't answer.'
+      'I stopped for pictures before sunset. Then the road stopped making sense.'
+      'Don't open any door that's already unlocked. I'm serious.'
+      'The motel likes people who look lost. You look very lost.'
+      'If you hear an ice machine, run. There isn't one.'
 
-    UUID: cc71cb60-e397-4893-9f29-9e7f04d28df6
+    UUID: f0e64695-7782-42e0-9d44-a7586752ee1d
 
-  NPC: Danny Pike
+  NPC: Deputy Tom Baca
 
-    VISUAL: A semi-realistic visual novel portrait of a 17-year-old runaway boy in 1982, skinny and sunburned, shaggy hair, oversized denim vest over a faded band shirt, wary eyes, dirt on his face, nervous posture like he is ready to bolt, harsh moonlight and motel neon, tense desert horror atmosphere
-
-    DIALOGUE EXAMPLES:
-      'I never checked in, okay? That's why it can't keep me.'
-      'The hallway's longer after midnight. I counted.'
-      'She smiles first. That's how you know you're in trouble.'
-      'If you hear knocking from the wall, don't knock back.'
-
-    UUID: 86207f8b-564d-4d70-a769-03802e1c0819
-
-  NPC: Miriam Voss
-
-    VISUAL: A semi-realistic visual novel portrait of a woman appearing in her 50s, eerie motel clerk from another era, immaculate faded turquoise uniform dress, carefully set hair, pale skin, red lipstick, polite smile that feels wrong, faint soot stains at the collar, lit by flickering neon and desk lamp, uncanny ghostly horror mood
+    VISUAL: Bust portrait of a Hispanic man in his early 40s, rural sheriff's deputy uniform from 1982, thick mustache, weathered face, flashlight and hat in hand, stern posture hiding deep unease, dusty New Mexico lawman aesthetic, dim patrol-car light and motel neon glow, visual novel style
 
     DIALOGUE EXAMPLES:
-      'Welcome to Red Mesa Motor Lodge. We are always pleased to receive weary travelers.'
-      'There is no need to be afraid, dear. Morning is such a short distance away.'
-      'Guests who wander tend to lose themselves.'
-      'I have kept the rooms ready for years. It would be rude of you not to stay.'
+      'Folks around here know better than to stop at Lost Mesa after dark.'
+      'I've seen coyotes strip a car to bones. This place scares me more.'
+      'Stay where I can see you. If the lights come on by themselves, we leave.'
+      'In this county, the desert keeps what it wants.'
 
-    UUID: 29905c95-87da-455d-822a-2abc5659394a
+    UUID: dba0ae9f-5de9-469d-8d9c-804de340d580
+
+  NPC: Dolores Varela
+
+    VISUAL: Bust portrait of an elderly Latina woman in her late 60s, deeply lined face, gray braid, worn cardigan, rosary wrapped around one hand, old flashlight in the other, solemn and haunted expression, desert wind and motel dust, candlelike warm rim light against cold night shadows, visual novel horror portrait
+
+    DIALOGUE EXAMPLES:
+      'It was a decent place once, before the water went bad and the prayers stopped working.'
+      'Names matter in that office. Don't give the building yours.'
+      'I buried the ledger years ago. I should have burned it.'
+      'The dead don't haunt this motel, mija. Something else taught them how.'
+
+    UUID: 955507a9-601f-48fa-909d-154de2de5a63
+
+  NPC: Virgil Bell
+
+    VISUAL: Bust portrait of a gaunt middle-aged man in a faded motel clerk blazer, combed hair, hollow eyes, cigarette-stained fingers, polite smile that feels wrong, caught between 1950s hospitality and ghostly decay, flickering fluorescent office light, eerie visual novel portrait
+
+    DIALOGUE EXAMPLES:
+      'Welcome to the Lost Mesa Motor Lodge. Vacancy has a way of finding people.'
+      'You needn't trouble yourself with signing in. I've already prepared your key.'
+      'We never had a Room 7 until the night it asked for one.'
+      'If the radio asks for a name, please give it mine.'
+
+    UUID: 7cde0937-9599-4023-be55-c15a836222b9
+
+  NPC: The Mother Road Voice
+
+    VISUAL: Surreal dialogue portrait of a human face half-formed from radio static, motel neon, and black water reflections, features shifting and indistinct, no clear age or gender, analog distortion, CRT scanlines, threatening calm expression, supernatural desert horror aesthetic
+
+    DIALOGUE EXAMPLES:
+      'Driver, you have reached your final vacancy.'
+      'Please sign clearly. We dislike errors in the register.'
+      'Morning has been delayed for your convenience.'
+      'Every guest returns. Some simply take the long road.'
+
+    UUID: ea2a30ce-0037-4e78-9edc-570d3b54b380
 
 
 LOCATIONS:
 
-  Dry Wells Diner & Gas:
+  Highway Pullout at Lost Mesa:
 
-    VISUAL: A lonely roadside diner and two-pump gas station in rural New Mexico desert, year 1982, sunset turning to night, dust storm building on the horizon, flickering fluorescent sign, old pickup trucks, cracked asphalt, telephone poles, warm diner windows against vast empty desert, cinematic horror atmosphere
+    VISUAL: 1982 rural New Mexico desert highway at dusk, empty two-lane road, faded turquoise roadside sign for LOST MESA MOTOR LODGE, dusty station wagon with hood up, telephone poles, red mesas on the horizon, gathering storm clouds, lonely roadside horror atmosphere, cinematic background art
 
-    UUID: 0c49de68-2f98-4f5e-9031-d8cb4e0992f4
+    UUID: 06f305cb-1ddc-4711-b267-340c4bac597f
 
-  Red Mesa Motor Lodge Exterior:
+  Motel Lobby and Office:
 
-    VISUAL: An abandoned U-shaped roadside motel in the rural New Mexico desert, year 1982, cracked neon VACANCY sign still glowing, boarded windows mixed with a few mysteriously lit rooms, rusted ice machine, drifting sand, empty courtyard, hints of a drained swimming pool, night dust storm, analog horror mood
+    VISUAL: Abandoned roadside motel office in 1982, dusty wood paneling, cracked vinyl chairs, front desk with brass bell, key cubbies, rotary phone, analog tabletop radio, faded tourist brochures, dead neon glow and flickering fluorescent light, eerie analog horror background
 
-    UUID: 0a7ad73a-720c-4259-8963-d6a47c4fc4d0
+    UUID: e5afbf45-d4d0-47cf-b354-dd8f1781cf9d
 
-  Motel Office and Corridor:
+  Exterior Walkway and Room 7:
 
-    VISUAL: The front office of an abandoned roadside motel blending into an impossible corridor, faux-wood paneling, rotary phone, brass room key wall, faded tourist brochures, dusty check-in ledger, patterned carpet stretching too far into darkness, sickly green fluorescent lighting, year 1982, eerie visual novel background
+    VISUAL: Nighttime exterior of a decaying desert motel, cracked stucco walls, long shadowy walkway, mismatched room numbers, an ominous Room 7 door where it should not fit, flickering red VACANCY sign, windblown dust, deep pools of darkness, supernatural horror background
 
-    UUID: 3f1e0854-6cfa-4750-8c62-d979859e639f
+    UUID: 471f21d5-1f21-419e-af27-793ba40bde2a
 
-  Room 8:
+  Drained Pool Courtyard:
 
-    VISUAL: A 1982 motel room interior in rural New Mexico, twin bed with floral bedspread, cigarette burns, analog clock radio, buzzing lamp, stained wallpaper shifting between clean and fire-scorched, ominous mirror, cheap wooden dresser, desert moonlight through venetian blinds, intimate supernatural horror atmosphere
+    VISUAL: Desert motel courtyard under pale moonlight, empty cracked swimming pool full of weeds and blown sand, rusted lounge chairs, dry palm tree, broken chain-link fence, open New Mexico sky, eerie stillness and drifting debris, cinematic horror background
 
-    UUID: 179cf9f5-59e6-4458-93a6-13c33d623ccc
+    UUID: f4348bb0-923a-49e8-a982-188341042800
+
+  Pump House and Black-Water Cistern:
+
+    VISUAL: Subterranean motel pump house beneath the desert, concrete stairs, rusted pipes, dangling bare bulbs, jury-rigged radio transmitter equipment, black water cistern reflecting weak light, cramped oppressive shadows, analog supernatural horror background
+
+    UUID: 5403788c-b106-462a-8d51-7416173b4f62
 
 
 INTRO:
 
-  LOCATION: Dry Wells Diner & Gas
+  LOCATION: Highway Pullout at Lost Mesa
 
   NON-PLAYER  CHARACTERS:
-    Deputy Rosa Salazar
-    Eli Navarro
+    June Mercer,
+    The Mother Road Voice,
 
-  SCENE SYNOPSIS: Near sundown outside Dry Wells, Mara Bell coasts her failing sedan into the only diner and gas station for miles. Eli tells her the car will not be drivable until morning, while Deputy Rosa Salazar warns her not to seek shelter at the abandoned Red Mesa Motor Lodge because travelers connected to that place have a habit of vanishing from local memory as surely as they vanish from the highway. When a dust storm rolls in, the phone lines sputter, and every spare room in town is gone, Mara is forced toward the motel despite the warnings.
+  SCENE SYNOPSIS: Rosa's station wagon dies on a deserted highway after her dashboard radio crackles to life on an unused frequency and guides her toward the abandoned Lost Mesa Motor Lodge. At the roadside sign she meets June Mercer, a frightened young photographer who claims she has already tried to leave several times and somehow keeps returning to the same pullout. The intro establishes the 1982 desert setting, Rosa's practical need for a phone or help, and the first impossible hint that the motel is calling stranded travelers by name.
 
 
 ACT I:
 
-  SCENE 1, LOCATION Red Mesa Motor Lodge Exterior
+  SCENE 1, LOCATION Motel Lobby and Office
 
   NON-PLAYER CHARACTERS:
-    Danny Pike
-    Miriam Voss
+    June Mercer,
+    Dolores Varela,
+    Virgil Bell,
 
-  SCENE SYNOPSIS: Mara crosses the storm-lashed road to Red Mesa and finds the supposedly abandoned motel lit by a flickering VACANCY sign, with fresh footprints in the dust and one office lamp burning. A gaunt runaway teen named Danny whispers from the shadows that she must not accept a room, but before he can explain, the front door opens and Miriam Voss greets Mara with the polished courtesy of a clerk who believes the motel is still in business. Drawn by equal parts fear, exhaustion, and professional curiosity, Mara steps inside.
+  SCENE SYNOPSIS: Searching for a phone, Rosa and June enter the motel office and find it shifting between dust-choked ruin and a fully lit version of itself from decades earlier. Virgil Bell, the courteous night clerk, behaves as though the motel is open and tries to coax Rosa into signing the guest ledger, while Dolores Varela appears outside and urgently warns her not to write her name anywhere. The scene introduces the motel's rules, its unsettling hospitality, and the idea that accepting shelter here may be more dangerous than the desert outside.
 
-  SCENE 2, LOCATION Motel Office and Corridor
+  SCENE 2, LOCATION Exterior Walkway and Room 7
 
   NON-PLAYER CHARACTERS:
-    Danny Pike
-    Miriam Voss
+    June Mercer,
+    Deputy Tom Baca,
+    The Mother Road Voice,
 
-  SCENE SYNOPSIS: Inside the office, Miriam checks Mara in using a guest ledger whose most recent normal entries stop in 1971, and the corridor beyond the desk stretches farther than the building's exterior should allow. Danny slips in through a side door and urgently explains that he has been hiding on the property for days, watching the motel replay the same night and trap anyone who accepts a key after midnight. Mara takes the room key anyway, deciding to investigate the ledger's missing names and the motel's impossible geometry before the storm or the ghost can close around her.
+  SCENE SYNOPSIS: Deputy Tom Baca arrives after spotting Rosa's stranded car, but every attempt to drive the women away bends the road back to the same cracked motel walkway. Room numbers shift when nobody is looking, and the impossible Room 7 appears under the flickering VACANCY sign as radios in the nearby rooms begin broadcasting the Mother Road Voice. The act closes with the cast realizing they are trapped on motel grounds until they understand what is holding them there.
 
 
 ACT II:
 
-  SCENE 1, LOCATION Room 8
+  SCENE 1, LOCATION Drained Pool Courtyard
 
   NON-PLAYER CHARACTERS:
-    Miriam Voss
+    June Mercer,
+    Dolores Varela,
+    Virgil Bell,
 
-  SCENE SYNOPSIS: Room 8 shifts around Mara as she searches it: burnt wallpaper becomes pristine for a heartbeat, the clock radio spits out emergency calls and half-heard pleas, and mirror reflections lag behind her movements. Miriam appears in flashes as both gracious hostess and soot-streaked corpse while Mara witnesses fragments of the motel fire and hears guests pounding at locked doors that no longer exist. Hidden inside the mattress lining, Mara finds a postcard, scorched receipts, and a newspaper clipping that claims only two people died at Red Mesa, contradicting the many voices she heard.
+  SCENE SYNOPSIS: In the moonlit courtyard, Dolores admits she once worked at Lost Mesa and explains that after a deadly flood and a string of vanished motorists, the motel began changing at night. June shows Rosa her Polaroids, each one revealing extra figures around the drained pool and one image that seems to include Rosa before she ever arrived. Virgil appears at the poolside in a moment of cracked lucidity, suggesting that something beneath the motel learned how to speak through radios, intercoms, and guest records.
 
-  SCENE 2, LOCATION Red Mesa Motor Lodge Exterior
+  SCENE 2, LOCATION Exterior Walkway and Room 7
 
   NON-PLAYER CHARACTERS:
-    Danny Pike
-    Deputy Rosa Salazar
+    Deputy Tom Baca,
+    Virgil Bell,
+    The Mother Road Voice,
 
-  SCENE SYNOPSIS: Guided by Danny, Mara searches the courtyard and drained pool area, uncovering luggage tags, license plates, and personal effects from travelers who should have been reported missing years earlier. Rosa arrives through the storm and admits that her late father, then a county deputy, helped bury evidence after the motel owner illegally chained a rear exit during the fire panic to stop guests from fleeing without paying. The three realize Miriam's spirit is trapped between guilt and denial, and that the motel's guest ledger anchors the haunting by binding every new check-in to the dead already waiting there.
+  SCENE SYNOPSIS: Rosa investigates Room 7 and discovers a space that is larger inside than the building allows, filled with suitcases and keepsakes belonging to missing travelers from many different years. Virgil confesses that he kept checking people in under orders from the Voice, which promises the night will end if a new clerk agrees to take his place. When Deputy Baca tries to burn the ledger and break the pattern by force, the hallway warps and drags him toward the pump house while the Mother Road Voice calmly announces that the motel is preparing a permanent reservation.
 
 
 ACT III:
 
-  SCENE 1, LOCATION Motel Office and Corridor
+  SCENE 1, LOCATION Pump House and Black-Water Cistern
 
   NON-PLAYER CHARACTERS:
-    Danny Pike
-    Miriam Voss
+    June Mercer,
+    Deputy Tom Baca,
+    Dolores Varela,
+    The Mother Road Voice,
 
-  SCENE SYNOPSIS: Mara returns to the office to confront Miriam with the hidden names, the false death count, and the truth of the chained exit. Miriam first pleads with trembling sincerity for Mara to stay until morning, then turns possessive and monstrous when Mara reaches for the ledger and the master keys. As Danny distracts the shifting corridor and the motel begins folding in on itself, Mara learns the final rule of Red Mesa: destroying the ledger before dawn can free the trapped guests, but the last person to sign in risks being taken in their place.
+  SCENE SYNOPSIS: Guided by Dolores, Rosa and June descend into the pump house and discover an old emergency radio relay wired into a black-water cistern beneath the motel. Deputy Baca is found alive but injured, and Dolores reveals that the motel's owner once used the transmitter to lure stranded motorists before something in the water began answering back and taking control of the place. Rosa realizes her knowledge of radios gives her a chance either to overload the system or retune it long enough to free the trapped voices tied to the ledger.
 
-  SCENE 2, LOCATION Red Mesa Motor Lodge Exterior
+  SCENE 2, LOCATION Motel Lobby and Office
 
   NON-PLAYER CHARACTERS:
-    Deputy Rosa Salazar
-    Danny Pike
-    Miriam Voss
+    June Mercer,
+    Deputy Tom Baca,
+    Dolores Varela,
+    Virgil Bell,
+    The Mother Road Voice,
 
-  SCENE SYNOPSIS: In the heart of the storm beneath the flickering VACANCY sign, Mara uses her cassette recorder to play back the voices of the victims, forcing Miriam to relive the night she failed to save them. Rosa overloads the sign's failing transformer while Danny hurls the guest ledger into the shower of sparks, igniting decades of paper, dust, and denial. As the motel peels back from welcoming illusion to blackened ruin, Miriam must choose between dragging Mara into the fire as a replacement guest or opening the way for the dead to finally leave Red Mesa behind.
+  SCENE SYNOPSIS: As the motel fully reanimates around them with blazing lights, phantom guests, and doors slamming in sequence, Rosa uses the office intercom and the retuned transmitter to call every stolen name back out of the building. Virgil rebels against the Voice long enough for Rosa to destroy the guest ledger and sever Room 7 from the rest of the motel, while Dolores stays behind to shut the office and hold the entity in place. The climax forces the cast to choose survival over certainty as the illusion of hospitality collapses into darkness and rushing black water.
 
 
 OUTRO:
 
-  LOCATION: Dry Wells Diner & Gas
+  LOCATION: Highway Pullout at Lost Mesa
 
   NON-PLAYER  CHARACTERS:
-    Deputy Rosa Salazar
-    Eli Navarro
-    Danny Pike
+    June Mercer,
+    Deputy Tom Baca,
 
-  SCENE SYNOPSIS: At dawn, Red Mesa is nothing but a collapsed shell half-buried in sand, with no sign that its lights ever burned through the night. Rosa quietly commits to reopening the old case, Danny accepts a ride out of Dry Wells and his first real chance to start over, and Eli returns Mara's repaired car keys beside a stack of warped cassette tapes recovered from the wreckage. Mara drives east into the sunrise believing she escaped, until Miriam's velvet voice bleeds through the static of the car radio with one final promise: there are still vacancies.
+  SCENE SYNOPSIS: At dawn, Rosa, June, and Deputy Baca reach the highway and find the Lost Mesa Motor Lodge reduced to old concrete slabs and a fallen sign, as if it has been abandoned for decades. June's photographs develop almost completely blank except for one frame showing the office light still burning, and Rosa's repaired radio whispers the word vacancy one last time before going silent. The story ends with the survivors driving toward town unsure whether Dolores and Virgil were finally laid to rest, leaving relief and lingering dread in equal measure.

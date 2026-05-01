@@ -107,7 +107,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                 output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
                 for npc_uuid in self.intro_scene.scene_data.non_player_character_uuids:
                     npc_name = self.get_npc_name(npc_uuid)
-                    output_str += f"    {npc_name}\n"
+                    output_str += f"    {npc_name},\n"
 
         output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrtive_summary}\n"
 
@@ -123,7 +123,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
-                        output_str += f"    {npc_name}\n"
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -139,7 +139,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
-                        output_str += f"    {npc_name}\n"
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -154,7 +154,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                     output_str += f"\n  NON-PLAYER CHARACTERS:\n"
                     for npc_uuid in scene.scene_data.non_player_character_uuids:
                         npc_name = self.get_npc_name(npc_uuid)
-                        output_str += f"    {npc_name}\n"
+                        output_str += f"    {npc_name},\n"
             
             output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
             scene_idx += 1
@@ -168,7 +168,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                 output_str += f"\n  NON-PLAYER  CHARACTERS:\n"
                 for npc_uuid in self.outro_scene.scene_data.non_player_character_uuids:
                     npc_name = self.get_npc_name(npc_uuid)
-                    output_str += f"    {npc_name}\n"
+                    output_str += f"    {npc_name},\n"
         
         output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
 

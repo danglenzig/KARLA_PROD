@@ -19,7 +19,7 @@ load_dotenv()
 #========
 
 class CharacterData(BaseModel):
-    uuid: str                       = Field(..., description="A unique ID string for this character")
+    uuid: str                       = Field(..., description="A unique UUID string for this character")
     name: str                       = Field(..., description="The name of the character")
     portrait_image_prompt: str      = Field(..., description="A descriptive prompt to generate the dialogue portrait image of the character")
     dialogue_examples: list[str]    = Field(..., description="A list of example dialogue lines for the character. These will be used to generate " \
@@ -27,7 +27,7 @@ class CharacterData(BaseModel):
 
 
 class LocationData(BaseModel):
-    uuid: str                       = Field(..., description="A unique ID string for this location")
+    uuid: str                       = Field(..., description="A unique UUID string for this location")
     name: str                       = Field(..., description="The name of the location")
     location_image_prompt: str      = Field(..., description="A descriptive prompt to generate the background image of the location")
 
@@ -41,19 +41,16 @@ class NonPlayerCharacter(BaseModel):
     character_data: CharacterData    = Field(..., description="The data for the non-player character, including name, portrait image prompt, and dialogue examples")
 
 class SceneData(BaseModel):
-    location_uuid: str                        = Field(..., description="The UUID of the scene's location")
-    non_player_character_uuids: Optional[list[str]]    = Field(..., description="A list of UUIDs for any non-player characters that are present in the scene")
-    narrtive_summary: str               = Field(..., description="A brief summary of the narrative that takes place in the scene. This will be used to generate " \
+    uuid: str                                           = Field(...,description="A unique UUID for this scene")
+    scene_name: str                                     = Field(...,description="A human-readable, unique and stable ID for this scene. For example 'intro', 'outro', 'act1_scene1', 'act1_scene2', " \
+    "'act2_scene1', 'act2_scene2', and so on.")
+    location_uuid: str                                  = Field(..., description="The UUID of the scene's location")
+    non_player_character_uuids: Optional[list[str]]     = Field(..., description="A list of UUIDs for any non-player characters that are present in the scene")
+    narrtive_summary: str                               = Field(..., description="A brief summary of the narrative that takes place in the scene. This will be used to generate " \
     "the dialogue and player choices for the scene.")    
 
 class Scene(BaseModel):
     scene_data: SceneData            = Field(..., description="The data for the scene, including location, non-player characters, and narrative summary")
-
-# class LocationsByUUID(BaseModel):
-#     location_catalog: Optional[dict[str, LocationData]] = Field(..., description="All the story locations, indexed by UUID")
-
-# class CharactersByUUID(BaseModel):
-#     character_catalog: Optional[dict[str, CharacterData]] = Field(..., description="All the game's characters, indexed by UUID")
 
 class NarrativeDesignOutputSchema(BaseModel):
     story_title: str                                = Field(..., description="The title of the story")
@@ -208,6 +205,8 @@ class NarrativeDesignOutputSchema(BaseModel):
             npc_data["visual_description"] = npc.character_data.portrait_image_prompt
             data[npc_key] = npc_data
         return data
+    
+    # TODO: maybe a get_scene_catalog(self) function too. We'll see...
 
 
 
@@ -241,7 +240,9 @@ Every game shall have:
 - Exactly three acts, each act conisting of 2-3 scenes
 - Exactly one outro scene -- the game's denouement
 
-Use the get_uuid_string tool to get UUID strings
+Use the get_uuid_string tool to get UUID strings.
+
+
 """
 
 #==============
@@ -317,8 +318,12 @@ async def main():
     #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
     output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
 
-    print(f"{json.dumps(output.model_dump(), indent=2)}") # model_dump(): BaseModel -> Python dictionary
+    print(f"{output.model_dump_json(indent=2)}") # model_dump_json(): BaseModel -> clean JSON
     print(output.human_readable())
+
+    # write the data to a dummy file
+    # with open('dummy_data.json', 'w') as f:
+    #     f.write(output.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

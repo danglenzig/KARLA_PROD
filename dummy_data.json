@@ -1,0 +1,206 @@
+{
+  "story_title": "Vacancy at Sundown Motor Lodge",
+  "synopsis": "In 1982, freelance radio reporter Lena Marquez is stranded on a lonely stretch of rural New Mexico highway when her car breaks down during a dust storm. A distorted distress call leads her to the long-abandoned Sundown Motor Lodge, where lights burn in dead rooms and a smiling hostess named Mabel Rusk still acts as if the motel never closed. Inside, Lena crosses paths with a weary county deputy tied to the motel's oldest disappearance, a frightened local teen who knows the legends, and a widow who has spent years chasing the voice of her missing husband. As the night deepens, Lena uncovers a supernatural time loop built from grief, memory, and the desert's hunger for the lost. The tone is eerie, intimate, and dread-soaked, blending Southwestern isolation, analog ghost story aesthetics, and psychological horror with a strong investigative protagonist.",
+  "player_character": {
+    "character_data": {
+      "uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "name": "Lena \"Marky\" Marquez",
+      "portrait_image_prompt": "1982 Latina freelance radio reporter in her late 20s, dark wavy hair, denim jacket over a simple western shirt, carrying a cassette recorder and 35mm camera, dusty from the desert road, alert and skeptical expression, cinematic dialogue portrait, realistic painted visual novel style",
+      "dialogue_examples": [
+        "My car dies in the middle of nowhere and the first thing I hear is a phantom distress call. That's either a story or a very bad omen.",
+        "I don't scare easy, Deputy. I just prefer my haunted buildings to stay in other people's counties.",
+        "These photos were taken years apart, but the shadows fall exactly the same. That's not possible.",
+        "If this motel wants to keep its secrets, it's going to have to do better than flickering lights and bad manners."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+        "name": "Deputy Tomas Ortega",
+        "portrait_image_prompt": "1982 rural New Mexico county deputy, early 40s, worn tan uniform shirt, brown campaign hat, tired eyes, weathered face with stubble, flashlight and revolver belt, guarded stoic expression, cinematic dialogue portrait, realistic painted visual novel style",
+        "dialogue_examples": [
+          "Folks around here don't stop at the Sundown unless they mean to disappear.",
+          "I don't need you to believe the stories. I need you to stay alive long enough to leave.",
+          "I've answered calls out there before. The radio always goes dead at the property line.",
+          "If that sign is lit tonight, then something inside is awake."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "67a020ae-540b-4902-8123-3a9f549c4ab8",
+        "name": "Ricky Molina",
+        "portrait_image_prompt": "1982 New Mexico gas station teen, 17 years old, skinny build, feathered dark hair, cheap work shirt with a stitched name patch, grease-stained hands, nervous eyes, holding a battered flashlight, frightened but eager expression, realistic painted visual novel style",
+        "dialogue_examples": [
+          "I saw the VACANCY sign switch on by itself, swear to God. There isn't even power out there.",
+          "People say the rooms look normal until you check the calendar and realize it never changed.",
+          "You can laugh, but my cousin went there on a dare and came back talking like he'd missed ten years.",
+          "If you go, take a real light. Stuff in that place hates the dark less than it hates being seen."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "f381d771-5423-4850-b889-8f44700f234d",
+        "name": "June Holloway",
+        "portrait_image_prompt": "travel-worn woman in her late 40s, dusty tan coat over a black blouse, curled auburn hair touched with gray, clutching an old Polaroid photo and a tarnished motel key, hollow-eyed but resolute expression, cinematic dialogue portrait, realistic painted visual novel style",
+        "dialogue_examples": [
+          "My husband checked into this motel in 1968 and somehow never managed to check out.",
+          "The rooms rearrange themselves when you lie. I learned that the hard way.",
+          "Every year I tell myself I'm here for answers. Every year the place asks me what I'm willing to trade.",
+          "If you hear someone you love calling from behind a locked door, do not answer."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "1eb1096f-632c-4fb9-99e1-3808ea157596",
+        "name": "Mabel Rusk",
+        "portrait_image_prompt": "ghostly 1950s motel proprietress, elegant middle-aged woman with lacquered auburn hair, pale skin, pristine teal hostess dress, pearl earrings, fixed welcoming smile hiding menace, warm desk-lamp glow against an unnatural darkness, eerie dialogue portrait, realistic painted visual novel style",
+        "dialogue_examples": [
+          "Welcome to the Sundown Motor Lodge, dear. We do so hate turning away weary travelers.",
+          "The desert keeps what is abandoned. I simply make our guests comfortable.",
+          "Morning is a cruel idea invented by people who expect to leave.",
+          "A room is just a promise with walls around it."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+        "name": "Desert Highway Turnout",
+        "location_image_prompt": "isolated roadside gas stop on a rural New Mexico highway at night in 1982, two old gas pumps, cracked asphalt, a pay phone, dust storm gathering under a dark sky, sodium vapor light flickering, distant red motel sign glowing on the horizon, cinematic desert horror background, realistic painted style"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+        "name": "Sundown Motor Lodge Office",
+        "location_image_prompt": "abandoned roadside motel office in rural New Mexico, 1982, wood-paneled front desk, dusty tourist brochures, brass bell, humming fluorescent lights that should not work, dead moths, faded Southwestern decor, eerie analog horror atmosphere, realistic painted background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "c5c1b28b-926b-4fcb-84ec-14e8ece13e38",
+        "name": "Room 8",
+        "location_image_prompt": "small 1982 motel room frozen in time, floral bedspread, rotary phone, buzzing bedside lamp, stained wallpaper, old suitcase on luggage rack, Polaroids and torn family photos scattered about, moonlight through venetian blinds, claustrophobic supernatural horror mood, realistic painted background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "bafb11cb-b970-4bf7-a49e-485b529c1f06",
+        "name": "Empty Pool and Pump House",
+        "location_image_prompt": "rear lot of an abandoned desert motel, drained cracked swimming pool, rusted chain-link fence, half-buried cars in drifting sand, concrete pump house with door hanging open, red neon spill from a distant sign, windy night in rural New Mexico, ominous horror background, realistic painted style"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "e86ebb36-0ae1-4f1e-ab84-30e7ebc09bb7",
+      "scene_name": "intro",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "non_player_character_uuids": [
+        "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8"
+      ],
+      "narrtive_summary": "Lena Marquez is stranded at an isolated highway turnout when her car overheats during a dust storm. While trying to contact help on her cassette recorder and a nearby pay phone, she catches a broken distress call that seems to come from the long-abandoned Sundown Motor Lodge. Ricky Molina panics because the motel has had no electricity for years, and Deputy Tomas Ortega warns Lena that the storm has cut off the main road until morning. When the motel's old VACANCY sign suddenly flickers to life in the distance, Lena decides investigating it is safer than waiting in the open desert."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "40c4fc6a-53d9-4148-9591-2a87219b287c",
+        "scene_name": "act1_scene1",
+        "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+        "non_player_character_uuids": [
+          "f381d771-5423-4850-b889-8f44700f234d",
+          "1eb1096f-632c-4fb9-99e1-3808ea157596"
+        ],
+        "narrtive_summary": "Inside the motel office, Lena finds the abandoned building impossibly lit, tidy, and ready for guests. Mabel Rusk welcomes her with unsettling courtesy, behaving as if the year were still decades earlier and the motel were fully operational. Another guest, June Holloway, quietly warns Lena not to accept a room key or sign the ledger. Lena notices fresh ink beside names that should belong to people missing for years, establishing that the motel is actively collecting travelers."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "db95a477-3be1-4233-a6b3-48667403f1c8",
+        "scene_name": "act1_scene2",
+        "location_uuid": "c5c1b28b-926b-4fcb-84ec-14e8ece13e38",
+        "non_player_character_uuids": [
+          "f381d771-5423-4850-b889-8f44700f234d",
+          "1eb1096f-632c-4fb9-99e1-3808ea157596"
+        ],
+        "narrtive_summary": "In Room 8, Lena finds a space trapped between 1968 and 1982: the lamp works without power, the rotary phone rings without a line, and Polaroids show guests from different decades standing in the exact same pose. June admits her husband vanished here in 1968 and that she keeps returning whenever the motel calls to her. Mabel's voice arrives through the dead phone, inviting Lena to stay until dawn. Lena begins to understand that the motel feeds on longing, regret, and the willingness to believe a lost loved one can still be reclaimed."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "0f4f2a8a-239f-43b5-84be-d8d2eda8d7eb",
+        "scene_name": "act2_scene1",
+        "location_uuid": "bafb11cb-b970-4bf7-a49e-485b529c1f06",
+        "non_player_character_uuids": [
+          "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+          "67a020ae-540b-4902-8123-3a9f549c4ab8"
+        ],
+        "narrtive_summary": "Lena slips to the back lot and joins Deputy Ortega and Ricky, who followed her to the motel out of fear she would not come back. Around the drained pool and pump house, they uncover half-buried cars, old luggage, and forgotten evidence tags from multiple unsolved disappearances. Ortega confesses that his own father vanished while responding to a call from the motel in 1968. Inside the pump house, the trio discovers a humming switchboard-like mechanism wired through the property, suggesting the motel's haunting is anchored to a physical system of sound, light, and memory."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "d4b3b9df-1f4f-4978-915b-0fe4d3113cd2",
+        "scene_name": "act2_scene2",
+        "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+        "non_player_character_uuids": [
+          "f381d771-5423-4850-b889-8f44700f234d",
+          "1eb1096f-632c-4fb9-99e1-3808ea157596",
+          "5a46e957-6a4a-49ef-8d30-448ee57dfe16"
+        ],
+        "narrtive_summary": "Back in the office, Lena confronts Mabel with the guest ledger and the evidence from the rear lot. Mabel drops her friendly façade and claims she merely keeps the doomed from dying alone in the desert. June hears her missing husband's voice through the wall, while Ortega hears his father calling from the lobby mirror, proving the motel attacks each person through unresolved grief. Lena realizes Mabel's power grows when people accept the stories she offers them and weakens when they name the truth aloud."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "4f1506ae-e69b-4e2f-b5e5-b87b6709eb82",
+        "scene_name": "act3_scene1",
+        "location_uuid": "bafb11cb-b970-4bf7-a49e-485b529c1f06",
+        "non_player_character_uuids": [
+          "f381d771-5423-4850-b889-8f44700f234d",
+          "1eb1096f-632c-4fb9-99e1-3808ea157596"
+        ],
+        "narrtive_summary": "Lena and June descend beneath the pump house into a service tunnel where old room keys, phone wires, and personal belongings from lost travelers have been woven into a shrine of trapped years. There, June finds the remains of her husband and the Room 8 key that Mabel has used to keep his voice alive as bait. Mabel tries to convince June that destroying the motel will erase the last trace of him forever. June must choose between the comfort of illusion and the painful certainty Lena has uncovered."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "37407aa2-b9f7-486a-8c5a-ddb9f4bb603c",
+        "scene_name": "act3_scene2",
+        "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+        "non_player_character_uuids": [
+          "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+          "67a020ae-540b-4902-8123-3a9f549c4ab8",
+          "f381d771-5423-4850-b889-8f44700f234d",
+          "1eb1096f-632c-4fb9-99e1-3808ea157596"
+        ],
+        "narrtive_summary": "As a violent windstorm tears across the desert, Lena leads a final stand in the motel office. Ricky overloads the old electrical system, Ortega tears the guest ledger free from the desk, and Lena uses her recorder to play back Mabel's contradictions over the lobby speakers, breaking the spell of her perfect hospitality. June rejects the false voice of her husband and sets the ledger on fire, causing Mabel's illusion to collapse. The Sundown Motor Lodge instantly ages, rots, and begins to cave in around them, forcing the survivors to flee before the whole structure buries its secrets for good."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "23a6126b-84ca-4970-b035-064f98e08a51",
+      "scene_name": "outro",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "non_player_character_uuids": [
+        "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8"
+      ],
+      "narrtive_summary": "At dawn, Lena reaches the highway with scorched tapes, a surviving Polaroid, and Deputy Ortega and Ricky at her side. The Sundown Motor Lodge has collapsed into a mound of ruined timber and sand, and June is nowhere to be found except for the old key she leaves behind. Later, Ortega cannot find any county record proving June Holloway was alive in 1982, leaving open the possibility that she too had long belonged to the motel. As Lena drives toward Albuquerque, her recorder clicks on by itself and Mabel's soft voice whispers one last word: 'Vacancy.'"
+    }
+  }
+}

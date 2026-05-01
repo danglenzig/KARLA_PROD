@@ -1,6 +1,6 @@
 import asyncio
 from src.narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSchema, WorkflowTextInput
-from src.scene_beat_agent import SceneBeatAgent, WorkflowAsNarrativeDesignSchemaInput
+from src.scene_beat_agent import SceneBeatAgent
 from pydantic import BaseModel, Field
 import json
 
@@ -24,14 +24,13 @@ async def program_entry():
     human_readable = nd_agent_output.human_readable()
 
     print(f"\n\n{human_readable}\n\n")
-    print(f"==== LOCATIONS ====\n\n{json.dumps(location_catalog, indent=2)}\n\n")
-    print(f"==== CHARACTERS ====\n\n{json.dumps(character_catalog, indent=2)}\n\n")
-    
+
     #========================
     # WRITING THE SCENE BEATS
     #========================
+    nd_json = nd_agent_output.model_dump_json()
     sb_agent: SceneBeatAgent = SceneBeatAgent()
-    await sb_agent.run_workflow(nd_agent_output)
+    await sb_agent.run_workflow(nd_json)
 
 
 async def main():

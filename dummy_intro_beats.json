@@ -1,0 +1,149 @@
+{
+  "story_title": "Vacancy at Sundown Motor Lodge",
+  "scene_name": "intro",
+  "scene_uuid": "e86ebb36-0ae1-4f1e-ab84-30e7ebc09bb7",
+  "source_scene_summary": "Lena Marquez is stranded at an isolated highway turnout when her car overheats during a dust storm. While trying to contact help on her cassette recorder and a nearby pay phone, she catches a broken distress call that seems to come from the long-abandoned Sundown Motor Lodge. Ricky Molina panics because the motel has had no electricity for years, and Deputy Tomas Ortega warns Lena that the storm has cut off the main road until morning. When the motel's old VACANCY sign suddenly flickers to life in the distance, Lena decides investigating it is safer than waiting in the open desert.",
+  "location_name": "Desert Highway Turnout",
+  "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+  "player_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+  "non_player_character_uuids": [
+    "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+    "67a020ae-540b-4902-8123-3a9f549c4ab8"
+  ],
+  "dramatic_question": "Will Lena ignore the impossible distress call and wait out the storm, or follow it to the abandoned Sundown Motor Lodge?",
+  "scene_goal": "Get help or shelter for the night while determining whether the distress call is real.",
+  "scene_turn": "A routine roadside breakdown becomes a supernatural lead when the dead motel's VACANCY sign lights up, pushing Lena to investigate.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "intro_beat_01",
+      "purpose": "Establish Lena's predicament, the desert horror tone, and her instinct to investigate rather than panic.",
+      "summary": "Lena pulls into the turnout with her engine overheating as a dust storm gathers hard enough to erase the road behind her. She steadies herself by switching on her cassette recorder and narrating the breakdown like the start of a field report.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "isolated and ominous",
+      "revelation": "Lena is stranded in worsening storm conditions with an overheating car.",
+      "tension_change": "rise",
+      "player_goal": "Assess the breakdown and find a way to contact help.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Lena has temporary cover at the turnout, but her car is not getting her anywhere soon."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "intro_beat_02",
+      "purpose": "Introduce the supernatural hook that shifts the scene from inconvenience to mystery.",
+      "summary": "At the pay phone, Lena tries to reach help while monitoring her recorder, only to catch a burst of static shaped into a broken distress call. Through the interference, she picks out enough to connect the plea to the Sundown Motor Lodge.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "uncanny and tense",
+      "revelation": "A garbled distress signal appears to be coming from the long-abandoned Sundown Motor Lodge.",
+      "tension_change": "twist",
+      "player_goal": "Figure out whether the signal is real and where it is coming from.",
+      "interactive": true,
+      "choice_prompt": "How does Lena try to make sense of the interference?",
+      "branch_outcomes": [
+        "She replays and isolates the words enough to fix on 'Sundown' as the source.",
+        "She keeps pushing the line live and comes away certain the signal is not a normal phone call."
+      ],
+      "exit_state": "Lena now has an impossible lead tied to the motel."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "intro_beat_03",
+      "purpose": "Use local fear to confirm that the motel should not be active and deepen the sense of wrongness.",
+      "summary": "Ricky Molina hears Lena name the Sundown and immediately panics. He insists the motel has been abandoned and without electricity for years, making any call or light from it impossible.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8"
+      ],
+      "focal_character_uuid": "67a020ae-540b-4902-8123-3a9f549c4ab8",
+      "mood": "nervous and escalating",
+      "revelation": "Locals consider the Sundown dead, powerless, and dangerous to even mention after dark.",
+      "tension_change": "rise",
+      "player_goal": "Get Ricky to explain why the motel terrifies him.",
+      "interactive": true,
+      "choice_prompt": "Does Lena press Ricky for hard facts or try to calm him into talking?",
+      "branch_outcomes": [
+        "Ricky blurts out practical details about the motel being shut down for years.",
+        "Ricky reveals frightened local gossip that no one goes near the place when strange lights appear."
+      ],
+      "exit_state": "Ricky's fear makes the distress call feel like a real warning instead of a prank."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "intro_beat_04",
+      "purpose": "Bring in official authority, close off the safest route, and legitimize the threat.",
+      "summary": "Deputy Tomas Ortega arrives with the news that the storm has cut off the main road until morning. When Lena mentions the Sundown, his skepticism hardens into a grim warning: whatever is out there, she should stay away from it.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8",
+        "5a46e957-6a4a-49ef-8d30-448ee57dfe16"
+      ],
+      "focal_character_uuid": "5a46e957-6a4a-49ef-8d30-448ee57dfe16",
+      "mood": "guarded and foreboding",
+      "revelation": "The storm has sealed the main road, and Ortega treats the Sundown as a genuine danger rather than a ghost story.",
+      "tension_change": "rise",
+      "player_goal": "Find out whether Ortega can help her leave or explain what he knows.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Lena learns official help is limited and that even the deputy is uneasy about the motel."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "intro_beat_05",
+      "purpose": "Narrow Lena's options so the motel becomes the least impossible path forward.",
+      "summary": "The turnout stops feeling like refuge as the storm intensifies, the pay phone fails outright, and Lena's car still will not safely run. Ortega cannot abandon the road closure, and Ricky is too frightened to do more than watch the horizon.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8",
+        "5a46e957-6a4a-49ef-8d30-448ee57dfe16"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "claustrophobic and pressured",
+      "revelation": "Waiting at the turnout is becoming as dangerous as moving into the unknown.",
+      "tension_change": "rise",
+      "player_goal": "Decide whether there is any safe option besides staying put.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The practical alternatives to investigating the motel have nearly vanished."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "intro_beat_06",
+      "purpose": "Deliver the scene's visual supernatural turn and lock Lena onto the story's central location.",
+      "summary": "Through the dust, the Sundown's dead VACANCY sign suddenly flickers to life in the distance. Ricky panics, Ortega goes silent, and Lena decides the lit motel is now the only nearby lead, shelter, and possible source of the distress call.",
+      "location_uuid": "734e49a6-0d64-4da4-b947-5c1fc7040f6e",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "67a020ae-540b-4902-8123-3a9f549c4ab8",
+        "5a46e957-6a4a-49ef-8d30-448ee57dfe16"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "dread-soaked and decisive",
+      "revelation": "The Sundown is active tonight despite supposedly having no power.",
+      "tension_change": "twist",
+      "player_goal": "Choose whether to investigate the motel or remain stranded in the storm.",
+      "interactive": true,
+      "choice_prompt": "What drives Lena to head for the Sundown?",
+      "branch_outcomes": [
+        "She commits as a reporter, chasing the impossible story.",
+        "She commits as a rescuer, determined to check whether someone inside needs help.",
+        "She commits reluctantly, treating the motel as the least-bad shelter available."
+      ],
+      "exit_state": "With Ortega stuck at the closure and Ricky too scared to follow, Lena heads toward the Sundown Motor Lodge alone."
+    }
+  ]
+}

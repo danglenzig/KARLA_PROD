@@ -1,0 +1,157 @@
+{
+  "story_title": "Vacancy at Sundown Motor Lodge",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "40c4fc6a-53d9-4148-9591-2a87219b287c",
+  "source_scene_summary": "Inside the motel office, Lena finds the abandoned building impossibly lit, tidy, and ready for guests. Mabel Rusk welcomes her with unsettling courtesy, behaving as if the year were still decades earlier and the motel were fully operational. Another guest, June Holloway, quietly warns Lena not to accept a room key or sign the ledger. Lena notices fresh ink beside names that should belong to people missing for years, establishing that the motel is actively collecting travelers.",
+  "location_name": "Sundown Motor Lodge Office",
+  "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+  "player_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+  "non_player_character_uuids": [
+    "f381d771-5423-4850-b889-8f44700f234d",
+    "1eb1096f-632c-4fb9-99e1-3808ea157596"
+  ],
+  "dramatic_question": "Can Lena get shelter and answers from the motel office without letting Mabel turn her into the next name in the ledger?",
+  "scene_goal": "Secure refuge from the storm while investigating the office and refusing Mabel's attempt to formally check Lena in.",
+  "scene_turn": "What first appears to be an impossible shelter reveals itself as an active trap; Lena refuses the ledger and follows June toward Room 8 to investigate on her own terms.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Establish the office as an impossible refuge and immediately unsettle Lena's expectations.",
+      "summary": "Lena pushes in out of the dust storm expecting ruin and darkness, but finds the office lit, cool, and meticulously orderly. The working fluorescents, polished bell, and neatly arranged brochures make the place feel preserved for arrival rather than abandoned to decay.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "uncanny relief",
+      "revelation": "The motel office is functioning in ways that should be impossible for a long-abandoned property.",
+      "tension_change": "rise",
+      "player_goal": "Get out of the storm and assess whether the office is genuinely safe.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Before Lena can decide whether the office is a miracle or a setup, Mabel appears as if she has been waiting for her."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Introduce Mabel's hospitality as both seductive and threatening.",
+      "summary": "Mabel Rusk greets Lena with flawless hostess warmth, speaks as though the Sundown is fully operational, and pivots every practical question back toward the check-in process. Her most unsettling touch is greeting Lena like an expected guest, pen and ledger already prepared on the counter.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "1eb1096f-632c-4fb9-99e1-3808ea157596",
+      "mood": "courteous menace",
+      "revelation": "Mabel behaves less like a startled owner and more like someone completing a ritual she has performed many times before.",
+      "tension_change": "rise",
+      "player_goal": "Learn who Mabel is while avoiding being maneuvered into a commitment.",
+      "interactive": true,
+      "choice_prompt": "How does Lena respond to Mabel's check-in routine?",
+      "branch_outcomes": [
+        "Lena plays along to keep Mabel talking and gather details.",
+        "Lena challenges the motel's impossible condition, drawing a cooler, sharper politeness from Mabel.",
+        "Lena asks for practical help, but Mabel smoothly redirects her back to the ledger and room assignment."
+      ],
+      "exit_state": "Mabel places the open ledger and pen directly in front of Lena, turning hospitality into a demand."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Introduce June as a counter-voice and fracture Mabel's control over the encounter.",
+      "summary": "From a shadowed chair, June Holloway quietly warns Lena not to sign anything and not to take any key Mabel offers. Mabel dismisses June as confused and overwrought, but her smile tightens just enough to reveal open hostility beneath the hostess act.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "f381d771-5423-4850-b889-8f44700f234d",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "f381d771-5423-4850-b889-8f44700f234d",
+      "mood": "hushed alarm",
+      "revelation": "June recognizes the check-in ritual as dangerous and has enough experience with the motel to fear specific actions.",
+      "tension_change": "twist",
+      "player_goal": "Figure out whether June is delusional, trapped, or the first honest person in the room.",
+      "interactive": true,
+      "choice_prompt": "Does Lena openly acknowledge June's warning or hide that it matters to her?",
+      "branch_outcomes": [
+        "If Lena backs June openly, Mabel's friendliness thins into veiled threat.",
+        "If Lena conceals her interest, Mabel relaxes slightly while June is forced to warn Lena more discreetly."
+      ],
+      "exit_state": "Lena is no longer dealing with one strange hostess; she is caught between two incompatible versions of what the motel is."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Give Lena hard evidence that the motel is actively collecting people across years.",
+      "summary": "When Mabel is briefly distracted, Lena studies the guest ledger and finds wet black ink beside entries that should be decades old. Names she recognizes from old disappearance stories sit beside room numbers as if they checked in tonight, and one older Holloway entry makes June visibly flinch.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "f381d771-5423-4850-b889-8f44700f234d",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "forensic dread",
+      "revelation": "The ledger is still being updated with the names of people who vanished years earlier, proving the motel is actively claiming travelers rather than merely echoing the past.",
+      "tension_change": "rise",
+      "player_goal": "Verify that the motel is more than eccentric by finding concrete proof.",
+      "interactive": true,
+      "choice_prompt": "What does Lena focus on in the ledger?",
+      "branch_outcomes": [
+        "Names: Lena confirms entries belonging to long-missing people.",
+        "Dates: Lena spots impossible time gaps and out-of-sequence years in the same register.",
+        "Handwriting: Lena notices the same fresh hand appears across entries separated by decades."
+      ],
+      "exit_state": "The ledger stops being creepy décor and becomes evidence that the Sundown is still feeding on the lost."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Clarify the apparent rules of the trap and force Lena to choose a strategy.",
+      "summary": "June edges close enough to whisper that the motel likes willing gestures: a signature, an accepted key, an answered invitation. Mabel counters by framing hesitation as dangerous in a storm and sweetly suggests Room 8 as a safe place to rest, making refuge itself feel like bait.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "f381d771-5423-4850-b889-8f44700f234d",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "pressured conspiracy",
+      "revelation": "Mabel's power appears to strengthen when guests cooperate with her version of events and accept their role as properly checked-in lodgers.",
+      "tension_change": "rise",
+      "player_goal": "Keep investigating without empowering Mabel's ritual.",
+      "interactive": true,
+      "choice_prompt": "How does Lena keep control of the interaction?",
+      "branch_outcomes": [
+        "Refuse outright and risk provoking Mabel into dropping more of the act.",
+        "Feign interest in seeing a room without signing anything.",
+        "Press June for more explanation, building trust with her while inviting Mabel's scrutiny."
+      ],
+      "exit_state": "Lena decides she will go deeper only if she can do so without giving Mabel the simple consent she wants."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "Launch Lena into the next location with a clear emotional and investigative drive.",
+      "summary": "Lena leaves the pen untouched and declines to check in, but uses Mabel's mention of Room 8 as a lead worth following. June moves with her toward the hall, while Mabel cheerfully lets them go and implies that the motel has all night to make Lena stay.",
+      "location_uuid": "b66e71a3-a891-4200-bc55-f3ca2a873683",
+      "present_character_uuids": [
+        "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+        "f381d771-5423-4850-b889-8f44700f234d",
+        "1eb1096f-632c-4fb9-99e1-3808ea157596"
+      ],
+      "focal_character_uuid": "72dd35e3-f2c2-4009-91a0-5913a39eb077",
+      "mood": "defiant dread",
+      "revelation": "Mabel does not need immediate obedience; she is confident the motel can wear guests down once they step further inside.",
+      "tension_change": "rise",
+      "player_goal": "Advance the investigation while avoiding formal check-in.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Lena refuses the ledger, follows June toward Room 8, and enters the next scene knowing the Sundown is an active predator rather than a shelter."
+    }
+  ]
+}

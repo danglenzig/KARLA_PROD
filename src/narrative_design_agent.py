@@ -179,34 +179,35 @@ class NarrativeDesignOutputSchema(BaseModel):
     def get_location_catalog(self) -> dict[dict]:
         """Returns a catalog of game locations, indexed by UUID"""
         data: dict = {}
-
         for loc in self.locations:
-            loc_key: str = loc.location_data.uuid
-            loc_data: dict = {}
-            loc_data["name"] = loc.location_data.name
-            loc_data["visual_description"] = loc.location_data.location_image_prompt
+            loc_key = loc.location_data.uuid
+            loc_data = loc.location_data.model_dump()
             data[loc_key] = loc_data
         return data
 
     def get_character_catalog(self) -> dict[dict]:
         """Returns a catalog of game characters, indexed by UUID"""
         data: dict = {}
-
         player_key = self.player_character.character_data.uuid
-        player_data: dict = {}
-        player_data["name"] = self.player_character.character_data.name
-        player_data["visual_description"] = self.player_character.character_data.portrait_image_prompt
+        player_data = self.player_character.character_data.model_dump()
         data[player_key] = player_data
-
         for npc in self.non_player_characters:
             npc_key = npc.character_data.uuid
-            npc_data: dict = {}
-            npc_data["name"] = npc.character_data.name
-            npc_data["visual_description"] = npc.character_data.portrait_image_prompt
+            npc_data = npc.character_data.model_dump()
             data[npc_key] = npc_data
         return data
     
-    # TODO: maybe a get_scene_catalog(self) function too. We'll see...
+    def get_scene_catalog(self) -> dict[dict]:
+        """Returns a catalog of game scenes, indexed by UUID"""
+        data: dict = {}        
+        intro_key = self.intro_scene.scene_data.uuid
+        data[intro_key] = self.intro_scene.scene_data.model_dump()
+        for scene in self.act_one:
+            scene_key = scene.scene_data.uuid
+            data[scene_key] = scene.scene_data.model_dump()
+        outro_key = self.outro_scene.scene_data.uuid
+        data[outro_key] = self.outro_scene.scene_data.model_dump()
+        return data
 
 
 

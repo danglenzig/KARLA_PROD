@@ -5,9 +5,10 @@
 
 from pydantic import BaseModel, Field, ValidationError
 from typing import Literal, Optional
-from agents import Agent, Runner, RunResult
+from agents import Agent, Runner, RunResult, RunContextWrapper
 from pathlib import Path
 from dotenv import load_dotenv
+import json
 import sys
 import asyncio
 
@@ -21,6 +22,15 @@ sys.path.insert(0, str(TOOLS_PATH))
 from narrative_design_agent import NarrativeDesignOutputSchema, Scene, SceneData, Location, LocationData
 
 load_dotenv()
+
+
+def dynamic_instructons(
+        wrapper: RunContextWrapper[NarrativeDesignOutputSchema],
+        agent: Agent[NarrativeDesignOutputSchema],
+        scene_uuid: str
+) -> str:
+    pass
+
 
 scene_beat_agent: Agent = Agent(
     name="scene_beat_agent",
@@ -45,8 +55,10 @@ class SceneBeatAgent():
             print(e)
             return
         
-        print(f"Coming soon: The SceneBeatAgent writes scene beats for {nd_spec.story_title}!!!")
-        pass
+        # print(f"Coming soon: The SceneBeatAgent writes scene beats for {nd_spec.story_title}!!!")
+        # print(f"===SCENE CATALOG===\n{json.dumps(nd_spec.get_scene_catalog(), indent=2)}")
+        # print(f"===CHARACTER CATALOG===\n{json.dumps(nd_spec.get_character_catalog(), indent=2)}")
+        # print(f"===LOCATION CATALOG===\n{json.dumps(nd_spec.get_location_catalog(), indent=2)}")
 
 
 

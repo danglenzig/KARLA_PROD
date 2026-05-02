@@ -19,8 +19,6 @@ async def program_entry():
     # INITIAL NARRATIVE DESIGN
     #=========================
     nd_agent_output: NarrativeDesignOutputSchema = await nd_agent.run_workflow(wf_input)
-    location_catalog: dict[dict] = nd_agent_output.get_location_catalog()
-    character_catalog: dict[dict] = nd_agent_output.get_character_catalog()
     human_readable = nd_agent_output.human_readable()
 
     print(f"\n\n{human_readable}\n\n")

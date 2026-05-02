@@ -26,9 +26,17 @@ async def program_entry():
     #========================
     # WRITING THE SCENE BEATS
     #========================
+
+    intro_uuid: str     = nd_agent_output.intro_scene.scene_data.uuid
+    first_scene_uuid    = nd_agent_output.act_one[0].scene_data.uuid
+
+
     nd_json = nd_agent_output.model_dump_json()
     sb_agent: SceneBeatAgent = SceneBeatAgent()
-    await sb_agent.run_workflow(nd_json)
+
+    # temp...this will return somethong later...
+    await sb_agent.run_workflow(nd_json, intro_uuid)
+    await sb_agent.run_workflow(nd_json, first_scene_uuid)
 
 
 async def main():

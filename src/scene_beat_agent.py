@@ -19,18 +19,49 @@ TOOLS_PATH: Path = SRC_ROOT / "tools"
 sys.path.insert(0, str(SRC_ROOT))
 sys.path.insert(0, str(TOOLS_PATH))
 
-from narrative_design_agent import NarrativeDesignOutputSchema, Scene, SceneData, Location, LocationData
+from narrative_design_agent import NarrativeDesignOutputSchema, Scene, SceneData, Location, LocationData, CharacterData
 
 load_dotenv()
 
 
-def dynamic_instructons(
+def scene_beat_instructons(
         wrapper: RunContextWrapper[NarrativeDesignOutputSchema],
         agent: Agent[NarrativeDesignOutputSchema],
         scene_uuid: str
 ) -> str:
-    pass
+    # extract all the relevant data from the context
+    nd_spec: NarrativeDesignOutputSchema = wrapper.context
+    scene_catalog       = nd_spec.get_scene_catalog() # scenes indexed by UUID
+    character_catalog   = nd_spec.get_character_catalog() # characters indexed by UUID
+    location_catalog    = nd_spec.get_location_catalog() # locations indexed by UUID
+    readable_spec       = nd_spec.human_readable()
 
+    if not scene_uuid in scene_catalog:
+        raise ValidationError ("scene_uuid not in catalogue")
+    scene_data: SceneData = SceneData.model_validate(scene_catalog[scene_uuid])
+
+    scene_name: str = scene_data.scene_name
+    narrative_summary: str = scene_data.narrtive_summary
+
+    location_uuid: str = scene_data.location_uuid
+    location_data: LocationData = LocationData.model_validate(location_catalog[location_uuid])
+
+    npc_uuids = []
+    npc_datas: list [CharacterData] = []
+    if 'non_player_character_uuids' in scene_data.__dict__:
+        if not scene_data.non_player_character_uuids is None:
+            npc_uuids = scene_data.non_player_character_uuids
+            for id in npc_uuids:
+                npc_datas.append(CharacterData.model_validate(character_catalog[id]))
+    
+    player_uuid = nd_spec.player_character.character_data.uuid
+    player_data: CharacterData = CharacterData.model_validate(character_catalog[player_uuid])
+    
+    # write the promt string
+    prompt_str = f""""""
+
+    # deliver the prompt
+    return prompt_str
 
 scene_beat_agent: Agent = Agent(
     name="scene_beat_agent",
@@ -47,7 +78,7 @@ class SceneBeatAgent():
     def __init__(self):
         self.agent: Agent = scene_beat_agent
 
-    async def run_workflow(self, in_json: str):
+    async def run_workflow(self, in_json: str, scene_uuid: str):
 
         try:
             nd_spec = NarrativeDesignOutputSchema.model_validate_json(in_json)
@@ -59,7 +90,56 @@ class SceneBeatAgent():
         # print(f"===SCENE CATALOG===\n{json.dumps(nd_spec.get_scene_catalog(), indent=2)}")
         # print(f"===CHARACTER CATALOG===\n{json.dumps(nd_spec.get_character_catalog(), indent=2)}")
         # print(f"===LOCATION CATALOG===\n{json.dumps(nd_spec.get_location_catalog(), indent=2)}")
+        # All ^^this works
 
+        # scene_catalog = nd_spec.get_scene_catalog()
+        # if not scene_uuid in scene_catalog:
+        #     raise ValidationError ("scene_uuid not in catalogue")
+        # scene_data: SceneData = SceneData.model_validate(scene_catalog[scene_uuid])
+        # print(scene_data.scene_name)
+        # All ^^this works
+
+        # scene_catalog       = nd_spec.get_scene_catalog() # scenes indexed by UUID
+        # character_catalog   = nd_spec.get_character_catalog() # characters indexed by UUID
+        # location_catalog    = nd_spec.get_location_catalog() # locations indexed by UUID
+        # readable_spec       = nd_spec.human_readable()
+
+        # if not scene_uuid in scene_catalog:
+        #     raise ValidationError ("scene_uuid not in catalogue")
+        # scene_data: SceneData = SceneData.model_validate(scene_catalog[scene_uuid])
+
+        # scene_name: str = scene_data.scene_name
+        # narrative_summary: str = scene_data.narrtive_summary
+
+        # location_uuid: str = scene_data.location_uuid
+        # location_data: LocationData = LocationData.model_validate(location_catalog[location_uuid])
+
+        # npc_uuids = []
+        # npc_datas: list [CharacterData] = []
+        # if 'non_player_character_uuids' in scene_data.__dict__:
+        #     if not scene_data.non_player_character_uuids is None:
+        #         npc_uuids = scene_data.non_player_character_uuids
+        #         for id in npc_uuids:
+        #             npc_datas.append(CharacterData.model_validate(character_catalog[id]))
+        
+        # player_uuid = nd_spec.player_character.character_data.uuid
+        # player_data: CharacterData = CharacterData.model_validate(character_catalog[player_uuid])
+
+        # print(f"\n\nI will write the scene beats for {scene_name}.\n")
+        # print(f"Here is the narrative summary from the Narrative Designer:\n{narrative_summary}\n")
+        # print(f"Location name: {location_data.name}\n")
+        # print(f"Location desc: {location_data.location_image_prompt}\n")
+        # print(f"Player character name: {player_data.name}")
+        # print(f"Player character desc: {player_data.portrait_image_prompt}")
+        # print(f"Player character dialogue examples:\n")
+        # for line in player_data.dialogue_examples:
+        #     print(f"  -'{line}'")
+
+        # if len(npc_uuids) > 0:
+        #     print(f"\nHere are the NPCs:\n")
+        #     for data in npc_datas:
+        #         print(f"  -'{data.name}'")
+        # All ^^this works
 
 
 async def main():
@@ -67,7 +147,14 @@ async def main():
     try:
         with open('dummy_data.json', 'r') as f:
             json_str = f.read().strip()
-        await SceneBeatAgent().run_workflow(json_str)
+
+        nd_output: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(json_str)
+        intro_uuid          = nd_output.intro_scene.scene_data.uuid
+        first_scene_uuid    = nd_output.act_one[0].scene_data.uuid
+
+        await SceneBeatAgent().run_workflow(json_str, intro_uuid)
+        await SceneBeatAgent().run_workflow(json_str, first_scene_uuid)
+
     except Exception as e:
         print(e)
 

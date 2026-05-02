@@ -164,13 +164,10 @@ async def main():
         bs_intro: SceneBeatSheet = beat_sheets[0]
         bs_first: SceneBeatSheet = beat_sheets[1]
 
-        with open('dummy_intro_beats.json', 'w') as f:
-            f.write(bs_intro.model_dump_json(indent=2))
-        with open('dummy_scene1_beats.json', 'w') as g:
-            g.write(bs_first.model_dump_json(indent=2))
-
-        #print(f"===INTRO===\n\n{beat_sheets[0].model_dump_json(indent=2)}\n\n")
-        #print(f"===FIRST SCENE===\n\n{beat_sheets[1].model_dump_json(indent=2)}\n\n")
+        # with open('dummy_intro_beats.json', 'w') as f:
+        #     f.write(bs_intro.model_dump_json(indent=2))
+        # with open('dummy_scene1_beats.json', 'w') as g:
+        #     g.write(bs_first.model_dump_json(indent=2))
 
     except Exception as e:
         print(e)

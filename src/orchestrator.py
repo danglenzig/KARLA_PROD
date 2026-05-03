@@ -9,7 +9,7 @@ import os
 SRC_ROOT: Path = Path(__file__).parent # the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
-from narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSchema, WorkflowTextInput
+from narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSchema, WorkflowTextInput, SceneData
 from scene_beat_agent import SceneBeatAgent, SceneBeatSheet
 from prompt_catalog import ImageStyle
 from image_generator import ImageGenerator
@@ -35,12 +35,20 @@ async def write_output_json(game_name: str, in_json: str, filename: str):
         f.write(in_json)
     return path
 
+def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
+    uuids: list[str] = []
+    if 'non_player_character_uuids' in sd.__dict__:
+        if not sd.non_player_character_uuids is None:
+            for uuid in sd.non_player_character_uuids:
+                uuids.append(uuid)
+    return uuids
+
 async def run_program(user_input: str):
 
     temp_game_name: str = get_uuid_string()
     image_style = ImageStyle.COMIC
 
-    # STAGE 1: generate a story plan
+    # STAGE 1: generate a story plan and extract needed data
     print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{user_input}\n\n")
     wf: WorkflowTextInput = WorkflowTextInput(
         input_as_text=user_input
@@ -52,8 +60,40 @@ async def run_program(user_input: str):
     story_title: str = nd_out.story_title
     intro_uuid: str = nd_out.intro_scene.scene_data.uuid
     first_scene_uuid: str = nd_out.act_one[0].scene_data.uuid
+    
+    player_uuid: str = nd_out.player_character.character_data.uuid
+    demo_character_uuids: list[str] = []
+    demo_character_uuids.append(player_uuid)
+    intro_scene_data: SceneData = nd_out.intro_scene.scene_data
+    first_scene_data: SceneData = nd_out.act_one[0].scene_data
+    intro_npc_uuids             = get_npc_uuids_from_scene_data(intro_scene_data)
+    first_scene_npc_uuids       = get_npc_uuids_from_scene_data(first_scene_data)
 
-    # STAGE 2: image assets & scene beats
+    if len(intro_npc_uuids) > 0:
+        for npc_uuid in intro_npc_uuids:
+            if npc_uuid not in demo_character_uuids:
+                demo_character_uuids.append(npc_uuid)
+    
+    if len(first_scene_npc_uuids) > 0:
+        for npc_uuid in first_scene_npc_uuids:
+            if npc_uuid not in demo_character_uuids:
+                demo_character_uuids.append(npc_uuid)
+    
+    # STAGE 1.5 portrait images
+    
+    demo_character_count = len(demo_character_uuids)
+    portrait_coroutines = [
+        ImageGenerator().run_character_portrait_workflow(
+            temp_game_name, nd_out_json, _id, image_style
+        ) for _id in demo_character_uuids
+    ]
+    portrait_gather = asyncio.gather(*portrait_coroutines) # * unpacks the coros
+    portrait_results = await portrait_gather
+    for r in portrait_results:
+        print(f"SAVED PORTRAIT IMAGE: {r}")
+    
+
+    # STAGE 2: background image assets & scene beats
     print(f"\nGenerating background image assets and scene beats for story: {story_title}\n\n")
     intro_loc_uuid: str = nd_out.intro_scene.scene_data.location_uuid
     first_scene_loc_uuid: str = nd_out.act_one[0].scene_data.location_uuid

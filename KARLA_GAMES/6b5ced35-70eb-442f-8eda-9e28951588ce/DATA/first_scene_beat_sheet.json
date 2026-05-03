@@ -1,0 +1,145 @@
+{
+  "story_title": "Madame Massacre: After Midnight",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "8fefd2f0-edfb-4af0-a8c1-929dafa881cb",
+  "source_scene_summary": "In the privacy of her dressing room, Cookie helps Madame out of costume while gently pushing her to admit how frightened she is. Their conversation peels back the stage persona and reveals the woman beneath it: proud, funny, vain, wounded, and exhausted by being asked to age gracefully in an industry that never allowed her to be serious in the first place. Cookie introduces the idea that Madame still has fans beyond broadcast television, if she can bear to look for them.",
+  "location_name": "Madame's Dressing Room",
+  "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+  "player_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+  "non_player_character_uuids": [
+    "7352ee01-8116-42ea-85a5-8a142ce70f63"
+  ],
+  "dramatic_question": "Can Cookie get Madame to lower her guard long enough to admit how frightened she is and consider that her audience may still exist beyond local television?",
+  "scene_goal": "Protect her dignity after the ratings blow while keeping Cookie from seeing just how deeply the threat of irrelevance has shaken her.",
+  "scene_turn": "Madame starts the scene armored in wit and denial, but ends it reluctantly aware that her relevance may not be dead at all—only displaced into places she has been too proud, or too scared, to look.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Transition from public performance to private vulnerability.",
+      "summary": "The dressing-room door closes on the fading applause, and Madame keeps the act going with acid one-liners as Cookie starts removing cape, jewelry, and mic pack. The routine is familiar, but tonight the jokes are a little too sharp and the silence between them lasts a little too long.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "brittle, backstage-intimate",
+      "revelation": null,
+      "tension_change": "rise",
+      "player_goal": "Keep control of the room and avoid looking rattled.",
+      "interactive": true,
+      "choice_prompt": "How does Madame answer Cookie's first gentle check-in?",
+      "branch_outcomes": [
+        "She deflects with a joke, preserving the persona for a few more lines.",
+        "She snaps about ratings and executives, turning fear into anger.",
+        "She goes quiet, letting Cookie read the strain without naming it."
+      ],
+      "exit_state": "Cookie begins undressing the costume armor and confirms that Madame is more shaken than she wants to admit."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Force the real subject—fear, age, and humiliation—into the open.",
+      "summary": "Cookie notices Madame's trembling hands and gently refuses to play along with the act. Pressed, Madame erupts at the industry's demand that women age 'gracefully' after never being permitted to age powerfully, seriously, or on their own terms.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "defensive, wounded",
+      "revelation": "Madame is less afraid of aging itself than of being reduced to a tasteful relic after a career built on danger, sexuality, and command.",
+      "tension_change": "rise",
+      "player_goal": "Justify her anger without admitting helplessness.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The conversation stops being about one bad ratings report and becomes about the long insult of how the industry treats aging women."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Expose the vulnerable woman beneath the icon through the ritual of removing the look.",
+      "summary": "As Cookie loosens stays, peels off lashes, and wipes away the sharpest edges of the makeup, Madame studies herself in the mirror with ruthless precision. Cookie counters each self-laceration with practical devotion, insisting that what still reads on camera is authority, not youth.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "raw, intimate",
+      "revelation": "Madame's vanity is not superficial; it is bound up with the labor of having survived as a woman turned into spectacle.",
+      "tension_change": "hold",
+      "player_goal": "Regain composure by controlling the story of what her face and body mean.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Cookie has seen Madame at her most exposed, and Madame has been forced to sit with her own body outside the protection of the full persona."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Introduce the possibility that Madame's audience still exists beyond broadcast television.",
+      "summary": "Sensing self-loathing will only deepen the spiral, Cookie changes tactics and brings up the fan mail, tagged clips, and messages Madame refuses to look at. Madame dismisses online attention as a graveyard of mockery, but Cookie insists not everyone watching is laughing.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "7352ee01-8116-42ea-85a5-8a142ce70f63",
+      "mood": "skeptical, needling",
+      "revelation": "Cookie has quietly been collecting proof that Madame still resonates with people who never watched her live on local TV.",
+      "tension_change": "twist",
+      "player_goal": "Decide whether to risk hearing that people still care, or protect herself from possible ridicule.",
+      "interactive": true,
+      "choice_prompt": "Does Madame let Cookie show proof of her audience beyond television?",
+      "branch_outcomes": [
+        "She agrees to see clips or posts directly, confronting the new world head-on.",
+        "She'll hear about letters or screenshots, but refuses to watch herself on a screen tonight.",
+        "She refuses to look, forcing Cookie to make her case from memory and conviction."
+      ],
+      "exit_state": "The scene's emotional center shifts from loss to the frightening possibility that Madame may still matter."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Make the idea of a surviving fanbase feel concrete and emotionally real.",
+      "summary": "Cookie offers one example that lands: a younger fan repeating Madame's sign-off, a drag performer recreating her silhouette, or a message thanking her for making the grotesque feel glamorous instead of shameful. The key shock is not admiration alone, but sincerity—these people are not treating her as a punchline.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "tender, stunned",
+      "revelation": "Madame's work has meaning for younger outsiders who saw permission, glamour, and power in her act rather than kitsch.",
+      "tension_change": "fall",
+      "player_goal": "Take in the evidence without surrendering to sentimentality or embarrassment.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Madame can no longer honestly tell herself that no one beyond Channel 13 still cares."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "End on reluctant openness and give Madame a small internal shift to carry forward.",
+      "summary": "Madame reassembles herself with one last dry barb, insisting she will not be preserved as a novelty for strangers with phone screens. Cookie agrees and reframes the point: being rediscovered is not the same as being embalmed, and Madame grudgingly leaves the door cracked on the idea of looking for herself in this new audience.",
+      "location_uuid": "af84ba26-b2a0-4496-8aa9-9cdef2128546",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "cautious, faintly hopeful",
+      "revelation": "What truly terrifies Madame is not disappearance alone, but being consumed as irony instead of remembered as powerful.",
+      "tension_change": "fall",
+      "player_goal": "Leave the room with dignity and at least one reason not to surrender to despair.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Madame ends the scene bruised but newly unsettled by the possibility that her audience has changed shape rather than vanished."
+    }
+  ]
+}

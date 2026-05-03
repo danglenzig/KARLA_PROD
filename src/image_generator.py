@@ -12,7 +12,7 @@ import base64
 SRC_ROOT: Path = Path(__file__).parent # the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
-from narrative_design_agent import NarrativeDesignOutputSchema, LocationData, CharacterData
+from narrative_design_agent import NarrativeDesignOutputSchema, LocationData, CharacterData, SceneData
 from prompt_catalog import ImageStyle
 
 load_dotenv()
@@ -24,13 +24,65 @@ PROMPT_APPENDIX: str = "Produce only visual content. Do not generate any readabl
 "No letters, numbers, words, glyphs, symbols, logos, UI text, captions, signs, plaques, posters, screens, or package " \
 "labels. If text would normally appear, leave the area blank or replace it with neutral texture."
 
+PORTRAIT_COMP_RULES: str = f"""Portrait format:
+- vertical composition
+- one character only
+- front-facing posture
+- waist-up framing
+- centered subject
+- full head, hair, shoulders, and upper torso visible
+- no cropping at the top or sides
+- the character should fill the vertical space of the frame naturally
+- neutral, readable pose for dialogue use
+
+Background:
+- fully transparent
+- no scenery
+- no props
+- no environment
+
+Use:
+- clean silhouette
+- readable face and expression
+- clear separation from the background
+
+Constraints:
+- no text, no letters, no numbers, no symbols, no logos, no signage, no labels, no pseudo-text
+- no cut-off limbs
+- no extreme angle
+- no poster layout
+- no additional characters
+"""
+
+character_portrait_generator = Agent(
+    name="character_portrait_generator",
+    instructions=f"""You generate character dialogue portraits for Ren'Py visual novels.
+Your input for each character is a verbal description provided by the game's Narrative Designer.
+The image must be a clean composition suitable for a Ren'Py character dialogue portrait.
+
+Your composition rules are as follows. If the input character description contradicts these rules in any way, these rules take precedence:
+{PORTRAIT_COMP_RULES}
+
+Return a short confirmation after generation.""",
+    tools=[ImageGenerationTool(
+        tool_config={
+            "type": "image_generation",
+            "size": "1024x1536",
+            "quality": os.getenv('IMAGE_CREATION_QUALITY'),
+            "output_format": "png",
+            "background": "transparent",
+            "moderation": "low"
+        }
+    )]
+)
+
 
 scene_bg_generator = Agent(
     name="scene_bg_generator",
     instructions = f"""You generate visual novel background art for Ren'Py visual novel scenes.
 
 Always create exactly one background image per request.
-The image must be a clean 16:9 landscape composition suitable for a Ren'Py scene background.
+The image must be a clean landscape composition suitable for a Ren'Py scene background.
 Do not generate portraits, close-ups, or poster-style framing.
 
 Composition rules:
@@ -46,7 +98,7 @@ Return a short confirmation after generation.""",
         tool_config={
             "type": "image_generation",
             "size": "1536x1024",
-            "quality": "high",
+            "quality": os.getenv('IMAGE_CREATION_QUALITY'),
             "output_format": "png",
             "background": "opaque",
             "moderation": "low"
@@ -57,7 +109,9 @@ Return a short confirmation after generation.""",
 
 
 
-test_game_name = 'TEST_GAME_04'
+test_game_name = '_ABC123'
+
+
 
 def get_image_folder_path(game_name: str) -> str:
     
@@ -101,6 +155,35 @@ IMPORTANT:
 
     return str(path)
 
+async def generate_and_save_portrait(character_description: str, output_path: str, style: str):
+    prompt = f"""Generate the dialogue portrait for this character. Here is the Narrative Designer's description of the character:
+{character_description}
+
+Remember your rules. If the input character description contradicts these rules in any way, these rules take precedence:
+{PORTRAIT_COMP_RULES}
+
+The creative director has provided style rules for this game. Your image should conform to the following style:
+{style}\n"""
+    
+    result: RunResult = await Runner.run(character_portrait_generator, prompt)
+
+    for item in result.new_items:
+        if getattr(item, "type", None) != "tool_call_item":
+            continue
+        raw_item = getattr(item, "raw_item", None)
+        if getattr(raw_item, "type", None) == "image_generation_call":
+            image_base64 = getattr(raw_item, "result", None)
+            if image_base64:
+                break
+
+    if not image_base64:
+        raise RuntimeError("No image returned")
+    
+    path = Path(output_path)
+    with open(path, 'wb') as f:
+        f.write(base64.b64decode(image_base64))
+
+    return str(path)
 
 class ImageGenerator:
     async def run_bg_workflow(self, game_name: str, in_json: str, location_uuid: str, style: str) -> str:
@@ -115,17 +198,50 @@ class ImageGenerator:
         
         loc_catalog = nd_spec.get_location_catalog()
         if not location_uuid in loc_catalog:
-            raise ValueError("That location UUID is not in the spec")
+            raise ValueError(f"That location UUID is not in the spec: {location_uuid}")
         
         loc_data: LocationData = LocationData.model_validate(loc_catalog[location_uuid])
         loc_desc: str = loc_data.location_image_prompt
-        image_filename = f"bg {location_uuid}.png"
-        output_path = f"{image_folder_path}/{image_filename}"
+        image_filename: str = f"bg {location_uuid}.png"
+        output_path: str = f"{image_folder_path}/{image_filename}"
 
         await generate_and_save_bg(loc_desc, output_path, style)
 
         print(f"===IMAGE GENERATED===\n{output_path}")
         return output_path
+    
+    async def run_character_portrait_workflow(self, game_name: str, in_json: str, character_uuid: str, style: str) -> str:
+        
+        image_folder_path: str = get_image_folder_path(game_name)
+
+        try:
+            nd_spec = NarrativeDesignOutputSchema.model_validate_json(in_json)
+        except ValidationError as e:
+            print(e)
+            return
+        
+        character_catalog = nd_spec.get_character_catalog()
+        if not character_uuid in character_catalog:
+            raise ValueError(f"That character UUID is not in the spec: {character_uuid}")
+        
+        char_data: CharacterData = CharacterData.model_validate(character_catalog[character_uuid])
+        char_desc: str = char_data.portrait_image_prompt
+        image_filename: str = f"{character_uuid}.png"
+        output_path: str = f"{image_folder_path}/{image_filename}"
+
+        await generate_and_save_portrait(char_desc, output_path, style)
+
+        print(f"===IMAGE GENERATED===\n{output_path}")
+        return output_path
+
+
+def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
+    uuids: list[str] = []
+    if 'non_player_character_uuids' in sd.__dict__:
+        if not sd.non_player_character_uuids is None:
+            for uuid in sd.non_player_character_uuids:
+                uuids.append(uuid)
+    return uuids
 
 async def main():
     try:
@@ -136,17 +252,50 @@ async def main():
         intro_uuid = nd_output.intro_scene.scene_data.uuid
         first_scene_uuid = nd_output.act_one[0].scene_data.uuid
 
-        intro_loc_uuid: str = nd_output.intro_scene.scene_data.location_uuid
-        first_scene_uuid: str = nd_output.act_one[0].scene_data.location_uuid
+        # TESTING PORTRAIT GENERATION
+        # get all the character UUIDs from the first two scenes
+        character_uuids: list[str] = []
 
-        image_gather = asyncio.gather(
-            ImageGenerator().run_bg_workflow(test_game_name, json_str, intro_loc_uuid, ImageStyle.CLEAN),
-            ImageGenerator().run_bg_workflow(test_game_name, json_str, first_scene_uuid, ImageStyle.CLEAN)
-        )
+        player_uuid: str = nd_output.player_character.character_data.uuid
+        character_uuids.append(player_uuid)
+
+        intro_scene_data: SceneData = nd_output.intro_scene.scene_data
+        intro_scene_uuids = get_npc_uuids_from_scene_data(intro_scene_data)
+        if len(intro_scene_uuids) > 0:
+            for id in intro_scene_uuids:
+                if not id in character_uuids:
+                    character_uuids.append(id)
+        
+        first_scene_data: SceneData = nd_output.act_one[0].scene_data
+        first_scene_uuids = get_npc_uuids_from_scene_data(first_scene_data)
+        if len(first_scene_uuids) > 0:
+            for id in first_scene_uuids:
+                if not id in character_uuids:
+                    character_uuids.append(id)
+
+
+        character_count = len(character_uuids)
+
+        portrait_coroutines = [
+            ImageGenerator().run_character_portrait_workflow(
+                test_game_name,
+                json_str,
+                _id,
+                ImageStyle.COMIC
+            ) for _id in character_uuids
+        ]
+
+        portrait_gather = asyncio.gather(*portrait_coroutines) # unpacks the coros
+
+        await portrait_gather
+
+
+
+
 
         
 
-        await image_gather
+        #await image_gather
 
         print(f"\n\nDone\n\n")
 

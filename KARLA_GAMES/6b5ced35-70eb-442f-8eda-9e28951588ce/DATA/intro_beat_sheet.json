@@ -1,0 +1,153 @@
+{
+  "story_title": "Madame Massacre: After Midnight",
+  "scene_name": "intro",
+  "scene_uuid": "df80c849-b163-4077-9053-13feb38e676c",
+  "source_scene_summary": "After taping another episode of her once-beloved local horror program, Madame Massacre basks in applause that feels thinner than it used to. Backstage, her producer Vic and loyal dresser Cookie reveal the grim truth: ratings have collapsed, the station is reconsidering the show's slot, and management wants a strategy for making her 'relevant' again. The intro establishes Madame's bravado, her fear of obsolescence, and the changing media landscape that threatens to swallow her whole.",
+  "location_name": "Crimson Catacombs Soundstage",
+  "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+  "player_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+  "non_player_character_uuids": [
+    "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+    "7352ee01-8116-42ea-85a5-8a142ce70f63"
+  ],
+  "dramatic_question": "Can Madame preserve her aura of control once the post-show glow gives way to proof that her audience, leverage, and place in the culture are slipping?",
+  "scene_goal": "To enjoy the afterglow of another taping and protect the image that she is still the untouchable queen of Channel 13's midnight hour.",
+  "scene_turn": "A routine post-show basking curdles into crisis when Madame learns the ratings have cratered, her slot is under review, and the station thinks survival depends on making her 'relevant' again.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "intro_beat_01_finale_applause",
+      "purpose": "Establish Madame's on-air power and the first hairline crack in it.",
+      "summary": "Madame delivers her closing line with full gothic flourish and drinks in the audience response. The applause comes, but it is thinner and shorter than the ovations she remembers, forcing her to perform satisfaction for a room that no longer quite believes in the illusion.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "camp-triumphant with an undertow of dread",
+      "revelation": "The show's live energy is still real, but noticeably diminished.",
+      "tension_change": "hold",
+      "player_goal": "Ride the final applause and leave the room under Madame's spell.",
+      "interactive": true,
+      "choice_prompt": "How does Madame play the room as the applause starts to fade?",
+      "branch_outcomes": [
+        "She doubles down on regal grandeur and keeps the room obedient.",
+        "She leans into sultry flirtation to wring out one last laugh and cheer.",
+        "She uses a mordant joke to seize control of the awkwardness before anyone else can name it."
+      ],
+      "exit_state": "Madame keeps her crown in public, but privately registers that the room feels smaller than it used to."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "intro_beat_02_magic_cools",
+      "purpose": "Transition from performance fantasy to backstage reality and bring Cookie into the emotional frame.",
+      "summary": "The studio lights cool, crew members begin striking the illusion of the crypt, and the set suddenly looks cheap and tired. Cookie approaches with practiced tenderness, helping Madame down from the platform and reading the forced brightness in her smile immediately.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "7352ee01-8116-42ea-85a5-8a142ce70f63",
+      "mood": "intimate, brittle, affectionate",
+      "revelation": "Cookie knows at once that Madame felt the weak applause too.",
+      "tension_change": "rise",
+      "player_goal": "Stay composed and keep Cookie from seeing too much.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The glamour starts to peel away, leaving Madame exposed to someone who knows her too well to be fooled."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "intro_beat_03_vic_brings_bad_news",
+      "purpose": "Introduce Vic as the messenger of the external threat and force the scene's conflict into the open.",
+      "summary": "Vic arrives carrying papers and the exhausted cheer of a man who knows he is about to ruin a mood. He tries to start with logistics and praise, but it is obvious he came with numbers, not compliments.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+      "mood": "strained and evasive",
+      "revelation": "Management is actively reviewing the future of the show.",
+      "tension_change": "rise",
+      "player_goal": "Force Vic to stop hedging and say what he actually came to say.",
+      "interactive": true,
+      "choice_prompt": "How does Madame make Vic deliver the truth?",
+      "branch_outcomes": [
+        "She needles him until he blurts out the problem.",
+        "She charms him into trying to soften the blow.",
+        "She coldly demands the numbers and makes him be blunt."
+      ],
+      "exit_state": "The scene can no longer pretend this is routine post-show chatter; a crisis has officially entered the room."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "intro_beat_04_ratings_sheet",
+      "purpose": "State the concrete stakes threatening Madame's career.",
+      "summary": "Vic admits that the ratings have fallen sharply and that the midnight slot is no longer safe just because it once belonged to her. He explains that advertisers are nervous, local TV is shrinking, and the station is measuring every legacy program against newer, cheaper forms of attention.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "humiliating, defensive, angry",
+      "revelation": "The ratings collapse is severe enough that the station is reconsidering Madame's time slot.",
+      "tension_change": "rise",
+      "player_goal": "Refuse to let the numbers define her worth.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Madame's fear of decline is no longer abstract; it has been quantified and weaponized."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "intro_beat_05_the_word_relevant",
+      "purpose": "Turn the business problem into a personal wound about age, image, and cultural obsolescence.",
+      "summary": "Vic says management wants a strategy to make Madame 'relevant' again, speaking in the language of clips, younger audiences, and digital reach. Cookie bristles at the insult, but the damage is done: Madame hears not a plan, but the suggestion that she has become an artifact in her own house.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "wounded, furious, darkly funny",
+      "revelation": "The station's preferred solution is reinvention for a younger, online-facing audience rather than simple loyalty to Madame's legacy.",
+      "tension_change": "twist",
+      "player_goal": "Defend her legend without revealing how deeply the word 'relevant' cuts.",
+      "interactive": true,
+      "choice_prompt": "How does Madame answer being told to become 'relevant' again?",
+      "branch_outcomes": [
+        "She bats it away with lethal camp humor.",
+        "She demands respect for what she already built.",
+        "She turns icy and treats it like a business insult she will not forget."
+      ],
+      "exit_state": "The threat stops being merely cancellation and becomes an existential challenge to who Madame is allowed to be."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "intro_beat_06_leave_the_set_changed",
+      "purpose": "Land the scene turn and propel Madame toward the more private reckoning of the next scene.",
+      "summary": "The argument burns down into a tense stalemate: Vic insists he is trying to save the show, Cookie quietly shields Madame from further humiliation, and the dead cameras seem to stare like witnesses. Madame agrees, barely, to hear what management proposes next, but she leaves the soundstage knowing the old rules no longer protect her.",
+      "location_uuid": "1b55e489-4b91-439a-9976-4637f5c735a2",
+      "present_character_uuids": [
+        "0bb9c97e-e189-49ea-a953-5b266287d971",
+        "b1bd259a-da4e-40ba-9f20-a73ebbe2d9e5",
+        "7352ee01-8116-42ea-85a5-8a142ce70f63"
+      ],
+      "focal_character_uuid": "0bb9c97e-e189-49ea-a953-5b266287d971",
+      "mood": "sober, bruised, ominous",
+      "revelation": null,
+      "tension_change": "fall",
+      "player_goal": "Exit with dignity and avoid letting Vic see how shaken she is.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Madame leaves the soundstage outwardly composed but inwardly rattled, carrying the knowledge that her show may die unless she submits to reinvention."
+    }
+  ]
+}

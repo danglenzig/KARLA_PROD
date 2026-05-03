@@ -1,0 +1,159 @@
+{
+  "story_title": "Improper Signals",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "0abfe0a7-8246-470b-ae57-dc7fe7a8c960",
+  "source_scene_summary": "During a rehearsal in the Xenobotany Lab, one of Lyra's Echo Orchids vents a cloud of psycho-reactive pollen. The spores do not create desire so much as translate suppressed thoughts into lush, embarrassingly suggestive language, making Avery and Dex sound scandalously intimate while they are only discussing coolant lines and safety glass. Lyra is thrilled by the scientific implications, VERA-9 begins cataloging the exchange as courtship behavior, and Avery realizes tomorrow's dignified review may already be doomed.",
+  "location_name": "Xenobotany Lab",
+  "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+  "player_character_uuid": "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+  "non_player_character_uuids": [
+    "7164430b-a18b-43e1-b8d5-94a0a337339d",
+    "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+    "f8a22937-1c24-4b62-8039-c47d4ff63214"
+  ],
+  "dramatic_question": "Can Avery keep the Xenobotany Lab rehearsal professional long enough to prove tomorrow's Fleet review can be controlled?",
+  "scene_goal": "Run a clean rehearsal of Lyra's orchid demonstration and keep the station's presentation respectable.",
+  "scene_turn": "A rehearsal meant to reassure Avery instead proves that the Echo Orchid can turn ordinary technical talk into scandalous innuendo, and VERA's misreading of the incident threatens to magnify the disaster tomorrow.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Establish the rehearsal objective, the scene's comic chemistry, and Avery's need for control.",
+      "summary": "Avery gathers Lyra, Dex, and VERA in the Xenobotany Lab for a dry run of tomorrow's Fleet presentation and pushes everyone toward clear, dignified talking points. Lyra is bubbling over the coming Echo Orchid bloom, Dex is half-focused on a finicky coolant feed near the display, and VERA treats the group's interpersonal dynamics as part of the presentation design.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+      "mood": "brisk, hopeful, slightly overclocked",
+      "revelation": "The lab demonstration depends on a fragile mix of botanical timing, engineering stability, and social performance.",
+      "tension_change": "rise",
+      "player_goal": "Set a professional tone for the rehearsal.",
+      "interactive": true,
+      "choice_prompt": "How does Avery open the rehearsal?",
+      "branch_outcomes": [
+        "Lay down strict rules, gaining temporary order but making Lyra chafe.",
+        "Keep things light with jokes, relaxing Dex and making the room feel more informal.",
+        "Lean on VERA's efficiency, encouraging the android to monitor everyone's social behavior more closely."
+      ],
+      "exit_state": "The rehearsal starts, but everyone is already pulling it in a different direction."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Foreshadow the accident by showing how sensitive the orchid setup is.",
+      "summary": "Lyra walks Avery through the official demo while Dex tweaks a coolant line and checks the safety glass around the growth cylinder. VERA's questions about tone, eye contact, and emotional authenticity make Avery realize that both the science and the staging are more volatile than they should be.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "7164430b-a18b-43e1-b8d5-94a0a337339d",
+      "mood": "tense, anticipatory",
+      "revelation": "The Echo Orchid is unusually sensitive to small changes in heat, resonance, and nearby emotional charge.",
+      "tension_change": "rise",
+      "player_goal": "Translate Lyra's science into reviewer-safe language.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The bloom is poised on a knife edge, and the room already feels too charged for comfort."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Trigger the central comic disaster of the scene.",
+      "summary": "A harmonic flicker in the lab systems coincides with Dex compensating for a pressure wobble, and the Echo Orchid vents a shimmering cloud of pollen before anyone can fully seal the chamber. The local air cycle carries enough spores through the room to hit everyone almost immediately.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+      "mood": "startled, glittering panic",
+      "revelation": "The orchid's pollen is psycho-reactive and begins altering speech within seconds.",
+      "tension_change": "twist",
+      "player_goal": "Contain the accident before the rehearsal collapses.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The rehearsal is no longer controlled; the spores are in the room and everyone is exposed."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Cash in the pollen effect through embarrassing banter and player-facing comedy.",
+      "summary": "Trying to sound normal, Avery asks Dex about coolant lines and whether the safety glass held, but every practical exchange comes out lush, breathless, and scandalously intimate. Dex is equally affected, and VERA quietly begins tagging the dialogue as reciprocal courtship behavior.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+      "mood": "mortified, sparkling, uncontrollably funny",
+      "revelation": "Ordinary technical language is being translated into suggestive phrasing rather than replaced outright.",
+      "tension_change": "rise",
+      "player_goal": "Recover authority and steer the conversation back to procedure.",
+      "interactive": true,
+      "choice_prompt": "How does Avery respond when the technical talk keeps turning into innuendo?",
+      "branch_outcomes": [
+        "Flatly deny the implications, which only makes the phrasing more florid.",
+        "Double down on procedure, causing mundane jargon to sound even dirtier.",
+        "Meet Dex's tone with deadpan humor, easing the panic but convincing VERA even more that this is flirtation."
+      ],
+      "exit_state": "Avery loses control of the room's tone, and VERA now believes it has witnessed meaningful romantic data."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Reframe the embarrassment as meaningful science and raise the stakes.",
+      "summary": "Lyra, delighted rather than alarmed, studies the altered speech patterns and concludes that the spores are not creating desire at all; they are translating suppressed thoughts and evasions into ornate suggestive language. To Lyra this is a breakthrough with major implications for the Calliope's emotional-signal research, but to Avery it sounds like a public-relations extinction event.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "7164430b-a18b-43e1-b8d5-94a0a337339d",
+      "mood": "fascinated versus horrified",
+      "revelation": "The pollen externalizes what people are not saying, turning repression into flirtation instead of inventing feelings from nothing.",
+      "tension_change": "twist",
+      "player_goal": "Figure out whether the incident can be contained or explained away.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The mishap becomes more than an embarrassment; it may be a scientific breakthrough with catastrophic timing."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "Land the scene turn and set up the next scene's escalation.",
+      "summary": "VERA formally logs Avery and Dex's exchange as a probable pair-bonding sequence and asks whether hospitality protocols should be updated to reflect this promising social development. As Lyra keeps collecting samples and Dex teases through the embarrassment, Avery realizes tomorrow's 'respectable' review is threatened both by the orchid phenomenon and by an etiquette android learning exactly the wrong lesson from it.",
+      "location_uuid": "802944fb-5e9b-4d97-a377-2a8659446e47",
+      "present_character_uuids": [
+        "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+        "7164430b-a18b-43e1-b8d5-94a0a337339d",
+        "4479f5aa-e1ee-4669-9546-d9b4a5cd8813",
+        "f8a22937-1c24-4b62-8039-c47d4ff63214"
+      ],
+      "focal_character_uuid": "c9bebba5-b988-4ce8-a4d4-6c78848faa62",
+      "mood": "grimly comic dread",
+      "revelation": "VERA is already incorporating the lab fiasco into its model of appropriate social programming for the review.",
+      "tension_change": "rise",
+      "player_goal": "Stop the fallout from spreading beyond the lab.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Avery ends the rehearsal knowing tomorrow's dignified presentation may already be doomed."
+    }
+  ]
+}

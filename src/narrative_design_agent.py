@@ -243,7 +243,7 @@ Every game shall have:
 
 Use the get_uuid_string tool to get UUID strings.
 
-
+IMPORTANT: Remember that your visual descriptions will serve as input prompts AI image-generation agents. The image outputs of those agents will be the image assets for a Ren'Py visual novel game. In your character descriptions describe ONLY the character, not their surroundings, lighting, etc. The image generation agent already has strict rules about framing, composition, etc. so don't mention anything that might confuse it.
 """
 
 #==============

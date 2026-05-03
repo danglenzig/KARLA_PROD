@@ -7,6 +7,9 @@ qdrant_storage/
 # Exclude .env files
 .env
 
+# Exclude images
+.png
+
 # Exclude the main docker-compose config, but keep all .txt examples
 /docker-compose.yml
 

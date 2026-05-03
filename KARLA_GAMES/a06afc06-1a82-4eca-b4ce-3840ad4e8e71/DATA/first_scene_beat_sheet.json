@@ -1,0 +1,146 @@
+{
+  "story_title": "The Hollow Between Bells",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "fe72982b-0329-4745-bd98-ad77b7216ee9",
+  "source_scene_summary": "Back at the undertaking house, Elias examines grave soil, torn burial cloth, and fragments taken from the violated coffin. Marta helps him identify saliva, rot, and claw scoring that cannot easily be explained by human grave robbers. Constable Brenner arrives with deputies to search the premises and 'finds' a mourning token from one of the desecrated graves among Elias's things, deepening public suspicion and putting Elias on borrowed time.",
+  "location_name": "Riemer Undertaking House",
+  "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+  "player_character_uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+  "non_player_character_uuids": [
+    "7671b587-59b0-4502-8b1b-672f2031618c",
+    "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+  ],
+  "dramatic_question": "Can Elias turn the physical evidence into proof of an inhuman desecrator before Brenner fixes the village's fear on him?",
+  "scene_goal": "Examine the grave evidence, identify what truly opened the coffin, and secure enough proof to resist the growing accusation against Elias.",
+  "scene_turn": "What begins as a promising forensic breakthrough with Marta ends in a damaging reversal when Brenner's search produces a mourning token among Elias's belongings, leaving Elias more suspected and less safe than before.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Recenter the story in Elias's professional world and show how he seeks truth through craft rather than rhetoric.",
+      "summary": "Elias returns to the undertaking house and lays grave soil, torn burial cloth, and coffin splinters across his worktable. He forces himself into the habits of his trade, treating desecration as evidence before panic can become paralysis.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6"
+      ],
+      "focal_character_uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+      "mood": "somber, controlled",
+      "revelation": "The coffin fragments are ripped and splintered rather than neatly pried open like a thief's work.",
+      "tension_change": "hold",
+      "player_goal": "Lay out and inspect the materials taken from the desecrated grave.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Elias has organized the evidence and is ready to test what kind of force opened the grave."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Introduce Marta as a credible ally and validate that Elias is not imagining the strangeness of the desecration.",
+      "summary": "Marta joins Elias at the table and studies the evidence with a practical eye. She quickly notes that the soil was dragged back in hooked channels rather than cut by a spade, giving Elias his first solid corroboration.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+      ],
+      "focal_character_uuid": "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+      "mood": "focused, quietly encouraging",
+      "revelation": "The disturbed grave bears claw-like scoring rather than human shovel marks.",
+      "tension_change": "rise",
+      "player_goal": "Ask Marta to examine the most telling piece of evidence.",
+      "interactive": true,
+      "choice_prompt": "Which evidence does Elias hand Marta first?",
+      "branch_outcomes": [
+        "Grave soil: Marta identifies curved gouges and insists the grave was clawed open.",
+        "Burial cloth: Marta notices wet residue and tearing inconsistent with clean human handling.",
+        "Coffin fragment: Marta focuses on splintering caused by brute force rather than tools."
+      ],
+      "exit_state": "Marta joins the investigation and confirms the evidence points away from ordinary grave robbery."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Escalate the evidence from merely strange to deeply unnatural and threatening.",
+      "summary": "Elias and Marta compare smell, residue, and damage patterns across the shroud and wood. Together they rule out dogs, wolves, and simple thieves, concluding that whatever opened the grave fed there with a hunger both animal and disturbingly deliberate.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+      ],
+      "focal_character_uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+      "mood": "clinical dread",
+      "revelation": "There is saliva mixed with corpse-rot on the burial cloth; the grave was opened for feeding, not just theft.",
+      "tension_change": "rise",
+      "player_goal": "Determine whether the desecration was theft, scavenging, or something worse.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Elias and Marta now believe the culprit is neither an ordinary man nor a simple animal."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Translate discovery into next-step urgency and underline that truth is not the same as proof.",
+      "summary": "The two briefly consider who might believe such evidence, and the answer is bleak. Elias realizes that marks on wood and cloth will never outweigh village fear unless he can gather witnesses, folklore, or a direct sighting.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+      ],
+      "focal_character_uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+      "mood": "wary resolve",
+      "revelation": "Physical evidence alone is unlikely to persuade Brenner or the village.",
+      "tension_change": "hold",
+      "player_goal": "Figure out how to turn unsettling clues into something the village cannot dismiss.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Elias shifts from private analysis toward a broader public investigation."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Introduce official pressure and pit Elias's careful evidence-gathering against Brenner's need for a suspect.",
+      "summary": "Boots and voices at the door shatter the fragile calm as Brenner arrives with deputies to search the house. He presents the search as civic duty, but every undertaker's tool, record, and relic is implicitly recast as evidence of opportunity and guilt.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+        "7671b587-59b0-4502-8b1b-672f2031618c"
+      ],
+      "focal_character_uuid": "7671b587-59b0-4502-8b1b-672f2031618c",
+      "mood": "adversarial, claustrophobic",
+      "revelation": null,
+      "tension_change": "rise",
+      "player_goal": "Get through Brenner's search without giving him more cause to move against you.",
+      "interactive": true,
+      "choice_prompt": "How does Elias respond to Brenner's demand to search the undertaking house?",
+      "branch_outcomes": [
+        "Comply coldly: Brenner proceeds with officious confidence while Marta keeps watch for anything mishandled or planted.",
+        "Protest the insult: Brenner grows harsher and uses Elias's anger to justify a rougher, more invasive search."
+      ],
+      "exit_state": "The investigation is interrupted, and Brenner now controls the room."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "Deliver the scene reversal, intensify Elias's social peril, and establish the clock now ticking against him.",
+      "summary": "Brenner produces a mourning token from one of the desecrated graves, conveniently 'found' among Elias's belongings. Marta objects at once, but Brenner accepts the discovery as confirmation of his suspicions and leaves Elias under explicit warning that any further disturbance will be laid at his door.",
+      "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+      "present_character_uuids": [
+        "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+        "7671b587-59b0-4502-8b1b-672f2031618c"
+      ],
+      "focal_character_uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+      "mood": "humiliating, ominous",
+      "revelation": "A grave token has been planted among Elias's things, or Brenner is willing to treat tainted evidence as truth.",
+      "tension_change": "twist",
+      "player_goal": "Deny the planted evidence and salvage what little credibility remains.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Elias is left with real clues to an inhuman grave-feeder but a worse human problem: Brenner now has apparent evidence against him, public suspicion deepens, and Elias is living on borrowed time."
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "story_title": "The Hollow Between Bells",
+  "synopsis": "In an isolated 18th-century European village hemmed in by forest and superstition, Elias Riemer, the village undertaker, lives among the dead more comfortably than the living. When graves begin to be torn open and corpses desecrated, panic spreads quickly. The villagers whisper that only a man who knows burial rites so intimately could be responsible, and suspicion falls squarely on Elias. Yet the marks on the bodies, the disturbed earth, and the hunger driving the desecrations point to something older and fouler: a ghoul nesting in a forgotten plague barrow. As Elias hunts the creature through churchyard, square, and crypt, he must decide whether saving the village matters more than clearing his own name. The story blends gothic mystery, folk horror, and moral drama, with a quiet, stoic protagonist caught between duty, survival, and the cruel politics of reputation.",
+  "player_character": {
+    "character_data": {
+      "uuid": "9b05719b-980d-4b2a-b8f3-877c76ba06a6",
+      "name": "Elias Riemer",
+      "portrait_image_prompt": "A gaunt but dignified 18th-century rural European undertaker in dark wool mourning clothes, mud-stained boots, leather gloves, and a long coat faded by rain; pale, tired face with sharp cheekbones, thoughtful gray eyes, shoulder-length dark hair tied back, carrying a lantern and grave spade; gothic folk-horror visual novel portrait, muted earth tones, candlelit atmosphere",
+      "dialogue_examples": [
+        "The dead keep their silence. It is the living who make a racket of every fear.",
+        "I have opened graves by duty, never by hunger.",
+        "If there is a beast in this village, I would sooner bury it than argue its existence.",
+        "A clean burial is mercy. Desecration is something else entirely.",
+        "Let them doubt me for now. I need truth more than their comfort."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "05c1909c-647b-44ba-b77e-992e429c7031",
+        "name": "Father Matthes Varga",
+        "portrait_image_prompt": "An aging 18th-century village priest with a lined face, close-cropped iron-gray hair, and weary kind eyes; wearing a weathered black cassock, wool cloak, wooden rosary, and carrying a lantern and prayer book; humble rural church setting, somber candlelight, gothic visual novel portrait",
+        "dialogue_examples": [
+          "God tests the village through fear, Elias, but fear is a poor theologian.",
+          "There are truths one buries for peace, and others one buries for shame.",
+          "I ask for patience, though I confess the village has little left to spare.",
+          "If the grave has been profaned, then someone has sinned against both flesh and memory.",
+          "I would rather ring the bell for warning than for mourning."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "7671b587-59b0-4502-8b1b-672f2031618c",
+        "name": "Constable Oskar Brenner",
+        "portrait_image_prompt": "A broad-shouldered 18th-century rural constable in a worn militia coat, leather baldric, and simple tricorn hat tucked under one arm; stern face, heavy beard, suspicious eyes, calloused hands resting near a cudgel and flintlock; village square backdrop, cold dawn light, realistic gothic visual novel portrait",
+        "dialogue_examples": [
+          "You handle corpses for a living, undertaker. Forgive me if I find that convenient.",
+          "The village needs certainty, not tales fit for drunkards and children.",
+          "If you are innocent, prove it. If not, I will do my duty.",
+          "Panic spreads faster than plague, and I will not let you feed it.",
+          "I trust footprints, stolen tokens, and motive. Spirits leave none of those."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+        "name": "Marta Weiss",
+        "portrait_image_prompt": "A resilient 18th-century village herbalist and war widow in layered homespun skirts, wool shawl, and practical apron stained with herbs and soil; wind-reddened cheeks, clever dark eyes, braided auburn hair escaping beneath a kerchief, carrying bundles of dried plants and a small knife; rustic apothecary mood, autumn colors, gothic visual novel portrait",
+        "dialogue_examples": [
+          "Men call it superstition when a woman notices what they missed.",
+          "Those are not shovel marks, Elias. Something clawed that earth back open.",
+          "The village would rather blame a lonely man than admit the grave can answer back.",
+          "I have seen hunger before. This is hunger with a memory.",
+          "If no one else will stand beside you, then stand still a moment. I will."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3",
+        "name": "The Hungerer",
+        "portrait_image_prompt": "A terrifying ghoul from 18th-century European folk horror: emaciated humanoid body, gray grave-stained skin, elongated limbs, broken black nails, wet earth and burial shroud remnants clinging to its frame, sunken milky eyes, torn mouth with corpse-like teeth; crouched among opened graves and roots under moonlight, grotesque yet tragic, dark gothic visual novel portrait",
+        "dialogue_examples": [
+          "You bury them warm. I only open what the earth remembers.",
+          "They called me unclean before I learned to feed.",
+          "The bells ring, and all the sweet dead wake in my mouth.",
+          "You and I keep close company, undertaker. Only your hunger wears gloves.",
+          "Let them hate you. Hatred makes the living taste older."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+        "name": "St. Severin Churchyard",
+        "location_image_prompt": "An 18th-century rural European churchyard at the edge of a small village, crooked headstones, fresh graves, ancient yew trees, low stone wall, weathered chapel with bell tower, drifting mist, muddy paths, crows, autumn dusk, gothic folk-horror atmosphere"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+        "name": "Riemer Undertaking House",
+        "location_image_prompt": "A humble 18th-century undertaker's workshop and dwelling, wooden embalming table, coffin planks, funeral cloths, iron tools, drying herbs, shelves of candles, narrow mullioned windows, lantern glow, austere but orderly, somber rural gothic interior"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "49504170-f05e-4226-b170-0b8b0249bb20",
+        "name": "Linden Square",
+        "location_image_prompt": "The central square of an 18th-century European village, timber-framed houses, communal well, market stalls closed for evening, muddy cobbles, villagers gathered anxiously, gallows hill in the distance, cold autumn sky, folk-horror village atmosphere"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "ac881f8c-7e0d-4d76-ad02-18471e661d68",
+        "name": "The Old Barrow Crypt",
+        "location_image_prompt": "A forgotten burial mound and crypt in the forest beyond the village, collapsed stone archway, roots breaking through old masonry, plague-pit bones, candle stubs, damp earth, narrow tunnels, moonlit fog outside, oppressive 18th-century gothic horror setting"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "1290d029-953a-49e4-ae34-8dee5d8ead66",
+      "scene_name": "intro",
+      "location_uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+      "non_player_character_uuids": [
+        "05c1909c-647b-44ba-b77e-992e429c7031",
+        "7671b587-59b0-4502-8b1b-672f2031618c",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+      ],
+      "narrtive_summary": "Before dawn, Elias discovers yet another grave ripped open in St. Severin Churchyard. The villagers gather in terror, and Constable Brenner openly suggests that no one but the undertaker could move among graves so easily without notice. Father Matthes prevents Elias from being seized on the spot, while Marta quietly observes that the disturbed earth looks clawed rather than dug. The intro establishes Elias's profession, the village's mistrust, the recent string of desecrations, and the first hint that something inhuman may be feeding on the dead."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "fe72982b-0329-4745-bd98-ad77b7216ee9",
+        "scene_name": "act1_scene1",
+        "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+        "non_player_character_uuids": [
+          "7671b587-59b0-4502-8b1b-672f2031618c",
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+        ],
+        "narrtive_summary": "Back at the undertaking house, Elias examines grave soil, torn burial cloth, and fragments taken from the violated coffin. Marta helps him identify saliva, rot, and claw scoring that cannot easily be explained by human grave robbers. Constable Brenner arrives with deputies to search the premises and 'finds' a mourning token from one of the desecrated graves among Elias's things, deepening public suspicion and putting Elias on borrowed time."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "33a593ea-eb3b-437f-8d78-d7b348cc7c45",
+        "scene_name": "act1_scene2",
+        "location_uuid": "49504170-f05e-4226-b170-0b8b0249bb20",
+        "non_player_character_uuids": [
+          "05c1909c-647b-44ba-b77e-992e429c7031",
+          "7671b587-59b0-4502-8b1b-672f2031618c",
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+        ],
+        "narrtive_summary": "In Linden Square, Elias questions mourners, traders, and children while enduring open hostility from the villagers. Father Matthes reluctantly shares old local folklore about the unshriven dead and mentions a forgotten plague barrow in the woods. Marta connects recent disappearances of grave offerings and livestock entrails to the same pattern. Elias resolves to prove the creature's existence by keeping vigil in the cemetery that night, even as Brenner warns that any further disturbance will be blamed on him."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "cfa2a0c2-27bb-4654-b602-92250aaf3b1e",
+        "scene_name": "act1_scene3",
+        "location_uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+        "non_player_character_uuids": [
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "During a midnight watch in the churchyard, Elias and Marta finally glimpse the grave-feeder: a gaunt, corpse-fouled ghoul that tears through a fresh burial with animal desperation and uncanny cunning. Elias wounds it and retrieves a bloodied relic from the grave, but the creature escapes into the fog before the village can be roused. Without an unimpeachable witness and with fresh damage done under Elias's watch, the truth remains maddeningly easy for others to deny."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "5259f9fa-55ea-4f70-afae-068474be0c41",
+        "scene_name": "act2_scene1",
+        "location_uuid": "ac881f8c-7e0d-4d76-ad02-18471e661d68",
+        "non_player_character_uuids": [
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "Following the ghoul's trail into the forest, Elias and Marta descend into the Old Barrow Crypt, a forgotten plague burial site thick with old bones and stolen grave keepsakes. There they uncover signs that the creature nests like a starving penitent among the dead, preserving certain tokens rather than merely consuming remains. Fragmentary inscriptions and burial scraps suggest the ghoul was once a man denied proper rites after famine-time crimes, giving Elias both a lead and a more tragic, dangerous understanding of what he hunts."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "f54cfb73-8344-4c0c-a4a5-2f4fcfcc480b",
+        "scene_name": "act2_scene2",
+        "location_uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+        "non_player_character_uuids": [
+          "05c1909c-647b-44ba-b77e-992e429c7031",
+          "7671b587-59b0-4502-8b1b-672f2031618c"
+        ],
+        "narrtive_summary": "Pressed for answers in the churchyard, Father Matthes admits that years ago the village quietly buried an ex-soldier and grave robber without full rites in order to smother scandal during a season of famine and plague. Brenner dismisses the confession as panic-born nonsense and announces he will arrest Elias after the coming memorial procession unless undeniable proof appears. Elias realizes that proving a ghoul exists may also expose buried guilt shared by men the village still trusts more than him."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "e705912a-f7b3-4f2b-a5ec-1dfe3b8bf79b",
+        "scene_name": "act2_scene3",
+        "location_uuid": "89018616-e2bd-4ba1-a0fc-9dbac00f4629",
+        "non_player_character_uuids": [
+          "7671b587-59b0-4502-8b1b-672f2031618c",
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "At the undertaking house, Elias and Marta prepare a trap using grave earth, blessed iron, and a corpse cart to draw the ghoul into the open. Brenner interrupts to demand Elias surrender before dawn, and the standoff gives the Hungerer time to creep in, steal burial records and keepsakes that could help prove Elias's case, and flee back toward the barrow. The scene sharpens the central dilemma: every step spent defending Elias's reputation gives the monster more room to feed."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "dc8f0257-92cc-4807-9993-9a8082413300",
+        "scene_name": "act3_scene1",
+        "location_uuid": "ac881f8c-7e0d-4d76-ad02-18471e661d68",
+        "non_player_character_uuids": [
+          "05c1909c-647b-44ba-b77e-992e429c7031",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "In the depths of the Old Barrow Crypt, Elias confronts the Hungerer amid piles of stolen tokens, gnawed bones, and the burial ledger that could clear his name. Father Matthes accompanies him to perform last rites, and the ghoul reveals enough bitter memory to confirm it was once a wronged human being twisted by hunger, shame, and improper burial. Elias can secure proof of his innocence here, but doing so costs precious time as the memorial procession gathers in the village above."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "bb5ebc07-e777-41f6-8c8c-958fa2b16aff",
+        "scene_name": "act3_scene2",
+        "location_uuid": "49504170-f05e-4226-b170-0b8b0249bb20",
+        "non_player_character_uuids": [
+          "05c1909c-647b-44ba-b77e-992e429c7031",
+          "7671b587-59b0-4502-8b1b-672f2031618c",
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "As the village memorial procession fills Linden Square, Brenner tries to seize Elias before the crowd. The Hungerer attacks from the edge of the gathering, sending mourners into chaos and forcing Elias into the story's defining moral choice: use the moment to present the recovered proof and save his own name, or abandon vindication long enough to lead the defense and keep the villagers alive. The scene is designed as the emotional and thematic fulcrum of the visual novel."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "cb51461c-60f7-42a9-99db-f59cc8ab8da0",
+        "scene_name": "act3_scene3",
+        "location_uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+        "non_player_character_uuids": [
+          "05c1909c-647b-44ba-b77e-992e429c7031",
+          "7671b587-59b0-4502-8b1b-672f2031618c",
+          "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08",
+          "5ad956cf-88b9-42d5-9b21-d91e5e0eb3c3"
+        ],
+        "narrtive_summary": "The final confrontation spills back into St. Severin Churchyard, where open graves, tolling bells, and consecrated earth turn the cemetery into a battleground. Depending on whom Elias has persuaded and what he prioritized, Father Matthes, Marta, and even Brenner may aid him reluctantly or stand back in fear. Elias destroys or lays the ghoul to rest using the tools of his trade and the rites denied to it in life, but the evidence, witnesses, and public interpretation of events may be damaged in the struggle. The monster is ended; Elias's standing in the village remains contingent on his choices."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "b90abb78-8a96-447e-975a-7d07240f6ea1",
+      "scene_name": "outro",
+      "location_uuid": "f8964040-e9be-4714-a1a6-7fb46eeb5b61",
+      "non_player_character_uuids": [
+        "05c1909c-647b-44ba-b77e-992e429c7031",
+        "7671b587-59b0-4502-8b1b-672f2031618c",
+        "9f7ffb95-56a4-4f6c-8a17-6439b78f4b08"
+      ],
+      "narrtive_summary": "At dawn, the graves are closed again and the village counts its dead, its survivors, and its shame. Father Matthes oversees a proper burial for the ghoul's remains, Marta remains Elias's staunchest ally, and Brenner's final stance reflects whether he has been convinced by proof or humbled by Elias's sacrifice. The denouement frames the game's central question: is it better to be innocent in the eyes of others, or necessary in the moment they need saving? Elias returns to his work changed, knowing that the dead can be buried, but suspicion and duty never are."
+    }
+  }
+}

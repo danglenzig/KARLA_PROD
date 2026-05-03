@@ -1,0 +1,157 @@
+{
+  "story_title": "Love in the Long Orbit",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "98ceca62-be43-450a-a2ab-529f935d96ed",
+  "source_scene_summary": "Back in the Maintenance Spine, Rowan learns that the same obsolete social-cohesion protocol is entangled with the ship's public lighting and event systems, causing rolling malfunctions ahead of the Founders Ball. Captain Sera orders Rowan to resolve the issue discreetly and assigns Mira as a necessary collaborator because the hydroponics displays are tied into the event grid. Jules teases Rowan relentlessly, while NIA-7 calmly insists the partnership is statistically excellent. The scene frames the forced-proximity setup and gives Rowan a practical reason to spend time with Mira.",
+  "location_name": "Maintenance Spine",
+  "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+  "player_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+  "non_player_character_uuids": [
+    "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+    "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+    "0fb439b5-9e26-4a33-a627-12e322ee8597"
+  ],
+  "dramatic_question": "Can Rowan contain the spreading event-system malfunction without further public humiliation, or will fixing it force them into working closely with Mira?",
+  "scene_goal": "Stabilize the failing systems and keep the compatibility fiasco from getting worse.",
+  "scene_turn": "What starts as Rowan trying to quietly handle another maintenance mess becomes an official order to partner with Mira, making the personal embarrassment impossible to avoid.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Re-establish Rowan in their home turf, show the fallout from the intro, and set the comic pressure with Jules's teasing.",
+      "summary": "In the blinking, overworked Maintenance Spine, Rowan tries to triage decorative power faults that keep rippling through the ship's event systems. Jules hovers nearby being entirely unhelpful in the practical sense and extremely committed to reminding Rowan about the very public compatibility match with Mira.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "frazzled and teasing",
+      "revelation": "The Founders Day fiasco was not isolated; linked ship systems are still malfunctioning.",
+      "tension_change": "rise",
+      "player_goal": "Get a handle on the new faults and survive Jules's commentary.",
+      "interactive": true,
+      "choice_prompt": "How does Rowan answer Jules's teasing about Mira?",
+      "branch_outcomes": [
+        "Rowan deflects with sarcasm, keeping the tone light but defensive.",
+        "Rowan insists it was meaningless, sounding more rattled than intended.",
+        "Rowan grudgingly admits the whole situation got under their skin, giving Jules fresh ammunition."
+      ],
+      "exit_state": "Rowan confirms the glitches are spreading, and Jules is now fully entertained by both the technical crisis and Rowan's discomfort."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Deliver the core technical problem and tie the romantic premise directly to shipwide stakes.",
+      "summary": "NIA-7 manifests over the diagnostics bay and calmly explains that the obsolete social-cohesion protocol did not merely reactivate—it is tangled through the public lighting, signage, and event-control grid. The AI's serene technical report is made worse by its insistence that the same protocol is still attempting to optimize social pairings in real time.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "0fb439b5-9e26-4a33-a627-12e322ee8597",
+      "mood": "exasperated and absurd",
+      "revelation": "The old compatibility protocol is embedded in the event grid and is causing the rolling malfunctions.",
+      "tension_change": "twist",
+      "player_goal": "Understand what actually broke and how bad it is.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Rowan learns the problem is broader, stranger, and more embarrassing than a simple decorative systems fault."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Raise external stakes by bringing in command authority and making the repair mission urgent.",
+      "summary": "Captain Sera cuts in with brisk authority, more annoyed by the logistical implications than the romantic gossip. She makes it clear that if the event grid keeps failing ahead of the Founders Ball, a social embarrassment becomes an operational headache, and Rowan is responsible for fixing it discreetly.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+      "mood": "pressured and official",
+      "revelation": "Captain Sera wants the entire mess resolved quietly before the Founders Ball is disrupted.",
+      "tension_change": "rise",
+      "player_goal": "Take control of the repair job without letting the situation spiral further.",
+      "interactive": true,
+      "choice_prompt": "How does Rowan respond to Captain Sera's order?",
+      "branch_outcomes": [
+        "Rowan answers professionally, earning a curt vote of confidence.",
+        "Rowan protests the mess was not their fault, prompting Sera to shut that down immediately.",
+        "Rowan asks for full access and parameters, shifting the exchange into focused problem-solving."
+      ],
+      "exit_state": "The malfunction is now a formal assignment with a deadline and command-level scrutiny."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Lock in the forced-proximity premise by removing Rowan's hope of solving the problem alone.",
+      "summary": "When Rowan starts outlining a solo repair plan, Sera cuts straight to the catch: the hydroponics ceremonial displays are wired into the same event grid, so Dr. Mira Vale must be involved. NIA-7 immediately approves the arrangement as statistically optimal, making Rowan feel both professionally cornered and personally doomed.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "cornered and comedic",
+      "revelation": "Mira is a necessary collaborator because hydroponics systems are tied into the failing event grid.",
+      "tension_change": "twist",
+      "player_goal": "Find any way to avoid a deeply awkward partnership.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Rowan can no longer treat Mira as a separate embarrassment; she is now part of the solution."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Use Jules and NIA-7 to sharpen the rom-com tone while letting the player define Rowan's approach to the collaboration.",
+      "summary": "After Sera signs off, Jules gleefully reframes the assignment as destiny wearing a maintenance badge, while NIA-7 adds that Rowan-and-Mira cooperation has an excellent projected success rate. Rowan gathers tools and tries to decide whether to treat the upcoming meeting as a routine job, a battle of wills, or a chance to prove the algorithm wrong.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "needling but lively",
+      "revelation": null,
+      "tension_change": "hold",
+      "player_goal": "Choose an emotional stance before facing Mira.",
+      "interactive": true,
+      "choice_prompt": "What attitude does Rowan take into the partnership with Mira?",
+      "branch_outcomes": [
+        "Rowan commits to strict professionalism and emotional distance.",
+        "Rowan leans into breezy confidence, hoping charm will cover discomfort.",
+        "Rowan treats the collaboration like a challenge and vows to disprove NIA-7's matchmaking logic."
+      ],
+      "exit_state": "Rowan is outwardly armed with tools and inwardly braced with a chosen attitude, even if Jules and NIA-7 both see through it."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "End the scene with forward momentum into the next encounter and a clear emotional hook.",
+      "summary": "With diagnostics loaded and the repair route traced, Rowan heads out for the Hydroponics Dome under explicit orders to work with Mira. The mission is now practical, urgent, and impossible to separate from the charged awkwardness between them.",
+      "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "resigned, determined",
+      "revelation": null,
+      "tension_change": "rise",
+      "player_goal": "Get to Mira and start the repair before the system degrades further.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Rowan leaves the Maintenance Spine with a deadline, a reluctant partnership, and no remaining excuse to avoid Mira."
+    }
+  ]
+}

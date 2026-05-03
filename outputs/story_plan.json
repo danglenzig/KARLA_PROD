@@ -1,0 +1,208 @@
+{
+  "story_title": "The Dead Choir of Calliope",
+  "synopsis": "A sci-fi horror visual novel set aboard the derelict deep space research station U.S.S. Calliope. The player character, recovery operative Avery Vale, is sent to learn why the station went dark and extract the priceless results of Project LYREBIRD, a xeno-biological study into an alien organism capable of storing and imitating human memory. Inside the silent station, Avery encounters fragmented command logs, a traumatized survivor, an unreliable security android, and the compromised lead scientist behind the experiment. As the truth emerges, Avery learns the blackout was deliberate: the research data and the organism have become inseparable. The story blends isolation, body horror, mistrust, and a final moral dilemma over whether to preserve a revolutionary discovery or bury it forever.",
+  "player_character": {
+    "character_data": {
+      "uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+      "name": "Avery Vale",
+      "portrait_image_prompt": "A young adult deep-space recovery operative in a dark armored vacuum undersuit with a half-unsealed helmet ring, tired intelligent eyes, subtle facial scar, practical short hair, stern expression, cool blue rim lighting, cinematic sci-fi horror style, detailed dialogue portrait, isolated black background",
+      "dialogue_examples": [
+        "Command wants their data. I want to know why a whole station chose silence.",
+        "If this blackout was intentional, I am not touching the archive until I know what it was meant to keep in.",
+        "KESTREL, open the bulkhead or explain why the blood is on the wrong side of it.",
+        "I can handle dead air. It's the voices inside it that worry me."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "b997dc2c-e15d-4ba7-87b3-fa219095d19e",
+        "name": "Captain Mara Voss",
+        "portrait_image_prompt": "A middle-aged female starship captain seen in flickering emergency hologram light, severe features, dark naval uniform with rank insignia, exhausted eyes, static scanline distortion, authoritative posture, grim sci-fi horror dialogue portrait, isolated black background",
+        "dialogue_examples": [
+          "This is Captain Voss of the Calliope. If you are hearing this, quarantine has failed.",
+          "No sample, no grant, no breakthrough is worth letting this station speak to the rest of the fleet.",
+          "Dr. Sato says it remembers us. I say it learns our shape and waits for us to trust it.",
+          "I killed the lights because silence was safer than what answered back."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e1be2c34-cad9-4902-a922-422693b1de49",
+        "name": "Dr. Ilya Sato",
+        "portrait_image_prompt": "A gaunt male xeno-biologist with pallid skin, luminous branching veins at the neck, torn research coat over sterile stationwear, haunted brilliant eyes, bioluminescent spores drifting around him, elegant but unsettling sci-fi body horror dialogue portrait, isolated black background",
+        "dialogue_examples": [
+          "You call it contamination because you only understand life that stays politely separate from you.",
+          "The specimen does not consume memory. It preserves it.",
+          "We were building the first living archive in human history.",
+          "If you destroy the data, you destroy everyone it has learned to remember."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+        "name": "KESTREL-9",
+        "portrait_image_prompt": "A station security android with white composite armor scarred by heat and claw marks, a single amber optic, exposed internal wiring, rigid posture, emotionless faceplate, red emergency reflections, ominous sci-fi horror dialogue portrait, isolated black background",
+        "dialogue_examples": [
+          "Quarantine status remains active. Organic reassurance is unavailable.",
+          "Your authorization is valid. Your survival probability is not.",
+          "Captain Voss ordered containment. Dr. Sato ordered preservation. Conflict unresolved.",
+          "Please do not mistake my restraint for trust."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "599a82ea-d8ed-4c06-9721-f6aba74f0982",
+        "name": "Nia Rourke",
+        "portrait_image_prompt": "A young female systems engineer in a stained maintenance jumpsuit, grease-smeared face, sleepless red-rimmed eyes, cropped hair, clutching an improvised cutting torch like a weapon, frightened but defiant, harsh green industrial lighting, sci-fi horror dialogue portrait, isolated black background",
+        "dialogue_examples": [
+          "If it talks like someone you miss, don't answer it.",
+          "I killed the comms before it could learn the traffic out.",
+          "The data isn't sitting on some clean little drive anymore. It's in the growth.",
+          "You can still leave, if you don't care what follows you home."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+        "name": "Docking Ring Acheron",
+        "location_image_prompt": "A derelict deep space station docking bay under intermittent red emergency lights, frost-coated bulkheads, drifting cargo crates, scarred airlock doors, warning strobes reflecting on metal, distant stars visible through a cracked viewport, cinematic sci-fi horror background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "cf536029-05e5-40f3-ac3b-6ea3bf0a7454",
+        "name": "Research Atrium",
+        "location_image_prompt": "A circular xeno-biology research hub with shattered specimen tanks, suspended walkways, overturned consoles, flickering holographic displays, smeared blood, strange bioluminescent residue creeping across sterile white surfaces, oppressive darkness, cinematic sci-fi horror background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "6cb23ad2-a48e-474a-8aab-7c7b1990cf3b",
+        "name": "Hydroponics Spine",
+        "location_image_prompt": "A long agricultural corridor aboard a space station transformed by alien fungal vines and pale translucent blossoms, humid mist, leaking pipes, dangling cables, strobing green grow lights, tangled roots covering walls and floor, eerie sci-fi body horror background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "ce2feb3c-becb-46be-9f6f-e75244daaa91",
+        "name": "Command Data Core",
+        "location_image_prompt": "A cathedral-like command chamber fused with a towering server core, holographic consoles, sealed quarantine shutters, spinning central data column, showers of sparks, cold blue light, reflective black floor, imposing and ominous sci-fi horror background"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "e027fafb-60f2-4418-ad85-5f1f6b0ab5ba",
+      "scene_name": "intro",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "non_player_character_uuids": [
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+        "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+      ],
+      "narrtive_summary": "Recovery operative Avery Vale boards the silent U.S.S. Calliope through Docking Ring Acheron after the station goes dark during classified xeno-biological research. Emergency power barely functions, the air is too cold, and signs of a rushed lockdown are everywhere. A booting security android, KESTREL-9, acknowledges Avery's retrieval orders but refuses to lift quarantine without local system checks. A fragmented welcome log from Captain Mara Voss introduces the central mystery: the blackout was not an accident, and the station may have been sealed on purpose."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "833c8028-b49b-45be-a6a0-e1800de43fc1",
+        "scene_name": "act1_scene1",
+        "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+        "non_player_character_uuids": [
+          "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+          "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+        ],
+        "narrtive_summary": "Avery restores partial power to the docking systems and negotiates with KESTREL-9 for transit access. The android's behavior is unnervingly literal, bound by contradictory standing orders from Captain Voss and Dr. Sato. Through damaged logs and environmental clues, Avery learns that the Calliope's commander initiated stationwide quarantine shortly before communications ceased. The scene establishes the station's rules: bulkheads seal without warning, automated systems cannot be fully trusted, and something unseen has been moving through the dark."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "a99ac566-62c6-445c-8d3d-d8befbfa3b6f",
+        "scene_name": "act1_scene2",
+        "location_uuid": "cf536029-05e5-40f3-ac3b-6ea3bf0a7454",
+        "non_player_character_uuids": [
+          "599a82ea-d8ed-4c06-9721-f6aba74f0982",
+          "e1be2c34-cad9-4902-a922-422693b1de49",
+          "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+        ],
+        "narrtive_summary": "In the shattered Research Atrium, Avery discovers Project LYREBIRD's ruined laboratories, breached sample tanks, and signs of violent panic among the crew. Dr. Ilya Sato's research notes describe an alien organism capable of storing neural impressions and reproducing human voices with impossible accuracy. A hidden transmission from systems engineer Nia Rourke reaches Avery from somewhere deeper in the station, begging them not to trust what sounds familiar. Captain Voss's later logs sharpen the threat: by the time the blackout began, the crew could no longer tell whether they were speaking to each other or to the specimen."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "43b80b48-5706-4c8f-8be1-e57c00cc7cbd",
+        "scene_name": "act2_scene1",
+        "location_uuid": "6cb23ad2-a48e-474a-8aab-7c7b1990cf3b",
+        "non_player_character_uuids": [
+          "599a82ea-d8ed-4c06-9721-f6aba74f0982",
+          "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+        ],
+        "narrtive_summary": "Avery follows Nia's signal into Hydroponics Spine, now overgrown with pale xeno-organic blooms feeding on coolant, moisture, and biomass from the station's agriculture decks. Nia emerges as the Calliope's lone uninfected survivor: exhausted, armed, and deeply paranoid. She reveals that Captain Voss cut the station off intentionally after realizing the organism had begun using memory as both camouflage and transmission medium. KESTREL-9 arrives with containment directives, turning the encounter into a tense three-way negotiation over whether Avery should continue toward the archive or abandon the mission."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "aa47a655-1308-4daa-80ea-55b8cef35100",
+        "scene_name": "act2_scene2",
+        "location_uuid": "ce2feb3c-becb-46be-9f6f-e75244daaa91",
+        "non_player_character_uuids": [
+          "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+          "b997dc2c-e15d-4ba7-87b3-fa219095d19e",
+          "e1be2c34-cad9-4902-a922-422693b1de49"
+        ],
+        "narrtive_summary": "Inside the Command Data Core, Avery restores enough power to access sealed command logs and the main research archive. The truth becomes clear: Project LYREBIRD was not merely cataloguing alien tissue, but attempting to build a living biological data medium using a sentient xeno-fungal network. Dr. Sato insisted the breakthrough would end death by preserving human memory, while Captain Voss ordered total quarantine once the organism started echoing private thoughts and imitating dead crew. KESTREL-9, unable to reconcile preservation and containment, offers Avery procedural access but warns that the archive may now be biologically active rather than purely digital."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "0c2e7176-5b6b-4454-ae28-b8950c8f41a6",
+        "scene_name": "act3_scene1",
+        "location_uuid": "6cb23ad2-a48e-474a-8aab-7c7b1990cf3b",
+        "non_player_character_uuids": [
+          "e1be2c34-cad9-4902-a922-422693b1de49",
+          "599a82ea-d8ed-4c06-9721-f6aba74f0982",
+          "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+        ],
+        "narrtive_summary": "Avery descends into the overgrown heart of Hydroponics Spine, where the alien network has formed a pulsing nursery from repurposed life-support infrastructure. There, Dr. Sato is found alive but partially merged with the organism, lucid in flashes and utterly devoted to protecting the living archive. Sato argues that the crew are not dead so much as transformed into memory-patterns within the growth, while Nia insists the voices are predatory imitations wearing the dead like masks. KESTREL-9 presses for decisive action, forcing Avery to choose whom to trust long enough to reach the final control protocol."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "5e6b173f-97d9-492e-b628-b322eeab4881",
+        "scene_name": "act3_scene2",
+        "location_uuid": "ce2feb3c-becb-46be-9f6f-e75244daaa91",
+        "non_player_character_uuids": [
+          "e1be2c34-cad9-4902-a922-422693b1de49",
+          "599a82ea-d8ed-4c06-9721-f6aba74f0982",
+          "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+          "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+        ],
+        "narrtive_summary": "Back in the Command Data Core, quarantine systems begin to fail as the organism infiltrates power, communications, and life support. Avery reaches the master archive interface and discovers the mission's final horror: the valuable research data can only be extracted by carrying a viable fragment of the living network off-station. Captain Voss's final recorded order, Sato's desperate pleas, Nia's terror, and KESTREL-9's containment logic all collide as Avery initiates the endgame. The climax centers on a fraught decision between preserving the discovery, weaponizing quarantine to burn it out, or attempting a compromise that may still let something escape."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "2686181e-fdb4-4f5b-bf74-fbfae54afdcd",
+      "scene_name": "outro",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "non_player_character_uuids": [
+        "b997dc2c-e15d-4ba7-87b3-fa219095d19e",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "narrtive_summary": "At Docking Ring Acheron, Avery makes their final departure from the dying Calliope as alarms, fire suppression systems, and phantom voices overlap in the background. The outcome reflects the player's choices: Avery may escape with the archive, destroy the station and its secrets, or leave carrying only uncertain evidence of what truly happened. Captain Voss's last message reframes the mission with bitter clarity, warning that some discoveries become more dangerous the moment they are understood. The denouement ends on lingering ambiguity, suggesting that silence may not mean the horror was contained."
+    }
+  }
+}

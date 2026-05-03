@@ -1,0 +1,153 @@
+{
+  "story_title": "Love in the Long Orbit",
+  "scene_name": "intro",
+  "scene_uuid": "e763e722-9025-4079-ab92-71dafa188fed",
+  "source_scene_summary": "During the Eudora's annual Founders Day celebration in the Promenade Ring, Rowan is trying to keep decorative systems online when a collision with Mira sends ceremonial flowers and repair tools scattering across the floor. The slapstick moment becomes even more embarrassing when NIA-7 accidentally reactivates an old compatibility-optimization program and publicly identifies Rowan and Mira as an ideal pair. Jules immediately finds this hilarious. The intro establishes the ship's bustling communal life, the pressure of everyone knowing everyone else's business, and the central comic premise: Rowan and Mira insist the algorithm is wrong just as circumstances begin forcing them together.",
+  "location_name": "Promenade Ring",
+  "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+  "player_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+  "non_player_character_uuids": [
+    "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+    "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+    "0fb439b5-9e26-4a33-a627-12e322ee8597"
+  ],
+  "dramatic_question": "Can Rowan keep the Founders Day decorations online and escape the Promenade with dignity before a minor systems glitch turns into a very public romantic disaster?",
+  "scene_goal": "Keep the festival systems running and avoid becoming the center of attention.",
+  "scene_turn": "A routine repair job turns Rowan into one half of a shipwide 'ideal pair' with Mira, and the unresolved glitch promises this embarrassment will continue.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "intro_beat_01_festival_glitch",
+      "purpose": "Establish the celebratory setting, Rowan's practical mindset, and the first sign that the event systems are unstable.",
+      "summary": "Founders Day is in full swing across the Promenade Ring while Rowan works a decorative systems panel instead of enjoying the festivities. Jules needles Rowan about hiding inside maintenance work as NIA-7 cheerfully oversees the celebration, while flickers in the lantern grid hint something older and stranger is running underneath.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "busy, playful, lightly frazzled",
+      "revelation": "The Founders Day decorative network is glitching in a way Rowan does not recognize.",
+      "tension_change": "rise",
+      "player_goal": "Patch the decorative systems quickly and stay out of the spotlight.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Rowan is already behind on repairs, and the Promenade remains crowded and unstable."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "intro_beat_02_meet_cute_collision",
+      "purpose": "Introduce Mira through a physical, comedic clash that instantly creates friction and chemistry.",
+      "summary": "Hurrying to intercept another malfunction, Rowan rounds a corner at the exact moment Mira crosses with ceremonial flowers for the festival displays. They collide spectacularly, sending blossoms, tools, and dignity skidding across the polished floor.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "awkward, slapstick, electric",
+      "revelation": "Mira is directly involved in the same Founders Day preparations Rowan is trying to keep from collapsing.",
+      "tension_change": "rise",
+      "player_goal": "Recover the scattered tools and keep the encounter from getting worse.",
+      "interactive": true,
+      "choice_prompt": "How does Rowan respond to the collision?",
+      "branch_outcomes": [
+        "Apologize sincerely and help Mira gather the flowers, earning a brief softened reaction.",
+        "Deflect with humor, getting a reluctant spark of amusement from Mira.",
+        "Prioritize the repair mess first, making Mira think Rowan is rude but competent."
+      ],
+      "exit_state": "Rowan and Mira are forced into each other's space, both flustered and newly aware of the other."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "intro_beat_03_banter_among_the_petals",
+      "purpose": "Turn the accident into character chemistry while seeding the technical mystery behind the malfunction.",
+      "summary": "As they kneel to collect crushed petals and runaway tools, Rowan and Mira trade sharp remarks about maintenance habits, botany, and personal space. Beneath the bickering, both notice the other's competence, and Rowan spots that a decorative node near Mira's floral display is running an archival code fragment.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "wry, sparky, unexpectedly intimate",
+      "revelation": "The malfunction appears linked to Mira's ceremonial floral display through an old code layer, not just a simple wiring fault.",
+      "tension_change": "hold",
+      "player_goal": "Figure out what caused the mishap while salvaging some dignity.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Their irritation becomes playful friction, and the glitch now clearly touches both of their responsibilities."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "intro_beat_04_compatibility_broadcast",
+      "purpose": "Trigger the scene's inciting embarrassment by having NIA accidentally reactivate the matchmaking protocol in public.",
+      "summary": "NIA-7 manifests to assist with diagnostics, but the scan hits the archival fragment and boots an obsolete social-cohesion subroutine. Before Rowan can cancel it, nearby displays, lanterns, and a chirpy announcement identify Rowan and Mira as a high-compatibility pair for communal morale optimization.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "0fb439b5-9e26-4a33-a627-12e322ee8597",
+      "mood": "mortifying, absurd, public",
+      "revelation": "The old social-cohesion program still exists inside the event network and can make public compatibility matches.",
+      "tension_change": "twist",
+      "player_goal": "Stop the diagnostic from broadcasting anything else.",
+      "interactive": true,
+      "choice_prompt": "How does Rowan react when the compatibility result goes public?",
+      "branch_outcomes": [
+        "Flatly deny the match, which only makes the announcement feel more conspicuous.",
+        "Try to shut down the nearest panel, proving the system is real and drawing even more eyes.",
+        "Play it off with a joke, giving Jules fresh material and leaving Mira unconvinced."
+      ],
+      "exit_state": "The compatibility result is now public knowledge, and both Rowan and Mira are trapped in the center of a growing audience."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "intro_beat_05_gossip_goes_shipwide",
+      "purpose": "Show the social pressure of life aboard the Eudora and let Jules amplify the comedy.",
+      "summary": "The Promenade erupts in delighted gossip, and Jules appears instantly like a predator sensing fresh drama. While Rowan and Mira talk over each other insisting the algorithm is nonsense, NIA calmly cites probability data and the crowd treats the whole thing as Founders Day entertainment.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "chaotic, teasing, socially claustrophobic",
+      "revelation": "On the Eudora, a private embarrassment can become community news in seconds.",
+      "tension_change": "rise",
+      "player_goal": "Contain the gossip and get the crowd to move on.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Jules is delighted, the rumor mill is fully engaged, and Rowan can no longer pretend the incident stayed small."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "intro_beat_06_denial_and_fallout",
+      "purpose": "Close the intro by locking in mutual denial, unresolved attraction, and the lingering systems problem that will drive the next scene.",
+      "summary": "Once the crowd thins, Mira stiffens back into professionalism and makes it clear the ship's matchmaking nonsense changes nothing. Rowan agrees too quickly, but the lingering fault log shows the compatibility subroutine is still entangled with the festival systems, ensuring this humiliating encounter will have follow-up consequences.",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "present_character_uuids": [
+        "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "focal_character_uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "mood": "defensive, unresolved, crackling",
+      "revelation": "The glitch was not a one-off; the obsolete protocol remains active in the event infrastructure.",
+      "tension_change": "twist",
+      "player_goal": "End the encounter cleanly and reassert that the AI is wrong.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Rowan leaves the Promenade publicly linked to Mira, privately rattled, and with an unresolved systems problem that will force the issue forward."
+    }
+  ]
+}

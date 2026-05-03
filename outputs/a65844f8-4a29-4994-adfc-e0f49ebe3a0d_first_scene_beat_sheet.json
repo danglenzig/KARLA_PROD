@@ -1,0 +1,161 @@
+{
+  "story_title": "Go! Fight! Hex!",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "d0a54c65-0bb9-46fc-8269-36b0ed9b1b14",
+  "source_scene_summary": "In the library archives, the gang combs through old yearbooks, booster newsletters, and microfilm reels, uncovering a pattern of unexplained disappearances tied to championship seasons. They also find evidence that the chapel crypt was renovated with secret booster money decades ago. Brooke Ashdown catches them snooping and, beneath a perfect smile, warns Iris that some traditions keep the school alive.",
+  "location_name": "Memorial Library Archives",
+  "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+  "player_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+  "non_player_character_uuids": [
+    "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+    "7579fbba-c035-4692-af50-22d2559801ee",
+    "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+    "6b6b10d5-3888-450c-ae11-daa822b02b60"
+  ],
+  "dramatic_question": "Will Iris find enough archival proof to connect Finch's disappearance to a long-running school conspiracy before someone notices what the gang is uncovering?",
+  "scene_goal": "Use the archives to prove Finch's disappearance fits a larger pattern tied to championships, boosters, and the chapel.",
+  "scene_turn": "What begins as suspicious snooping becomes concrete evidence of a decades-old institutional cover-up centered on the chapel crypt, and Brooke's warning confirms the conspiracy is active and watching Iris personally.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Establish the investigative setup, the group's research roles, and the player's first angle of approach.",
+      "summary": "Iris brings Finch's ribbon clue into the dim archives and pushes the others to treat the room like a crime scene instead of a study hall. Tess, Rico, and Evan split across yearbooks, booster newsletters, and microfilm readers as Iris decides where to start pulling at the thread.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "hushed curiosity",
+      "revelation": null,
+      "tension_change": "hold",
+      "player_goal": "Choose the most promising research lead and start turning suspicion into evidence.",
+      "interactive": true,
+      "choice_prompt": "Where does Iris begin the search: yearbooks, booster newsletters, or microfilm?",
+      "branch_outcomes": [
+        "Yearbooks surface missing faces and altered captions first.",
+        "Booster newsletters foreground donor names and school-spirit rhetoric first.",
+        "Microfilm surfaces disappearance blurbs buried beside football headlines first."
+      ],
+      "exit_state": "The gang is fully committed to a coordinated archive search, and Iris has set the first line of investigation in motion."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Reveal the first clear pattern linking disappearances to championship seasons.",
+      "summary": "As pages and clippings pile up, Iris and Tess notice a grim rhythm in the records: years celebrated as miracle football runs also contain quiet withdrawals, unexplained transfers, and vanished staff names. The missing people are almost always the sort Arkham can afford to forget.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "uneasy fascination",
+      "revelation": "Multiple students and low-status staff disappeared or were quietly erased from records during past championship seasons.",
+      "tension_change": "rise",
+      "player_goal": "Confirm that Finch's disappearance is part of a repeating pattern, not an isolated incident.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The group's conspiracy theory hardens into a documented timeline of suspicious disappearances."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Deepen the evidence through public records and let Evan's technical focus sharpen the pattern.",
+      "summary": "At the microfilm reader, Evan threads old local newspapers and finds tiny disappearance items wedged beside giant playoff headlines and booster celebrations. The static and image warping seem worst around title years, making the cheerful coverage feel strangely contaminated.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+      "mood": "creeping dread",
+      "revelation": "Public reporting repeatedly buries unexplained disappearances beneath celebratory football coverage during championship years.",
+      "tension_change": "rise",
+      "player_goal": "Cross-check the school records against outside reporting for proof of a cover-up pattern.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "What looked like coincidence now reads like a repeatable script shared by the school and the town around it."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Tie the missing-person pattern to a hidden campus location and reveal institutional funding behind it.",
+      "summary": "Rico forces open a jammed donor ledger drawer while Tess cross-references booster newsletters, exposing old payments for vague 'memorial improvements' that match no visible project on campus. The numbers point to a sealed renovation beneath St. Agnes Chapel, quietly funded decades ago through booster money instead of official school channels.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+      "mood": "forbidden excitement",
+      "revelation": "Secret booster money financed a concealed renovation of the chapel crypt.",
+      "tension_change": "twist",
+      "player_goal": "Connect the disappearance pattern to a specific place and proof of organized cover-up.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Iris now has a physical target—the chapel crypt—and documentary proof that influential adults helped hide it."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Bring the threat into the room by having Brooke personally intercept the investigation.",
+      "summary": "Before the gang can decide what to do with the records, Brooke Ashdown appears from between the stacks with a smile polished enough to cut glass. She clocks exactly what Iris is holding, praises her curiosity in a condescending murmur, and warns that some traditions keep the school alive.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+        "6b6b10d5-3888-450c-ae11-daa822b02b60"
+      ],
+      "focal_character_uuid": "6b6b10d5-3888-450c-ae11-daa822b02b60",
+      "mood": "velvet menace",
+      "revelation": "Brooke already knows about the investigation and speaks about the hidden tradition as something deliberate, protected, and necessary.",
+      "tension_change": "twist",
+      "player_goal": "Decide whether to challenge Brooke, play innocent, or try to defuse the confrontation.",
+      "interactive": true,
+      "choice_prompt": "How does Iris answer Brooke's warning?",
+      "branch_outcomes": [
+        "Challenge Brooke directly, prompting a brief crack in Brooke's smile and sharper hostility.",
+        "Play innocent, letting Brooke control the exchange while making clear she is not fooled.",
+        "Deflect with humor, which Brooke treats as childish while still delivering the threat."
+      ],
+      "exit_state": "Brooke leaves after making it clear Iris has crossed from curiosity into dangerous trespass."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "Convert fear into resolve and point the story toward the next actionable location.",
+      "summary": "Once Brooke is gone, the archives feel less safe and far more important. Iris realizes Brooke's interruption is confirmation, not deterrence, and Rico points out that if Finch learned anything about a sealed crypt, the maintenance routes beneath the chapel and gym are the next place to search.",
+      "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "rattled resolve",
+      "revelation": "Brooke's threat confirms the chapel lead matters enough for someone powerful to police it immediately.",
+      "tension_change": "rise",
+      "player_goal": "Keep the group together and turn the new evidence into a concrete next move.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The gang leaves the archives with proof of a decades-long pattern, a lead beneath St. Agnes Chapel, and a plan to enter the maintenance tunnels next."
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "story_title": "Go! Fight! Hex!",
+  "scene_name": "intro",
+  "scene_uuid": "a635eb36-b0c0-4650-b6d4-18defc45308b",
+  "source_scene_summary": "After classes let out in the North Quad, Iris learns that beloved janitor Abel Finch has vanished just days before the state playoffs. While faculty dismiss his disappearance as a drunken walkout, Tess, Rico, and Evan help Iris inspect Finch's abandoned cart and discover an odd mix of bleach, candle wax, and a cheer squad fundraiser ribbon marked with a hidden sigil. The intro establishes the school hierarchy, the misfit friend group, and the first clue that school spirit is masking something monstrous.",
+  "location_name": "North Quad",
+  "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+  "player_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+  "non_player_character_uuids": [
+    "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+    "7579fbba-c035-4692-af50-22d2559801ee",
+    "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+  ],
+  "dramatic_question": "Is Abel Finch's disappearance really a simple walkout, or the first sign that something rotten is hiding beneath Arkham Prep's playoff pageantry?",
+  "scene_goal": "Iris wants to find out what happened to Mr. Finch and decide whether his disappearance is serious enough to investigate.",
+  "scene_turn": "What starts as a rumor the school wants brushed aside becomes a real mystery when Iris and her friends uncover evidence on Finch's cart that suggests cleanup, ritual residue, and a link to the cheer squad.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "intro_beat_01",
+      "purpose": "Open on the school's tone and immediately frame Finch's absence as wrong.",
+      "summary": "Classes spill into the North Quad under banners, pep posters, and state-playoff excitement. Iris notices Abel Finch's cart sitting unattended near the walkway and is unsettled because Finch is never absent when students flood out after class.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "festive surface with a thread of unease",
+      "revelation": "Finch's absence is conspicuous and out of character.",
+      "tension_change": "rise",
+      "player_goal": "Figure out why Finch's cart has been left alone.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Iris's vague discomfort sharpens into concern about Finch specifically."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "intro_beat_02",
+      "purpose": "Establish the school's hierarchy and show authority dismissing the problem.",
+      "summary": "Before Iris can get a straight answer, the official story spreads through passing staff and students: Finch walked off the job drunk, and playoff week will proceed without interruption. Tess, Rico, and Evan clock how badly that explanation lands with Iris and drift over to hear the rest.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "frustrated disbelief",
+      "revelation": "Faculty have already chosen a convenient explanation for Finch's disappearance.",
+      "tension_change": "rise",
+      "player_goal": "Decide whether to accept the official line or push back against it.",
+      "interactive": true,
+      "choice_prompt": "How does Iris respond to the faculty version of events?",
+      "branch_outcomes": [
+        "She objects out loud, drawing attention to herself as someone unwilling to let the matter drop.",
+        "She keeps her anger contained, but her friends see she doesn't believe a word of it."
+      ],
+      "exit_state": "Whether openly or privately, Iris rejects the school's explanation and becomes committed to finding her own."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "intro_beat_03",
+      "purpose": "Introduce the core friend group dynamic and turn concern into action.",
+      "summary": "Tess turns the rumor into a theory, Rico treats the abandoned cart like unattended evidence, and Evan nervously confirms Finch never misses his usual route. Their banter establishes them as the school's sidelined weirdos, but also the only people willing to take Iris seriously.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "sarcastic camaraderie",
+      "revelation": "Iris has allies who are willing to investigate when the institution will not.",
+      "tension_change": "hold",
+      "player_goal": "Get her friends to help inspect Finch's cart before staff removes it.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The four of them unite around a quick, unofficial search of Finch's cart."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "intro_beat_04",
+      "purpose": "Shift the scene from rumor to tangible evidence through a hands-on search.",
+      "summary": "The group crouches around Finch's cart and starts going through it before anyone can stop them. What should look like janitorial leftovers instead reads wrong: too much bleach for a simple hallway cleanup, and candle wax stuck to a rag and tray where it has no normal reason to be.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "investigative unease",
+      "revelation": "Finch's cart holds traces of hurried cleanup and ritual-like residue, not an ordinary work shift.",
+      "tension_change": "rise",
+      "player_goal": "Search the cart for anything that explains what Finch was dealing with before he vanished.",
+      "interactive": true,
+      "choice_prompt": "Which part of Finch's cart does Iris inspect first?",
+      "branch_outcomes": [
+        "The cleaning supplies suggest a heavy bleach job that doesn't match the visible mess in the quad.",
+        "The upper tray and rags reveal wax drippings and scorched residue that feel more ceremonial than practical.",
+        "A side pocket turns up school-event leftovers that shouldn't be mixed in with janitorial tools."
+      ],
+      "exit_state": "The cart is no longer just abandoned property; it is clearly carrying clues."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "intro_beat_05",
+      "purpose": "Deliver the scene's signature clue and connect school spirit to occult menace.",
+      "summary": "Buried in the cart is a cheer squad fundraiser ribbon, red-and-black and cheerful at first glance. When Iris and the others examine it more closely, a hidden mark inside the printed design reads less like mascot art and more like a sigil, turning school spirit into something suddenly sinister.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "creeping dread",
+      "revelation": "A cheer squad item found with the cleanup traces bears a hidden sigil, implying Finch stumbled onto something tied to school spirit rituals.",
+      "tension_change": "twist",
+      "player_goal": "Understand whether the ribbon is just weird design or evidence of something deliberate.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Iris now has a concrete clue linking Finch's disappearance to something occult-adjacent and school-sanctioned."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "intro_beat_06",
+      "purpose": "End the intro by locking in the mystery, the team, and the next lead.",
+      "summary": "The friends volley jokes to keep from panicking, but the conclusion is the same: the school is hiding something, and Finch may have paid for finding it first. Iris pockets the ribbon, and the group agrees to start with old records and past school history, setting their next move toward the library archives.",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "present_character_uuids": [
+        "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "focal_character_uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "mood": "determined and conspiratorial",
+      "revelation": "If this clue is part of a larger pattern, the school archives may contain earlier versions of the same cover-up.",
+      "tension_change": "rise",
+      "player_goal": "Commit the group to a next step before the clue can be dismissed or confiscated.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Iris and her friends become an investigative unit, with the ribbon as their first real piece of evidence and the archives as their next destination."
+    }
+  ]
+}

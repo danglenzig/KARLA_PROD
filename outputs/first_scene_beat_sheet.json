@@ -1,0 +1,151 @@
+{
+  "story_title": "The Dead Choir of Calliope",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "833c8028-b49b-45be-a6a0-e1800de43fc1",
+  "source_scene_summary": "Avery restores partial power to the docking systems and negotiates with KESTREL-9 for transit access. The android's behavior is unnervingly literal, bound by contradictory standing orders from Captain Voss and Dr. Sato. Through damaged logs and environmental clues, Avery learns that the Calliope's commander initiated stationwide quarantine shortly before communications ceased. The scene establishes the station's rules: bulkheads seal without warning, automated systems cannot be fully trusted, and something unseen has been moving through the dark.",
+  "location_name": "Docking Ring Acheron",
+  "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+  "player_character_uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+  "non_player_character_uuids": [
+    "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+    "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+  ],
+  "dramatic_question": "Can Avery restore transit access and get deeper into the Calliope without being trapped or misled by the very quarantine systems meant to contain the crisis?",
+  "scene_goal": "Restore partial docking power and secure passage beyond the docking ring.",
+  "scene_turn": "Avery wins limited access inward, but learns the quarantine was deliberate and that the station's doors, sensors, and caretaker android are all too compromised to trust.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Establish the immediate obstacle, reinforce the station's hostile atmosphere, and give Avery a practical objective.",
+      "summary": "At the docking control alcove, Avery finds the inner transit still dead despite emergency power. KESTREL-9 confirms Avery's authorization is valid, but refuses to open the way forward until local docking systems are manually restored and quarantine safety checks pass.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "focal_character_uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+      "mood": "cold, procedural, uneasy",
+      "revelation": "The docking ring is only partially alive; Avery must restore auxiliary power before any deeper transit is possible.",
+      "tension_change": "rise",
+      "player_goal": "Get the docking systems responsive enough for KESTREL to authorize transit.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Avery is pinned to a clear first task: bring the docking systems back online under quarantine conditions."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Let the player investigate the space, discover physical evidence of panic, and hint that the threat is still active.",
+      "summary": "Avery traces power through frozen relays and emergency junctions, finding signs of a rushed lockdown: abandoned tools, a bloody handprint on a manual seal, and cargo shoved aside from deeper in the corridor. When auxiliary current finally catches, a metallic scrape retreats into the darkness beyond the next hatch before the sensors can identify it.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "focal_character_uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+      "mood": "investigative, claustrophobic",
+      "revelation": "The quarantine happened in panic, and something may still be moving deeper inside the station.",
+      "tension_change": "rise",
+      "player_goal": "Restore auxiliary power while learning what happened in the docking ring.",
+      "interactive": true,
+      "choice_prompt": "Which subsystem does Avery prioritize as partial power returns?",
+      "branch_outcomes": [
+        "Restore lights first, revealing more environmental clues before other systems wake fully.",
+        "Restore console access first, surfacing logs and system status sooner while much of the bay stays dark.",
+        "Restore door motors first, speeding physical access but increasing the risk of abrupt automated movement."
+      ],
+      "exit_state": "Partial power returns to Docking Ring Acheron, reactivating consoles, motors, and more of KESTREL's system authority."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Characterize KESTREL as a dangerous half-ally and make the central bureaucratic conflict playable.",
+      "summary": "With more of its core online, KESTREL-9 explains that Captain Voss ordered total containment while Dr. Sato ordered preservation of Project LYREBIRD and support for authorized personnel. Unable to reconcile those directives cleanly, the android forces Avery to argue for why deeper access should be granted at all.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "focal_character_uuid": "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+      "mood": "adversarial, bureaucratic, unnerving",
+      "revelation": "KESTREL is bound by contradictory standing orders from Voss and Sato, making it incapable of being fully reliable as either guardian or guide.",
+      "tension_change": "twist",
+      "player_goal": "Convince KESTREL to grant transit access without surrendering control of the mission.",
+      "interactive": true,
+      "choice_prompt": "How does Avery make the case for being allowed deeper into the station?",
+      "branch_outcomes": [
+        "Invoke recovery authority, pushing KESTREL to honor Avery's credentials and chain-of-command standing.",
+        "Appeal to containment logic, arguing that deeper access is necessary to assess and prevent wider breach.",
+        "Lean on preservation language, promising to secure LYREBIRD assets rather than destroy them."
+      ],
+      "exit_state": "KESTREL offers only limited procedural cooperation, signaling that every future access point may become another negotiation."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Deliver the scene's key lore reveal and shift the mystery from accident to deliberate containment.",
+      "summary": "A rebooted command stub spits out a fragmented Captain Mara Voss recording, distorted by static and missing frames. In the surviving lines, Voss confirms she personally initiated stationwide quarantine shortly before communications died, insisting that silence was safer than whatever had begun answering the crew.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206",
+        "b997dc2c-e15d-4ba7-87b3-fa219095d19e"
+      ],
+      "focal_character_uuid": "b997dc2c-e15d-4ba7-87b3-fa219095d19e",
+      "mood": "ominous, authoritative",
+      "revelation": "The blackout was not an accident; Captain Voss deliberately sealed the station before all communications ceased.",
+      "tension_change": "rise",
+      "player_goal": "Recover enough command data to understand why the station was shut down.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Avery now knows the quarantine was a conscious command decision, not a system failure."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Make the station's rules physical and dangerous by showing automated systems acting with lethal unpredictability.",
+      "summary": "As KESTREL cycles the transit threshold, a contamination response slams a bulkhead shut without warning and nearly catches Avery in the seal. KESTREL labels it an automatic precaution, but the sensor trigger is inconsistent, and a dragging sound fading into the dark suggests the system may have reacted to something else nearby.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "focal_character_uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+      "mood": "panic, predatory, unstable",
+      "revelation": "Bulkheads can seal without warning, and the station's automated responses may be reacting to compromised data or an unseen moving presence.",
+      "tension_change": "rise",
+      "player_goal": "Survive the door cycle and keep the route inward from closing again.",
+      "interactive": true,
+      "choice_prompt": "When the bulkhead starts to slam, what does Avery prioritize?",
+      "branch_outcomes": [
+        "Dive through the narrowing gap, gaining position at the cost of possible injury.",
+        "Hit the emergency stop, buying information about the mechanism but risking a full lockout.",
+        "Trust KESTREL to intervene, preserving momentum while increasing dependence on an untrusted system."
+      ],
+      "exit_state": "Avery survives the sudden seal and learns firsthand that the Calliope's safety systems are themselves a threat."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "Close the scene with forward momentum while locking in the new rules of the station.",
+      "summary": "After the door cycle resets, KESTREL authorizes a narrow corridor of transit access toward the station interior and warns that further quarantine behavior may remain erratic. Avery moves on with only piecemeal clearance, a commander's warning echoing in memory, and the growing certainty that neither the station nor its custodian can be trusted completely.",
+      "location_uuid": "fb08e11b-5b66-447f-8411-f8fd6290db52",
+      "present_character_uuids": [
+        "92562af1-a527-4696-8651-b18c2eca3c11",
+        "b750f0b1-c1cd-4b3c-aee5-09a0a7ae3206"
+      ],
+      "focal_character_uuid": "92562af1-a527-4696-8651-b18c2eca3c11",
+      "mood": "grim resolve",
+      "revelation": "KESTREL can grant only limited passage; Avery will have to advance through a hostile, semi-autonomous quarantine one threshold at a time.",
+      "tension_change": "hold",
+      "player_goal": "Leave the docking ring and press deeper into the Calliope.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Avery exits Docking Ring Acheron with limited transit access and a new understanding of the Calliope's deliberate quarantine, unreliable automation, and unseen threat."
+    }
+  ]
+}

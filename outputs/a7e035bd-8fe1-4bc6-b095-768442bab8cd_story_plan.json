@@ -1,0 +1,274 @@
+{
+  "story_title": "Moon Over Brackenholme",
+  "synopsis": "In 1976, Arthur Henshaw, a meticulous Whitehall civil servant from London, is sent to the isolated northern village of Brackenholme to review a stalled government development scheme. On his first night, he is mauled by a beast on the moor and drawn into a closed community bound by old bargains, half-buried church records, and a werewolf curse the locals have spent generations managing in secret. To save himself, Arthur must investigate who bit him, uncover why the village lies as one, and survive the next full moon without killing anyone. The tone blends rural Gothic, British noir detective serials, class tension, dry British wit, and mounting body-horror. Major figures include Edith Cray, the sharp-eyed landlady of the Black Stag; Sgt. Malcolm Harker, the village constable with too much to hide; Dr. Miriam Vale, a practical GP caught between medicine and folklore; Reverend Elias Wren, a priest and amateur historian of Brackenholme's sins; and Elsie Crowther, a sly young postmistress who knows the moor better than anyone.",
+  "player_character": {
+    "character_data": {
+      "uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "name": "Arthur Henshaw",
+      "portrait_image_prompt": "A British male civil servant in his mid-30s, 1970s London professional, neat side-parted dark hair, tired intelligent eyes behind wire-rim glasses, conservative suit with loosened tie under a damp raincoat, carrying a battered government satchel, restrained expression slipping into fear and suspicion, realistic visual novel portrait, moody British noir lighting",
+      "dialogue_examples": [
+        "I'm not here to upset anyone. I only need the facts, however determined everyone seems to be to misplace them.",
+        "Doctor, with respect, dogs do not usually look a man in the eye before they bite him.",
+        "Every person in this village is keeping the same secret, which would be impressive if it weren't so worrying.",
+        "There has to be a way through this that doesn't end with someone dead.",
+        "I came north to file a report. I appear to have inherited a curse instead."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "79fd4087-903a-4490-9dec-6b198ce9beba",
+        "name": "Edith Cray",
+        "portrait_image_prompt": "A northern English pub landlady in her late 50s, sturdy build, curled greying hair, floral blouse under a cardigan and apron, cigarette in hand, sharp eyes that miss nothing, equal parts warmth and menace, 1970s rural pub atmosphere, realistic visual novel portrait",
+        "dialogue_examples": [
+          "If Brackenholme wanted London's opinion, love, we'd have written and asked for it.",
+          "Sit down, dry off, and stop staring at the windows. Whatever's out there knows where we are.",
+          "People round here survive by minding their own. Outsiders call that secrecy because it makes them feel clever.",
+          "You can tell a lot about a man by how he behaves when he's frightened. You're still being polite, which is promising."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "8feb0edd-06f2-4187-93a1-46997e3d267a",
+        "name": "Sgt. Malcolm Harker",
+        "portrait_image_prompt": "A rural northern police sergeant in his early 40s, broad-shouldered, weathered face, heavy sideburns, dark wool overcoat over 1970s police uniform, bruised eyes from too many sleepless nights, stern but haunted expression, realistic visual novel portrait with cold moorland tones",
+        "dialogue_examples": [
+          "Officially, you were mauled by a large dog and you were fortunate to keep your throat.",
+          "You London men always think a mystery exists because nobody's explained themselves quickly enough.",
+          "The moor isn't a puzzle to be solved. It's a place that swallows careless people.",
+          "If I tell you to stay indoors after dark, Mr. Henshaw, that's the closest thing to kindness you'll hear from me."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+        "name": "Dr. Miriam Vale",
+        "portrait_image_prompt": "A village GP in her late 30s, practical northern English woman, dark curly hair pinned back, tired but steady eyes, sensible blouse and tweed skirt under a white coat, medical bag nearby, calm intelligence with an undercurrent of dread, realistic visual novel portrait",
+        "dialogue_examples": [
+          "I can treat the wound, Mr. Henshaw. What I cannot treat is a village's habit of lying to itself.",
+          "Your temperature is wrong, your pulse is wrong, and if you insist on walking about the moor you'll soon be dead wrong.",
+          "Medicine explains more than superstition likes to admit. Unfortunately, superstition sometimes explains the rest.",
+          "If you want to survive the next moon, you must let other people help you, however little they've earned your trust."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "fbfd36f5-7804-470e-b32a-bddb3ce4c9aa",
+        "name": "Reverend Elias Wren",
+        "portrait_image_prompt": "An austere Anglican priest in his 60s, gaunt face, silver hair, black clerical shirt and worn wool coat, ink-stained fingers from old manuscripts, scholarly and severe with sorrow in his eyes, realistic visual novel portrait, candlelit church ambience",
+        "dialogue_examples": [
+          "Sin is seldom as simple as wickedness. More often it is cowardice, repeated until it becomes tradition.",
+          "Our records call it the Black Debt. That is village language for a curse no one had the courage to name plainly.",
+          "Killing the beast is a satisfying thought and, I fear, a foolish one.",
+          "God forgives many things. Villages are far less generous."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "454d4e4c-bda4-43d0-93e3-8e16ee2140fe",
+        "name": "Elsie Crowther",
+        "portrait_image_prompt": "A quick-witted northern village postmistress in her early 20s, wind-reddened cheeks, cropped hair tucked under a knitted cap, practical 1970s coat and muddy boots, sly half-smile, restless energy of someone who ranges the moor at night, realistic visual novel portrait",
+        "dialogue_examples": [
+          "You walk like London taught you pavements are permanent. Up here the ground argues back.",
+          "Everyone thinks I'm harmless because I sort letters and smile nice. That's useful to me.",
+          "If you want the truth in Brackenholme, don't ask in the pub till the third pint.",
+          "There's paths on the moor the map forgot, and folk in the village who'd prefer it stayed that way."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+        "name": "Brackenholme Railway Halt",
+        "location_image_prompt": "A lonely rural railway halt in northern England, 1976, damp platform with peeling British Rail signage, low stone walls, sodium lamps glowing through dense fog, terraced hills and a dark moor beyond, wet asphalt and parked council car, cinematic British noir realism"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "be58d41d-dc75-4308-8b94-76f73929f16b",
+        "name": "The Black Stag Inn",
+        "location_image_prompt": "A small stone village pub in 1970s northern England, nicotine-stained wallpaper, brass beer taps, dartboard, peat fire, worn wooden tables, amber lamplight, locals in shadow, cosy but oppressive atmosphere, realistic rural noir background"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+        "name": "Vale Surgery",
+        "location_image_prompt": "A modest country doctor's surgery in 1970s Britain, pale green walls, metal filing cabinets, examination bed, frosted windows with rain streaks, harsh fluorescent lights, old medical instruments and handwritten notes, clinical realism with unsettling tension"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "71c246ed-5c90-4743-9363-4f64b4eef4e6",
+        "name": "St. Jude's Church and Graveyard",
+        "location_image_prompt": "An ancient hilltop parish church in rural northern England, weathered stone, narrow stained-glass windows, crooked grave markers, wind-bent yews, damp lychgate, candlelit nave and archival shelves, Gothic but grounded 1970s realism"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "79c0fb58-c5a2-4b67-8292-8a70eec881f1",
+        "name": "Brackenholme Moor",
+        "location_image_prompt": "A bleak northern moor under heavy clouds, heather, peat bogs, dry-stone walls, sheep paths, standing fog, moonlit ridges and sudden black gullies, vast empty landscape with lurking menace, cinematic realistic horror-noir style"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "77556bc9-9700-4f7c-8728-56728c3b0307",
+        "name": "Old Lead Mine",
+        "location_image_prompt": "An abandoned lead mine beneath the moor, rusted rails, dripping stone tunnels, old iron chains fixed into rock, lantern light on wet walls, remnants of mining equipment and a hidden ritual chamber, grounded industrial Gothic realism"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "ae2728de-f276-4f70-ba1a-01bebf192ea2",
+      "scene_name": "intro",
+      "location_uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+      "non_player_character_uuids": [
+        "79fd4087-903a-4490-9dec-6b198ce9beba",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "narrtive_summary": "Arthur Henshaw arrives in Brackenholme to inspect a stalled government development file and is met with cool hospitality, evasive answers, and warnings not to cross the moor after dark. A foggy detour from the railway halt turns into a nightmare when a huge creature attacks and bites him. The locals drive it off, immediately insist it was only a dog, and carry Arthur into the village, establishing the mystery, the setting, and the shared lie at the heart of Brackenholme."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "e97f8756-0be5-4ae3-a24a-a6af1ec9b2cb",
+        "scene_name": "act1_scene1",
+        "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+        "non_player_character_uuids": [
+          "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+          "8feb0edd-06f2-4187-93a1-46997e3d267a"
+        ],
+        "narrtive_summary": "Arthur wakes in Vale Surgery feverish, bandaged, and disturbed by flashes of the beast's eyes. Dr. Vale treats him with professional calm while Sgt. Harker pushes a convenient story about a feral dog and tries to hurry Arthur back to London. Arthur notices how perfectly their accounts align, how nervous everyone becomes at the mention of the calendar, and decides he must investigate before the village closes ranks completely."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "20fa05d7-8505-4505-a1a2-e19a3fdbae4b",
+        "scene_name": "act1_scene2",
+        "location_uuid": "be58d41d-dc75-4308-8b94-76f73929f16b",
+        "non_player_character_uuids": [
+          "79fd4087-903a-4490-9dec-6b198ce9beba",
+          "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+        ],
+        "narrtive_summary": "At the Black Stag Inn, Arthur questions Edith and the locals about missing livestock, shuttered windows, and strange village customs tied to the moon. Elsie quietly feeds him practical clues about the old mine and which parish records go missing every few years. As Arthur's hearing sharpens and his temper frays, the investigation becomes personal: the curse is already taking hold."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "a518f1a7-f337-4b25-8053-c11a8079f507",
+        "scene_name": "act1_scene3",
+        "location_uuid": "71c246ed-5c90-4743-9363-4f64b4eef4e6",
+        "non_player_character_uuids": [
+          "fbfd36f5-7804-470e-b32a-bddb3ce4c9aa"
+        ],
+        "narrtive_summary": "Arthur searches St. Jude's church records with Reverend Wren and uncovers references to a hereditary affliction known as the Black Debt. Wren explains that the curse passes by bite, thrives on fear and secrecy, and cannot be understood through simple superstition or simple law. He warns Arthur that killing the carrier may not free him, and that surviving the coming full moon without bloodshed may be the first condition of any cure."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "c211a27c-83d9-404d-bbb9-bb022b423c4d",
+        "scene_name": "act2_scene1",
+        "location_uuid": "79c0fb58-c5a2-4b67-8292-8a70eec881f1",
+        "non_player_character_uuids": [
+          "454d4e4c-bda4-43d0-93e3-8e16ee2140fe",
+          "8feb0edd-06f2-4187-93a1-46997e3d267a"
+        ],
+        "narrtive_summary": "Guided by Elsie, Arthur returns to the moor and finds iron restraints, blood traces, and hidden police markers near the site of the attack. Harker catches them there and turns hostile, revealing by his anger and fear that the authorities are part of the cover-up rather than apart from it. Arthur's senses and aggression spike in the open night air, escalating the danger and tightening suspicion around Harker."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "8066c53c-f16c-46a7-8491-62830c2eae7d",
+        "scene_name": "act2_scene2",
+        "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+        "non_player_character_uuids": [
+          "9ecf242b-4619-4ceb-a08d-a457f85586f5"
+        ],
+        "narrtive_summary": "Dr. Vale finally speaks plainly: Brackenholme has hidden and medically managed afflicted men for generations, sedating and restraining them through the worst nights to prevent killings. She believes Arthur can still avoid hurting anyone if he accepts confinement and helps identify the one who bit him. Her confession reframes the village from a nest of monsters into a desperate community using secrecy as crude harm reduction."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "d6d0d42c-c2f2-4aa8-ae75-115b9c2e4390",
+        "scene_name": "act2_scene3",
+        "location_uuid": "77556bc9-9700-4f7c-8728-56728c3b0307",
+        "non_player_character_uuids": [
+          "79fd4087-903a-4490-9dec-6b198ce9beba",
+          "8feb0edd-06f2-4187-93a1-46997e3d267a",
+          "fbfd36f5-7804-470e-b32a-bddb3ce4c9aa",
+          "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+        ],
+        "narrtive_summary": "Arthur follows the villagers into the abandoned lead mine and discovers a hidden iron chamber used during full moons. Cornered by the evidence, Harker admits he is the current werewolf and that Arthur was bitten during a failed containment on the moor. Edith, Wren, and Elsie reveal themselves as members of an old compact trying to contain the curse without triggering panic, imprisonment, or a killing spree, proving the locals are not what they first seemed."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "c91278ae-554b-4462-9def-079c4a284d6d",
+        "scene_name": "act3_scene1",
+        "location_uuid": "71c246ed-5c90-4743-9363-4f64b4eef4e6",
+        "non_player_character_uuids": [
+          "fbfd36f5-7804-470e-b32a-bddb3ce4c9aa",
+          "79fd4087-903a-4490-9dec-6b198ce9beba",
+          "9ecf242b-4619-4ceb-a08d-a457f85586f5"
+        ],
+        "narrtive_summary": "Back in the church, Wren deciphers the oldest parish fragments and finally identifies the real terms of the curse. It can only be broken if the bitten men survive the full moon restrained, the village publicly names the lies used to sustain the pact, and no blood is spilled before dawn. Arthur must choose trust over vengeance, accepting that the solution lies in confession, restraint, and solidarity rather than violence."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "48c15d7f-30c2-4590-864f-94e788ebd1a7",
+        "scene_name": "act3_scene2",
+        "location_uuid": "be58d41d-dc75-4308-8b94-76f73929f16b",
+        "non_player_character_uuids": [
+          "8feb0edd-06f2-4187-93a1-46997e3d267a",
+          "79fd4087-903a-4490-9dec-6b198ce9beba",
+          "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+          "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+        ],
+        "narrtive_summary": "Arthur confronts Harker in the Black Stag and learns the sergeant had come to believe death was the only release, even if it meant provoking Arthur into murder. Rejecting that fatalism, Arthur persuades Harker and the others to attempt Wren's ritual instead. The scene turns the village pub from a place of rumor and half-truth into a staging ground for mutual trust, preparation, and the player character's commitment to spare every life involved."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "4e18e2d8-8f86-45d2-8352-3deb14edcc22",
+        "scene_name": "act3_scene3",
+        "location_uuid": "77556bc9-9700-4f7c-8728-56728c3b0307",
+        "non_player_character_uuids": [
+          "8feb0edd-06f2-4187-93a1-46997e3d267a",
+          "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+          "fbfd36f5-7804-470e-b32a-bddb3ce4c9aa",
+          "79fd4087-903a-4490-9dec-6b198ce9beba",
+          "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+        ],
+        "narrtive_summary": "During the full moon in the mine, Arthur and Harker are chained inside the iron chamber while Dr. Vale administers sedatives, Edith and Elsie hold the perimeter, and Wren leads the confession rite. The villagers speak aloud the deaths they feared, the lies they told, and the burden they shifted onto outsiders and each other. By dawn both afflicted men survive without killing anyone, and the curse finally breaks, or at least loses the power secrecy gave it."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "6232f534-7eb6-45e0-8bf3-3c06e4a56ca4",
+      "scene_name": "outro",
+      "location_uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+      "non_player_character_uuids": [
+        "79fd4087-903a-4490-9dec-6b198ce9beba",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "narrtive_summary": "At first light, Arthur waits at the railway halt with his satchel, a healed wound, and a report he now understands could either protect or destroy Brackenholme. Edith and Elsie see him off with a new, uneasy honesty, while the village begins rebuilding itself without the old compact of silence. Arthur leaves the north changed by what happened there: still a civil servant, still a rational man, but now carrying the knowledge that some cases are solved not by exposing monsters, but by refusing to become one."
+    }
+  }
+}

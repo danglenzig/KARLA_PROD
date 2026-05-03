@@ -1,0 +1,150 @@
+{
+  "story_title": "Moon Over Brackenholme",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "e97f8756-0be5-4ae3-a24a-a6af1ec9b2cb",
+  "source_scene_summary": "Arthur wakes in Vale Surgery feverish, bandaged, and disturbed by flashes of the beast's eyes. Dr. Vale treats him with professional calm while Sgt. Harker pushes a convenient story about a feral dog and tries to hurry Arthur back to London. Arthur notices how perfectly their accounts align, how nervous everyone becomes at the mention of the calendar, and decides he must investigate before the village closes ranks completely.",
+  "location_name": "Vale Surgery",
+  "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+  "player_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+  "non_player_character_uuids": [
+    "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+    "8feb0edd-06f2-4187-93a1-46997e3d267a"
+  ],
+  "dramatic_question": "Can Arthur see through the village's rehearsed 'feral dog' story before Vale and Harker send him away or shut him out?",
+  "scene_goal": "Arthur wants a truthful account of what attacked him and enough leverage to remain in Brackenholme long enough to investigate.",
+  "scene_turn": "Arthur begins the scene as a weak, dependent patient being managed by local authorities and ends it outwardly compliant but privately resolved to stay, investigate, and treat the attack as a conspiracy rather than an accident.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Reorient the player after the intro attack and establish Arthur's unstable physical and emotional state.",
+      "summary": "Arthur wakes under the surgery's harsh lights, bandaged and feverish, with the taste of peat and blood still in his mouth. Each time he shuts his eyes he sees the beast again, especially its disturbingly intelligent gaze.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "disoriented",
+      "revelation": "Arthur remembers enough of the attack to know it did not feel like an ordinary animal mauling.",
+      "tension_change": "hold",
+      "player_goal": "Get his bearings and confirm he survived the attack.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur is conscious, frightened, and already doubtful of any simple explanation."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Introduce Dr. Vale as competent but guarded, and seed that Arthur's condition is medically abnormal.",
+      "summary": "Dr. Vale examines Arthur with brisk professionalism, checking his wound, temperature, and pulse while keeping her face carefully neutral. When he asks what bit him, she avoids certainty, offering treatment and reassurance but not the frank answer he wants.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5"
+      ],
+      "focal_character_uuid": "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+      "mood": "clinical",
+      "revelation": "Arthur's pulse and fever are unusual enough to concern Vale, and she is choosing her words with suspicious care.",
+      "tension_change": "rise",
+      "player_goal": "Get a clear medical explanation for the bite and his symptoms.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur starts to suspect Vale is managing more than just his wound."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Bring in institutional pressure through Harker and make the cover story feel official.",
+      "summary": "Sgt. Harker arrives to take Arthur's statement and immediately frames the attack as a straightforward feral dog incident. He stresses that outsiders have accidents on the moor, that Arthur was lucky, and that the sensible thing is to return to London on the next train.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a"
+      ],
+      "focal_character_uuid": "8feb0edd-06f2-4187-93a1-46997e3d267a",
+      "mood": "coercive",
+      "revelation": "The police and doctor are already aligned on a single sanitized version of the attack.",
+      "tension_change": "rise",
+      "player_goal": "Test whether Harker actually wants facts or simply Arthur's compliance.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur realizes the 'dog' explanation is not a guess but a prepared line."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Give the player a first chance to probe the lie and spotlight the suspicious importance of timing.",
+      "summary": "Arthur compares details between Vale and Harker and finds their answers match too neatly while dodging anything specific. When he asks what day it is and how long he has been unconscious, both of them falter just enough to betray that the calendar matters.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "brittle suspicion",
+      "revelation": "The exact date of the attack is sensitive to Vale and Harker for reasons they will not name.",
+      "tension_change": "twist",
+      "player_goal": "Find a crack in their shared story.",
+      "interactive": true,
+      "choice_prompt": "How does Arthur probe the cover story: challenge the 'dog' directly, ask about missing time and the date, or play dazed and study their reactions?",
+      "branch_outcomes": [
+        "Challenge the dog story: Harker turns more openly authoritarian, showing how invested he is in the lie.",
+        "Ask about the date and missing time: the pause before they answer strongly signals that the calendar matters.",
+        "Play dazed and observe: Arthur catches exchanged looks and repeated phrasing, confirming the story was rehearsed."
+      ],
+      "exit_state": "Arthur now has concrete evidence that both officials are hiding something tied to timing, not just the attack itself."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Complicate the cover-up by showing fear underneath it and seed that the danger has not passed.",
+      "summary": "Pressed harder, Harker insists Arthur should leave Brackenholme before he causes trouble for himself, while Vale counters that he is not fit to travel immediately. In the gap between them, Arthur notices not disagreement about facts but shared alarm, as if both are trying to manage a danger still in motion.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "ominous",
+      "revelation": "Their evasiveness is driven by fear as much as secrecy, and they believe the threat is not over just because Arthur survived the night.",
+      "tension_change": "rise",
+      "player_goal": "Work out whether either of them can be trusted at all.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur understands that the village is containing something urgent, not merely protecting its reputation."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "End the scene on Arthur's active decision to investigate and bridge him toward the Black Stag.",
+      "summary": "With discharge arrangements shifting toward lodging at the Black Stag and talk of the next southbound train, Arthur chooses how much suspicion to show. Whether he seems compliant, irritated, or politely grateful, he privately commits to staying in Brackenholme long enough to uncover what really bit him before the village closes ranks.",
+      "location_uuid": "d6fc50ea-cfb8-4d9a-b586-3e33c1f17405",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "9ecf242b-4619-4ceb-a08d-a457f85586f5",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "grim resolve",
+      "revelation": "No one in authority is going to hand Arthur the truth; if he wants answers, he must investigate for himself.",
+      "tension_change": "rise",
+      "player_goal": "Leave the surgery without surrendering his chance to learn the truth.",
+      "interactive": true,
+      "choice_prompt": "What face does Arthur present as he is sent to the inn: outward compliance, formal objection, or careful gratitude?",
+      "branch_outcomes": [
+        "Outward compliance: Harker relaxes slightly, making it easier for Arthur to investigate quietly.",
+        "Formal objection: Harker grows more suspicious and watchful, but Arthur makes clear he will not be easily pushed aside.",
+        "Careful gratitude: Vale softens a little, opening the door to future trust even as the lie remains intact."
+      ],
+      "exit_state": "Arthur is moved toward the Black Stag under instructions to rest and leave soon, but he has silently decided to stay and investigate Brackenholme's secret."
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "story_title": "Go! Fight! Hex!",
+  "synopsis": "At Arkham Preparatory Academy in the mid-1990s, honors student Iris Bell starts investigating when beloved janitor Abel Finch vanishes right before football playoffs. With her misfit friend group of campus troublemakers, she uncovers a secret satanic witch cult hiding inside the elite cheerleading squad, whose bloody rituals keep golden-boy quarterback Dean Mercer and the football team on their winning streak. The story blends teen mystery, horror-comedy, and coming-of-age drama in a gothic prep-school setting full of VHS static, school spirit, sarcastic banter, and increasingly messy occult violence.",
+  "player_character": {
+    "character_data": {
+      "uuid": "8f246da1-2a5c-40a5-9fad-1eb849191e34",
+      "name": "Iris Bell",
+      "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, smart but anxious prep school girl, oversized academy blazer over sweater vest, plaid skirt, scuffed loafers, large round glasses, spiral notebook clutched to chest, dark bob haircut with bangs, expressive eyes, autumn gothic boarding school aesthetic, hand-painted anime style",
+      "dialogue_examples": [
+        "I'm not saying the cheerleaders are summoning Satan. I'm saying their fundraiser posters are written in goat-blood-adjacent ink.",
+        "Mr. Finch never missed a shift, a Yankees game, or a chance to tell me I was slouching. He didn't just vanish.",
+        "If we die in a boiler room because of school spirit, I'm haunting the honor roll.",
+        "Okay, new rule: no splitting up unless one of us learns how to punch a demon."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "name": "Tess Morlan",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, goth prep school girl, black lipstick, heavy eyeliner, school uniform customized with safety pins and a faded band patch, choppy dyed-black hair, sardonic expression, carrying a stapled underground zine, moody gothic campus backdrop, hand-painted anime style",
+        "dialogue_examples": [
+          "Every institution is rotten. Ours just accessorizes with pom-poms.",
+          "I put three theories in my zine: cult, conspiracy, or cafeteria fungus gaining sentience. Cult is winning.",
+          "If I get sacrificed before graduation, I'm suing in hell.",
+          "Brooke smiles like a saint in a stained-glass window, and somehow that's the creepiest part."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "7579fbba-c035-4692-af50-22d2559801ee",
+        "name": "Rico Alvarez",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, charismatic skater delinquent in loosened prep school tie, bomber jacket over uniform shirt, scraped knuckles, chain wallet, undercut haircut, mischievous grin, carrying lock picks and a skateboard tucked under one arm, gritty boarding school vibe, hand-painted anime style",
+        "dialogue_examples": [
+          "Locked door? That's not a problem, that's an invitation.",
+          "I'm just saying, if evil wanted subtlety, it wouldn't wear matching uniforms.",
+          "Dibs on not being the bait this time.",
+          "When this is over, somebody owes me a new skateboard and maybe an exorcism."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+        "name": "Evan Pike",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, nervous AV club boy in rumpled academy uniform, windbreaker, cassette tapes and camera cables hanging from pockets, floppy hair, tired eyes, clutching a camcorder and flashlight, retro analog tech aesthetic, hand-painted anime style",
+        "dialogue_examples": [
+          "I catalogued the booster club films by year, and, uh, the static gets worse whenever they win regionals.",
+          "This would be easier if real life respected editing.",
+          "I can run cables, hide microphones, and panic very quietly.",
+          "If the demon comes through the projector screen, I am officially dropping out."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "6b6b10d5-3888-450c-ae11-daa822b02b60",
+        "name": "Brooke Ashdown",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, immaculate cheer captain in pristine red-and-black uniform, perfect blonde ponytail, glossy smile, icy eyes, holding pom-poms like ritual talismans, polished prep school glamour with sinister undertones, hand-painted anime style",
+        "dialogue_examples": [
+          "School spirit is sacrifice, Iris. Some girls give sweat. Some girls give everything.",
+          "A perfect routine requires timing, discipline, and the occasional offering.",
+          "You call it murder. I call it commitment to excellence.",
+          "Smile for the crowd. Fear photographs beautifully."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "dd7f1ce6-0a15-44f1-8445-fd635e997d84",
+        "name": "Dean Mercer",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, star quarterback in varsity jacket over prep school uniform, bruised but handsome, all-American smile strained by guilt, athletic build, school ring, stadium lights implied in background, teen drama style with ominous undertones, hand-painted anime style",
+        "dialogue_examples": [
+          "I just play ball. Nobody told me the pep talks were literal spells.",
+          "Every time I try to quit, something bad happens to somebody else.",
+          "Do you know what it's like when the whole town needs you to keep winning?",
+          "I'm not a hero, Bell. I'm just the guy they painted gold and pointed at the end zone."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "fca38df6-f049-45d7-826c-ce847e218a5d",
+        "name": "Abel Finch",
+        "portrait_image_prompt": "1990s teen horror-comedy visual novel portrait, waist-up, beloved older school janitor with kind tired eyes, gray work shirt, ring of keys, mop handle over one shoulder, weathered face, practical mustache, faint blood stain and dust on uniform, wise and warm presence, gothic prep school backdrop, hand-painted anime style",
+        "dialogue_examples": [
+          "You can tell a lot about a school by what it tries to scrub out.",
+          "That chapel's been wrong since they sealed the old stairs. Buildings remember.",
+          "Kid, if cheerleaders ask you to stand still inside a chalk circle, run.",
+          "I kept the place clean for twenty years. Shame nobody taught them how to clean a conscience."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+        "name": "North Quad",
+        "location_image_prompt": "1990s New England prep school quad at dusk, red-brick gothic academic buildings, dead autumn leaves, stone statue, bicycle racks, bulletin boards, sodium-vapor lamps, light fog, nostalgic teen mystery atmosphere with ominous undertones"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+        "name": "Memorial Library Archives",
+        "location_image_prompt": "old prep school library archives, oak shelves, card catalog drawers, microfilm reader glow, stacks of yearbooks and newspaper clippings, dust motes in lamplight, storm outside leaded windows, cozy gothic academic mood"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "6fdd6918-1621-4183-958d-78d762284ff8",
+        "name": "Maintenance Tunnels",
+        "location_image_prompt": "subterranean maintenance tunnels beneath a prep school, concrete walls, exposed steam pipes, puddles, mop buckets, storage cages, flickering fluorescent lights, hidden chalk sigils among utility markings, grimy horror-comedy atmosphere"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "85387b33-749d-4d39-80ee-142e360c86b1",
+        "name": "Falcon Gymnasium",
+        "location_image_prompt": "1990s high school gymnasium, polished wooden court, championship banners, cheerleading mats, packed bleachers, pep rally decorations, harsh stadium lights, school spirit atmosphere hiding eerie occult undertones"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "95182897-758e-40b9-9e34-29dda6aa32c6",
+        "name": "St. Agnes Chapel Crypt",
+        "location_image_prompt": "sealed crypt beneath a chapel, stone arches, candles, school pennants mixed with ritual altars, cracked saint statues, ceremonial daggers, old tombs and catacomb passages, gothic satanic teen horror mood"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "a635eb36-b0c0-4650-b6d4-18defc45308b",
+      "scene_name": "intro",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "non_player_character_uuids": [
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a"
+      ],
+      "narrtive_summary": "After classes let out in the North Quad, Iris learns that beloved janitor Abel Finch has vanished just days before the state playoffs. While faculty dismiss his disappearance as a drunken walkout, Tess, Rico, and Evan help Iris inspect Finch's abandoned cart and discover an odd mix of bleach, candle wax, and a cheer squad fundraiser ribbon marked with a hidden sigil. The intro establishes the school hierarchy, the misfit friend group, and the first clue that school spirit is masking something monstrous."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "d0a54c65-0bb9-46fc-8269-36b0ed9b1b14",
+        "scene_name": "act1_scene1",
+        "location_uuid": "d0474b67-d6c8-4fd4-91d9-d8cc871bb9f2",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "6b6b10d5-3888-450c-ae11-daa822b02b60"
+        ],
+        "narrtive_summary": "In the library archives, the gang combs through old yearbooks, booster newsletters, and microfilm reels, uncovering a pattern of unexplained disappearances tied to championship seasons. They also find evidence that the chapel crypt was renovated with secret booster money decades ago. Brooke Ashdown catches them snooping and, beneath a perfect smile, warns Iris that some traditions keep the school alive."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "48dd7158-b43c-4c8d-967d-a44e224a9fd2",
+        "scene_name": "act1_scene2",
+        "location_uuid": "6fdd6918-1621-4183-958d-78d762284ff8",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "6b6b10d5-3888-450c-ae11-daa822b02b60",
+          "dd7f1ce6-0a15-44f1-8445-fd635e997d84"
+        ],
+        "narrtive_summary": "Rico breaks the group into the maintenance tunnels beneath Finch's work route, where they discover ritual chalk circles, blood-stiff pom-poms, and a football playbook annotated with occult symbols. Hidden in the steam, Iris witnesses Brooke pressing a charm into Dean Mercer's hand before a bestial shape lunges through the dark and sends the gang scrambling back to the surface. The scene confirms a supernatural conspiracy and ties the football team directly to it."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "a5600ab3-b88b-4512-b7d3-8112de9644a6",
+        "scene_name": "act2_scene1",
+        "location_uuid": "85387b33-749d-4d39-80ee-142e360c86b1",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "6b6b10d5-3888-450c-ae11-daa822b02b60",
+          "dd7f1ce6-0a15-44f1-8445-fd635e997d84"
+        ],
+        "narrtive_summary": "At a deafening pep rally in Falcon Gymnasium, Iris and her friends infiltrate cheer practice and realize the squad's synchronized motions are actually spellwork disguised as choreography. Dean corners Iris afterward and admits the team's winning streak depends on rituals he never fully understood, begging her to stop digging before someone else disappears. Brooke publicly humiliates Iris to reassert control, raising the personal stakes and isolating the protagonist."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "b5744ffb-edc4-45aa-ba6f-2b38bfa87caf",
+        "scene_name": "act2_scene2",
+        "location_uuid": "95182897-758e-40b9-9e34-29dda6aa32c6",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "6b6b10d5-3888-450c-ae11-daa822b02b60",
+          "dd7f1ce6-0a15-44f1-8445-fd635e997d84",
+          "fca38df6-f049-45d7-826c-ce847e218a5d"
+        ],
+        "narrtive_summary": "The gang follows the cheerleaders into St. Agnes Chapel Crypt and secretly witnesses a midnight rite, where a terrified student equipment manager is prepared as the next sacrifice. They discover Abel Finch is alive but imprisoned because he found the cult's hidden altar, and in the escape Evan gets marked by the ritual while recording proof on tape. The scene reveals the full horror of the cult and forces the gang from amateur detectives into desperate rescuers."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "74f4d92f-79fa-4d85-a407-de14c2de8357",
+        "scene_name": "act3_scene1",
+        "location_uuid": "6fdd6918-1621-4183-958d-78d762284ff8",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "fca38df6-f049-45d7-826c-ce847e218a5d"
+        ],
+        "narrtive_summary": "Using Evan's mark as a tracker, Iris leads the group back into the maintenance tunnels, where they free Abel Finch from a hidden service chamber packed with old blueprints and records of past sacrifices. Abel explains that the final offering is always made beneath the gym during halftime of the biggest playoff game. Armed with stolen ritual instructions, janitorial know-how, and improvised traps, the gang commits to stopping the ceremony themselves."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "4ba8dc3a-9787-4f33-9abd-615da19e3218",
+        "scene_name": "act3_scene2",
+        "location_uuid": "85387b33-749d-4d39-80ee-142e360c86b1",
+        "non_player_character_uuids": [
+          "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+          "7579fbba-c035-4692-af50-22d2559801ee",
+          "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+          "6b6b10d5-3888-450c-ae11-daa822b02b60",
+          "dd7f1ce6-0a15-44f1-8445-fd635e997d84",
+          "fca38df6-f049-45d7-826c-ce847e218a5d"
+        ],
+        "narrtive_summary": "During the playoff game and its elaborate halftime routine, Iris and the gang unleash a chaotic counter-plan in the gym: hacked PA systems, sabotaged sigils, janitorial flood valves, and Evan's projected footage exposing the cult to the whole school. Dean finally turns against Brooke, helping Iris rescue the intended victim as Brooke tries to complete the sacrifice and summon her patron anyway. The climax delivers horror, slapstick violence, and a public unraveling of Arkham Prep's most sacred tradition."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "a21be0ff-060f-40c1-89ae-b696aa02cff6",
+      "scene_name": "outro",
+      "location_uuid": "7eb6535f-ebb1-44d2-a656-0942915d61c5",
+      "non_player_character_uuids": [
+        "1c2a01f8-f8dc-4d89-bf09-ce705a6fee5f",
+        "7579fbba-c035-4692-af50-22d2559801ee",
+        "94dad14a-33dc-490b-9ac3-9fc3a50da80a",
+        "dd7f1ce6-0a15-44f1-8445-fd635e997d84",
+        "fca38df6-f049-45d7-826c-ce847e218a5d"
+      ],
+      "narrtive_summary": "At dawn in the North Quad, Arkham Preparatory Academy reels from scandal, police tape, canceled playoffs, and administrators scrambling to blame everything on mass hysteria. Abel Finch is back on the job, the misfit gang is closer than ever, and Dean faces the ruins of his golden-boy image while Brooke's ultimate fate remains unsettlingly ambiguous. Iris reflects on how easily institutions protect evil when it wins games, even as one last eerie sign suggests the school's appetite for sacrifice may not be fully gone."
+    }
+  }
+}

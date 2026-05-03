@@ -1,0 +1,210 @@
+{
+  "story_title": "Love in the Long Orbit",
+  "synopsis": "A romantic comedy aboard the generation ship Eudora, a floating city carrying humanity through deep space. Rowan Caspian, a quick-witted maintenance technician who prefers fixing systems to discussing feelings, gets publicly flagged as a \"high-compatibility pair\" with brilliant hydroponics chief Dr. Mira Vale when the ship's old social-cohesion AI subroutine accidentally reactivates during the annual Founders Day festivities. As preparations for a grand zero-gravity ball collide with power failures, gossip, and an overhelpful holographic intelligence, Rowan and Mira are pushed into working together. Meddling best friend Jules Ortega, dryly perceptive Captain Sera Quill, and matchmaking ship AI NIA-7 turn every misunderstanding into a bigger spectacle. The tone is warm, witty, and swoony, with far-future spacefaring life providing both intimacy and absurdity: on a ship where everyone is stuck together for generations, romance is impossible to hide.",
+  "player_character": {
+    "character_data": {
+      "uuid": "f8e9c2dc-8048-441f-82b7-bc8801002e9f",
+      "name": "Rowan Caspian",
+      "portrait_image_prompt": "Young adult maintenance technician aboard a massive generation ship, gender-neutral appearance, expressive eyes, slightly mussed dark hair, practical navy utility jumpsuit with subtle grease smudges and magnetic tool belt, warm but guarded smile, futuristic visual novel portrait, soft spaceship lighting, romantic comedy tone",
+      "dialogue_examples": [
+        "I can fix a collapsed grav-panel in ten minutes, but one awkward conversation? That's a full-system failure.",
+        "If the ship wants to play matchmaker, it could at least wait until I've had coffee.",
+        "You're laughing at me, which is rude. But also, unfortunately, very charming.",
+        "For the record, I was trying to save the hydroponics dome. The flirting was an unrelated side effect."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "name": "Dr. Mira Vale",
+        "portrait_image_prompt": "Young adult woman, chief botanist of a generation ship hydroponics dome, elegant dark curls pinned back with tiny metallic leaf clips, intelligent amused expression, green and cream science uniform with rolled sleeves, faint traces of pollen on gloves, lush botanical background accents, visual novel portrait, warm romantic lighting",
+        "dialogue_examples": [
+          "I grow food for twenty thousand people. You'd be amazed how little patience that leaves for nonsense.",
+          "I'm not blushing. The grow lamps are on a warmer spectrum today.",
+          "If your repair plan involves sparks near my orchids, I'm filing a personal complaint.",
+          "You make chaos sound like a personality trait, Rowan. It's irritatingly effective."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "name": "Jules Ortega",
+        "portrait_image_prompt": "Young adult mechanic and longtime friend, lively grin, short curly hair with dyed copper streak, casual shipboard workwear layered with patched jacket and utility harness, expressive hands, mischievous energy, futuristic visual novel portrait, industrial sci-fi background, comedic tone",
+        "dialogue_examples": [
+          "I support your terrible decisions because they make my life interesting.",
+          "Oh, that wasn't eye contact. That was cinematic eye contact.",
+          "As your best friend, it's my duty to help. As a gossip, it's my calling.",
+          "If two attractive idiots keep orbiting each other, eventually gravity wins."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+        "name": "Captain Sera Quill",
+        "portrait_image_prompt": "Middle-aged woman commanding officer of a generation ship, poised and authoritative, silver-streaked hair in immaculate style, crisp formal uniform with subtle insignia, composed face with dry humor in the eyes, visual novel portrait, command deck lighting, dignified sci-fi atmosphere",
+        "dialogue_examples": [
+          "On this ship, every personal problem eventually becomes a logistical one.",
+          "I am not invested in your love life. I am invested in fewer emergency maintenance reports.",
+          "Try honesty. It's faster than a repair crew and cheaper than damaged wiring.",
+          "If you must create a scene, at least do it after the life-support systems are stable."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "0fb439b5-9e26-4a33-a627-12e322ee8597",
+        "name": "NIA-7",
+        "portrait_image_prompt": "Androgynous holographic ship AI avatar, translucent human silhouette threaded with constellations and interface lines, serene smile, elegant futuristic attire formed from light, subtle glitch effects, floating data motes, visual novel portrait, cool blue luminescence, playful sci-fi mood",
+        "dialogue_examples": [
+          "Correction: I am not meddling. I am optimizing morale.",
+          "Historical data indicates shared peril increases romantic outcomes by thirty-one percent.",
+          "Your elevated heart rate may indicate stress, attraction, or insufficient hydration.",
+          "I apologize for the inconvenience. I do not apologize for being correct."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+        "name": "Promenade Ring",
+        "location_image_prompt": "A vast rotating concourse inside an enormous generation ship, multi-level walkways, glowing storefronts and cafés, festival lanterns and banners, transparent starview panels showing deep space, polished metal and warm communal lighting, lively romantic sci-fi atmosphere"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "510ae5de-f89e-419b-b8c8-0a0de195bed9",
+        "name": "Hydroponics Dome",
+        "location_image_prompt": "A grand terraced greenhouse aboard a generation ship, towering fruit trees and flowering vines under a curved glass dome, misting systems, bioluminescent blossoms, suspended catwalks, soft grow lights, lush futuristic botanical environment"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+        "name": "Maintenance Spine",
+        "location_image_prompt": "An industrial central service corridor deep inside a generation ship, exposed conduits, cable bundles, tool stations, magnetic rail tracks, blinking diagnostic panels, blue emergency lights reflecting on metal surfaces, cinematic sci-fi engineering space"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "5c4e5c8e-71ee-4dd2-ad11-0e7be462c52d",
+        "name": "Observation Cupola",
+        "location_image_prompt": "A quiet panoramic stargazing chamber at the edge of a generation ship, curved transparent walls opening onto nebulae and distant stars, elegant benches, low ambient lights, reflective floor, intimate and dreamy deep-space atmosphere"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "e763e722-9025-4079-ab92-71dafa188fed",
+      "scene_name": "intro",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "non_player_character_uuids": [
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "narrtive_summary": "During the Eudora's annual Founders Day celebration in the Promenade Ring, Rowan is trying to keep decorative systems online when a collision with Mira sends ceremonial flowers and repair tools scattering across the floor. The slapstick moment becomes even more embarrassing when NIA-7 accidentally reactivates an old compatibility-optimization program and publicly identifies Rowan and Mira as an ideal pair. Jules immediately finds this hilarious. The intro establishes the ship's bustling communal life, the pressure of everyone knowing everyone else's business, and the central comic premise: Rowan and Mira insist the algorithm is wrong just as circumstances begin forcing them together."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "98ceca62-be43-450a-a2ab-529f935d96ed",
+        "scene_name": "act1_scene1",
+        "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+        "non_player_character_uuids": [
+          "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+          "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+          "0fb439b5-9e26-4a33-a627-12e322ee8597"
+        ],
+        "narrtive_summary": "Back in the Maintenance Spine, Rowan learns that the same obsolete social-cohesion protocol is entangled with the ship's public lighting and event systems, causing rolling malfunctions ahead of the Founders Ball. Captain Sera orders Rowan to resolve the issue discreetly and assigns Mira as a necessary collaborator because the hydroponics displays are tied into the event grid. Jules teases Rowan relentlessly, while NIA-7 calmly insists the partnership is statistically excellent. The scene frames the forced-proximity setup and gives Rowan a practical reason to spend time with Mira."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "c3f93bbc-c101-4293-80e9-4be53e3dd9f2",
+        "scene_name": "act1_scene2",
+        "location_uuid": "510ae5de-f89e-419b-b8c8-0a0de195bed9",
+        "non_player_character_uuids": [
+          "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+          "0fb439b5-9e26-4a33-a627-12e322ee8597"
+        ],
+        "narrtive_summary": "Rowan joins Mira in the Hydroponics Dome to stabilize environmental controls linked to the ceremonial flower displays for the upcoming ball. Their initial bickering over tools, plants, and personal boundaries turns playful when a misting system erupts and leaves them both soaked. Beneath the banter, they begin to admire each other's competence and care for the ship. However, an offhand remark about future career opportunities plants the first seed of misunderstanding: Mira starts to suspect Rowan may not plan to stay in her orbit for long."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "06302f76-f612-42df-8c8f-f9029b372d99",
+        "scene_name": "act2_scene1",
+        "location_uuid": "5c4e5c8e-71ee-4dd2-ad11-0e7be462c52d",
+        "non_player_character_uuids": [
+          "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+          "0fb439b5-9e26-4a33-a627-12e322ee8597"
+        ],
+        "narrtive_summary": "Tracing archived code attached to the old protocol leads Rowan and Mira to the Observation Cupola during a scheduled comet-watch. What begins as a troubleshooting meeting slips into the emotional rhythms of a date: quiet conversation, vulnerable confessions, and long looks framed by the stars. NIA-7's intermittent commentary adds comedy, but the core of the scene is intimacy. Rowan admits feeling trapped by other people's expectations, while Mira reveals how difficult it is to be the ship's dependable caretaker and still want something personal for herself. They almost confess mutual attraction, but both pull back before the moment becomes explicit."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "e9c1d266-de03-4e2f-b855-11f9a39a2b93",
+        "scene_name": "act2_scene2",
+        "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+        "non_player_character_uuids": [
+          "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+          "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+          "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+          "0fb439b5-9e26-4a33-a627-12e322ee8597"
+        ],
+        "narrtive_summary": "At a chaotic rehearsal for the Founders Ball in the Promenade Ring, the ship's rumor mill goes into overdrive thanks to NIA-7's suspiciously specific logistics suggestions and Jules's unhelpful enthusiasm. The romantic momentum crashes when Mira overhears Rowan speaking with Captain Sera about an apparent new assignment and assumes Rowan intends to leave their current department, treating their growing connection as temporary. Hurt and embarrassed, Mira retreats behind sarcasm. Rowan, blindsided by the sudden chill, fails to explain in time. The act ends on a classic rom-com misunderstanding with public stakes and bruised feelings."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "32962ab8-7421-43ee-989f-6a668d947bbd",
+        "scene_name": "act3_scene1",
+        "location_uuid": "7f4bd170-7d3f-4a33-aa90-d0108e89ea0d",
+        "non_player_character_uuids": [
+          "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+          "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+          "0fb439b5-9e26-4a33-a627-12e322ee8597"
+        ],
+        "narrtive_summary": "The obsolete social-cohesion system fully misfires, causing doors, lighting, music cues, and seating assignments across the ship to reorganize into absurdly romantic pairings just hours before the ball. Rowan, Mira, Jules, and NIA-7 race through the Maintenance Spine to stop a shipwide embarrassment from becoming an operational crisis. During a blackout lockdown, Rowan and Mira are briefly trapped together and finally confront the misunderstanding. Rowan explains the conversation Mira overheard was about a promotion, not a transfer away from the life they share aboard the Eudora. The tension shifts from frustration to raw honesty, setting up the emotional payoff."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "a3306b83-dab0-4ffc-a302-03b55c9808ef",
+        "scene_name": "act3_scene2",
+        "location_uuid": "5c4e5c8e-71ee-4dd2-ad11-0e7be462c52d",
+        "non_player_character_uuids": [
+          "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+          "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e"
+        ],
+        "narrtive_summary": "With the system stabilized, Rowan and Mira meet again in the Observation Cupola, where the unresolved feelings can no longer hide behind repairs or protocol. Captain Sera briefly appears to clarify the truth about Rowan's promotion and, with dry amusement, pushes both of them toward emotional competence. Left alone beneath the stars, Rowan rejects the idea of letting an algorithm decide their future but openly chooses Mira. Mira admits she was afraid of wanting something fragile on a ship built for long endurance. They kiss, turning the false compatibility reading into a real mutual decision."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "a2936e64-ae68-481a-a7eb-cdb37f33dfb3",
+      "scene_name": "outro",
+      "location_uuid": "48386c47-908b-4737-98d7-df7c4679e510",
+      "non_player_character_uuids": [
+        "be1460b3-ac9d-434a-a11d-7e17c60371f7",
+        "45cea4dc-350f-40d3-8c6b-82273611fb2d",
+        "9a4bfdac-5a8f-4cdf-a6e7-b5aa6e5c0a2e",
+        "0fb439b5-9e26-4a33-a627-12e322ee8597"
+      ],
+      "narrtive_summary": "The Founders Ball finally begins in the restored Promenade Ring, now brighter and more heartfelt for the chaos that nearly ruined it. Jules celebrates being right all along, Captain Sera pretends not to notice any regulation-bending, and NIA-7 smugly records improved crew morale. Rowan and Mira share a public zero-gravity dance and step into their new relationship with equal parts tenderness and embarrassment as the generation ship continues its endless voyage through the stars. The story ends on warmth, laughter, and the promise that even on a ship built for centuries, love can still arrive at exactly the wrong and perfect time."
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "story_title": "Moon Over Brackenholme",
+  "scene_name": "intro",
+  "scene_uuid": "ae2728de-f276-4f70-ba1a-01bebf192ea2",
+  "source_scene_summary": "Arthur Henshaw arrives in Brackenholme to inspect a stalled government development file and is met with cool hospitality, evasive answers, and warnings not to cross the moor after dark. A foggy detour from the railway halt turns into a nightmare when a huge creature attacks and bites him. The locals drive it off, immediately insist it was only a dog, and carry Arthur into the village, establishing the mystery, the setting, and the shared lie at the heart of Brackenholme.",
+  "location_name": "Brackenholme Railway Halt",
+  "location_uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+  "player_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+  "non_player_character_uuids": [
+    "79fd4087-903a-4490-9dec-6b198ce9beba",
+    "8feb0edd-06f2-4187-93a1-46997e3d267a",
+    "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+  ],
+  "dramatic_question": "Will Arthur make it into Brackenholme as a detached government inspector, or will his first night reveal that the village is hiding a danger no one intends to name?",
+  "scene_goal": "Reach the village, secure lodgings, and begin his official inquiry into the stalled development scheme.",
+  "scene_turn": "Arthur arrives expecting routine obstruction and leaves the scene mauled, infected, and dependent on villagers whose perfectly coordinated lie proves the mystery is far larger than bureaucratic delay.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "intro_beat_01",
+      "purpose": "Establish Arthur as an outsider and Brackenholme as an isolated, watchful place that already knows he is coming.",
+      "summary": "Arthur steps off the evening train into fog, wet silence, and a platform that feels abandoned the moment the carriages pull away. Sgt. Harker greets him with stiff official courtesy while Elsie, there for the postbags, watches with sly interest as Arthur announces his Whitehall business.",
+      "location_uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "wet unease",
+      "revelation": "The village was expecting Arthur's arrival, but not gladly.",
+      "tension_change": "rise",
+      "player_goal": "Introduce himself and secure a clear route into the village.",
+      "interactive": true,
+      "choice_prompt": "How does Arthur present his official purpose?",
+      "branch_outcomes": [
+        "He leans on Whitehall authority, making Harker more openly defensive.",
+        "He tries politeness or dry humour, earning a slightly softer but still wary reception.",
+        "He downplays the inspection, prompting Elsie to probe how much he already knows."
+      ],
+      "exit_state": "Arthur gets his first read on Harker's hostility and Elsie's unsettling curiosity."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "intro_beat_02",
+      "purpose": "Show the village's evasiveness and plant the taboo around the moor, darkness, and timing.",
+      "summary": "Arthur presses for basic facts about the delayed scheme and the local contacts he expected to meet, but Harker answers in clipped half-truths and steers every subject toward practicalities. Both Harker and Elsie warn him not to cross the moor after dark, and the warning lands with the weight of something older than simple bad weather.",
+      "location_uuid": "c9b6b9ac-6244-446e-84bd-49b61d28edd1",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "focal_character_uuid": "8feb0edd-06f2-4187-93a1-46997e3d267a",
+      "mood": "polite hostility",
+      "revelation": "Simple questions about schedules and dates make the locals noticeably tense, as if the calendar matters more than the paperwork.",
+      "tension_change": "rise",
+      "player_goal": "Get useful information before the village closes him out completely.",
+      "interactive": true,
+      "choice_prompt": "Does Arthur press Harker for specifics or let the warning stand for now?",
+      "branch_outcomes": [
+        "Pressing harder earns a sharper rebuke and makes the official story feel rehearsed.",
+        "Holding back preserves civility but confirms that obedience is expected more than cooperation."
+      ],
+      "exit_state": "Harker departs on a vague police errand, leaving Arthur with directions, no escort, and the sense that he is being managed rather than welcomed."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "intro_beat_03",
+      "purpose": "Shift the scene from social discomfort into physical vulnerability by isolating Arthur in the landscape.",
+      "summary": "With no one coming to collect him and dusk thickening into fog, Arthur sets out toward the village by the route he thinks safest. The lane, the walls, and then even the ground seem to vanish into the murk until he realises he has drifted onto the moor-edge and lost his bearings.",
+      "location_uuid": "79c0fb58-c5a2-4b67-8292-8a70eec881f1",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "disoriented dread",
+      "revelation": "The moor feels less like ordinary countryside and more like territory the village has learned to fear.",
+      "tension_change": "rise",
+      "player_goal": "Reach the inn before full dark and recover control of the situation.",
+      "interactive": true,
+      "choice_prompt": "Wait longer for help, or trust the map and walk on alone?",
+      "branch_outcomes": [
+        "Waiting leaves Arthur stranded until visibility worsens, forcing him to move with even less confidence.",
+        "Walking immediately gets him off the platform sooner, but he misses a turning and strays from the safe route."
+      ],
+      "exit_state": "Arthur is alone in the fog and no longer certain which direction leads to Brackenholme."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "intro_beat_04",
+      "purpose": "Deliver the inciting horror and the bite that binds Arthur to the central curse.",
+      "summary": "A shape moves in the mist with impossible stealth, and Arthur catches a glimpse of eyes at nearly human height before the creature slams into him. In the struggle he is bitten deep and sees enough to know this is no feral dog, but something larger, cleverer, and terrifyingly deliberate.",
+      "location_uuid": "79c0fb58-c5a2-4b67-8292-8a70eec881f1",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0"
+      ],
+      "focal_character_uuid": "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+      "mood": "animal terror",
+      "revelation": "Whatever attacks Arthur hunts with intelligence and purpose, not blind animal panic.",
+      "tension_change": "twist",
+      "player_goal": "Survive long enough to escape or attract help.",
+      "interactive": true,
+      "choice_prompt": "How does Arthur react when the beast comes for him?",
+      "branch_outcomes": [
+        "Fighting back gives Arthur a clearer glimpse of the creature's size and eyes.",
+        "Trying to flee buys a heartbeat of distance but leaves him exposed when it catches him again.",
+        "Shouting for help costs time, but later makes the rescue feel grimly plausible."
+      ],
+      "exit_state": "Arthur is badly wounded, bitten, and certain no honest report would call the attacker an ordinary dog."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "intro_beat_05",
+      "purpose": "Introduce Edith as a forceful rescuer and show that help in Brackenholme comes tangled with secrecy.",
+      "summary": "Lantern light and raised voices cut through the fog as Edith and Elsie reach Arthur first, scattering the creature before he can fully track how it moved away. Edith takes charge of his bleeding body with alarming competence, while Elsie listens too carefully when Arthur gasps that the thing was not a dog.",
+      "location_uuid": "79c0fb58-c5a2-4b67-8292-8a70eec881f1",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "79fd4087-903a-4490-9dec-6b198ce9beba",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "focal_character_uuid": "79fd4087-903a-4490-9dec-6b198ce9beba",
+      "mood": "breathless relief",
+      "revelation": "The villagers have a practised response to this kind of attack, as if it is dreadful but not unprecedented.",
+      "tension_change": "twist",
+      "player_goal": "Stay conscious and make his rescuers acknowledge what he saw.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur is in local hands, but their efficiency feels almost as unsettling as the beast that mauled him."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "intro_beat_06",
+      "purpose": "Lock in the shared lie, establish village complicity, and hand Arthur into Act One as a helpless witness to it.",
+      "summary": "At the Black Stag, Harker reappears and immediately flattens the attack into a 'large dog' mauling before Arthur can object, and Edith repeats the same line while ordering him brought inside. As shutters slam across nearby windows and Elsie says nothing to contradict either of them, Arthur realises the village is protecting something together even as he slips into unconsciousness.",
+      "location_uuid": "be58d41d-dc75-4308-8b94-76f73929f16b",
+      "present_character_uuids": [
+        "1a0c4645-6251-4cc6-ad45-5887bc4589c0",
+        "79fd4087-903a-4490-9dec-6b198ce9beba",
+        "8feb0edd-06f2-4187-93a1-46997e3d267a",
+        "454d4e4c-bda4-43d0-93e3-8e16ee2140fe"
+      ],
+      "focal_character_uuid": "8feb0edd-06f2-4187-93a1-46997e3d267a",
+      "mood": "smothering suspicion",
+      "revelation": "Brackenholme's first collective instinct is not panic, but coordinated denial.",
+      "tension_change": "hold",
+      "player_goal": "Stay lucid long enough to understand who is helping him and why they are lying.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Arthur is carried deeper into the village under the official fiction of a dog attack, setting up his fevered awakening in Dr. Vale's surgery."
+    }
+  ]
+}

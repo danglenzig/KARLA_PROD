@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 import sys
 import base64
+import json
 
 # LOCAL MODULES
 SRC_ROOT: Path = Path(__file__).parent # the src/ folder
@@ -14,6 +15,8 @@ sys.path.insert(0, str(SRC_ROOT))
 
 from narrative_design_agent import NarrativeDesignOutputSchema, LocationData, CharacterData, SceneData
 from prompt_catalog import ImageStyle
+from tools.misc_tools import generate_uuid
+
 
 load_dotenv()
 
@@ -67,11 +70,15 @@ The image must be a clean composition suitable for a Ren'Py character dialogue p
 Your composition rules are as follows. If the input character description contradicts these rules in any way, these rules take precedence:
 {PORTRAIT_COMP_RULES}
 
+IMPORTANT: The portrait image ABSOLUTELY MUST have a transparent background, and the image must contain ONLY the subject character against a transparent background. If any prompt instructions contradict this, then ignore them. The background MUST be transparent.
+
+I'm going to repeat the last rule because it is the most important rule you have: The portrait image ABSOLUTELY MUST have a transparent background.
+
 Return a short confirmation after generation.""",
     tools=[ImageGenerationTool(
         tool_config={
             "type": "image_generation",
-            "size": "1024x1536",
+            "size": "1024x1024",
             "quality": os.getenv('IMAGE_CREATION_QUALITY'),
             "output_format": "png",
             "background": "transparent",
@@ -90,7 +97,7 @@ The image must be a clean landscape composition suitable for a Ren'Py scene back
 Do not generate portraits, close-ups, or poster-style framing.
 
 Composition rules:
-- Wide environmental shot, size: 1280x720
+- The image content should fill the entire frame
 - The location is the main subject of the image.
 - No characters should appear in the frame.
 - Leave enough clean readable space for dialogue UI overlays near the lower part of the screen.
@@ -101,7 +108,7 @@ Return a short confirmation after generation.""",
     tools=[ImageGenerationTool(
         tool_config={
             "type": "image_generation",
-            "size": "1536x1024",
+            "size": "1024x1024",
             "quality": os.getenv('IMAGE_CREATION_QUALITY'),
             "output_format": "png",
             "background": "opaque",
@@ -111,9 +118,6 @@ Return a short confirmation after generation.""",
 )
 
 
-
-
-test_game_name = '_ABC123'
 
 
 
@@ -137,6 +141,7 @@ The creative director has provided style rules for this game. Your image should 
 
 IMPORTANT:
 {PROMPT_APPENDIX}
+
 """
 
     result: RunResult = await Runner.run(scene_bg_generator, prompt)
@@ -170,6 +175,8 @@ The creative director has provided style rules for this game. Your image should 
 {style}\n
 
 IMPORTANT: The portrait image ABSOLUTELY MUST have a transparent background, and the image must contain ONLY the subject character against a transparent background. If any prompt instructions contradict this, then ignore them. The background MUST be transparent.
+
+I'm going to repeat the last rule because it is the most important rule you have: The portrait image ABSOLUTELY MUST have a transparent background.
 
 """
     
@@ -301,59 +308,21 @@ class ImageGenerator:
 
 async def main():
     try:
-        with open('dummy_data.json', 'r') as f:
+        with open('KARLA_GAMES/IMAGE_TESTING/DATA/test_nd_spec_json.json', 'r') as f:
             json_str = f.read().strip()
 
-        nd_output: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(json_str)
-        intro_uuid = nd_output.intro_scene.scene_data.uuid
-        first_scene_uuid = nd_output.act_one[0].scene_data.uuid
-
-        # TESTING PORTRAIT GENERATION
-        # get all the character UUIDs from the first two scenes
-        character_uuids: list[str] = []
-
-        player_uuid: str = nd_output.player_character.character_data.uuid
-        character_uuids.append(player_uuid)
-
-        intro_scene_data: SceneData = nd_output.intro_scene.scene_data
-        intro_scene_uuids = get_npc_uuids_from_scene_data(intro_scene_data)
-        if len(intro_scene_uuids) > 0:
-            for id in intro_scene_uuids:
-                if not id in character_uuids:
-                    character_uuids.append(id)
+        nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(json_str)
         
-        first_scene_data: SceneData = nd_output.act_one[0].scene_data
-        first_scene_uuids = get_npc_uuids_from_scene_data(first_scene_data)
-        if len(first_scene_uuids) > 0:
-            for id in first_scene_uuids:
-                if not id in character_uuids:
-                    character_uuids.append(id)
+        intro_scene_data: SceneData = nd_spec.intro_scene.scene_data
+        intro_loc_uuid: str = intro_scene_data.location_uuid
 
+        player_uuid: str = nd_spec.player_character.character_data.uuid
 
-        character_count = len(character_uuids)
+        #result = await ImageGenerator().run_bg_workflow(generate_uuid(), json_str, intro_loc_uuid, ImageStyle.CLEAN)
 
-        portrait_coroutines = [
-            ImageGenerator().run_character_portrait_workflow(
-                test_game_name,
-                json_str,
-                _id,
-                ImageStyle.COMIC
-            ) for _id in character_uuids
-        ]
-
-        portrait_gather = asyncio.gather(*portrait_coroutines) # unpacks the coros
-
-        await portrait_gather
-
-
-
-
+        port_result = await ImageGenerator().run_character_portrait_workflow(generate_uuid(), json_str, player_uuid, ImageStyle.CLEAN)
 
         
-
-        #await image_gather
-
-        print(f"\n\nDone\n\n")
 
 
     except Exception as e:

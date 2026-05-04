@@ -218,11 +218,14 @@ class WorkflowTextInput(BaseModel):
 # Function Tools
 #===============
 
-@function_tool
-def get_uuid_string():
-    """Returns a unique UUID string"""
+def generate_uuid():
     myuuid = uuid.uuid4()
     return str(myuuid)
+
+@function_tool
+def get_uuid_string() -> str:
+    """Returns a unique UUID string"""
+    return generate_uuid()
 
 #=============
 # Instructions
@@ -309,22 +312,23 @@ class NarrativeDesignAgent:
 
 
 async def main():
+    print(generate_uuid())
 
-    test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
+    # test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
 
-    wf_input = WorkflowTextInput(
-        input_as_text=test_input
-    )
+    # wf_input = WorkflowTextInput(
+    #     input_as_text=test_input
+    # )
 
-    #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
-    output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
+    # #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
+    # output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
 
-    print(f"{output.model_dump_json(indent=2)}") # model_dump_json(): BaseModel -> clean JSON
-    print(output.human_readable())
+    # print(f"{output.model_dump_json(indent=2)}") # model_dump_json(): BaseModel -> clean JSON
+    # print(output.human_readable())
 
-    # write the data to a dummy file
-    # with open('dummy_data.json', 'w') as f:
-    #     f.write(output.model_dump_json(indent=2))
+    # # write the data to a dummy file
+    # # with open('dummy_data.json', 'w') as f:
+    # #     f.write(output.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

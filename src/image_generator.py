@@ -54,6 +54,10 @@ Constraints:
 - no additional characters
 """
 
+class ArtAssetManifest(BaseModel):
+    character_portrait_paths: list[str]
+    scene_background_paths: list[str]
+
 character_portrait_generator = Agent(
     name="character_portrait_generator",
     instructions=f"""You generate character dialogue portraits for Ren'Py visual novels.
@@ -163,7 +167,11 @@ Remember your rules. If the input character description contradicts these rules 
 {PORTRAIT_COMP_RULES}
 
 The creative director has provided style rules for this game. Your image should conform to the following style:
-{style}\n"""
+{style}\n
+
+IMPORTANT: The portrait image ABSOLUTELY MUST have a transparent background, and the image must contain ONLY the subject character against a transparent background. If any prompt instructions contradict this, then ignore them. The background MUST be transparent.
+
+"""
     
     result: RunResult = await Runner.run(character_portrait_generator, prompt)
 
@@ -184,6 +192,15 @@ The creative director has provided style rules for this game. Your image should 
         f.write(base64.b64decode(image_base64))
 
     return str(path)
+
+
+def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
+    uuids: list[str] = []
+    if 'non_player_character_uuids' in sd.__dict__:
+        if not sd.non_player_character_uuids is None:
+            for uuid in sd.non_player_character_uuids:
+                uuids.append(uuid)
+    return uuids
 
 class ImageGenerator:
     async def run_bg_workflow(self, game_name: str, in_json: str, location_uuid: str, style: str) -> str:
@@ -233,15 +250,54 @@ class ImageGenerator:
 
         print(f"===IMAGE GENERATED===\n{output_path}")
         return output_path
+    
+    async def get_demo_manifest(self, game_name:str, in_json: str, style: str):
+        try:
+            nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(in_json)
+        except ValidationError as e:
+            print(e)
+            return
+        
+        intro_scene_data: SceneData = nd_spec.intro_scene.scene_data
+        first_scene_data: SceneData = nd_spec.act_one[0].scene_data
+
+        intro_location_uuid: str = intro_scene_data.location_uuid
+        first_scene_uuid: str = first_scene_data.location_uuid
+
+        character_uuids: list[str]  = []
+        player_character_uuid: str  = nd_spec.player_character.character_data.uuid
+        character_uuids.append(player_character_uuid)
+        intro_npcs                  = get_npc_uuids_from_scene_data(intro_scene_data)
+        first_scene_npcs            = get_npc_uuids_from_scene_data(first_scene_data)
+        if len(intro_npcs) > 0:
+            for npc in intro_npcs:
+                if not npc in character_uuids:
+                    character_uuids.append(npc)
+        if len(first_scene_npcs) > 0:
+            for npc in first_scene_npcs:
+                if not npc in character_uuids:
+                    character_uuids.append(npc)
+        
+        portrait_coroutines = [
+            self.run_character_portrait_workflow(game_name, in_json, _id, style) for _id in character_uuids
+        ]
+        portrait_gather = asyncio.gather(*portrait_coroutines)
+        portrait_paths = await portrait_gather                 # goes in the returned BaseModel
+
+        
+        bg_coroutines = [
+            self.run_bg_workflow(game_name, in_json, intro_location_uuid, style),
+            self.run_bg_workflow(game_name, in_json, first_scene_uuid, style)
+        ]
+        bg_gather = asyncio.gather(*bg_coroutines)
+        bg_paths = await bg_gather
+
+        return ArtAssetManifest(
+            character_portrait_paths=portrait_paths,
+            scene_background_paths=bg_paths
+        )
 
 
-def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
-    uuids: list[str] = []
-    if 'non_player_character_uuids' in sd.__dict__:
-        if not sd.non_player_character_uuids is None:
-            for uuid in sd.non_player_character_uuids:
-                uuids.append(uuid)
-    return uuids
 
 async def main():
     try:

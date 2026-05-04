@@ -1,0 +1,542 @@
+{
+  "narrative_design_spec": {
+    "story_title": "Madame Massacre's Midnight Mayhem",
+    "synopsis": "At a disreputable 1970s local TV station, glamorous horror hostess Madame Massacre is fighting for a syndication deal on the exact night a cursed film reel unleashes gossip-hungry ghouls into her live broadcast. With a panicking station manager, a gum-snapping makeup girl, a corpse-calm projectionist, and a smug televangelist rival all colliding in escalating on-air chaos, Madame must keep the cameras rolling while deciding whether to protect her deliciously fake persona or finally tell the ugly truth. The tone is bawdy, campy, and fast-talking, blending retro horror, adult innuendo, and screwball workplace comedy.",
+    "player_character": {
+      "character_data": {
+        "uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+        "name": "Madame Massacre",
+        "portrait_image_prompt": "Glamorous gothic woman in her late 30s with towering black beehive hair streaked with white, arched brows, sharp cheekbones, dramatic eye makeup, voluptuous figure, long lacquered nails, form-fitting black mermaid gown with a plunging neckline, opera gloves, jeweled spider brooch, and an amused predatory smile.",
+        "dialogue_examples": [
+          "Darlings, if you can't handle a little blood before midnight, you're watching the wrong woman.",
+          "I never panic on camera. I perspire theatrically.",
+          "If the dead want a close-up, they can wait until I've finished my monologue.",
+          "Sweetheart, I built a career out of low budgets and bad intentions."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "6f20511c-a617-4864-8f23-fb67def54c10",
+          "name": "Rex Rattle",
+          "portrait_image_prompt": "Nervous middle-aged TV station manager with thick sideburns, an oily mustache, receding hair, a soft frame squeezed into a loud plaid polyester suit, wide tie, gold pinky ring, shiny dress shoes, and a permanently frazzled grin.",
+          "dialogue_examples": [
+            "Do you have any idea how expensive a demonic incident is in local television?",
+            "I'm not saying seduce the audience, Madame, I'm saying seduce them responsibly.",
+            "If Standards and Practices calls again, tell them the screaming is patriotic.",
+            "We're two points from syndication and one lawsuit from oblivion!"
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "ddb64649-9b18-4c5d-af91-39347c2a9267",
+          "name": "Bibi Bliss",
+          "portrait_image_prompt": "Streetwise young woman with a teased platinum shag haircut, heavy eyeliner, bubblegum pout, curvy build, leopard-print jumpsuit under a stained work smock, hoop earrings, chunky bracelets, and a confident smirk.",
+          "dialogue_examples": [
+            "Honey, if I can glue fangs on a drunk weatherman, I can handle this.",
+            "That thing in the basement looked at me like I owed it cab fare.",
+            "Men lie, mascara runs, and live TV never forgives.",
+            "You want subtle? Buy a radio."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "9f2674f8-b578-474e-88e6-903f9e8eb273",
+          "name": "Reverend Roy \"The Righteous Flame\" Bell",
+          "portrait_image_prompt": "Handsome smug televangelist in his 40s with immaculately waved hair, dazzling white smile, tanned skin, cream three-piece suit, giant cross necklace, manicured hands, polished loafers, and eyes hiding panic and vanity.",
+          "dialogue_examples": [
+            "Sin always overplays its hand, and yours has press-on nails.",
+            "The public doesn't want decadence, it wants salvation with good hair.",
+            "I'm not threatened by your ratings; I'm offended by your hemlines.",
+            "This station needs moral leadership, preferably with my name on the door."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "b450641e-d9ca-436f-859b-eb8c0beaf044",
+          "name": "Orson Hex",
+          "portrait_image_prompt": "Gaunt pale projectionist in his 50s with a widow's peak, deep-set eyes, ink-stained fingers, black turtleneck, frayed velvet blazer, silver occult rings, angular face, and elegant corpse-like posture.",
+          "dialogue_examples": [
+            "Film remembers everything, especially what respectable people bury.",
+            "That reel is older than the mold on these walls, and twice as vindictive.",
+            "Please do not touch the emulsion with wet fingers or impure intentions.",
+            "The dead are rarely punctual, but they do adore an audience."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "name": "Studio B Horror Set",
+          "location_image_prompt": "1970s local television horror-host soundstage dressed like a campy gothic crypt, coffin-shaped velvet couch, cardboard gravestones, faux stone walls, fake cobwebs, tall candelabras, papier-mache ravens, fog machine residue, retro studio cameras, and gaudy low-budget spooky set design"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "name": "WZAP Control Room",
+          "location_image_prompt": "Cramped 1970s television control room with analog switchboards, blinking buttons, reel-to-reel machines, cathode monitors, tangled cables, cue sheets, ashtrays, half-empty coffee mugs, and frantic low-budget broadcast energy"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "a6688d78-f347-48e5-94bd-8aef89353a30",
+          "name": "Basement Film Vault",
+          "location_image_prompt": "Aging basement film vault beneath a television station, concrete walls, rusty shelving packed with metal film canisters, old projector equipment, hidden occult chalk marks among water stains, leaking pipes, dust, and forgotten props"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "55f4aa1e-7a2b-4ce8-a747-491366baa5dc",
+          "name": "Broadcast Tower Rooftop",
+          "location_image_prompt": "Urban 1970s television station rooftop at night with a towering broadcast mast, thick transmission cables, neon station sign, puddled tar roof, maintenance ladder, and a distant city skyline"
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "de83e022-3571-4064-8cc7-ba74c99bba29",
+        "scene_name": "intro",
+        "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+        "non_player_character_uuids": [
+          "6f20511c-a617-4864-8f23-fb67def54c10",
+          "ddb64649-9b18-4c5d-af91-39347c2a9267",
+          "9f2674f8-b578-474e-88e6-903f9e8eb273"
+        ],
+        "narrtive_summary": "Minutes before going live on Studio B, Madame Massacre learns that a syndication scout may be watching tonight's episode and that Reverend Roy is lobbying to steal her time slot. Rex dumps a mysterious film canister addressed to Madame into the night's lineup, insisting she turn whatever happens into ratings gold while Bibi helps her get camera-ready amid rising panic."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "9395f977-d397-41d9-b2dd-a054d9581339",
+          "scene_name": "act1_scene1",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "non_player_character_uuids": [
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "As the live show begins, the control room collapses into cigarette-smoked chaos: dead microphones, bad cueing, sponsor notes demanding Madame be sexier and less obscene at the same time. Orson identifies the strange canister as a lost reel from a notorious cursed broadcast, but Rex orders it queued anyway when the early ratings start to sag."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "403670ad-435a-4735-839f-c6f6add86bf5",
+          "scene_name": "act1_scene2",
+          "location_uuid": "a6688d78-f347-48e5-94bd-8aef89353a30",
+          "non_player_character_uuids": [
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "In the basement film vault, Madame, Bibi, and Orson inspect the reel and accidentally run a few frames through an old projector. The film unleashes wisecracking, flesh-hungry studio ghouls that feed on gossip, lust, and audience attention, forcing the trio to cover up the outbreak and race back upstairs before the station realizes the monsters are real."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "1b3407f1-852b-42ff-9442-f8cab8203958",
+          "scene_name": "act2_scene1",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "non_player_character_uuids": [
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "9f2674f8-b578-474e-88e6-903f9e8eb273",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "Back on Studio B, Madame improvises the ghoul outbreak into her act, turning genuine danger into outrageous camp as viewers assume it is the boldest episode she has ever staged. Reverend Roy barges in with sanctimonious grandstanding and tries to reclaim the audience, but the ghouls begin exposing everyone's private hypocrisies live on camera, driving ratings even higher."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "69efd4c0-2ed0-475e-95a6-52da43a68511",
+          "scene_name": "act2_scene2",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "non_player_character_uuids": [
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "9f2674f8-b578-474e-88e6-903f9e8eb273",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "The power struggle moves to the control room when Roy attempts to kill Madame's broadcast and seize the time slot for a surprise sermon. Orson reveals the cursed reel cannot be burned, cut, or shelved; it amplifies lies, and only a truly candid confession made live by the host can collapse the spell, forcing Madame to consider dropping her persona at the worst possible moment."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "7004c3a2-b3c4-492c-bb62-fd091c2d0c52",
+          "scene_name": "act3_scene1",
+          "location_uuid": "55f4aa1e-7a2b-4ce8-a747-491366baa5dc",
+          "non_player_character_uuids": [
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "9f2674f8-b578-474e-88e6-903f9e8eb273",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "On the rooftop beneath the transmission mast, the curse begins spreading through the station signal and threatens to turn the whole city into unwilling participants in the nightmare broadcast. While Rex and Roy's mutual scheming detonates into absurd farce, Madame confronts her fear that beneath the wit, cleavage, and fog machine she will always be dismissed as a cheap joke."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "921df8c6-bbec-44bd-855a-dfcbe87d1e5f",
+          "scene_name": "act3_scene2",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "non_player_character_uuids": [
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "9f2674f8-b578-474e-88e6-903f9e8eb273",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "narrtive_summary": "For the final segment back on Studio B, Madame weaponizes total honesty and razor-edged wit, confessing her ambition, insecurity, and genuine love of grotesque trash television. She baits Roy and Rex into humiliating confessions of their own, starving the ghouls of hypocrisy and trapping them back inside the reel as the audience mistakes the catharsis for avant-garde genius."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "b10027f6-4c12-4642-9d2a-b44f1192279d",
+        "scene_name": "outro",
+        "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+        "non_player_character_uuids": [
+          "6f20511c-a617-4864-8f23-fb67def54c10",
+          "ddb64649-9b18-4c5d-af91-39347c2a9267",
+          "b450641e-d9ca-436f-859b-eb8c0beaf044"
+        ],
+        "narrtive_summary": "With dawn creeping in and the station somehow still standing, Roy is disgraced, Rex begrudgingly offers Madame creative control, and Bibi and Orson become her indispensable co-conspirators for the show's next era. A syndication offer arrives just as one surviving ghoul winks from the prop coffin, promising that success will only make the next disaster bigger and messier."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/3e8bf48d-1401-4c81-b5bd-16203015cd69.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/6f20511c-a617-4864-8f23-fb67def54c10.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/ddb64649-9b18-4c5d-af91-39347c2a9267.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/9f2674f8-b578-474e-88e6-903f9e8eb273.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/b450641e-d9ca-436f-859b-eb8c0beaf044.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/bg c199ca14-c4d2-43f1-a3b2-f7b753efb520.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/520cad84-8101-4175-a457-3a93a685c6bf/IMAGES/bg ffc1fef0-dfb8-476d-b951-e7618381c118.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Madame Massacre's Midnight Mayhem",
+      "scene_name": "intro",
+      "scene_uuid": "de83e022-3571-4064-8cc7-ba74c99bba29",
+      "source_scene_summary": "Minutes before going live on Studio B, Madame Massacre learns that a syndication scout may be watching tonight's episode and that Reverend Roy is lobbying to steal her time slot. Rex dumps a mysterious film canister addressed to Madame into the night's lineup, insisting she turn whatever happens into ratings gold while Bibi helps her get camera-ready amid rising panic.",
+      "location_name": "Studio B Horror Set",
+      "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+      "player_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+      "non_player_character_uuids": [
+        "6f20511c-a617-4864-8f23-fb67def54c10",
+        "ddb64649-9b18-4c5d-af91-39347c2a9267",
+        "9f2674f8-b578-474e-88e6-903f9e8eb273"
+      ],
+      "dramatic_question": "Can Madame keep control of her image and her show long enough to go live, even as syndication pressure, Roy's scheming, and a mysterious reel threaten to knock her off balance?",
+      "scene_goal": "Get camera-ready, protect her time slot, and turn the night's sudden threats into an opportunity before the show starts.",
+      "scene_turn": "A routine pre-show scramble becomes a make-or-break live broadcast: Madame goes on air knowing a syndication scout may be watching, Roy is circling her slot, and a strange film reel addressed to her has been added to the lineup.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_dressing_the_monster",
+          "purpose": "Establish the backstage tone, Madame's persona, and her working rhythm with Bibi before the real pressure lands.",
+          "summary": "On the gaudy crypt set, Bibi gives Madame last-minute makeup and wardrobe fixes while crew noise and countdown chatter leak in from offstage. Madame performs cool command for everyone else's benefit, but the air is already twitchy enough to suggest tonight will not be business as usual.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "campy, keyed-up, intimate",
+          "revelation": null,
+          "tension_change": "hold",
+          "player_goal": "Get camera-ready and read the room before stepping into character.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Madame is nearly ready for air, but the pre-show atmosphere feels unusually strained."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_scout_in_the_shadows",
+          "purpose": "Introduce the night's external stakes by revealing the syndication opportunity and making success feel urgent.",
+          "summary": "Rex rushes onto the set in a sweat, blurting out that a syndication scout may be watching tonight's broadcast. He piles on contradictory pressure—be bigger, hotter, safer, sharper—making it clear this episode could decide whether Madame stays local or breaks wider.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267"
+          ],
+          "focal_character_uuid": "6f20511c-a617-4864-8f23-fb67def54c10",
+          "mood": "frantic, opportunistic",
+          "revelation": "A syndication scout may be watching tonight's episode.",
+          "tension_change": "rise",
+          "player_goal": "Get useful information from Rex without letting his panic infect the set.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The show is now a high-stakes audition, not just another late-night broadcast."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_roy_smells_blood",
+          "purpose": "Put a face on the threat to Madame's career and sharpen the rivalry with Reverend Roy.",
+          "summary": "Reverend Roy glides in with a sanctimonious smile, taking veiled swipes at Madame's act while implying station leadership might prefer a more 'respectable' face in her slot. His smugness confirms he is actively lobbying to replace her, turning backstage nerves into open warfare.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "9f2674f8-b578-474e-88e6-903f9e8eb273"
+          ],
+          "focal_character_uuid": "9f2674f8-b578-474e-88e6-903f9e8eb273",
+          "mood": "catty, venomous, theatrical",
+          "revelation": "Reverend Roy is lobbying to steal Madame's time slot.",
+          "tension_change": "twist",
+          "player_goal": "Shut Roy down without giving him proof that he's rattled her.",
+          "interactive": true,
+          "choice_prompt": "How does Madame answer Roy's provocation?",
+          "branch_outcomes": [
+            "She flirts and needles Roy, unsettling him while keeping the exchange playful.",
+            "She publicly eviscerates Roy with wit, winning the room but escalating the feud.",
+            "She stays icy and controlled, denying Roy a spectacle while signaling confidence."
+          ],
+          "exit_state": "Roy leaves with his challenge made plain, and everyone now knows Madame's slot is under attack."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_canister_with_her_name",
+          "purpose": "Introduce the mysterious reel as the night's ominous wildcard and tie it directly to Madame.",
+          "summary": "With the clock ticking, Rex produces a battered film canister addressed to Madame and admits he has already added it to the evening's lineup. Bibi immediately clocks it as wrong—too old, too cold, too anonymous—but Rex insists that mystery sells and begs Madame to make whatever it is look intentional.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267"
+          ],
+          "focal_character_uuid": "6f20511c-a617-4864-8f23-fb67def54c10",
+          "mood": "ominous, absurd, pressurized",
+          "revelation": "A mysterious film canister addressed to Madame has been dumped into tonight's running order.",
+          "tension_change": "rise",
+          "player_goal": "Figure out whether the reel is a threat, a stunt, or something she can exploit.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The reel remains in the lineup despite everyone's misgivings, binding Madame to whatever it contains."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_paint_the_panic_pretty",
+          "purpose": "Deepen Madame's emotional stakes and let the player define the face she presents to the audience.",
+          "summary": "As Rex scrambles off to save the rundown, Bibi finishes Madame's look and offers blunt reassurance: men like Roy and Rex only win when they smell fear. In the brief calm, Madame's ambition shows through the lacquer, revealing how much she wants to be seen as more than a low-budget gimmick.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "brassy, supportive, vulnerable beneath the surface",
+          "revelation": "Madame's horror-host persona hides a real hunger for legitimacy and control.",
+          "tension_change": "hold",
+          "player_goal": "Choose what version of Madame will walk on camera tonight.",
+          "interactive": true,
+          "choice_prompt": "What mask does Madame wear for tonight's opening?",
+          "branch_outcomes": [
+            "She leans into sultry camp, using sex appeal as a weapon.",
+            "She chooses regal composure, projecting untouchable authority.",
+            "She sharpens her mockery, leading with wit and predatory confidence."
+          ],
+          "exit_state": "Madame steadies herself and commits to a deliberate on-camera persona for the live broadcast."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_five_seconds_to_midnight",
+          "purpose": "Launch the story into the live show with all key threats in place.",
+          "summary": "The countdown begins, studio lights flare, and the fog machine coughs back to life as Rex shouts one last plea for ratings gold. Madame glides into position and goes live with a smile sharp enough to hide her nerves, while the mysterious reel waits somewhere in the night's order.",
+          "location_uuid": "c199ca14-c4d2-43f1-a3b2-f7b753efb520",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "electric, glamorous, precarious",
+          "revelation": null,
+          "tension_change": "rise",
+          "player_goal": "Hit the opening cleanly and seize command of the broadcast before chaos catches up.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The show is live: Madame is on air under syndication pressure, Roy is circling, and the mystery canister is officially part of tonight's broadcast."
+        }
+      ]
+    },
+    {
+      "story_title": "Madame Massacre's Midnight Mayhem",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "9395f977-d397-41d9-b2dd-a054d9581339",
+      "source_scene_summary": "As the live show begins, the control room collapses into cigarette-smoked chaos: dead microphones, bad cueing, sponsor notes demanding Madame be sexier and less obscene at the same time. Orson identifies the strange canister as a lost reel from a notorious cursed broadcast, but Rex orders it queued anyway when the early ratings start to sag.",
+      "location_name": "WZAP Control Room",
+      "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+      "player_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+      "non_player_character_uuids": [
+        "6f20511c-a617-4864-8f23-fb67def54c10",
+        "ddb64649-9b18-4c5d-af91-39347c2a9267",
+        "b450641e-d9ca-436f-859b-eb8c0beaf044"
+      ],
+      "dramatic_question": "Can Madame keep the live broadcast from spiraling out of control before Rex forces the mysterious reel onto the air?",
+      "scene_goal": "Keep the episode alive and stop Rex from using the strange canister as a reckless ratings stunt.",
+      "scene_turn": "What begins as ordinary live-TV chaos turns into a looming supernatural threat when Orson identifies the canister as a cursed lost broadcast and Rex queues it anyway.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Establish the live-broadcast pressure cooker and give the player an immediate performance-management choice.",
+          "summary": "The red light goes on and the control room instantly buckles under a dead microphone, mistimed camera cuts, and Rex's cigarette-hazed shrieking about the syndication scout. Madame has to turn the opening stumble into style before the audience smells panic.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "frenetic, campy panic",
+          "revelation": "The broadcast is already malfunctioning seconds into airtime.",
+          "tension_change": "rise",
+          "player_goal": "Keep the opening segment alive and reassert control over the room.",
+          "interactive": true,
+          "choice_prompt": "How does Madame smooth over the opening technical disaster?",
+          "branch_outcomes": [
+            "Playfully seduce the camera and make the glitch feel intentional.",
+            "Snap at the crew with theatrical menace and force a cleaner reset.",
+            "Let Bibi patch the problem while Madame pivots to backup patter."
+          ],
+          "exit_state": "The opener survives, but the crew is rattled and Rex immediately starts piling new demands on Madame."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Show the impossible commercial and moral pressures shaping Madame's persona.",
+          "summary": "Rex thrusts sponsor and Standards notes at Madame that demand she be sexier and less obscene in the same breath. Bibi mocks the hypocrisy while Madame is reminded that everyone wants her danger only if it comes in tidy, deniable packaging.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "sardonic, pressurized",
+          "revelation": "The station's sponsors want Madame's heat without owning the scandal that makes her popular.",
+          "tension_change": "hold",
+          "player_goal": "Figure out how to satisfy the station without gutting her act.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Madame heads toward the next segment knowing every authority figure wants a different version of her."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Introduce the reel as a possible supernatural threat.",
+          "summary": "As Orson reorganizes the playback stack, he finally studies the mystery canister addressed to Madame. He recognizes the stock codes from a notorious lost broadcast whispered about in projection booths, a reel blamed for on-air confessions, public hysteria, and a station that never fully recovered.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "b450641e-d9ca-436f-859b-eb8c0beaf044",
+          "mood": "ominous beneath the farce",
+          "revelation": "The canister may belong to a cursed lost broadcast tied to compulsive truth-telling and disaster.",
+          "tension_change": "twist",
+          "player_goal": "Learn whether the mystery reel is safe to ignore or too dangerous to air.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The canister stops being a curiosity and becomes the most dangerous object in the room."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Force mundane ratings panic to collide with Orson's warning.",
+          "summary": "A ratings update comes in soft, and Rex's fear of losing the syndication deal overwhelms whatever patience he had left. While Orson urges caution and Bibi backs him, Rex starts seeing the unknown reel not as a threat but as a desperate chance to jolt audience attention.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "6f20511c-a617-4864-8f23-fb67def54c10",
+          "mood": "tight, grasping desperation",
+          "revelation": "The early ratings are sagging badly enough to make Rex willing to gamble.",
+          "tension_change": "rise",
+          "player_goal": "Keep Rex from turning a bad trend into a catastrophic decision.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rex's anxiety hardens into reckless intent."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Create the core confrontation and let the player define Madame's stance before the inevitable decision.",
+          "summary": "Rex orders Orson to queue the mystery reel into the next available slot, brushing off every warning as superstition and every objection as weakness. Madame can push back in different ways, but Rex keeps reframing danger as spectacle and spectacle as salvation.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "combative, high-wire",
+          "revelation": "Rex will knowingly risk a possibly cursed reel if he thinks it can goose ratings before Roy steals the slot.",
+          "tension_change": "rise",
+          "player_goal": "Stop or delay Rex's order long enough to get real answers about the reel.",
+          "interactive": true,
+          "choice_prompt": "How does Madame oppose Rex's order to air the reel?",
+          "branch_outcomes": [
+            "Threaten a public on-air refusal, forcing Rex to grant a few minutes of cover.",
+            "Hammer him with liability and scandal, making him hide the order behind bluster.",
+            "Insist on inspecting the reel personally, winning a brief window before it can be aired."
+          ],
+          "exit_state": "Rex's order stands, but Madame claws out a narrow chance to examine the reel first."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Launch the next scene by moving the investigation downstairs under time pressure.",
+          "summary": "Orson says the only useful answers are in the basement film vault, where the older equipment and archive logs are kept. Madame sweeps Bibi and Orson out of the control room on borrowed minutes while Rex barks after them to have the reel ready for air.",
+          "location_uuid": "ffc1fef0-dfb8-476d-b951-e7618381c118",
+          "present_character_uuids": [
+            "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+            "6f20511c-a617-4864-8f23-fb67def54c10",
+            "ddb64649-9b18-4c5d-af91-39347c2a9267",
+            "b450641e-d9ca-436f-859b-eb8c0beaf044"
+          ],
+          "focal_character_uuid": "3e8bf48d-1401-4c81-b5bd-16203015cd69",
+          "mood": "urgent, dread-laced",
+          "revelation": "If Madame wants to prevent disaster, she has to inspect the reel immediately downstairs.",
+          "tension_change": "rise",
+          "player_goal": "Reach the basement and learn what the reel really is before Rex broadcasts it.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Madame, Bibi, and Orson head for the basement film vault while Rex expects the mystery reel to return ready for the lineup."
+        }
+      ]
+    }
+  ]
+}

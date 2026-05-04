@@ -1,0 +1,554 @@
+{
+  "narrative_design_spec": {
+    "story_title": "Madame Massacre's Dead Air",
+    "synopsis": "Early 1970s UHF television gets gloriously cursed when glamorous late-night horror host Madame Massacre discovers that a mysterious film reel from a defunct studio contains a real broadcast demon called the Hungry Lens. As ratings-hungry staff, a vulgar funeral-home sponsor, and a scheming producer try to turn the haunting into a publicity bonanza, Madame must keep her collapsing creature-feature empire intact and out-perform the supernatural on live TV. The tone is bawdy, fast-talking horror comedy: equal parts gothic camp, workplace satire, occult farce, and adult animated-style banter.",
+    "player_character": {
+      "character_data": {
+        "uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+        "name": "Madame Massacre",
+        "portrait_image_prompt": "A glamorous early-1970s horror hostess with a towering black beehive hairstyle, dramatic winged eyeliner, arched brows, a beauty mark, pale makeup, full lips, a curve-hugging black gown with a thigh-high slit, long black gloves, ornate silver jewelry, and a sardonic, seductive expression.",
+        "dialogue_examples": [
+          "Good evening, darlings. Tonight's feature has everything: blood, screams, and a leading man dumb enough to remove his own bandages.",
+          "If the dead are rising again, tell them to take a number. I'm already booked through Friday.",
+          "Sweetheart, I don't flirt with danger. Danger sends me flowers and begs for a callback.",
+          "Let's keep rolling. If I'm going to be damned on live television, I at least want my good side."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "b013cbcd-7798-45e4-92bf-152375235c13",
+          "name": "Buzz Ricker",
+          "portrait_image_prompt": "A wiry late-30s television producer with thick sideburns, a loud plaid sport coat, a loosened wide tie, slicked-back brown hair, a perpetual salesman's grin, and restless, overconfident body language.",
+          "dialogue_examples": [
+            "We're not losing the audience, we're just letting them miss us between commercials.",
+            "If Hell wants ad time during my slot, it can pay the same rate as cigarettes.",
+            "Nobody panic till I've figured out who to invoice.",
+            "Madame, give me glamour, menace, and maybe ten percent less open contempt for the sponsor."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "6eaa156e-5597-4241-a764-a6967d87bc77",
+          "name": "Dolly Knell",
+          "portrait_image_prompt": "A sharp-eyed middle-aged makeup artist with a curvy build, cat-eye glasses, teased auburn hair under a printed headscarf, precise eyeliner, a patterned blouse under a work smock, chunky bracelets, and a dry, unimpressed expression.",
+          "dialogue_examples": [
+            "Honey, latex can fix a weak chin, a werewolf bite, and most marriages.",
+            "That isn't stage blood. Stage blood doesn't whisper.",
+            "You keep smiling and I'll keep powdering over the collapse.",
+            "My aunt taught me two useful things: contouring and warding circles."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+          "name": "Nicky Static",
+          "portrait_image_prompt": "A lanky young audio engineer with messy dark curls, sideburns, tired eyes, a denim vest over a faded turtleneck, oversized headphones around his neck, a few occult trinkets on cords and bracelets, and a skeptical half-grin.",
+          "dialogue_examples": [
+            "Every time that reel spins backward, the meters spike like the station's being haunted in stereo.",
+            "I'm not saying it's a demon in the transmitter, but if it is, the little creep knows how to patch into UHF.",
+            "I can jam the signal, loop the commercials, or fake a fire. Pick your miracle.",
+            "For the record, I was cool before the occult started liking my equipment."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "a457cfc5-0575-4b1d-bd34-30e674f66cc0",
+          "name": "Vernon Vale",
+          "portrait_image_prompt": "A polished funeral-home magnate in his 50s with silver hair, a sharp widow's peak, a manicured mustache, a burgundy three-piece suit, a silk pocket square, a gold pinky ring, immaculate grooming, and a predatory smile.",
+          "dialogue_examples": [
+            "Death is a growth industry, and fear has marvelous repeat business.",
+            "I'm not a ghoul, Madame. I'm a civic-minded entrepreneur with excellent upholstery.",
+            "If the dead want screen time, I can package the tie-in services.",
+            "You don't become a local institution by waiting for ethics to catch up."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "name": "Channel 13 Midnight Stage",
+          "location_image_prompt": "A shabby 1970s UHF television soundstage dressed as a gothic crypt, with cardboard tombstones, velvet curtains, fake cobwebs, a coffin-shaped host desk, fog machine residue, clunky studio cameras, boom microphones, painted castle flats, and retro broadcast equipment."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "name": "Channel 13 Control Room",
+          "location_image_prompt": "A cramped analog TV control room in 1973 packed with switcher panels, reel-to-reel decks, stacked monitors, tangled cables, cue sheets, ashtrays, half-empty coffee cups, blinking dials, and wood-paneled walls."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "315cf801-9590-430e-8b36-e25f82aff5d5",
+          "name": "Station Basement Archive",
+          "location_image_prompt": "A dusty basement archive beneath a television station, lined with film canisters, prop coffins, cracked mannequins, rusted shelving, forgotten set pieces, occult-marked production files, exposed pipes, and old studio detritus."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "f1668f0d-488a-4378-ad2b-da7d7026ad8a",
+          "name": "Mourning Glory Funeral Parlor",
+          "location_image_prompt": "An upscale but tacky 1970s funeral parlor showroom with plush carpet, satin-lined caskets, floral sprays, brass fixtures, mirrored walls, glossy sales brochures, velvet chairs, and unsettling corporate elegance."
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "932093e9-d39e-4b83-8b08-621ac57bfa77",
+        "scene_name": "intro",
+        "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+        "non_player_character_uuids": [
+          "b013cbcd-7798-45e4-92bf-152375235c13",
+          "6eaa156e-5597-4241-a764-a6967d87bc77",
+          "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+        ],
+        "narrtive_summary": "During a live taping of her late-night creature feature, Madame Massacre glides through double entendres and sarcastic ad reads while Buzz, Dolly, and Nicky struggle to keep the cheap production from collapsing. A mysterious film canister from defunct Gallowglass Pictures is delivered to the stage with instructions that it must be aired during sweeps week, and when Madame riffs about it on camera, the studio reacts as if something inside heard her."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "de245117-13d7-4a52-9241-44d4c293491d",
+          "scene_name": "act1_scene1",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "non_player_character_uuids": [
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "narrtive_summary": "In the control room after the show, Vernon Vale arrives to threaten budget cuts unless the station turns the strange reel into a ratings stunt. When the crew screens a few frames, the film shows impossible footage of them speaking lines before they actually say them, convincing Madame that the reel is not a gimmick but a real supernatural threat that feeds on broadcast attention."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "b3fb4d9d-b0fd-4b38-bd89-e3b726e5a63b",
+          "scene_name": "act1_scene2",
+          "location_uuid": "315cf801-9590-430e-8b36-e25f82aff5d5",
+          "non_player_character_uuids": [
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "narrtive_summary": "Madame leads Buzz, Dolly, and Nicky into the station's basement archive, where they uncover records from an abandoned horror broadcast that tried to conjure fame through occult cinema. Reading from the reel by accident, Madame binds the entity known as the Hungry Lens to her next live appearance, and the station's fake monsters, props, and gimmicks begin moving with very real intent."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "c11961e8-82fa-48dc-8a07-2a7aeb0fca24",
+          "scene_name": "act2_scene1",
+          "location_uuid": "f1668f0d-488a-4378-ad2b-da7d7026ad8a",
+          "non_player_character_uuids": [
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "narrtive_summary": "At Vernon's lavish funeral parlor, Madame and her allies confront him about how he got the reel and learn he bought it at an estate auction hoping to boost both ratings and funeral pre-need sales. Amid satin caskets and shameless sales pitches, Dolly finds a counter-ritual hidden in old makeup notes: the Hungry Lens can be starved if its audience laughs at it instead of fearing it or lusting after it."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "ba7e6f89-7f30-441b-a80e-1dbc36494810",
+          "scene_name": "act2_scene2",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "non_player_character_uuids": [
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "narrtive_summary": "Back on the Midnight Stage, Madame rehearses a plan to turn the haunting into a joke while Nicky rigs the sound and Dolly hides protective sigils in costume seams and set dressing. Buzz, seduced by the prospect of national syndication and his own ego, secretly teams with Vernon to launch the cursed special early, trapping Madame on live television just as the Hungry Lens begins manifesting through cameras and screens."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "ba825680-3006-4a3b-a692-9a319b5e7421",
+          "scene_name": "act3_scene1",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "non_player_character_uuids": [
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "narrtive_summary": "The live special turns the control room into a battlefield of flickering monitors, occult feedback, sabotaged cue cards, and panicked ad breaks. Madame keeps performing through the chaos while Dolly and Nicky feed her counter-ritual beats from behind the glass, and Buzz finally realizes Vernon plans to sacrifice the station and everyone in it for a grotesque form of immortality on tape."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "ee7af4c0-8703-421d-990c-65729d55fe75",
+          "scene_name": "act3_scene2",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "non_player_character_uuids": [
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "narrtive_summary": "On the soundstage, Madame confronts Vernon and the fully manifested Hungry Lens in front of the home audience, turning her monologue into a savage roast that makes both menacing forces ridiculous. Timing Nicky's dead-air blackout to Dolly's final sigil cue, she humiliates Vernon, starves the entity of the exact reaction it craves, and seals the Hungry Lens back into the film canister while taking control of the broadcast."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "262c97ae-e1f7-4e82-9f91-2b91fb492b67",
+        "scene_name": "outro",
+        "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+        "non_player_character_uuids": [
+          "b013cbcd-7798-45e4-92bf-152375235c13",
+          "6eaa156e-5597-4241-a764-a6967d87bc77",
+          "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+        ],
+        "narrtive_summary": "As dawn arrives after the most-watched night in Channel 13 history, the station survives, Vernon is disgraced, and Buzz is demoted into begrudging usefulness. Madame renegotiates her future from a position of strength, shares a tired but triumphant victory lap with Dolly and Nicky, and signs off with a promise that next week's feature will be less cursed and only slightly more tasteful."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/30040eff-4116-455e-bafc-6eea98a8df92.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/b013cbcd-7798-45e4-92bf-152375235c13.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/6eaa156e-5597-4241-a764-a6967d87bc77.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/1b13241a-592b-4ccd-9c0d-765a60d11da7.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/a457cfc5-0575-4b1d-bd34-30e674f66cc0.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/bg 2d5c8811-f0b8-4db2-9bd2-0f4280b1a152.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/9d1c2918-766d-4eb4-a8f1-976e4a70254d/IMAGES/bg 73cb9e71-8118-4028-bd6b-50df02cd64bd.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Madame Massacre's Dead Air",
+      "scene_name": "intro",
+      "scene_uuid": "932093e9-d39e-4b83-8b08-621ac57bfa77",
+      "source_scene_summary": "During a live taping of her late-night creature feature, Madame Massacre glides through double entendres and sarcastic ad reads while Buzz, Dolly, and Nicky struggle to keep the cheap production from collapsing. A mysterious film canister from defunct Gallowglass Pictures is delivered to the stage with instructions that it must be aired during sweeps week, and when Madame riffs about it on camera, the studio reacts as if something inside heard her.",
+      "location_name": "Channel 13 Midnight Stage",
+      "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+      "player_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+      "non_player_character_uuids": [
+        "b013cbcd-7798-45e4-92bf-152375235c13",
+        "6eaa156e-5597-4241-a764-a6967d87bc77",
+        "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+      ],
+      "dramatic_question": "Can Madame keep her live show glamorous and under control when a mysterious reel intrudes—and is it just another stunt, or something that can answer her back?",
+      "scene_goal": "Finish the taping with her authority intact while covering the production's failures and sizing up the strange delivery without letting the audience smell panic.",
+      "scene_turn": "A routine night of campy live television becomes the first undeniable supernatural incident when the Gallowglass reel reacts to Madame's on-air attention.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_opening_monologue",
+          "purpose": "Establish Madame's persona, the show's bawdy camp tone, and the fragile live-production environment while giving the player an early expressive choice.",
+          "summary": "The red light goes on and Madame glides into her opening monologue, all velvet menace and double entendres, while Buzz cues cameras, Dolly fixes last-second cosmetic disasters, and Nicky fights a low hum in the sound line. The audience sees polished glamour; the player immediately sees how much duct tape holds it together.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "campy and flirtatious",
+          "revelation": "Channel 13's creature feature survives more on Madame's charisma than on money, planning, or craftsmanship.",
+          "tension_change": "hold",
+          "player_goal": "Hook the audience and establish command of the room.",
+          "interactive": true,
+          "choice_prompt": "How does Madame open tonight's broadcast?",
+          "branch_outcomes": [
+            "She goes full sultry, charming the audience and making the show feel slicker than it is.",
+            "She leads with acid wit, getting a bigger laugh while lightly embarrassing the production.",
+            "She plays it sincerely spooky, deepening the macabre mood and making the set feel more haunted than cheap."
+          ],
+          "exit_state": "Madame owns the frame, but the production's instability is already visible behind the glamour."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_live_show_brinkmanship",
+          "purpose": "Show how close to collapse the show always is and how the crew relies on Madame's improvisation to survive live television.",
+          "summary": "A stage gag misfires: fog belches at the wrong time, a tombstone lists sideways, and a hanging bat prop nearly drops into frame. Buzz barks fixes, Dolly patches the visual damage from off-camera, and Madame covers the mess with effortless innuendo instead of letting dead air win.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "hectic and comic",
+          "revelation": "Buzz, Dolly, and Nicky keep the program alive by improvising around constant technical failure.",
+          "tension_change": "rise",
+          "player_goal": "Keep the audience entertained while the crew stabilizes the set.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The bit lands, but the entire production is revealed to be one mishap away from public humiliation."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_sponsor_read_and_signal_glitch",
+          "purpose": "Introduce the show's commercial pressure and foreshadow that tonight's technical problems may not be normal.",
+          "summary": "Buzz forces a sponsor read into the segment, and Madame delivers it with exquisite sarcasm while Dolly feeds whispered corrections from the wings. At the audio board, Nicky catches a strange feedback spike that rises in rhythm with Madame's voice and then vanishes before he can trace it.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+          "mood": "biting and uneasy",
+          "revelation": "Nicky detects an audio anomaly that does not match any microphone, cable, or stage source.",
+          "tension_change": "rise",
+          "player_goal": "Sell the ad without giving up Madame's dignity or losing the audience.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The sponsor is satisfied, but Nicky is left rattled by interference he cannot explain."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_gallowglass_delivery",
+          "purpose": "Introduce the inciting object, attach urgency to it, and make the mystery part of the live show instead of a private backstage problem.",
+          "summary": "Mid-broadcast, a runner delivers a dented film canister from defunct Gallowglass Pictures with a note insisting it must be aired during sweeps week. Buzz instantly sees a promotional angle, Dolly dislikes the thing on sight, and Madame has only moments to decide how to present the interruption to the audience.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "curious and electrically charged",
+          "revelation": "Someone wants this forgotten Gallowglass reel broadcast during sweeps week, no matter what.",
+          "tension_change": "twist",
+          "player_goal": "Fold the mysterious delivery into the act without surrendering control of the broadcast.",
+          "interactive": true,
+          "choice_prompt": "How does Madame frame the mysterious canister on air?",
+          "branch_outcomes": [
+            "She treats it as glamorous industry gossip, stoking curiosity while masking her concern.",
+            "She mocks it as another cheap station stunt, preserving her superiority but daring the unknown to answer.",
+            "She leans into ominous showmanship, making the canister feel like forbidden treasure and sharpening the audience's anticipation."
+          ],
+          "exit_state": "The canister is no longer backstage clutter; it has become part of the live narrative and the audience's attention is fixed on it."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_the_stage_answers",
+          "purpose": "Deliver the first clear supernatural response and pivot the story from workplace farce into genuine haunting.",
+          "summary": "When Madame riffs directly to camera about what Gallowglass might have left trapped inside the reel, the stage reacts: lights dim without cue, the fog machine exhales on its own, and a camera emits a hungry mechanical whine as though it is focusing itself. Nicky's meters jump, Dolly feels the air go wrong, and for one suspended beat the studio seems to listen back.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "uncanny and rising dread",
+          "revelation": "The reel, or something connected to it, responds when it is acknowledged on-air.",
+          "tension_change": "twist",
+          "player_goal": "Hold Madame's composure and prevent the audience from seeing fear.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "What seemed like a publicity oddity now feels like a genuine supernatural threat."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_signoff_with_bad_feeling",
+          "purpose": "Close the intro with denial, opportunism, and a clear handoff into the next scene's investigation.",
+          "summary": "Buzz refuses to kill the momentum, insisting that whatever just happened could be ratings gold, and has the canister sent toward the control room once the taping ends. Madame lands the sign-off like a consummate professional, but off-camera she, Dolly, and Nicky are left staring after a reel that has already answered once.",
+          "location_uuid": "2d5c8811-f0b8-4db2-9bd2-0f4280b1a152",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "b013cbcd-7798-45e4-92bf-152375235c13",
+          "mood": "brittle resolve",
+          "revelation": "Buzz's instinct is to exploit the phenomenon as television before anyone understands it.",
+          "tension_change": "rise",
+          "player_goal": "Finish the segment cleanly and stay close enough to the reel to learn what it is.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The show wraps with the crew shaken, the Gallowglass canister preserved for screening, and Madame committed to following it into the next confrontation."
+        }
+      ]
+    },
+    {
+      "story_title": "Madame Massacre's Dead Air",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "de245117-13d7-4a52-9241-44d4c293491d",
+      "source_scene_summary": "In the control room after the show, Vernon Vale arrives to threaten budget cuts unless the station turns the strange reel into a ratings stunt. When the crew screens a few frames, the film shows impossible footage of them speaking lines before they actually say them, convincing Madame that the reel is not a gimmick but a real supernatural threat that feeds on broadcast attention.",
+      "location_name": "Channel 13 Control Room",
+      "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+      "player_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+      "non_player_character_uuids": [
+        "b013cbcd-7798-45e4-92bf-152375235c13",
+        "6eaa156e-5597-4241-a764-a6967d87bc77",
+        "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+        "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+      ],
+      "dramatic_question": "Can Madame keep Vernon from exploiting the mysterious reel as a ratings gimmick long enough to prove it is genuinely dangerous?",
+      "scene_goal": "Protect the show and crew by determining what the reel actually is and preventing Vernon from forcing it onto the air as a stunt.",
+      "scene_turn": "What begins as a sponsorship power play over a potentially useful publicity prop turns into undeniable proof that the reel is a supernatural predator that responds to being watched and broadcast.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Re-establish the crew after the live show, carry forward the eerie disturbance from the intro, and frame the control room as a pressure cooker of money worries and technical unease.",
+          "summary": "Fresh off the broadcast, Madame enters the control room to find Buzz basking in the night's numbers while Dolly wipes off stage grime and Nicky replays strange meter spikes from the moment the canister was mentioned on air. The banter is brisk and cynical, but the crew's nerves are frayed enough that nobody fully laughs off the reel anymore.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "frazzled, sardonic, uneasy",
+          "revelation": "Nicky's equipment registered abnormal signal activity exactly when the mysterious reel was invoked during the show.",
+          "tension_change": "hold",
+          "player_goal": "Get a read on whether the reel is just another station headache or something genuinely wrong.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The crew is unsettled but divided, with technical evidence suggesting the reel reacted to live broadcast attention."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Introduce Vernon's leverage, force the commercial threat into the room, and make the reel a conflict over power rather than just curiosity.",
+          "summary": "Vernon Vale sweeps into the control room like he owns the station and bluntly threatens budget cuts, sponsor pullback, and public humiliation unless Channel 13 turns the Gallowglass reel into a sweeps-week sensation. Buzz wavers because Vernon is speaking directly to the show's financial precarity, while Madame must decide how to handle being cornered by a smiling undertaker-salesman.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "combative, vulgar, transactional",
+          "revelation": "Vernon is willing to use sponsor money and budget pressure to force the reel onto the air as a publicity stunt.",
+          "tension_change": "rise",
+          "player_goal": "Push back on Vernon's ultimatum without losing control of the room.",
+          "interactive": true,
+          "choice_prompt": "How does Madame answer Vernon's demand?",
+          "branch_outcomes": [
+            "Mock Vernon openly, asserting dominance but making him more personally vindictive.",
+            "Feign interest to buy time, prompting Vernon to brag about the reel's promotional value.",
+            "Challenge his leverage directly, exposing how vulnerable Buzz feels about the show's budget."
+          ],
+          "exit_state": "Vernon's threat is real, Buzz is tempted by the numbers, and screening the reel becomes the immediate test case."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Escalate from argument to action by making the crew choose to examine the reel under pressure, while showing their differing attitudes toward risk.",
+          "summary": "With Vernon pushing and Buzz rationalizing, the room settles on a 'safe' compromise: screen only a few frames in the control room instead of airing the reel. Nicky reluctantly threads the film into the deck, Dolly marks the housing with a quick protective touch she pretends is superstition, and Madame insists she will decide what this thing is before anyone sells it.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "focal_character_uuid": "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+          "mood": "tight, anticipatory, professionally reckless",
+          "revelation": "Even a limited screening is treated like a gamble, suggesting everyone senses the reel is more volatile than ordinary film.",
+          "tension_change": "rise",
+          "player_goal": "Control the test and keep the others from rushing into a full stunt.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The reel is loaded, all eyes are on the monitors, and the crew is committed to seeing at least a fragment."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Deliver the first undeniable supernatural event and convert suspicion into shock.",
+          "summary": "The reel begins with damaged leader and warped studio noise, then abruptly resolves into grainy footage of the very control room they are standing in now. On the monitor, their filmed selves start moving a beat ahead of reality, with Madame and the others visibly preparing to say lines they have not yet spoken.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "uncanny, breath-held, disbelieving",
+          "revelation": "The reel contains impossible footage of the present moment, running slightly ahead of time.",
+          "tension_change": "twist",
+          "player_goal": "Decide whether to cut the screening immediately or watch long enough to understand what the reel is doing.",
+          "interactive": true,
+          "choice_prompt": "Do you stop the reel at the first impossible image, or force the room to keep watching for a few more seconds?",
+          "branch_outcomes": [
+            "Stop it fast, preserving some control but leaving everyone rattled and uncertain how much more it would reveal.",
+            "Keep it running briefly, gaining clearer proof of the time-slip effect at the cost of a stronger electrical surge and deeper panic."
+          ],
+          "exit_state": "The crew has seen enough to know the footage is impossible, but not enough yet to understand the reel's motive."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Clarify the threat's nature by tying the time anomaly to attention, broadcast machinery, and predatory intent.",
+          "summary": "The filmed versions of the crew speak a line before the real room involuntarily follows with the same words, making even Buzz lose his grin. As the others stare, Nicky's meters spike harder with every second of sustained viewing, and he realizes the signal is behaving less like playback and more like something feeding through the station the longer it is watched.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "focal_character_uuid": "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+          "mood": "horrified, analytical, escalating",
+          "revelation": "The reel appears to strengthen in direct relation to being watched through broadcast equipment; it feeds on attention rather than merely recording it.",
+          "tension_change": "rise",
+          "player_goal": "Force the room to accept that this is not a prank, glitch, or marketable special effect.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The reel is redefined from curiosity to active threat, and even the skeptics have witnessed evidence they cannot easily dismiss."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Close the scene with Madame taking command, drawing a line against exploitation, and setting up the investigative move into the archive.",
+          "summary": "Madame orders the screening killed and refuses to let Vernon turn the thing into a carnival attraction, though he keeps insisting terror is profitable. Buzz is shaken into temporary obedience, Dolly backs Madame's instinct that the station is sitting on something old and wrong, and the crew resolves to dig into Gallowglass records before the next broadcast can give the reel another meal.",
+          "location_uuid": "73cb9e71-8118-4028-bd6b-50df02cd64bd",
+          "present_character_uuids": [
+            "30040eff-4116-455e-bafc-6eea98a8df92",
+            "b013cbcd-7798-45e4-92bf-152375235c13",
+            "6eaa156e-5597-4241-a764-a6967d87bc77",
+            "1b13241a-592b-4ccd-9c0d-765a60d11da7",
+            "a457cfc5-0575-4b1d-bd34-30e674f66cc0"
+          ],
+          "focal_character_uuid": "30040eff-4116-455e-bafc-6eea98a8df92",
+          "mood": "hard-edged resolve under lingering dread",
+          "revelation": "The only safe next step is research, because further exposure could empower the reel before they know how to contain it.",
+          "tension_change": "rise",
+          "player_goal": "Retake authority over the crew and commit them to investigation instead of spectacle.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Madame leaves the control room convinced the reel is supernatural and dangerous, Vernon leaves hungry to monetize it, and the path forward is the station basement archive."
+        }
+      ]
+    }
+  ]
+}

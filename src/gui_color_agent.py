@@ -78,14 +78,7 @@ class GuiColorAgent():
         pass
 
 async def main():
-    red_color_dict = {
-        "r": 255,
-        "g": 0,
-        "b": 0
-    }
-
-    red_color: RBGA8 = RBGA8.model_validate(red_color_dict)
-    print(DEFAULT_ACCENT_COLOR.hex_string)
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

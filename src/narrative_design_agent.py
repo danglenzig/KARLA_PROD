@@ -6,13 +6,23 @@
 import asyncio
 from pydantic import BaseModel, Field
 from typing import Optional
-from agents import Agent, ModelSettings, TResponseInputItem, Runner, RunResult, RunConfig, trace, function_tool
+from agents import Agent, ModelSettings, TResponseInputItem, Runner, RunResult, RunConfig, trace, function_tool, AgentHooks
 from openai.types.shared.reasoning import Reasoning
 from dotenv import load_dotenv
 import json
 import uuid
 
 load_dotenv()
+
+
+class LoggingHooks(AgentHooks):
+    async def on_tool_start(self, context, agent, tool):
+        await super().on_tool_start(context, agent, tool)
+        print(f"TOOL START: {tool.name}, {tool.name}")
+
+    async def on_tool_end(self, context, agent, tool, result):
+        await super().on_tool_end(context, agent, tool, result)
+        print(f"TOOL END: {tool.name}, RESULT: {result}")
 
 #========
 # Schemas
@@ -218,7 +228,7 @@ class WorkflowTextInput(BaseModel):
 # Function Tools
 #===============
 
-def generate_uuid():
+def generate_uuid() -> str:
     myuuid = uuid.uuid4()
     return str(myuuid)
 
@@ -268,10 +278,11 @@ narrative_design_agent = Agent(
     model_settings=ModelSettings(
         reasoning=Reasoning(
             effort="high",
-            summary="detailed"
+            #summary="detailed"
         )
     ),
-    tools=[get_uuid_string]
+    tools=[get_uuid_string],
+    #hooks=LoggingHooks()
 )
 
 
@@ -290,10 +301,10 @@ class NarrativeDesignAgent:
         )
 
         # TODO: fix this...
-        _reasoning_dump = ""
-        for item in run_result.new_items:
-            if item.type == "reasoning_item":
-                _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
+        #_reasoning_dump = ""
+        #for item in run_result.new_items:
+        #    if item.type == "reasoning_item":
+        #        _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
         
         return run_result.final_output
 
@@ -314,21 +325,21 @@ class NarrativeDesignAgent:
 async def main():
     print(generate_uuid())
 
-    # test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982."
+    test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982. Like The Shining, but in a much trashier setting."
 
-    # wf_input = WorkflowTextInput(
-    #     input_as_text=test_input
-    # )
+    wf_input = WorkflowTextInput(
+        input_as_text=test_input
+    )
 
-    # #test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
-    # output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
+    test_agent: NarrativeDesignAgent = NarrativeDesignAgent()
+    output: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf_input)
 
-    # print(f"{output.model_dump_json(indent=2)}") # model_dump_json(): BaseModel -> clean JSON
-    # print(output.human_readable())
+    print(f"{output.model_dump_json(indent=2)}") # model_dump_json(): BaseModel -> clean JSON
+    print(output.human_readable())
 
     # # write the data to a dummy file
-    # # with open('dummy_data.json', 'w') as f:
-    # #     f.write(output.model_dump_json(indent=2))
+    with open('KARLA_GAMES/COLOR_AGENT_TESTING/test_data.json', 'w') as f:
+        f.write(output.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

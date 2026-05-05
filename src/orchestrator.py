@@ -53,7 +53,7 @@ def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
 async def run_program(user_input: str):
 
     temp_game_name: str = get_uuid_string()
-    image_style = ImageStyle.CLEAN
+    image_style = ImageStyle.COMIC
 
     # STAGE 1: generate a story plan and extract needed data
     print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{user_input}\n\n")

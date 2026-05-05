@@ -1,0 +1,204 @@
+{
+  "story_title": "Vacancy at Sundown",
+  "synopsis": "In 1982, broke Albuquerque drifter Lena Ortega takes a live-in caretaker job at the shuttered Sundown Motor Lodge, an abandoned roadside motel stranded off a dying highway in rural New Mexico. The place is a trashy ruin of dead neon, cigarette burns, coin-op televisions, and a drained pool, but the pay is enough to keep her from crawling back to her old life. She soon discovers the motel was once run by Earl and Darlene Voss, a sleazy husband-and-wife team who turned lonely travelers into easy marks and, eventually, permanent guests. As the motel begins replaying old nights and offering Lena the poisoned comfort of control, she is pulled between a frightened runaway named June Bell, the skeptical but decent Deputy Ray Quintero, and the seductive ghosts who want her to become the Sundown's new smiling face. The tone is sweaty, nasty, supernatural, and claustrophobic: The Shining by way of cheap liquor, vibrating beds, and a vacancy sign that refuses to die.",
+  "player_character": {
+    "character_data": {
+      "uuid": "0aaec3b8-ee0f-47fa-b06a-51d1adb01671",
+      "name": "Lena Ortega",
+      "portrait_image_prompt": "Latina woman, late 20s, sun-browned skin, tired dark eyes, shoulder-length black hair in feathered 1980s layers, denim jacket over a cheap collared blouse, small silver hoop earrings, lean build, guarded expression with stubborn resolve",
+      "dialogue_examples": [
+        "If this place is haunted, it can wait until I make payroll.",
+        "I know cheap when I see it, and this motel is bleeding it through the wallpaper.",
+        "People don't stay in a dump like this for comfort. They stay because they got nowhere else to go.",
+        "I'm done checking anybody in."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "0d24f9ed-9549-4fe4-b695-84bd729e02d8",
+        "name": "June Bell",
+        "portrait_image_prompt": "White teenage girl, 17, wiry build, choppy bleached-blonde hair with dark roots, freckled nose, oversized army surplus jacket over a faded band shirt, scabbed knuckles, wary eyes, defiant mouth",
+        "dialogue_examples": [
+          "Don't open the curtains after midnight. It likes reflections.",
+          "I ain't scared of dead people. It's the ones pretending not to be dead that bother me.",
+          "Room 8 changes when you're not looking.",
+          "You can keep the money. I just want out."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "cf79b326-e7cb-4a9e-af73-ba8c8b21dcee",
+        "name": "Deputy Ray Quintero",
+        "portrait_image_prompt": "Hispanic man, mid-30s, weathered face, thick mustache, short dark hair under a tan sheriff's deputy hat, broad shoulders, pressed khaki uniform, tired but steady eyes, restrained expression",
+        "dialogue_examples": [
+          "Folks around here know better than to stop at Sundown after dark.",
+          "I'm not saying ghosts, Ms. Ortega. I'm saying missing persons and a lot of lies.",
+          "If you hear music in that office, you leave.",
+          "Nobody's worth dying for in a place that ugly."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "0ecd3878-e2a0-4fa5-ba2d-237723221fa8",
+        "name": "Darlene Voss",
+        "portrait_image_prompt": "Woman appearing in her 40s, bleached blonde hair in teased 1970s waves, heavy blue eye shadow, coral lipstick, tanned skin, leopard-print blouse under a satin hostess jacket, rhinestone earrings, glamorous but worn smile",
+        "dialogue_examples": [
+          "Honey, this place was glamorous once. You just have to squint.",
+          "A good hostess never lets her guests feel lonely.",
+          "You have the face of a woman who's tired of being temporary.",
+          "Turn the sign on, sugar. Let the night know we're open."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e7ea8c38-8db4-4b61-960b-7e0e9874b8f8",
+        "name": "Earl Voss",
+        "portrait_image_prompt": "Heavyset white man in his 50s, slicked-back thinning hair, thick mutton chops, nicotine-stained fingers, gaudy open-collar polyester shirt, gold chain, fleshy face, greasy grin, predatory eyes",
+        "dialogue_examples": [
+          "Every room's paid for one way or another.",
+          "A motel ain't a home till folks can't leave it.",
+          "You don't waste a good vacancy.",
+          "Smile nice at the desk, girl. They trust a smile."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "7fc98c0d-f827-4053-bf9e-b3854d228590",
+        "name": "Sundown Motor Lodge Exterior",
+        "location_image_prompt": "1982 abandoned roadside motel in the rural New Mexico desert, U-shaped two-story motor court, broken neon VACANCY sign, faded turquoise doors, dusty parking lot, rusted ice machine, cracked office windows, telephone poles, distant mesas, windblown trash"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "e16ef4ad-386c-4655-8f56-d305baad9c99",
+        "name": "Front Office and Lounge",
+        "location_image_prompt": "Shabby 1982 motel front office and lounge, low check-in counter, brass bell, wall of numbered key cubbies, stained orange shag carpet, faux-wood paneling, cigarette burns, dead jukebox, vinyl bar stools, dusty artificial plants, rotary phone, old brochures"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "2b2f427f-80b9-4379-8e09-2a8fe2d8a417",
+        "name": "Room 8 Honeymoon Suite",
+        "location_image_prompt": "Garish 1982 roadside motel honeymoon suite, heart-shaped bed, cracked mirrored ceiling panels, red peeling wallpaper, coin-operated vibrating bed control, cheap silk lampshades, buzzing television on a dresser, stained carpet, ashtrays, half-broken air conditioner"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "2539f84d-e0a6-4540-8c38-3b5b621d9b1b",
+        "name": "Drained Pool Courtyard",
+        "location_image_prompt": "Abandoned motel courtyard with a drained swimming pool, sun-bleached diving board, cracked concrete, weeds growing through seams, overturned lounge chairs, chain-link fence, scattered beer cans, fallen plastic sign letters, drifting desert dust"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "e0bca3fc-65d2-460f-bcd0-0c11c0a3da52",
+      "scene_name": "intro",
+      "location_uuid": "7fc98c0d-f827-4053-bf9e-b3854d228590",
+      "non_player_character_uuids": [
+        "cf79b326-e7cb-4a9e-af73-ba8c8b21dcee",
+        "0d24f9ed-9549-4fe4-b695-84bd729e02d8"
+      ],
+      "narrtive_summary": "Broke drifter Lena Ortega arrives at the shuttered Sundown Motor Lodge to take a temporary live-in caretaker job for a few desperate weeks of pay. Deputy Ray Quintero hands over the key ring and warns her that locals avoid the motel after sundown. A teenage squatter, June Bell, is glimpsed on the property and hisses that Lena must never sleep in Room 8, establishing the motel's menace and the player's basic situation."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "3fe410ce-2a02-47ff-8798-ab1e8429eb1f",
+        "scene_name": "act1_scene1",
+        "location_uuid": "e16ef4ad-386c-4655-8f56-d305baad9c99",
+        "non_player_character_uuids": [
+          "0ecd3878-e2a0-4fa5-ba2d-237723221fa8"
+        ],
+        "narrtive_summary": "While inventorying the front office and lounge, Lena finds guest ledgers, unpaid tabs, and a lounge area preserved like a rotten time capsule. She meets Darlene Voss, who behaves as though the motel is still open and urges Lena to switch on the sign and tidy the desk for incoming guests. Lena cannot tell whether Darlene is a trespasser, a hallucination, or something tied to the building itself."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "5dbdb27b-5b55-4856-a1d0-ef7d276ffe0a",
+        "scene_name": "act1_scene2",
+        "location_uuid": "2b2f427f-80b9-4379-8e09-2a8fe2d8a417",
+        "non_player_character_uuids": [
+          "0d24f9ed-9549-4fe4-b695-84bd729e02d8"
+        ],
+        "narrtive_summary": "Noises and a phantom television draw Lena to the garish honeymoon suite, where Room 8 appears freshly occupied for impossible moments. June reveals she has been hiding in the motel and has seen the rooms replay old nights with different victims. When a front-desk key appears in Lena's pocket by itself, the motel's supernatural influence becomes undeniable."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "fbcdc00c-7bdf-4cf1-b1fa-eaff0c7cff14",
+        "scene_name": "act2_scene1",
+        "location_uuid": "2539f84d-e0a6-4540-8c38-3b5b621d9b1b",
+        "non_player_character_uuids": [
+          "cf79b326-e7cb-4a9e-af73-ba8c8b21dcee",
+          "0ecd3878-e2a0-4fa5-ba2d-237723221fa8"
+        ],
+        "narrtive_summary": "Ray returns with old case files and newspaper clippings linking the Vosses to missing travelers, robberies, and unexplained deaths before the motel abruptly closed. At the drained pool, Lena hears splashing from dry concrete and sees silhouettes moving beneath the surface. Darlene privately tempts Lena with the promise of belonging and insists the motel only punishes people who were already planning to leave."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "23abb814-f553-44f1-837d-fe58735d29d7",
+        "scene_name": "act2_scene2",
+        "location_uuid": "e16ef4ad-386c-4655-8f56-d305baad9c99",
+        "non_player_character_uuids": [
+          "0d24f9ed-9549-4fe4-b695-84bd729e02d8",
+          "0ecd3878-e2a0-4fa5-ba2d-237723221fa8",
+          "e7ea8c38-8db4-4b61-960b-7e0e9874b8f8"
+        ],
+        "narrtive_summary": "Lena and June break into locked desk drawers and compare the guest ledger to Ray's files, uncovering that Earl and Darlene kept certain guests forever, stole their cash, and buried the evidence beneath the pool. As the office transforms into a smoky, crowded version of its heyday, Earl begins speaking through televisions, radios, and the motel intercom. Lena realizes the building wants a new caretaker to continue the cycle."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "45414cdf-ef55-4d97-adb8-1c1ad66d8484",
+        "scene_name": "act3_scene1",
+        "location_uuid": "2b2f427f-80b9-4379-8e09-2a8fe2d8a417",
+        "non_player_character_uuids": [
+          "0ecd3878-e2a0-4fa5-ba2d-237723221fa8",
+          "e7ea8c38-8db4-4b61-960b-7e0e9874b8f8"
+        ],
+        "narrtive_summary": "Separated from her allies, Lena is trapped inside Room 8 while Earl manifests fully and Darlene tries to groom her as the next smiling face at the front desk. The suite weaponizes Lena's loneliness, poverty, and resentment, showing her a fantasy in which the motel finally gives her security and control. To escape, Lena must reject the seductive lie that staying in one rotten place is the same thing as belonging."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "467109d7-4640-4e44-b82b-f4eb904e89d0",
+        "scene_name": "act3_scene2",
+        "location_uuid": "2539f84d-e0a6-4540-8c38-3b5b621d9b1b",
+        "non_player_character_uuids": [
+          "0d24f9ed-9549-4fe4-b695-84bd729e02d8",
+          "cf79b326-e7cb-4a9e-af73-ba8c8b21dcee",
+          "0ecd3878-e2a0-4fa5-ba2d-237723221fa8",
+          "e7ea8c38-8db4-4b61-960b-7e0e9874b8f8"
+        ],
+        "narrtive_summary": "Lena reunites with June and Ray and lures the Vosses' power to the drained pool, where the bodies and stolen possessions were hidden. In a desperate confrontation using gasoline, motel records, and the flickering neon sign, Lena breaks open the pool and sets the heart of the Sundown Motor Lodge ablaze. The dead are released, but the motel fights viciously to keep at least one soul before the flames consume it."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "a29d0228-6e35-4eb2-8cae-9d613b76d04e",
+      "scene_name": "outro",
+      "location_uuid": "7fc98c0d-f827-4053-bf9e-b3854d228590",
+      "non_player_character_uuids": [
+        "0d24f9ed-9549-4fe4-b695-84bd729e02d8",
+        "cf79b326-e7cb-4a9e-af73-ba8c8b21dcee"
+      ],
+      "narrtive_summary": "At dawn, the Sundown is a smoking shell and the desert highway is quiet again. Ray gets June safely into town while Lena decides whether to walk away, tell the police the truth, or bury the night like everyone else did. As they leave, one surviving bulb in the VACANCY sign flickers to life, suggesting the motel may not be entirely done with her."
+    }
+  }
+}

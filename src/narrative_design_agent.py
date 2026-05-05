@@ -6,8 +6,9 @@
 import asyncio
 from pydantic import BaseModel, Field
 from typing import Optional
-from agents import Agent, ModelSettings, TResponseInputItem, Runner, RunResult, RunConfig, trace, function_tool, AgentHooks
+from agents import Agent, ModelSettings, TResponseInputItem, Runner, RunResult, RunConfig, trace, function_tool, AgentHooks, RunResultStreaming
 from openai.types.shared.reasoning import Reasoning
+from openai.types.responses import ResponseTextDeltaEvent
 from dotenv import load_dotenv
 import json
 import uuid
@@ -18,11 +19,32 @@ load_dotenv()
 class LoggingHooks(AgentHooks):
     async def on_tool_start(self, context, agent, tool):
         await super().on_tool_start(context, agent, tool)
-        print(f"TOOL START: {tool.name}, {tool.name}")
+        print(f"TOOL START: {tool.name}")
 
     async def on_tool_end(self, context, agent, tool, result):
         await super().on_tool_end(context, agent, tool, result)
         print(f"TOOL END: {tool.name}, RESULT: {result}")
+
+    async def on_start(self, context, agent):
+        await super().on_start(context, agent)
+        print(f"AGENT START: {agent}")
+
+    async def on_end(self, context, agent, output):
+        await super().on_end(context, agent, output)
+        print(f"AGENT END: {agent}")
+    
+    async def on_llm_start(self, context, agent, system_prompt, input_items):
+        await super().on_llm_start(context, agent, system_prompt, input_items)
+        print(f"LLM START -- AGENT: {agent}")
+        
+    
+    async def on_llm_end(self, context, agent, response):
+        await super().on_llm_end(context, agent, response)
+        print(f"LLM END -- AGENT {agent}")
+    
+    async def on_handoff(self, context, agent, source):
+        await super().on_handoff(context, agent, source)
+        print(f"HANDOFF TO: {agent}, FROM: {source}")
 
 #========
 # Schemas
@@ -273,7 +295,8 @@ MINI_MODEL: str                     = "gpt-5.4-mini"
 narrative_design_agent = Agent(
     name="narrative_design_agent",
     instructions = narrative_design_agent_instructions,
-    model=NARRATIVE_DESIGN_AGENT_MODEL,
+    #model=NARRATIVE_DESIGN_AGENT_MODEL,
+    model = MINI_MODEL,
     output_type=NarrativeDesignOutputSchema,
     model_settings=ModelSettings(
         reasoning=Reasoning(
@@ -282,7 +305,7 @@ narrative_design_agent = Agent(
         )
     ),
     tools=[get_uuid_string],
-    #hooks=LoggingHooks()
+    hooks=LoggingHooks()
 )
 
 
@@ -295,10 +318,21 @@ class NarrativeDesignAgent:
         workflow = workflow_text_input.model_dump()
         input_text = workflow["input_as_text"]
 
-        run_result: RunResult = await Runner.run(
+        # run_result: RunResult = await Runner.run(
+        #     narrative_design_agent,
+        #     input=input_text
+        # )
+
+        run_result: RunResultStreaming = Runner.run_streamed(
             narrative_design_agent,
             input=input_text
         )
+
+        async for event in run_result.stream_events():
+            if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
+                print(event.data.delta, end="", flush=True)
+
+        print(f"\n\n======RUN COMPLETE======\n\n")
 
         # TODO: fix this...
         #_reasoning_dump = ""
@@ -323,9 +357,9 @@ class NarrativeDesignAgent:
 
 
 async def main():
-    print(generate_uuid())
 
-    test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982. Like The Shining, but in a much trashier setting."
+    #test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982. Like The Shining, but in a much trashier setting."
+    test_input: str = "A bawdy, satirical screwball comedy about a dysfunctional team of superheroes. Adult tone and humor along the lines of Archer and Sealab 2021."
 
     wf_input = WorkflowTextInput(
         input_as_text=test_input
@@ -338,8 +372,8 @@ async def main():
     print(output.human_readable())
 
     # # write the data to a dummy file
-    with open('KARLA_GAMES/COLOR_AGENT_TESTING/test_data.json', 'w') as f:
-        f.write(output.model_dump_json(indent=2))
+    #with open('KARLA_GAMES/COLOR_AGENT_TESTING/test_data.json', 'w') as f:
+    #    f.write(output.model_dump_json(indent=2))
 
 
 if __name__ == "__main__":

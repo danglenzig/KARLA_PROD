@@ -8,7 +8,7 @@ from pydantic import BaseModel, Field
 from typing import Optional
 from agents import Agent, ModelSettings, TResponseInputItem, Runner, RunResult, RunConfig, trace, function_tool, AgentHooks, RunResultStreaming
 from openai.types.shared.reasoning import Reasoning
-from openai.types.responses import ResponseTextDeltaEvent
+from openai.types.responses import ResponseTextDeltaEvent, ResponseReasoningSummaryTextDeltaEvent
 from dotenv import load_dotenv
 import json
 import uuid
@@ -27,24 +27,24 @@ class LoggingHooks(AgentHooks):
 
     async def on_start(self, context, agent):
         await super().on_start(context, agent)
-        print(f"AGENT START: {agent}")
+        print(f"AGENT START: {agent.name}")
 
     async def on_end(self, context, agent, output):
         await super().on_end(context, agent, output)
-        print(f"AGENT END: {agent}")
+        print(f"AGENT END: {agent.name}")
     
     async def on_llm_start(self, context, agent, system_prompt, input_items):
         await super().on_llm_start(context, agent, system_prompt, input_items)
-        print(f"LLM START -- AGENT: {agent}")
+        print(f"LLM START -- AGENT: {agent.name}")
         
     
     async def on_llm_end(self, context, agent, response):
         await super().on_llm_end(context, agent, response)
-        print(f"LLM END -- AGENT {agent}")
+        print(f"LLM END -- AGENT {agent.name}")
     
     async def on_handoff(self, context, agent, source):
         await super().on_handoff(context, agent, source)
-        print(f"HANDOFF TO: {agent}, FROM: {source}")
+        print(f"HANDOFF TO: {agent.name}, FROM: {source.name}")
 
 #========
 # Schemas
@@ -295,13 +295,13 @@ MINI_MODEL: str                     = "gpt-5.4-mini"
 narrative_design_agent = Agent(
     name="narrative_design_agent",
     instructions = narrative_design_agent_instructions,
-    #model=NARRATIVE_DESIGN_AGENT_MODEL,
-    model = MINI_MODEL,
+    model=NARRATIVE_DESIGN_AGENT_MODEL,
+    #model = MINI_MODEL,
     output_type=NarrativeDesignOutputSchema,
     model_settings=ModelSettings(
         reasoning=Reasoning(
             effort="high",
-            #summary="detailed"
+            summary="detailed"
         )
     ),
     tools=[get_uuid_string],
@@ -328,17 +328,27 @@ class NarrativeDesignAgent:
             input=input_text
         )
 
+        output_already_started: bool = False
+
         async for event in run_result.stream_events():
-            if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
-                print(event.data.delta, end="", flush=True)
+
+            if event.type == "raw_response_event":
+                if event.data.type == "response.reasoning_summary_text.delta":
+                    print(f"\033[33m{event.data.delta}\033[0m", end= "", flush= True)
+                elif event.data.type == "response.output_text.delta":
+                    if not output_already_started:
+                        print("\n")
+                        output_already_started = True
+                    print(f"\033[33m{event.data.delta}\033[0m", end= "", flush= True)
+
+
+            
+            # stream our reasoning and response text deltas
+            # if event.type == "raw_response_event" and (isinstance(event.data, ResponseTextDeltaEvent) or isinstance(event.data, ResponseReasoningSummaryTextDeltaEvent)):
+            #     print(event.data.delta, end="", flush=True)
 
         print(f"\n\n======RUN COMPLETE======\n\n")
 
-        # TODO: fix this...
-        #_reasoning_dump = ""
-        #for item in run_result.new_items:
-        #    if item.type == "reasoning_item":
-        #        _reasoning_dump += f"\nREASONING: {item.raw_item.content}\n"
         
         return run_result.final_output
 
@@ -359,7 +369,8 @@ class NarrativeDesignAgent:
 async def main():
 
     #test_input: str = "A scary story about an abandoned roadside motel in the rural New Mexico desert. The story is set in the year 1982. Like The Shining, but in a much trashier setting."
-    test_input: str = "A bawdy, satirical screwball comedy about a dysfunctional team of superheroes. Adult tone and humor along the lines of Archer and Sealab 2021."
+    #test_input: str = "A bawdy, satirical screwball comedy about a dysfunctional team of superheroes. Adult tone and humor along the lines of Archer and Sealab 2021."
+    test_input: str = "A spy thriller featuring a team of jaded and cynical superheroes."
 
     wf_input = WorkflowTextInput(
         input_as_text=test_input

@@ -1,0 +1,604 @@
+{
+  "narrative_design_spec": {
+    "story_title": "Dead Air on Juniper Lane",
+    "synopsis": "In a gossipy 1980s suburb where local celebrity still means something, bitter ex-horror host Vernon Vale discovers that unmarked VHS tapes are spreading through Wicker Hollow and leaving behind cosmic visions, sleepwalking neighbors, and increasingly absurd suburban panic. To investigate, he reluctantly teams up with three teen outcasts—documentarian Cass Mercer, AV prodigy Theo Alvarez, and rumor-zine goth Jolene Pike—while trading sparks with gossip queen Brenda Bell and dodging the ambitions of slick former station engineer Skip Harlow. The mystery leads back to Vernon’s canceled final broadcast and a Lovecraftian signal that feeds on attention, fear, and spectacle. The tone is eerie, campy, satirical, and socially textured, with optional light romance woven through the chaos.",
+    "player_character": {
+      "character_data": {
+        "uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+        "name": "Vernon Vale",
+        "portrait_image_prompt": "A charismatic but worn man in his late 40s with slicked-back dark hair streaked with gray, a pronounced widow's peak, expressive brows, heavy-lidded eyes, a velvet smoking jacket over a black turtleneck, ornate rings, and a sardonic showman's smile.",
+        "dialogue_examples": [
+          "I used to command the midnight hour. Now I sign glossy headshots between the denture cream and the canned yams.",
+          "If the universe wants an audience with Vernon Vale, it can take a number like everyone else.",
+          "You say cursed tape, I say unauthorized reboot.",
+          "Teenagers with camcorders terrify me less than nostalgia with production values.",
+          "Fear is theater, darling. The trick is deciding who gets top billing."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "7c3d6496-2d50-4c80-a517-87a300122635",
+          "name": "Cass Mercer",
+          "portrait_image_prompt": "A teenage girl with sharp features, cropped black hair with a bleached streak, a patched denim jacket covered in band pins, a striped shirt, fingerless gloves, and the guarded posture of someone always ready to film first and trust later.",
+          "dialogue_examples": [
+            "Adults keep calling it a prank because 'cosmic signal contamination' doesn't fit on a homeowners association flyer.",
+            "I document things. That's not the same as snooping, it's just better dressed.",
+            "If this is your comeback tour, try not to get possessed before reel two.",
+            "Everybody in this town lies, but VHS lies in mono."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "efc9ba28-ff96-451e-8893-73347873c1d3",
+          "name": "Theo Alvarez",
+          "portrait_image_prompt": "A teenage boy with curly hair, oversized glasses, an anxious expression, a plaid shirt under a windbreaker, a digital watch, a small tool pouch at his belt, and ink-smudged fingers.",
+          "dialogue_examples": [
+            "I fixed three VCRs this week and none of them should know my name.",
+            "The tracking noise isn't random. It's patterned... like something learning how to be a program.",
+            "I know I sound nervous. That's because I'm doing math around an eldritch broadcast.",
+            "My mom kept notes on the station's transmitter. She only wrote in all caps when she was scared."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "1e9b921f-02a7-4496-990f-9c4494b35617",
+          "name": "Jolene Pike",
+          "portrait_image_prompt": "A teenage girl with teased dark hair, dramatic eyeliner, layered black thrift-store lace, jangling charm bracelets, a notebook tucked under one arm, and a mischievous knowing grin.",
+          "dialogue_examples": [
+            "A suburb is just a cult with better lawn care.",
+            "I publish rumors, Vernon. I do not create them. I merely give them fonts.",
+            "If a tape tells me the stars are watching, I want to know whether they're judging my eyeliner.",
+            "The good news is we're in a mystery. The bad news is it's local."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "f02a4bf6-e952-481c-9d42-78fcfdf5c404",
+          "name": "Brenda Bell",
+          "portrait_image_prompt": "A glamorous suburban woman in her late 30s with a sculpted blowout, bold lipstick, a sharp smile, manicured nails, jangly jewelry, a fitted blouse, a pencil skirt, and the polished poise of someone who treats small talk like a weapon.",
+          "dialogue_examples": [
+            "Honey, gossip is just journalism in a better blouse.",
+            "You still know how to make an entrance, Vernon. Shame about the exits.",
+            "People don't want facts; they want a version of events that flatters their kitchen table.",
+            "If we're flirting in the middle of a panic, I need you to commit to the bit."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "ae322237-d76c-45cf-9c32-e54f94b4e392",
+          "name": "Skip Harlow",
+          "portrait_image_prompt": "A smooth middle-aged man with feathered hair, a too-white smile, a pastel sport coat, a skinny tie, a gold watch, a headset slung around his neck, and the oily confidence of a born salesman.",
+          "dialogue_examples": [
+            "People said cable would kill local TV. Then local TV learned how to sell its own funeral.",
+            "A little hysteria is ratings with a heartbeat.",
+            "You call it an anomaly; I call it audience retention.",
+            "Nobody remembers the truth, Vernon. They remember who got there first with a sponsor."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "name": "Vernon Vale's Screening Room",
+          "location_image_prompt": "A cramped 1980s suburban ranch-house den converted into a personal screening room, with wood paneling, shag carpet, stacked CRT televisions, overflowing VHS shelves, fake cobweb decor, rubber bats, a battered recliner, old horror-host posters, and a cluttered coffee table covered in remotes and TV guides."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "name": "Sunbeam Video",
+          "location_image_prompt": "A small independent 1980s video rental store in a strip mall, with colorful genre aisles, cardboard horror standees, hand-lettered recommendation cards, rows of VHS clamshells, a candy counter, a membership desk, and a bulletin board layered with local flyers."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "bda26740-b44e-4764-9b8d-727a3c3178eb",
+          "name": "Juniper Lane Cul-de-sac",
+          "location_image_prompt": "A tidy 1980s suburban cul-de-sac with ranch houses, station wagons, trimmed hedges, plastic lawn flamingos, a basketball hoop, clustered mailboxes, sprinklers, garage sale signs, and an atmosphere of nosy neighborhood order."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "c595dba2-6085-4804-a614-eef1106b66c0",
+          "name": "Belladonna Beauty Salon",
+          "location_image_prompt": "A suburban beauty salon and gossip hub with pastel vinyl chairs, hood dryers, mirrored styling stations, magazine racks, potted plants, a front desk stacked with local newsletters, and a community corkboard packed with handwritten notes and event flyers."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "ef029f19-e370-4ed9-9c1d-308b6d8f5ebc",
+          "name": "Channel 8 Public Access Studio",
+          "location_image_prompt": "A faded local public-access television studio with cheap gothic set pieces, a plywood coffin prop, velvet curtains, outdated broadcast cameras, switcher consoles, cable coils, old monitors, prop graveyard shelves, and dusty station signage."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "1890d7cb-d4b7-43ba-84f6-5003b8435932",
+          "name": "Whisper Reservoir Spillway",
+          "location_image_prompt": "A concrete suburban reservoir spillway and storm-drain access point with chain-link fencing, utility ladders, drainage tunnels, graffitied retaining walls, maintenance panels, and overgrown weeds pushing through cracked concrete."
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "70085efe-8616-431b-96de-c4897f74098f",
+        "scene_name": "intro",
+        "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+        "non_player_character_uuids": [
+          "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+        ],
+        "narrtive_summary": "Washed-up horror host Vernon Vale spends another bitter evening in his shrine to better ratings when an unmarked VHS appears at his door. As Brenda Bell needles him over the phone about rumors of a comeback, Vernon watches the tape and sees distorted clips from his old show mixed with impossible cosmic imagery, learning that the strange cassette is already becoming neighborhood gossip."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "2c83a7fa-f197-4ea6-9e46-07c7435c6197",
+          "scene_name": "act1_scene1",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "narrtive_summary": "Vernon tracks the tape to Sunbeam Video and collides with Cass, Theo, and Jolene, a trio of local outcasts already blamed for the spreading cassettes. Their prickly first alliance forms when they compare evidence and realize multiple households have received similar tapes, each followed by sleepwalking, static voices, and bizarre behavior."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "22564f9f-c7d8-4198-8e5a-59dcd5120b49",
+          "scene_name": "act1_scene2",
+          "location_uuid": "bda26740-b44e-4764-9b8d-727a3c3178eb",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "narrtive_summary": "Following rumor trails through Juniper Lane, Vernon and the teens watch harmless suburban chatter turn into performative panic as every neighbor competes to tell the best version of the story. Brenda proves that nearly everyone who received a tape has some old connection to Vernon's final Halloween broadcast, pushing the mystery from prank to pattern."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "3f5622bb-18f4-493e-8ce7-5dd415df4e23",
+          "scene_name": "act1_scene3",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "narrtive_summary": "In Vernon's screening room, the group watches several tape fragments and experiences looping visions that splice ordinary suburbia with impossible stars and studio applause. Theo discovers technical clues that point to a missing public-access master tape and to his late mother's transmitter notes, tying the phenomenon directly to Channel 8."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "621e0b42-e567-40f4-a66a-1e6c6488d6ff",
+          "scene_name": "act2_scene1",
+          "location_uuid": "ef029f19-e370-4ed9-9c1d-308b6d8f5ebc",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "ae322237-d76c-45cf-9c32-e54f94b4e392"
+          ],
+          "narrtive_summary": "Sneaking into the defunct Channel 8 studio, Vernon confronts relics of his faded fame while the teens uncover logs for a canceled signal experiment hidden inside his last live show. Skip Harlow catches them in the archive and tries to brush the whole affair off as marketable nostalgia, making it clear he knows more than he admits."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "15afb46b-a55b-4a1f-95e9-632d0859df98",
+          "scene_name": "act2_scene2",
+          "location_uuid": "c595dba2-6085-4804-a614-eef1106b66c0",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "narrtive_summary": "At Belladonna Beauty Salon, Brenda treats local panic like an editorial opportunity, and Vernon must win her cooperation with equal parts charm, honesty, and theatrical sparring. The salon's rumor network reveals that retelling the tape's story spreads its influence almost as effectively as copying the cassette itself, and Brenda identifies the households tied to backstage call-in volunteers from Vernon's disastrous finale."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "e41b88d8-139b-47f5-b027-57c13093237b",
+          "scene_name": "act2_scene3",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "narrtive_summary": "Back at Vernon's den, the crew pieces together station logs, gossip maps, and zine clippings to uncover the truth: a cosmic signal latched onto Vernon's final broadcast and now feeds on fear, fascination, and repetition. Vernon realizes his old persona may be the key to fighting it, but only if he can stop craving the same spotlight that empowers the thing."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "e0297a78-67fb-4472-b915-26dc18950cc0",
+          "scene_name": "act3_scene1",
+          "location_uuid": "bda26740-b44e-4764-9b8d-727a3c3178eb",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "narrtive_summary": "A neighborhood VHS swap on Juniper Lane erupts into absurd supernatural theater as televisions flicker in unison, lawn ornaments swivel, and every rumor seems to manifest on cue. Vernon uses his old host charisma to keep the block from collapsing into a full panic while the teens trace the strongest signal to the utility lines beneath Whisper Reservoir."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "ee30533d-6526-4cc8-a295-99e2ae8aefa5",
+          "scene_name": "act3_scene2",
+          "location_uuid": "1890d7cb-d4b7-43ba-84f6-5003b8435932",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "narrtive_summary": "At the buried cable nexus under the reservoir, the teens finally confess how personally tangled they are in the mystery, from family history to rumors they helped spread. The group concludes that the entity can be starved if awe becomes mockery, and Vernon commits to turning dread into camp for one last live performance."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "e049cb4f-3e5c-4c61-ba6d-8df17a057fd1",
+          "scene_name": "act3_scene3",
+          "location_uuid": "ef029f19-e370-4ed9-9c1d-308b6d8f5ebc",
+          "non_player_character_uuids": [
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404",
+            "ae322237-d76c-45cf-9c32-e54f94b4e392"
+          ],
+          "narrtive_summary": "The finale unfolds as a pirate broadcast from Channel 8, with Vernon back at the host desk, the teens running cameras, and Brenda weaponizing the town rumor mill against the tape. Skip attempts to hijack the event for ratings, but the counter-show turns cosmic dread into ridiculous kitsch, breaking the signal's power by denying it solemn attention."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "1c8dbca4-0bc9-484e-b839-b5ad0249521e",
+        "scene_name": "outro",
+        "location_uuid": "bda26740-b44e-4764-9b8d-727a3c3178eb",
+        "non_player_character_uuids": [
+          "7c3d6496-2d50-4c80-a517-87a300122635",
+          "efc9ba28-ff96-451e-8893-73347873c1d3",
+          "1e9b921f-02a7-4496-990f-9c4494b35617",
+          "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+        ],
+        "narrtive_summary": "In the quiet aftermath on Juniper Lane, the suburb settles into a new favorite pastime: exaggerating what happened just enough to make it livable. Vernon does not recover his old fame, but he does gain a strange new purpose as host of a scrappy midnight revival with the teens as his crew and Brenda as a very willing promoter, leaving the door open for community, mischief, and light romance."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/b2b603c8-9d0c-4714-bb8e-473ecb073831.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/f02a4bf6-e952-481c-9d42-78fcfdf5c404.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/7c3d6496-2d50-4c80-a517-87a300122635.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/efc9ba28-ff96-451e-8893-73347873c1d3.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/1e9b921f-02a7-4496-990f-9c4494b35617.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/bg c08048ea-7d2f-4a41-ae5e-ccc57842622b.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/b847cc03-772e-4d99-b07d-5abbfd3e0d96/IMAGES/bg da95468f-e5bc-493e-9e82-19231ceba3a2.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Dead Air on Juniper Lane",
+      "scene_name": "intro",
+      "scene_uuid": "70085efe-8616-431b-96de-c4897f74098f",
+      "source_scene_summary": "Washed-up horror host Vernon Vale spends another bitter evening in his shrine to better ratings when an unmarked VHS appears at his door. As Brenda Bell needles him over the phone about rumors of a comeback, Vernon watches the tape and sees distorted clips from his old show mixed with impossible cosmic imagery, learning that the strange cassette is already becoming neighborhood gossip.",
+      "location_name": "Vernon Vale's Screening Room",
+      "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+      "player_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+      "non_player_character_uuids": [
+        "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+      ],
+      "dramatic_question": "Is the anonymous VHS just a cruel bit of nostalgia, or is something uncanny using Vernon's forgotten show to spread through Wicker Hollow?",
+      "scene_goal": "Figure out what the unmarked tape is and whether it threatens, flatters, or implicates Vernon.",
+      "scene_turn": "A stagnant night of bitter self-mythologizing becomes the opening move of a public supernatural mystery when Vernon realizes the tape is impossible, personal, and already spreading as gossip.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_late_show_for_one",
+          "purpose": "Establish Vernon's washed-up status quo, his voice, and the lonely theatricality of his home life.",
+          "summary": "Vernon kills another quiet evening in his screening room, surrounded by relics of his horror-host heyday and nursing old resentments with practiced wit. The room feels like a shrine to applause that no longer comes.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "sour nostalgia",
+          "revelation": null,
+          "tension_change": "hold",
+          "player_goal": "Get through another empty evening with dignity intact.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Vernon's brittle, lonely routine is clearly established."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_special_delivery",
+          "purpose": "Introduce the inciting object that disrupts Vernon's routine and hooks his curiosity.",
+          "summary": "A sudden knock or dropped parcel at the door breaks the silence. Vernon finds an unmarked VHS cassette with no note, no label, and just enough mystery to feel deliberate.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "itchy curiosity",
+          "revelation": "Someone has sent Vernon a blank-looking VHS directly to his home.",
+          "tension_change": "rise",
+          "player_goal": "Inspect the tape and decide whether it deserves attention.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The anonymous cassette is in Vernon's hands, and ignoring it is no longer satisfying."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_brenda_smells_a_story",
+          "purpose": "Bring Brenda into the scene, establish their charged dynamic, and widen the stakes from private annoyance to public rumor.",
+          "summary": "Before Vernon can settle with the tape, Brenda calls and needles him about whispers of a comeback. Their banter crackles with old chemistry as she fishes for information and hints that his name is already making the rounds.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "focal_character_uuid": "f02a4bf6-e952-481c-9d42-78fcfdf5c404",
+          "mood": "barbed flirtation",
+          "revelation": "Brenda has already heard neighborhood chatter linking Vernon to something new and strange.",
+          "tension_change": "hold",
+          "player_goal": "Manage Brenda's probing without giving up too much ground.",
+          "interactive": true,
+          "choice_prompt": "How does Vernon handle Brenda's comeback bait?",
+          "branch_outcomes": [
+            "He deflects with sarcasm, keeping emotional distance while Brenda teases harder.",
+            "He leans into flirtation, turning the call playful and keeping Brenda engaged.",
+            "He drops the act and asks what she's heard, prompting Brenda to share clearer rumor details."
+          ],
+          "exit_state": "Brenda stays on the line, and the tape now carries social stakes as well as personal ones."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_host_reappears",
+          "purpose": "Hook Vernon and the player with the tape's first uncanny content.",
+          "summary": "Vernon slides the cassette into the VCR while Brenda listens in. The tape opens on degraded clips from his old show, but the edits are wrong, the timing is impossible, and snippets of his on-screen persona seem to answer the present moment.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "uncanny recognition",
+          "revelation": "The cassette contains manipulated footage from Vernon's old horror-host material rather than random static or a normal bootleg.",
+          "tension_change": "rise",
+          "player_goal": "Watch closely enough to understand what the tape is showing.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Nostalgia curdles into unease as the tape proves specifically tied to Vernon's past."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_static_between_stars",
+          "purpose": "Escalate the mystery from creepy prank to impossible phenomenon.",
+          "summary": "The footage mutates into warped suburban images, roaring static, and cosmic vistas that could not have been filmed, all spliced through with applause and distortion. Vernon catches flashes that feel pointedly local and personally invasive, shattering any easy explanation.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "cosmic dread",
+          "revelation": "The tape shows impossible imagery tied to both Wicker Hollow and Vernon's image, suggesting something beyond a prank or fan edit.",
+          "tension_change": "twist",
+          "player_goal": "Stay with the tape long enough to confirm whether what he's seeing is real.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Vernon is genuinely rattled and can no longer dismiss the cassette as a joke."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_rumor_outruns_reason",
+          "purpose": "Connect the supernatural incident to the town rumor network and launch Vernon's investigation into the next scene.",
+          "summary": "Brenda's tone shifts from amused to alert as she admits versions of this tape story are already circulating through the neighborhood, with Sunbeam Video emerging as one local hub for the chatter. What seemed like a private humiliation becomes a spreading problem, and Vernon resolves to trace the tape back to its source before the town writes his part for him.",
+          "location_uuid": "c08048ea-7d2f-4a41-ae5e-ccc57842622b",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "f02a4bf6-e952-481c-9d42-78fcfdf5c404"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "wary resolve",
+          "revelation": "The strange VHS is already becoming neighborhood gossip, and Sunbeam Video is a likely lead in tracking its spread.",
+          "tension_change": "rise",
+          "player_goal": "Decide on the first concrete lead to pursue.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Vernon ends the scene committed to investigating the tape's origin at Sunbeam Video."
+        }
+      ]
+    },
+    {
+      "story_title": "Dead Air on Juniper Lane",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "2c83a7fa-f197-4ea6-9e46-07c7435c6197",
+      "source_scene_summary": "Vernon tracks the tape to Sunbeam Video and collides with Cass, Theo, and Jolene, a trio of local outcasts already blamed for the spreading cassettes. Their prickly first alliance forms when they compare evidence and realize multiple households have received similar tapes, each followed by sleepwalking, static voices, and bizarre behavior.",
+      "location_name": "Sunbeam Video",
+      "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+      "player_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+      "non_player_character_uuids": [
+        "7c3d6496-2d50-4c80-a517-87a300122635",
+        "efc9ba28-ff96-451e-8893-73347873c1d3",
+        "1e9b921f-02a7-4496-990f-9c4494b35617"
+      ],
+      "dramatic_question": "Are Cass, Theo, and Jolene actually behind the tapes, or can Vernon turn a hostile confrontation into the alliance he needs before the trail goes cold?",
+      "scene_goal": "Confront the teens blamed for the tape outbreak, verify whether their evidence matches Vernon's cassette, and find the next concrete lead.",
+      "scene_turn": "Vernon enters Sunbeam Video expecting suspects and leaves with reluctant allies, proof that the tapes are part of a wider pattern, and a plan to investigate Juniper Lane together.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01_scapegoats_in_the_aisle",
+          "purpose": "Establish Sunbeam Video as the hub of rumor, introduce the teen trio as local scapegoats, and position Vernon for a confrontational first contact.",
+          "summary": "Vernon arrives at Sunbeam Video chasing the origin of his unmarked VHS and quickly notices that the store's anxious energy is centered on Cass, Theo, and Jolene. Surrounded by suspicious looks and whispered blame, the trio are already being treated as the obvious culprits in the spreading tape panic.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "wary and catty",
+          "revelation": "Cass, Theo, and Jolene are already the town's preferred explanation for the tape outbreak.",
+          "tension_change": "rise",
+          "player_goal": "Identify whether the trio are tied to the cassette Vernon received.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Vernon has found the three people most closely associated with the rumor storm and is ready to confront them."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02_first_contact_goes_badly",
+          "purpose": "Create the initial personality clash and establish that both sides arrive with defensive assumptions.",
+          "summary": "The moment Vernon approaches, Cass turns her camera on him, Theo tries and fails to look uninvolved, and Jolene treats the collision like premium local entertainment. The exchange turns barbed fast, but the dynamic shifts when Vernon makes clear he is not accusing them from a distance: he has one of the tapes too.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "7c3d6496-2d50-4c80-a517-87a300122635",
+          "mood": "combative, funny, defensive",
+          "revelation": "The trio are investigating the tapes because they are being blamed for them, not because they are proudly running a prank.",
+          "tension_change": "twist",
+          "player_goal": "Get the trio to stop treating Vernon like another hostile adult and start talking.",
+          "interactive": true,
+          "choice_prompt": "How does Vernon open the confrontation?",
+          "branch_outcomes": [
+            "Accuse them directly, provoking Cass and forcing Theo into anxious self-defense.",
+            "Lead with charm and old-host bravado, which Jolene mocks but which keeps the conversation playful enough to continue.",
+            "Admit immediately that he received a tape too, shifting the encounter toward uneasy common ground."
+          ],
+          "exit_state": "The trio no longer see Vernon as just another gossip-fed accuser; he is now part of the same problem."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03_evidence_on_the_counter",
+          "purpose": "Move the scene from mutual suspicion into collaborative comparison by laying out concrete evidence.",
+          "summary": "Vernon places his cassette on the rental counter, and the teens answer with their own case file: Cass's camcorder footage, Theo's tracking notes, and Jolene's rumor map of affected households. Piece by piece, the group realizes there are multiple tapes in circulation and that the incidents are too consistent to be random neighborhood hysteria.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "efc9ba28-ff96-451e-8893-73347873c1d3",
+          "mood": "investigative and tense",
+          "revelation": "Multiple households have received similar unmarked tapes, and each case includes the same strange audiovisual distortions.",
+          "tension_change": "rise",
+          "player_goal": "Test whether Vernon's tape matches the cases the trio have documented.",
+          "interactive": true,
+          "choice_prompt": "Which piece of evidence does Vernon press first?",
+          "branch_outcomes": [
+            "Cass's footage foregrounds the human cost by showing a neighbor sleepwalking in eerie silence.",
+            "Theo's notes emphasize that the static and tracking errors repeat in a non-random pattern.",
+            "Jolene's rumor file makes the scope undeniable by revealing how many households are already involved."
+          ],
+          "exit_state": "The argument has become a shared case, with Vernon and the trio now working from the same body of evidence."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04_the_pattern_of_symptoms",
+          "purpose": "Escalate the mystery from a creepy object to a spreading, repeatable threat affecting the neighborhood.",
+          "summary": "As they line up timelines, the same symptoms keep surfacing after playback: sleepwalking, voices hidden in static, and people behaving as if an unseen audience is watching them. A nearby preview monitor briefly spits a burst of distorted sound that matches Theo's notes, giving the group an unsettling reminder that the signal does not stay politely contained.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "efc9ba28-ff96-451e-8893-73347873c1d3",
+          "mood": "unnerved and focused",
+          "revelation": "Playback is followed by recurring behavioral disturbances and static voices across different homes, suggesting a shared phenomenon rather than isolated copycats.",
+          "tension_change": "rise",
+          "player_goal": "Figure out whether the incidents describe one real pattern or just layered rumor.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Everyone now accepts that the tapes are dangerous and that the weird behavior is escalating beyond gossip."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05_vernon_becomes_part_of_the_mystery",
+          "purpose": "Force Vernon to confront his personal stake in the mystery and earn the trio's grudging trust.",
+          "summary": "Jolene points out that Vernon's old horror-host footage appears in every version of the story they have collected, and Cass bluntly asks whether he is bait, target, or source. Vernon reluctantly admits that his own tape contained impossible edits from his canceled show, making it clear that his washed-up persona is not adjacent to the mystery but embedded in it.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+          "mood": "exposed and defensive",
+          "revelation": "Vernon's old show is somehow woven into the tapes, making him a key part of the pattern.",
+          "tension_change": "rise",
+          "player_goal": "Decide how much of his connection to the tape Vernon is willing to admit.",
+          "interactive": true,
+          "choice_prompt": "How openly does Vernon explain what was on his tape?",
+          "branch_outcomes": [
+            "Full honesty earns the trio's first real measure of trust.",
+            "Careful partial disclosure keeps the alliance functional but cautious.",
+            "Deflection protects Vernon's pride while leaving Cass visibly skeptical."
+          ],
+          "exit_state": "The trio stop seeing Vernon as a washed-up busybody and start seeing him as essential evidence."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06_reluctant_alliance",
+          "purpose": "Resolve the confrontation into a working partnership and launch the next scene's investigation.",
+          "summary": "With too many matching cases and no simple culprit left to accuse, Cass proposes they stop posturing and follow the cluster of affected homes instead. Theo identifies Juniper Lane as the best place to compare witnesses, Jolene brands the arrangement a temporary monster club, and Vernon agrees to work with them rather than against them.",
+          "location_uuid": "da95468f-e5bc-493e-9e82-19231ceba3a2",
+          "present_character_uuids": [
+            "b2b603c8-9d0c-4714-bb8e-473ecb073831",
+            "7c3d6496-2d50-4c80-a517-87a300122635",
+            "efc9ba28-ff96-451e-8893-73347873c1d3",
+            "1e9b921f-02a7-4496-990f-9c4494b35617"
+          ],
+          "focal_character_uuid": "7c3d6496-2d50-4c80-a517-87a300122635",
+          "mood": "guarded resolve",
+          "revelation": "The strongest immediate lead is a cluster of tape-related incidents on Juniper Lane.",
+          "tension_change": "fall",
+          "player_goal": "Secure cooperation and choose the next lead before the trail dissipates.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Vernon and the teens leave Sunbeam Video as a reluctant investigative unit headed for Juniper Lane."
+        }
+      ]
+    }
+  ]
+}

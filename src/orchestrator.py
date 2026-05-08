@@ -14,6 +14,7 @@ from narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSc
 from scene_beat_agent import SceneBeatAgent, SceneBeatSheet
 from prompt_catalog import ImageStyle
 from image_generator import ImageGenerator, ArtAssetManifest
+from discovery_agent import DiscoveryAgent, StoryConcept
 from tools.foo import get_uuid_string
 
 
@@ -50,15 +51,20 @@ def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
                 uuids.append(uuid)
     return uuids
 
-async def run_program(user_input: str):
+async def run_program():
 
     temp_game_name: str = get_uuid_string()
-    image_style = ImageStyle.COMIC
+    image_style = ImageStyle.CLEAN
+
+    # STAGE 0: Interview the user and generate a concept
+
+    concept: StoryConcept = await DiscoveryAgent().run_workflow()
+
 
     # STAGE 1: generate a story plan and extract needed data
-    print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{user_input}\n\n")
+    print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{concept.concept_summary}\n\n")
     wf: WorkflowTextInput = WorkflowTextInput(
-        input_as_text=user_input
+        input_as_text=concept.concept_summary
     )
     nd_out: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf) #####
     nd_out_json: str = nd_out.model_dump_json(indent=2)
@@ -92,8 +98,5 @@ async def run_program(user_input: str):
 
 if __name__ == "__main__":
 
-    concept: str = input("--> ")
-    if concept.lower() != "exit":
-        asyncio.run(run_program(concept))
-
+    asyncio.run(run_program())
 

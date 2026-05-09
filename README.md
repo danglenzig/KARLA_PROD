@@ -1,7 +1,11 @@
 ## Current Architecture
 
+Discovery Agent:
+- Input: interactive chat with human user
+- Output: High-level game story concept
+
 Narrative Design Agent:
-- Input: High-level story concept from the human user
+- Input: High-level story concept from the Discovery Agent
 - Output: Detailed and structured story plan
 
 Scene Beat Agent:
@@ -31,13 +35,15 @@ QA/Validator Agent (output guardrail for all the above):
 ```mermaid
 graph TD
     US[User]
+    DI[Discovery Agent]
     ND[Narrative Design Agent]
     SB[Scene Beat Agent]
     DA[Dialogue Agent]
     AM[Asset Manifest Agent]
     CA[GUI Color Scheme Agent]
     RP[RenPy Assembly Agent]
-    US-->ND
+    US<-->|Interactive|DI
+    DI-->|QA|ND
     ND-->|QA|SB
     ND-->|QA|AM
     ND-->|QA|CA

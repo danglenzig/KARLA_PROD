@@ -16,6 +16,10 @@ Asset Manifest Agent:
 - Input: Character and location visual descriptions from the Narrative Design Agent's output
 - Output: AI generated image files using RenPy naming conventions
 
+GUI Color Scheme Agent
+- Input: Character and location visual descriptions from the Narrative Design Agent's output
+- Hex color settings for the Ren'Py GUI
+
 RenPy Assembly Agent:
 - Input: All the above outputs
 - Output: .rpy script and playable build. Will use a pre-defined RenPy project template
@@ -31,12 +35,15 @@ graph TD
     SB[Scene Beat Agent]
     DA[Dialogue Agent]
     AM[Asset Manifest Agent]
+    CA[GUI Color Scheme Agent]
     RP[RenPy Assembly Agent]
     US-->ND
     ND-->|QA|SB
     ND-->|QA|AM
+    ND-->|QA|CA
     SB-->|QA|DA
     ND-->|QA|DA
     AM-->|QA|RP
     DA-->|QA|RP
+    CA-->|QA|RP
 ```

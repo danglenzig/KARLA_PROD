@@ -3,7 +3,8 @@
 Project Karla is a proof-of-concept system for generating a playable **Ren'Py** visual novel from a high-level story idea. It is being built as an MVP/demo for a game programming graduation project and as a portfolio piece focused on agent orchestration, structured generation, and AI-assisted content pipelines.
 
 Rather than asking one model to write an entire game end-to-end, Karla breaks the work into specialized agents with explicit handoff schemas. The current direction is a thin vertical slice that can generate enough structured data, art, and scripted content to assemble a small but convincing playable demo.
-[Preview screenshot](preview_screenshot.jpg)
+
+![Preview screenshot](preview_screenshot.jpg)
 
 ## What Karla does
 

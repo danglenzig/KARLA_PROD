@@ -167,8 +167,8 @@ sequenceDiagram
 The project is currently centered on:
 
 - Ren'Py as the runtime and content assembly target.
-- Pydantic schemas for structured contracts between agents.
-- OpenAI Agents SDK patterns for orchestration and content generation workflows.
+- Pydantic `BaseModel` schemas for structured contracts between agents.
+- OpenAI Agents SDK patterns for content generation workflows.
 - Python as the deterministic glue layer between model outputs and playable game files.
 
 ## Planned improvements

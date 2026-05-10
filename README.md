@@ -133,6 +133,17 @@ sequenceDiagram
     ORCH->>NARR: StoryConcept
     NARR->>ORCH: NarrativeDesignOutputSchema
     deactivate NARR
+
+    par [Async concurrency]
+        ORCH->>BEAT:
+        BEAT->>NARR: SceneBeatSheet
+        ORCH->>ARTS:
+        ARTS->>ORCH: ArtAssetManifest
+        ORCH->>COLO:
+        COLO->>ORCH: GuiColorScheme
+        ORCH->>DIAL:
+        DIAL->>ORCH: DialogueManifest
+    end 
 ```
 
 ## Tech focus

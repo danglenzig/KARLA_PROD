@@ -135,10 +135,13 @@ sequenceDiagram
     deactivate NARR
 
     par [Async concurrency]
+        rect rgb(128,128,128)
+        note right of ORCH: NarrativeDesignOutputSchema
         ORCH->>BEAT:
         ORCH->>ARTS:
         ORCH->>COLO:
         ORCH->>DIAL:
+        end
         BEAT->>ORCH: SceneBeatSheet
         ARTS->>ORCH: ArtAssetManifest
         COLO->>ORCH: GuiColorScheme

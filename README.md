@@ -128,6 +128,11 @@ sequenceDiagram
     CONC->>ORCH: StoryConcept
     deactivate CONC
     deactivate DISC
+
+    activate NARR
+    ORCH->>NARR: StoryConcept
+    NARR->>ORCH: NarrativeDesignOutputSchema
+    deactivate NARR
 ```
 
 ## Tech focus

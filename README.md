@@ -107,16 +107,16 @@ In other words, the project is now moving from planning and asset generation int
 
 ```mermaid
 sequenceDiagram
-    participant USER[User]
-    participant ORCH[Orchestrator]
-    participant DISC[Discovery Agent]
-    participant CONC[Concept Schematizer]
-    participant NARR[Narrative Design Agent]
-    participant BEAT[Scene Beats Agent]
-    participant ARTS[Image Generation Agent]
-    participant COLO[Ren'Py GUI Customizer]
-    participant DIAL[Dialogue Agent]
-    participant RNPY[Ren'Py Project Assembler]
+    participant USER as User
+    participant ORCH as Orchestrator
+    participant DISC as Discovery_Agent
+    participant CONC as Concept_Schematizer
+    participant NARR as Narrative_Design_Agent
+    participant BEAT as Scene_Beats_Agent
+    participant ARTS as Image_Generation_Agent
+    participant COLO as 'RenPy GUI Customizer
+    participant DIAL as 'Dialogue Agent'
+    participant RNPY as 'Ren'Py Project Assembler'
 ```
 
 ## Tech focus

@@ -115,41 +115,9 @@ Near-term priorities include:
 
 ## High-level architecture
 
-<!--```mermaid
-graph TD
-    US[User]
-    DI[Discovery Agent]
-    CP[Story Concept Packager]
-    ND[Narrative Design Agent]
-    SB[Scene Beat Agent]
-    DA[Dialogue Agent]
-    AM[Asset Manifest Agent]
-    CA[GUI Color Scheme Agent]
-    RP[Ren'Py Assembly Agent]
-    QA[Validation Layer]
+```mermaid
 
-    US <--> DI
-    DI --> CP
-    CP --> ND
-    %%ND --> QA
-    QA <--> SB
-    QA <--> AM
-    QA <--> CA
-    QA <--> ND
-    QA <--> DA
-    %%SB --> QA
-    ND --> DA
-    SB --> DA
-    ND --> SB
-    ND --> AM
-    ND --> CA
-    %%DA --> QA
-    %%AM --> QA
-    %%CA --> QA
-    DA --> RP
-    AM --> RP
-    CA --> RP
-```-->
+```
 
 ## Tech focus
 

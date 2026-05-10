@@ -77,7 +77,7 @@ A few design rules currently shape the whole project:
 
 - **Structured handoffs over freeform text.** Each major step should emit explicit schemas, not vague prose blobs.
 - **Stable IDs early.** Scene identity should be formalized at the source and reused downstream, especially for beat planning and Ren'Py label generation.
-- **Models write creatively; Python assembles deterministically.** The model decides story, beats, dialogue, and choice intent, while Python owns engine syntax, filenames, and assembly rules.
+- **Code-driven orchestration.** Models write creatively, Python assembles deterministically. The model decides story, beats, dialogue, and choice intent, while Python owns engine syntax, filenames, and assembly rules.
 - **Thin vertical slice first.** The current MVP is focused on the intro and Act 1 Scene 1 rather than the whole game.
 - **Asset generation should be explicit.** Images are generated from manifest-defined jobs and written to known project paths rather than saved implicitly.
 

@@ -123,7 +123,6 @@ sequenceDiagram
     activate DISC
     ORCH->>DISC:
     Note over DISC,USER: Interactive conversation
-    DISC-->USER:
     activate CONC
     DISC->>CONC: SQLite session db
     CONC->>ORCH: StoryConcept

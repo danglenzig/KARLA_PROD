@@ -134,6 +134,10 @@ sequenceDiagram
     NARR->>ORCH: NarrativeDesignOutputSchema
     deactivate NARR
 
+    activate BEAT
+    activate ARTS
+    activate COLO
+    activate NARR
     par [Async concurrency]
         rect rgb(128,128,128)
         note right of ORCH: NarrativeDesignOutputSchema
@@ -146,7 +150,11 @@ sequenceDiagram
         ARTS->>ORCH: ArtAssetManifest
         COLO->>ORCH: GuiColorScheme
         DIAL->>ORCH: DialogueManifest
-    end 
+    end
+    deactivate BEAT
+    deactivate ARTS
+    deactivate COLO
+    deactivate NARR
 ```
 
 ## Tech focus

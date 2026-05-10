@@ -114,8 +114,8 @@ Near-term priorities include:
 - Continue hardening the MVP slice before expanding beyond the intro and first playable story scene.
 
 ## High-level architecture
-<!--
-```mermaid
+
+<!--```mermaid
 graph TD
     US[User]
     DI[Discovery Agent]
@@ -149,8 +149,7 @@ graph TD
     DA --> RP
     AM --> RP
     CA --> RP
-```
--->
+```-->
 
 ## Tech focus
 

@@ -136,12 +136,12 @@ sequenceDiagram
 
     par [Async concurrency]
         ORCH->>BEAT:
-        BEAT->>NARR: SceneBeatSheet
         ORCH->>ARTS:
-        ARTS->>ORCH: ArtAssetManifest
         ORCH->>COLO:
-        COLO->>ORCH: GuiColorScheme
         ORCH->>DIAL:
+        BEAT->>ORCH: SceneBeatSheet
+        ARTS->>ORCH: ArtAssetManifest
+        COLO->>ORCH: GuiColorScheme
         DIAL->>ORCH: DialogueManifest
     end 
 ```

@@ -121,7 +121,7 @@ sequenceDiagram
     USER->>ORCH: Starts program
     activate DISC
     ORCH->>DISC: Spawn
-    DISC->USER: ""
+    DISC->USER:
     Note over DISC,USER: Interactive conversation
 ```
 

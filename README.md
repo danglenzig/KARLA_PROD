@@ -114,9 +114,9 @@ sequenceDiagram
     participant NARR as Narrative_Design_Agent
     participant BEAT as Scene_Beats_Agent
     participant ARTS as Image_Generation_Agent
-    participant COLO as 'RenPy GUI Customizer
-    participant DIAL as 'Dialogue Agent'
-    participant RNPY as 'Ren'Py Project Assembler'
+    participant COLO as RenPy GUI Customizer
+    participant DIAL as Dialogue Agent
+    participant RNPY as RenPy Project Assembler
 ```
 
 ## Tech focus

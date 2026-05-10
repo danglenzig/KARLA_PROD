@@ -106,7 +106,17 @@ In other words, the project is now moving from planning and asset generation int
 ## Pipeline architecture
 
 ```mermaid
-
+sequenceDiagram
+    participant USER[User]
+    participant ORCH[Orchestrator]
+    participant DISC[Discovery Agent]
+    participant CONC[Concept Schematizer]
+    participant NARR[Narrative Design Agent]
+    participant BEAT[Scene Beats Agent]
+    participant ARTS[Image Generation Agent]
+    participant COLO[Ren'Py GUI Customizer]
+    participant DIAL[Dialogue Agent]
+    participant RNPY[Ren'Py Project Assembler]
 ```
 
 ## Tech focus

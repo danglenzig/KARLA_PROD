@@ -120,9 +120,14 @@ sequenceDiagram
 
     USER->>ORCH: Starts program
     activate DISC
-    ORCH->>DISC: Spawn
+    ORCH->>DISC:
     Note over DISC,USER: Interactive conversation
     DISC-->USER:
+    activate CONC
+    DISC->>CONC: SQLite session db
+    CONC->>ORCH: StoryConcept
+    deactivate CONC
+    deactivate DISC
 ```
 
 ## Tech focus

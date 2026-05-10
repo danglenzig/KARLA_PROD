@@ -134,7 +134,6 @@ sequenceDiagram
     ORCH->>NARR: StoryConcept
     NARR->>ORCH: NarrativeDesignOutputSchema
     deactivate NARR
-
     
     par [Async concurrency]
         activate BEAT
@@ -158,6 +157,11 @@ sequenceDiagram
         deactivate DIAL
     end
     
+    activate RNPY
+    ORCH->>RNPY: GameSpec
+    deactivate ORCH
+    RNPY->>USER: Finished game
+    deactivate RNPY
 ```
 
 ## Tech focus

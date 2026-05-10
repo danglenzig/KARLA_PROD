@@ -140,10 +140,13 @@ graph TD
     %%SB --> QA
     ND --> DA
     SB --> DA
+    ND --> SB
+    ND --> AM
+    ND --> CA
     %%DA --> QA
     %%AM --> QA
     %%CA --> QA
-    %%DA --> RP
+    DA --> RP
     AM --> RP
     CA --> RP
 ```

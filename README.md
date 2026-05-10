@@ -137,7 +137,7 @@ sequenceDiagram
     activate BEAT
     activate ARTS
     activate COLO
-    activate NARR
+    activate DIAL
     par [Async concurrency]
         rect rgb(128,128,128)
         note right of ORCH: NarrativeDesignOutputSchema
@@ -154,7 +154,7 @@ sequenceDiagram
     deactivate BEAT
     deactivate ARTS
     deactivate COLO
-    deactivate NARR
+    deactivate DIAL
 ```
 
 ## Tech focus

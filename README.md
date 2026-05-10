@@ -109,14 +109,16 @@ In other words, the project is now moving from planning and asset generation int
 sequenceDiagram
     participant USER as User
     participant ORCH as Orchestrator
-    participant DISC as Discovery_Agent
-    participant CONC as Concept_Schematizer
-    participant NARR as Narrative_Design_Agent
-    participant BEAT as Scene_Beats_Agent
-    participant ARTS as Image_Generation_Agent
+    participant DISC as Discovery Agent
+    participant CONC as Concept Schematizer
+    participant NARR as Narrative Design_Agent
+    participant BEAT as Scene Beats Agent
+    participant ARTS as Image Generation Agent
     participant COLO as RenPy GUI Customizer
     participant DIAL as Dialogue Agent
     participant RNPY as RenPy Project Assembler
+
+    USER->>ORCH: Starts program
 ```
 
 ## Tech focus

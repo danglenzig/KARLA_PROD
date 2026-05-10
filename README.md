@@ -106,7 +106,62 @@ In other words, the project is now moving from planning and asset generation int
 ## Pipeline architecture
 
 ```mermaid
+sequenceDiagram
+    participant USER as User
+    participant ORCH as Orchestrator
+    participant DISC as Discovery Agent
+    participant CONC as Concept Schematizer
+    participant NARR as Narrative Design_Agent
+    participant BEAT as Scene Beats Agent
+    participant ARTS as Image Generation Agent
+    participant COLO as RenPy GUI Customizer
+    participant DIAL as Dialogue Agent
+    participant RNPY as RenPy Project Assembler
 
+    activate ORCH
+    USER->>ORCH: Starts program
+    activate DISC
+    ORCH->>DISC:
+    Note over DISC,USER: Interactive conversation
+    DISC-->USER:
+    activate CONC
+    DISC->>CONC: SQLite session db
+    CONC->>ORCH: StoryConcept
+    deactivate CONC
+    deactivate DISC
+
+    activate NARR
+    ORCH->>NARR: StoryConcept
+    NARR->>ORCH: NarrativeDesignOutputSchema
+    deactivate NARR
+    
+    par [Async concurrency]
+        activate BEAT
+        activate ARTS
+        activate COLO
+        activate DIAL
+        rect rgb(128,128,128)
+        note right of ORCH: NarrativeDesignOutputSchema
+        ORCH->>BEAT:
+        ORCH->>ARTS:
+        ORCH->>COLO:
+        ORCH->>DIAL:
+        end
+        BEAT->>ORCH: SceneBeatSheet
+        ARTS->>ORCH: ArtAssetManifest
+        COLO->>ORCH: GuiColorScheme
+        DIAL->>ORCH: DialogueManifest
+        deactivate BEAT
+        deactivate ARTS
+        deactivate COLO
+        deactivate DIAL
+    end
+    
+    activate RNPY
+    ORCH->>RNPY: GameSpec
+    deactivate ORCH
+    RNPY->>USER: Finished game
+    deactivate RNPY
 ```
 
 ## Tech focus

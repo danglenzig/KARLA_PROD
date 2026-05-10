@@ -131,17 +131,19 @@ graph TD
     US <--> DI
     DI --> CP
     CP --> ND
-    ND --> QA
-    QA --> SB
-    QA --> AM
-    QA --> CA
-    SB --> QA
+    %%ND --> QA
+    QA <--> SB
+    QA <--> AM
+    QA <--> CA
+    QA <--> ND
+    QA <--> DA
+    %%SB --> QA
     ND --> DA
     SB --> DA
-    DA --> QA
-    AM --> QA
-    CA --> QA
-    DA --> RP
+    %%DA --> QA
+    %%AM --> QA
+    %%CA --> QA
+    %DA --> RP
     AM --> RP
     CA --> RP
 ```

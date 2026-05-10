@@ -103,8 +103,7 @@ In other words, the project is now moving from planning and asset generation int
 6. The Asset Manifest Agent defines the art jobs, and image generation code saves finished assets to the Ren'Py project structure.
 7. The Ren'Py assembly layer compiles the structured outputs into a playable vertical slice.
 
-## Pipeline architecture
-
+## Code-Driven Orchestration
 ```mermaid
 sequenceDiagram
     participant USER as User

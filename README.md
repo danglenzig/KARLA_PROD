@@ -118,6 +118,7 @@ sequenceDiagram
     participant DIAL as Dialogue Agent
     participant RNPY as RenPy Project Assembler
 
+    activate ORCH
     USER->>ORCH: Starts program
     activate DISC
     ORCH->>DISC:
@@ -134,11 +135,12 @@ sequenceDiagram
     NARR->>ORCH: NarrativeDesignOutputSchema
     deactivate NARR
 
-    activate BEAT
-    activate ARTS
-    activate COLO
-    activate DIAL
+    
     par [Async concurrency]
+        activate BEAT
+        activate ARTS
+        activate COLO
+        activate DIAL
         rect rgb(128,128,128)
         note right of ORCH: NarrativeDesignOutputSchema
         ORCH->>BEAT:
@@ -150,11 +152,12 @@ sequenceDiagram
         ARTS->>ORCH: ArtAssetManifest
         COLO->>ORCH: GuiColorScheme
         DIAL->>ORCH: DialogueManifest
+        deactivate BEAT
+        deactivate ARTS
+        deactivate COLO
+        deactivate DIAL
     end
-    deactivate BEAT
-    deactivate ARTS
-    deactivate COLO
-    deactivate DIAL
+    
 ```
 
 ## Tech focus

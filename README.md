@@ -119,9 +119,9 @@ sequenceDiagram
     participant RNPY as RenPy Project Assembler
 
     USER->>ORCH: Starts program
-    ORCH->>DISC: Spawn
     activate DISC
-    DISC->USER: ...
+    ORCH->>DISC: Spawn
+    DISC->USER: ""
     Note over DISC,USER: Interactive conversation
 ```
 

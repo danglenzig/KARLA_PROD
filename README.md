@@ -66,10 +66,10 @@ This makes the project useful in two ways: as a graduation project submission an
 - Output: deterministic `.rpy` script output and a playable build assembled from a predefined Ren'Py project template.
 - Responsibility: compile structured data into engine-ready content without asking the language model to invent Ren'Py syntax ad hoc.
 
-### 9. QA / Validator Agent
+### 9. Orchestrator
 - Input: outputs from every stage.
-- Output: pass/fail checks, schema validation feedback, and debugging data.
-- Responsibility: catch malformed structured outputs, weak handoffs, asset issues, and other problems before they propagate further down the pipeline.
+- Output: inputs from every stage, pass/fail checks, schema validation feedback, and debugging data.
+- Responsibility: Enforce agent boundaries, coordinate end-to-end workflow.
 
 ## Architecture principles
 
@@ -103,17 +103,7 @@ In other words, the project is now moving from planning and asset generation int
 6. The Asset Manifest Agent defines the art jobs, and image generation code saves finished assets to the Ren'Py project structure.
 7. The Ren'Py assembly layer compiles the structured outputs into a playable vertical slice.
 
-## Planned improvements
-
-Near-term priorities include:
-
-- Finalize the Dialogue Agent schema and beat-aligned event format.
-- Expand deterministic Ren'Py assembly from manually previewed content into automated script generation.
-- Strengthen validation rules across schemas and handoff boundaries.
-- Improve asset generation presets, portrait framing checks, and manifest-driven file writing.
-- Continue hardening the MVP slice before expanding beyond the intro and first playable story scene.
-
-## High-level architecture
+## Pipeline architecture
 
 ```mermaid
 
@@ -127,6 +117,16 @@ The project is currently centered on:
 - Pydantic schemas for structured contracts between agents.
 - OpenAI Agents SDK patterns for orchestration and content generation workflows.
 - Python as the deterministic glue layer between model outputs and playable game files.
+
+## Planned improvements
+
+Near-term priorities include:
+
+- Finalize the Dialogue Agent schema and beat-aligned event format.
+- Expand deterministic Ren'Py assembly from manually previewed content into automated script generation.
+- Strengthen validation rules across schemas and handoff boundaries.
+- Improve asset generation presets, portrait framing checks, and manifest-driven file writing.
+- Continue hardening the MVP slice before expanding beyond the intro and first playable story scene.
 
 ## Status
 

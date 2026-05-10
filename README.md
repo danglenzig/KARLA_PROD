@@ -126,7 +126,7 @@ graph TD
     AM[Asset Manifest Agent]
     CA[GUI Color Scheme Agent]
     RP[Ren'Py Assembly Agent]
-    QA[QA / Validator Agent]
+    QA[Validation Layer]
 
     US <--> DI
     DI --> CP

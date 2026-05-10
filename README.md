@@ -122,7 +122,7 @@ sequenceDiagram
     activate DISC
     ORCH->>DISC: Spawn
     Note over DISC,USER: Interactive conversation
-    DISC->USER:
+    DISC-->USER:
 ```
 
 ## Tech focus

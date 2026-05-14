@@ -1,0 +1,607 @@
+{
+  "narrative_design_spec": {
+    "story_title": "Driftglass Café",
+    "synopsis": "On remote Vesper Station, a place where people come to vanish into new names and quiet routines, former assassin Ash Vale has built a careful second life running Driftglass Café. Their regulars include Tamsin Quill, the station administrator holding chaos together with caffeine and sarcasm, and Juno Mercer, a gifted mechanic whose love life is a repeating emergency alarm. That fragile peace shifts when Lio Saren, a newcomer from Ash's old world, arrives with a warning: someone from the life Ash escaped is closing in. When former ally Cass Rhyne comes to the station hunting revenge for an old betrayal, Ash must decide whether safety lies in secrecy or in finally trusting the small community that has become home. The story blends cozy daily rhythms, dry banter, and low-key suspense, with an emotional focus on trust, identity, and the delicate comfort of found family.",
+    "player_character": {
+      "character_data": {
+        "uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "name": "Ash Vale",
+        "portrait_image_prompt": "Androgynous adult in their early 30s, lean build, olive skin, close-cropped dark hair with a single silver streak, gray attentive eyes, faint scar through one brow, composed guarded expression, practical layered apron over simple utilitarian clothing.",
+        "dialogue_examples": [
+          "Around here, coffee is cheaper than therapy and usually more effective.",
+          "I like routines. They don't ask awkward follow-up questions.",
+          "If someone says they're just passing through, I start hiding the good mugs.",
+          "I'm not mysterious. I'm private. There's a difference, and I charge extra for both."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+          "name": "Tamsin Quill",
+          "portrait_image_prompt": "Woman in her late 30s, dark brown skin, neatly braided hair coiled at the nape, tired sharp eyes behind slim rectangular glasses, immaculate station-administrator uniform, severe posture, expression balancing authority and exhaustion.",
+          "dialogue_examples": [
+            "Do you know how many forms it takes to legally move one crate of radishes through quarantine? Too many for a decent civilization.",
+            "I am calm. This is simply what my face does when the station is one bad invoice from imploding.",
+            "If I trusted everyone on this station, it would stop being this station.",
+            "Tell me the inconvenient truth now, please. My schedule is very full later."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "f7195a64-91e9-45a7-81cb-f190d598f371",
+          "name": "Juno Mercer",
+          "portrait_image_prompt": "Woman in her late 20s, broad-shouldered and energetic, freckled skin, unruly copper curls tied back, grease-smudged cheeks, expressive amber eyes, mechanic's coveralls half-zipped over a bright shirt, crooked grin.",
+          "dialogue_examples": [
+            "In my defense, the engine started it. In my worse defense, so did I.",
+            "I can fix a coolant leak, a docking clamp, and occasionally a bad decision. Romance remains outside my specialization.",
+            "If something explodes gently, that's basically a success.",
+            "Ash, you make listening look judgmental. It's a gift."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+          "name": "Lio Saren",
+          "portrait_image_prompt": "Young adult man with pale tan skin, lean wiry frame, short white-blond hair shaved at the sides, dark wary eyes, narrow face, travel-worn jacket with hidden pockets, guarded expression.",
+          "dialogue_examples": [
+            "I wasn't hard to find if you knew which ghosts still drank decent coffee.",
+            "I came for a warning, not a reunion. The reunion just happened first.",
+            "People like us don't retire. We misfile ourselves and hope no one checks.",
+            "You always did mistake isolation for safety."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "5f530a6f-07d5-415e-917e-1e7c0991eb57",
+          "name": "Cass Rhyne",
+          "portrait_image_prompt": "Woman in her mid-30s, athletic build, weathered bronze skin, long black hair tied low, severe amber eyes, sharp cheekbones, old scar at the jaw, fitted coat with understated tactical tailoring, expression cool and wounded.",
+          "dialogue_examples": [
+            "You vanished and called it mercy. I lived with the arithmetic.",
+            "I didn't come for the station. I came for the one person who taught me how to wait.",
+            "You left me one lesson worth keeping: finish what follows you.",
+            "You built a soft life well. That's what makes it expensive."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "name": "Driftglass Café",
+          "location_image_prompt": "A cozy repurposed space-station café with curved metal walls, reclaimed wood counters, hanging hydroponic plants, mismatched mugs, humming espresso machinery, handwritten menu boards, and wide porthole windows looking onto a starfield."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "b938a58e-dcf1-4e3e-8d70-4bbc3cf14a8b",
+          "name": "Transit Control Office",
+          "location_image_prompt": "A compact station administrator's office with glass partitions, layered holographic displays, cluttered desks, paper files beside sleek terminals, route maps, maintenance notices, and a view into the station's central corridor."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "8ce92622-8c89-47df-b362-7b6c0e71b123",
+          "name": "Spindle Bay Maintenance",
+          "location_image_prompt": "A busy maintenance bay with exposed conduits, tool racks, suspended repair harnesses, modular engine parts, utility carts, cable coils, and a half-disassembled shuttle frame."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "name": "Docking Ring 6",
+          "location_image_prompt": "A quiet docking concourse with worn bulkheads, airlock doors, cargo pallets, flickering wayfinding signs, long observation windows, and the stark silhouette of moored ships against space."
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "def247aa-e00c-4657-bfd4-1dd15544f044",
+        "scene_name": "intro",
+        "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+        "non_player_character_uuids": [
+          "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+          "f7195a64-91e9-45a7-81cb-f190d598f371",
+          "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+        ],
+        "narrtive_summary": "Ash's morning shift at Driftglass Café introduces Vesper Station as a refuge for the self-reinvented. Through dry banter with overworked administrator Tamsin and lovelorn mechanic Juno, the player learns the station's rhythms and Ash's role as a quiet anchor in the community. The calm tilts when newcomer Lio Saren walks in, recognizes Ash by an old name, and makes it clear the past has found the café."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "8c4f61eb-68d1-42bd-9470-f1109d338851",
+          "scene_name": "act1_scene1",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "non_player_character_uuids": [
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "narrtive_summary": "Ash corners Lio in Docking Ring 6 after closing. Lio reveals they once worked the edges of Ash's old network and came to warn them that Cass Rhyne, a former ally who believes Ash betrayed the team, is actively tracking them. The scene establishes the old life Ash escaped and frames the central threat without yet collapsing the fragile peace of the station."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "22508ffc-3b89-42e6-924f-dc16616d2277",
+          "scene_name": "act1_scene2",
+          "location_uuid": "b938a58e-dcf1-4e3e-8d70-4bbc3cf14a8b",
+          "non_player_character_uuids": [
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371"
+          ],
+          "narrtive_summary": "Tamsin wrestles with odd security anomalies and an unregistered dock inquiry while Juno drifts in with gossip and mechanical excuses. Ash asks for quiet help without revealing the full truth, trying to contain the problem alone. The scene deepens the found-community dynamic as Tamsin and Juno both notice Ash is frightened in a way that doesn't fit the person they thought they knew."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "f98059b4-d382-4ebe-aeb5-60a808e38912",
+          "scene_name": "act2_scene1",
+          "location_uuid": "8ce92622-8c89-47df-b362-7b6c0e71b123",
+          "non_player_character_uuids": [
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "narrtive_summary": "After the café's supply system is quietly tampered with, Ash meets Juno and Lio in the maintenance bay to trace the sabotage. Juno's humor gives way to steady loyalty as the trio discovers someone has been moving through sealed service routes. Pressured by evidence that the hunter is already on station, Ash admits part of their violent past and begins, reluctantly, to let other people carry some of the danger."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "5d18fa68-9128-414c-a35d-f762845a2d25",
+          "scene_name": "act2_scene2",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "non_player_character_uuids": [
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+            "5f530a6f-07d5-415e-917e-1e7c0991eb57"
+          ],
+          "narrtive_summary": "Cass arrives at Driftglass Café in the middle of service, passing as another traveler while speaking to Ash in layered double meanings and old grievances. Tamsin and Juno immediately sense the danger, and Lio recognizes Cass from the old network. By the end of the encounter, Ash's two lives collide publicly when Cass names the betrayal that destroyed their former unit and promises not to leave empty-handed."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "d4c6b47c-074f-43e9-a7b1-b4851f193ace",
+          "scene_name": "act3_scene1",
+          "location_uuid": "b938a58e-dcf1-4e3e-8d70-4bbc3cf14a8b",
+          "non_player_character_uuids": [
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "narrtive_summary": "With the station's safety on the line, Ash finally tells Tamsin, Juno, and Lio the whole story: years ago they sabotaged an assassination to prevent civilian deaths, stranding Cass and shattering the team in the process. Instead of recoiling, the three choose Ash anyway and build a nonlethal plan around dock lockdowns, maintenance blind spots, and hard evidence that their old employers manipulated them all. The emotional turning point is not the plan itself but Ash accepting that trust is a risk worth taking."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "e9087ca1-8d0f-4fd2-ad9f-152711fd26df",
+          "scene_name": "act3_scene2",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "non_player_character_uuids": [
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+            "5f530a6f-07d5-415e-917e-1e7c0991eb57"
+          ],
+          "narrtive_summary": "At Docking Ring 6, Ash meets Cass for a final confrontation and refuses to answer old violence with another killing. While Tamsin, Juno, and Lio execute their support plan across the station, Ash presents proof that the betrayal Cass blames on them was part of a larger manipulation by the syndicate that used them both. Faced with the truth and with the visible reality of the life Ash has built, Cass abandons revenge and leaves the station under an uneasy truce rather than drag both of them back into the past."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "73e5b582-7a89-48df-8a0b-31c4434ebf4b",
+        "scene_name": "outro",
+        "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+        "non_player_character_uuids": [
+          "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+          "f7195a64-91e9-45a7-81cb-f190d598f371",
+          "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+        ],
+        "narrtive_summary": "In the days after Cass's departure, Driftglass Café settles back into service, but not into secrecy. Ash begins living more honestly with Tamsin, Juno, and Lio, whose loyalty has become unmistakable family rather than convenient friendship. The final scene restores the station's cozy routine while underlining its new meaning: comfort is still fragile, but now it is shared, chosen, and real."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/ccb4b8e8-f304-443e-b383-fddcc2ddbc27.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/055bd9e0-7c34-48ec-b71a-59689ae11e92.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/f7195a64-91e9-45a7-81cb-f190d598f371.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/cb2e2d19-fefd-4155-8e5b-c8ff908697b8.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/bg a14b61f6-65e4-4f2f-9a7d-6972d14178ea.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/0a45ef68-6fcc-4874-9ebd-016aa8c1c3c2/IMAGES/bg 4bb69306-395a-4729-9576-1605a851d7bc.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Driftglass Café",
+      "scene_name": "intro",
+      "scene_uuid": "def247aa-e00c-4657-bfd4-1dd15544f044",
+      "source_scene_summary": "Ash's morning shift at Driftglass Café introduces Vesper Station as a refuge for the self-reinvented. Through dry banter with overworked administrator Tamsin and lovelorn mechanic Juno, the player learns the station's rhythms and Ash's role as a quiet anchor in the community. The calm tilts when newcomer Lio Saren walks in, recognizes Ash by an old name, and makes it clear the past has found the café.",
+      "location_name": "Driftglass Café",
+      "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+      "player_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "non_player_character_uuids": [
+        "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+        "f7195a64-91e9-45a7-81cb-f190d598f371",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "dramatic_question": "Can Ash preserve the quiet safety of Driftglass and their reinvented identity when a stranger from the past steps up to the counter?",
+      "scene_goal": "Get through the morning shift, reinforce the café's ordinary routine, and keep Ash's former identity buried.",
+      "scene_turn": "Ash begins the day as the calm center of a chosen community and ends it knowing someone from their old life has found them.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_opening_routine",
+          "purpose": "Establish Driftglass Café, Ash's carefully controlled daily ritual, and Vesper Station's culture of quiet reinvention.",
+          "summary": "Ash opens the café before the station fully wakes, moving through familiar tasks with practiced precision. Their internal framing presents Vesper Station as a place where people arrive under new names and survive by respecting each other's silences.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "cozy, controlled",
+          "revelation": "Vesper Station functions as a refuge for the self-reinvented, and Ash relies on routine to keep their own past at bay.",
+          "tension_change": "hold",
+          "player_goal": "Open the café and settle into the safety of the morning routine.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The café is open, and Ash is grounded in their normal rhythm."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_tamsin_regular",
+          "purpose": "Introduce Tamsin, show the station's everyday pressures, and establish Ash as a dependable point of calm.",
+          "summary": "Tamsin arrives for her usual coffee with paperwork, complaints, and the brittle competence of someone holding the station together by force of will. Her dry banter with Ash shows long familiarity and quiet trust without requiring either of them to say so plainly.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92"
+          ],
+          "focal_character_uuid": "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+          "mood": "dryly affectionate",
+          "revelation": "Tamsin treats Driftglass as one of the few places on the station where she can briefly lower her guard.",
+          "tension_change": "hold",
+          "player_goal": "Keep Tamsin caffeinated and the conversation comfortably ordinary.",
+          "interactive": true,
+          "choice_prompt": "How does Ash respond to Tamsin's stress: tease her, sympathize, or offer practical help?",
+          "branch_outcomes": [
+            "Tamsin gives a rare dry smile and relaxes slightly.",
+            "Tamsin deflects with sarcasm but clearly appreciates the concern.",
+            "Tamsin accepts the help in principle, reinforcing Ash's reliability in her eyes."
+          ],
+          "exit_state": "Tamsin is steadier, and Ash's role as a quiet anchor in station life is clear."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_juno_bursts_in",
+          "purpose": "Introduce Juno's energy, broaden the social texture of the café, and build the found-family dynamic.",
+          "summary": "Juno barrels into the café mid-story, balancing a maintenance excuse with fresh romantic chaos and grease on her face. Her irreverent chemistry with both Tamsin and Ash makes Driftglass feel like a lived-in social hub rather than a neutral backdrop.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371"
+          ],
+          "focal_character_uuid": "f7195a64-91e9-45a7-81cb-f190d598f371",
+          "mood": "playful, bustling",
+          "revelation": "Juno trusts Ash enough to turn the café into part workshop break room, part confession booth.",
+          "tension_change": "fall",
+          "player_goal": "Keep the morning rush moving while fielding Juno's latest crisis with minimal damage.",
+          "interactive": true,
+          "choice_prompt": "What kind of advice does Ash give Juno about her newest romantic misfire?",
+          "branch_outcomes": [
+            "Ash encourages Juno to be honest, and she laughs while taking the point.",
+            "Ash warns Juno against repeating old mistakes, and she briefly grows more sincere.",
+            "Ash deflects with humor, keeping things light but revealing Ash's habit of dodging personal topics."
+          ],
+          "exit_state": "The trio's easy banter makes the café feel warm, lived-in, and safe."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_refuge_in_motion",
+          "purpose": "Deepen the theme of refuge and show Ash's emotional investment in their new life.",
+          "summary": "As orders, jokes, and station gossip pass across the counter, Driftglass is framed as neutral ground for people trying to become someone gentler than they were before. Watching Tamsin and Juno settle into familiar rhythms, Ash lets themself believe this ordinary life may actually be theirs to keep.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "warm, quietly hopeful",
+          "revelation": "Ash has become part of the refuge they once only intended to borrow.",
+          "tension_change": "hold",
+          "player_goal": "Protect the café's calm and stay inside the life Ash has built.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Ash feels, however briefly, secure in the identity they have made on Vesper Station."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_lio_enters",
+          "purpose": "Introduce Lio as a subtle but immediate disruption and signal the return of Ash's buried world.",
+          "summary": "A new traveler steps into Driftglass, and Ash notices at once that his attention moves like someone trained to read exits, threats, and lies. Nothing openly happens, but the air changes as Ash realizes this is not just another customer passing through.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "uneasy, watchful",
+          "revelation": "The stranger carries the same kind of caution Ash associates with the life they escaped.",
+          "tension_change": "rise",
+          "player_goal": "Serve the newcomer without showing recognition, fear, or suspicion.",
+          "interactive": true,
+          "choice_prompt": "How does Ash greet the stranger: warm professionalism, distant formality, or immediate guardedness?",
+          "branch_outcomes": [
+            "Lio answers polite professionalism with coded politeness that feels too deliberate.",
+            "Lio meets Ash's distance with equal reserve, sharpening the sense that he is assessing them.",
+            "Lio notices Ash's guardedness and subtly confirms he is not here by accident."
+          ],
+          "exit_state": "Ash knows trouble has entered the café, even before the stranger says why."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_old_name_spoken",
+          "purpose": "Deliver the scene's hook by exposing Ash's hidden identity and collapsing the illusion of total safety.",
+          "summary": "When Ash reaches the counter, Lio addresses them by an old name in a voice meant only for them and makes clear he came for more than coffee. Ash keeps the room functioning on the surface, but Tamsin and Juno both notice a fracture in their composure as the past abruptly invades the life they built.",
+          "location_uuid": "a14b61f6-65e4-4f2f-9a7d-6972d14178ea",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "055bd9e0-7c34-48ec-b71a-59689ae11e92",
+            "f7195a64-91e9-45a7-81cb-f190d598f371",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "shocked, ominous",
+          "revelation": "Lio knows who Ash was before Vesper Station, and Ash's past is no longer safely buried.",
+          "tension_change": "twist",
+          "player_goal": "Contain the public moment while deciding how to handle Lio's recognition.",
+          "interactive": true,
+          "choice_prompt": "How does Ash respond to being recognized: deny it, deflect publicly, or quietly force a later confrontation?",
+          "branch_outcomes": [
+            "Ash denies the name and preserves cover, but the danger becomes more urgent.",
+            "Ash plays ignorant and buys time, while Lio makes clear he will not leave matters there.",
+            "Ash quietly signals a private conversation after closing, taking control without reducing the threat."
+          ],
+          "exit_state": "The morning shift is no longer ordinary; Ash is exposed and committed to confronting Lio after closing."
+        }
+      ]
+    },
+    {
+      "story_title": "Driftglass Café",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "8c4f61eb-68d1-42bd-9470-f1109d338851",
+      "source_scene_summary": "Ash corners Lio in Docking Ring 6 after closing. Lio reveals they once worked the edges of Ash's old network and came to warn them that Cass Rhyne, a former ally who believes Ash betrayed the team, is actively tracking them. The scene establishes the old life Ash escaped and frames the central threat without yet collapsing the fragile peace of the station.",
+      "location_name": "Docking Ring 6",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "player_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "non_player_character_uuids": [
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "dramatic_question": "Can Ash get the truth out of Lio and learn how close the danger from their old life really is before it reaches the station?",
+      "scene_goal": "Force Lio to explain why he came, judge whether his warning is credible, and decide how to protect Vesper Station without exposing Ash's past.",
+      "scene_turn": "Ash goes from treating Lio as an unwanted disruption to realizing Cass Rhyne is a real, personal threat who may already be closing in on the life Ash built.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Shift the story from the café's public unease into a private confrontation where Ash can reclaim some control.",
+          "summary": "After closing, Ash follows Lio to the nearly empty Docking Ring 6 and cuts off his path near the observation windows. The station's quiet makes the confrontation feel sharper than the scene in the café, and Ash demands to know why Lio used an old name in public.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "taut",
+          "revelation": null,
+          "tension_change": "rise",
+          "player_goal": "Corner Lio somewhere private and make him explain himself before anyone else gets involved.",
+          "interactive": true,
+          "choice_prompt": "How does Ash open the confrontation?",
+          "branch_outcomes": [
+            "Ash comes in hard and threatening, making Lio defensive but convincing him Ash still has old reflexes.",
+            "Ash stays cool and controlled, pushing Lio to answer with equal seriousness.",
+            "Ash uses dry humor to mask alarm, letting Lio see how badly the public recognition rattled them."
+          ],
+          "exit_state": "Lio drops the harmless traveler act and acknowledges that finding Ash was deliberate."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Establish that Lio is a legitimate link to Ash's buried past, not a random opportunist.",
+          "summary": "Lio says he did not come for nostalgia and admits he tracked rumors of Ash's disappearance through old courier chatter and side-channel records. He explains that he worked the fringes of the same network Ash once served, close enough to know faces, names, and the kind of silence people like them disappear into.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+          "mood": "wary",
+          "revelation": "Lio once worked the outer edges of Ash's old syndicate network and deliberately sought Ash out on Vesper Station.",
+          "tension_change": "twist",
+          "player_goal": "Figure out whether Lio truly knows the old world or is bluffing with scraps.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Ash accepts that Lio's knowledge is real enough to take seriously."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Deliver the core warning that launches the scene's central threat.",
+          "summary": "Lio reveals that Cass Rhyne has been moving from port to port, pulling favors and questions around a vanished operative tied to a failed job. He says he came ahead of her because Cass is no longer just looking for answers; she is hunting with purpose.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+          "mood": "ominous",
+          "revelation": "Cass Rhyne is actively tracking Ash and has traced the search close enough to Vesper-connected routes to alarm Lio.",
+          "tension_change": "rise",
+          "player_goal": "Learn who is coming and how immediate the threat is.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The danger becomes specific, named, and plausibly near."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Make the threat emotionally personal by tying Cass's pursuit to Ash's unresolved past.",
+          "summary": "When Ash presses for why Cass cares this much, Lio says the surviving story is simple and ugly: Ash betrayed the team on a mission, vanished, and left Cass to live with the wreckage. Lio admits he does not know the whole truth, only that Cass has built years of anger around that version of events.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "haunted",
+          "revelation": "Cass believes Ash betrayed their former unit during a disastrous mission and sees the hunt as personal revenge, not just unfinished business.",
+          "tension_change": "rise",
+          "player_goal": "Understand what Cass believes happened and what that means for how far she will go.",
+          "interactive": true,
+          "choice_prompt": "How does Ash react when Lio names the betrayal?",
+          "branch_outcomes": [
+            "Ash flatly rejects the simple version, hinting there is more to the story without explaining it.",
+            "Ash goes quiet, letting guilt and pain speak louder than denial.",
+            "Ash redirects to practical questions about Cass, revealing how instinctively they compartmentalize danger."
+          ],
+          "exit_state": "The warning stops being abstract and lands as an old wound Ash never actually escaped."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Show Ash's instinct to protect their new life through secrecy while introducing the limits of that strategy.",
+          "summary": "Ash orders Lio to keep quiet and stay away from the café unless he has something useful, insisting Vesper Station is not part of that world. Lio pushes back, warning that a quiet life is still a life someone can use against them, and that the people Ash cares about are exactly what make them easier to find and harder to leave.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "brittle",
+          "revelation": "Cass's hunt threatens not just Ash personally but the fragile community Ash has built around the café.",
+          "tension_change": "twist",
+          "player_goal": "Contain the danger without letting it touch the station or the people who trust Ash.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Ash realizes their attachments are part of the risk, even if no one else knows it yet."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "End the scene with concrete danger and a controlled next step that leads into Ash seeking partial help.",
+          "summary": "Lio gives Ash the scraps he has gathered: route fragments, false-name inquiries, and enough detail to suggest Cass is methodical rather than reckless. After Lio leaves, Ash remains alone in the docking ring and resolves to verify the threat quietly through station channels, asking for only as much help as they can without telling the whole truth.",
+          "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+          "present_character_uuids": [
+            "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+            "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+          ],
+          "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+          "mood": "grim",
+          "revelation": "Lio's warning includes enough specific trail markers for Ash to act on it rather than dismiss it as rumor.",
+          "tension_change": "hold",
+          "player_goal": "Decide on a first response that protects the station without exposing Ash's full history.",
+          "interactive": true,
+          "choice_prompt": "What kind of first move does Ash commit to?",
+          "branch_outcomes": [
+            "Ash decides to quietly check official security and docking records through Tamsin.",
+            "Ash decides to look for signs of movement through the station's back channels and maintenance traffic.",
+            "Ash decides to verify Lio's information alone first, delaying trust even as the danger grows."
+          ],
+          "exit_state": "Ash leaves the encounter no longer in denial: Cass is coming, and secrecy will now require active, careful management."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 155,
+      "g": 196,
+      "b": 173,
+      "a": 255,
+      "hex_string": "#9BC4AD"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 206,
+      "b": 196,
+      "a": 255,
+      "hex_string": "#D6CEC4"
+    },
+    "idle_small_color": {
+      "r": 186,
+      "g": 176,
+      "b": 166,
+      "a": 255,
+      "hex_string": "#BAB0A6"
+    },
+    "hover_color": {
+      "r": 242,
+      "g": 222,
+      "b": 180,
+      "a": 255,
+      "hex_string": "#F2DEB4"
+    },
+    "selected_color": {
+      "r": 247,
+      "g": 193,
+      "b": 122,
+      "a": 255,
+      "hex_string": "#F7C17A"
+    },
+    "insensitive_color": {
+      "r": 122,
+      "g": 118,
+      "b": 114,
+      "a": 255,
+      "hex_string": "#7A7672"
+    },
+    "muted_color": {
+      "r": 84,
+      "g": 92,
+      "b": 104,
+      "a": 255,
+      "hex_string": "#545C68"
+    },
+    "hover_muted_color": {
+      "r": 110,
+      "g": 120,
+      "b": 132,
+      "a": 255,
+      "hex_string": "#6E7884"
+    },
+    "text_color": {
+      "r": 240,
+      "g": 235,
+      "b": 228,
+      "a": 255,
+      "hex_string": "#F0EBE4"
+    },
+    "interface_text_color": {
+      "r": 233,
+      "g": 227,
+      "b": 217,
+      "a": 255,
+      "hex_string": "#E9E3D9"
+    },
+    "reasoning": "Driftglass Café blends warmth, restraint, and low-key suspense, so the palette centers on soft café neutrals with a gentle hydroponic green accent and a restrained amber highlight. The dialogue text is kept near-white for excellent readability against darker space-station UI panels, while the interface colors stay slightly warmer and dimmer to feel cozy rather than clinical. Hover and selected states use sunlit brass tones to suggest comfort and attention without clashing with the setting’s muted metal-and-wood atmosphere. Inactive and bar-muted colors are cool gray-blue to reflect the station environment and keep noninteractive elements receding cleanly."
+  }
+}

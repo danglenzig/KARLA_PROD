@@ -24,6 +24,7 @@ class DemoCreativeData(BaseModel):
     narrative_design_spec: NarrativeDesignOutputSchema
     art_assets: ArtAssetManifest
     beat_sheets: list[SceneBeatSheet]
+    color_scheme: GuiColorScheme
 
 def get_data_folder_path(game_name: str) -> str:
     games_folder_path = os.getenv('GAMES_FOLDER_PATH')
@@ -78,7 +79,8 @@ async def run_program():
     stage_two_coroutines = [
         ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
         SceneBeatAgent().run_workflow(nd_out_json, intro_scene_uuid),
-        SceneBeatAgent().run_workflow(nd_out_json, first_scene_uuid)
+        SceneBeatAgent().run_workflow(nd_out_json, first_scene_uuid),
+        GuiColorAgent().run_workflow(nd_out_json)
     ]
     stage_two_gather = asyncio.gather(*stage_two_coroutines)
     stage_two = await stage_two_gather
@@ -87,11 +89,13 @@ async def run_program():
         stage_two[1],
         stage_two[2]
     ]
+    color_scheme_: GuiColorScheme = stage_two[3]
 
     creative_data: DemoCreativeData = DemoCreativeData(
         narrative_design_spec   = nd_out,
         art_assets              = art_manifest,
-        beat_sheets             =beat_sheet_list
+        beat_sheets             = beat_sheet_list,
+        color_scheme            = color_scheme_
     )
     creative_data_json: str = creative_data.model_dump_json(indent=2)
     await write_output_json(temp_game_name, creative_data_json, 'creative_data')
@@ -100,7 +104,7 @@ async def run_program():
 
 if __name__ == "__main__":
 
-    #asyncio.run(run_program())
-    data_schema = json.dumps(DemoCreativeData.model_json_schema(), indent=2)
-    print(data_schema)
+    asyncio.run(run_program())
+    #data_schema = json.dumps(DemoCreativeData.model_json_schema(), indent=2)
+    #print(data_schema)
 

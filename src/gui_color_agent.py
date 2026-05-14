@@ -78,7 +78,12 @@ Your output_type is GuiColorScheme, which is a Pydantic BaseModel containing des
 
 
 class GuiColorAgent():
-    async def run_workflow(self, nd_spec: NarrativeDesignOutputSchema) -> GuiColorScheme:
+    async def run_workflow(self, in_json: str) -> GuiColorScheme:
+
+        try:
+            nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(in_json)
+        except Exception as e:
+            print(e)
 
         visual_data: str = nd_spec.human_readable()
 
@@ -96,40 +101,8 @@ async def main():
     try:
         with open('KARLA_GAMES/COLOR_AGENT_TESTING/test_data.json') as f:
             json_str = f.read().strip()
-
-        nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(json_str)        
-
-        # story_title: str = nd_spec.story_title
-        # synopsis: str = nd_spec.synopsis
-
-        # prompt: str = f"STORY TITLE: {story_title}\nSYNOPSIS: {synopsis}\n\n"
-        
-        # intro_loc_uuid: str = nd_spec.intro_scene.scene_data.location_uuid
-        # first_loc_uuid: str = nd_spec.act_one[0].scene_data.location_uuid
-        # second_loc_uuid: str = nd_spec.act_two[0].scene_data.location_uuid
-        # third_loc_uuid: str = nd_spec.act_three[0].scene_data.location_uuid
-        # outro_loc_uuid: str = nd_spec.outro_scene.scene_data.location_uuid
-
-        # loc_uuids: list[str] = []
-        # loc_uuids.append(intro_loc_uuid)
-        # if not first_loc_uuid in loc_uuids:
-        #     loc_uuids.append(first_loc_uuid)
-        # if not second_loc_uuid in loc_uuids:
-        #     loc_uuids.append(second_loc_uuid)
-        # if not third_loc_uuid in loc_uuids:
-        #     loc_uuids.append(third_loc_uuid)
-        # if not outro_loc_uuid in loc_uuids:
-        #     loc_uuids.append(outro_loc_uuid)
-
-        # loc_dict = nd_spec.get_location_catalog()
-        # for loc_uuid in loc_uuids:
-        #     loc_data: LocationData = LocationData.model_validate(loc_dict[loc_uuid])
-        #     name: str = loc_data.name
-        #     desc: str = loc_data.location_image_prompt
-        #     prompt += f"LOCATION: {name}\nDESCRIPTION: {desc}\n\n"
-
-        gui_color_scheme: GuiColorScheme = await GuiColorAgent().run_workflow(nd_spec)
-
+        nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(json_str)
+        gui_color_scheme: GuiColorScheme = await GuiColorAgent().run_workflow(json_str)
         print(gui_color_scheme.model_dump_json(indent=2))   
 
     except Exception as e:

@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 from datetime import datetime
 import os
+import json
 
 # LOCAL MODULES
 SRC_ROOT: Path = Path(__file__).parent # the src/ folder
@@ -16,6 +17,7 @@ from prompt_catalog import ImageStyle
 from image_generator import ImageGenerator, ArtAssetManifest
 from discovery_agent import DiscoveryAgent, StoryConcept
 from tools.foo import get_uuid_string
+from gui_color_agent import GuiColorAgent, GuiColorScheme
 
 
 class DemoCreativeData(BaseModel):
@@ -98,5 +100,7 @@ async def run_program():
 
 if __name__ == "__main__":
 
-    asyncio.run(run_program())
+    #asyncio.run(run_program())
+    data_schema = json.dumps(DemoCreativeData.model_json_schema(), indent=2)
+    print(data_schema)
 

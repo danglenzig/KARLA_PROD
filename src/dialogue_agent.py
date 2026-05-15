@@ -6,6 +6,7 @@ from pathlib import Path
 import sys
 import asyncio
 import json
+from enum import Enum
 
 # LOCAL MODULES
 SRC_ROOT: Path = Path(__file__).parent # the src/ folder
@@ -13,34 +14,39 @@ sys.path.insert(0, str(SRC_ROOT))
 
 from scene_beat_agent import SceneBeatSheet, SceneBeat
 
-load_dotenv()
+load_dotenv()   
+
+
 
 class LineEvent(BaseModel):
-    """...""" # TODO: class docstring
+    """A line of dialogue text is displayed in the dialogue text area"""
     type: Literal["line"]
-    #       TODO: LineEvent fields
+    character_uuid: str = Field(..., description="The UUID of the character speaking this dialogue line")
+    text: str           = Field(..., description="The text of the dialogue line itself")
 
 class ShowCharacterEvent(BaseModel):
-    """...""" # TODO: class docstring
+    """A character dialogue portrait is shown"""
     type: Literal["show_character"]
-    #       TODO: ShowCharacterEvent fields
+    character_uuid: str                                 = Field(..., description="The UUID of the character whose dialogue portrait is displayed")
+    screen_position: Literal['center', 'left', 'right'] = Field(..., description="The screen position of the dialogue portrait: 'center', 'right', or 'left'")
+
 
 class HideCharacterEvent(BaseModel):
-    """...""" # TODO: class docstring
+    """A visible character portrait is removed"""
     type: Literal["hide_character"]
-    #       TODO: HideCharacterEvent fields
+    character_uuid: str = Field(..., description="The UUID of the character whose dialogue portrait is to be un-displayed")
 
 class SetBackgroundEvent(BaseModel):
-    """...""" # TODO: class docstring
+    """A scene background image is shown"""
     type: Literal["set_background"]
-    #       TODO: SetBackground fields
+    location_uuid: str = Field(..., description="The UUID of the location being displayed as a background image")
 
 class NarrationEvent(BaseModel):
-    """...""" # TODO: class docstring
+    """A line of narration text is displayed in the dialogue text area"""
     type: Literal["narration"]
-    #       TODO: NarrationEvent fields
+    text: str = Field(..., description="The text of the narration line itself")
 
-NonChoiceDialogueEvent = Annotated[
+DialogueBranchEvent = Annotated[
     Union[
         LineEvent,
         ShowCharacterEvent,
@@ -50,20 +56,21 @@ NonChoiceDialogueEvent = Annotated[
     ],
     Field(discriminator="type")
 ]
-
 class DialogueChoiceOption(BaseModel):
-    option_id: str                                  = Field(..., description="...")
-    option_text: str                                = Field(..., description="...")
-    branch_label: str                               = Field(..., description="...")
-    branch_events: list[NonChoiceDialogueEvent]     = Field(..., description="...") # 
+    """Contains information about the dialogue choice option"""
+    option_id: str                                           = Field(..., description="A short, stable identifier for this choice option, for example 'flirt', or 'leave'")
+    option_text: str                                         = Field(..., description="The text of this choice option that is presented to the player, for example 'Flirt with Jesse', or 'End conversation'")
+    branch_label: str                                        = Field(..., description="An identifier for the narrative branch created by this choice option, for example 'flirt'")
+    non_choice_dialogue_events: list[DialogueBranchEvent] = Field(..., description="A list of non-choice dialogue events that are triggered by this choice option")
 
 class ChoiceEvent(BaseModel):
     """...""" # TODO: class docstring
     type: Literal["choice"]
-    choice_id: str                      = Field(..., description="...") # TODO: field description
-    prompt: str                         = Field(..., description="...") # TODO: field description
-    options: list[DialogueChoiceOption] = Field(..., description="...") # TODO: field description
-    ends_beat: bool                     = Field(..., description="...") # TODO: field description
+    choice_name: str                    = Field(..., description="A stable choice name, for example act1_scene1_beat_02_choice_01")
+    prompt: str                         = Field(..., description="Short description of the player decision")
+    options: list[DialogueChoiceOption] = Field(..., description="A list of dialogue choice options presented to the player")
+    ends_beat: bool                     = Field(..., description="Whether or not this choice event ends the current beat")
+
 
 DialogueEvent = Annotated[
     Union[
@@ -78,18 +85,18 @@ DialogueEvent = Annotated[
 ]
 
 class DialogueBeat(BaseModel):
-    beat_index: int             = Field(..., description="...") # TODO: field description
-    beat_name: str              = Field(..., description="...") # TODO: field description
-    source_purpose: str         = Field(..., description="...") # TODO: field description
-    source_exit_state: str      = Field(..., description="...") # TODO: field description
-    events: list[DialogueEvent] = Field(..., description="...") # TODO: field description
+    beat_index: int             = Field(..., description="1-based position of this dialogue beat in the scene")
+    beat_name: str              = Field(..., description="Stable beat name, for example act1_scene1_beat_01.")
+    source_purpose: str         = Field(..., description="Why this dialogue beat exists in the scene.")
+    source_exit_state: str      = Field(..., description="What has changed by the end of the beat.")
+    events: list[DialogueEvent] = Field(..., description="A list of dialogue events triggered by this dialogue beat")
 
 class DialogueScene(BaseModel):
-    scene_uuid: str                     = Field(..., description="...") # TODO: field description
-    scene_name: str                     = Field(..., description="...") # TODO: field description
-    location_uuid: str                  = Field(..., description="...") # TODO: field description
-    dialogue_beats: list[DialogueBeat]  = Field(..., description="...") # TODO: field description
-    scene_exit_state: str               = Field(..., description="...") # TODO: field description
+    scene_uuid: str                     = Field(..., description="The UUID for this scene")
+    scene_name: str                     = Field(..., description="The human-readable, unique and stable ID for this scene.")
+    location_uuid: str                  = Field(..., description="The UUID of this scene's location")
+    dialogue_beats: list[DialogueBeat]  = Field(..., description="A list of dialogue beats in this scene")
+    scene_exit_state: str               = Field(..., description="What changes by the end of the scene.")
 
 # The DialogueAgent is the last thing I'll do. Ignore this for now.
 class DialogueAgent():
@@ -102,20 +109,7 @@ class DialogueAgent():
 
 async def main():
     dialogue_scene_schema = json.dumps(DialogueScene.model_json_schema(), indent=2)
-    dialogue_beat_schema = json.dumps(DialogueBeat.model_json_schema(), indent=2)
-    dialogue_choice_option_schema = json.dumps(DialogueChoiceOption.model_json_schema(), indent= 2)
-
-    choice_event_schema = json.dumps(ChoiceEvent.model_json_schema(), indent=2)
-    narration_event_schema = json.dumps(NarrationEvent.model_json_schema(), indent=2)
-    set_bg_event_schema = json.dumps(SetBackgroundEvent.model_json_schema(), indent=2)
-    show_char_event_schema = json.dumps(ShowCharacterEvent.model_json_schema(), indent=2)
-    hide_char_event_schema = json.dumps(HideCharacterEvent.model_json_schema(), indent=2)
-    line_event_schema = json.dumps(LineEvent.model_json_schema(), indent=2)
-
-    print("=========SCHEMAS==========\n\n")
     print(f"=== DialogueScene ===\n{dialogue_scene_schema}\n\n")
-    print(f"=== DialogueBeat ===\n{dialogue_beat_schema}\n\n")
-    print(f"=== DialogueChoiceOption ===\n{dialogue_choice_option_schema}\n\n")
 
 
 

@@ -1,0 +1,149 @@
+{
+  "story_title": "Driftglass Café",
+  "scene_name": "act1_scene1",
+  "scene_uuid": "8c4f61eb-68d1-42bd-9470-f1109d338851",
+  "source_scene_summary": "Ash corners Lio in Docking Ring 6 after closing. Lio reveals they once worked the edges of Ash's old network and came to warn them that Cass Rhyne, a former ally who believes Ash betrayed the team, is actively tracking them. The scene establishes the old life Ash escaped and frames the central threat without yet collapsing the fragile peace of the station.",
+  "location_name": "Docking Ring 6",
+  "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+  "player_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+  "non_player_character_uuids": [
+    "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+  ],
+  "dramatic_question": "Can Ash get the truth out of Lio and learn how close the danger from their old life really is before it reaches the station?",
+  "scene_goal": "Force Lio to explain why he came, judge whether his warning is credible, and decide how to protect Vesper Station without exposing Ash's past.",
+  "scene_turn": "Ash goes from treating Lio as an unwanted disruption to realizing Cass Rhyne is a real, personal threat who may already be closing in on the life Ash built.",
+  "beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "purpose": "Shift the story from the café's public unease into a private confrontation where Ash can reclaim some control.",
+      "summary": "After closing, Ash follows Lio to the nearly empty Docking Ring 6 and cuts off his path near the observation windows. The station's quiet makes the confrontation feel sharper than the scene in the café, and Ash demands to know why Lio used an old name in public.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "mood": "taut",
+      "revelation": null,
+      "tension_change": "rise",
+      "player_goal": "Corner Lio somewhere private and make him explain himself before anyone else gets involved.",
+      "interactive": true,
+      "choice_prompt": "How does Ash open the confrontation?",
+      "branch_outcomes": [
+        "Ash comes in hard and threatening, making Lio defensive but convincing him Ash still has old reflexes.",
+        "Ash stays cool and controlled, pushing Lio to answer with equal seriousness.",
+        "Ash uses dry humor to mask alarm, letting Lio see how badly the public recognition rattled them."
+      ],
+      "exit_state": "Lio drops the harmless traveler act and acknowledges that finding Ash was deliberate."
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "purpose": "Establish that Lio is a legitimate link to Ash's buried past, not a random opportunist.",
+      "summary": "Lio says he did not come for nostalgia and admits he tracked rumors of Ash's disappearance through old courier chatter and side-channel records. He explains that he worked the fringes of the same network Ash once served, close enough to know faces, names, and the kind of silence people like them disappear into.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+      "mood": "wary",
+      "revelation": "Lio once worked the outer edges of Ash's old syndicate network and deliberately sought Ash out on Vesper Station.",
+      "tension_change": "twist",
+      "player_goal": "Figure out whether Lio truly knows the old world or is bluffing with scraps.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Ash accepts that Lio's knowledge is real enough to take seriously."
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "purpose": "Deliver the core warning that launches the scene's central threat.",
+      "summary": "Lio reveals that Cass Rhyne has been moving from port to port, pulling favors and questions around a vanished operative tied to a failed job. He says he came ahead of her because Cass is no longer just looking for answers; she is hunting with purpose.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "cb2e2d19-fefd-4155-8e5b-c8ff908697b8",
+      "mood": "ominous",
+      "revelation": "Cass Rhyne is actively tracking Ash and has traced the search close enough to Vesper-connected routes to alarm Lio.",
+      "tension_change": "rise",
+      "player_goal": "Learn who is coming and how immediate the threat is.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "The danger becomes specific, named, and plausibly near."
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "purpose": "Make the threat emotionally personal by tying Cass's pursuit to Ash's unresolved past.",
+      "summary": "When Ash presses for why Cass cares this much, Lio says the surviving story is simple and ugly: Ash betrayed the team on a mission, vanished, and left Cass to live with the wreckage. Lio admits he does not know the whole truth, only that Cass has built years of anger around that version of events.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "mood": "haunted",
+      "revelation": "Cass believes Ash betrayed their former unit during a disastrous mission and sees the hunt as personal revenge, not just unfinished business.",
+      "tension_change": "rise",
+      "player_goal": "Understand what Cass believes happened and what that means for how far she will go.",
+      "interactive": true,
+      "choice_prompt": "How does Ash react when Lio names the betrayal?",
+      "branch_outcomes": [
+        "Ash flatly rejects the simple version, hinting there is more to the story without explaining it.",
+        "Ash goes quiet, letting guilt and pain speak louder than denial.",
+        "Ash redirects to practical questions about Cass, revealing how instinctively they compartmentalize danger."
+      ],
+      "exit_state": "The warning stops being abstract and lands as an old wound Ash never actually escaped."
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "purpose": "Show Ash's instinct to protect their new life through secrecy while introducing the limits of that strategy.",
+      "summary": "Ash orders Lio to keep quiet and stay away from the café unless he has something useful, insisting Vesper Station is not part of that world. Lio pushes back, warning that a quiet life is still a life someone can use against them, and that the people Ash cares about are exactly what make them easier to find and harder to leave.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "mood": "brittle",
+      "revelation": "Cass's hunt threatens not just Ash personally but the fragile community Ash has built around the café.",
+      "tension_change": "twist",
+      "player_goal": "Contain the danger without letting it touch the station or the people who trust Ash.",
+      "interactive": false,
+      "choice_prompt": null,
+      "branch_outcomes": null,
+      "exit_state": "Ash realizes their attachments are part of the risk, even if no one else knows it yet."
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "purpose": "End the scene with concrete danger and a controlled next step that leads into Ash seeking partial help.",
+      "summary": "Lio gives Ash the scraps he has gathered: route fragments, false-name inquiries, and enough detail to suggest Cass is methodical rather than reckless. After Lio leaves, Ash remains alone in the docking ring and resolves to verify the threat quietly through station channels, asking for only as much help as they can without telling the whole truth.",
+      "location_uuid": "4bb69306-395a-4729-9576-1605a851d7bc",
+      "present_character_uuids": [
+        "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+        "cb2e2d19-fefd-4155-8e5b-c8ff908697b8"
+      ],
+      "focal_character_uuid": "ccb4b8e8-f304-443e-b383-fddcc2ddbc27",
+      "mood": "grim",
+      "revelation": "Lio's warning includes enough specific trail markers for Ash to act on it rather than dismiss it as rumor.",
+      "tension_change": "hold",
+      "player_goal": "Decide on a first response that protects the station without exposing Ash's full history.",
+      "interactive": true,
+      "choice_prompt": "What kind of first move does Ash commit to?",
+      "branch_outcomes": [
+        "Ash decides to quietly check official security and docking records through Tamsin.",
+        "Ash decides to look for signs of movement through the station's back channels and maintenance traffic.",
+        "Ash decides to verify Lio's information alone first, delaying trust even as the danger grows."
+      ],
+      "exit_state": "Ash leaves the encounter no longer in denial: Cass is coming, and secrecy will now require active, careful management."
+    }
+  ]
+}

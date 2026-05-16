@@ -15,10 +15,13 @@ SRC_ROOT: Path = Path(__file__).parent # the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
 from scene_beat_agent import SceneBeatSheet, SceneBeat
+from narrative_design_agent import NarrativeDesignOutputSchema, SceneData, CharacterData, LocationData
 
 load_dotenv()
 
-DIALOGUE_AGENT_INSTRUCTIONS = """
+MODEL: str = "gpt-5.4"
+
+PREAMBLE = """
 You are the Dialogue Agent for KARLA, a system that generates structured scene dialogue for a Ren'Py visual novel pipeline.
 
 Your job is to transform a single SceneBeatSheet input into exactly one DialogueScene output.
@@ -32,6 +35,7 @@ You must return only a valid DialogueScene object that conforms to the provided 
 PRIMARY GOAL
 Generate a clean, playable, scene-level dialogue structure that:
 - preserves the intent and order of the source beat sheet
+- preserves the end-to-end narrative continuity of the game's story
 - sounds like a real visual novel scene
 - gives each character a distinct voice
 - is easy for a downstream Python assembler to compile into Ren'Py
@@ -45,6 +49,8 @@ The input beat sheet already contains:
 - each beat's purpose, summary, mood, focal character, present characters, interactivity flag, choice prompt, branch outcomes, and exit state
 
 You must use that information as the source of truth.
+
+The narrative design spec contains a detailed outline of the end to end story, and is provided to help you preserve end-to-end narrative continuity when you write the dialogue.
 
 OUTPUT RULES
 - Output exactly one DialogueScene object.
@@ -286,23 +292,93 @@ class DialogueScene(BaseModel):
     )
 
 
+class CharacterDialogueData(BaseModel):
+    character_uuid: str
+    character_name: str
+    character_description: str
+    example_dialogue_lines: list[str]
+
 
 # The DialogueAgent is the last thing I'll do. Ignore this for now.
 class DialogueAgent():
-    async def run_workflow(self, beat_sheet_json: str) -> DialogueScene:
+    async def get_agent_instructions(self, nd_spec_json: str, scene_bs_json: str)->str:
         try:
-            beat_sheet: SceneBeatSheet = SceneBeatSheet.model_validate_json(beat_sheet_json)
+            nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(nd_spec_json)
+            scene_bs: SceneBeatSheet = SceneBeatSheet.model_validate_json(scene_bs_json)
         except Exception as e:
             print(e)
 
+        scene_uuid: str = scene_bs.scene_uuid
+        location_uuid: str = scene_bs.location_uuid
+        player_uuid: str = scene_bs.player_character_uuid
+
+        player_data = CharacterDialogueData(
+            character_uuid=player_uuid,
+            character_name=nd_spec.player_character.character_data.name,
+            character_description=nd_spec.player_character.character_data.portrait_image_prompt,
+            example_dialogue_lines = nd_spec.player_character.character_data.dialogue_examples
+        )
+
+        character_catalog = nd_spec.get_character_catalog()
+        npcs_list: list[CharacterDialogueData] = []
+        if not scene_bs.non_player_character_uuids is None:
+            if len(scene_bs.non_player_character_uuids) > 0:
+                for id in scene_bs.non_player_character_uuids:
+                    char_dict = character_catalog[id]
+                    char_name = char_dict["name"]
+                    char_desc = char_dict["portrait_image_prompt"]
+                    example_lines = char_dict["dialogue_examples"]
+                    data: CharacterDialogueData = CharacterDialogueData(
+                        character_uuid=id,
+                        character_name=char_name,
+                        character_description=char_desc,
+                        example_dialogue_lines=example_lines
+                    )
+                    npcs_list.append(data)
+
+        instructions_str = f"{PREAMBLE}"
+        instructions_str += f"""\nHere is information about the player character:
+{player_data.model_dump_json(indent=2)}\n"""
+        
+        if len(npcs_list) > 0:
+            npcs_info_str = ""
+            for data in npcs_list:
+                npcs_info_str += f"{data.model_dump_json(indent=2)}\n"
+            instructions_str += f"""\nHere is information about the non-player characters in this scene:
+{npcs_info_str}"""
+
+        return instructions_str
+
+
+
+    async def run_workflow(self, nd_spec_json: str, scene_bs_json: str) -> DialogueScene:
+        pass
+
 
 async def main():
-    dialogue_scene_schema = json.dumps(DialogueScene.model_json_schema(), indent=2)
-    print(f"=== DialogueScene ===\n{dialogue_scene_schema}\n\n")
+    
+    #dialogue_scene_schema = json.dumps(DialogueScene.model_json_schema(), indent=2)
+    #print(f"=== DialogueScene ===\n{dialogue_scene_schema}\n\n")
 
+    with open('KARLA_GAMES/TEST_DATA/DATA/nd_spec.json', 'r') as f:
+        nd_spec_json = f.read().strip()
+    with open('KARLA_GAMES/TEST_DATA/DATA/intro_bs.json', 'r') as f:
+        intro_bs_json = f.read().strip()
+    with open('KARLA_GAMES/TEST_DATA/DATA/first_scene_bs.json', 'r') as f:
+        first_scene_bs_json = f.read().strip()
 
+    test = await DialogueAgent().get_agent_instructions(nd_spec_json, intro_bs_json)
+    print(test)
 
+    # nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(nd_spec_json)
+    # intro_bs: SceneBeatSheet             = SceneBeatSheet.model_validate_json(intro_bs_json)
+    # first_scene_bs: SceneBeatSheet       = SceneBeatSheet.model_validate_json(first_scene_bs_json)
 
+    # print(f"{nd_spec.model_dump_json(indent=2)}")
+    # print("\n\n===================================\n\n")
+    # print(f"{intro_bs.model_dump_json(indent=2)}")
+    # print("\n\n===================================\n\n")
+    # print(f"{first_scene_bs.model_dump_json(indent=2)}")
 
 if __name__ == "__main__":
     asyncio.run(main())

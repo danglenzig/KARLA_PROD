@@ -105,6 +105,41 @@ class NarrativeDesignOutputSchema(BaseModel):
         npc_name = "NPC NAME"
         npc_name = next(npc.character_data.name for npc in self.non_player_characters if npc.character_data.uuid == uuid)
         return npc_name
+    
+    def get_scene_by_scene_synopsis(self) -> str:
+        output_str = f"\nTITLE: {self.story_title}\n"
+        output_str += f"\n\nSTORY SYNOPSIS: {self.synopsis}\n"
+
+        output_str += f"\n\nINTRO SCENE:\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrtive_summary}\n"
+
+        output_str += f"\n\nACT I:\n"
+        scene_idx = 1
+        for scene in self.act_one:
+            output_str += f"\n  SCENE {scene_idx}:\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            scene_idx += 1
+
+        output_str += f"\n\nACT II:\n"
+        scene_idx = 1
+        for scene in self.act_two:
+            output_str += f"\n  SCENE {scene_idx}:\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            scene_idx += 1
+
+        output_str += f"\n\nACT III:\n"
+        scene_idx = 1
+        for scene in self.act_three:
+            output_str += f"\n  SCENE {scene_idx}:\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            scene_idx += 1
+
+        output_str += f"\n\nOUTRO SCENE:\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
+
+
+
+        return output_str
 
     def human_readable(self) -> str:
         output_str = f"\nTITLE: {self.story_title}\n"

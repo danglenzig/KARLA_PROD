@@ -1,7 +1,8 @@
 #from __future__ import annotations
 
 from dotenv import load_dotenv
-from agents import Agent, Runner, RunResult
+from agents import Agent, Runner, RunResult, ModelSettings
+from openai.types.shared.reasoning import Reasoning
 from pydantic import BaseModel, Field
 from typing import Union, Literal, Annotated
 from pathlib import Path
@@ -290,6 +291,10 @@ class DialogueScene(BaseModel):
         ...,
         description="What changes by the end of the scene.",
     )
+    notes_and_work_product_summary: str = Field(
+        ...,
+        description="A brief summary of your workflow output, and any notes that might be helpful to the RenPy program assembler agent."
+    )
 
 
 class CharacterDialogueData(BaseModel):
@@ -310,6 +315,7 @@ class DialogueAgent():
 
         scene_uuid: str = scene_bs.scene_uuid
         location_uuid: str = scene_bs.location_uuid
+        synopsis: str = nd_spec.get_scene_by_scene_synopsis()
         player_uuid: str = scene_bs.player_character_uuid
 
         player_data = CharacterDialogueData(
@@ -336,23 +342,85 @@ class DialogueAgent():
                     )
                     npcs_list.append(data)
 
-        instructions_str = f"{PREAMBLE}"
-        instructions_str += f"""\nHere is information about the player character:
+        #=================
+        # Add the preamble
+        #=================
+        instructions_str = "#======================\n# INSTRUCTIONS PREAMBLE\n#======================\n"
+        instructions_str += f"{PREAMBLE}\n"
+
+        #=============
+        # Add synopsis
+        #=============
+        instructions_str += f"\n#==============\n# STORY CONTEXT\n#==============\n"
+        instructions_str += f"""\nHere are scene-by-scene synopses of the whole story to help you preserve end-to-end narrative continuity:
+{synopsis}\n"""
+        
+        #===============
+        # Add beat sheet
+        #===============
+#         instructions_str += f"\n#=================\n# SCENE BEAT SHEET\n#=================\n"
+#         instructions_str += f"""\nHere is the beat sheet for the scene that you will write dialogue for. It contains contextual information about:
+# - scene identity
+# - location identity
+# - player and non-player character UUIDs
+# - ordered beats
+# - each beat's purpose, summary, mood, focal character, present characters, interactivity flag, choice prompt, branch outcomes, and exit state
+# {scene_bs.model_dump_json(indent=2)}\n"""
+
+        #======================================
+        # Add the character information context
+        #======================================
+        instructions_str += f"\n#==================\n# CHARACTER CONTEXT\n#==================\n"
+        instructions_str += f"""\nHere is contextual information about the player character:
 {player_data.model_dump_json(indent=2)}\n"""
         
         if len(npcs_list) > 0:
             npcs_info_str = ""
             for data in npcs_list:
                 npcs_info_str += f"{data.model_dump_json(indent=2)}\n"
-            instructions_str += f"""\nHere is information about the non-player characters in this scene:
-{npcs_info_str}"""
-
+            instructions_str += f"""\nHere is contextual information about the non-player characters in this scene:
+{npcs_info_str}\n"""
+            
         return instructions_str
 
 
 
     async def run_workflow(self, nd_spec_json: str, scene_bs_json: str) -> DialogueScene:
-        pass
+        agent_instructions: str = await self.get_agent_instructions(nd_spec_json, scene_bs_json)
+        agent: Agent = Agent(
+            name="dialogue_agent",
+            instructions=agent_instructions,
+            model=MODEL,
+            output_type=DialogueScene,
+            model_settings=ModelSettings(
+                reasoning=Reasoning(
+                    effort="high"
+                )
+            )
+        )
+        
+        scene_bs: SceneBeatSheet = SceneBeatSheet.model_validate_json(scene_bs_json)
+        input_str = f"\n#======\n# INPUT\n#======\n"
+        input_str += f"""\nProduce a DialogueScene output for the scene indicated by this beat sheet. The beat sheet contains contextual information about:
+- scene identity
+- location identity
+- player and non-player character UUIDs
+- ordered beats
+- each beat's purpose, summary, mood, focal character, present characters, interactivity flag, choice prompt, branch outcomes, and exit state
+\n{scene_bs.model_dump_json(indent=2)}\n"""
+        
+        
+        
+        print(f"{input_str}\n\n\n")
+        
+        run_result: RunResult = await Runner.run(
+            agent,
+            input=input_str
+        )
+
+        ds: DialogueScene = run_result.final_output
+
+        return ds
 
 
 async def main():
@@ -367,8 +435,14 @@ async def main():
     with open('KARLA_GAMES/TEST_DATA/DATA/first_scene_bs.json', 'r') as f:
         first_scene_bs_json = f.read().strip()
 
-    test = await DialogueAgent().get_agent_instructions(nd_spec_json, intro_bs_json)
-    print(test)
+    instructs: str = await DialogueAgent().get_agent_instructions(nd_spec_json, intro_bs_json)
+    print(f"{instructs}\n\n\n")
+
+    ds: DialogueScene = await DialogueAgent().run_workflow(nd_spec_json, intro_bs_json)
+    print(ds.model_dump_json(indent=2))
+
+    # test = await DialogueAgent().get_agent_instructions(nd_spec_json, intro_bs_json)
+    # print(test)
 
     # nd_spec: NarrativeDesignOutputSchema = NarrativeDesignOutputSchema.model_validate_json(nd_spec_json)
     # intro_bs: SceneBeatSheet             = SceneBeatSheet.model_validate_json(intro_bs_json)

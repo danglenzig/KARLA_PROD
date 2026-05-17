@@ -37,6 +37,8 @@ transform bg_xform:
     xzoom 1.25
     # ^^ 1024 -> 1280 ("scene" keyword applies scale to both x and y)
 
+label start:
+
 """
 
 class DemoBuildData(BaseModel):
@@ -53,6 +55,7 @@ class RenPyScriptAssembler():
 
     def _get_set_background_code(self, event: SetBackgroundEvent)->str:
         out_str = f"    scene {event.location_uuid} at bg_xform with fade\n"
+        out_str += "\n"
         return out_str
     
     def _get_line_code(self, event: LineEvent)->str:
@@ -61,11 +64,13 @@ class RenPyScriptAssembler():
         except Exception as e:
             print(e)
         out_str: str = f"    \"{speaker_name}\" \"{event.text}\"\n"
+        out_str += "\n"
         return out_str
     
     def _get_narration_code(self, event: NarrationEvent)->str:
         out_str = f"    scene {self._current_scene_bg} at bg_xform\n"
         out_str += f"    {event.text}\n"
+        out_str += "\n"
         return out_str
     
     def _get_show_character_code(self, event: ShowCharacterEvent)->str:
@@ -83,13 +88,25 @@ class RenPyScriptAssembler():
                 else:
                     movein_str+='right'
         out_str = f"    show {event.character_uuid} at {screen_pos} with {movein_str}\n"
+        out_str += "\n"
         return out_str
     
     def _get_hide_character_code(self, event: HideCharacterEvent)->str:
-        return f"    hide {event.character_uuid}\n"
+        return f"    hide {event.character_uuid}\n\n"
     
     def _get_choice_code(self, event: ChoiceEvent)->str:
-        return "    # choice event code\n"
+        choice_id = event.choice_id
+        rejoin_label = f"{choice_id}_rejoin"
+        out_str = f"    \"{event.prompt}\"\n"
+        out_str += "    menu:\n"
+        for option in event.options:
+            option_label = f"{choice_id}_{option.option_id}"
+            out_str += f"        \"{option.option_text}\n"
+            out_str += f"            jump {option_label}\n"
+        out_str += f"label {rejoin_label}:\n"
+        out_str += f"    scene {self._current_scene_bg} at bg_xform\n"
+        out_str += "\n"
+        return out_str
 
     renpy_code_functions: dict = {
         'set_background': _get_set_background_code,
@@ -106,17 +123,26 @@ class RenPyScriptAssembler():
         intro_scene: DialogueScene = data.dialogue_scenes[0]
         first_scene: DialogueScene = data.dialogue_scenes[1]
 
+        script_rpy = f"{_PREAMBLE}\n"
+
         # THE INTRO SCENE
         self._current_scene_bg = intro_scene.location_uuid
         for beat in intro_scene.dialogue_beats:
             beat_events: list[DialogueEvent] = beat.events
 
+            script_rpy += f"    # ==== BEAT: {beat.beat_name} ====\n\n"
+
             for event in beat_events:
                 if event.type in self.renpy_code_functions:
                     #print(event.type)
-                    print(self.renpy_code_functions[event.type](self, event))
+                    #print(self.renpy_code_functions[event.type](self, event))
+                    script_rpy += self.renpy_code_functions[event.type](self, event)
                 else:
                     raise Exception("UNKOWN EVENT TYPE!")
+                
+        print(script_rpy)
+                
+
                 
 
 

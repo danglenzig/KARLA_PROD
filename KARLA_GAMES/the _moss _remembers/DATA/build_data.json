@@ -1,0 +1,1171 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/b157d233-6416-4726-ae27-01b7c2569949.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/6cfac5ba-0084-429b-beb3-464346298ecb.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/79aa7d02-2f06-45bf-b31f-23cdadd90fff.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/3701c945-983f-492d-9201-2dc28223e0e8.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/bg 37be67d0-1aa4-4c18-94fd-cd4ab2ad9891.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _moss _remembers/IMAGES/bg aea7cb82-68e3-4b71-be17-994dca0a2f02.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "f9037123-de19-4075-86e5-a6ce4b878778",
+      "scene_name": "intro",
+      "location_uuid": "37be67d0-1aa4-4c18-94fd-cd4ab2ad9891",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_homecoming_rite",
+          "source_purpose": "Establish Nessa's return, the altered mood of Hollowmere, and the desperate public warding rite.",
+          "source_exit_state": "Nessa sees at once that Hollowmere is in active crisis, not merely living under old superstition.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "37be67d0-1aa4-4c18-94fd-cd4ab2ad9891"
+            },
+            {
+              "type": "narration",
+              "text": "Hollowmere Green should smell of wet grass and cookfires. Instead it smells of cold iron, stripped bark, and rain that never quite falls."
+            },
+            {
+              "type": "narration",
+              "text": "Around the dead ash tree, villagers knot red ribbons and iron charms in plain sight. No one in Hollowmere ever used to wear fear this openly."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Home got bold while I was gone."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "Hands steady. Ribbon first. Iron outward. If you knot it loose, do it again."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "narration",
+              "text": "This is not old superstition performed for comfort. It is emergency work, and everyone on the green knows it."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_silas_named",
+          "source_purpose": "Introduce Silas as the village's chosen scapegoat and show Maelin trying to keep collective fear controlled.",
+          "source_exit_state": "Silas's name becomes inseparable from the village's attempt to feel safe.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The muttering around the tree changes shape. Shadows and bad weather stop being enough; one name starts passing from mouth to mouth."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "Keep to the rite. No one is helped by shouting."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "narration",
+              "text": "It does not stop them. Silas Thorn is spoken aloud now, folded into the ward like another iron charm."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "You're naming a man into it?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "People name what they think can be cornered."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "narration",
+              "text": "Maelin has not blessed the accusation, but she has not strangled it either. That tells Nessa enough."
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_returning_daughter",
+          "source_purpose": "Make Nessa's return public and give the player an early stance toward the accusation against Silas.",
+          "source_exit_state": "Nessa is no longer a returning stranger at the edge of the square; she is now personally implicated in the village's fear.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A few faces finally lift fully toward her. Recognition passes through the square faster than warmth ever did."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "Nessa Vale. You pick an ugly morning to come home."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "From the look of this square, ugly mornings have been breeding."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "Then answer cleanly. If Silas Thorn is the trouble, where do you stand?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Nessa respond when Silas is named in front of the crowd?",
+              "options": [
+                {
+                  "option_id": "question_blame",
+                  "option_text": "Question the blame on Silas",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Fear makes simple stories. Magic never does. If you're naming Silas, I want better than panic."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "A rough murmur runs the circle. Maelin's expression hardens, and several villagers look at Nessa as if she has declared herself already."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "ask_what_happened",
+                  "option_text": "Ask what happened first",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Tell me what happened before you ask where I stand."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The answer buys her room, not trust. The square goes wary, and no one volunteers facts."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "stay_guarded",
+                  "option_text": "Say little and read the square",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "I'm listening."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "She offers nothing else, only studies the faces around the tree. The reserve reads colder than she intends, and a few villagers take it for agreement."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_tovas_warning",
+          "source_purpose": "Introduce Tova's practical hostility and show that fear in Hollowmere has become organized, routine, and dangerous.",
+          "source_exit_state": "Nessa understands that the village's fear has become daily practice, not a single night of panic.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "From the edge of the rite, Tova Reed peels away from the onlookers like she has been measuring distances the whole time."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "If you're back for a reunion, you've chosen poor weather."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Is that a welcome or a warning?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "It's arithmetic. We've got night watches, barred doors, and people jumping at their own hens. One more witch poking old rot means one more thing to chase in the dark."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "narration",
+              "text": "Whatever has been moving through Hollowmere, the village has stopped treating it as a story. Fear has a schedule now."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_tree_line_glimpse",
+          "source_purpose": "Give the unrest a palpable jolt and bring Silas physically into the scene without resolving his role.",
+          "source_exit_state": "Silas stops being an abstract accusation and becomes a living, evasive presence on the edge of the scene.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The rite falters mid-knot. Every ribbon on the dead ash tree pulls tight at once in perfectly still air."
+            },
+            {
+              "type": "narration",
+              "text": "Iron charms begin to ring against the bark—thin, bright, wrong."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Back away from it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Silas."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "narration",
+              "text": "At the tree line, a gaunt figure in a patched coat stands half-hidden between trunks, watching. He flinches at his own name and steps back."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "No one runs after him. Not blind."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "narration",
+              "text": "By the time anyone lurches toward the trees, he's gone. Silas is no longer a rumor inside the rite but a living presence at its edge."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_fear_beyond_ghosts",
+          "source_purpose": "Land the scene's thematic turn by showing that secrecy and communal guilt are bound up with the haunting.",
+          "source_exit_state": "Nessa leaves the square resolved to reopen Vale Cottage and investigate why Silas's name is being used to cover something older.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Maelin starts breaking the gathering apart before fright can turn into a chase. People obey too quickly, as if they have rehearsed this."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff",
+              "text": "Inside, all of you. Bolts drawn before dusk. We will not have fools running into Blackbark over a glimpse."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "79aa7d02-2f06-45bf-b31f-23cdadd90fff"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "And you, Vale—open your cottage if you mean to stay, but don't start pulling at things this village learned to leave alone."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Things. Not ghosts."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "If you can't tell the difference yet, keep your head down until you can."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "narration",
+              "text": "No one corrects her. No one explains. The silence is too practiced to be fear of spirits alone."
+            },
+            {
+              "type": "narration",
+              "text": "As the square empties, Nessa understands the village is guarding a story as fiercely as it is guarding its thresholds. Silas's name is being used to hold something older in place."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Nessa leaves Hollowmere Green resolved to reopen Vale Cottage and investigate why Silas's name is being used to cover something older.",
+      "notes_and_work_product_summary": "Structured the public rite and villager pressure through narration because no crowd speaker UUID was provided. Beat 3 contains the scene's only choice and ends that beat. Portrait staging keeps a single visible speaker at a time, with no portraits during narration."
+    },
+    {
+      "scene_uuid": "49a5f93c-876f-48d6-966d-a0afc7f9d2f2",
+      "scene_name": "act1_scene1",
+      "location_uuid": "aea7cb82-68e3-4b71-be17-994dca0a2f02",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Reestablish Nessa's emotional connection to her family home and frame the cottage as a hoped-for sanctuary.",
+          "source_exit_state": "The cottage is open again, and Nessa notices that some of its disorder feels too pointed to be simple decay.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "aea7cb82-68e3-4b71-be17-994dca0a2f02"
+            },
+            {
+              "type": "narration",
+              "text": "The cottage door gives at last with a groan, spilling gray daylight over dust, dried herbs, and the stale breath of a house shut too long."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "sad",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Still standing. That's more courtesy than the square managed."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "If the roof holds and the stove draws, it'll do."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "narration",
+              "text": "The familiar layout steadies her: worktable, hearth, charm shelf, narrow bed. Home, if she squints past the neglect."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Dust I expected."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Drawers left half-open, not so much."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Introduce the core mystery through physical and magical evidence.",
+          "source_exit_state": "Nessa rules out a simple external intrusion and starts searching for an inside hand.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "At the threshold, hearth, and window frame, the old Vale protections wait in three wounded pieces."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Threshold sigil. Ash-circle. Rowan charm."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "One of you will tell the truth first."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "Which protection does Nessa inspect first?",
+              "options": [
+                {
+                  "option_id": "threshold",
+                  "option_text": "Check the threshold sigil.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "The chalk's rubbed from the cottage side."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Whoever parted this seal was already inside when they opened it."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "hearth",
+                  "option_text": "Examine the hearth ash-circle.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "confused",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "The ash is pushed outward toward the room."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Someone stepped out of protection. They didn't fight their way in."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "window_charm",
+                  "option_text": "Inspect the rowan charm by the window.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Unwound by hand. Slow, neat, patient."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Not brute force. Somebody knew exactly how much warding to loosen."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "So it wasn't some thing scratching to get in."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "This place was opened from within by someone who understood what they were touching."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Deepen the mystery by showing the disturbance was deliberate and informed, not random vandalism.",
+          "source_exit_state": "Nessa realizes the cottage has been touched by someone with unsettling knowledge of her family's protections.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The worktable has been searched with care: papers shifted, drawers tested, nothing smashed. A coin purse sits untouched beside an unpicked family knot."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "sad",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "No theft. No panic."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "And this knot wasn't cut. It was opened cleanly."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Either someone learned Vale work very well... or they wanted me to believe they had."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Bring the village's scrutiny into Nessa's private space and escalate the social threat.",
+          "source_exit_state": "The cottage no longer feels like private ground; Hollowmere's suspicion has followed Nessa to the door.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Bootsteps scrape outside. A shadow crosses the doorway before Tova Reed fills it, alert as if she'd found tracks instead of a neighbor."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "You made it in fast."
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "I came to see whether you meant to stay, or just wake the dust and leave again."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "You could've knocked."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "And miss the part where you decide if this place is yours again?"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Call it courtesy. Call it keeping count."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "That sounds less like courtesy and more like a fence post."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "narration",
+              "text": "The open doorway feels suddenly narrower. The cottage has barely been reclaimed, and already Hollowmere is standing in it."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Expose how fear has curdled into communal cruelty and let the player define Nessa's stance toward Tova.",
+          "source_exit_state": "Tova leaves with a final warning, and Nessa understands the village's fear is already producing cruelty, not just caution.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Then hear me plain."
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Stay out of village matters. Especially where Silas Thorn is concerned."
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Frightened people need order more than they need difficult truths."
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_05_choice_01",
+              "prompt": "How does Nessa answer Tova's warning?",
+              "options": [
+                {
+                  "option_id": "defy",
+                  "option_text": "Defy her outright.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "If your order is just blame with cleaner boots, I'm not impressed."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "I'm looking anyway."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "text": "Then don't act surprised when the village decides what side you're on."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "measured",
+                  "option_text": "Stay measured and draw her out.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "That's a warning dressed up as advice."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "What has panic bought you so far?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "text": "Bolted doors. Sleepless houses. One name said often enough it starts sounding like proof."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "invoke_silas",
+                  "option_text": "Invoke Silas directly.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "character_expression": "sad",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "Say his name like he's a person, Tova."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+                      "text": "If you're going to pour every shadow in Hollowmere over Silas, at least admit what you're doing."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+                      "text": "People like a shape for their terror. Silas fits, and that makes him useful."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Useful is ugly. Ugly still keeps a crowd from tearing itself apart."
+            },
+            {
+              "type": "line",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8",
+              "text": "Don't meddle unless you're ready to wear what splashes back."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "3701c945-983f-492d-9201-2dc28223e0e8"
+            },
+            {
+              "type": "narration",
+              "text": "Tova turns and goes without waiting for agreement. Her warning leaves a colder draft behind than the open door."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Pivot from public hostility to the private mystery of Silas's covert contact.",
+          "source_exit_state": "Nessa gains a secret lead that bypasses the village's public story.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "When the cottage falls quiet again, something small catches beneath the latch: a bit of twine tucked where no wind could have left it."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "No."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Double loop. Downward pull."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Silas."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "We used this for places we weren't supposed to name out loud."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "narration",
+              "text": "The knot is fresh, tied with the exact impatient pull she remembers from childhood."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "sad",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Drowned Well."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "You were close enough to leave this... and smart enough not to be seen."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "source_purpose": "End the scene with a clear investigative direction and a shifted understanding of the cottage.",
+          "source_exit_state": "The cottage is reclaimed only in name, and Nessa leaves the scene with the Drowned Well established as her next crucial lead.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Nessa closes her fist around the knot and looks over the room again. The cottage is open, but it no longer feels unopened."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Not a refuge, then. A trailhead."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Old records first. Then Blackbark."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949",
+              "text": "Whatever Hollowmere buried, it has already found my door."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b157d233-6416-4726-ae27-01b7c2569949"
+            },
+            {
+              "type": "narration",
+              "text": "The cottage stands reclaimed only in name. The next true lead points toward the Drowned Well."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Nessa reopens Vale Cottage, confirms its protections were deliberately disturbed from within by someone with informed knowledge of Vale wardcraft, clashes with Tova over Hollowmere's fear-driven scapegoating of Silas, and ends the scene with Silas's covert childhood sign pointing her toward the Drowned Well and old records.",
+      "notes_and_work_product_summary": "Adapted all seven beats in order with two interactive choices: one for which protection Nessa inspects first, and one for how she answers Tova. Silas does not appear on-screen in person; his presence is conveyed only through the childhood knot sign, preserving beat presence constraints and setting up the next investigative scene."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 145,
+      "g": 111,
+      "b": 74,
+      "a": 255,
+      "hex_string": "#916F4A"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 206,
+      "b": 189,
+      "a": 255,
+      "hex_string": "#D6CEBD"
+    },
+    "idle_small_color": {
+      "r": 185,
+      "g": 176,
+      "b": 161,
+      "a": 255,
+      "hex_string": "#B9B0A1"
+    },
+    "hover_color": {
+      "r": 199,
+      "g": 181,
+      "b": 141,
+      "a": 255,
+      "hex_string": "#C7B58D"
+    },
+    "selected_color": {
+      "r": 166,
+      "g": 132,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#A6845C"
+    },
+    "insensitive_color": {
+      "r": 110,
+      "g": 104,
+      "b": 96,
+      "a": 255,
+      "hex_string": "#6E6860"
+    },
+    "muted_color": {
+      "r": 74,
+      "g": 82,
+      "b": 68,
+      "a": 255,
+      "hex_string": "#4A5244"
+    },
+    "hover_muted_color": {
+      "r": 96,
+      "g": 104,
+      "b": 84,
+      "a": 255,
+      "hex_string": "#606854"
+    },
+    "text_color": {
+      "r": 236,
+      "g": 230,
+      "b": 220,
+      "a": 255,
+      "hex_string": "#ECE6DC"
+    },
+    "interface_text_color": {
+      "r": 243,
+      "g": 238,
+      "b": 228,
+      "a": 255,
+      "hex_string": "#F3EEE4"
+    },
+    "reasoning": "I chose a muted moss-and-bark palette with warm parchment text to match Hollowmere’s eerie forest-folklore atmosphere. The accent and selection colors echo rowan wood, old ritual tokens, and weathered bronze, while the hover states stay slightly lighter for clear usability without breaking the somber tone. Dialogue and menu text are kept near-ivory for strong readability against dark, decayed backgrounds, and the disabled/muted colors are subdued green-gray tones that fit the setting while remaining distinct from active UI states."
+  },
+  "character_dict": {
+    "b157d233-6416-4726-ae27-01b7c2569949": "Nessa Vale",
+    "6cfac5ba-0084-429b-beb3-464346298ecb": "Silas Thorn",
+    "79aa7d02-2f06-45bf-b31f-23cdadd90fff": "Maelin Briar",
+    "03e2d667-5447-4dc6-aa5b-51e52968d7ea": "Oren Ashdown",
+    "3701c945-983f-492d-9201-2dc28223e0e8": "Tova Reed"
+  }
+}

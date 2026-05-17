@@ -78,7 +78,7 @@ class SceneData(BaseModel):
     "'act2_scene1', 'act2_scene2', and so on.")
     location_uuid: str                                  = Field(..., description="The UUID of the scene's location")
     non_player_character_uuids: Optional[list[str]]     = Field(..., description="A list of UUIDs for any non-player characters that are present in the scene")
-    narrtive_summary: str                               = Field(..., description="A brief summary of the narrative that takes place in the scene. This will be used to generate " \
+    narrative_summary: str                               = Field(..., description="A brief summary of the narrative that takes place in the scene. This will be used to generate " \
     "the dialogue and player choices for the scene.")    
 
 class Scene(BaseModel):
@@ -111,31 +111,31 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n\nSTORY SYNOPSIS: {self.synopsis}\n"
 
         output_str += f"\n\nINTRO SCENE:\n"
-        output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrtive_summary}\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrative_summary}\n"
 
         output_str += f"\n\nACT I:\n"
         scene_idx = 1
         for scene in self.act_one:
             output_str += f"\n  SCENE {scene_idx}:\n"
-            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
 
         output_str += f"\n\nACT II:\n"
         scene_idx = 1
         for scene in self.act_two:
             output_str += f"\n  SCENE {scene_idx}:\n"
-            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
 
         output_str += f"\n\nACT III:\n"
         scene_idx = 1
         for scene in self.act_three:
             output_str += f"\n  SCENE {scene_idx}:\n"
-            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n    SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
 
         output_str += f"\n\nOUTRO SCENE:\n"
-        output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrative_summary}\n"
 
 
 
@@ -178,7 +178,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                     npc_name = self.get_npc_name(npc_uuid)
                     output_str += f"    {npc_name},\n"
 
-        output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrtive_summary}\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.intro_scene.scene_data.narrative_summary}\n"
 
         output_str += f"\n\nACT I:\n"
         scene_idx = 1
@@ -194,7 +194,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                         npc_name = self.get_npc_name(npc_uuid)
                         output_str += f"    {npc_name},\n"
             
-            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
 
         output_str += f"\n\nACT II:\n"
@@ -210,7 +210,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                         npc_name = self.get_npc_name(npc_uuid)
                         output_str += f"    {npc_name},\n"
             
-            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
         
         output_str += f"\n\nACT III:\n"
@@ -225,7 +225,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                         npc_name = self.get_npc_name(npc_uuid)
                         output_str += f"    {npc_name},\n"
             
-            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrtive_summary}\n"
+            output_str += f"\n  SCENE SYNOPSIS: {scene.scene_data.narrative_summary}\n"
             scene_idx += 1
 
         output_str += f"\n\nOUTRO:\n"
@@ -239,7 +239,7 @@ class NarrativeDesignOutputSchema(BaseModel):
                     npc_name = self.get_npc_name(npc_uuid)
                     output_str += f"    {npc_name},\n"
         
-        output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrtive_summary}\n"
+        output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrative_summary}\n"
 
         return output_str
     

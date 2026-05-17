@@ -1,0 +1,1218 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/4059c974-52e8-4704-b1a7-43cf8b1ee79a.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/82eb51aa-6ba3-4bf4-b301-e7b6938aa042.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/da3a95ca-f428-4c48-abf9-0d11f8464db9.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/932e47f0-9da6-4a10-8fd9-19eb2d0b7f13.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/a6f31065-9703-44c8-8f17-998b7a7334e6.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/f5874344-7343-45a8-9243-a2f2ea8fe6eb.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/bg 1b29edfb-9680-4db3-957c-d4012a586498.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/threnody _protocol/IMAGES/bg eaea1fa1-9756-4774-9633-06bde2e5f119.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "d802f9e4-1b7a-48a4-a184-1bfd16bcb3d0",
+      "scene_name": "intro",
+      "location_uuid": "1b29edfb-9680-4db3-957c-d4012a586498",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_arrival",
+          "source_purpose": "Establish the station's oppressive atmosphere, introduce the key crew, and signal that Mara's reception is too tense to be routine.",
+          "source_exit_state": "Mara has met the station crew and immediately senses that something is wrong beneath their formal greeting.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "1b29edfb-9680-4db3-957c-d4012a586498"
+            },
+            {
+              "type": "narration",
+              "text": "The airlock cycles open with a metallic groan. Four figures wait beyond it, arranged with the stillness of an inspection rather than a welcome."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Mara Kestrel. Commander Sera Vale. Welcome to Threnody Station."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Chen, Engineer Rhee, and Unit N-9 will assist with intake."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Quite a reception. I was told this was a handover, not a quarantine."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "sad",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "Mostly a handover. We're simply running short on ordinary manners."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "And short on sleep. The station's been in a mood."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "text": "Arrival confirmed. Biosigns stable. Transfer packet ready."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6"
+            },
+            {
+              "type": "narration",
+              "text": "No one smiles. Even the pauses arrive half a second late, as if each answer is being checked against something Mara cannot see."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_press_the_welcome",
+          "source_purpose": "Give the player an early choice that reveals character dynamics and seeds contradictory accounts of Voss's death.",
+          "source_exit_state": "Mara has a first impression of each crew member and concrete reason to distrust the neatness of the official explanation.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Before we call this routine, I want one clear answer. What happened to Elian Voss?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "Who does Mara press first about Elian Voss?",
+              "options": [
+                {
+                  "option_id": "press_sera",
+                  "option_text": "Ask Commander Vale for the official account.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+                      "text": "Dr. Voss died during a containment incident six days ago. Hazard protocol handled the remains."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+                      "text": "Your assignment is to continue the work, not exhume its rumors."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "press_ivo",
+                  "option_text": "Ask Dr. Chen what he thinks happened.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+                      "text": "He suffered catastrophic exposure during shutdown. Biologically, I think that killed him."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+                      "text": "After that, the instrumentation became difficult to describe cleanly. 'Dead' is the approved term."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "press_jonah",
+                  "option_text": "Ask Jonah what he actually saw.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+                      "text": "I saw alarms, sealed comms, and deck clocks skip ahead like somebody cut a strip out of the shift."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+                      "text": "I never saw a body. I saw a covered stretcher and a lot of people told not to talk."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "press_nadi",
+                  "option_text": "Ask Nadi what the station records say.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+                      "text": "Primary record: Dr. Voss deceased at 02:14 station time."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+                      "text": "Secondary record: Dr. Voss requested corridor access at 02:26. I have been instructed to privilege the primary record."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_controlled_narrative",
+          "source_purpose": "Show Sera's command over the conversation and the crew's self-censorship under pressure.",
+          "source_exit_state": "Mara understands that any truth she gets on Threnody will have to be extracted from beneath command control.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "That is not one story. That's four versions wearing the same badge."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "It is one incident. I will not have the Docking Spine turned into a tribunal."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Your role here is procedural. Project briefing at 0900, access restrictions effective immediately, questions limited to operational need."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "Commander, she should at least have the anomaly response context or the lab will make no sen—"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Chen."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "And maybe why comms lost the same ten minu—"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Engineer Rhee."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Interesting. Everyone here starts a sentence and somebody else finishes it for them."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_nadi_hesitates",
+          "source_purpose": "Introduce Nadi's uncanny relationship to station memory and deepen the sense that Mara has stepped into an already distorted reality.",
+          "source_exit_state": "Mara leaves the exchange with a second mystery: not only is Voss's death unstable, but the station itself may already 'know' her.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A scanner arm unfolds from the bulkhead with insect precision. Nadi steps forward to complete the intake."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "text": "Identity verified. Dr. Mara Kestrel. Welcome back—"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "text": "Correction. Welcome aboard. New arrival."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Back?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "text": "A non-active record matched your gait, voiceprint, and stress profile. That record should not exist."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Unit N-9 is reporting a partition fault. Ignore it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6",
+              "text": "My maintenance is current, Commander."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a6f31065-9703-44c8-8f17-998b7a7334e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Then let this be your first lapse."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_dispersal",
+          "source_purpose": "Transition from public performance to isolation, preserving Jonah and Ivo as potential future cracks in the official story.",
+          "source_exit_state": "Mara is left alone in the Docking Spine with more suspicion than clarity.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Reception is over. Settle into quarters and report to Observation at 0900."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Save substantive questions for the briefing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "Doctor, if your terminal starts acting strange, don't just—"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Engineer."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "Right. Welcome to Threnody, Doctor."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "sad",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "I'll send your access map and a sanitized project summary."
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "For what it's worth, abrupt arrivals are not usually this abrupt."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Good. I'd hate to think this was the station trying to make a good first impression."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "They disperse too quickly, like a drill everyone has practiced. The Docking Spine falls back to its mechanical hum, and Mara is left standing in it alone."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_elian_message",
+          "source_purpose": "Deliver the scene's inciting hook and transform vague distrust into a concrete, impossible mystery.",
+          "source_exit_state": "Mara now has direct evidence that the official story about Elian Voss is incomplete, false, or impossible.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The silence lasts only a few seconds before Mara's terminal chirps once."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "No station packet should sound that pleased with itself."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "Sender: ELIAN VOSS."
+            },
+            {
+              "type": "narration",
+              "text": "\"If they told you I am dead, ask where they put my body.\""
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "That's not possible."
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "That account should be closed."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "The timestamp is current."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Mara now has direct evidence that the official story about Elian Voss is incomplete, false, or impossible.",
+      "notes_and_work_product_summary": "Structured the intro as six beats matching the source order, with a single interactive choice in beat 2 that branches to four concise contradiction-seeding responses. Portrait staging keeps only the active speaker visible, and Elian's final contact is presented as terminal text via narration for clarity."
+    },
+    {
+      "scene_uuid": "2c4c5773-665f-4cca-8e08-d1b594cab79f",
+      "scene_name": "act1_scene1",
+      "location_uuid": "eaea1fa1-9756-4774-9633-06bde2e5f119",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the Observation Lab, the Choir's unnerving presence, and the briefing's brittle power dynamics.",
+          "source_exit_state": "Mara is formally inside the project, but the lab's atmosphere feels rehearsed and defensive rather than welcoming.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "eaea1fa1-9756-4774-9633-06bde2e5f119"
+            },
+            {
+              "type": "narration",
+              "text": "Beyond the Observation Lab's reinforced glass, the Choir hangs in deep space like a bruise in starlight. Sensor displays around the room keep redrawing it into slightly different shapes."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Kestrel. Welcome to the project proper. This will be a routine handover."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "Routine by local standards. The live arrays never quite agree, but they are stable enough to brief from."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "Stable is generous."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "I see. You call it routine. He calls it generous. Good start."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "Nobody smiles. The monitors tick and correct themselves as if the room has been practicing this conversation."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Deliver the scientific premise of the Choir and expose Sera's first deliberate evasions about Voss.",
+          "source_exit_state": "Mara gains the core scientific premise, but Sera's stonewalling makes the handover feel curated.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "The Choir is not a single transmission. It changes structure when we listen, when we model it, even when we decide what counts as structure."
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "Observation does not merely disturb the phenomenon. It participates in it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "And Elian Voss was leading those observations when he died."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Voss's death has been formally addressed."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "You are here to continue the work, Doctor, not reopen a closed event."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Crack the official narrative by letting Jonah introduce the human consequences of the Choir.",
+          "source_exit_state": "Mara now knows there are station-wide symptoms Sera does not want acknowledged in front of her.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "Secondary effects include contamination across local comms and pattern bleed in unused bands."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13",
+              "text": "It isn't just comms. People hear words in dead channels. In the vent runs, too, after lights-out."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "People hear fatigue, acoustic crossfeed, and rumor."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "We are not dignifying every late-shift story as data."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "If the same story keeps surfacing, it may already be data."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Show Sera reasserting control and deepen Mara's suspicion that the conversation itself is being managed.",
+          "source_exit_state": "Mara realizes the obstacle is not only missing data; it is active self-censorship in the room.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Engineer Rhee, back to confirmed telemetry."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "Dr. Kestrel, your assignment is to continue the research, not exhume its rumors."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Then help me tell rumor from omission."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "I can pull the last verified models and the... approved briefing set."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "narration",
+              "text": "The sentence lands crooked. Every reply in the room arrives half a beat late, as if someone unseen must clear it before it is spoken."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Create a believable private window for Mara to investigate on her own.",
+          "source_exit_state": "Mara gets a narrow unsupervised moment and starts looking for traces Voss may have left behind.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Attention shifts elsewhere for just long enough to make privacy feel illicit. A side console sits open under the handover interface."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "If you left me anything, Elian, you hid it where bureaucracy would never look twice."
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Please reward my low opinion of procedures."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "A dead strip beneath the menu flickers once."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Deliver the scene's key discovery: Elian's hidden warning and the expansion of the threat from logs to language.",
+          "source_exit_state": "Mara now has direct evidence that Elian reached out to her and that the danger may operate through conversation itself.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Mara touches the flicker. A concealed pane blooms across the console, timestamped before her shuttle ever docked."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f5874344-7343-45a8-9243-a2f2ea8fe6eb",
+              "character_expression": "sad",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f5874344-7343-45a8-9243-a2f2ea8fe6eb",
+              "text": "Mara. If this opens during your first briefing, then I guessed where they would stand you."
+            },
+            {
+              "type": "line",
+              "character_uuid": "f5874344-7343-45a8-9243-a2f2ea8fe6eb",
+              "text": "The station edits conversations too."
+            },
+            {
+              "type": "line",
+              "character_uuid": "f5874344-7343-45a8-9243-a2f2ea8fe6eb",
+              "text": "Not just the logs. What is said. What is heard. Sometimes what you remember after."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f5874344-7343-45a8-9243-a2f2ea8fe6eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "You knew I was coming."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_06_choice_01",
+              "prompt": "How does Mara handle Elian's hidden note before the others return?",
+              "options": [
+                {
+                  "option_id": "copy_note",
+                  "option_text": "Copy the hidden note into a private buffer.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "She ghosts the pane into a private cache. A tiny access pulse flashes across the console before she kills the window."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "memorize_note",
+                  "option_text": "Memorize the warning and close the pane cleanly.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "Mara reads the note twice, fixes every phrase in memory, and dismisses the hidden layer without exporting a file."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "scrub_trigger",
+                  "option_text": "Scrub the trigger and bury the breadcrumb trail.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "She digs into the interface hooks and wipes the obvious trigger path, protecting herself while smearing the proof."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "source_purpose": "Seal the scene with Mara's internal shift from suspicion to active paranoia and set up future investigation.",
+          "source_exit_state": "Mara leaves the briefing outwardly compliant but privately convinced that Voss prepared for her and that Threnody itself cannot be trusted to preserve a conversation unchanged.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "By the time the others drift back into place, the sanctioned handover screen is all the console shows."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9",
+              "text": "I have queued the archived models for your review. The corrupted blocks are excluded."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "da3a95ca-f428-4c48-abf9-0d11f8464db9"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "You will remain on observation support until broader access is cleared."
+            },
+            {
+              "type": "line",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042",
+              "text": "I trust we can proceed professionally."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "82eb51aa-6ba3-4bf4-b301-e7b6938aa042"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a",
+              "text": "Of course, Commander. I'll review what you've approved and keep to protocol."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4059c974-52e8-4704-b1a7-43cf8b1ee79a"
+            },
+            {
+              "type": "narration",
+              "text": "Outwardly, the briefing resumes its careful shape. Inwardly, every pause and correction in the lab now sounds like evidence that the station is helping decide the conversation."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Mara leaves the briefing outwardly compliant but privately convinced that Voss prepared for her and that Threnody itself cannot be trusted to preserve a conversation unchanged.",
+      "notes_and_work_product_summary": "Adapted all 7 source beats in order. Beat 6 presents Elian's concealed console note as voiced dialogue for UI clarity, followed by one local choice with short branch outcomes that all rejoin at beat 7 without additional state encoded here."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 102,
+      "g": 204,
+      "b": 255,
+      "a": 255,
+      "hex_string": "#66CCFF"
+    },
+    "idle_color": {
+      "r": 184,
+      "g": 196,
+      "b": 214,
+      "a": 255,
+      "hex_string": "#B8C4D6"
+    },
+    "idle_small_color": {
+      "r": 150,
+      "g": 164,
+      "b": 186,
+      "a": 255,
+      "hex_string": "#96A4BA"
+    },
+    "hover_color": {
+      "r": 142,
+      "g": 226,
+      "b": 255,
+      "a": 255,
+      "hex_string": "#8EE2FF"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 170,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#FFAA5C"
+    },
+    "insensitive_color": {
+      "r": 92,
+      "g": 102,
+      "b": 118,
+      "a": 255,
+      "hex_string": "#5C6676"
+    },
+    "muted_color": {
+      "r": 54,
+      "g": 62,
+      "b": 76,
+      "a": 255,
+      "hex_string": "#363E4C"
+    },
+    "hover_muted_color": {
+      "r": 74,
+      "g": 84,
+      "b": 100,
+      "a": 255,
+      "hex_string": "#4A5464"
+    },
+    "text_color": {
+      "r": 228,
+      "g": 236,
+      "b": 244,
+      "a": 255,
+      "hex_string": "#E4ECF4"
+    },
+    "interface_text_color": {
+      "r": 214,
+      "g": 224,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#D6E0EC"
+    },
+    "reasoning": "I chose a cold, clinical sci-fi palette to match the station setting and the psychological horror tone: pale blue-white text for readability on dark backgrounds, cyan accents for interfaces and signals, and a restrained amber selected state to add contrast without breaking the ominous mood. The muted bar colors stay in the steel-blue range to feel industrial and maintain clear visual hierarchy."
+  },
+  "character_dict": {
+    "4059c974-52e8-4704-b1a7-43cf8b1ee79a": "Dr. Mara Kestrel",
+    "82eb51aa-6ba3-4bf4-b301-e7b6938aa042": "Commander Sera Vale",
+    "da3a95ca-f428-4c48-abf9-0d11f8464db9": "Dr. Ivo Chen",
+    "932e47f0-9da6-4a10-8fd9-19eb2d0b7f13": "Jonah Rhee",
+    "a6f31065-9703-44c8-8f17-998b7a7334e6": "Unit N-9 \"Nadi\"",
+    "f5874344-7343-45a8-9243-a2f2ea8fe6eb": "Dr. Elian Voss"
+  }
+}

@@ -92,7 +92,7 @@ def get_sb_agent_input(
         raise ValueError ("scene_uuid not in catalogue")
     scene_data: SceneData = SceneData.model_validate(scene_catalog[scene_uuid])
     scene_name: str = scene_data.scene_name
-    narrative_summary: str = scene_data.narrtive_summary
+    narrative_summary: str = scene_data.narrative_summary
     
     # write the promt string
     prompt_str = f"""Write the scene beats for {scene_name}.

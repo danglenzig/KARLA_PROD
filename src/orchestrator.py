@@ -20,10 +20,9 @@ from discovery_agent import DiscoveryAgent, StoryConcept
 from tools.foo import get_uuid_string
 from gui_color_agent import GuiColorAgent, GuiColorScheme
 from dialogue_agent import DialogueAgent, DialogueScene
+from renpy_script_assembler import DemoBuildData, RenPyScriptAssembler
 
-class DemoBuildData(BaseModel):
-    art_assets: ArtAssetManifest
-    dialogue_scenes: list[DialogueScene]
+
 
 class DemoCreativeData(BaseModel):
     narrative_design_spec: NarrativeDesignOutputSchema
@@ -123,12 +122,23 @@ async def run_program():
         stage_three[0],
         stage_three[1]
     ]
+
+    char_dict: dict[str, str] = {}
+    character_catalog = nd_out.get_character_catalog()
+    for id in character_catalog:
+        char_dict[id] = character_catalog[id]['name']
+
+
     build_data: DemoBuildData = DemoBuildData(
         art_assets=creative_data.art_assets,
-        dialogue_scenes=dialogue_scenes_list
+        dialogue_scenes=dialogue_scenes_list,
+        gui_colors=color_scheme_,
+        character_dict=char_dict
     )
     build_data_json = build_data.model_dump_json(indent=2)
     await write_output_json(game_title_snake_case, build_data_json, 'build_data')
+
+    await RenPyScriptAssembler.run_workflow(build_data)
 
 
 

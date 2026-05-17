@@ -4,7 +4,7 @@ import asyncio
 from pathlib import Path
 import sys
 from datetime import datetime
-from camel_converter import to_camel
+from camel_converter import to_camel, to_snake
 import os
 import json
 
@@ -81,11 +81,11 @@ async def run_program():
     first_scene_uuid: str = nd_out.act_one[0].scene_data.uuid
 
     game_title:str = nd_out.story_title
-    game_title_camel_case = to_camel(game_title) 
+    game_title_snake_case = to_snake(game_title) 
 
     # STAGE 2: Art assets and scene beats
     stage_two_coroutines = [
-        ImageGenerator().get_demo_manifest(game_title_camel_case, nd_out_json, image_style), # returns ArtAssetManifest
+        ImageGenerator().get_demo_manifest(game_title_snake_case, nd_out_json, image_style), # returns ArtAssetManifest
         #ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
         SceneBeatAgent().run_workflow(nd_out_json, intro_scene_uuid),
         SceneBeatAgent().run_workflow(nd_out_json, first_scene_uuid),
@@ -107,7 +107,7 @@ async def run_program():
         color_scheme            = color_scheme_
     )
     creative_data_json: str = creative_data.model_dump_json(indent=2)
-    await write_output_json(game_title_camel_case, creative_data_json, 'creative_data')
+    await write_output_json(game_title_snake_case, creative_data_json, 'creative_data')
     #await write_output_json(temp_game_name, creative_data_json, 'creative_data')
 
 
@@ -128,7 +128,7 @@ async def run_program():
         dialogue_scenes=dialogue_scenes_list
     )
     build_data_json = build_data.model_dump_json(indent=2)
-    await write_output_json(game_title_camel_case, build_data_json, 'build_data')
+    await write_output_json(game_title_snake_case, build_data_json, 'build_data')
 
 
 

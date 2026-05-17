@@ -1,0 +1,1630 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/6f4a9ad5-1e4b-4b79-9466-b842d1dfc433.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/36e253e4-9f2d-4440-8e2c-4a8723235dbc.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/f80cdb25-1590-480e-8246-72ca09a575d8.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/0a0a96d3-aa21-4507-b917-88b476a54845.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/17578814-cae4-4e52-b768-624189098d2e.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/bg 6a52742f-a243-468a-a691-5a338c363944.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/Static Beneath the Stargazer/IMAGES/bg 2998f5b2-84e6-4b6e-b49c-99567dcce679.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "7bdb5568-2a43-4f3d-b088-332d7e5dd619",
+      "scene_name": "intro",
+      "location_uuid": "6a52742f-a243-468a-a691-5a338c363944",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_arrival",
+          "source_purpose": "Establish the motel's decayed atmosphere and the core Della-Milo dynamic before the mystery deepens.",
+          "source_exit_state": "Della is energized by the location, while Milo settles into his role as the practical counterweight.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "6a52742f-a243-468a-a691-5a338c363944"
+            },
+            {
+              "type": "narration",
+              "text": "The neon STARGAZER sign flickers over a sun-blasted courtyard, half vacancy and half crime against turquoise paint."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Okay. This place looks incredible. If bad decisions had a honeymoon suite, it'd be here."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Great. Love when the first location vibe is 'tetanus with ambience.'"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Exactly. Decay, desert light, vanished cult. This is not a motel, Milo. This is a launch campaign."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "I'm unloading the gear before you try to monetize the mildew."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_opening_monologue",
+          "source_purpose": "Show Della's polished podcast persona and let the player define her initial framing of the case.",
+          "source_exit_state": "The case now has an on-mic framing, and Della's priorities are clearly split between truth and attention.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "narration",
+              "text": "Della clips on her mic while Milo checks levels against the wind, the neon buzz, and the thin metallic wheeze of the courtyard ice machine."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Rolling. Stargazer Motor Lodge, opening standup. Please say 'Sunset Children' slower than last time."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "How does Della frame the podcast opener?",
+              "options": [
+                {
+                  "option_id": "sensationalize",
+                  "option_text": "Lean into paranormal hype.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Tonight, we begin at the Stargazer Motor Lodge, where thirty years ago the Sunset Children vanished and left behind a stain of rumor, devotion, and whatever still breathes in the walls."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Very strong. Also maybe not lead with 'breathes in the walls' if we'd like a room key."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "investigate",
+                  "option_text": "Take a skeptical investigative angle.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "This season, we're at the Stargazer Motor Lodge to investigate what really happened when the group known as the Sunset Children disappeared here thirty years ago, and why this town still can't agree on the story."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Clean, credible, and only lightly menacing. Nice."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "humanize",
+                  "option_text": "Center the people who were lost.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "sad",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Before they became a roadside ghost story, the Sunset Children were people who disappeared here thirty years ago. We're starting at the motel where the legend swallowed their names."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Okay. That one sounded less like branding and more like journalism. Weirdly into it."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_lenny_greeting",
+          "source_purpose": "Introduce Lenny as a vivid local foil who blends comedy, commerce, and evasiveness.",
+          "source_exit_state": "Lenny enters the story as both gatekeeper and unreliable source, immediately complicating Della's easy narrative.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "narration",
+              "text": "A screen door smacks open. A woman in leopard print and turquoise surveys them like she's deciding whether they're customers, pests, or free entertainment."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "text": "If y'all are here to film a haunting, angle that camera left. The sign lies prettier from there."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Della Voss. We're booked for two nights, one room, and hopefully at least one deeply unsettling revelation."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "text": "Lenora Quade, but civilized people call me Lenny. I own the Stargazer, which means I sell ice, towels, and disappointment at a fair nightly rate."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "We're mostly hoping for outlets that don't spark."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "text": "Aw, sweetheart, then you should've stayed in civilization."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_contradictory_lore",
+          "source_purpose": "Deliver the scene's first concrete exposition while preserving ambiguity around what Lenny really knows.",
+          "source_exit_state": "Della leaves the exchange with a concrete oddity to pursue, but no certainty whether Lenny is hiding fear, guilt, or just enjoying the show.",
+          "events": [
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_04_choice_01",
+              "prompt": "How does Della handle Lenny's evasive gossip?",
+              "options": [
+                {
+                  "option_id": "charm",
+                  "option_text": "Charm her into talking.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Come on, Lenny. Give me the deluxe local package. Ghosts, cults, bad behavior. I know you've got a greatest hits list."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "Sunset Children were weird, polite, and better tippers than traveling dentists. Sang at odd hours, smiled too long, and acted holy in the kind of way that stains pillowcases."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "They stayed in Room 8. If you get thirsty after midnight, don't run the sink unless you want the pipes carrying on like they miss somebody."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "See, that's the exact tone people use right before something becomes my problem."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "press",
+                  "option_text": "Push for straight facts.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Room number, dates, habits. Please skip the poetry and give me what you actually remember."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "Fine. Room 8. Quiet bunch. Paid cash. Creepy little church manners. Not half as holy as they advertised, and a lot tidier than the baptists."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "Write this down since facts are your kink: don't run the sink after midnight. That's when the plumbing starts sounding personal."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "She answered too fast. That warning's rehearsed."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "joke",
+                  "option_text": "Joke back and keep her talking.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "So the haunted motel package includes icy vibes and emotionally needy plumbing?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "Baby, needy plumbing is extra. The Sunset Children got Room 8, sang their midnight nonsense, smiled like pageant winners, and tipped like sinners."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+                      "text": "They said they were holy. I say real holy people don't make the air feel greasy. And if you're sleeping here, keep that sink off after midnight."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Fun warning. Hate how memorable that was."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_courtyard_hum",
+          "source_purpose": "Shift the scene from colorful setup into sensory unease through Milo's technical attention.",
+          "source_exit_state": "Attention narrows onto the ice machine as curiosity turns into real suspense.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "narration",
+              "text": "The courtyard settles into desert wind, neon buzz, and the chattery grind of an old ice machine. Milo lifts his recorder toward it, listening harder than he wants to."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Okay. Sign hum, compressor knock, electrical hiss..."
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "No. Wait. That rhythm isn't mechanical."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Patterned like bad wiring, or patterned like the universe finally respects my brand?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Patterned like it keeps almost becoming speech, which is a sentence I would like to unhear."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Then get closer. If the courtyard wants to say something, I want clean audio."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_whisper_static",
+          "source_purpose": "Deliver the first uncanny payoff and hook Della emotionally into the larger investigation.",
+          "source_exit_state": "Della is no longer just hunting a marketable mystery; she is personally hooked by evidence that something at the motel may actually answer back.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "narration",
+              "text": "The ice machine shudders. Instead of a steady rattle, a burst of static spills out in a wet braid of syllables—too intimate, too shaped, unmistakably human for one freezing second."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Tell me you heard that. Please tell me I didn't just record consonants from an appliance."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8",
+              "text": "Old machines make old noises. That's all. Y'all city people hear one little cough and start decorating it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f80cdb25-1590-480e-8246-72ca09a575d8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "That was not a cough. That was a voice trying very hard not to be one."
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Milo, save that clip. Back it up twice. We are absolutely not dealing with a photogenic rumor anymore."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Saved. Also, professionally, my skin is trying to quit."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Good. Mine too. Let's find out what at the Stargazer just answered back."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Della arrives treating the Stargazer like prime viral material, but the whispering burst from the ice machine gives her the first credible sign that something uncanny at the motel is real.",
+      "notes_and_work_product_summary": "Adapted all six source beats in order, preserving scene and location UUIDs and restricting dialogue to Della, Milo, and Lenny. Added one opening background event, kept single-speaker portrait staging throughout, and included exactly one choice in each interactive beat with short local branch events only. Choice 1 lets the player set Della's initial podcast framing; Choice 2 changes how she handles Lenny while still delivering Room 8 lore and the midnight sink warning. The final beat pivots cleanly from campy setup into the first genuine supernatural hook."
+    },
+    {
+      "scene_uuid": "2bdc9960-005a-4e85-8d32-b0fe6641213a",
+      "scene_name": "act1_scene1",
+      "location_uuid": "2998f5b2-84e6-4b6e-b49c-99567dcce679",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the diner as a social arena where Della must perform for information, and set up the contrast between her brand instincts and Milo's caution.",
+          "source_exit_state": "Della has everyone's attention, but the room is split between amusement, curiosity, and suspicion.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "2998f5b2-84e6-4b6e-b49c-99567dcce679"
+            },
+            {
+              "type": "narration",
+              "text": "The Dust Devil Diner glows in pink neon and old chrome. Half the room stares when Della walks in; the other half tries to make staring look casual."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Dust Devil Diner. Neon, pie, suspicious locals. We are so deeply in business."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Can we maybe order coffee before you brand the room?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_01_choice_01",
+              "prompt": "How does Della open the interview with a roomful of locals who already think she's a spectacle?",
+              "options": [
+                {
+                  "option_id": "charm",
+                  "option_text": "Turn on the charm and flatter the locals.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Morning, gorgeous people. Tell me this town's best story and I promise to make you all sound devastating."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "text": "Well, now I feel morally obligated to be your best source."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "spooky_hook",
+                  "option_text": "Open with a bold spooky hook.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "I'm looking for the vanished cult, the cursed room, and whichever one of you has the version that keeps people up at night."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "text": "Great. A microphone and a death wish walked in before noon."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "low_key",
+                  "option_text": "Keep it casual and let Milo ground things.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "We're asking around about the Sunset Children. Off the record, on the record, or somewhere between refills."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Mostly we're hoping for what people actually remember."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "Sit down, sugar. I'll pour coffee and scandal in equal measure."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "You can record. Just don't edit this county into a theme park."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Deliver the first wave of local lore through Jolene's comic, lurid perspective while burying usable clues inside the gossip.",
+          "source_exit_state": "Della has her first solid lead, but it's wrapped in enough performance that Milo can't yet tell how much to trust.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "Those Sunset Children weren't holy. They were organized weird, which is always worse."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "That is an incredible phrase. Keep going."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "Which part of Jolene's story does Della press for the mic?",
+              "options": [
+                {
+                  "option_id": "scandal",
+                  "option_text": "Ask for the scandalous version.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Give me the impolite version."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "text": "Sweetheart, they said grace before fooling around, then drifted back to Room 8 singing like midnight owed them money."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "practical",
+                  "option_text": "Ask for practical details.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Room number. Schedule. Habits. Hit me."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "text": "Room 8 was home base. Lights on late, in and out all day, hymns after midnight."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "fear",
+                  "option_text": "Ask what actually scared people.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "surprised",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Who stopped laughing first?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+                      "text": "Night cook did. Said the hymns from Room 8 sounded wrong, like folks singing through a drain."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Okay. Room 8 goes in the notes. 'Through a drain' goes in a very different folder."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Two folders is still progress, babe."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Introduce Bea as a grounded counterweight who resists Della's sensationalism while unexpectedly validating key parts of the story.",
+          "source_exit_state": "The case gains credibility, but Bea is now actively judging Della's motives.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "For accuracy, Jolene adds garnish to everything, including felonies."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "And you salt the life out of everything, including breakfast."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "Missing people aren't breakfast theater."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_03_choice_01",
+              "prompt": "How does Della respond when Bea accuses her of turning tragedy into content?",
+              "options": [
+                {
+                  "option_id": "barbs",
+                  "option_text": "Trade barbs with Bea.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Deputy, if I wanted cheap content, I'd cover haunted salad bars."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "text": "And yet somehow you've found a lower-budget tragedy."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "sincere",
+                  "option_text": "Drop the persona and answer sincerely.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "sad",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "I'm loud, not careless. Thirty years unsolved is still unsolved."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "text": "That's the first useful thing you've said."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "let_milo",
+                  "option_text": "Let Milo take the next question.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Can we stick to the file? Room, timeline, witness statements."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+                      "text": "Thank God. A sentence with bolts in it."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "Old report places the group in Room 8. That part is clean."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "And the rest?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "No bodies. No road trace. No official answer I'd trust on paper. So if you're here, be here for the people who vanished. Not just the thumbnail."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Use Milo's fact-finding to align the two conflicting witnesses and uncover the chapel lead.",
+          "source_exit_state": "Della now has two corroborated leads: Room 8 at the motel and the collapsed chapel beyond town.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Did they keep asking about someplace else? Not a vibe. A destination."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "That old chapel out past town. The one that's half dirt and half bad idea."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "Chapel of the Last Horizon. Collapsed years before the disappearance. Still draws idiots."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Both of you remembered the same place. That's not diner glitter anymore."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Room 8 and the chapel. That's enough to chase."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Clarify the scene's thematic texture by showing how each local packages horror differently, and let Della decide what kind of story she thinks she has.",
+          "source_exit_state": "Della stops treating the diner material as mere atmosphere and starts seeing a pattern worth chasing.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "See? Around here a disappearance becomes gossip, warning label, and pie-counter conversation by lunch."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "That's called living where it happened."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "Different packaging. Same two leads."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_05_choice_01",
+              "prompt": "What does Della flag as the most important takeaway from the diner interview?",
+              "options": [
+                {
+                  "option_id": "local_color",
+                  "option_text": "The town's local color is part of the story.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "The way this town talks about it is evidence too. Thirty years later, everybody's still performing around the hole."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Fine. Just don't let the performance outrank the map pins."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "room8",
+                  "option_text": "Room 8 is the next real lead.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "Room 8 is the pressure point. We hit the room before the myth gets any fatter."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Practical. I support this rare and beautiful moment."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "chapel",
+                  "option_text": "The chapel is the deeper mystery.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "character_expression": "surprised",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+                      "text": "The motel may be the headline, but that chapel feels like the part nobody wanted to understand."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+                      "text": "Maybe. But the motel is still the cleanest place to start proving anything."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Close the scene with a clean handoff into the next investigation step and lingering character friction.",
+          "source_exit_state": "Della exits the diner with corroborated leads, a wary deputy, a helpful gossip, and renewed confidence that the Sunset Children story may be more than a viral ghost-town anecdote.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845",
+              "text": "You poke around that motel, keep it legal. You livestream trespassing, I become the worst part of your day."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a0a96d3-aa21-4507-b917-88b476a54845"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "If you go chapel hunting later, take the frontage road. If you go ghost hunting now, take pie. Fear burns sugar."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Pie now, haunted architecture later, Room 8 immediately. Look at me developing a plan."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc",
+              "text": "I'll back up the interview before your plan mutates into branding."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "36e253e4-9f2d-4440-8e2c-4a8723235dbc"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e",
+              "text": "If those holy rollers rise up, tell them Jolene says quit harmonizing and tip their waitress."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "17578814-cae4-4e52-b768-624189098d2e"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433",
+              "text": "Come on, Milo. Let's see if Room 8 can actually outdo the menu."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6f4a9ad5-1e4b-4b79-9466-b842d1dfc433"
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Della exits the diner with corroborated leads, a wary deputy, a helpful gossip, and renewed confidence that the Sunset Children story may be more than a viral ghost-town anecdote.",
+      "notes_and_work_product_summary": "Six-beat diner interview scene with four interactive choice points. Branches are short flavor variations that preserve the same core discoveries: Room 8, the midnight hymns, and the collapsed chapel. Portrait visibility is reset after each spoken line to keep downstream assembly simple and consistent with one-speaker-on-screen staging."
+    }
+  ]
+}

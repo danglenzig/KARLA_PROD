@@ -398,8 +398,8 @@ class DialogueAgent():
 {npcs_info_str}\n"""
 
         
-        print(f"{input_str}\n\n\n")
-        
+        #print(f"{input_str}\n\n\n")
+        print(f"\nGenerating dialogue data for {scene_bs.scene_name}\n")
         run_result: RunResult = await Runner.run(
             agent,
             input=input_str

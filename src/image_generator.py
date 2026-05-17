@@ -82,7 +82,8 @@ Return a short confirmation after generation.""",
             "quality": os.getenv('IMAGE_CREATION_QUALITY'),
             "output_format": "png",
             "background": "transparent",
-            "moderation": "low"
+            "moderation": "low",
+            "model": "gpt-image-1.5"
         }
     )]
 )
@@ -112,7 +113,8 @@ Return a short confirmation after generation.""",
             "quality": os.getenv('IMAGE_CREATION_QUALITY'),
             "output_format": "png",
             "background": "opaque",
-            "moderation": "low"
+            "moderation": "low",
+            "model": "gpt-image-1.5"
         }
     )]
 )

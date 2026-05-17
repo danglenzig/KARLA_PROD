@@ -4,6 +4,7 @@ import asyncio
 from pathlib import Path
 import sys
 from datetime import datetime
+from camel_converter import to_camel
 import os
 import json
 
@@ -18,7 +19,11 @@ from image_generator import ImageGenerator, ArtAssetManifest
 from discovery_agent import DiscoveryAgent, StoryConcept
 from tools.foo import get_uuid_string
 from gui_color_agent import GuiColorAgent, GuiColorScheme
+from dialogue_agent import DialogueAgent, DialogueScene
 
+class DemoBuildData(BaseModel):
+    art_assets: ArtAssetManifest
+    dialogue_scenes: list[DialogueScene]
 
 class DemoCreativeData(BaseModel):
     narrative_design_spec: NarrativeDesignOutputSchema
@@ -56,7 +61,7 @@ def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
 
 async def run_program():
 
-    temp_game_name: str = get_uuid_string()
+    #temp_game_name: str = get_uuid_string()
     image_style = ImageStyle.CLEAN
 
     # STAGE 0: Interview the user and generate a concept
@@ -75,9 +80,13 @@ async def run_program():
     intro_scene_uuid: str = nd_out.intro_scene.scene_data.uuid
     first_scene_uuid: str = nd_out.act_one[0].scene_data.uuid
 
+    game_title:str = nd_out.story_title
+    game_title_camel_case = to_camel(game_title) 
+
     # STAGE 2: Art assets and scene beats
     stage_two_coroutines = [
-        ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
+        ImageGenerator().get_demo_manifest(game_title_camel_case, nd_out_json, image_style), # returns ArtAssetManifest
+        #ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
         SceneBeatAgent().run_workflow(nd_out_json, intro_scene_uuid),
         SceneBeatAgent().run_workflow(nd_out_json, first_scene_uuid),
         GuiColorAgent().run_workflow(nd_out_json)
@@ -98,7 +107,28 @@ async def run_program():
         color_scheme            = color_scheme_
     )
     creative_data_json: str = creative_data.model_dump_json(indent=2)
-    await write_output_json(temp_game_name, creative_data_json, 'creative_data')
+    await write_output_json(game_title_camel_case, creative_data_json, 'creative_data')
+    #await write_output_json(temp_game_name, creative_data_json, 'creative_data')
+
+
+    # STAGE 3: The build stage
+    stage_three_coroutines = [
+        DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[0].model_dump_json(indent=2)),
+        DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[1].model_dump_json(indent=2))
+    ]
+    stage_three_gather = asyncio.gather(*stage_three_coroutines)
+    stage_three = await stage_three_gather
+
+    dialogue_scenes_list: list[DialogueScene] = [
+        stage_three[0],
+        stage_three[1]
+    ]
+    build_data: DemoBuildData = DemoBuildData(
+        art_assets=creative_data.art_assets,
+        dialogue_scenes=dialogue_scenes_list
+    )
+    build_data_json = build_data.model_dump_json(indent=2)
+    await write_output_json(game_title_camel_case, build_data_json, 'build_data')
 
 
 

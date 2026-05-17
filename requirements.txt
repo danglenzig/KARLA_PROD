@@ -5,6 +5,7 @@ annotated-types==0.7.0
 anyio==4.13.0
 attrs==26.1.0
 beautifulsoup4==4.14.3
+camel-converter==5.1.0
 certifi==2026.4.22
 cffi==2.0.0
 charset-normalizer==3.4.7

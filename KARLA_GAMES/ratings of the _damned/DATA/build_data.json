@@ -1,0 +1,1575 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/e5db3ee8-0876-4de1-9105-93adcfcb8d84.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/bada5741-2a09-4e6b-a21b-e86ae1aafaec.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/96551d25-a8a0-4bad-9954-82d2471ac762.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/7487c532-5dfd-436f-8d6a-3be89da2033a.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/bg bfa7ab80-28da-49cd-818e-6e0fbb3ce09e.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/ratings of the _damned/IMAGES/bg f8808a37-8d4c-4411-93df-cdd5fff7f6fb.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "2e0c7128-0a4b-4acd-84d5-b2124bf9c788",
+      "scene_name": "intro",
+      "location_uuid": "bfa7ab80-28da-49cd-818e-6e0fbb3ce09e",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_opening_monologue",
+          "source_purpose": "Establish Dahlia's on-air power, the campy tone, and the high-wire nature of live local television.",
+          "source_exit_state": "Dahlia begins the show in control, but the studio atmosphere already feels competitive rather than celebratory.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "bfa7ab80-28da-49cd-818e-6e0fbb3ce09e"
+            },
+            {
+              "type": "narration",
+              "text": "Purple gels wash over a cardboard graveyard that should look ridiculous and somehow doesn't. The ON AIR light glows red."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Good evening, my little degenerates. Madame Massacre welcomes you back to the only crypt in Pennsylvania with decent lighting."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Tonight's feature is cheap, nasty, and held together with inferior stitching. In other words, a local classic."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "Sports is over, folks. Try not to commit any felonies athletically. Madame, the morgue is yours."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Thank you, Chip. Go ice down that jawline before it pulls a muscle."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "narration",
+              "text": "Chip backs off with an amused grin. Off camera, the crew's laughter lands a shade too sharp to feel friendly."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_lenora_drops_the_news",
+          "source_purpose": "Introduce the career threat and frame Roxie as a station-sanctioned rival.",
+          "source_exit_state": "Dahlia learns Roxie is not a rumor or a guest spot but a real institutional threat backed by management.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Commercial music rolls. Lenora glides onto the set with Roxie in tow while Chip lingers by the camera rail to watch the bloodletting."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Quick programming note, Dahlia. We're launching a new midnight block. Younger demo, brighter pace, fewer complaints from men who sell mattresses."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Neon, noise, bad choices. You know. Public service."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Roxie fronts it. This is modernization, not replacement. Let's all be adults and pretend the distinction matters."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "How does Dahlia answer Lenora's 'modernization' pitch?",
+              "options": [
+                {
+                  "option_id": "sarcastic",
+                  "option_text": "Cut back with open sarcasm.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Modernization? Darling, if you plan to embalm me on company time, at least wait until I'm cold."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Chip winces. Roxie's grin sharpens. Lenora gets her first clean taste of open war."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "strategic",
+                  "option_text": "Answer coolly and make it sound like business.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Then call it competition and send me the numbers. I don't mind a fight, Lenora. I mind sloppy accounting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "text": "Excellent. Fight pretty and keep the sponsors calm."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "laugh_off",
+                  "option_text": "Laugh it off and give nothing away.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Please. If Marlowe suddenly wants neon, I'll simply haunt in brighter colors."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Lenora's smile never slips, but now she has to guess how much blood she drew."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_chip_and_roxie_press_in",
+          "source_purpose": "Complicate the reveal with flirtation, generational friction, and performative rivalry.",
+          "source_exit_state": "Dahlia's professional threat becomes personal, with Chip adding fuel instead of comfort.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "You okay? Because that smile says 'fine,' but the nails say 'vehicular homicide.'"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "I'm touched you noticed. Keep looking at me like that and I'll start charging cross-promotion rates."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Don't blame me, Madame. I just showed up with better synth music."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "And such compassion. Neon really is the future."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "If this is the new late-night lineup, I'm suddenly very interested in management."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Careful, Mercer. She looks like she bites when cornered."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Only when bored, sweetheart."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_bagman_as_bit",
+          "source_purpose": "Pivot the scene from station politics into local folklore by having Dahlia weaponize the legend as entertainment.",
+          "source_exit_state": "The Bagman is invoked on live television as a joke, setting the stage for an unwelcome answer.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The red tally light flashes back on. Dahlia turns for camera with her pulse hidden under satin."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Welcome back, my little grave robbers. While others chase trends, I remain devoted to quality corruption."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "So let's zhuzh up a hometown legend. The Bagman of Briar Creek: Marlowe's own shambling pile of mud, trash, and municipal guilt."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "If he lumbers in tonight, tell him to wipe his feet. I only allow one messy man on this set at a time."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_the_warning_call",
+          "source_purpose": "Introduce the uncanny threat through a human interruption that refuses to behave like harmless local color.",
+          "source_exit_state": "The set is no longer having fun with the legend; even the skeptics feel the mood curdle.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Oh, look. The phone line lives. Let's see which insomniac I've corrupted tonight."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "narration",
+              "text": "An older woman's voice crackles over the line, breathless and deadly serious. 'Don't you joke about Briar Creek on television. Some things listen better when a whole town is watching.'"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Keep it tight, Dahlia."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_05_choice_01",
+              "prompt": "How does Dahlia handle the disturbing live warning?",
+              "options": [
+                {
+                  "option_id": "mock",
+                  "option_text": "Mock the caller and keep the show buoyant.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Then your swamp suitor may send me an angry letter in mildew. This is television, darling, not a séance."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "A couple of laughs escape on instinct. Nobody sounds convinced."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "probe",
+                  "option_text": "Humor the caller and ask what she means.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "confused",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "All right, sweetheart. Why not on television?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The woman answers at once. 'Because screens make hungry things bigger.' The set falls dead quiet."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "cut_short",
+                  "option_text": "Cut the call short with polished reassurance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Thank you for the concern, Marlowe. We'll keep our swamp suitors at arm's length and our schedule moving."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The line clicks dead. So does the room's easy mood."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_static_aftertaste",
+          "source_purpose": "End the scene on a concrete supernatural disturbance that Dahlia cannot publicly acknowledge.",
+          "source_exit_state": "Dahlia keeps her dignity and the broadcast limps forward, but she leaves the scene facing two threats she can no longer dismiss: Roxie's rise and the possibility that Briar Creek answered back.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Before anyone can recover, every studio monitor erupts into hard white static. The lights flutter. The movie soundtrack warps into a wet mechanical howl."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "That better be a fuse and not an omen."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Okay. Cute bit. Which one of you psychos approved this?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "No panic. Stay live."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Marlowe, a brief disturbance from the underworld. We return you now to our regularly scheduled indecency."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Do try not to feed the static."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "narration",
+              "text": "The broadcast limps onward on sheer nerve. Dahlia never breaks for the audience, but once the lights steady she knows the warning hit something real. Roxie's rise is one threat. Briar Creek may be another entirely."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "The live taping ends with Dahlia still publicly poised, but Lenora's anointed rival and the Bagman disturbance have both become threats she can no longer dismiss.",
+      "notes_and_work_product_summary": "Six beats preserved in source order. Interactive beats use one choice each and end on Dahlia's response for clean downstream assembly. The unidentified caller's warning is delivered via narration because no caller UUID was provided in scene data."
+    },
+    {
+      "scene_uuid": "a92a0fa1-b985-4ba5-bdbc-32449770a16f",
+      "scene_name": "act1_scene1",
+      "location_uuid": "f8808a37-8d4c-4411-93df-cdd5fff7f6fb",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01_newsroom_fallout",
+          "source_purpose": "Re-establish the aftermath of the intro and frame the station's priorities around ratings, sponsor nerves, and spectacle.",
+          "source_exit_state": "Dahlia realizes the station is treating last night's disturbance as a ratings opportunity, not something to fear.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "f8808a37-8d4c-4411-93df-cdd5fff7f6fb"
+            },
+            {
+              "type": "narration",
+              "text": "The newsroom hums like a bad transformer. Phones ring, ad reps bark through headsets, and everyone in the building has an opinion about last night's static."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Everybody quit saying 'haunted' where sponsors can hear it. One Bagman call, one static burp, and frozen pizza thinks we're hexed."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Hexed tests great with eighteen-to-thirty-fours."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Marvelous. The apocalypse has a target demo."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "You look like you got front-row seats, though. You alright?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "I am immaculate. Any tremor you detect is expensive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Good. Because sponsors are rattled, viewers are curious, and curiosity bills better than calm."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "So last night's little seizure is a marketing angle now?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "If panic spikes the phones, it's called momentum."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "narration",
+              "text": "Lenora crooks one manicured finger toward her office. Whatever happened on air, the station has already decided to sell it."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02_lenora_sets_the_terms",
+          "source_purpose": "Lock Dahlia into the scene's central conflict by making Lenora's modernization agenda explicit.",
+          "source_exit_state": "Dahlia is formally trapped in a public ratings war and now knows Lenora wants the spectacle almost as much as the outcome.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Here's your refresh. Quicker opens. Hotter promos. More Chip. The audience wants velocity, not velvet."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "My velvet built your midnight block."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "And now it shares shelf space. Roxie needles you, you needle back, Chip keeps the chemistry marketable, and the town picks a queen. Conflict lifts both slots."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "How does Dahlia respond to Lenora's modernization mandate?",
+              "options": [
+                {
+                  "option_id": "grudging_agreement",
+                  "option_text": "Smile thinly and agree—for now.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Fine. I'll modernize just enough to make you regret asking."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "text": "Perfect. Compliance with eyeliner. That's all I need."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "open_resistance",
+                  "option_text": "Tell Lenora exactly what you think of her manufactured feud.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "If you want two women clawing each other for scraps, buy a zoo. I host a program."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "text": "Then start behaving like a brand, not a grievance."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "diva_spin",
+                  "option_text": "Accept the stunt, but make it clear you're the headliner.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "If you're staging a war, put me on the poster. Nobody buys a ticket for the opening act."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+                      "text": "Exactly. I don't care who throws the first punch, only who holds the audience."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03_chip_crosspromo_pitch",
+          "source_purpose": "Add romantic spark while clarifying that Chip is now part of Lenora's strategy, whether he likes it or not.",
+          "source_exit_state": "Chip becomes a potentially valuable partner in the ratings battle, and their chemistry is now part of the station's machinery.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Outside Lenora's office, Chip leans on the doorframe like casual concern is part of his hair product budget."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "Well, partner, Lenora already sold us as the station's hottest mixed double."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "If she puts me beside a touchdown graphic, I'll poison the Xerox."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "Kidding aside, she pitched us to sponsors this morning. And you got that look again. Last night really got under the lacquer, huh?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_03_choice_01",
+              "prompt": "How does Dahlia play Chip's offer to help with the crossover?",
+              "options": [
+                {
+                  "option_id": "lean_in",
+                  "option_text": "Flirt back and let the concern land.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Keep talking like that and I might let you escort me into the crossfire."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "text": "Now there's a promo I wouldn't mind shooting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "keep_it_professional",
+                  "option_text": "Use him as a practical ally inside the station.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "If you're useful, bring me sponsor names and whatever Lenora promised them."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "text": "Now you're speaking my native language: gossip with a budget."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "deflect",
+                  "option_text": "Deflect with sharp humor and keep your distance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "I'm fine. Slightly cursed, heavily moisturized, and booked through the weekend."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+                      "text": "You joke like a fire alarm. Loud, stylish, and usually covering something."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04_roxies_mask_slips",
+          "source_purpose": "Complicate the rivalry by revealing Roxie as another person being used by the station, not just a shallow threat.",
+          "source_exit_state": "Dahlia can no longer see Roxie as a simple replacement; the rivalry now has uncomfortable emotional depth.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "At the promo corner, neon gels flash while Roxie refilms ten seconds everybody already said they loved."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "No, faster. If I blink, I want it to look like an event."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Darling, if you sprint any harder, the audience will mistake you for a station break."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Yeah, well, everybody here wants me legendary by Friday."
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Nobody mentions where I'm supposed to fail first. Preferably in private."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "How does Dahlia respond when Roxie's confidence briefly cracks?",
+              "options": [
+                {
+                  "option_id": "needle",
+                  "option_text": "Sharpen the feud and push Roxie back behind her swagger.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Then learn fast. Television smells fear before it sees cleavage."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "text": "Good. Maybe I'll make mine your problem."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "offer_advice",
+                  "option_text": "Give cutting but useful advice.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Hold still for half a beat. Confidence looks cheap when it runs."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "character_expression": "surprised",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "text": "That's annoyingly solid advice."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "hint_truce",
+                  "option_text": "Suggest Lenora is playing both of you.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+                      "text": "Lenora wants blood because blood trends. You and I don't have to make it easy."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+                      "text": "Careful, Madame. One more sentence like that and I might mistake it for solidarity."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05_the_wrong_box",
+          "source_purpose": "Introduce the Briar Creek thread through everyday station chaos so the mystery grows organically out of the workplace conflict.",
+          "source_exit_state": "The Bagman story stops feeling like harmless local color and starts looking like part of WKLV's buried history.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "By noon, the station is fighting over shelf space, sponsor copy, and whether Roxie's neon coffin outranks Dahlia's rubber bats."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Why is my promo gear in storage with foam gravestones and a fake guillotine?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Because your promo gear turns over ad dollars. The guillotine does not. Move the junk."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "Little late. The junk just exploded."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "narration",
+              "text": "A split archive box gives way across the tile. Brittle tapes, old WKLV logs, and city paperwork spill out in a papery avalanche."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Briar Creek. Dump-road complaints. These aren't punchlines, Lenora."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "They're antiques. Local scare copy from before everyone learned how to package a myth."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec",
+              "text": "There's crew notation on these. Missing footage. Legal holds. This was real enough for paperwork."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "bada5741-2a09-4e6b-a21b-e86ae1aafaec"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762",
+              "text": "Wait. The creek wasn't just camp? We used to cover it straight?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "96551d25-a8a0-4bad-9954-82d2471ac762"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Apparently before Marlowe started flirting with its own rot, somebody here took notes."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "narration",
+              "text": "The newsroom noise keeps chattering around them, but the box sits on the floor like something that expected to stay buried."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06_dahlia_claims_a_clue",
+          "source_purpose": "End the scene by giving Dahlia a new private objective that expands the story beyond a simple ratings feud.",
+          "source_exit_state": "Dahlia exits still locked in the ratings war, but now carrying a stolen clue that points toward WKLV's deeper connection to Briar Creek.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Enough. Box back in storage. I have sponsors calling, and I will not answer them with mold."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "You say that like mold hasn't carried half this station."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a",
+              "text": "Leave the archaeology, Dahlia. We sell the present."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "7487c532-5dfd-436f-8d6a-3be89da2033a"
+            },
+            {
+              "type": "narration",
+              "text": "As Lenora jams the folders back into cardboard, one tape log skids loose: BRIAR CREEK / DUMP ROAD / HOLD FOR LEGAL."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84",
+              "text": "Legal, hm. Nothing says 'harmless local legend' like paperwork in all caps."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e5db3ee8-0876-4de1-9105-93adcfcb8d84"
+            },
+            {
+              "type": "narration",
+              "text": "While Lenora straightens the box, Dahlia slips the log into her glove and glides out smiling like she's won something smaller, and much more dangerous, than an argument."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Dahlia exits still locked in the ratings war, but now carrying a stolen clue that points toward WKLV's deeper connection to Briar Creek.",
+      "notes_and_work_product_summary": "Single-location newsroom/back-office scene with one background set at opening. Beats 2, 3, and 4 each contain exactly one local choice with short branch reactions that converge cleanly into the next beat. Dialogue preserves Lenora's ratings-war manipulation, Chip's flirtatious cross-promo role, Roxie's insecurity beneath swagger, and the archive-box reveal that shifts the scene from workplace rivalry into Briar Creek mystery."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 255,
+      "g": 63,
+      "b": 140,
+      "a": 255,
+      "hex_string": "#FF3F8C"
+    },
+    "idle_color": {
+      "r": 226,
+      "g": 210,
+      "b": 232,
+      "a": 255,
+      "hex_string": "#E2D2E8"
+    },
+    "idle_small_color": {
+      "r": 189,
+      "g": 168,
+      "b": 198,
+      "a": 255,
+      "hex_string": "#BDA8C6"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 102,
+      "b": 173,
+      "a": 255,
+      "hex_string": "#FF66AD"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 184,
+      "b": 73,
+      "a": 255,
+      "hex_string": "#FFB849"
+    },
+    "insensitive_color": {
+      "r": 120,
+      "g": 112,
+      "b": 128,
+      "a": 255,
+      "hex_string": "#787080"
+    },
+    "muted_color": {
+      "r": 67,
+      "g": 58,
+      "b": 76,
+      "a": 255,
+      "hex_string": "#433A4C"
+    },
+    "hover_muted_color": {
+      "r": 92,
+      "g": 78,
+      "b": 104,
+      "a": 255,
+      "hex_string": "#5C4E68"
+    },
+    "text_color": {
+      "r": 245,
+      "g": 236,
+      "b": 247,
+      "a": 255,
+      "hex_string": "#F5ECF7"
+    },
+    "interface_text_color": {
+      "r": 255,
+      "g": 244,
+      "b": 246,
+      "a": 255,
+      "hex_string": "#FFF4F6"
+    },
+    "reasoning": "The scheme leans into late-1980s horror-TV glam: neon magenta for accents, warm creamy whites for readable dialogue, and lavender-gray UI text to feel stylish without losing contrast. Selected state uses a citrus-gold highlight to echo studio lights, ratings urgency, and campy showbiz energy. Muted tones stay dark and purplish to fit the smoky, trashy, supernatural atmosphere while keeping bars and inactive elements legible."
+  },
+  "character_dict": {
+    "e5db3ee8-0876-4de1-9105-93adcfcb8d84": "Dahlia Graves / Madame Massacre",
+    "bada5741-2a09-4e6b-a21b-e86ae1aafaec": "Chip Mercer",
+    "96551d25-a8a0-4bad-9954-82d2471ac762": "Roxie Static",
+    "7487c532-5dfd-436f-8d6a-3be89da2033a": "Lenora Pike",
+    "10a1f05c-bbac-42c0-b419-ed0f894725d6": "Mavis Hallowell"
+  }
+}

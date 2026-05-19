@@ -138,7 +138,10 @@ async def run_program():
     build_data_json = build_data.model_dump_json(indent=2)
     await write_output_json(game_title_snake_case, build_data_json, 'build_data')
 
-    await RenPyScriptAssembler.run_workflow(build_data)
+    rpy_script = await RenPyScriptAssembler().run_workflow(build_data)
+    rpy_path = f"{get_data_folder_path(game_title_snake_case)}/script.rpy"
+    with open(rpy_path, 'w') as f:
+        f.write(rpy_script)
 
 
 

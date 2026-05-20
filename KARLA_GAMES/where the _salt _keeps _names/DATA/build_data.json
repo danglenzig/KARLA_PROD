@@ -1,0 +1,1349 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/where the _salt _keeps _names/IMAGES/fb0fa485-3066-40e0-ba20-a955ab7f4c84.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/where the _salt _keeps _names/IMAGES/630fe0d3-d9bd-44d2-afee-765ee8e3bf61.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/where the _salt _keeps _names/IMAGES/736f5435-de0b-48a4-9df6-2b0e51a60012.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/where the _salt _keeps _names/IMAGES/bg 9c797922-f35e-476a-b08e-220d314571e7.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/where the _salt _keeps _names/IMAGES/bg 6a4fcb2f-52fe-464a-994b-f1a1d36772a7.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "9c2ead88-a820-4dd3-8d83-c5941aa7c88d",
+      "scene_name": "intro",
+      "location_uuid": "9c797922-f35e-476a-b08e-220d314571e7",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_false_name_arrival",
+          "source_purpose": "Establish Brego's return, his hunted mindset, and his immediate goal of disappearing into the harbor traffic.",
+          "source_exit_state": "Brego gets deeper into the harbor, but his concealment already feels thin.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "9c797922-f35e-476a-b08e-220d314571e7"
+            },
+            {
+              "type": "narration",
+              "text": "Dreg's Landing greeted him with tar, rot, and the old midnight rhythm of cargo changing hands where the law got sleepy. It should have felt like cover. It felt like memory with its teeth in."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "Borrowed name, borrowed walk. Keep moving."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_01_choice_01",
+              "prompt": "How does Brego try to pass through the wharf unnoticed?",
+              "options": [
+                {
+                  "option_id": "dockside_lie",
+                  "option_text": "Lean on a practiced dockside lie.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He slipped beside a knot of haulers and let a bored complaint about spoiled rope and late tallies do the work. A familiar lie bought him a few nods and a few steps of borrowed belonging."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "shadow_routes",
+                  "option_text": "Keep to the shadows and side routes.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He took the slick side ladders, net-stacks, and service gaps, favoring darkness over speed. He stayed hard to mark, but every turn felt thinner than it used to."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "walk_with_flow",
+                  "option_text": "Move in plain sight with the cargo flow.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He matched the push of carts and shoulders, carrying himself like a man who had every right to be there. For a stretch, the borrowed name held because no one bothered to test it."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_signs_of_the_net",
+          "source_purpose": "Seed that the harbor is not neutral ground and that someone expected Brego's arrival.",
+          "source_exit_state": "Brego is funneled toward a quieter stretch of wharf and becomes certain the trap is deliberate.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Then the harbor answered back. A shortcut stood newly barred. A lantern signal changed the moment he changed direction. Somewhere ahead, his borrowed name was repeated with a little too much polish."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "Too neat. Someone's laying boards under my feet."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "Which route does Brego test to break surveillance?",
+              "options": [
+                {
+                  "option_id": "warehouse_cutthrough",
+                  "option_text": "Try the old warehouse cut-through.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He cut for a narrow seam between warehouses he had once used when jobs turned bloody. Fresh timber and an idle hook-cart sealed it off. Somebody had planned for haste."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "rope_and_crane_path",
+                  "option_text": "Climb to the rope-and-crane path.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He went up instead, along damp braces and rope walk. From the higher dark he spotted a still figure posted exactly where a smuggler would look for the clever exit."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "crowded_dock_lane",
+                  "option_text": "Push through the busiest dock lane.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "He dropped into a louder lane, hoping bodies would blur him. A cask split at exactly the wrong moment, traffic stalled, and too many eyes found him through the confusion. Marked."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_seris_steps_out",
+          "source_purpose": "Reveal Seris Vale and demonstrate their control of the encounter.",
+          "source_exit_state": "Brego is cornered into conversation instead of violence, which is more unsettling.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The maze narrowed into a pocket between hanging nets and tar-slick pilings. Before he could settle on knife, bluff, or flight, someone stepped into the lane and made choice feel childish."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "Keep your hand off the knife, Brego. The borrowed name carried you farther than it should have."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "If I wanted a chase, I'd have left you more room."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "I liked you better as a rumor."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "Rumor would have waited in the wrong lane. I preferred certainty."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "narration",
+              "text": "No shout went up. No steel flashed. Being cornered into conversation felt worse than being chased."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_warning",
+          "source_purpose": "Deliver the core warning that Marrow wants Brego alive and make the hunt feel more dangerous than a simple bounty.",
+          "source_exit_state": "Brego understands that capture would not be quick or clean; it would be deliberate.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "I'm not here to spill you into the tide."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "Vey Marrow wants you alive, intact, and delivered for an accounting."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "You should be more afraid of that than of a blade."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_04_choice_01",
+              "prompt": "How does Brego answer Seris's warning?",
+              "options": [
+                {
+                  "option_id": "bluff_ignorance",
+                  "option_text": "Bluff ignorance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Then she's confused. I don't carry anything of hers."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "text": "Fury is brief. Patience is expensive. She paid for the slower thing."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "needle_the_bounty",
+                  "option_text": "Needle Seris about the bounty.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Must be a rich hunt if the corpse isn't good enough."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "text": "This is not about vengeance. Dead men close doors. Living men can be opened."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "ask_about_marrow",
+                  "option_text": "Ask directly what Marrow wants.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Then say it plain. What does she think I still have?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+                      "text": "Routes. Names. The shape of old debts. Enough that being taken alive would be the worse outcome."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_no_safe_harbor",
+          "source_purpose": "Show the breadth of Marrow's reach and strip Brego of the hope that he can vanish locally.",
+          "source_exit_state": "The harbor stops feeling like cover and starts feeling like a sealed net with Brego already inside it.",
+          "events": [
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "You saw the closed cut-through. The lantern signal. The laborer who said your borrowed name too cleanly."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "Watchers on the lanes. Harbor records turned. Exits narrowed without anyone raising a voice. Marrow prefers work that looks like weather."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "So the alias lived exactly as long as she allowed it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "There is no local hole left for you to crawl into."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "narration",
+              "text": "No old runner surfaced with a favor. No side door opened. Dreg's Landing stopped feeling like cover and became a net already drawn."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_forced_toward_old_names",
+          "source_purpose": "End the scene by redirecting Brego toward his former crew and launching the next scene.",
+          "source_exit_state": "Brego leaves the wharf unable to disappear and committed to finding the only people who might still answer his name.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "Go, Brego."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "If anyone on this coast still answers your real name, it will be the people you left behind."
+            },
+            {
+              "type": "line",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61",
+              "text": "I am giving you a courtesy. Do not mistake it for safety."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "630fe0d3-d9bd-44d2-afee-765ee8e3bf61"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_06_choice_01",
+              "prompt": "How does Brego frame his next move after Seris lets him go?",
+              "options": [
+                {
+                  "option_id": "take_warning_at_face_value",
+                  "option_text": "Accept the warning and head for the old crew immediately.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Courtesy. That's a grim word for it. Fine. I stop pretending the coast forgot me."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "He turned from the wharf already measuring the road to the crew he had tried not to face."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "assume_manipulation_but_go",
+                  "option_text": "Assume Seris is manipulating him, but choose the old crew anyway.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "You're steering me. Fine. Doesn't change the math if every other door is nailed shut."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Warning or design, the road bent the same way: back toward the names he had left behind."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "borrow_old_ties_seek_nessa",
+                  "option_text": "Tell himself he's only borrowing old ties and seek Nessa's help.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "I'm not going back for comfort. I'm borrowing one old tie and hoping Nessa still opens doors."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "He left the docks with one ugly hope: that the only people who might still answer his name had not decided to bury it."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Brego departs Dreg's Landing convinced he cannot disappear there and commits to seeking out Nessa and the remnants of his old crew.",
+      "notes_and_work_product_summary": "Six source beats preserved in order. Interactive beats 1, 2, 4, and 6 each contain exactly one choice with short reconverging branches. Portrait staging keeps one visible speaker at a time, with Brego generally staged left and Seris right."
+    },
+    {
+      "scene_uuid": "9d0fbfea-4850-4d3c-9f72-857c36be39fe",
+      "scene_name": "act1_scene1",
+      "location_uuid": "6a4fcb2f-52fe-464a-994b-f1a1d36772a7",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the tavern atmosphere, reintroduce Nessa as a loaded part of Brego's past, and give the player control over the tone of the reunion.",
+          "source_exit_state": "Nessa acknowledges Brego and draws him into a more private corner on her terms.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "6a4fcb2f-52fe-464a-994b-f1a1d36772a7"
+            },
+            {
+              "type": "narration",
+              "text": "The Eel and Lantern sways with dockside noise, lamp smoke, and the stink of brine worked into old wood."
+            },
+            {
+              "type": "narration",
+              "text": "Brego has nearly found a shadow to vanish into when he spots Nessa Quill under a torn green curtain. Her eyes are already on him."
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_01_choice_01",
+              "prompt": "How does Brego open when Nessa notices him?",
+              "options": [
+                {
+                  "option_id": "apologize",
+                  "option_text": "Lead with an apology.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Nessa. I know sorry is late, but it's what I have."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "Late, cheap, and still better than pretending you meant to stay dead. Sit. Quietly."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "She jerks her chin toward the curtained alcove and waits for him to obey."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "quip",
+                  "option_text": "Lead with a sardonic quip.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "If I'd known this town still remembered my face, I'd have worn someone else's and brought flowers."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "You should've brought a priest. Sit down before the room notices I'm deciding whether to break a bottle on you."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Her crooked grin never quite arrives, but she makes space in the alcove."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "business",
+                  "option_text": "Lead with blunt business.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "I need a corner, five minutes, and your voice lower than your temper."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "You walk in after three years asking favors like table scraps. Fine. Corner first. Then you explain your terrible judgment."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "She pulls the curtain back with two ink-stained fingers."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Let the reunion land emotionally and show that Nessa's anger is inseparable from relief and old attachment.",
+          "source_exit_state": "The conversation shifts from shock at Brego's return to the unresolved damage he left behind.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Behind the curtain, the tavern becomes muffled enough for old wounds to speak plainly."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Three years without a word. Then you stroll in like the tide misplaced you."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Do you know how many versions of your death I heard? I had favorites."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "Sorry to disappoint the better storytellers."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "sad",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Don't joke at the part where I'm relieved you're breathing."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "I spent too long teaching myself not to look for you in doorways."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "I didn't come here for forgiveness."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Good. What you left behind doesn't fit in that word anyway."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Start with why we were the ones left holding the wreck."
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Expose the cost of the failed job and make Brego's disappearance an active emotional grievance, not just backstory.",
+          "source_exit_state": "Nessa understands Brego is not back out of sentiment alone; he is being hunted back into old company.",
+          "events": [
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "After the job broke, Marrow's people swept every berth, locker, and debt marker we had."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "You were gone. The rest of us got to be what her anger landed on."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_03_choice_01",
+              "prompt": "How much does Brego tell Nessa about Seris and Marrow's current interest in him?",
+              "options": [
+                {
+                  "option_id": "full_honesty",
+                  "option_text": "Tell her everything Seris warned you about.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Seris Vale found me in Dreg's Landing and didn't take the bounty."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "She said Marrow wants me alive. Not for revenge. For something worse."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "surprised",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "You told me the whole ugly thing. That's new."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "And if Seris let you walk, the water is deeper than I thought."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "partial_truth",
+                  "option_text": "Give her the danger, but not every name and detail.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Marrow's hunters are close, and one of them made it plain Brackwater won't stay blind for long."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "I came because I ran out of safe doors."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "That's a neat slice of truth. Too neat."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "If you're trimming names and reasons, I'm hearing the scissors."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "deflect",
+                  "option_text": "Keep it vague and refuse to show the worst of it.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Marrow's interested. That's all you need. The rest is weather."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "No. The rest is the storm walking in wearing your coat."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "If you still ration truth like contraband, don't ask me to stake my neck on your measurements."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "So that's it. Not nostalgia. Pressure."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "narration",
+              "text": "For the first time since he sat down, she looks at him less like a ghost and more like a man being driven."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Deliver the scene's central external stake by naming the ledger and clarifying why Marrow wants Brego alive.",
+          "source_exit_state": "Brego understands that his face now carries danger for anyone who shelters him.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Then hear the rumor that's been walking ahead of you."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Marrow thinks you came out of that wreck with her missing ledger under your coat."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Not cargo tallies. Names. Routes. Debts. Enough ink to sink half the coast."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "I never touched any ledger."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Doesn't matter. She thinks you did, or wants the ports to think she thinks it."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Either way, anyone who hides you paints a mark on their door."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Pivot the scene from mutual blame toward a shared mystery by introducing the likelihood of betrayal from inside the crew.",
+          "source_exit_state": "Suspicion broadens from Brego alone to an old betrayal still hiding among the survivors.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "At Red Hook, the strongbox never even reached my hands. I was covering the stairs when the shouting started."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "And I was told you bolted from the counting room with something wrapped in oilskin."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "That isn't panic talking. That's somebody placing you exactly where Marrow would hate you most."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+              "text": "Someone wanted me to wear the theft."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Someone wanted the crew broken, scattered, and too busy bleeding to compare stories."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "We weren't just unlucky, Brego. We were sold from the inside."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "End the scene with a fragile alliance, a concrete next step, and an emotional bargain that carries into the next scene.",
+          "source_exit_state": "Brego leaves the tavern with a conditional ally, promised shelter, and a new objective: uncover the betrayal behind the failed job.",
+          "events": [
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Here's what I am willing to do."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "I can put you under a roof tonight, keep your face out of the harbor lamps, and point you toward what Orun may still know."
+            },
+            {
+              "type": "line",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+              "text": "Price is simple. You help me find who sold us out, or you go face Marrow's coast alone."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_06_choice_01",
+              "prompt": "Does Brego accept Nessa's terms, push back against them, or demand a little more before following her?",
+              "options": [
+                {
+                  "option_id": "accept",
+                  "option_text": "Accept her terms outright.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "All right. Your terms."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "I'm tired of running blind."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "Good. Don't ruin the miracle by sounding grateful."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "Count ten, then follow. We leave separately."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "It is not forgiveness, but it is a door left unbarred."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "push_back",
+                  "option_text": "Push back and preserve some pride.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "I'll help find the rat. I won't crawl because you snapped your fingers."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "I don't need you crawling. I need you useful."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "My roof, my rules, and you keep one eye open if pride helps you sleep."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The terms harden, but the offer stands."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "ask_more",
+                  "option_text": "Ask for a little more before agreeing.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84",
+                      "text": "Before I trail after you, I want one thing more than shelter. I want the first real lead you have."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fb0fa485-3066-40e0-ba20-a955ab7f4c84"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "Fair."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012",
+                      "text": "I think Orun kept a piece of the night we lost. Help me reach him, and I open the rest."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "736f5435-de0b-48a4-9df6-2b0e51a60012"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Trust arrives thin as lamp smoke, but it arrives."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Brego leaves the Eel and Lantern with Nessa's conditional protection and a shared objective: uncover who betrayed the old crew and why Marrow was pointed at him through the missing ledger rumor.",
+      "notes_and_work_product_summary": "Six-beat tavern reunion scene with interactive choices in beats 1, 3, and 6. Dialogue preserves the barbed history between Brego and Nessa, names the missing ledger as the external stake, and pivots the scene into a grudging alliance centered on finding the crew's traitor. Portrait staging keeps one speaker visible at a time and clears portraits before narration."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 168,
+      "g": 128,
+      "b": 84,
+      "a": 255,
+      "hex_string": "#A88054"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 196,
+      "b": 171,
+      "a": 255,
+      "hex_string": "#D6C4AB"
+    },
+    "idle_small_color": {
+      "r": 184,
+      "g": 168,
+      "b": 146,
+      "a": 255,
+      "hex_string": "#B8A892"
+    },
+    "hover_color": {
+      "r": 238,
+      "g": 216,
+      "b": 186,
+      "a": 255,
+      "hex_string": "#EED8BA"
+    },
+    "selected_color": {
+      "r": 196,
+      "g": 154,
+      "b": 112,
+      "a": 255,
+      "hex_string": "#C49A70"
+    },
+    "insensitive_color": {
+      "r": 110,
+      "g": 102,
+      "b": 94,
+      "a": 255,
+      "hex_string": "#6E665E"
+    },
+    "muted_color": {
+      "r": 82,
+      "g": 74,
+      "b": 68,
+      "a": 255,
+      "hex_string": "#524A44"
+    },
+    "hover_muted_color": {
+      "r": 104,
+      "g": 94,
+      "b": 86,
+      "a": 255,
+      "hex_string": "#685E56"
+    },
+    "text_color": {
+      "r": 236,
+      "g": 230,
+      "b": 220,
+      "a": 255,
+      "hex_string": "#ECE6DC"
+    },
+    "interface_text_color": {
+      "r": 241,
+      "g": 233,
+      "b": 222,
+      "a": 255,
+      "hex_string": "#F1E9DE"
+    },
+    "reasoning": "The story is coastal, nocturnal, and morally bruised, so I chose a palette of salt-worn parchment, weathered rope, and tarnished brass over bright fantasy hues. Warm bone tones keep dialogue and UI text readable against a dark interface, while the accent leans toward muted amber to evoke lantern light, ledger ink, and old wealth without softening the menace. Disabled and muted states use deeper dockwood grays so they remain legible but recede naturally, fitting the story’s uneasy, criminal atmosphere."
+  },
+  "character_dict": {
+    "fb0fa485-3066-40e0-ba20-a955ab7f4c84": "Brego",
+    "bb35d2e0-bcc0-4a7b-a71d-f902c0fcff99": "Vey Marrow",
+    "630fe0d3-d9bd-44d2-afee-765ee8e3bf61": "Seris Vale",
+    "736f5435-de0b-48a4-9df6-2b0e51a60012": "Nessa Quill",
+    "427d179a-7418-472e-888f-049a778b5a63": "Orun Pike"
+  }
+}

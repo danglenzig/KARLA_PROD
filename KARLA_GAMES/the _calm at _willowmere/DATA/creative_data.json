@@ -1,0 +1,639 @@
+{
+  "narrative_design_spec": {
+    "story_title": "The Calm at Willowmere",
+    "synopsis": "Set in a realistic present-day elder-care home in a small town, this intimate horror visual novel follows Dr. Miriam Vale, a sharp-tongued retired professor who notices that the staff at Willowmere Lodge change after a comet passes overhead. Their new serenity is too smooth, too coordinated, and too empty. Because the story stays rooted in the residents' perspective, the world beyond the home becomes an unnerving blank space, making every hallway, meal, and routine feel newly claustrophobic. Through branching conversations, Miriam helps fellow residents Ruby Alvarez, Walter Finch, and Nila Banerjee trust their own perceptions, resist being quietly managed, and discover that the age others use to dismiss them may also make them difficult for an inhuman force to fully understand or control. Cozy habits curdle into dread, and solidarity becomes the residents' only reliable weapon.",
+    "player_character": {
+      "character_data": {
+        "uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+        "name": "Dr. Miriam Vale",
+        "portrait_image_prompt": "An elderly woman in her late seventies with a lean frame, sharp features, intelligent dark eyes behind rectangular tortoiseshell glasses, a neat silver bob, a lightly lined face, and a cardigan over a blouse, carrying the poised, exacting bearing of a former professor",
+        "dialogue_examples": [
+          "If you intend to patronize me, at least do it with proper syntax.",
+          "People keep mistaking age for helplessness. It's a very lazy category error.",
+          "No, I heard what she said. I'm concerned by how perfectly she said it.",
+          "We've all been managed before. The question is when we stop cooperating."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+          "name": "Ruby Alvarez",
+          "portrait_image_prompt": "An elderly Latina woman in her late seventies with warm brown skin, a sturdy build, short curled gray hair, expressive eyes, a patterned scarf, practical blouse and slacks, and a skeptical mouth that looks ready to smile or bite",
+          "dialogue_examples": [
+            "Honey, I've seen management smiles before. That's the face they make right before they steal your break.",
+            "Don't tell me to relax unless you're offering bail money or bourbon.",
+            "They keep acting like we've all agreed to something. I haven't agreed to a damn thing.",
+            "You want my help, professor? Fine. But we do this together, or not at all."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+          "name": "Walter Finch",
+          "portrait_image_prompt": "An elderly white man in his early eighties with a weathered face, thinning white hair, a neatly trimmed mustache, steady pale eyes, broad hands, and a plaid shirt under a knit vest, giving off a practical, mechanically minded air",
+          "dialogue_examples": [
+            "Routine's one thing. This is timing.",
+            "I've spent my life listening for a knock in the engine. This place has one.",
+            "I'm slow getting up, not slow on the uptake.",
+            "When people all start sounding polished at once, I check what's being hidden."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+          "name": "Nila Banerjee",
+          "portrait_image_prompt": "An older South Asian woman in her mid-seventies with a soft round face, silver-streaked hair in a tidy bun, wire-rim glasses, careful posture, a buttoned cardigan, and observant eyes with a precise, thoughtful expression",
+          "dialogue_examples": [
+            "I started writing down the little things so I could prove them to myself.",
+            "At 8:12 she said the same sentence she used yesterday, word for word.",
+            "People think librarians like quiet. We do. We don't like silence that watches back.",
+            "I'm frightened, yes. That doesn't make me mistaken."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+          "name": "Mara Keene",
+          "portrait_image_prompt": "A middle-aged woman in her mid-forties wearing neat nursing scrubs, with dark blond hair pulled back, minimal makeup, an immaculate posture, a professional badge, and a calm smile that never quite reaches her eyes",
+          "dialogue_examples": [
+            "Dr. Vale, you're safe here. Please let us keep things orderly.",
+            "There's no need to upset the other residents with distressing ideas.",
+            "We only want what's best for everyone.",
+            "You seem agitated tonight. Let's make this easier."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "name": "Willowmere Common Room",
+          "location_image_prompt": "A modest present-day elder-care home common room in a small town, with worn floral armchairs, a puzzle table, a television on a rolling stand, bookshelves with paperbacks, crocheted blankets, framed family photos, a bulletin board of activity notices, muted carpet, and realistic institutional decor"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "9fde421c-6263-46d2-a8ea-8998471ca151",
+          "name": "South Hall Nurse Station",
+          "location_image_prompt": "A quiet corridor and nurse station inside a present-day elder-care home, with polished linoleum floors, handrails along the walls, a medication cart, a desk with charts and phones, resident room doors, an analog wall clock, fluorescent-lit realism, and small-town facility details"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "name": "Cedar Dining Room",
+          "location_image_prompt": "A tidy institutional dining room in a present-day elder-care home, with square tables, stackable chairs, place settings for residents, a beverage station, a menu board, neutral walls, practical flooring, and modest small-town care-home details"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "a9821c13-00fd-411c-9ff7-2e9e57261e17",
+          "name": "Enclosed Courtyard Garden",
+          "location_image_prompt": "A small enclosed courtyard garden attached to a present-day elder-care home, with a walking path, raised planters, benches, trimmed shrubs, seasonal flowers, a tall privacy fence, and a quiet, realistic small-town institutional setting"
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "56048812-c87e-4aa1-9e14-1e1e9f462393",
+        "scene_name": "intro",
+        "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+        "non_player_character_uuids": [
+          "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+          "5980d332-bfc3-4816-bb92-f97e05149da2",
+          "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+          "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+        ],
+        "narrative_summary": "During an ordinary evening in the common room, residents half-watch local news coverage of a comet passing over town. The scene establishes Willowmere's routines, Miriam's biting wit, and the personalities of Ruby, Walter, Nila, and nurse Mara. After the comet passes, Miriam notices a subtle but immediate wrongness in the staff's flattened calm and unnatural coordination."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "4b752f92-55f8-48c5-9530-afcb3cc5c114",
+          "scene_name": "act1_scene1",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "non_player_character_uuids": [
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "narrative_summary": "At breakfast the next morning, the staff move in uncanny sync, repeat identical reassurances, and redirect every unusual question with polished ease. Through branching conversations, Miriam can test the pattern, needle Mara, and decide how openly to share her suspicions with Ruby, Walter, and Nila. By the end of the meal, the residents privately admit that each of them has noticed something deeply off."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "9c2b4474-b6fb-478c-ba08-2ca9e4b2de70",
+          "scene_name": "act1_scene2",
+          "location_uuid": "9fde421c-6263-46d2-a8ea-8998471ca151",
+          "non_player_character_uuids": [
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "narrative_summary": "While ostensibly waiting for medication and mail at the nurse station, Miriam and Nila compare details: missing phone access, oddly revised schedules, and doors that are always said to be temporarily unavailable. Mara responds with perfect, soothing deflection that only heightens suspicion. Miriam decides the residents must investigate quietly before the staff realize they are coordinating."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "a9df5066-254c-45b5-9133-bd0d6f3d0f13",
+          "scene_name": "act2_scene1",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "non_player_character_uuids": [
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "narrative_summary": "Back in the common room, Miriam works to turn shared unease into actual trust. Branching conversations let the player reassure, challenge, or provoke Ruby, Walter, and Nila as they reveal old wounds, habits, and fears about being dismissed. The group realizes the affected staff seem poor at handling improvisation, contradiction, and deeply personal memory, suggesting that age and individuality may be a kind of shield."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "312af06d-3462-4f57-9a01-29824f45445c",
+          "scene_name": "act2_scene2",
+          "location_uuid": "a9821c13-00fd-411c-9ff7-2e9e57261e17",
+          "non_player_character_uuids": [
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "narrative_summary": "In the courtyard, the residents stage a believable minor crisis and observe how quickly the staff close ranks around it. They confirm that calls outward are being intercepted and that movement beyond approved routines is quietly controlled. The inaccessible world outside the fence becomes an eerie blank, and the residents commit to open resistance rather than private doubt."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "41d86f3a-822c-45ef-81d9-5115bee0df43",
+          "scene_name": "act3_scene1",
+          "location_uuid": "9fde421c-6263-46d2-a8ea-8998471ca151",
+          "non_player_character_uuids": [
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "narrative_summary": "Using the staff's assumptions about their frailty as cover, the residents split tasks at the nurse station: Walter distracts, Ruby provokes, Nila searches paperwork, and Miriam confronts Mara. They uncover altered care charts and evidence that extra sedatives are being prepared for residents who ask too many questions. Mara nearly eases Miriam back into compliant stillness with unnerving gentleness, forcing Miriam to choose defiance in full view of others."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "413a03d7-135c-40a4-bd82-603d3bd15b71",
+          "scene_name": "act3_scene2",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "non_player_character_uuids": [
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "narrative_summary": "At the evening medication round in the dining room, Miriam leads a public refusal built on shared memory and mutual recognition. Residents address one another by name, retell stubbornly specific life stories, and create enough unpredictable human friction to break the staff's perfect rhythm. Mara's composure cracks, several aides falter, and the altered charts are exposed before the room can be forced back into calm."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "e160d5b4-8cb2-4981-9084-5b7cef1f2340",
+        "scene_name": "outro",
+        "location_uuid": "a9821c13-00fd-411c-9ff7-2e9e57261e17",
+        "non_player_character_uuids": [
+          "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+          "5980d332-bfc3-4816-bb92-f97e05149da2",
+          "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+          "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+        ],
+        "narrative_summary": "In the uneasy aftermath, Willowmere looks superficially normal again, but no one receives a satisfying explanation for what happened after the comet. The resident circle has changed: they trust one another, watch the staff with clear eyes, and refuse to be quietly managed. Under an ordinary sky that no longer feels harmless, they reclaim daily life on their own terms while accepting that the world beyond the home remains an unresolved and unsettling unknown."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/32164687-7d8d-45b2-b5d8-217846ab434b.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/ab2ac8cb-7b89-411a-9a91-091ce58474eb.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/5980d332-bfc3-4816-bb92-f97e05149da2.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/c51ddbc2-0eec-418e-8d1a-152311eb2bdd.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/305fbefb-e004-42cc-b1da-d8f01d0302eb.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/bg f3d398db-f927-46aa-b1eb-5c20f3c8aec8.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/bg 3d37b634-9158-4f6b-b142-8cd2b4c8daa8.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "The Calm at Willowmere",
+      "scene_name": "intro",
+      "scene_uuid": "56048812-c87e-4aa1-9e14-1e1e9f462393",
+      "source_scene_summary": "During an ordinary evening in the common room, residents half-watch local news coverage of a comet passing over town. The scene establishes Willowmere's routines, Miriam's biting wit, and the personalities of Ruby, Walter, Nila, and nurse Mara. After the comet passes, Miriam notices a subtle but immediate wrongness in the staff's flattened calm and unnatural coordination.",
+      "location_name": "Willowmere Common Room",
+      "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+      "player_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+      "non_player_character_uuids": [
+        "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+        "5980d332-bfc3-4816-bb92-f97e05149da2",
+        "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+        "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+      ],
+      "dramatic_question": "Will this be just another mildly tedious evening at Willowmere, or will Miriam catch the first real sign that something has changed after the comet?",
+      "scene_goal": "Get through the evening routine with her autonomy intact while reading the people around her and the rhythms of Willowmere.",
+      "scene_turn": "A familiar communal evening turns into Miriam's first quiet certainty that the staff are no longer behaving like themselves.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_evening_routine",
+          "purpose": "Establish the common room's mundane nightly rhythm and Miriam's sharp, observant point of view.",
+          "summary": "The evening common room hums with small routines: the television plays local news, residents half-listen from armchairs and the puzzle table, and Willowmere feels comfortably stale in the way institutions often do. Miriam surveys it all with dry intelligence, already alert to every little indignity of managed living.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "cozy, mildly stale",
+          "revelation": "Willowmere runs on small nightly rituals that Miriam knows well enough to detect any deviation.",
+          "tension_change": "hold",
+          "player_goal": "Settle in for the evening without surrendering dignity or attention.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The baseline feel of an ordinary Willowmere evening is clearly established."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_common_room_banter",
+          "purpose": "Introduce Ruby, Walter, and Nila through conversation and let Miriam define her social stance among them.",
+          "summary": "As the news meanders toward the comet story, Miriam trades remarks with the other residents. Ruby fires back with skeptical humor, Walter filters everything through habit and practical timing, and Nila reveals herself as quietly exacting and more attentive than anyone credits.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "wry and companionable",
+          "revelation": "Ruby resists with bite, Walter trusts patterns, and Nila notices details others miss.",
+          "tension_change": "hold",
+          "player_goal": "Feel out the other residents and decide how Miriam wants to engage them.",
+          "interactive": true,
+          "choice_prompt": "Whom does Miriam engage most directly as the room's chatter turns to the comet story?",
+          "branch_outcomes": [
+            "Ruby: Miriam establishes a barbed rapport with Ruby, who respects bluntness and skepticism.",
+            "Walter: Miriam connects through practical observation, highlighting Walter's sensitivity to routine and timing.",
+            "Nila: Miriam encourages careful scrutiny, revealing Nila's precise, quietly anxious intelligence."
+          ],
+          "exit_state": "The resident ensemble is differentiated, and Miriam has made a first social approach."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_mara_on_rounds",
+          "purpose": "Establish Mara as the face of Willowmere's care structure before anything overtly uncanny happens.",
+          "summary": "Mara circulates through the common room with practiced efficiency, smoothing over complaints, checking comfort, and guiding the evening back toward order whenever it drifts. Miriam needles her just enough to expose the tension between genuine care and soft control, but Mara still reads as recognizably human.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+          "mood": "orderly, lightly patronizing",
+          "revelation": "Mara is adept at maintaining calm and redirecting resistance without open confrontation.",
+          "tension_change": "rise",
+          "player_goal": "Test how much room Miriam has to push back against Willowmere's soft authority.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Mara is established as competent, composed, and central to the home's routine authority."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_comet_segment",
+          "purpose": "Focus the room on the outside event that will coincide with the shift.",
+          "summary": "The local anchors finally make the comet the center of the broadcast, treating it like a small-town spectacle both silly and oddly compelling. The residents react in their own ways, and even Miriam finds herself looking up with everyone else as Willowmere briefly feels connected to a wider world.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "curious, suspended",
+          "revelation": "A rare outside event cuts through Willowmere's sameness and briefly unifies the room's attention.",
+          "tension_change": "hold",
+          "player_goal": "Read the room while deciding whether the comet is trivial entertainment or worth real notice.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "All attention narrows to the exact moment of the comet's passing."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_too_smooth_after",
+          "purpose": "Deliver the first subtle but unmistakable shift from ordinary life into uncanny horror.",
+          "summary": "After the comet passes, the room does not erupt; it settles. Mara and the nearby staff resume their tasks with a flattened serenity and unnervingly precise timing, repeating reassurances in near-identical cadences as if the same calm is moving through all of them.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "uncanny and hushed",
+          "revelation": "Something in the staff changes immediately after the comet, becoming smoother, emptier, and strangely coordinated.",
+          "tension_change": "twist",
+          "player_goal": "Determine whether the shift is real or just a trick of mood and fatigue.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Miriam has noticed a definite break between the staff's before and after behavior."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_miriam_marks_the_difference",
+          "purpose": "Confirm Miriam's private suspicion and launch the story's central paranoia.",
+          "summary": "Miriam either tests the new calm with a pointed remark or studies it long enough to catch the pattern repeating. However she handles it, Mara's answer lands too polished and too empty, and Miriam ends the evening certain that Willowmere's routine has become something else.",
+          "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "quiet dread",
+          "revelation": "The staff's new serenity is coordinated rather than individual, as though reassurance has replaced ordinary thought.",
+          "tension_change": "rise",
+          "player_goal": "Confirm her perception without revealing how alarmed she is.",
+          "interactive": true,
+          "choice_prompt": "How does Miriam respond to the staff's sudden, unnatural calm?",
+          "branch_outcomes": [
+            "Ask Mara a dry, pointed question and receive a too-perfect reassurance that confirms the pattern.",
+            "Make a joke to test for ordinary human timing and watch it land with eerie blankness.",
+            "Say nothing and study the synchronized movements, confirming the change through observation alone."
+          ],
+          "exit_state": "Miriam privately resolves to keep watch as the common room carries on as if nothing has changed."
+        }
+      ]
+    },
+    {
+      "story_title": "The Calm at Willowmere",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "4b752f92-55f8-48c5-9530-afcb3cc5c114",
+      "source_scene_summary": "At breakfast the next morning, the staff move in uncanny sync, repeat identical reassurances, and redirect every unusual question with polished ease. Through branching conversations, Miriam can test the pattern, needle Mara, and decide how openly to share her suspicions with Ruby, Walter, and Nila. By the end of the meal, the residents privately admit that each of them has noticed something deeply off.",
+      "location_name": "Cedar Dining Room",
+      "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+      "player_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+      "non_player_character_uuids": [
+        "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+        "5980d332-bfc3-4816-bb92-f97e05149da2",
+        "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+        "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+      ],
+      "dramatic_question": "Can Miriam prove the staff's serene breakfast routine is coordinated wrongness rather than ordinary professionalism, and can she get other residents to admit they see it too?",
+      "scene_goal": "Confirm the pattern in the staff's behavior and find out whether Ruby, Walter, and Nila are potential allies or safer left unconvinced.",
+      "scene_turn": "What begins as Miriam's private unease becomes a guarded shared understanding among the residents, with Nila positioned as Miriam's first discreet co-investigator.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Re-establish Willowmere in daylight and show that the previous night's wrongness has not passed.",
+          "summary": "Breakfast in the Cedar Dining Room looks perfectly ordinary until Miriam notices the staff moving with eerie precision: trays land at the same moment, chairs are straightened in sequence, and every smile feels pre-fitted. The normalcy of eggs, coffee, and morning chatter only makes the synchronized calm more disturbing.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "brittle normalcy",
+          "revelation": "The post-comet wrongness persists into morning and seems shared across the staff rather than confined to one unsettling moment.",
+          "tension_change": "rise",
+          "player_goal": "Observe whether last night's unease survives the daylight routine.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Miriam is no longer dealing with a vague impression; she can identify a repeatable pattern in the room."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Give the player an active way to probe the pattern and establish the staff's scripted deflection.",
+          "summary": "Miriam deliberately asks an off-routine question, trying to see whether anyone will answer her like a real person. Whether she brings up the comet, the day's plans, or the staff's odd cheer, the response comes back with the same soothing polish, and Mara glides in to close the conversation before it can become specific.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "controlled disquiet",
+          "revelation": "Unusual questions trigger uniform reassurances and immediate redirection instead of natural conversation.",
+          "tension_change": "rise",
+          "player_goal": "Test whether the staff are improvising or following a shared script.",
+          "interactive": true,
+          "choice_prompt": "What line of inquiry does Miriam use to test the breakfast staff?",
+          "branch_outcomes": [
+            "Ask about the comet and receive a bland assurance that there is nothing to worry about.",
+            "Ask about schedules, calls, or access and get a gentle promise that everything is already being handled.",
+            "Comment on the staff's strange cheer and draw Mara's immediate intervention to smooth things over."
+          ],
+          "exit_state": "Miriam has evidence that the staff answer by formula, and Mara is now actively watching her."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Show that other residents are noticing different pieces of the same wrongness, opening the path to alliance.",
+          "summary": "Instead of watching Mara, Miriam studies the table. Ruby's joke dies halfway out of her mouth when an aide repeats a reassurance word for word at another table, Walter tracks the serving rhythm like a mechanic hearing a problem in an engine, and Nila quietly records a phrase she has heard before.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "wary recognition",
+          "revelation": "Ruby, Walter, and Nila are each reacting to the breakfast wrongness in their own way, suggesting Miriam is not alone in noticing it.",
+          "tension_change": "twist",
+          "player_goal": "Determine whether anyone else seems aware of the pattern.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Miriam identifies three possible allies and senses each will need a different conversational approach."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Escalate direct conflict with Mara and show how her calm becomes more unnerving under pressure.",
+          "summary": "Miriam needles Mara in front of the table, pointing out repeated phrasing, unnatural timing, or the way every concern is treated as agitation to be managed. Mara never drops her smile; she simply recasts Miriam as upset and redirects the room with such exact gentleness that the performance itself feels predatory.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "polite hostility",
+          "revelation": "Mara's serenity is not reassuring when challenged; it sharpens into a mechanism for flattening dissent.",
+          "tension_change": "rise",
+          "player_goal": "Push Mara hard enough to reveal whether there is a crack in her composure.",
+          "interactive": true,
+          "choice_prompt": "How does Miriam pressure Mara without fully exposing herself?",
+          "branch_outcomes": [
+            "Use dry sarcasm to call out the repeated reassurances, which catches Ruby's attention.",
+            "Ask factual questions about timing and routine, which validates Walter's suspicions.",
+            "Feign confusion and make Mara over-explain, which lets Nila notice repeated wording and cadence."
+          ],
+          "exit_state": "Mara flags Miriam as a possible problem, and the other residents see that the nurse's calm is strangely inhuman under scrutiny."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Let the player choose Miriam's level of openness and convert shared unease into tentative trust.",
+          "summary": "As the staff circulate elsewhere, Miriam quietly reaches out to Ruby, Walter, and Nila, deciding whether to speak bluntly, cautiously, or by implication. Their answers differ in tone but align in substance: Ruby recognizes a management smile meant to shut people down, Walter insists this is timing rather than routine, and Nila admits she has been noticing exact repeated lines.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "conspiratorial caution",
+          "revelation": "Each resident has independently noticed a different symptom of the same underlying wrongness.",
+          "tension_change": "rise",
+          "player_goal": "Find out how much the others have seen without saying so much that the staff can act against her.",
+          "interactive": true,
+          "choice_prompt": "How openly does Miriam share her suspicion with Ruby, Walter, and Nila?",
+          "branch_outcomes": [
+            "Speak bluntly about something being wrong and earn Ruby's respect while raising the emotional temperature.",
+            "Frame it as pattern-checking and encourage Walter and Nila to compare concrete observations.",
+            "Keep it understated and elliptical, preserving cover while still inviting quiet agreement."
+          ],
+          "exit_state": "Ruby, Walter, and Nila stop responding like isolated residents and begin answering Miriam as fellow witnesses."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Land the scene turn by forming a private resident consensus and set up the next investigative step.",
+          "summary": "In a brief pocket of privacy near the end of breakfast, the four residents admit aloud that each of them has noticed something deeply off since the comet. Nila, frightened but precise, suggests she and Miriam compare details later while waiting at the nurse station, where lingering will look ordinary.",
+          "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+          "present_character_uuids": [
+            "32164687-7d8d-45b2-b5d8-217846ab434b",
+            "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+            "5980d332-bfc3-4816-bb92-f97e05149da2",
+            "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+          ],
+          "focal_character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+          "mood": "hushed solidarity",
+          "revelation": "Miriam is not imagining the threat; there are multiple witnesses, and Nila is ready to help investigate quietly.",
+          "tension_change": "twist",
+          "player_goal": "Secure private confirmation from the others and leave breakfast with a safe next move.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The residents have formed a fragile covert alliance, and Miriam now has a discreet reason to meet Nila at the nurse station next."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 196,
+      "g": 140,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#C48C5C"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 207,
+      "b": 194,
+      "a": 255,
+      "hex_string": "#D6CFC2"
+    },
+    "idle_small_color": {
+      "r": 189,
+      "g": 181,
+      "b": 168,
+      "a": 255,
+      "hex_string": "#BDB5A8"
+    },
+    "hover_color": {
+      "r": 232,
+      "g": 220,
+      "b": 200,
+      "a": 255,
+      "hex_string": "#E8DCC8"
+    },
+    "selected_color": {
+      "r": 172,
+      "g": 157,
+      "b": 133,
+      "a": 255,
+      "hex_string": "#AC9D85"
+    },
+    "insensitive_color": {
+      "r": 126,
+      "g": 122,
+      "b": 115,
+      "a": 255,
+      "hex_string": "#7E7A73"
+    },
+    "muted_color": {
+      "r": 84,
+      "g": 92,
+      "b": 96,
+      "a": 255,
+      "hex_string": "#545C60"
+    },
+    "hover_muted_color": {
+      "r": 109,
+      "g": 118,
+      "b": 122,
+      "a": 255,
+      "hex_string": "#6D767A"
+    },
+    "text_color": {
+      "r": 241,
+      "g": 238,
+      "b": 232,
+      "a": 255,
+      "hex_string": "#F1EEE8"
+    },
+    "interface_text_color": {
+      "r": 248,
+      "g": 244,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#F8F4EC"
+    },
+    "reasoning": "The scheme leans into a restrained institutional palette: warm parchment and soft ivory for readability, paired with muted taupe-gray controls to evoke Willowmere’s ordinary care-home surfaces. The accent is a subdued amber-brown, suggesting age, wood, and dim lamplight while avoiding a cheerful or clinical feel. Dialogue and menu text are kept near-white for strong contrast and clarity against darker UI panels, while hover/selected states shift only slightly brighter or darker to preserve the novel’s quiet, claustrophobic tone rather than introducing vivid gamey highlights."
+  }
+}

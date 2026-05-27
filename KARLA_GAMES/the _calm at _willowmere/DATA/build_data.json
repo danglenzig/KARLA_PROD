@@ -1,0 +1,1568 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/32164687-7d8d-45b2-b5d8-217846ab434b.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/ab2ac8cb-7b89-411a-9a91-091ce58474eb.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/5980d332-bfc3-4816-bb92-f97e05149da2.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/c51ddbc2-0eec-418e-8d1a-152311eb2bdd.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/305fbefb-e004-42cc-b1da-d8f01d0302eb.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/bg f3d398db-f927-46aa-b1eb-5c20f3c8aec8.png",
+      "/mnt/c/PYTHON_AI/KARLA_PROD/KARLA_GAMES/the _calm at _willowmere/IMAGES/bg 3d37b634-9158-4f6b-b142-8cd2b4c8daa8.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "56048812-c87e-4aa1-9e14-1e1e9f462393",
+      "scene_name": "intro",
+      "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_evening_routine",
+          "source_purpose": "Establish the common room's mundane nightly rhythm and Miriam's sharp, observant point of view.",
+          "source_exit_state": "The baseline feel of an ordinary Willowmere evening is clearly established.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "f3d398db-f927-46aa-b1eb-5c20f3c8aec8"
+            },
+            {
+              "type": "narration",
+              "text": "The common room drifted through its nightly routine: local news a notch too loud, a jigsaw on the side table, lamps doing their best against institutional beige."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Willowmere's idea of variety is switching from weather panic to municipal graft by eight-thirty."
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Routine I can forgive. It's the cheerful supervision that offends me."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "narration",
+              "text": "Ruby sat with her scarf half-unwound, Walter guarded his chair like a foreman finishing shift, Nila kept one finger in a book, and Mara moved at the edges of the room with blankets, reminders, and polite corrections."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_common_room_banter",
+          "source_purpose": "Introduce Ruby, Walter, and Nila through conversation and let Miriam define her social stance among them.",
+          "source_exit_state": "The resident ensemble is differentiated, and Miriam has made a first social approach.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The news finally wandered from zoning disputes to the night's main attraction: grainy telescope footage and excited captions about a comet due over town."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "text": "They've pushed this thing back three times. Either the comet can't read a clock, or the station can't."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "text": "If it misses us entirely, the town council will take credit."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "text": "They've already used the phrase 'historic event' twice. It usually means nothing happens on schedule."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Good. I was afraid we'd face celestial spectacle without expert commentary."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "Whom does Miriam engage most directly as the room's chatter turns to the comet story?",
+              "options": [
+                {
+                  "option_id": "ruby",
+                  "option_text": "Trade barbs with Ruby.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Ms. Alvarez, you sound disappointed. Were you hoping for a better class of apocalypse?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "text": "Honey, if the heavens are going to put on a show, I expect effort."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "At last, a woman with standards."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "walter",
+                  "option_text": "Compare notes with Walter on timing and routine.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Still betting on 8:41, Mr. Finch?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "text": "I'm betting on bad broadcasting and a perfectly innocent rock."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "A rigorous distinction. I approve."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "nila",
+                  "option_text": "Encourage Nila's careful scrutiny.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Mrs. Banerjee, should we fact-check the universe?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "text": "Only the people narrating it. The universe manages without copy editors."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "A loss to every newsroom."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_mara_on_rounds",
+          "source_purpose": "Establish Mara as the face of Willowmere's care structure before anything overtly uncanny happens.",
+          "source_exit_state": "Mara is established as competent, composed, and central to the home's routine authority.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Mara made her evening circuit with a cart of tea, tissues, and reminders, restoring order whenever the room started sounding too much like itself."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "Blankets, tea, and last-call requests. Let's get everyone comfortable."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "You herd us so gently it almost counts as free will."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "I'd settle for comfortable, Dr. Vale."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "text": "Comfortable's nice. Bourbon would be civic-minded."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "Tea is what passed inspection tonight."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "text": "My chair's fine. It's the television that's crooked."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "Then I'll straighten the world one degree at a time, Mr. Finch."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "narration",
+              "text": "It was practiced, mildly patronizing, and familiar enough to pass for care—which, most nights, it probably was."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_comet_segment",
+          "source_purpose": "Focus the room on the outside event that will coincide with the shift.",
+          "source_exit_state": "All attention narrows to the exact moment of the comet's passing.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The broadcast finally gave the comet the full screen."
+            },
+            {
+              "type": "narration",
+              "text": "A shaky live shot filled the television: dark trees, a small crowd, and a bright digital countdown ticking above them."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "text": "They've got a countdown clock for a rock. That's optimism."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "text": "Small town gets one celestial event and suddenly everybody needs folding chairs."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "text": "They've already called it rare, historic, and family-friendly. Only one of those can be measured."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Let them have their pageant. Even institutions deserve a little sky."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "narration",
+              "text": "Even Mara paused with a folded blanket over one arm. Around the room, heads lifted from cards, books, and grievances alike."
+            },
+            {
+              "type": "narration",
+              "text": "The countdown began. For one strange, suspended moment, Willowmere felt connected to a world beyond its windows."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_too_smooth_after",
+          "source_purpose": "Deliver the first subtle but unmistakable shift from ordinary life into uncanny horror.",
+          "source_exit_state": "Miriam has noticed a definite break between the staff's before and after behavior.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A pale streak crossed the television sky and was gone."
+            },
+            {
+              "type": "narration",
+              "text": "A few soft sounds rose, then the common room settled into a hush too complete to be ordinary."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "You're all quite safe. Let's keep the evening calm."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "narration",
+              "text": "From the corridor, the same reassurance arrived again, word for word, in the same even cadence."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "No."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "narration",
+              "text": "Mara had always been composed. This was different—smoother, emptier, as if calm itself had started speaking through her."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_miriam_marks_the_difference",
+          "source_purpose": "Confirm Miriam's private suspicion and launch the story's central paranoia.",
+          "source_exit_state": "Miriam privately resolves to keep watch as the common room carries on as if nothing has changed.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Miriam kept her face arranged in polite boredom and watched Mara resume her round with that new, frictionless ease."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_06_choice_01",
+              "prompt": "How does Miriam respond to the staff's sudden, unnatural calm?",
+              "options": [
+                {
+                  "option_id": "pointed_question",
+                  "option_text": "Ask Mara a dry, pointed question.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Tell me, Mara, did the comet improve the service, or are you all suddenly auditioning for sainthood?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "There's nothing to worry about, Dr. Vale. Everyone is settled, and everything is as it should be."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The answer was immaculate and hollow, like a sentence copied rather than spoken."
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Miriam tucked the certainty away and decided to keep watch."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "joke_test",
+                  "option_text": "Make a joke and watch how it lands.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "If this serenity spreads to the kitchen, I'll know we're under supernatural assault."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "There's no need for upset. Everything is peaceful tonight."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "No smile. No puzzled delay. Just the same polished reassurance, dropped into place without a seam."
+                    },
+                    {
+                      "type": "narration",
+                      "text": "That absence of ordinary timing told Miriam more than an argument would have."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "silent_observe",
+                  "option_text": "Say nothing and study the pattern.",
+                  "branch_events": [
+                    {
+                      "type": "narration",
+                      "text": "Miriam said nothing."
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Mara adjusted a blanket, turned a cup exactly a quarter turn, and moved on. A moment later, from the hall, the same soft phrase came again in the same rhythm."
+                    },
+                    {
+                      "type": "narration",
+                      "text": "She lowered her eyes before anyone could notice she had stopped treating any of it as normal."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "An ordinary communal evening ends with Miriam quietly certain that the comet coincided with a coordinated change in staff behavior, and she resolves to watch Willowmere closely.",
+      "notes_and_work_product_summary": "Adapted all six source beats in order, with two interactive choice beats. Kept the television coverage and repeated offscreen reassurances in narration to avoid introducing extra speaking characters, and ensured branch endings clear portraits so subsequent beats remain visually consistent."
+    },
+    {
+      "scene_uuid": "4b752f92-55f8-48c5-9530-afcb3cc5c114",
+      "scene_name": "act1_scene1",
+      "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Re-establish Willowmere in daylight and show that the previous night's wrongness has not passed.",
+          "source_exit_state": "Miriam is no longer dealing with a vague impression; she can identify a repeatable pattern in the room.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "3d37b634-9158-4f6b-b142-8cd2b4c8daa8"
+            },
+            {
+              "type": "narration",
+              "text": "Morning light washes the Cedar Dining Room in harmless beige. Coffee steams, eggs cool on plates, and silverware taps softly against china."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Nothing says cheerful dawn like synchronized tray delivery."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+              "text": "Good morning. Breakfast is on time, everyone is comfortable, and everything is in hand."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+            },
+            {
+              "type": "narration",
+              "text": "A chair is straightened, then another, then another, each correction landing on the same invisible count. The smiles arriving with them look pre-fitted."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "No. That's not efficiency. Efficiency has rough edges."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Give the player an active way to probe the pattern and establish the staff's scripted deflection.",
+          "source_exit_state": "Miriam has evidence that the staff answer by formula, and Mara is now actively watching her.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "What line of inquiry does Miriam use to test the breakfast staff?",
+              "options": [
+                {
+                  "option_id": "ask_about_comet",
+                  "option_text": "Ask about the comet.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Did the comet trouble anyone else, or are we pretending the sky didn't perform last night?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "There's nothing to worry about, Dr. Vale. Everyone is safe, and everything is proceeding normally. I'll check back with you shortly."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Mm. A human answer would have been messier."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "ask_about_schedule",
+                  "option_text": "Ask about schedules, calls, and access.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Who revised today's schedule, and why is every phone suddenly on a pilgrimage?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "Your calls and daily arrangements are already being handled. There's no need to concern yourself with logistics this morning. I'll check back with you shortly."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Handled is not a synonym for explained."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "comment_on_cheer",
+                  "option_text": "Comment on the staff's strange cheer.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "You all seem remarkably delighted for people serving powdered eggs."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "We're simply keeping things pleasant. Let's not disturb breakfast with upsetting ideas. I'll check back with you shortly."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Polish before particulars. Noted."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Show that other residents are noticing different pieces of the same wrongness, opening the path to alliance.",
+          "source_exit_state": "Miriam identifies three possible allies and senses each will need a different conversational approach.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "narration",
+              "text": "Miriam stops watching Mara and watches the table instead. From elsewhere in the room, the same reassurance drifts past again, word for word."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "text": "I had a joke about the eggs, but repetition got there first."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "text": "Routine's one thing. This is timing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "text": "She said \"everything is in hand\" yesterday at 8:12. I wrote it down."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Good. Then I am not being eccentric alone."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Escalate direct conflict with Mara and show how her calm becomes more unnerving under pressure.",
+          "source_exit_state": "Mara flags Miriam as a possible problem, and the other residents see that the nurse's calm is strangely inhuman under scrutiny.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "How does Miriam pressure Mara without fully exposing herself?",
+              "options": [
+                {
+                  "option_id": "dry_sarcasm",
+                  "option_text": "Use dry sarcasm to call out the repeated reassurances.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Mara, do those reassurances come printed on cards, or do you memorize them in batches?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "I know change can feel distressing, Dr. Vale. I'll make sure someone checks on you, but let's keep the table calm and pleasant for everyone."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "text": "Management smile. Knew it."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Thank you, Ruby. Peer review helps."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "factual_questions",
+                  "option_text": "Ask factual questions about timing and routine.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Then help me with a fact. Why did breakfast arrive early, and why were those chairs straightened in sequence?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "Everything is exactly on schedule. There's no need to monitor the routine so closely, but I'll note your concern."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "text": "That's not routine. That's timing."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Mr. Finch continues to save us from imprecise nouns."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "feign_confusion",
+                  "option_text": "Feign confusion and make Mara over-explain.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Forgive me, Mara. When you say \"everything is in hand,\" whose hand is holding what, precisely?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb",
+                      "text": "Your meals, medication, and daily schedule are all in hand. Everything is in hand. You don't need to trouble yourself with the details."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "305fbefb-e004-42cc-b1da-d8f01d0302eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "character_expression": "confused",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "text": "Same phrase. Same cadence."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Lovely. Even the footnotes repeat."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Let the player choose Miriam's level of openness and convert shared unease into tentative trust.",
+          "source_exit_state": "Ruby, Walter, and Nila stop responding like isolated residents and begin answering Miriam as fellow witnesses.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_05_choice_01",
+              "prompt": "How openly does Miriam share her suspicion with Ruby, Walter, and Nila?",
+              "options": [
+                {
+                  "option_id": "speak_bluntly",
+                  "option_text": "Speak bluntly about something being wrong.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Something is wrong here. Since the comet, every smile in this place has teeth."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "text": "All right, professor. Now you're talking straight."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "text": "You're not the only one hearing it."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "character_expression": "sad",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "text": "Nor the only one writing it down."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Good. Then we may dispense with polite denial."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "frame_as_pattern_checking",
+                  "option_text": "Frame it as pattern-checking.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Let's keep adjectives out of it for one minute. What have you each noticed, exactly?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "text": "Serving rhythm. Too exact."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "text": "Repeated sentences. Exact repeats."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "text": "And that smile means shut up and cooperate."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Excellent. Three symptoms, one illness."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "keep_it_understated",
+                  "option_text": "Keep it understated and elliptical.",
+                  "branch_events": [
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "If anyone else thinks breakfast has acquired a second script, now would be the elegant time to blink."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+                      "text": "I'm blinking, honey."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+                      "text": "I've heard the knock in the engine."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "character_expression": "confused",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+                      "text": "I have notes in my pocket."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+                      "text": "Subtlety may yet save us."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Land the scene turn by forming a private resident consensus and set up the next investigative step.",
+          "source_exit_state": "The residents have formed a fragile covert alliance, and Miriam now has a discreet reason to meet Nila at the nurse station next.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "narration",
+              "text": "Breakfast thins. For one brief minute, no staff stand close enough to hear the table."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Let's say it plainly. Since the comet, something is wrong at Willowmere."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb",
+              "text": "Yes. And that nurse smile is meant to put a lid on us."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "ab2ac8cb-7b89-411a-9a91-091ce58474eb"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2",
+              "text": "Yes. It's timing, wording, the whole works."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "5980d332-bfc3-4816-bb92-f97e05149da2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "character_expression": "sad",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "text": "Yes. I'm frightened, but I'm not mistaken."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd",
+              "text": "Wait with me at the nurse station later. People linger there all the time. We can compare details and look ordinary doing it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c51ddbc2-0eec-418e-8d1a-152311eb2bdd"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "32164687-7d8d-45b2-b5d8-217846ab434b",
+              "text": "Then later, at the nurse station. Quietly. We wait for pills and mail, and in the meantime we pay attention."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "The residents have formed a fragile covert alliance, and Miriam now has a discreet reason to meet Nila at the nurse station next.",
+      "notes_and_work_product_summary": "Adapted all six source beats in order, with interactive choices in beats 2, 4, and 5 only. Dialogue emphasizes Mara's scripted reassurance, the residents' distinct observations, and the scene turn toward a covert alliance. Choice branches are short and local, and branch endings return focus to Miriam for straightforward assembly into Ren'Py scene flow."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 196,
+      "g": 140,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#C48C5C"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 207,
+      "b": 194,
+      "a": 255,
+      "hex_string": "#D6CFC2"
+    },
+    "idle_small_color": {
+      "r": 189,
+      "g": 181,
+      "b": 168,
+      "a": 255,
+      "hex_string": "#BDB5A8"
+    },
+    "hover_color": {
+      "r": 232,
+      "g": 220,
+      "b": 200,
+      "a": 255,
+      "hex_string": "#E8DCC8"
+    },
+    "selected_color": {
+      "r": 172,
+      "g": 157,
+      "b": 133,
+      "a": 255,
+      "hex_string": "#AC9D85"
+    },
+    "insensitive_color": {
+      "r": 126,
+      "g": 122,
+      "b": 115,
+      "a": 255,
+      "hex_string": "#7E7A73"
+    },
+    "muted_color": {
+      "r": 84,
+      "g": 92,
+      "b": 96,
+      "a": 255,
+      "hex_string": "#545C60"
+    },
+    "hover_muted_color": {
+      "r": 109,
+      "g": 118,
+      "b": 122,
+      "a": 255,
+      "hex_string": "#6D767A"
+    },
+    "text_color": {
+      "r": 241,
+      "g": 238,
+      "b": 232,
+      "a": 255,
+      "hex_string": "#F1EEE8"
+    },
+    "interface_text_color": {
+      "r": 248,
+      "g": 244,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#F8F4EC"
+    },
+    "reasoning": "The scheme leans into a restrained institutional palette: warm parchment and soft ivory for readability, paired with muted taupe-gray controls to evoke Willowmere’s ordinary care-home surfaces. The accent is a subdued amber-brown, suggesting age, wood, and dim lamplight while avoiding a cheerful or clinical feel. Dialogue and menu text are kept near-white for strong contrast and clarity against darker UI panels, while hover/selected states shift only slightly brighter or darker to preserve the novel’s quiet, claustrophobic tone rather than introducing vivid gamey highlights."
+  },
+  "character_dict": {
+    "32164687-7d8d-45b2-b5d8-217846ab434b": "Dr. Miriam Vale",
+    "ab2ac8cb-7b89-411a-9a91-091ce58474eb": "Ruby Alvarez",
+    "5980d332-bfc3-4816-bb92-f97e05149da2": "Walter Finch",
+    "c51ddbc2-0eec-418e-8d1a-152311eb2bdd": "Nila Banerjee",
+    "305fbefb-e004-42cc-b1da-d8f01d0302eb": "Mara Keene"
+  }
+}

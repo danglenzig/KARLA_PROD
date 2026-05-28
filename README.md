@@ -83,13 +83,11 @@ A few design rules currently shape the whole project:
 
 ## Current progress
 
-Karla has already crossed the point where the system feels like more than a loose prototype. The Narrative Design Agent and Scene Beat Agent are producing structured outputs that are strong enough to support downstream work, and the current orchestrator already serializes combined creative data into a shared project data model.
-
-A manual Ren'Py preview has also been assembled using Karla-generated images, renamed assets, and sample dialogue derived from the structured data. That preview demonstrated that the current assets and planning outputs are already sufficient to make a small visual novel slice feel coherent on screen.
+Karla has already crossed the point where the system feels like more than a loose prototype. The Narrative Design Agent and Scene Beat Agent are producing structured outputs that are strong enough to support downstream work, and the current orchestrator already serializes combined creative data into a shared project data model. The RenPy Script Assembler produces a structured script.rpy file that (along with the Karla-generated images) can be manually copied into an existing RenPy project folder to create a playable visual novel experience.
 
 ## Current repo direction
 
-The current orchestration flow creates a per-game workspace, runs the Narrative Design Agent first, gathers demo art manifest data plus beat sheets for the intro and first act scene, and serializes the result into a combined creative data object. The next major step is to lock down the Dialogue Agent contract so structured dialogue events can be compiled into Ren'Py reliably.
+The current orchestration flow creates a per-game workspace, runs the Narrative Design Agent first, gathers demo art manifest data plus beat sheets for the intro and first act scene, and serializes the result into a combined creative data object. The Dialogue Agent then generates structured dialogue events are compiled reliably into Ren'Py.
 
 In other words, the project is now moving from planning and asset generation into fully structured playable scene generation.
 
@@ -175,12 +173,9 @@ The project is currently centered on:
 
 Near-term priorities include:
 
-- Finalize the Dialogue Agent schema and beat-aligned event format.
-- Expand deterministic Ren'Py assembly from manually previewed content into automated script generation.
 - Strengthen validation rules across schemas and handoff boundaries.
 - Improve asset generation presets, portrait framing checks, and manifest-driven file writing.
+- Create a browser-based chat interface, versus running the program from the terminal
+- Automate RenPy project creation at runtime (you currently have to manually copy the assets and script into manually-created blank RenPy project) 
 - Continue hardening the MVP slice before expanding beyond the intro and first playable story scene.
 
-## Status
-
-Project Karla is a work in progress, but it already has a clear architecture, a defined MVP scope, working beat-planning outputs, usable generated art, and a manually assembled Ren'Py preview that validates the direction. The current focus is turning that promising prototype into a cleaner, more automated end-to-end demo.

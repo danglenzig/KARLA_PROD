@@ -122,7 +122,6 @@ Return a short confirmation after generation.""",
 
 
 
-
 def get_image_folder_path(game_name: str) -> str:
     
     games_folder_path = os.getenv('GAMES_FOLDER_PATH')

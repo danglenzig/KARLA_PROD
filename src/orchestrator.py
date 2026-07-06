@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from pydantic import BaseModel
+from pydantic import BaseModel # this is what provides the validation magic
 import asyncio
 from pathlib import Path
 import sys
@@ -9,7 +9,7 @@ import os
 import json
 
 # LOCAL MODULES
-SRC_ROOT: Path = Path(__file__).parent # the src/ folder
+SRC_ROOT: Path = Path(__file__).parent # this is the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
 from narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSchema, WorkflowTextInput, SceneData
@@ -22,15 +22,20 @@ from gui_color_agent import GuiColorAgent, GuiColorScheme
 from dialogue_agent import DialogueAgent, DialogueScene
 from renpy_script_assembler import DemoBuildData, RenPyScriptAssembler
 
-
-
 class DemoCreativeData(BaseModel):
+    """
+    The combined output of the creative agents.
+    """
     narrative_design_spec: NarrativeDesignOutputSchema
     art_assets: ArtAssetManifest
     beat_sheets: list[SceneBeatSheet]
     color_scheme: GuiColorScheme
 
 def get_data_folder_path(game_name: str) -> str:
+    """
+    Returns the folder path for the current game.
+    Creates it if it's not there already.
+    """
     games_folder_path = os.getenv('GAMES_FOLDER_PATH')
     data_folder_name = os.getenv('CREATION_DATA_FOLDER_NAME')
     if not os.path.isdir(games_folder_path):
@@ -42,15 +47,24 @@ def get_data_folder_path(game_name: str) -> str:
     return f"{games_folder_path}/{game_name}/{data_folder_name}"
 
 def get_dt_str():
+    """
+    Returns a formatted datetime string.
+    """
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 async def write_output_json(game_name: str, in_json: str, filename: str):
+    """
+    Writes the json in the game's data folder with the provided filename. Returns the path string on success.
+    """
     path: str = f'{get_data_folder_path(game_name)}/{filename}.json'
     with open(path, 'w') as f:
         f.write(in_json)
     return path
 
 def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
+    """
+    Returns the scene's NPC IDs as a list
+    """
     uuids: list[str] = []
     if 'non_player_character_uuids' in sd.__dict__:
         if not sd.non_player_character_uuids is None:
@@ -59,16 +73,25 @@ def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
     return uuids
 
 async def run_program():
+    """
+    The entry point of the orchestrated pipeline
+    """
 
     #temp_game_name: str = get_uuid_string()
+
+    # the image agent works best with the clean style prompt.
     image_style = ImageStyle.CLEAN
 
-    # STAGE 0: Interview the user and generate a concept
+    #===================================================
+    # STAGE 0: Interview the user and generate a concept 
+    #===================================================
 
     concept: StoryConcept = await DiscoveryAgent().run_workflow()
 
-
+    #=======================================================
     # STAGE 1: generate a story plan and extract needed data
+    #=======================================================
+
     print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{concept.concept_summary}\n\n")
     wf: WorkflowTextInput = WorkflowTextInput(
         input_as_text=concept.concept_summary
@@ -82,7 +105,10 @@ async def run_program():
     game_title:str = nd_out.story_title
     game_title_snake_case = to_snake(game_title) 
 
+    #====================================
     # STAGE 2: Art assets and scene beats
+    #====================================
+
     stage_two_coroutines = [
         ImageGenerator().get_demo_manifest(game_title_snake_case, nd_out_json, image_style), # returns ArtAssetManifest
         #ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
@@ -109,8 +135,10 @@ async def run_program():
     await write_output_json(game_title_snake_case, creative_data_json, 'creative_data')
     #await write_output_json(temp_game_name, creative_data_json, 'creative_data')
 
-
+    #=========================
     # STAGE 3: The build stage
+    #=========================
+
     stage_three_coroutines = [
         DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[0].model_dump_json(indent=2)),
         DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[1].model_dump_json(indent=2))
@@ -128,7 +156,6 @@ async def run_program():
     for id in character_catalog:
         char_dict[id] = character_catalog[id]['name']
 
-
     build_data: DemoBuildData = DemoBuildData(
         art_assets=creative_data.art_assets,
         dialogue_scenes=dialogue_scenes_list,
@@ -144,10 +171,6 @@ async def run_program():
         f.write(rpy_script)
 
 
-
 if __name__ == "__main__":
-
     asyncio.run(run_program())
-    #data_schema = json.dumps(DemoCreativeData.model_json_schema(), indent=2)
-    #print(data_schema)
 

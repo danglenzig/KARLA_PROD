@@ -22,8 +22,6 @@ Current MVP goals:
 
 Karla is intentionally scoped as a proof of concept, not a production-ready platform. The goal is to demonstrate strong architecture decisions around agent orchestration, schema design, deterministic assembly, and practical AI tooling inside a game-development workflow.
 
-This makes the project useful in two ways: as a graduation project submission and as a portfolio piece for employers interested in LLM orchestration, game tooling, and structured AI pipelines.
-
 ## Pipeline
 
 ### 1. Discovery Agent

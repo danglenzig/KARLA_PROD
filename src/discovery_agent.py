@@ -33,6 +33,9 @@ Stop once you have enough information to confidently infer all of the above.
 """
 
 class StoryConcept(BaseModel):
+    """
+    A BaseModel representing a high-level story concept.
+    """
     premise: str = Field(..., description="Core story premise")
     genre: str | None = Field(default=None, description="The genre of the story")
     tone: str | None = Field(default=None, description="The emotional tone of the story")
@@ -40,10 +43,30 @@ class StoryConcept(BaseModel):
     protagonist: str | None = Field(default=None, description="Information for the Narrative Designer about the player-character/protagonist. Gender, age, personality, etc")
     core_hook: str = Field(...,description="Main dramatic hook or conflict")
     must_have_elements: list[str] = Field(default_factory=list, description="Story elements, tropes, etc. that the Narrative Designer MUST include")
-    avoid_elements: list[str] = Field(default_factory=list, description="Story elements, tropes, etc. that the Narrative Designer SHOUL avoid")
+    avoid_elements: list[str] = Field(default_factory=list, description="Story elements, tropes, etc. that the Narrative Designer SHOULD avoid")
     concept_summary: str = Field(..., description="3-4 sentence handoff summary for the Narrative Design Agent")
 
 class DiscoveryAgent():
+    """
+    An interactive conversational agent for eliciting and refining visual novel story concepts.
+
+    The DiscoveryAgent conducts a structured, iterative dialogue with the user to gather key narrative details 
+    such as premise, genre, tone, setting, protagonist, core hook, must-have/avoid elements, and a concise summary. 
+    It asks targeted questions one at a time, adapts based on user responses, and ensures all necessary information is collected 
+    before generating a complete `StoryConcept`.
+
+    The workflow involves:
+      - Establishing a new conversation session.
+      - Prompting the user with specific, high-yield questions to uncover all facets of the desired story.
+      - Detecting when sufficient information is gathered.
+      - Summarizing the conversation into a structured `StoryConcept` using an AI summarizer agent.
+
+    Use this class as the entry point for initiating interactive story brainstorming in Project Karla.
+
+    Example:
+        agent = DiscoveryAgent()
+        concept = await agent.run_workflow()
+    """
 
     def __init__(self):
         self.discovery_agent = Agent(
@@ -71,6 +94,9 @@ Behavior rules:
         return str(uuid.uuid4())
     
     async def run_workflow(self) -> StoryConcept:
+        """
+        Conducts the user interview and returns a StoryConcept.
+        """
         convo_session: SQLiteSession = SQLiteSession(self.get_new_session_id())
         user_message = "Hello, I'm ready to talk about my visual novel. Go ahead and ask your questions."
 
@@ -100,9 +126,9 @@ Behavior rules:
             name="discovery_summarizer",
             model="gpt-5.4",
             instructions=(
-                "You will receive the full discovery conversation for a visual novel concept. "
-                "Return a structured StoryConcept object. "
-                "Infer reasonable defaults only when strongly supported by the conversation. "
+                "You will receive the full discovery conversation for a visual novel concept."
+                "Return a structured StoryConcept object."
+                "Infer reasonable defaults only when strongly supported by the conversation."
                 "Write a concise but vivid concept_summary suitable for handoff to a Narrative Design Agent."
             ),
             output_type=StoryConcept

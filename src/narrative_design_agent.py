@@ -1,7 +1,7 @@
 # src/narrative_design_agent.py
-# this is the main file for the narrative design agent. It will contain the main logic for generating the story, 
-# characters, and dialogue for the visual novel game. It will also define the output schema for the narrative 
-# design agent, which will be used to structure the output data that is given to downstream agents.
+# this is the main file for the narrative design agent. It contains the main logic for generating the story, 
+# characters, and dialogue for the visual novel game. It also defines the output schema for the narrative 
+# design agent, which is used to structure the output data for downstream agents.
 
 import asyncio
 from pydantic import BaseModel, Field
@@ -51,28 +51,45 @@ class LoggingHooks(AgentHooks):
 #========
 
 class CharacterData(BaseModel):
+    """
+    A model representing a single character in the visual novel.
+    """
     uuid: str                       = Field(..., description="A unique UUID string for this character")
     name: str                       = Field(..., description="The name of the character")
     portrait_image_prompt: str      = Field(..., description="A descriptive prompt to generate the dialogue portrait image of the character")
     dialogue_examples: list[str]    = Field(..., description="A list of example dialogue lines for the character. These will be used to generate " \
     "actual dialogue lines for the character in the game.")
 
-
 class LocationData(BaseModel):
+    """
+    A model representing a single location in the visual novel.
+    """
     uuid: str                       = Field(..., description="A unique UUID string for this location")
     name: str                       = Field(..., description="The name of the location")
     location_image_prompt: str      = Field(..., description="A descriptive prompt to generate the background image of the location")
 
 class Location(BaseModel):
+    """
+    Specifies the LocationData for a particular location.
+    """
     location_data: LocationData      = Field(..., description="The data for the location, including name and location image prompt")
 
 class PlayerCharacter(BaseModel):
+    """
+    Specifies the CharacterData for the visual novel's player character.
+    """
     character_data: CharacterData    = Field(..., description="The data for the player character, including name, portrait image prompt, and dialogue examples")
 
 class NonPlayerCharacter(BaseModel):
+    """
+    Specifies the CharacterData for a particular NPC in the visual novel.
+    """
     character_data: CharacterData    = Field(..., description="The data for the non-player character, including name, portrait image prompt, and dialogue examples")
 
 class SceneData(BaseModel):
+    """
+    A model representing a particular scene in the visual novel.
+    """
     uuid: str                                           = Field(...,description="A unique UUID for this scene")
     scene_name: str                                     = Field(...,description="A human-readable, unique and stable ID for this scene. For example 'intro', 'outro', 'act1_scene1', 'act1_scene2', " \
     "'act2_scene1', 'act2_scene2', and so on.")
@@ -82,9 +99,15 @@ class SceneData(BaseModel):
     "the dialogue and player choices for the scene.")    
 
 class Scene(BaseModel):
+    """
+    Specifies the SceneData for a particular scene.
+    """
     scene_data: SceneData            = Field(..., description="The data for the scene, including location, non-player characters, and narrative summary")
 
 class NarrativeDesignOutputSchema(BaseModel):
+    """
+    A model representing the structured output of the narrative design agent.
+    """
     story_title: str                                = Field(..., description="The title of the story")
     synopsis: str                                   = Field(..., description="A brief overview of the plot, setting, tone, and characters")
     player_character: PlayerCharacter               = Field(..., description="The story protagonist and player character of the visual novel")
@@ -97,16 +120,25 @@ class NarrativeDesignOutputSchema(BaseModel):
     outro_scene: Scene                              = Field(..., description="The final scene of the visual novel -- the story's denouement")
 
     def get_location_name(self, uuid: str) -> str:
+        """
+        Returns the name string of the location with the provided UUID or "LOC NAME" if UUID not found.
+        """
         loc_name = "LOC NAME"
         loc_name = next(loc.location_data.name for loc in self.locations if loc.location_data.uuid == uuid)
         return loc_name
     
     def get_npc_name(self, uuid: str) -> str:
+        """
+        Returns the name of the NPC with the provided UUID or "NPC NAME" if UUID not found.
+        """
         npc_name = "NPC NAME"
         npc_name = next(npc.character_data.name for npc in self.non_player_characters if npc.character_data.uuid == uuid)
         return npc_name
     
     def get_scene_by_scene_synopsis(self) -> str:
+        """
+        Returns a human-readable scene-by-scene synopsis of the story.
+        """
         output_str = f"\nTITLE: {self.story_title}\n"
         output_str += f"\n\nSTORY SYNOPSIS: {self.synopsis}\n"
 
@@ -137,11 +169,12 @@ class NarrativeDesignOutputSchema(BaseModel):
         output_str += f"\n\nOUTRO SCENE:\n"
         output_str += f"\n  SCENE SYNOPSIS: {self.outro_scene.scene_data.narrative_summary}\n"
 
-
-
         return output_str
 
     def human_readable(self) -> str:
+        """
+        Returns a human-readable version of the entire narrative design agent output.
+        """
         output_str = f"\nTITLE: {self.story_title}\n"
         output_str += f"\n\nSYNOPSIS: {self.synopsis}\n"
         
@@ -331,7 +364,6 @@ narrative_design_agent = Agent(
     name="narrative_design_agent",
     instructions = narrative_design_agent_instructions,
     model=NARRATIVE_DESIGN_AGENT_MODEL,
-    #model = MINI_MODEL,
     output_type=NarrativeDesignOutputSchema,
     model_settings=ModelSettings(
         reasoning=Reasoning(
@@ -346,17 +378,33 @@ narrative_design_agent = Agent(
 
 # This module's main class
 class NarrativeDesignAgent:
+    """
+    Agent for generating detailed narrative design specifications from a high-level story concept.
+
+    The NarrativeDesignAgent takes a concise story idea and produces a structured narrative design output,
+    including player character, non-player characters, locations, and a full act/scene breakdown suitable for 
+    downstream agents (such as beat planners, asset generators, and dialogue writers).
+
+    Key behaviors:
+      - Receives a story concept as text input.
+      - Runs an LLM-based workflow to expand and structure the narrative, following defined output schemas.
+      - Produces a NarrativeDesignOutputSchema containing title, synopsis, characters, act/scene lists, and locations.
+      - Ensures all required elements for visual novel generation are present, with explicit schema fields and stable UUIDs.
+      - Provides helper methods for testing or retrieving human-readable summaries and catalogs.
+
+    Usage Example:
+        agent = NarrativeDesignAgent()
+        spec = await agent.run_workflow(WorkflowTextInput(input_as_text="Haunted hotel story..."))
+
+    This class is a central pipeline component, ensuring every generated game has a well-formed narrative blueprint.
+    """
+
     def __init__(self):
         self.agent: Agent = narrative_design_agent
 
     async def run_workflow(self, workflow_text_input: WorkflowTextInput) -> NarrativeDesignOutputSchema:
         workflow = workflow_text_input.model_dump()
         input_text = workflow["input_as_text"]
-
-        # run_result: RunResult = await Runner.run(
-        #     narrative_design_agent,
-        #     input=input_text
-        # )
 
         run_result: RunResultStreaming = Runner.run_streamed(
             narrative_design_agent,
@@ -376,14 +424,7 @@ class NarrativeDesignAgent:
                         output_already_started = True
                     print(f"\033[33m{event.data.delta}\033[0m", end= "", flush= True)
 
-
-            
-            # stream our reasoning and response text deltas
-            # if event.type == "raw_response_event" and (isinstance(event.data, ResponseTextDeltaEvent) or isinstance(event.data, ResponseReasoningSummaryTextDeltaEvent)):
-            #     print(event.data.delta, end="", flush=True)
-
         print(f"\n\n======RUN COMPLETE======\n\n")
-
         
         return run_result.final_output
 

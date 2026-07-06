@@ -1,0 +1,1896 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/52ed1d62-4593-428e-a251-b4145859734b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/b5c56b61-fc6c-41a8-81be-16e4c1cc247f.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/288dcc82-b2f2-46e2-be5c-d56fb4d8d677.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/26fb485d-8427-4cab-a7ad-119947223d40.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/6d10e1ba-4e2d-4986-b78d-78388b6a1223.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/bg ea32fc30-e4cc-496d-a047-af40590854a7.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/intern of the _sundog/IMAGES/bg b60fca84-dd19-4f39-a6e2-0f274404da66.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "c00ee915-9282-4855-9673-42a0cffd72e1",
+      "scene_name": "intro",
+      "location_uuid": "ea32fc30-e4cc-496d-a047-af40590854a7",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_arrival_at_port_meridian",
+          "source_purpose": "Establish Ellis's worldview, the office setting, and the oppressive comic tone of corporate bureaucracy.",
+          "source_exit_state": "Ellis reaches the freight counter area already rattled by the sheer absurdity of the system.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "ea32fc30-e4cc-496d-a047-af40590854a7"
+            },
+            {
+              "type": "narration",
+              "text": "Port Meridian Freight Office hums under bad fluorescents and worse slogans. A wall poster declares COMPLIANCE IS CARE beside a service kiosk that is actively smoking."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Internship check-in for the Sundog. Present credentials, receive assignment, begin respectable career."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "narration",
+              "text": "A queue marker skips from B-12 to PRIORITY LIVESTOCK, then jams halfway through printing an apology."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Right. Respectable career with hostile stationery."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "narration",
+              "text": "Past the intake queues, raised voices carry from the freight counters. Ellis straightens their uniform and heads toward the sound anyway."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_the_sundog_at_the_service_window",
+          "source_purpose": "Introduce the Sundog crew as a dysfunctional unit and reveal the immediate compliance problem.",
+          "source_exit_state": "Ellis understands that their first day is not a formal onboarding but an active bureaucratic disaster.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Window C-19 looks less like a check-in station and more like an ongoing incident. A blinking placard above it reads: SUNDOG."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "If the packet needs Form Seventeen-B attached to Seventeen-A, your system might have mentioned that before rejecting both."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "C'mon, stamp. Fulfill your little destiny."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Current count: eleven rejected filings, three contradictory instructions, and one launch slot in active danger."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "I've seen triage wards with better queue management."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Captain Roxie Sable? I'm... assigned to the Sundog."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Oh, perfect. They've sent us a witness."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "narration",
+              "text": "The launch-slot timer above the window flashes amber. Ellis realizes their formal onboarding has somehow arrived in the middle of a live compliance failure."
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_first_impression_with_the_crew",
+          "source_purpose": "Create Ellis's first interactive social moment and establish the crew's chemistry with them.",
+          "source_exit_state": "Ellis is pulled into the crew's problem-solving orbit and expected to help salvage the departure.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Intern, if you're carrying a stamp, a waiver, or a miracle, now would be a charming time."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "If you're here to observe, observe from somewhere that doesn't touch my tools."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "If you're here to sort forms, I'll admit to cautious optimism."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "narration",
+              "text": "Four faces turn toward Ellis with four different kinds of expectation."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Ellis introduce themself to the Sundog crew?",
+              "options": [
+                {
+                  "option_id": "authority",
+                  "option_text": "Lead with academy credentials and take charge.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Ellis Vane. Interstellar Logistics Academy, honors track. If your packet failed intake, I can identify why."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "text": "Hear that? We got ourselves a deluxe intern."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "text": "Authority posture accepted. I am already 34 percent more reassured."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "practical",
+                  "option_text": "Offer help first and ask for the problem.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Ellis Vane. New intern. Give me the pile and tell me what keeps getting kicked back."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+                      "text": "Oh, that's better. Not a narc greeting. A useful greeting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "text": "Music to a captain's ears."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "dry_humor",
+                  "option_text": "Acknowledge the disaster with dry humor.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Ellis Vane, your intern. I can see we're running a very disciplined operation, so I'll try not to disrupt the chaos."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+                      "text": "Adaptive sarcasm. Promising."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "text": "Excellent. You speak ship already."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Administrative reinforcement noted."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Congratulations, Ellis. You're no longer visiting. You're helping."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_the_rejected_forms_pile",
+          "source_purpose": "Show Ellis proving useful while satirizing the absurdity of the paperwork burden.",
+          "source_exit_state": "Ellis isolates the paperwork bottlenecks and earns the crew's first real flicker of respect.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Benny-8 spreads the rejected packet across the counter like a losing card hand, each sheet stamped with a different shade of institutional disapproval."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Duplicate manifests. One requests gross mass in kilos, the other in legacy freight pounds. Both are mandatory."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Hazard initials are missing on page four, but page four also says the hazard section is optional with premium processing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "There it is. Safety for people with subscriptions."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Additional blocker: a navigation software-license addendum unrelated to cargo, yet marked departure critical."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "Shipping no longer moves goods. It moves liability."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Can we sign something inspirational and leave?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Yes. We clear the weight discrepancy, initial the hazard line, and quarantine every fee trap that isn't actually required for launch."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Assessment: correct. Respectfully, that was attractive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_flagged_pharmaceutical_consignment",
+          "source_purpose": "Introduce the mysterious shipment that will drive later trouble and add an undercurrent of suspicion.",
+          "source_exit_state": "The pharmaceutical canister stands out as the most alarming item on an already messy job.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Near the bottom of the manifest, one line item glows amber and refuses automatic clearance."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "surprised",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Sealed pharmaceutical consignment. Manual verification, chain-of-custody lock, and tamper penalties severe enough to get their own paragraph."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "That coding is excessive for routine meds. Either this crate is priceless, or someone wants every fingerprint on it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Priceless or explosive. Fun either way."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Container access is restricted to delivery endpoint. Mishandling fines exceed our fuel reserve."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Then we continue not touching it with exemplary professionalism."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Noted. My first assignment contains a canister everyone is pretending not to stare at."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_weaponizing_the_rules",
+          "source_purpose": "Let Ellis solve the office crisis in a way that transforms their relationship to procedure.",
+          "source_exit_state": "The Sundog receives conditional departure clearance, and Ellis is recognized as the person who saved the launch window.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The intake terminal chirps a final warning: launch slot pending revocation."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Two minutes, forty seconds until reassignment."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Ellis, tell me this building has one exploitable weakness besides morale."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "Every bureaucracy does. Usually alphabetical."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_06_choice_01",
+              "prompt": "How does Ellis break the paperwork deadlock?",
+              "options": [
+                {
+                  "option_id": "cite_regulations",
+                  "option_text": "Quote the regulations until the system has to escalate.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "By intake code, they can't reject a corrected packet without issuing supervisor review. File the appeal header."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Ellis recites subsection after subsection into the service mic. The terminal stalls, escalates, then spits out an override ribbon."
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "text": "Procedural override achieved."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "reorder_forms",
+                  "option_text": "Reorder the packet to satisfy the validation sequence.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Stop feeding it logically. Feed it superstitiously. Hazard initials first, then cargo weight, then the license addendum last."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "text": "Validation sequence updated. Please continue weaponizing pattern recognition."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The packet slides through in the exact order the machine prefers, and the warning light flips from red to green."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "use_audit_trail",
+                  "option_text": "Use Benny-8's records to build a minimally acceptable compliance history.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Benny, give me every rejection timestamp. If it wants a history of compliance, we'll build the minimum believable one."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "text": "Audit trail compiled. Light deception mode engaged."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Ellis cross-references the denials, attaches the supporting logs, and the system reluctantly accepts the reconstructed record."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": false
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "There she is. Conditional release. The law and I remain in a long, unhealthy romance."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Intern just saved our slot."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "You learn quickly. Rules are tools."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "intro_beat_07_signing_on_with_the_sundog",
+          "source_purpose": "Close the scene by locking Ellis into the crew and reframing the internship as a chaotic adventure.",
+          "source_exit_state": "Ellis is officially attached to the Sundog, the crew is cleared to depart, and the suspicious pharmaceutical shipment is now part of their first assignment.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A clearance chit prints with CONDITIONAL DEPARTURE stamped across it in bruised purple ink."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Welcome aboard the Sundog, Ellis. You passed your first test, and I didn't even warn you there'd be one."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "I was ready to hate you on principle. Now I'm willing to postpone."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40",
+              "text": "You may also have prevented me from committing a small administrative homicide."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "26fb485d-8427-4cab-a7ad-119947223d40"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Crew records updated. Ellis Vane: intern, compliance asset, probable stabilizing influence."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "That is not the internship brochure I read, but... all right. I'm in."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Excellent. Try to keep up. The suspicious freight won't transport itself."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "narration",
+              "text": "Ellis signs on and follows the crew toward the docks, clipboard in hand, conditional clearance in pocket, and one unusually secure pharmaceutical consignment already casting a long shadow over the job."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Ellis is officially attached to the Sundog after salvaging its departure paperwork, the crew now sees them as a compliance fixer, and the sealed pharmaceutical shipment is established as a looming problem on their first assignment.",
+      "notes_and_work_product_summary": "Adapted all 7 beats in source order with two interactive beats. Beat 3 and Beat 6 each contain exactly one short local choice that returns to common scene flow. Portrait visibility is explicitly cleared before narration lines and at the end of choice branches to simplify downstream assembly."
+    },
+    {
+      "scene_uuid": "e6b1e06e-6802-49cc-ab6e-5e931e476543",
+      "scene_name": "act1_scene1",
+      "location_uuid": "b60fca84-dd19-4f39-a6e2-0f274404da66",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish Ellis's procedural mindset and the bridge's casual noncompliance.",
+          "source_exit_state": "Ellis realizes authority and procedure will not be automatically respected aboard the Sundog.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "b60fca84-dd19-4f39-a6e2-0f274404da66"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Preflight sequence begins now. If everyone could pause nonessential activity, I'll take us through departure in proper order."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Proper order? Adorable. I already woke the engines up."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Several required steps are being handled informally."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Informally is not a recognized launch category."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "On the Sundog it is. If something catches fire, that's when we call it noncompliant."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Introduce the ship's financial precarity through a ridiculous but dangerous systems problem.",
+          "source_exit_state": "Ellis learns the crew cannot afford full legal functionality and has normalized technical workarounds.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Engaging standard departure routing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "narration",
+              "text": "The navigation console flashes: DELINQUENT ACCOUNT. TRAJECTORY ASSIST, COLLISION PREVIEW, AND LANE ETIQUETTE MODULES HAVE BEEN SUSPENDED."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Lane etiquette is a paid feature?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Safe piloting is a subscription now. Welcome to modern commerce."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "I can bypass the route overlay, spoof one checksum, and restore the warning chime at half volume."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "That is not a sentence that should precede takeoff."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "And yet it always does. Strap in, intern. I'm flying manual."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Pile a bureaucratic failure on top of the technical one and bring Mags into the launch scramble.",
+          "source_exit_state": "Ellis understands there is no clean, fully compliant fix available in time.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "An access hatch slams open beside the comms pit."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Clamp three's sensor is lying again. Dock says we're still attached. Physically, we're only emotionally attached."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Port control is requesting the stamped maintenance release immediately."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Fine. I have the release form. Where is the ship's authorization stamp?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Used to live in the drawer with the emergency chocolate."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Drawer inventory: twelve bolts, one spoon, zero stamp, zero chocolate."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "So our dock readout is false and our paperwork is hand-waving. There is no compliant fix left in this departure slot."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Force Ellis to choose between principle, paperwork fraud, and practical survival.",
+          "source_exit_state": "Ellis stops being a passive observer and becomes an active participant in the crew's improvised plan.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Then somebody give me the least terrible option."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Delay and we burn berth fees we do not have. Staying docked can sink you just as dead, only slower."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "I can assemble a cleaner maintenance trail. Not legal, but elegant."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Or I go bully the clamp until it remembers gravity, and we leave before port control finishes blinking."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Those are all terrible. Fine. What do we prioritize?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "When proper departure becomes impossible, what does Ellis prioritize?",
+              "options": [
+                {
+                  "option_id": "wait_for_clearance",
+                  "option_text": "Insist on waiting for official clearance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "We wait for official clearance. I am not signing off on a fake release or a blind launch."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+                      "text": "Berth meter says that's a luxury position, sweetheart."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Then note my objection and keep the invoice where I can see it."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "patch_the_paperwork",
+                  "option_text": "Help Benny assemble a cleaner false paper trail.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Benny, build the cleanest false trail you can. If we're lying, we're lying legibly."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+                      "text": "At last. A supervisor who respects formatting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Make it neat enough that port control stops reading."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "coordinate_manual_release",
+                  "option_text": "Prioritize the manual release sequence.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "Forget the stamp. Clear the clamp and give me live status every second."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+                      "text": "Now you're speaking wrench."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+                      "text": "No heroics. I want ugly and controlled."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Pay off Ellis's choice by turning their training into practical value during the actual launch.",
+          "source_exit_state": "The crew starts responding to Ellis as a coordinator instead of a sheltered liability.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The berth clock wins. The bridge erupts in klaxons, vibration, and three overlapping countdowns that do not agree with one another."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Manual thrusters are live. Everybody give me one problem at a time."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Warning: berth timer expired. Warning: lane merge advisory unavailable. Warning: clamp three remains spiritually attached."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Clamp's jammed halfway. Stand by to hear something expensive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "narration",
+              "text": "A metallic shriek rips through the hull."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Roxie, pulse port thrusters on my mark. Benny, collapse alerts to propulsion and clearance only. Mags, call physical release the instant you have it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Reducing alarms to the useful screams."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Port thrusters pulsing. Don't make me repaint the station."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Clamp is loose! You have a lane if you move right now."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Nose up five degrees. Clear the berth, stabilize, then answer port control like this was always the plan."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Hear that? The intern finally sounds employable."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Resolve the launch and lock in the scene's thematic lesson.",
+          "source_exit_state": "Ellis reluctantly accepts the Sundog's culture of managed improvisation, and the crew recognizes Ellis as unexpectedly useful.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The Sundog lurches free, wobbles once in the departure lane, and somehow steadies into open traffic."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "I have revised the log from 'catastrophic scramble' to 'manual variance event with successful outcome.'"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Congratulations, Ellis. You survived a real launch."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "At the academy, this would have triggered three hearings and a prayer circle."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677",
+              "text": "Out here it triggered departure. Better return on investment."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "288dcc82-b2f2-46e2-be5c-d56fb4d8d677"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223",
+              "text": "Professional recommendation: document the chaos after it works. It photographs better."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "6d10e1ba-4e2d-4986-b78d-78388b6a1223"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b",
+              "text": "Understood. Next time I'll bring a bigger clipboard."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "52ed1d62-4593-428e-a251-b4145859734b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f",
+              "text": "Keep up, intern. On this ship, competence means making the mess survivable."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b5c56b61-fc6c-41a8-81be-16e4c1cc247f"
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Ellis accepts that the Sundog runs on managed improvisation, and the crew leaves port seeing Ellis as a useful coordinator rather than dead weight.",
+      "notes_and_work_product_summary": "Adapted all six source beats in order, with one interactive choice in beat 4 reflecting delay, paperwork patch, and manual release priorities. Dialogue emphasizes Ellis's shift from procedural authority to practical coordination, while keeping portrait staging to one visible speaker at a time and using narration sparingly for system alerts and launch transitions."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 84,
+      "g": 190,
+      "b": 255,
+      "a": 255,
+      "hex_string": "#54BEFF"
+    },
+    "idle_color": {
+      "r": 196,
+      "g": 204,
+      "b": 214,
+      "a": 255,
+      "hex_string": "#C4CCD6"
+    },
+    "idle_small_color": {
+      "r": 171,
+      "g": 180,
+      "b": 192,
+      "a": 255,
+      "hex_string": "#ABB4C0"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 176,
+      "b": 79,
+      "a": 255,
+      "hex_string": "#FFB04F"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 214,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#FFD666"
+    },
+    "insensitive_color": {
+      "r": 112,
+      "g": 120,
+      "b": 132,
+      "a": 255,
+      "hex_string": "#707884"
+    },
+    "muted_color": {
+      "r": 74,
+      "g": 86,
+      "b": 100,
+      "a": 255,
+      "hex_string": "#4A5664"
+    },
+    "hover_muted_color": {
+      "r": 98,
+      "g": 112,
+      "b": 128,
+      "a": 255,
+      "hex_string": "#627080"
+    },
+    "text_color": {
+      "r": 236,
+      "g": 241,
+      "b": 246,
+      "a": 255,
+      "hex_string": "#ECF1F6"
+    },
+    "interface_text_color": {
+      "r": 245,
+      "g": 248,
+      "b": 250,
+      "a": 255,
+      "hex_string": "#F5F8FA"
+    },
+    "reasoning": "The palette blends retro-future chrome with freight-office bureaucracy and warm criminal-chaos energy. Cool blue-white text keeps dialogue and UI highly readable against dark ship interiors and industrial backgrounds, while the accent cyan evokes terminals, forms, and corporate tech. Amber hover/selected states add a pulp, hazard-light contrast that fits the roadhouse neon and black-market mischief without losing clarity. Muted slate tones support inactive bars and disabled states while staying consistent with the worn metal, vinyl, and utilitarian ship aesthetic."
+  },
+  "character_dict": {
+    "52ed1d62-4593-428e-a251-b4145859734b": "Ellis Vane",
+    "b5c56b61-fc6c-41a8-81be-16e4c1cc247f": "Captain Roxie Sable",
+    "288dcc82-b2f2-46e2-be5c-d56fb4d8d677": "Mags Rourke",
+    "26fb485d-8427-4cab-a7ad-119947223d40": "Dr. Juniper Pike",
+    "6d10e1ba-4e2d-4986-b78d-78388b6a1223": "Benny-8"
+  }
+}

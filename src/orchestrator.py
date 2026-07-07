@@ -80,7 +80,8 @@ async def run_program():
     #temp_game_name: str = get_uuid_string()
 
     # the image agent works best with the clean style prompt.
-    image_style = ImageStyle.CLEAN
+    #image_style = ImageStyle.CLEAN
+    image_style = ImageStyle.SATURDAY_MORNING
 
     #===================================================
     # STAGE 0: Interview the user and generate a concept 

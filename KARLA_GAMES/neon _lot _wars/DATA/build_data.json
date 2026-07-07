@@ -1,0 +1,1828 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/fd619ea0-9be6-495e-b518-6e3d316ee87f.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/a929669a-202d-4e82-9159-69f82e3d14c5.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/b0224322-1daf-4d4a-becd-6e4bd67ba971.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/97c64595-d3c8-4403-88a6-96ce3c6d841b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/612521e8-32a8-493d-911c-8b132acc66ba.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/bg 52633458-7bc8-4307-a5d9-89b174eca2fb.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/bg bb49197c-e241-42d5-9d35-5ce45291c46b.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "d12aa19a-8423-4517-a164-1e8342ee7776",
+      "scene_name": "intro",
+      "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_filthy_morning",
+          "source_purpose": "Establish the setting, tone, and Rook's exhausted relationship to Rusthook Court before the main conflict lands on him.",
+          "source_exit_state": "Rook leaves the privacy of his trailer and walks straight into the public chaos.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb"
+            },
+            {
+              "type": "narration",
+              "text": "Rusthook Court wakes up coughing: tin roofs ticking, bad pipes wheezing, and something in the lane already losing an argument with gravity."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "I've crawled out of kill-zones quieter than this block before breakfast."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "narration",
+              "text": "Rook shoves open his trailer door, hoping for petty nonsense and already certain he'll get worse."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_trash_rights_war",
+          "source_purpose": "Introduce Queenie, Buck, and Lil Pox through a loud, ridiculous conflict that shows the lot's social fault lines.",
+          "source_exit_state": "The dispute stops being background noise and becomes Rook's problem to manage.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "Your washing drone chewed through my cable, crossed into my trash strip, and now you're siphoning the bleed-off, Buck."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Your cable was hanging in my lane like wet laundry. I ain't paying for your bad wiring and your bad aim."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "text": "Good morning, subscribers. We are live at the Garbage Border Offensive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "I've been awake thirty seconds and we're already litigating trash like sovereign nations."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "How does Rook shut down the screaming match?",
+              "options": [
+                {
+                  "option_id": "intimidate",
+                  "option_text": "Bark them into silence.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Both of you, shut it. If anybody swings, I start throwing appliances until morale improves."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The lane snaps quiet except for the washing drone crackling in a puddle."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "mock",
+                  "option_text": "Mock the whole stupid feud.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Outstanding. Two grown adults defeated by a wash-drone and one suicidal cable."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+                      "text": "No, keep that tone. That's the trailer-cut version."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "A couple ugly laughs leak out. Queenie and Buck both pivot their outrage straight at Rook."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "demand_facts",
+                  "option_text": "Demand a clear account.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "One at a time. Who owned the drone, who ran the cable, and who thought live current belonged in standing water?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The screaming drops into hostile, almost professional finger-pointing."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_juno_reality_check",
+          "source_purpose": "Introduce Juno as the competent practical voice and reveal that the neighborhood's infrastructure is genuinely close to collapse.",
+          "source_exit_state": "The crowd can no longer pretend the lot's utilities are merely inconvenient; they are failing.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Juno elbows into the lane with a severed cable looped over her cybernetic forearm."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "This isn't one bad line. The whole lane is piggybacked on three illegal splices and optimism."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "If the pump loses one more feed, your toilets stop being private problems."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Rook respond to Juno's diagnosis?",
+              "options": [
+                {
+                  "option_id": "back_juno",
+                  "option_text": "Back Juno and pivot to survival.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Then stop treating this like gossip. We are one bad surge from drinking regret."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Closer to a week, maybe less if anybody gets creative."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "referee_first",
+                  "option_text": "Keep refereeing the personalities.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "I'd love to panic about plumbing right after I keep these idiots from strangling each other with extension cords."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Sure. Mediate the sewage too when it comes up through the sinks."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "press_specifics",
+                  "option_text": "Press Juno for specifics.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Give me the short version. What dies first?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Water pump's browning out, sewage line's hissing, and the power bus is one spark away from a neighborhood fireworks show."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_city_notice_drops",
+          "source_purpose": "Deliver the inciting incident that transforms neighborhood irritation into a larger political struggle.",
+          "source_exit_state": "The morning feud is instantly redirected into a fight over leadership, legitimacy, and access to water.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Every cracked screen in Rusthook Court flickers with the same municipal seal. Even the yelling hesitates."
+            },
+            {
+              "type": "narration",
+              "text": "NOTICE: One fringe district is eligible for a municipal water-recycler package pending verified residents' council formation and successful inspection."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "text": "Oh, that's filthy. They put a prize at the bottom of a paperwork pit."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Read the deadline."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "They only call it help when the paperwork can bite."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "narration",
+              "text": "The shouting changes shape. Nobody cares about the drone now; everybody cares who gets to stand nearest the water."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_the_council_feud",
+          "source_purpose": "Show how each resident's agenda collides the moment real stakes appear, defining the central community conflict.",
+          "source_exit_state": "Leadership lines are drawn, but nobody trusts anybody enough to form a council on their own.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "Then obviously I should front the council. I already possess authority, posture, and the best earrings on the block."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Absolutely not. If the city parks that recycler anywhere, it goes by my trailer where I can keep an eye on it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "text": "Chat says Queenie for optics, Buck for bunker energy, Juno for not exploding."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "If the lane loses water pressure, you can crown yourselves in dry heaves."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_05_choice_01",
+              "prompt": "Whose argument does Rook entertain first?",
+              "options": [
+                {
+                  "option_id": "queenie",
+                  "option_text": "Let Queenie make her case.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Fine. Queenie, give me your civic fantasy in one sentence."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "text": "I provide dignity, coordination, and a public image not assembled out of mildew."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Buck folds his arms harder. Trust does not improve."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "buck",
+                  "option_text": "Hear Buck's suspicion out.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Buck. Give me the ugly version before your blood pressure wins."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "text": "Simple. The city gifts you one machine, then fines you for breathing near it wrong."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Queenie reacts like he just spat in a ballot box."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "juno",
+                  "option_text": "Ask Juno what actually matters.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Skip the pageant. Juno, what actually has to happen?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Stable power, working pipes, and five idiots who can lie in the same direction for ten minutes."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Nobody likes the answer, which makes it the first useful one."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_rook_volunteered",
+          "source_purpose": "Lock the player character into the story premise by making Rook the only viable peacekeeping center for the coming inspection.",
+          "source_exit_state": "Rook is officially stuck as Rusthook Court's neutral organizer, and the first council-planning meeting is set in motion.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "The inspector will need a sane face. Since none of these animals qualify, we'll borrow yours."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "He ain't your mascot. He's neutral. Mean-looking, which is close enough to official."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "He can keep people lined up and stop the worst ideas before they breed."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+              "text": "And if he snaps, my numbers go nuclear."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_06_choice_01",
+              "prompt": "How does Rook react to being drafted as peacekeeper?",
+              "options": [
+                {
+                  "option_id": "accept_command",
+                  "option_text": "Take command of the mess.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Fine. Gutterlight Wash & Tap. Today. One meeting, one agenda, and nobody starts a blood feud over seating."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Look at that. Civil order through intimidation. Very on-brand."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "By the time anyone thinks to object, the meeting already exists."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "refuse",
+                  "option_text": "Refuse and get overruled.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "No. I am not chairing a sewage parliament."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Three people answer at once and none of them care."
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "text": "Marvelous. Noon at Gutterlight, then. Wear something authoritative and washable."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Rook gets drafted the way Rusthook does everything else: loudly and without consent."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "bitter_humor",
+                  "option_text": "Accept with a bitter joke.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Great. I used to clear mines for pay. Now I herd raccoons toward democracy."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Good. Bring that energy to Gutterlight. I'll bring the cable and the disaster report."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The assignment lands on him anyway, only now with jokes attached."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Rook is officially stuck as Rusthook Court's neutral organizer, and the first council-planning meeting at Gutterlight Wash & Tap is set in motion.",
+      "notes_and_work_product_summary": "Adapted all six source beats in order, preserving the intro scene turn from petty neighborhood feud to organized water-politics crisis. Interactive beats each contain one local choice with short convergent branches, and all branches end with no active portrait for clean downstream assembly."
+    },
+    {
+      "scene_uuid": "eb9694a8-8d26-42bd-95b4-634596c74ce2",
+      "scene_name": "act1_scene1",
+      "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the hostile-comic meeting space and show that Rook is trying to impose order on people who arrived prepared for three different arguments.",
+          "source_exit_state": "Rook has the room's attention, but not its cooperation.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b"
+            },
+            {
+              "type": "narration",
+              "text": "The Gutterlight's dryers thump behind a sticky booth serving as a council table, while a wall breaker crackles like it wants out."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Sit down. I've crawled out of kill-zones quieter than this room."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "I am seated. At the head. Where leadership naturally occurs."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "That ain't leadership. That's you stealing the good side of the booth and calling it government."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "If any of you start pounding the table, do it softly. I'm babysitting a breaker held together by grease and prayer."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Perfect. Three people, three private wars, and not one useful minute so far."
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Nobody talks over me for the next ten seconds. That's the closest thing we're getting to order."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "narration",
+              "text": "It buys him silence, not cooperation."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Frame the central competing agendas and let the player establish Rook's first social alignment.",
+          "source_exit_state": "One resident feels seen, while the other two become more defensive about their own agenda.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Simple question. What does the inspector need to see when they roll into Rusthook?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "A proper civic face. A chairwoman. A title with weight and maybe a sash."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Placement. Access rights. You park that recycler wrong, half the lot starts a border dispute by noon."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Working power. If the machine kisses our wiring as-is, it'll black out the lane and maybe set the washroom singing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "Which concern does Rook legitimize first?",
+              "options": [
+                {
+                  "option_id": "queenie",
+                  "option_text": "Back Queenie's push for a public face and ceremonial authority.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Fine. The inspector gets theater. We look organized before we look honest."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "text": "Exactly. Acting Chairwoman Voss. See how the room improves when language does?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "buck",
+                  "option_text": "Treat Buck's placement and access demand as the first real issue.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "We settle placement and access first. If the machine lands stupid, everything after that is a fight."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "text": "Now that's policy. Proximity ain't greed. It's site security and basic rights."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "juno",
+                  "option_text": "Prioritize Juno's technical warning about the wiring.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "We start with wiring. If it explodes, none of you get a title or a parking claim."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+                      "text": "Good. I'd almost forgotten adults existed."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Convert the political shouting into a concrete logistical problem and foreground Juno's practical value.",
+          "source_exit_state": "Everyone is forced to accept that Juno's wiring constraints limit their fantasy versions of the plan.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Juno clears a patch of lint-specked table. A stained lot sketch and two damp napkins become official planning documents."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "Central lane. Visible from the gate. If we're pretending to be civilized, the equipment should pose well."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Near my trailer. Better sightlines, less foot traffic, and I can keep scavengers off it with one lawn chair and a glare."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Both routes run through the shower splitter. That splitter sulks when somebody runs a fan and a microwave together."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "You want the recycler alive, I reroute current, isolate the pump, and strap in the reserve cell for spike load."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "So placement follows wiring. Not vanity. Not porch jealousy."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "It is not vanity to consider optics."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Optics don't carry amperage."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Deliver the scene's main social-combat choice, showing how Rook handles bad-faith neighbors under pressure.",
+          "source_exit_state": "The room calms just enough for planning to resume, but Rook's method leaves a distinct emotional bruise on the group.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "Says the woman who keeps our electrical future next to a beer tap."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Better that than letting you staple a fake crown to the recycler and call it municipal."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Keep accusing each other and I'll start charging cord-rental by the insult."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Enough."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "How does Rook stop the shouting match?",
+              "options": [
+                {
+                  "option_id": "intimidate",
+                  "option_text": "Shut them down with hard intimidation.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "One more scream and I start throwing people outside by belt loops. Pick one: dignity or velocity."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+                      "text": "Real nice council process, Mercer."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The booth goes quiet on pure self-preservation."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "mock",
+                  "option_text": "Break the spiral with deadpan mockery.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Amazing. We took one city program and turned it into three drunks fistfighting over a toaster."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "A couple bitter laughs slip out before anyone can stop them, and the spiral breaks on embarrassment instead of respect."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "bargain",
+                  "option_text": "Force practical bargaining and split the roles.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+                      "text": "Queenie gets front-facing legitimacy. Buck gets access lanes and watch duty. Juno gets veto on anything with wires. Everybody hates it equally, so it's fair."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+                      "text": "I resent how workable that is."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "Grudging nods beat screaming, which counts as progress here."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Turn the argument into an actionable skeleton plan and assign provisional roles that echo later scene functions.",
+          "source_exit_state": "A fragile division of labor exists, and the meeting finally resembles a plan instead of a brawl.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "With the shouting mauled into submission, Rook starts assigning jobs before anyone can recover their principles."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Queenie handles presentation. You greet the inspector, wave the flag, and make Rusthook sound almost legal."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "At last. A role that respects my gifts."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Buck handles traffic, watch, and physical access. You keep lanes clear and strangers where we can see them."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "I can do perimeter. Still want it on record I don't trust the final spot."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Duly ignored."
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Juno gets full authority over wiring, shutoffs, and anything that looks ready to explode."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Beautiful. I finally get official permission to prevent your funerals."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "For the inspection, we need the packet, the council stamp, and your reserve power cell. No props, no paperwork, no backup power, no miracle."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "narration",
+              "text": "Nobody likes the arrangement. Which is how it passes for fair."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Introduce the immediate practical obstacle that launches the next scene and darkens the conflict from petty dysfunction into possible sabotage.",
+          "source_exit_state": "The plan cannot proceed until the missing packet, stamp, and power cell are recovered.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "My stamp case was in my bag. It does not grow legs."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Reserve cell's gone from a locked kit. That takes hands, not luck."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "Packet ain't under the booth, behind the washer, or in the complaint jar. Somebody lifted the exact things we need."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Who was around here besides us?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Lil Pox drifted through earlier. Claimed she was filming the dryers because one of them screams in B-flat."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "If that little sewer goblin took my seal for entertainment, I'll emboss her forehead."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Too precise for random theft. Either she got clever, or somebody aimed her."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "narration",
+              "text": "The plan sours instantly. Rusthook isn't just disorganized anymore; somebody may be working the angles."
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "source_purpose": "Close on a compromised forward motion that preserves the scene's turn: structure without trust.",
+          "source_exit_state": "Rook leaves with a skeletal inspection plan, assigned roles, no shared trust, and a clear need to track the missing items through Rusthook's local underbelly.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Meeting's done. Keep your roles, keep your hands off each other's cables, and don't improvise anything while I'm gone."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+              "text": "I will comply under protest, and I still expect Acting Chairwoman spoken aloud when outsiders arrive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+              "text": "I want guarantees on final placement. I ain't guarding a machine just to watch somebody else annex it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "612521e8-32a8-493d-911c-8b132acc66ba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+              "text": "Look at us. We have a plan in the most insulting technical sense possible."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+              "text": "Good enough. I find the packet, the stamp, and the cell. You three try not to start a second government before I get back."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+            },
+            {
+              "type": "narration",
+              "text": "Rook leaves with assignments, suspicions, and a skeletal inspection plan held together by spite instead of trust."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Rook leaves Gutterlight with a skeletal inspection plan, provisional roles for Queenie, Buck, and Juno, and the urgent task of recovering the missing packet, council stamp, and reserve power cell before theft or sabotage kills the effort.",
+      "notes_and_work_product_summary": "Seven-beat scene with interactive choices in beats 2 and 4. Portrait staging stays consistent across the scene: Rook center, Queenie left, Buck left, Juno right. All choice branches end with no portrait visible for clean downstream assembly."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 0,
+      "g": 255,
+      "b": 209,
+      "a": 255,
+      "hex_string": "#00FFD1"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 220,
+      "b": 230,
+      "a": 255,
+      "hex_string": "#D6DCE6"
+    },
+    "idle_small_color": {
+      "r": 169,
+      "g": 177,
+      "b": 190,
+      "a": 255,
+      "hex_string": "#A9B1BE"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 122,
+      "b": 61,
+      "a": 255,
+      "hex_string": "#FF7A3D"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 204,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#FFCC66"
+    },
+    "insensitive_color": {
+      "r": 92,
+      "g": 100,
+      "b": 112,
+      "a": 255,
+      "hex_string": "#5C6470"
+    },
+    "muted_color": {
+      "r": 57,
+      "g": 66,
+      "b": 78,
+      "a": 255,
+      "hex_string": "#39424E"
+    },
+    "hover_muted_color": {
+      "r": 79,
+      "g": 88,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#4F5866"
+    },
+    "text_color": {
+      "r": 233,
+      "g": 236,
+      "b": 242,
+      "a": 255,
+      "hex_string": "#E9ECF2"
+    },
+    "interface_text_color": {
+      "r": 245,
+      "g": 248,
+      "b": 252,
+      "a": 255,
+      "hex_string": "#F5F8FC"
+    },
+    "reasoning": "Neon Lot Wars calls for a grimy cyberpunk palette with strong readability: cool off-whites for dialogue and menu text, a toxic cyan accent to evoke neon infrastructure, and hot orange hover/selection colors to reflect rust, hazard lights, and the story's abrasive energy. The muted grays are deliberately low-saturation to fit the trash-strewn setting without sacrificing UI clarity."
+  },
+  "character_dict": {
+    "fd619ea0-9be6-495e-b518-6e3d316ee87f": "Rook Mercer",
+    "a929669a-202d-4e82-9159-69f82e3d14c5": "Darlene \"Queenie\" Voss",
+    "b0224322-1daf-4d4a-becd-6e4bd67ba971": "Juno Serrano",
+    "4d1f6149-46e4-48aa-a78f-a78f60f83572": "Pastor Byte",
+    "97c64595-d3c8-4403-88a6-96ce3c6d841b": "Nixie \"Lil Pox\" Tran",
+    "612521e8-32a8-493d-911c-8b132acc66ba": "Buck Heller"
+  }
+}

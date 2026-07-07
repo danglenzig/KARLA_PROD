@@ -1,0 +1,693 @@
+{
+  "narrative_design_spec": {
+    "story_title": "Neon Lot Wars",
+    "synopsis": "In the trash-choked fringe district of Rusthook Court, washed-up ex-mercenary Rook Mercer discovers that surviving gunfire was easier than surviving neighbors. When the lot gets a chance to win a municipal water-recycler package, every resident starts scheming for control: Queenie Voss, the self-appointed trailer-park monarch; Juno Serrano, a razor-dry mechanic who just wants stable power; Pastor Byte, a conspiracy preacher certain the city is installing digital shackles; Lil Pox, a feral scavenger streamer monetizing everyone else's humiliation; and Buck Heller, a paranoid hoarder who knows official help always comes with a knife hidden in the fine print. The tone is bawdy, filthy, and sharp, with deadly competence repeatedly wasted on sewage wars, trash politics, and petty feuds that snowball into neighborhood-scale catastrophe. Optional sparks can flare between Rook and Juno, but the heart of the story is a vividly shabby cyberpunk community trying to keep itself alive while making every possible bad decision along the way.",
+    "player_character": {
+      "character_data": {
+        "uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+        "name": "Rook Mercer",
+        "portrait_image_prompt": "Late-30s ex-mercenary with tired eyes, cropped dark hair with an uneven undercut, a battered cybernetic left eye, a scar across the bridge of the nose, weathered tan skin, worn synth-leather combat coat over a faded armored tank top, old military implants at the neck, fingerless gloves, and a permanently unimpressed expression.",
+        "dialogue_examples": [
+          "I've crawled out of kill-zones quieter than this block before breakfast.",
+          "If I fix your power line, are you done declaring blood feuds over extension cords?",
+          "No, I am not taking a side in the Great Trash Barrel Schism.",
+          "I used to get paid hazard rates for this. Now I get warm beer and a headache."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+          "name": "Darlene \"Queenie\" Voss",
+          "portrait_image_prompt": "A loud middle-aged woman with towering bleached hair pinned by cheap chrome clips, heavy smudged glitter makeup, dark lipstick, a leopard-print synth-fur coat over a stained satin dress, too many rings and bracelets, long acrylic nails, and a commanding sneer.",
+          "dialogue_examples": [
+            "This lot would collapse into barbarism without my administrative gifts.",
+            "You cannot just stack old tires in a voting district, Buck. It sends a message.",
+            "I'm not being dramatic; I'm being civic.",
+            "Tell the inspector I represent the heart of this community, and maybe its better jewelry."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+          "name": "Juno Serrano",
+          "portrait_image_prompt": "A tough mechanic in her early 30s with a shaved sidecut and thick black curls, strong arms marked by grease stains and old burns, a narrow scar through one eyebrow, a practical cybernetic forearm full of tool ports, a cropped work jacket, heavy work pants, and a dry, knowing half-smile.",
+          "dialogue_examples": [
+            "I can make it run, not make it legal. Those are different services.",
+            "You're cute when you're furious, but you're standing on the wrong cable.",
+            "If the sewage line hisses at you, hissing back does not help.",
+            "Everybody here wants miracles on a scrap budget."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+          "name": "Pastor Byte",
+          "portrait_image_prompt": "A gaunt older man with deep-set eyes, dark skin, silver stubble, chrome data ports along his temples, a threadbare preacher's coat patched with circuit-board fabric, a dangling rosary made from microchips, worn boots, and the intense stare of a man who believes every impossible thing he says.",
+          "dialogue_examples": [
+            "The city does not give gifts. It installs leashes with better branding.",
+            "Brothers, sisters, and unpaid data plans, open your eyes.",
+            "A clean water unit today, biometric tithes tomorrow.",
+            "I preach truth. It just happens to sound insane until paperwork catches up."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+          "name": "Nixie \"Lil Pox\" Tran",
+          "portrait_image_prompt": "A wiry teenage scavenger with a buzzed haircut streaked in neon green, sharp features, a patched oversized hoodie, scavenged smart-goggles pushed up on her forehead, fingerless gloves, mismatched jewelry, quick restless posture, and a grin that says she already sold your secrets.",
+          "dialogue_examples": [
+            "Relax, I didn't steal it-steal it. I borrowed it for narrative tension.",
+            "If it's not streamed, did your public breakdown even happen?",
+            "Old people love secrets and then act shocked when I monetize them.",
+            "You want the packet back, beat me at my own breadcrumb trail."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "612521e8-32a8-493d-911c-8b132acc66ba",
+          "name": "Buck Heller",
+          "portrait_image_prompt": "A broad, weathered man in his 50s with a beer belly, sunburned skin, a thick walrus mustache, thinning hair, obsolete military-grade implants along his neck, a stained tank top under a tactical fishing vest, cargo shorts, knee braces, and a suspicious scowl.",
+          "dialogue_examples": [
+            "A man has rights. One of them is trailer adjacency to premium utilities.",
+            "That ain't hoarding. That's strategic inventory.",
+            "Every time the city says 'pilot program,' somebody loses a porch.",
+            "I'm not paranoid; I just keep being right in an ugly voice."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "name": "Rusthook Court",
+          "location_image_prompt": "A cramped trailer-park-like district of patched prefab homes, dangling extension cords, dripping AC units, neon yard signs, scrap-metal fencing, plastic lawn furniture, oil-slick puddles, improvised antennas, scattered e-waste, and the distant bulk of a megacity overhead."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "name": "Gutterlight Wash & Tap",
+          "location_image_prompt": "A grimy combination dive bar and laundromat with flickering neon drink signs, dented washing machines, sticky vinyl booths, cracked tile floors, cheap holographic menu boards, lint-clogged vents, and a row of battered dryers humming beside a stained bar counter."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "36116941-2698-4725-b470-6009eefc2180",
+          "name": "Overflow Market",
+          "location_image_prompt": "A crowded black-market bazaar built from tarp roofs and welded scrap stalls, with tables piled with bootleg cyberware, salvage electronics, knockoff batteries, steam-food carts, hanging cables, muddy footpaths, and handwritten deal signs."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "63ffd311-1530-40bb-b034-c21a266e9647",
+          "name": "Chapel of Perpetual Upload",
+          "location_image_prompt": "A converted shipping-container chapel with LED saint icons, patched sheet-metal walls, folding chairs, a welded altar, cheap speakers, donation boxes, prayer candles beside obsolete circuit boards, and devotional screens showing glitching sermons."
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "3bab943e-902d-4ee8-95aa-7761e1767038",
+          "name": "Stormdrain Utility Catwalk",
+          "location_image_prompt": "A concrete flood channel lined with rusted maintenance catwalks, exposed conduits, fiber junction boxes, chain-link barriers, graffiti layers, stagnant runoff water, maintenance ladders, and looming megacity infrastructure above."
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "d12aa19a-8423-4517-a164-1e8342ee7776",
+        "scene_name": "intro",
+        "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+        "non_player_character_uuids": [
+          "a929669a-202d-4e82-9159-69f82e3d14c5",
+          "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+          "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+          "612521e8-32a8-493d-911c-8b132acc66ba"
+        ],
+        "narrative_summary": "Rook Mercer wakes to another filthy morning in Rusthook Court and is immediately dragged into a screaming dispute over trash rights, power theft, and whose washing drone chewed through whose cable. In the middle of the chaos, a city notice announces that one fringe district can receive a municipal water-recycler package if it proves it can organize a legitimate residents' council. Queenie instantly volunteers herself as natural ruler, Buck objects on constitutional grounds he mostly invented, Lil Pox turns the argument into a live stream, and Juno points out that the lot's plumbing may not survive another week anyway. Because Rook is the only person everyone fears slightly more than they hate each other, they get drafted as neutral peacekeeper for the coming inspection."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "eb9694a8-8d26-42bd-95b4-634596c74ce2",
+          "scene_name": "act1_scene1",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "non_player_character_uuids": [
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "At the Gutterlight Wash & Tap, Rook tries to hold a basic planning meeting for the inspection and learns just how impossible that task is. Queenie wants ceremonial authority and a public title, Buck demands the future recycler be parked nearest his trailer, and Juno only cares about routing enough power to keep the system from exploding. The player navigates insults, petty bargaining, and laundry-room diplomacy, choosing who Rook indulges, mocks, or leans on. By the end of the scene, the lot has the shape of a plan but none of the trust needed to carry it out."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "0ed52fb3-6d37-40de-b97c-b52696fab9fb",
+          "scene_name": "act1_scene2",
+          "location_uuid": "36116941-2698-4725-b470-6009eefc2180",
+          "non_player_character_uuids": [
+            "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+          ],
+          "narrative_summary": "Rook hunts down the missing council stamp, the inspection packet, and a reserve power cell through the filthy stalls of Overflow Market. The trail leads to Lil Pox, who stole the items for content and baited Rook with a scavenger hunt, only to reveal she was nudged along by Pastor Byte's warnings about city surveillance. The recovered packet reveals the inspector is arriving much sooner than expected, leaving almost no time to clean up the lot or settle leadership. Rook leaves with the supplies, a better read on Lil Pox's motives, and the suspicion that simple stupidity is curdling into deliberate sabotage."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "95b751b5-e948-4310-bde0-8a9043cd7605",
+          "scene_name": "act2_scene1",
+          "location_uuid": "63ffd311-1530-40bb-b034-c21a266e9647",
+          "non_player_character_uuids": [
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "Pastor Byte hosts a packed sermon at the Chapel of Perpetual Upload that quickly turns into a town hall, a riot, and a conspiracy convention all at once. He claims the municipal water unit is a data-harvesting trap, Queenie accuses him of sabotage, and Buck quietly feeds the panic because he refuses to let Queenie control the district's one legitimate resource. Rook can challenge the preacher head-on, expose Buck's agitation, or let the crowd talk itself into idiocy while gathering useful truths. The scene ends with Rusthook Court split into rival camps and the upcoming inspection transformed into a symbolic civil war."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "e58d6efa-f8c9-4ad0-8979-9ad27d980ed7",
+          "scene_name": "act2_scene2",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "non_player_character_uuids": [
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "Inspection prep day at Rusthook Court turns into absurd urban warfare. Hacked sanitation drones flood the lane with sludge, extension cords are booby-trapped, a smear campaign spreads over local mesh channels, and every favor Rook secured in Act One gets stress-tested under pressure. Juno works triage on the collapsing utilities while Rook applies real combat discipline to profoundly stupid problems, from perimeter control with lawn furniture to emergency decontamination by hose. Amid the chaos, evidence appears that someone has rerouted the communal power line to guarantee a catastrophic failure during the inspection."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "fc6e0e6e-b410-4d22-8f76-68b8ae3ad8cf",
+          "scene_name": "act3_scene1",
+          "location_uuid": "3bab943e-902d-4ee8-95aa-7761e1767038",
+          "non_player_character_uuids": [
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "Following the illegal bypass through the stormdrain infrastructure, Rook and Juno uncover Buck's hidden hookup and the full municipal contract he was trying to keep buried. The water-recycler package only grants one legal service node, while the rest of the lot would be hit with compliance fees and inspection penalties they cannot possibly afford. Buck's sabotage is still selfish and infuriating, but it comes from a recognizably desperate fear of losing the entire block one trailer at a time. The discovery reframes the feud: the neighbors were fighting over scraps from a rigged deal before they even knew the rules."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "affaf333-671a-4fdf-b57d-b35c02175636",
+          "scene_name": "act3_scene2",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "non_player_character_uuids": [
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "Back at the Gutterlight, Rook forces every major troublemaker into one room and drops the truth on the table. This is the emotional pivot of the story: Queenie admits she wanted status because status is the only shield she understands, Buck admits he panicked, Pastor Byte admits his paranoia was not entirely wrong, and Lil Pox admits she kept inflaming things because chaos made her feel useful. The player decides whether Rook unites the neighborhood through intimidation, blunt honesty, or a filthy rallying speech about surviving together. Juno proposes a new plan: fake compliance long enough to get the inspector off their backs, then build an independent recycler from salvaged parts."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "74387628-3e06-4560-a08d-ad8e5a856dd4",
+          "scene_name": "act3_scene3",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "non_player_character_uuids": [
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "narrative_summary": "The municipal inspector arrives at Rusthook Court expecting a humiliating easy rejection, backed by a repo drone and enough smugness to power a small appliance. Instead, Rook coordinates the neighborhood's most functional ten minutes in recorded history: Queenie performs dignity, Pastor Byte distracts with sanctified outrage, Lil Pox hijacks the inspection feed, Buck deploys his junk pile as barricades, and Juno swaps the city hardware for a jury-rigged system the lot can actually maintain. The finale plays the deadly-competent ex-merc archetype for comedy, as Rook treats a trailer-park inspection like a covert operation. By outmaneuvering the city and each other, the residents finally become a community for one gloriously trashy moment."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "670a1023-73a2-46a0-b903-4af3ec5e0b71",
+        "scene_name": "outro",
+        "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+        "non_player_character_uuids": [
+          "a929669a-202d-4e82-9159-69f82e3d14c5",
+          "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+          "4d1f6149-46e4-48aa-a78f-a78f60f83572",
+          "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+          "612521e8-32a8-493d-911c-8b132acc66ba"
+        ],
+        "narrative_summary": "With the official program ruined and the inspector sent packing, Rusthook Court assembles its own ugly but functional water solution out of salvage, theft, and mutual embarrassment. The neighborhood is still loud, gross, and one bad afternoon away from another miniature civil war, but the residents now understand they are harder to crush together than apart. Rook, who could have left at any point, lingers for cheap drinks, dirty jokes, and the deeply inconvenient realization that this miserable block has started to feel like home. Optional ending flavor can lean toward a flirtier quiet beat with Juno, a grudging public acknowledgment from Queenie, or the promise that peace in Rusthook Court will last right up until tomorrow."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/fd619ea0-9be6-495e-b518-6e3d316ee87f.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/a929669a-202d-4e82-9159-69f82e3d14c5.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/b0224322-1daf-4d4a-becd-6e4bd67ba971.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/97c64595-d3c8-4403-88a6-96ce3c6d841b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/612521e8-32a8-493d-911c-8b132acc66ba.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/bg 52633458-7bc8-4307-a5d9-89b174eca2fb.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/neon _lot _wars/IMAGES/bg bb49197c-e241-42d5-9d35-5ce45291c46b.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Neon Lot Wars",
+      "scene_name": "intro",
+      "scene_uuid": "d12aa19a-8423-4517-a164-1e8342ee7776",
+      "source_scene_summary": "Rook Mercer wakes to another filthy morning in Rusthook Court and is immediately dragged into a screaming dispute over trash rights, power theft, and whose washing drone chewed through whose cable. In the middle of the chaos, a city notice announces that one fringe district can receive a municipal water-recycler package if it proves it can organize a legitimate residents' council. Queenie instantly volunteers herself as natural ruler, Buck objects on constitutional grounds he mostly invented, Lil Pox turns the argument into a live stream, and Juno points out that the lot's plumbing may not survive another week anyway. Because Rook is the only person everyone fears slightly more than they hate each other, they get drafted as neutral peacekeeper for the coming inspection.",
+      "location_name": "Rusthook Court",
+      "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+      "player_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+      "non_player_character_uuids": [
+        "a929669a-202d-4e82-9159-69f82e3d14c5",
+        "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+        "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+        "612521e8-32a8-493d-911c-8b132acc66ba"
+      ],
+      "dramatic_question": "Can Rook stop Rusthook Court's latest idiotic feud long enough to turn the city's water offer into a plan instead of a riot?",
+      "scene_goal": "Shut down the morning blowup and get through it without being trapped into running the neighborhood.",
+      "scene_turn": "A routine trash-and-cable screaming match becomes a political war over a city water-recycler package, and Rook is pushed from detached resident into unwilling neutral peacekeeper.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_filthy_morning",
+          "purpose": "Establish the setting, tone, and Rook's exhausted relationship to Rusthook Court before the main conflict lands on him.",
+          "summary": "Rook wakes to the familiar stink, noise, and mechanical coughing of Rusthook Court, only to realize today's racket is louder and angrier than usual. He steps outside already annoyed, expecting one more petty dispute and hoping not to get dragged into it.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "bleary, foul, darkly comic",
+          "revelation": "In Rusthook Court, a normal morning already sounds like the opening minute of a neighborhood war.",
+          "tension_change": "rise",
+          "player_goal": "Figure out what fresh disaster is making this much noise.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook leaves the privacy of his trailer and walks straight into the public chaos."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_trash_rights_war",
+          "purpose": "Introduce Queenie, Buck, and Lil Pox through a loud, ridiculous conflict that shows the lot's social fault lines.",
+          "summary": "Queenie and Buck are in a full-volume argument over trash territory, stolen electricity, and a washing drone that chewed through somebody's cable, while Lil Pox gleefully streams the whole humiliation to her audience. The fight is stupid on the surface, but old resentments underneath it make it dangerous enough that everyone looks at Rook when he appears.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "shrill, chaotic, bawdy",
+          "revelation": "A washing drone chewing through a live cable triggered the latest blowup, but the real issue is that everyone already thinks everyone else is stealing from them.",
+          "tension_change": "rise",
+          "player_goal": "Break into the argument before it turns physical or breaks something expensive.",
+          "interactive": true,
+          "choice_prompt": "How does Rook shut down the screaming match?",
+          "branch_outcomes": [
+            "Rook intimidates both sides into momentary silence, reinforcing his reputation as the scariest person on the lot.",
+            "Rook mocks the whole feud, getting a laugh from bystanders and a fresh round of offended yelling from the principals.",
+            "Rook demands facts like a field sergeant, briefly forcing the argument into something almost organized."
+          ],
+          "exit_state": "The dispute stops being background noise and becomes Rook's problem to manage."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_juno_reality_check",
+          "purpose": "Introduce Juno as the competent practical voice and reveal that the neighborhood's infrastructure is genuinely close to collapse.",
+          "summary": "Juno cuts into the argument with the damaged cable in hand and points out that the lot's improvised systems are failing faster than the residents can blame each other. Her dry diagnosis makes it clear this is not just about hurt pride or stolen power; the whole place is one bad day away from losing essential plumbing.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "612521e8-32a8-493d-911c-8b132acc66ba",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b"
+          ],
+          "focal_character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+          "mood": "dry, practical, ominous",
+          "revelation": "Rusthook Court's plumbing may not survive another week, and its power routing is just as unstable.",
+          "tension_change": "twist",
+          "player_goal": "Get a usable read on whether this mess is only social or an actual survival problem.",
+          "interactive": true,
+          "choice_prompt": "How does Rook respond to Juno's diagnosis?",
+          "branch_outcomes": [
+            "Rook backs Juno's practical assessment, shifting the crowd's attention from blame to survival.",
+            "Rook keeps trying to referee personalities first, slowing the pivot to the bigger problem.",
+            "Rook needles Juno for specifics, creating a sharper, more personal exchange while extracting useful details."
+          ],
+          "exit_state": "The crowd can no longer pretend the lot's utilities are merely inconvenient; they are failing."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_city_notice_drops",
+          "purpose": "Deliver the inciting incident that transforms neighborhood irritation into a larger political struggle.",
+          "summary": "A city notice hits the local mesh and public display: one fringe district can receive a municipal water-recycler package if it can prove it has a legitimate residents' council in time for inspection. The tone of the crowd changes instantly from angry bickering to hungry calculation.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "electric, opportunistic, suspicious",
+          "revelation": "The city is offering a water-recycler package, but only to a district that can present itself as organized and legitimate.",
+          "tension_change": "twist",
+          "player_goal": "Understand what the notice actually means before the others tear it apart.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The morning feud is instantly redirected into a fight over leadership, legitimacy, and access to water."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_the_council_feud",
+          "purpose": "Show how each resident's agenda collides the moment real stakes appear, defining the central community conflict.",
+          "summary": "Queenie immediately claims she is the obvious face of any council, Buck objects on half-invented constitutional grounds and starts arguing over where the recycler should be placed, and Lil Pox turns the whole thing into content for her viewers. Juno keeps dragging the conversation back to the ugly fact that none of it matters if the lot's infrastructure dies first.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+          "mood": "combative, political, ridiculous",
+          "revelation": "Everyone views the recycler as something slightly different: status, leverage, protection, entertainment, or one last practical fix.",
+          "tension_change": "rise",
+          "player_goal": "Keep the argument from hardening into permanent factions before any plan exists at all.",
+          "interactive": true,
+          "choice_prompt": "Whose argument does Rook entertain first?",
+          "branch_outcomes": [
+            "Rook humors Queenie, encouraging her sense of ceremonial legitimacy.",
+            "Rook hears Buck out, validating his suspicion that official help always comes with strings attached.",
+            "Rook cuts past both and asks Juno what actually has to be done, briefly re-centering the scene on survival."
+          ],
+          "exit_state": "Leadership lines are drawn, but nobody trusts anybody enough to form a council on their own."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_rook_volunteered",
+          "purpose": "Lock the player character into the story premise by making Rook the only viable peacekeeping center for the coming inspection.",
+          "summary": "As the crowd spirals toward another shouting match, the miserable logic becomes obvious: Rook is the only person everyone fears slightly more than they hate each other. Queenie wants his credibility, Buck wants his neutrality, Juno wants someone who can keep the idiots pointed in one direction, and even Lil Pox likes the drama of making him moderator. A planning meeting is pushed onto the calendar at Gutterlight Wash & Tap whether Rook likes it or not.",
+          "location_uuid": "52633458-7bc8-4307-a5d9-89b174eca2fb",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "97c64595-d3c8-4403-88a6-96ce3c6d841b",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "grudging, fraught, mobilized",
+          "revelation": "Rook's reputation for competence and violence makes him the lot's only acceptable 'neutral' peacekeeper.",
+          "tension_change": "fall",
+          "player_goal": "Avoid being saddled with civic responsibility, or at least set terms if escape is impossible.",
+          "interactive": true,
+          "choice_prompt": "How does Rook react to being drafted as peacekeeper?",
+          "branch_outcomes": [
+            "Rook accepts in command mode, making the coming meeting feel like a military operation in a laundromat.",
+            "Rook refuses until the others steamroll him, emphasizing how little control he really has over the assignment.",
+            "Rook accepts with bitter humor, softening the moment while still ending up responsible."
+          ],
+          "exit_state": "Rook is officially stuck as Rusthook Court's neutral organizer, and the first council-planning meeting is set in motion."
+        }
+      ]
+    },
+    {
+      "story_title": "Neon Lot Wars",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "eb9694a8-8d26-42bd-95b4-634596c74ce2",
+      "source_scene_summary": "At the Gutterlight Wash & Tap, Rook tries to hold a basic planning meeting for the inspection and learns just how impossible that task is. Queenie wants ceremonial authority and a public title, Buck demands the future recycler be parked nearest his trailer, and Juno only cares about routing enough power to keep the system from exploding. The player navigates insults, petty bargaining, and laundry-room diplomacy, choosing who Rook indulges, mocks, or leans on. By the end of the scene, the lot has the shape of a plan but none of the trust needed to carry it out.",
+      "location_name": "Gutterlight Wash & Tap",
+      "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+      "player_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+      "non_player_character_uuids": [
+        "a929669a-202d-4e82-9159-69f82e3d14c5",
+        "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+        "612521e8-32a8-493d-911c-8b132acc66ba"
+      ],
+      "dramatic_question": "Can Rook force Queenie, Buck, and Juno into a believable inspection plan before their egos and grudges kill the meeting?",
+      "scene_goal": "Get Rusthook Court's loudest stakeholders to agree on roles, placement logic, and basic requirements for the upcoming inspection.",
+      "scene_turn": "Rook extracts a skeletal inspection plan and provisional job assignments, but the discovery that the packet, council stamp, and reserve power cell are missing reveals the effort is already being undermined.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Establish the hostile-comic meeting space and show that Rook is trying to impose order on people who arrived prepared for three different arguments.",
+          "summary": "Rook turns a sticky booth between humming dryers into a makeshift council table, only to find Queenie already posing like chairwoman, Buck nursing territorial grievances, and Juno half-engaged while babysitting the bar's failing breaker. Before anyone says 'inspection,' the room is already louder than a bar fight with paperwork.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "frazzled, filthy comedy",
+          "revelation": "The three residents have not come to solve one shared problem; each thinks the meeting exists to ratify their personal priority.",
+          "tension_change": "rise",
+          "player_goal": "Get everyone seated and listening long enough to start the meeting.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook has the room's attention, but not its cooperation."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Frame the central competing agendas and let the player establish Rook's first social alignment.",
+          "summary": "Rook asks the simplest possible question: what does the inspector need to see? Queenie argues that legitimacy is theater and demands a proper title, Buck insists location and access rights decide everything, and Juno bluntly says none of it matters if the recycler cooks Rusthook's wiring on contact.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "a929669a-202d-4e82-9159-69f82e3d14c5",
+          "mood": "combative, absurd",
+          "revelation": "The inspection is not just about receiving equipment; Rusthook has to look organized enough to deserve it.",
+          "tension_change": "twist",
+          "player_goal": "Choose which concern Rook treats as the meeting's first real priority.",
+          "interactive": true,
+          "choice_prompt": "Which concern does Rook legitimize first: Queenie's need for ceremonial authority, Buck's demand for placement rights, or Juno's technical warnings?",
+          "branch_outcomes": [
+            "Queenie feels validated and pushes harder to become the public face of the council.",
+            "Buck feels heard and reframes his selfishness as a fairness and access issue.",
+            "Juno takes Rook more seriously and becomes more willing to offer concrete technical fixes."
+          ],
+          "exit_state": "One resident feels seen, while the other two become more defensive about their own agenda."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Convert the political shouting into a concrete logistical problem and foreground Juno's practical value.",
+          "summary": "Using a stained lot sketch, napkins, and whatever flat space isn't covered in lint, the group argues over where the recycler should sit. Queenie wants it visible and central for the inspector, Buck wants it closest to his trailer for 'security,' and Juno explains that both routes run through bad load paths unless they reroute current and secure backup power.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+          "mood": "irritated, technical",
+          "revelation": "Rusthook's current power setup cannot support the recycler safely; placement is constrained by wiring, not just ego.",
+          "tension_change": "rise",
+          "player_goal": "Pin down a viable installation approach without letting the argument derail.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Everyone is forced to accept that Juno's wiring constraints limit their fantasy versions of the plan."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Deliver the scene's main social-combat choice, showing how Rook handles bad-faith neighbors under pressure.",
+          "summary": "Once technical reality enters the room, the argument gets meaner instead of smarter, spiraling into insults about fake civics, power theft, and who keeps stealing whose extension cords. Rook has to shut the shouting down before the meeting dissolves completely.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "hostile, darkly funny",
+          "revelation": "Each resident is willing to cooperate only if they keep some version of status, leverage, or control.",
+          "tension_change": "twist",
+          "player_goal": "Restore order and create enough compliance to finish the meeting.",
+          "interactive": true,
+          "choice_prompt": "How does Rook stop the shouting match: hard intimidation, deadpan mockery, or practical bargaining?",
+          "branch_outcomes": [
+            "Intimidation wins immediate silence but leaves deeper resentment under the surface.",
+            "Mockery gets bitter laughs and breaks the spiral, but nobody feels respected.",
+            "Bargaining produces the cleanest temporary cooperation, at the cost of future obligations and expectations."
+          ],
+          "exit_state": "The room calms just enough for planning to resume, but Rook's method leaves a distinct emotional bruise on the group."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Turn the argument into an actionable skeleton plan and assign provisional roles that echo later scene functions.",
+          "summary": "Rook forces the group into a miserable compromise: Queenie handles presentation and legitimacy, Buck handles traffic, watch, and physical access, and Juno gets full authority over wiring, shutdowns, and anything that could explode. The arrangement insults everyone in different ways, which is the closest thing Rusthook has to fairness.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "grudgingly constructive",
+          "revelation": "To fake legitimacy long enough to pass, they need a public-facing council rep, controlled access, technical triage, the official packet, the council stamp, and a reserve power cell.",
+          "tension_change": "fall",
+          "player_goal": "Lock down roles and identify the materials the inspection prep actually requires.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "A fragile division of labor exists, and the meeting finally resembles a plan instead of a brawl."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Introduce the immediate practical obstacle that launches the next scene and darkens the conflict from petty dysfunction into possible sabotage.",
+          "summary": "The moment they try to gather what they need, the essentials are gone: Queenie's council stamp is missing, the inspection packet isn't where it should be, and Juno's reserve power cell has vanished from her locked kit. The losses are too precise to be random mess, and the mention of Lil Pox snooping around earlier makes the whole thing smell like theft staged for entertainment or worse.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "suspicious, brittle",
+          "revelation": "Someone has already targeted the exact items Rusthook needs to look legitimate and keep the recycler stable; Lil Pox is a credible lead.",
+          "tension_change": "rise",
+          "player_goal": "Figure out whether the missing items point to petty theft, sabotage, or both.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The plan cannot proceed until the missing packet, stamp, and power cell are recovered."
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "purpose": "Close on a compromised forward motion that preserves the scene's turn: structure without trust.",
+          "summary": "Rook adjourns before the meeting mutates back into a riot, ordering everyone to keep their assigned roles while Rook hunts down the missing gear. Queenie still wants her title spoken out loud, Buck still wants guarantees about final placement, and Juno dryly notes that Rusthook now has a plan only in the most insulting technical sense.",
+          "location_uuid": "bb49197c-e241-42d5-9d35-5ce45291c46b",
+          "present_character_uuids": [
+            "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+            "a929669a-202d-4e82-9159-69f82e3d14c5",
+            "b0224322-1daf-4d4a-becd-6e4bd67ba971",
+            "612521e8-32a8-493d-911c-8b132acc66ba"
+          ],
+          "focal_character_uuid": "fd619ea0-9be6-495e-b518-6e3d316ee87f",
+          "mood": "brittle resolve",
+          "revelation": null,
+          "tension_change": "hold",
+          "player_goal": "End the meeting with enough structure to keep Rusthook moving while Rook investigates the theft.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook leaves with a skeletal inspection plan, assigned roles, no shared trust, and a clear need to track the missing items through Rusthook's local underbelly."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 0,
+      "g": 255,
+      "b": 209,
+      "a": 255,
+      "hex_string": "#00FFD1"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 220,
+      "b": 230,
+      "a": 255,
+      "hex_string": "#D6DCE6"
+    },
+    "idle_small_color": {
+      "r": 169,
+      "g": 177,
+      "b": 190,
+      "a": 255,
+      "hex_string": "#A9B1BE"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 122,
+      "b": 61,
+      "a": 255,
+      "hex_string": "#FF7A3D"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 204,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#FFCC66"
+    },
+    "insensitive_color": {
+      "r": 92,
+      "g": 100,
+      "b": 112,
+      "a": 255,
+      "hex_string": "#5C6470"
+    },
+    "muted_color": {
+      "r": 57,
+      "g": 66,
+      "b": 78,
+      "a": 255,
+      "hex_string": "#39424E"
+    },
+    "hover_muted_color": {
+      "r": 79,
+      "g": 88,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#4F5866"
+    },
+    "text_color": {
+      "r": 233,
+      "g": 236,
+      "b": 242,
+      "a": 255,
+      "hex_string": "#E9ECF2"
+    },
+    "interface_text_color": {
+      "r": 245,
+      "g": 248,
+      "b": 252,
+      "a": 255,
+      "hex_string": "#F5F8FC"
+    },
+    "reasoning": "Neon Lot Wars calls for a grimy cyberpunk palette with strong readability: cool off-whites for dialogue and menu text, a toxic cyan accent to evoke neon infrastructure, and hot orange hover/selection colors to reflect rust, hazard lights, and the story's abrasive energy. The muted grays are deliberately low-saturation to fit the trash-strewn setting without sacrificing UI clarity."
+  }
+}

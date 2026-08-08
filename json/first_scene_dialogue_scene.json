@@ -1,0 +1,873 @@
+{
+  "scene_uuid": "8949404c-4d28-476f-881d-8b163d16914e",
+  "scene_name": "act1_scene1",
+  "location_uuid": "b50cc53a-5085-40f2-861e-ababcb0721c4",
+  "dialogue_beats": [
+    {
+      "beat_index": 1,
+      "beat_name": "act1_scene1_beat_01",
+      "source_purpose": "Shift the story from the public brutality of the club to a more intimate, manipulative setting where Velvet can isolate Nina.",
+      "source_exit_state": "Nina is seated across from Velvet, already feeling the weight of a favor she did not ask for.",
+      "events": [
+        {
+          "type": "set_background",
+          "location_uuid": "b50cc53a-5085-40f2-861e-ababcb0721c4"
+        },
+        {
+          "type": "narration",
+          "text": "Fluorescent light turns the all-night diner flat and merciless after the club's red glow."
+        },
+        {
+          "type": "narration",
+          "text": "Velvet slides into a booth, claims the seat across from her with a pointed look, and somehow coffee and pie are already a foregone conclusion."
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "sad",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "You don't have to do this. I can buy my own coffee."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "If I wanted your money, sweetheart, we'd still be under the spotlight. Sit."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "confused",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "This some kind of congratulations?"
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "neutral",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Call it an investment. Try not to look so hunted."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "narration",
+          "text": "By the time Nina settles into the cracked vinyl, the coffee already feels like something she'll owe."
+        }
+      ]
+    },
+    {
+      "beat_index": 2,
+      "beat_name": "act1_scene1_beat_02",
+      "source_purpose": "Let Velvet begin her toxic mentorship by mixing praise, critique, and possession.",
+      "source_exit_state": "Velvet confirms Nina is hungry enough to work on, and Nina sees that the older woman's interest is both useful and dangerous.",
+      "events": [
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "You got looks, nerve, and just enough panic to keep things lively."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "You also kept scanning the room like somebody might save you. Nobody does that here."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "confused",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "You always this encouraging?"
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "neutral",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Only with girls worth the trouble. I can teach you the ropes, if you can stand the burn."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "choice",
+          "choice_id": "act1_scene1_beat_02_choice_01",
+          "prompt": "How does Nina answer Velvet's offer to teach her the ropes?",
+          "options": [
+            {
+              "option_id": "grateful",
+              "option_text": "Thank her and ask to learn.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "happy",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "Then teach me. I'd rather learn from somebody who knows the cuts before I bleed on them."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "happy",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "There she is. Stay near me, and I won't let the wolves chew first."
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "You listen, you earn, and I keep Buck's circus from eating you alive."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            },
+            {
+              "option_id": "guarded",
+              "option_text": "Say you'll listen, but you aren't handing yourself over.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "neutral",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "I'll listen. Doesn't mean I'm handing myself over."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "cocky",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "Good. Fear's useless, but caution can still turn a profit."
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "Keep that spine. Just don't mistake it for experience."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            },
+            {
+              "option_id": "ambitious",
+              "option_text": "Tell her you want to get ahead, not just survive.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "cocky",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "Teach me the part where a girl gets ahead, not just less hurt."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "surprised",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "Now that's prettier than gratitude."
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "All right, baby. Maybe you're not here to survive. Maybe you're here to climb."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            }
+          ],
+          "ends_beat": true
+        }
+      ]
+    },
+    {
+      "beat_index": 3,
+      "beat_name": "act1_scene1_beat_03",
+      "source_purpose": "Introduce Midge as the scene's skeptical conscience and warn Nina that favors at Harlan's always carry a price.",
+      "source_exit_state": "Nina now has a second, harsher interpretation of Velvet's generosity: not kindness, but leverage.",
+      "events": [
+        {
+          "type": "narration",
+          "text": "A coffee pot appears between them before Nina can settle on what she just agreed to."
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "character_expression": "neutral",
+          "screen_position": "center"
+        },
+        {
+          "type": "line",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "text": "Refill?"
+        },
+        {
+          "type": "line",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "text": "Just so we're all speaking plain: nobody in this plaza gives charity."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "confused",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "I didn't ask for any."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "angry",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Midge mistakes a warning label for a personality."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "character_expression": "cocky",
+          "screen_position": "center"
+        },
+        {
+          "type": "line",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "text": "And you mistake leverage for kindness."
+        },
+        {
+          "type": "line",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "text": "Honey, around this place a smile is just a receipt with teeth."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "d6691b8f-a920-499d-9710-7339fc1c2844"
+        },
+        {
+          "type": "narration",
+          "text": "Midge moves on, leaving the words sitting hotter than the coffee."
+        }
+      ]
+    },
+    {
+      "beat_index": 4,
+      "beat_name": "act1_scene1_beat_04",
+      "source_purpose": "Have Velvet reclaim control of the conversation and introduce the promise of off-the-books money.",
+      "source_exit_state": "Velvet has reframed risk as intelligence and prepared Nina to accept a practical test.",
+      "events": [
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Don't let the apron fool you. Bitter girls call every ladder a trap."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Stage money's bait, Nina. Enough cash to keep your lipstick fresh and your rent late."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "neutral",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "And the women who actually get ahead?"
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "neutral",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "They learn where the real money moves."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "They also learn when not to ask for a map."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "confused",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "You're asking me to trust you blind."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "I'm asking you to notice who's offering a door instead of a sermon."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "When something easy lands in your lap, take it pretty."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        }
+      ]
+    },
+    {
+      "beat_index": 5,
+      "beat_name": "act1_scene1_beat_05",
+      "source_purpose": "Bring Deke into the diner to make Velvet's criminal subtext concrete.",
+      "source_exit_state": "Nina realizes the lesson is about to stop being theoretical.",
+      "events": [
+        {
+          "type": "narration",
+          "text": "The diner door coughs open. Cold air and diesel slide in with a rangy trucker in a cap."
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "character_expression": "cocky",
+          "screen_position": "center"
+        },
+        {
+          "type": "line",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "text": "Evenin', Velvet. Seat taken?"
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "happy",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Only by bad company, Deke."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "character_expression": "neutral",
+          "screen_position": "center"
+        },
+        {
+          "type": "line",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "text": "Then scoot the bad company over."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "confused",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "You two talk like you rehearsed this."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Everybody in this place rehearses. Some of us just get paid better for it."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "narration",
+          "text": "Deke drops into the end of the booth like this stop was penciled in hours ago."
+        }
+      ]
+    },
+    {
+      "beat_index": 6,
+      "beat_name": "act1_scene1_beat_06",
+      "source_purpose": "Force Nina to act, completing her first illicit handoff and proving whether Velvet can use her.",
+      "source_exit_state": "The envelope changes hands, and Nina is now part of a transaction she cannot honestly call innocent.",
+      "events": [
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "neutral",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "All right. Little lesson."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Take this envelope to Deke. He'll leave something behind. You bring it back here and you don't make it look like a church confession."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "surprised",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "That's it?"
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "cocky",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "That's plenty."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "choice",
+          "choice_id": "act1_scene1_beat_06_choice_01",
+          "prompt": "How does Nina handle Velvet's first off-the-books errand?",
+          "options": [
+            {
+              "option_id": "smooth",
+              "option_text": "Play it cool and make the handoff look effortless.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "neutral",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "You forgot your paperwork."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "character_expression": "happy",
+                  "screen_position": "center"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "text": "Funny. I just remembered it."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+                },
+                {
+                  "type": "narration",
+                  "text": "Nina slips the sealed envelope beneath the sugar caddy. Deke palms it and leaves folded bills under her saucer."
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "happy",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "See? Real talent rarely needs applause."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            },
+            {
+              "option_id": "hesitant",
+              "option_text": "Hesitate and ask just enough to show you're new.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "confused",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "Velvet said you were waiting on this."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "character_expression": "neutral",
+                  "screen_position": "center"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "text": "Then say it softer next time."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+                },
+                {
+                  "type": "narration",
+                  "text": "The envelope catches against the sugar caddy before Deke covers it with his hand. He tucks a tight fold of cash under Nina's napkin."
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "angry",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "First rule, baby: innocence gets loud when it's scared."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            },
+            {
+              "option_id": "swagger",
+              "option_text": "Lean into the swagger and enjoy the power of it.",
+              "branch_events": [
+                {
+                  "type": "show_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "character_expression": "cocky",
+                  "screen_position": "left"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+                  "text": "Road's expensive tonight. Lucky for you, I make deliveries."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "character_expression": "surprised",
+                  "screen_position": "center"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+                  "text": "Hell. New girl talks like she's got miles on her."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+                },
+                {
+                  "type": "narration",
+                  "text": "Nina lets the envelope drift across the table with a fingertip. Deke answers with a weighted bundle nudged against her cup."
+                },
+                {
+                  "type": "show_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "character_expression": "cocky",
+                  "screen_position": "right"
+                },
+                {
+                  "type": "line",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+                  "text": "Cute. Don't get drunk on the feeling."
+                },
+                {
+                  "type": "hide_character",
+                  "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+                }
+              ]
+            }
+          ],
+          "ends_beat": true
+        }
+      ]
+    },
+    {
+      "beat_index": 7,
+      "beat_name": "act1_scene1_beat_07",
+      "source_purpose": "Land the emotional and moral consequence of the handoff, sealing the scene's turn.",
+      "source_exit_state": "Nina leaves the diner paid, tempted, and unmistakably compromised—aware that Velvet has given her a taste she cannot pretend not to want.",
+      "events": [
+        {
+          "type": "show_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "character_expression": "neutral",
+          "screen_position": "center"
+        },
+        {
+          "type": "line",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "text": "Best habit on the highway is minding your business. Same goes parked."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "e09f5cd2-3657-4240-b080-f21c190842ae"
+        },
+        {
+          "type": "narration",
+          "text": "He eases out of the booth and disappears back into the diesel dark."
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "happy",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Your cut. For an easy favor."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "narration",
+          "text": "Velvet slips a few folded bills across the table."
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "character_expression": "surprised",
+          "screen_position": "left"
+        },
+        {
+          "type": "line",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+          "text": "That's more than I made on stage all night."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48"
+        },
+        {
+          "type": "show_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "character_expression": "neutral",
+          "screen_position": "right"
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "Stage money keeps you hungry. This is what useful looks like."
+        },
+        {
+          "type": "line",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "text": "You did good. Don't cheapen it with questions."
+        },
+        {
+          "type": "hide_character",
+          "character_uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83"
+        },
+        {
+          "type": "narration",
+          "text": "The bills feel hot in Nina's palm—thrilling, sickening, and impossible to pretend were innocent."
+        }
+      ]
+    }
+  ],
+  "scene_exit_state": "Nina leaves the diner with Velvet's money in her hand and Velvet's leverage in her life, newly tempted by off-the-books cash and unable to deny she has crossed a line.",
+  "notes_and_work_product_summary": "Adapted all 7 source beats in order with two interactive choice beats ending locally at beats 2 and 6. Dialogue keeps Velvet seductive and coercive, Midge dry and cautionary, Deke casual but coded, and Nina playable and ambitious. Portrait visibility is cleared before narration and choice prompts for straightforward downstream assembly."
+}

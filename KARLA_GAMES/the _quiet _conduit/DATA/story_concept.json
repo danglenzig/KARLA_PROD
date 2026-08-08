@@ -1,0 +1,18 @@
+{
+  "premise": "In a divided steampunk city modeled on Cold War Berlin, a capable but still idealistic junior intelligence officer is assigned by his mentor to investigate a failed defector exfiltration in which the asset was killed. As he follows the wreckage of the operation through ministries, checkpoints, safehouses, and machine-filled backstreets, he uncovers signs that a mole may be embedded within his own service.",
+  "genre": "Steampunk spy thriller",
+  "tone": "Cerebral, restrained, morally gray, and quietly tense in the vein of John le Carré's Smiley novels",
+  "setting": "A divided industrial city reminiscent of Cold War Berlin, reimagined through mid-level steampunk technology: air trams, pneumatic communications, analytic engines, prosthetics, surveillance devices, soot-choked streets, ministries, border crossings, and neighborhoods split by ideology and walls.",
+  "protagonist": "A junior intelligence officer, likely male, competent and observant but still too fresh to be fully cynical at the start of the story. He begins as a believer in the work and in his mentor, and the investigation gradually hardens him into a more compromised, disillusioned version of himself.",
+  "core_hook": "After a defector extraction is catastrophically blown and the defector is shot, the protagonist's mentor quietly tasks him with investigating the circumstances. What begins as damage assessment turns into a hunt for a mole inside the service, forcing the protagonist to navigate deception, bureaucracy, and uncomfortable truths about the institution he serves.",
+  "must_have_elements": [
+    "Extensive steampunk technology and environments",
+    "Mid-level steampunk inventions such as pneumatic data networks, analytic engines, air trams, prosthetics, and surveillance tools",
+    "Tradecraft-focused espionage and intrigue rather than romance",
+    "Moral ambiguity with no clear heroes or villains",
+    "A protagonist arc in which the junior officer gains a measure of cynicism by the end",
+    "An ending that is ambiguous and emotionally unsatisfying for the protagonist and player"
+  ],
+  "avoid_elements": [],
+  "concept_summary": "This visual novel is a steampunk espionage drama set in a divided city inspired by Cold War Berlin, with a tone of quiet tension and moral exhaustion drawn from le Carré. The player follows a talented but still idealistic junior officer ordered by his mentor to examine a bungled defector exfiltration, only to find evidence of a mole within their own service. The story should emphasize tradecraft, institutional paranoia, and richly realized mid-level steampunk infrastructure over romance or spectacle. By the end, the protagonist should emerge sharper and more cynical, having learned difficult truths without receiving a clean victory or satisfying resolution."
+}

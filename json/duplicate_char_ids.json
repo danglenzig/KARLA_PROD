@@ -1,0 +1,222 @@
+{
+  "story_title": "Velvet Freight",
+  "synopsis": "In a diesel-soaked patch of 1970s roadside America, ambitious young dancer Nina Knox works the Satin Spur, a strip club bolted onto Harlan's Hi-Line Truck Plaza and owned by the same smiling predator. When hard-bitten veteran Velvet Cross takes Nina under her wing, the mentorship turns toxic fast, dragging her into the narcotics-smuggling racket running through the truck stop. Between club politics, jealous performers, crooked books, and fast cash, Nina must decide whether to outplay Velvet, join her, or learn that escape can look a lot like a prettier cage.",
+  "player_character": {
+    "character_data": {
+      "uuid": "beb43e01-3b29-45b8-8225-854ee51bfd48",
+      "name": "Nina Knox",
+      "portrait_image_prompt": "young woman in her early twenties, teased honey-blonde hair, heavy blue eye shadow, slim build, cheap rhinestone stagewear, chipped red nails, nervous smile hiding fierce ambition, youthful but tired eyes",
+      "dialogue_examples": [
+        "I didn't come here to get old under neon. I came here to get paid and get gone.",
+        "You keep calling it a favor like favors come wrapped in twenties.",
+        "If everybody in this place is lying, I ought to at least get better at it.",
+        "I'm not scared. I'm just new. There's a difference."
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "b0017685-b6b9-494d-82bf-2b30a479ef83",
+        "name": "Velvet Cross",
+        "portrait_image_prompt": "woman in her late thirties, lacquered black hair, cigarette-rough glamour, strong cheekbones, smoky eye makeup, weathered beauty, curvy build, sequined gown with worn fur trim, heavy jewelry, sly and intimidating expression",
+        "dialogue_examples": [
+          "Listen close, baby: around here the music's cheap, but the lessons cost blood.",
+          "I didn't survive this dump by trusting men with keys or girls with dreams.",
+          "You want out? Then stop acting like money and innocence can ride in the same purse.",
+          "I can make you sharp, sweetheart. The cut comes later."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "f6f43ed5-2358-4556-899c-36f0b53a89a9",
+        "name": "Buck Harlan",
+        "portrait_image_prompt": "middle-aged man with thick sideburns, weathered face, slicked-back hair, open-collar western shirt, bolo tie, large belt buckle, broad build, nicotine-stained fingers, salesman smile with predatory eyes",
+        "dialogue_examples": [
+          "This ain't sin, honey, it's commerce with lipstick on.",
+          "I give people opportunity. What they do with it is between them and the county line.",
+          "Everybody eats at my place, long as they remember whose table they're at.",
+          "You girls keep the neon warm; I keep the whole circus fueled."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "d6691b8f-a920-499d-9710-7339fc1c2844",
+        "name": "Midge LaRue",
+        "portrait_image_prompt": "woman in her late thirties, dark beehive hair, cat-eye liner, tired eyes, fitted blouse under a waitress apron, pencil skirt, narrow shoulders, dry smirk, sharp and watchful face",
+        "dialogue_examples": [
+          "Coffee's burnt, pie's stale, and every man in here thinks he's the customer instead of the cargo.",
+          "Books don't lie. People do arithmetic on top of them.",
+          "Around this place, a smile is just a receipt with teeth.",
+          "If you want my advice, charge double and trust half."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e09f5cd2-3657-4240-b080-f21c190842ae",
+        "name": "Deke Rollins",
+        "portrait_image_prompt": "rangy man in his forties, trucker cap, mutton-chop sideburns, sun-baked skin, denim jacket, thick mustache, long-limbed build, sly grin, restless road-worn eyes",
+        "dialogue_examples": [
+          "Highway's simple: keep rolling, keep grinning, never ask what's in the crate.",
+          "Buck calls it freight, Velvet calls it medicine, and I call it none of my business.",
+          "Lady, trouble don't come from the road. It comes from who's waiting when you stop.",
+          "I got a cab full of coffee stink and bad ideas. Which one you buying?"
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "369f78d2-ddf9-464a-a38e-3e278bf8de5e",
+        "name": "Cherry Sunday",
+        "portrait_image_prompt": "young woman in her early twenties, bright copper-red hair, glossy lipstick, leopard-print stagewear, hoop earrings, wiry build, sharp cheekbones, defiant pout, volatile energy",
+        "dialogue_examples": [
+          "I didn't come to clap for washed-up queens and their pet projects.",
+          "Everybody in this joint acts tough till the money walks past them.",
+          "If Nina gets a shortcut, I want the map.",
+          "You can call it mentorship. I call it picking who gets used first."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "ad5b6756-37b1-4539-b6db-3504ffe561d0",
+        "name": "The Satin Spur Club Floor",
+        "location_image_prompt": "grimy 1970s roadside strip club interior with a low chrome stage, red vinyl booths, sticky bar, mirrored walls, cigarette haze, neon horseshoe signage, worn carpet, cash register by the bar, sleazy pulp atmosphere"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "b50cc53a-5085-40f2-861e-ababcb0721c4",
+        "name": "Harlan's Hi-Line Truck Plaza Diner",
+        "location_image_prompt": "dingy rural truck stop diner with a long counter, cracked vinyl stools, greasy menu boards, pie case, coffee pots, souvenir racks, front windows facing fuel pumps and parked semis, heavy 1970s roadside grime"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "d3865460-7175-49ab-81c0-e476259fdcc0",
+        "name": "Backstage Dressing Room",
+        "location_image_prompt": "cramped strip club dressing room with stained mirrors framed by bulbs, cluttered vanities, open makeup kits, costume racks, dented lockers, ashtrays, feather boas, discarded stockings, tense lived-in mess"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "d850ca82-5909-4344-963e-6bff6b6edda0",
+        "name": "Service Yard and Loading Bay",
+        "location_image_prompt": "oil-stained concrete yard behind a truck stop and club with loading dock doors, stacked crates, idling semi-trailers, chain-link fence, puddles, trash barrels, utility lights, hidden-deal atmosphere"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "a62a918c-eaa0-4a94-a8d9-efafe2013e6a",
+      "scene_name": "intro",
+      "location_uuid": "ad5b6756-37b1-4539-b6db-3504ffe561d0",
+      "non_player_character_uuids": [
+        "b0017685-b6b9-494d-82bf-2b30a479ef83",
+        "f6f43ed5-2358-4556-899c-36f0b53a89a9",
+        "d6691b8f-a920-499d-9710-7339fc1c2844",
+        "369f78d2-ddf9-464a-a38e-3e278bf8de5e"
+      ],
+      "narrative_summary": "On a chaotic weekend night at the Satin Spur, Nina Knox tries to survive her shift while the player learns the strip club and truck stop are one corrupt empire under Buck Harlan. Nina is publicly sized up by veteran dancer Velvet Cross, sniped at by Cherry Sunday, and quietly observed by Midge LaRue; after Nina fumbles her footing in the club's brutal pecking order, Velvet steps in with a rescue that feels more like a claim. The scene orients the player to the setting, tone, hierarchy, and Velvet's ominous promise that the real money never touches the stage."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "8949404c-4d28-476f-881d-8b163d16914e",
+        "scene_name": "act1_scene1",
+        "location_uuid": "b50cc53a-5085-40f2-861e-ababcb0721c4",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "e09f5cd2-3657-4240-b080-f21c190842ae"
+        ],
+        "narrative_summary": "After closing, Velvet buys Nina coffee at the truck stop diner and starts building a toxic mentorship out of flattery, hard truths, and implied threats. Midge warns Nina that nobody in this business gives charity, while trucker Deke Rollins arrives just in time for Velvet to test Nina with a discreet envelope handoff. Nina gets her first taste of easy off-the-books money and crosses a line she can no longer pretend not to see."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "cb953313-4ee7-4af2-b7c5-bd1ce93e74f5",
+        "scene_name": "act1_scene2",
+        "location_uuid": "d3865460-7175-49ab-81c0-e476259fdcc0",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "369f78d2-ddf9-464a-a38e-3e278bf8de5e"
+        ],
+        "narrative_summary": "Back in the dressing room, Velvet deepens Nina's dependence by teaching her how the club's social economy really works: stage slots, tabs, regulars, gossip, and fear. The lesson turns criminal when Velvet reveals narcotics hidden inside supply boxes moving between the truck stop and club, framing smuggling as just another side hustle for women willing to get smart. Cherry notices Nina's sudden rise in status and begins openly treating her as a rival, sharpening the triangle of jealousy, mentorship, and ambition."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "a4de511d-68e2-4799-9e6f-72d8aa216527",
+        "scene_name": "act2_scene1",
+        "location_uuid": "d850ca82-5909-4344-963e-6bff6b6eddab",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "f6f43ed5-2358-4556-899c-36f0b53a89a9",
+          "e09f5cd2-3657-4240-b080-f21c190842ae"
+        ],
+        "narrative_summary": "At the loading bay, a shipment goes sideways and Buck pressures Velvet to explain missing product before the next truck pulls out. Velvet pulls Nina in closer by asking her to cover for the operation, while Deke hints that somebody has been skimming the route and everyone is preparing a scapegoat. Nina stops being a helper and becomes a stakeholder, with chances to lie, gather leverage, or quietly turn the conspirators against one another."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "8791b84f-a1fc-4dae-ac86-a91d2c403b33",
+        "scene_name": "act2_scene2",
+        "location_uuid": "ad5b6756-37b1-4539-b6db-3504ffe561d0",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-e2bf-2b30a479ef83",
+          "f6f43ed5-2358-4556-899c-36f0b53a89a9",
+          "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "369f78d2-ddf9-464a-a38e-3e278bf8de5e"
+        ],
+        "narrative_summary": "During a packed, ugly night on the club floor, Buck weaponizes the dancers against each other with prime stage time, debt, and petty humiliations, turning the club into a live-fire class war in sequins. Velvet pushes Nina to seize status publicly, Cherry erupts over favoritism, and Midge quietly reveals Buck keeps crooked books on everybody in the building. By the end of the scene, Nina understands that Velvet is grooming her as both a protégé and a disposable shield."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "6b367cff-0813-4411-9f44-c58a7682afbb",
+        "scene_name": "act3_scene1",
+        "location_uuid": "b50cc53a-5085-40f2-861e-ababcb0721c4",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "d6691b8f-a920-499d-9710-7339fc1c2844",
+          "e09f5cd2-3657-4240-b080-f21c190842ae"
+        ],
+        "narrative_summary": "Over dawn coffee and bad pie, Midge lays out the satirical truth of Harlan's empire: every dance, refill, and shipment is part of the same rotten supply chain dressed up as opportunity. Velvet privately offers Nina a partnership to cut Buck out, while Deke warns that outside heat is creeping toward the route and somebody will need to disappear when it breaks. Nina must decide whether her path to freedom looks like loyalty, betrayal, or a smarter double-cross than anyone expects from her."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "c30f6c66-47ab-4f05-b6d0-0a062e85f873",
+        "scene_name": "act3_scene2",
+        "location_uuid": "d850ca82-5909-4344-963e-6bff6b6edda0",
+        "non_player_character_uuids": [
+          "b0017685-b6b9-494d-82bf-2b30a479ef83",
+          "f6f43ed5-2358-4556-899c-36f0b53a89a9",
+          "e09f5cd2-3657-4240-b080-f21c190842ae",
+          "369f78d2-ddf9-464a-a38e-3e278bf8de5e"
+        ],
+        "narrative_summary": "The final handoff at the loading bay becomes a vicious three-way showdown as Buck tries to reassert ownership, Velvet tries to elevate Nina into a ruthless equal, and Cherry threatens to blow everything open out of spite and self-preservation. The scene centers on Nina's decisive choice: outplay Velvet and bring the racket down, join Velvet and seize control of the empire, or make one gamble too many and get swallowed by the same sleazy machine she thought she could use. This is the story's pulp-thriller climax, driven by betrayals, reversals, and weaponized intimacy."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "676b754f-0726-459f-b992-3664b778d5cd",
+      "scene_name": "outro",
+      "location_uuid": "b50cc53a-5085-40f2-861e-ababcb0721c2",
+      "non_player_character_uuids": null,
+      "narrative_summary": "In the aftermath, the truck stop keeps serving coffee and diesel while Nina's place in the world has changed according to the player's final choice: she may leave with enough money to run, remain beside Velvet in a nastier new order, or realize that surviving the empire is not the same as escaping it. The denouement lands on the story's satirical sting: everybody at Harlan's sold freedom for cash, and cash only bought them a better class of cage."
+    }
+  }
+}

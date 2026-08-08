@@ -1,3 +1,5 @@
+# src/orchestrator.py
+
 from dotenv import load_dotenv
 from pydantic import BaseModel # this is what provides the validation magic
 import asyncio
@@ -7,171 +9,207 @@ from datetime import datetime
 from camel_converter import to_camel, to_snake
 import os
 import json
+from camel_converter import to_snake
 
 # LOCAL MODULES
 SRC_ROOT: Path = Path(__file__).parent # this is the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
-from narrative_design_agent import NarrativeDesignAgent, NarrativeDesignOutputSchema, WorkflowTextInput, SceneData
-from scene_beat_agent import SceneBeatAgent, SceneBeatSheet
-from prompt_catalog import ImageStyle
-from image_generator import ImageGenerator, ArtAssetManifest
-from discovery_agent import DiscoveryAgent, StoryConcept
-from tools.foo import get_uuid_string
-from gui_color_agent import GuiColorAgent, GuiColorScheme
-from dialogue_agent import DialogueAgent, DialogueScene
-from renpy_script_assembler import DemoBuildData, RenPyScriptAssembler
+from misc_models.misc_models import DemoCreativeData
+from misc_models.misc_models import DemoBuildData
+from discovery_agent.discovery_agent_models import StoryConcept
+from discovery_agent.discovery_agent import DiscoveryAgent
+from narrative_design_agent.narrative_design_agent_models import (
+    NarrativeDesignOutput,
+    NarrativeDesignContentValidationResult,
+)
+from narrative_design_agent.narrative_design_agent import NarrativeDesignAgent
+from narrative_design_agent.narrative_design_content_validator import get_nd_spec_validation_results
+from image_generator_agent.image_styles import ImageStyle
+from image_generator_agent.image_generator_agent import ImageGenerator
+from image_generator_agent.image_generator_models import ArtAssetManifest
+from beat_sheet_agent.beat_sheet_models import SceneBeatSheet
+from beat_sheet_agent.beat_sheet_agent import SceneBeatAgent
+from gui_colors_agent.gui_colors_models import GuiColorScheme
+from gui_colors_agent.gui_colors_agent import GuiColorAgent
+from dialogue_agent.dialogue_agent_models import DialogueScene
+from dialogue_agent.dialogue_agent import DialogueAgent
+from renpy_script_assembler.renpy_script_assembler import RenPyScriptAssembler
 
-class DemoCreativeData(BaseModel):
-    """
-    The combined output of the creative agents.
-    """
-    narrative_design_spec: NarrativeDesignOutputSchema
-    art_assets: ArtAssetManifest
-    beat_sheets: list[SceneBeatSheet]
-    color_scheme: GuiColorScheme
+def get_data_folder_path(game_name: str)->str:
+    try:
+        games_folder_path = os.getenv('GAMES_FOLDER_PATH')
+        data_folder_name = os.getenv('CREATION_DATA_FOLDER_NAME')
+        if not os.path.isdir(games_folder_path):
+            os.mkdir(games_folder_path)
+        if not os.path.isdir(f"{games_folder_path}/{game_name}"):
+            os.mkdir(f"{games_folder_path}/{game_name}")
+        if not os.path.isdir(f"{games_folder_path}/{game_name}/{data_folder_name}"):
+            os.mkdir(f"{games_folder_path}/{game_name}/{data_folder_name}")
+        return f"{games_folder_path}/{game_name}/{data_folder_name}"
+    except Exception as e:
+        print(e)
 
-def get_data_folder_path(game_name: str) -> str:
-    """
-    Returns the folder path for the current game.
-    Creates it if it's not there already.
-    """
+async def write_json_data(game_name: str ,in_json: str, filename: str):
+    folder_path: str = get_data_folder_path(game_name)
+    file_path: str = f"{folder_path}/{filename}"
+    try:
+        with open(file_path, 'w') as f:
+            f.write(in_json)
+    except Exception as e:
+        print(e)
+
+async def write_rpy_script(game_name: str, script: str, filename: str):
     games_folder_path = os.getenv('GAMES_FOLDER_PATH')
-    data_folder_name = os.getenv('CREATION_DATA_FOLDER_NAME')
+    rpy_folder_name = os.getenv('RENPY_SCRIPTS_FOLDER_NAME')
     if not os.path.isdir(games_folder_path):
         os.mkdir(games_folder_path)
     if not os.path.isdir(f"{games_folder_path}/{game_name}"):
         os.mkdir(f"{games_folder_path}/{game_name}")
-    if not os.path.isdir(f"{games_folder_path}/{game_name}/{data_folder_name}"):
-        os.mkdir(f"{games_folder_path}/{game_name}/{data_folder_name}")
-    return f"{games_folder_path}/{game_name}/{data_folder_name}"
+    if not os.path.isdir(f"{games_folder_path}/{game_name}/{rpy_folder_name}"):
+        os.mkdir(f"{games_folder_path}/{game_name}/{rpy_folder_name}")
+    script_path = f"{games_folder_path}/{game_name}/{rpy_folder_name}/{filename}"
+    with open(script_path, 'w') as f:
+        f.write(script)
 
-def get_dt_str():
-    """
-    Returns a formatted datetime string.
-    """
-    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+async def main():
 
-async def write_output_json(game_name: str, in_json: str, filename: str):
-    """
-    Writes the json in the game's data folder with the provided filename. Returns the path string on success.
-    """
-    path: str = f'{get_data_folder_path(game_name)}/{filename}.json'
-    with open(path, 'w') as f:
-        f.write(in_json)
-    return path
+    game_title: str = ""
+    #image_style = ImageStyle.PULP
+    
 
-def get_npc_uuids_from_scene_data(sd: SceneData) -> list[str]:
-    """
-    Returns the scene's NPC IDs as a list
-    """
-    uuids: list[str] = []
-    if 'non_player_character_uuids' in sd.__dict__:
-        if not sd.non_player_character_uuids is None:
-            for uuid in sd.non_player_character_uuids:
-                uuids.append(uuid)
-    return uuids
+    #===============================
+    #  Stage 1: Get the StoryConcept
+    #===============================
+    print("+=============================")
+    print("| Stage 1: Interview the user.")
+    print("+=============================\n\n")
 
-async def run_program():
-    """
-    The entry point of the orchestrated pipeline
-    """
+    story_concept: StoryConcept = await DiscoveryAgent().run_workflow()
 
-    #temp_game_name: str = get_uuid_string()
+    #=======================================
+    # Stage 2: Get the NarrativeDesignOutput
+    #=======================================
 
-    # the image agent works best with the clean style prompt.
-    #image_style = ImageStyle.CLEAN
-    image_style = ImageStyle.SATURDAY_MORNING
+    print("+=========================================")
+    print("| Stage 2: Generate narrative design spec.")
+    print("+=========================================\n\n")
 
-    #===================================================
-    # STAGE 0: Interview the user and generate a concept 
-    #===================================================
+    nd_output: NarrativeDesignOutput = await NarrativeDesignAgent().run_workflow_streaming(story_concept)
 
-    concept: StoryConcept = await DiscoveryAgent().run_workflow()
+    # Content validation
+    nd_validation: NarrativeDesignContentValidationResult = get_nd_spec_validation_results(nd_output)
+    if nd_validation.has_problems:
+        raise ValueError(f"### NarrativeDesignAgent output content validation failed:\n\n{nd_validation.comments}")
+    else:
+        print("### NarrativeDesignAgent output content validated")
 
-    #=======================================================
-    # STAGE 1: generate a story plan and extract needed data
-    #=======================================================
+    game_title = to_snake(nd_output.story_title)
 
-    print(f"{get_dt_str()}\nGenerating story plan for user concept:\n{concept.concept_summary}\n\n")
-    wf: WorkflowTextInput = WorkflowTextInput(
-        input_as_text=concept.concept_summary
-    )
-    nd_out: NarrativeDesignOutputSchema = await NarrativeDesignAgent().run_workflow(wf) #####
-    nd_out_json: str = nd_out.model_dump_json(indent=2)
-
-    intro_scene_uuid: str = nd_out.intro_scene.scene_data.uuid
-    first_scene_uuid: str = nd_out.act_one[0].scene_data.uuid
-
-    game_title:str = nd_out.story_title
-    game_title_snake_case = to_snake(game_title) 
-
-    #====================================
-    # STAGE 2: Art assets and scene beats
-    #====================================
-
-    stage_two_coroutines = [
-        ImageGenerator().get_demo_manifest(game_title_snake_case, nd_out_json, image_style), # returns ArtAssetManifest
-        #ImageGenerator().get_demo_manifest(temp_game_name, nd_out_json, image_style), # returns ArtAssetManifest
-        SceneBeatAgent().run_workflow(nd_out_json, intro_scene_uuid),
-        SceneBeatAgent().run_workflow(nd_out_json, first_scene_uuid),
-        GuiColorAgent().run_workflow(nd_out_json)
+    stage_two_json_dumps = [
+        write_json_data(game_title, story_concept.model_dump_json(indent=2), "story_concept.json"),
+        write_json_data(game_title, nd_output.model_dump_json(indent=2), "narrative_design_output.json")
     ]
-    stage_two_gather = asyncio.gather(*stage_two_coroutines)
-    stage_two = await stage_two_gather
-    art_manifest: ArtAssetManifest = stage_two[0] #####
-    beat_sheet_list: list[SceneBeatSheet] = [
-        stage_two[1],
-        stage_two[2]
+    stage_two_gather_json_dumps = asyncio.gather(*stage_two_json_dumps)
+    await stage_two_gather_json_dumps
+
+    print(f"\n\n{nd_output.model_dump_json(indent=2)}")
+
+    #=================================================
+    # Stage 3: Async gather art assets and scene beats
+    #=================================================
+
+    print("+================================================")
+    print("| Stage 3: Generate & gather art and beat sheets.")
+    print("+================================================\n\n")
+    
+    stage_three_coroutines = [
+        ImageGenerator().get_demo_manifest(game_title, nd_output),
+        SceneBeatAgent().run_workflow(nd_output, nd_output.intro_scene.scene_data.uuid), # intro beats
+        SceneBeatAgent().run_workflow(nd_output, nd_output.act_one[0].scene_data.uuid), # first scene beats
+        GuiColorAgent().run_workflow(nd_output)
     ]
-    color_scheme_: GuiColorScheme = stage_two[3]
+
+    #============================================
+    # TODO: Content validation on the beat sheets
+    # - check UUIDs on scenes and beats
+    #============================================
+
+    stage_three_gather = asyncio.gather(*stage_three_coroutines)
+    stage_three_products = await stage_three_gather
+    art_manifest: ArtAssetManifest = stage_three_products[0]
+    intro_beats: SceneBeatSheet = stage_three_products[1]
+    first_scene_beats: SceneBeatSheet = stage_three_products[2]
+    color_scheme: GuiColorScheme = stage_three_products[3]
+    beat_sheet_list: list[SceneBeatSheet] = [intro_beats, first_scene_beats]
 
     creative_data: DemoCreativeData = DemoCreativeData(
-        narrative_design_spec   = nd_out,
-        art_assets              = art_manifest,
-        beat_sheets             = beat_sheet_list,
-        color_scheme            = color_scheme_
+        concept               = story_concept,
+        narrative_design_spec = nd_output,
+        art_assets            = art_manifest,
+        beat_sheets           = beat_sheet_list,
+        color_scheme          = color_scheme
     )
-    creative_data_json: str = creative_data.model_dump_json(indent=2)
-    await write_output_json(game_title_snake_case, creative_data_json, 'creative_data')
-    #await write_output_json(temp_game_name, creative_data_json, 'creative_data')
+
+    await write_json_data(game_title, creative_data.model_dump_json(indent=2), "creative_data.json")
+
+    creative_data_json = creative_data.model_dump_json(indent=2)
+
+    #============================
+    # Stage 4: The dialogue stage
+    #============================
+
+    print("+==================================")
+    print("| Stage 4: Generate dialogue assets")
+    print("+===================================\n\n")
+
+    stage_four_coroutines = [
+        DialogueAgent().run_scene_workflow(nd_output, intro_beats),
+        DialogueAgent().run_scene_workflow(nd_output, first_scene_beats)
+    ]
+    stage_four_gather = asyncio.gather(*stage_four_coroutines)
+    stage_four = await stage_four_gather
+
+    dialogue_scene_list: list[DialogueScene] = [
+        stage_four[0],
+        stage_four[1]
+    ]
+
+    #=========================================
+    # TODO: Content validation on the dialogue
+    #=========================================
 
     #=========================
-    # STAGE 3: The build stage
+    # Stage 5: The build stage
     #=========================
+    
+    print("+===============================")
+    print("| Stage 5: Build Ren'Py scripts.")
+    print("+===============================\n\n")
 
-    stage_three_coroutines = [
-        DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[0].model_dump_json(indent=2)),
-        DialogueAgent().run_workflow(nd_out_json, beat_sheet_list[1].model_dump_json(indent=2))
-    ]
-    stage_three_gather = asyncio.gather(*stage_three_coroutines)
-    stage_three = await stage_three_gather
-
-    dialogue_scenes_list: list[DialogueScene] = [
-        stage_three[0],
-        stage_three[1]
-    ]
-
-    char_dict: dict[str, str] = {}
-    character_catalog = nd_out.get_character_catalog()
-    for id in character_catalog:
-        char_dict[id] = character_catalog[id]['name']
-
+    char_dict: dict[str,str] = {}
+    character_catalogue = nd_output.get_character_catalog()
+    for id in character_catalogue:
+        char_dict[id] = character_catalogue[id]['name']
+        
     build_data: DemoBuildData = DemoBuildData(
         art_assets=creative_data.art_assets,
-        dialogue_scenes=dialogue_scenes_list,
-        gui_colors=color_scheme_,
+        dialogue_scenes=dialogue_scene_list,
+        gui_colors=color_scheme,
         character_dict=char_dict
     )
-    build_data_json = build_data.model_dump_json(indent=2)
-    await write_output_json(game_title_snake_case, build_data_json, 'build_data')
+    await write_json_data(game_title, build_data.model_dump_json(indent=2), 'build_data.json')
 
-    rpy_script = await RenPyScriptAssembler().run_workflow(build_data)
-    rpy_path = f"{get_data_folder_path(game_title_snake_case)}/script.rpy"
-    with open(rpy_path, 'w') as f:
-        f.write(rpy_script)
+    # TODO: ...
+    # ## get the .rpy script form the script assembler
+    # ## write the .rpy script to the games folder
+
+    script_rpy = await RenPyScriptAssembler().run_workflow(build_data)
+    await write_rpy_script(game_title, script_rpy, 'script.rpy')
+
+
 
 
 if __name__ == "__main__":
-    asyncio.run(run_program())
+    asyncio.run(main())
 

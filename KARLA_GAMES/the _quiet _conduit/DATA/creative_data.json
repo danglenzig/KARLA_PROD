@@ -1,0 +1,630 @@
+{
+  "concept": {
+    "premise": "In a divided steampunk city modeled on Cold War Berlin, a capable but still idealistic junior intelligence officer is assigned by his mentor to investigate a failed defector exfiltration in which the asset was killed. As he follows the wreckage of the operation through ministries, checkpoints, safehouses, and machine-filled backstreets, he uncovers signs that a mole may be embedded within his own service.",
+    "genre": "Steampunk spy thriller",
+    "tone": "Cerebral, restrained, morally gray, and quietly tense in the vein of John le Carré's Smiley novels",
+    "setting": "A divided industrial city reminiscent of Cold War Berlin, reimagined through mid-level steampunk technology: air trams, pneumatic communications, analytic engines, prosthetics, surveillance devices, soot-choked streets, ministries, border crossings, and neighborhoods split by ideology and walls.",
+    "protagonist": "A junior intelligence officer, likely male, competent and observant but still too fresh to be fully cynical at the start of the story. He begins as a believer in the work and in his mentor, and the investigation gradually hardens him into a more compromised, disillusioned version of himself.",
+    "core_hook": "After a defector extraction is catastrophically blown and the defector is shot, the protagonist's mentor quietly tasks him with investigating the circumstances. What begins as damage assessment turns into a hunt for a mole inside the service, forcing the protagonist to navigate deception, bureaucracy, and uncomfortable truths about the institution he serves.",
+    "must_have_elements": [
+      "Extensive steampunk technology and environments",
+      "Mid-level steampunk inventions such as pneumatic data networks, analytic engines, air trams, prosthetics, and surveillance tools",
+      "Tradecraft-focused espionage and intrigue rather than romance",
+      "Moral ambiguity with no clear heroes or villains",
+      "A protagonist arc in which the junior officer gains a measure of cynicism by the end",
+      "An ending that is ambiguous and emotionally unsatisfying for the protagonist and player"
+    ],
+    "avoid_elements": [],
+    "concept_summary": "This visual novel is a steampunk espionage drama set in a divided city inspired by Cold War Berlin, with a tone of quiet tension and moral exhaustion drawn from le Carré. The player follows a talented but still idealistic junior officer ordered by his mentor to examine a bungled defector exfiltration, only to find evidence of a mole within their own service. The story should emphasize tradecraft, institutional paranoia, and richly realized mid-level steampunk infrastructure over romance or spectacle. By the end, the protagonist should emerge sharper and more cynical, having learned difficult truths without receiving a clean victory or satisfying resolution."
+  },
+  "narrative_design_spec": {
+    "story_title": "The Quiet Conduit",
+    "synopsis": "In the divided industrial city of Eisenbruck, junior intelligence officer Elias Voss is quietly assigned by his mentor to investigate a failed defector extraction that ended in a public killing at the border. What begins as a discreet damage assessment draws him through checkpoint logs, safehouse remnants, pneumatic archives, air-tram exchanges, and machine-clogged backstreets, where each clue suggests the leak came from inside his own service. In a restrained steampunk spy thriller defined by tradecraft, bureaucracy, and moral compromise, Elias learns that institutional betrayal rarely belongs to a single villain, and by the end he emerges more capable, more disillusioned, and no closer to a clean victory.",
+    "player_character": {
+      "character_data": {
+        "uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+        "name": "Elias Voss",
+        "portrait_image_prompt": "Young male steampunk intelligence officer, lean build, dark neatly combed hair, observant gray eyes, faint under-eye fatigue, clean-shaven face, charcoal wool greatcoat with brass closures, high collar, dark waistcoat, leather gloves, restrained bureaucratic style",
+        "dialogue_examples": [
+          "The report is neat enough to be false.",
+          "I was told to find where the operation failed. No one mentioned how many people would prefer not to know.",
+          "If procedure and truth part ways, which one is the service actually loyal to?",
+          "I used to think secrecy was a burden. Lately it feels more like a solvent."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+          "name": "Matthes Vale",
+          "portrait_image_prompt": "Older male intelligence officer, gaunt lined face, silver hair combed back, trimmed mustache, deep-set tired eyes behind brass-rim spectacles, severe dark formal coat, waistcoat with chain, articulated brass left hand, composed unreadable expression",
+          "dialogue_examples": [
+            "A clean story is a convenience, Voss, not a fact.",
+            "Do not confuse loyalty with noise.",
+            "If there is rot, it will be dressed as routine.",
+            "An officer survives by learning which truths can be spoken aloud."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "91b8f5b4-2f19-48e7-a47b-630dea6ddb49",
+          "name": "Anja Rehn",
+          "portrait_image_prompt": "Female records analyst in her thirties, sharp-featured, pale complexion, short black bob, precise dark eyes, monocular analytic lens with tiny gears, modest archive clerk uniform, ink-stained fingertips, tense self-controlled bearing",
+          "dialogue_examples": [
+            "The engine only reads what we feed it. That is the oldest lie in this building.",
+            "Dispatches do not vanish. They are redirected by people with very tidy desks.",
+            "I keep records, Officer Voss. I do not keep my conscience nearly as well.",
+            "If you pull on one thread here, you discover it was stitched to everyone else's cuffs."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "0de60f10-18a4-4e9e-bca9-12cf1586cfc6",
+          "name": "Marta Kessel",
+          "portrait_image_prompt": "Middle-aged female machinist and covert cutout, broad-shouldered, weathered face, cropped hair streaked with gray, practical heavy work coat, rolled sleeves, articulated brass forearm prosthetic, scarred hands, guarded expression",
+          "dialogue_examples": [
+            "People come to me when they need something repaired or forgotten.",
+            "Your defector died frightened, which means he still believed someone was coming.",
+            "Every service says it protects its own. Usually that means the paperwork.",
+            "Metal is honest. It breaks where the strain is. People learn to hide the crack."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+          "name": "Oskar Brenn",
+          "portrait_image_prompt": "Male border checkpoint captain in his forties, square jaw, close-cut fair hair, stern blue eyes, faint brow scar, heavy border uniform with leather harness, signal gauntlet, rigid military bearing",
+          "dialogue_examples": [
+            "At a checkpoint, hesitation is louder than gunfire.",
+            "My men followed the signal board. If the signal was wrong, ask who set it.",
+            "You intelligence people call it ambiguity. Out on the line, it is called a body.",
+            "I guard a gate, Voss. I do not decide what is worth crossing."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "3c5dd4cf-eef3-4ca4-927b-2bb67e56f38a",
+          "name": "Sabine Erhardt",
+          "portrait_image_prompt": "Senior female internal security official in her fifties, elegant severe features, dark hair pinned into a precise knot, cool gaze, tailored formal coat with discreet medals, high gloves, subtle mechanical right eye, immaculate controlled appearance",
+          "dialogue_examples": [
+            "Institutions are not betrayed by secrets, only by indiscretion.",
+            "You are searching for a mole as if corruption were generous enough to take a single face.",
+            "There are outcomes worse than a lie placed in the proper file.",
+            "What you call truth is often only the version least survivable to report."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "name": "Directorate Annex",
+          "location_image_prompt": "Austere intelligence ministry office in a steampunk state building, dark wood desks, iron filing cabinets, brass pneumatic message tubes, wall maps divided into sectors, stacked dossiers, telegraph instruments, compact analytic engine terminals, worn carpet, official seals, restrained bureaucratic grandeur"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "name": "Iron Gate Checkpoint",
+          "location_image_prompt": "Heavily fortified border crossing in a divided steampunk city, steel barricades, guard booths, semaphore signal arms, steam vents, searchlamps, rail tracks ending at a sealed gate, barbed wire, concrete walls, observation towers, propaganda signage"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "7c3fe059-4493-4a83-932e-d447ac7d97d4",
+          "name": "Coal Quay Safehouse",
+          "location_image_prompt": "Hidden safehouse interior near industrial canals, cramped rooms above a warehouse, folding cot, coded ledgers, contraband radio set, prosthetic repair bench, stove kettle, patched wallpaper, concealed storage compartments, utilitarian tradecraft atmosphere"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "ef4e8542-647b-4a42-b210-6eae45c09f91",
+          "name": "Central Pneumatic Records Hall",
+          "location_image_prompt": "Vast steampunk archival chamber filled with brass canisters, ceiling-spanning pneumatic tube networks, clerks' galleries, towering ledger stacks, indexing wheels, chattering analytic engines, iron catwalks, sorting tables, numbered dispatch bins, soot-stained ministry architecture"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "fa8eb4e4-dfb8-42c3-92e9-3bf8be731afe",
+          "name": "Luftbrucke Aerial Exchange",
+          "location_image_prompt": "Elevated air-tram terminal spanning divided city sectors, suspended tram carriages, cable machinery, customs barriers, ticket cages, inspection gantries, warning placards, riveted steel platforms, steam exhaust, overhead wires, constant commuter movement under surveillance"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "1d93b3a7-e638-4461-bf00-c609b6913e47",
+          "name": "Sootmarket Foundry Lanes",
+          "location_image_prompt": "Narrow industrial backstreets packed with boiler pipes, brick workshop walls, scrap heaps, shadowed machine stalls, forge vents, leaking valves, concealed doorways, hanging laundry, greasy cobblestones, clandestine repair shops embedded in a soot-choked district"
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "701854f1-ebeb-4496-b87f-2c7d953afc17",
+        "scene_name": "intro",
+        "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+        "non_player_character_uuids": [
+          "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+        ],
+        "narrative_summary": "In the Directorate Annex, Elias Voss is summoned by his mentor Matthes Vale after a defector is killed during an extraction at Iron Gate. The official account blames field confusion, but Vale privately orders Elias to conduct a discreet damage assessment, hinting that the timing of the failure and the speed of the paperwork are too polished to trust."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "ab3f4d05-2177-41f0-b5bc-1a5ef7e2a863",
+          "scene_name": "act1_scene1",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "non_player_character_uuids": [
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "narrative_summary": "At Iron Gate Checkpoint, Elias interviews Captain Oskar Brenn and reconstructs the failed crossing from signal logs, spent rounds, and surveillance notes. He finds that the fatal search pattern began moments before the defector appeared, implying the border detail had advance warning."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "130751a9-0507-4306-8900-11c1af78df5a",
+          "scene_name": "act1_scene2",
+          "location_uuid": "7c3fe059-4493-4a83-932e-d447ac7d97d4",
+          "non_player_character_uuids": [
+            "0de60f10-18a4-4e9e-bca9-12cf1586cfc6"
+          ],
+          "narrative_summary": "At the Coal Quay Safehouse, machinist and cutout Marta Kessel lets Elias inspect the dead asset's abandoned effects, including a damaged prosthetic compartment hiding a brass data strip. The strip connects the defector to a recent records transfer through the ministry's pneumatic network, pushing suspicion back inside Elias's own service."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "b7eea8ed-8639-42e0-a950-a51e233fbe5d",
+          "scene_name": "act2_scene1",
+          "location_uuid": "ef4e8542-647b-4a42-b210-6eae45c09f91",
+          "non_player_character_uuids": [
+            "91b8f5b4-2f19-48e7-a47b-630dea6ddb49"
+          ],
+          "narrative_summary": "In the Central Pneumatic Records Hall, analyst Anja Rehn helps Elias trace the defector's file through dispatch ledgers and analytic-engine summaries. They uncover a routing instruction altered under a valid senior authorization stamp, leaving Elias to consider that either Vale's office was used or someone close to it is compromised."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "ae0c1621-cdaf-4cb0-9930-0233eb295eba",
+          "scene_name": "act2_scene2",
+          "location_uuid": "fa8eb4e4-dfb8-42c3-92e9-3bf8be731afe",
+          "non_player_character_uuids": [
+            "3c5dd4cf-eef3-4ca4-927b-2bb67e56f38a"
+          ],
+          "narrative_summary": "Following a side trail from the archives, Elias tails a courier through the Luftbrucke Aerial Exchange and recovers a dead-drop note before Internal Security closes in. Deputy Director Sabine Erhardt corners him, makes clear that his off-book inquiry is already being monitored, and warns that exposing the wrong truth could destabilize more than one side of the city."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "218a42c9-1e61-468e-a5fd-4029cdec0026",
+          "scene_name": "act3_scene1",
+          "location_uuid": "1d93b3a7-e638-4461-bf00-c609b6913e47",
+          "non_player_character_uuids": [
+            "91b8f5b4-2f19-48e7-a47b-630dea6ddb49",
+            "0de60f10-18a4-4e9e-bca9-12cf1586cfc6"
+          ],
+          "narrative_summary": "In the Sootmarket Foundry Lanes, Elias secretly meets Anja and Marta away from official channels to compare the brass strip, courier note, and maintenance records. Together they reveal that there is no single clean mole: Anja altered one transfer under pressure, Vale ran the extraction outside procedure, and Internal Security selectively leaked information to contain broader political risks, creating the chain that doomed the defector."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "7892940a-0718-432e-8607-232241586bd0",
+          "scene_name": "act3_scene2",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "non_player_character_uuids": [
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+            "3c5dd4cf-eef3-4ca4-927b-2bb67e56f38a"
+          ],
+          "narrative_summary": "Back in the Directorate Annex, Elias confronts Matthes Vale while Sabine presses for a report that isolates blame and preserves the service. Vale admits he gambled the asset's life to protect a wider network and suspected leaks he could not prove, forcing Elias to choose between a devastating full account he cannot safely sustain and a partial version that buries the institution's shared guilt."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "8bd98150-00f4-42f1-a480-cd3abae658fe",
+        "scene_name": "outro",
+        "location_uuid": "fa8eb4e4-dfb8-42c3-92e9-3bf8be731afe",
+        "non_player_character_uuids": null,
+        "narrative_summary": "Elias files the partial report and receives a quiet reassignment rather than vindication. Standing alone at the Luftbrucke Aerial Exchange as routine traffic resumes across the wall, he watches the city absorb the death without visible change and understands that he has not defeated the machine—only learned how to function inside it."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/a5d8d3e7-343a-411f-af4e-7a9cf426499b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/352d2dc3-6cb5-44b1-a543-a20f94b2df72.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/d5ef8912-cb4f-4cd9-8842-51d1d57a16ce.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/bg 4764382e-6707-45ac-8f6a-14250b8eba2c.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/bg 0d4bfe02-2c3b-4258-bbb4-8775406477f4.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "The Quiet Conduit",
+      "scene_name": "intro",
+      "scene_uuid": "701854f1-ebeb-4496-b87f-2c7d953afc17",
+      "source_scene_summary": "In the Directorate Annex, Elias Voss is summoned by his mentor Matthes Vale after a defector is killed during an extraction at Iron Gate. The official account blames field confusion, but Vale privately orders Elias to conduct a discreet damage assessment, hinting that the timing of the failure and the speed of the paperwork are too polished to trust.",
+      "location_name": "Directorate Annex",
+      "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+      "player_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+      "non_player_character_uuids": [
+        "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+      ],
+      "dramatic_question": "What is Matthes Vale really asking Elias to uncover beneath the official explanation of the Iron Gate killing?",
+      "scene_goal": "Elias wants to understand why Vale summoned him, what truly happened at Iron Gate, and what role he is being asked to play in the aftermath.",
+      "scene_turn": "A routine briefing about a failed extraction becomes an off-book inquiry into a possible leak inside Elias's own service.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01",
+          "purpose": "Establish the bureaucratic tone of the world and Elias's unease before the meeting begins.",
+          "summary": "Elias is summoned through the austere Directorate Annex after the public killing at Iron Gate, moving past message tubes and already-active clerks as if the death has been absorbed into procedure before the day is even over. The stillness and efficiency of the building make the summons feel less urgent than prearranged.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "hushed unease",
+          "revelation": "The machinery of the Directorate is already processing the border death with suspicious speed.",
+          "tension_change": "rise",
+          "player_goal": "Reach Vale and learn why he has been called in.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias enters Vale's office primed to distrust any story that arrives this neatly packaged."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02",
+          "purpose": "Introduce Vale, the failed extraction, and the official account Elias is meant to question.",
+          "summary": "Vale receives Elias without ceremony and places the incident file before him: a defector was shot dead during an extraction attempt at Iron Gate. He recites the official explanation of field confusion, but his flat delivery makes it clear he considers the report convenient rather than convincing.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+          ],
+          "focal_character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+          "mood": "controlled gravity",
+          "revelation": "The official line is that the defector died because of confusion among border personnel during the extraction.",
+          "tension_change": "hold",
+          "player_goal": "Understand the stated facts of the incident and gauge Vale's real opinion.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias knows the sanctioned version of events and senses Vale has not summoned him merely to repeat it."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03",
+          "purpose": "Show Elias's analytical competence and seed the core suspicion driving the story.",
+          "summary": "Reviewing the file, Elias notices how quickly the report was assembled and how cleanly the blame settles into impersonal language. Vale confirms this is the real reason for the meeting: the timing of the failure and the polish of the paperwork suggest someone anticipated the need for a tidy explanation.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "analytic suspicion",
+          "revelation": "The report was completed unnaturally fast and appears shaped to close the incident rather than investigate it.",
+          "tension_change": "rise",
+          "player_goal": "Test the official file for inconsistencies and infer what Vale wants from him.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The anomaly shifts from the gunfire itself to the bureaucratic readiness surrounding it."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04",
+          "purpose": "Give the player an early roleplaying choice that defines Elias's posture toward Vale and the assignment.",
+          "summary": "Vale leaves just enough unsaid to force Elias to answer the implication: this is not a normal debrief. The player chooses whether Elias responds with disciplined compliance, cautious inquiry, or open skepticism about being asked to work off-book.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "measured tension",
+          "revelation": "Vale is evaluating Elias's judgment and discretion as much as briefing him.",
+          "tension_change": "hold",
+          "player_goal": "Set Elias's stance toward Vale and draw out the true scope of the request.",
+          "interactive": true,
+          "choice_prompt": "How does Elias answer Vale's implied distrust of the official story?",
+          "branch_outcomes": [
+            "Elias answers with quiet loyalty, reinforcing Vale's confidence that he can be trusted with a discreet assignment.",
+            "Elias asks careful procedural questions, prompting Vale to hint more openly that the paperwork itself may be compromised.",
+            "Elias presses the opacity of the request, prompting Vale to remind him that deniability is part of why he was chosen."
+          ],
+          "exit_state": "Elias and Vale establish the tone of their collaboration, but the assignment remains deliberately deniable."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05",
+          "purpose": "Deliver the inciting mission and frame the internal stakes of the investigation.",
+          "summary": "Vale privately orders Elias to conduct a discreet damage assessment, beginning at Iron Gate and treating the incident as a leak until proven otherwise. He warns that if there is rot, it will be dressed as routine, and that open scrutiny could alert exactly the people Elias may need to observe.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+          ],
+          "focal_character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+          "mood": "grave secrecy",
+          "revelation": "Vale suspects the failure may trace back inside the service rather than to simple border confusion.",
+          "tension_change": "twist",
+          "player_goal": "Clarify the real assignment and what constraints come with it.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias receives an off-book mandate to investigate the failed extraction without institutional cover."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06",
+          "purpose": "Close the scene on Elias's altered understanding and launch the next investigation step.",
+          "summary": "Left with the file and Vale's warning, Elias leaves the office understanding that he has not been asked to clean up a border mishap but to look for a fracture in the machinery above him. The path forward points to Iron Gate, but the distrust now points inward as well.",
+          "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "grim resolve",
+          "revelation": "The investigation's first destination is Iron Gate, but its true subject may be Elias's own chain of command.",
+          "tension_change": "rise",
+          "player_goal": "Accept the assignment and prepare his first move.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias leaves the Annex as a quiet investigator pursuing a death that may expose institutional betrayal."
+        }
+      ]
+    },
+    {
+      "story_title": "The Quiet Conduit",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "ab3f4d05-2177-41f0-b5bc-1a5ef7e2a863",
+      "source_scene_summary": "At Iron Gate Checkpoint, Elias interviews Captain Oskar Brenn and reconstructs the failed crossing from signal logs, spent rounds, and surveillance notes. He finds that the fatal search pattern began moments before the defector appeared, implying the border detail had advance warning.",
+      "location_name": "Iron Gate Checkpoint",
+      "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+      "player_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+      "non_player_character_uuids": [
+        "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+      ],
+      "dramatic_question": "Can Elias prove the defector was met by a prepared border response rather than chaotic field confusion?",
+      "scene_goal": "Reconstruct the failed crossing closely enough to test the official story and identify where the failure truly began.",
+      "scene_turn": "What begins as a routine checkpoint interview turns into proof that Iron Gate was primed before the defector appeared, pushing Elias's suspicion back inside his own service.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Establish the checkpoint's atmosphere, Brenn's controlled stance, and the polished official account Elias is expected to accept.",
+          "summary": "Elias arrives at Iron Gate under steam, searchlamps, and military routine, where Captain Oskar Brenn receives him with clipped professionalism. Brenn offers a tidy version of events—poor visibility, sudden movement, necessary response—before Elias has asked enough to justify such precision.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "austere and wary",
+          "revelation": "Brenn has a rehearsed official narrative ready, suggesting the checkpoint has already been coached into a clean story.",
+          "tension_change": "rise",
+          "player_goal": "Gauge Brenn's posture and secure access to the checkpoint records.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias recognizes that Brenn will cooperate only within strict procedural limits."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Let the player define Elias's interview posture while exposing Brenn's sensitivity around the sequence of alerts.",
+          "summary": "Elias begins the interview by focusing on the first alarm and the order in which Brenn's men moved. Whether Elias keeps the exchange coolly bureaucratic or challenges the captain's polished phrasing, Brenn reacts more sharply to questions about timing than to questions about the shooting itself.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "controlled friction",
+          "revelation": "Questions about when the search posture began unsettle Brenn more than the death itself.",
+          "tension_change": "rise",
+          "player_goal": "Test whether Brenn is hiding incompetence, fear, or prior knowledge.",
+          "interactive": true,
+          "choice_prompt": "How does Elias open the interview: procedural courtesy or direct skepticism?",
+          "branch_outcomes": [
+            "Brenn stays formal and grants access with stiff professionalism, keeping emotional distance.",
+            "Brenn turns defensive and clipped, revealing early that timing is the weak point in the official story."
+          ],
+          "exit_state": "Brenn permits Elias to review the checkpoint materials, but the interview becomes adversarial beneath its formal tone."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Introduce the signal log as the first hard source of contradiction.",
+          "summary": "In the signal booth, Elias studies semaphore entries, gate toggles, and search-pattern calls while Brenn hovers nearby. The log shows the checkpoint escalated from routine watch to an active search pattern shortly before the first recorded visual contact, a discrepancy Brenn dismisses as prudent caution.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "forensic",
+          "revelation": "The fatal search pattern was activated before any guard officially reported seeing the defector.",
+          "tension_change": "rise",
+          "player_goal": "Find a documentary timestamp that either supports or breaks Brenn's story.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias leaves the booth with a recorded timing anomaly that demands physical verification."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Use physical evidence to confirm that the checkpoint response was prepared rather than improvised.",
+          "summary": "Elias walks the barricade and firing lane, counting spent rounds and tracing where each shooter stood. The casing clusters and Brenn's own reconstruction show the guards were already distributed into containment positions before the defector broke into the open.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "tightening",
+          "revelation": "The border detail was positioned for interception before the chase became visible on the line.",
+          "tension_change": "rise",
+          "player_goal": "See whether the physical layout supports a panicked response or a prearranged net.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The spent rounds and firing positions corroborate the suspicious timing in the log."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Cross-check the last source of evidence and force Brenn to address the contradiction.",
+          "summary": "Elias compares tower surveillance notes to the signal log and finds the observer's first sighting recorded after the search pattern had already been called. He can confront Brenn with the contradiction outright or invite the captain to explain the chain of command, testing whether the omission comes from guilt or obedience.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "accusatory",
+          "revelation": "A third record source confirms that the checkpoint's active search posture predated first sighting.",
+          "tension_change": "twist",
+          "player_goal": "Pin the contradiction to a person, procedure, or command source.",
+          "interactive": true,
+          "choice_prompt": "Does Elias press Brenn directly on the falsified sequence, or let him explain who controls the signal board?",
+          "branch_outcomes": [
+            "Brenn bristles under accusation and retreats into formal duty, but his defensiveness confirms the sequence is false.",
+            "Brenn answers more coolly and distances his men from the alert's origin, pointing Elias toward whoever set the board."
+          ],
+          "exit_state": "Brenn can no longer sustain the 'field confusion' story without addressing the source of the early alert."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Deliver Brenn's key admission and redirect suspicion upstream.",
+          "summary": "Pressed past the official phrasing, Brenn states flatly that his men followed the signal board and that the board changed before anyone on the line had eyes on the runner. He refuses to speculate about intelligence sources, but makes clear the checkpoint acted on an order or warning that reached them through proper channels.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+            "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+          ],
+          "focal_character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+          "mood": "grim candor",
+          "revelation": "Advance warning reached Iron Gate through official procedure before the defector appeared.",
+          "tension_change": "twist",
+          "player_goal": "Determine whether the failure began with Brenn's men or farther up the chain.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias's suspicion shifts decisively away from border panic and toward an internal leak or prearranged instruction."
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "purpose": "Land the scene's conclusion and propel Elias toward the next lead.",
+          "summary": "With copied times, surveillance notes, and his reconstruction of the firing lane, Elias privately reorders the final minutes into a sequence the official report cannot survive. The defector did not stumble into a confused checkpoint; he ran into a reception prepared moments in advance, and Elias leaves knowing he must follow the dead man's support chain back into clandestine channels on his own side.",
+          "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+          "present_character_uuids": [
+            "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+          ],
+          "focal_character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+          "mood": "cold clarity",
+          "revelation": "The checkpoint killing was a prepared response, not a spontaneous mistake.",
+          "tension_change": "fall",
+          "player_goal": "Leave Iron Gate with a usable conclusion and a next investigative direction.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Elias departs with proof of advance warning and a new conviction that the real breach lies inside the service, setting up his move toward the safehouse trail."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 184,
+      "g": 156,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#B89C5C"
+    },
+    "idle_color": {
+      "r": 208,
+      "g": 198,
+      "b": 182,
+      "a": 255,
+      "hex_string": "#D0C6B6"
+    },
+    "idle_small_color": {
+      "r": 176,
+      "g": 168,
+      "b": 156,
+      "a": 255,
+      "hex_string": "#B0A89C"
+    },
+    "hover_color": {
+      "r": 220,
+      "g": 208,
+      "b": 166,
+      "a": 255,
+      "hex_string": "#DCD0A6"
+    },
+    "selected_color": {
+      "r": 170,
+      "g": 182,
+      "b": 188,
+      "a": 255,
+      "hex_string": "#AAB6BC"
+    },
+    "insensitive_color": {
+      "r": 112,
+      "g": 108,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#706C66"
+    },
+    "muted_color": {
+      "r": 72,
+      "g": 70,
+      "b": 66,
+      "a": 255,
+      "hex_string": "#484642"
+    },
+    "hover_muted_color": {
+      "r": 92,
+      "g": 88,
+      "b": 82,
+      "a": 255,
+      "hex_string": "#5C5852"
+    },
+    "text_color": {
+      "r": 236,
+      "g": 232,
+      "b": 224,
+      "a": 255,
+      "hex_string": "#ECE8E0"
+    },
+    "interface_text_color": {
+      "r": 222,
+      "g": 214,
+      "b": 202,
+      "a": 255,
+      "hex_string": "#DED6CA"
+    },
+    "reasoning": "The palette follows the game’s restrained steampunk spy-thriller tone: brass-gold accents echo machinery, seals, and pneumatic fittings, while cool gray-blue selection states reflect intelligence work, paperwork, and institutional distance. Text is kept warm and light for strong readability against dark wood, soot, and iron-heavy backgrounds. Muted UI elements are deep charcoal to fit the industrial setting without drawing attention, and hover/selected states are slightly brighter but still subdued to preserve the atmosphere of bureaucracy, secrecy, and moral compromise."
+  }
+}

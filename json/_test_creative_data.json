@@ -1,0 +1,643 @@
+{
+  "concept": {
+    "premise": "In a divided steampunk metropolis reminiscent of Cold War Berlin, an idealistic junior field officer is tasked by his mentor with investigating a failed exfiltration of a defector, only to uncover signs of a deeply buried conspiracy and a possible mole within his own service.",
+    "genre": "Steampunk spy thriller",
+    "tone": "Dark, paranoid, and intellectually tense in the vein of a steampunk John le Carré novel",
+    "setting": "A divided industrial city split between rival powers, dense with smog, checkpoints, secret ministries, rail lines, hidden airship routes, omnipresent machinery, class tension, and invasive clockwork surveillance.",
+    "protagonist": "A young male junior field officer, idealistic and eager, still early in his career and not yet hardened by the compromises of espionage. He is pulled into a super-secret investigation by a mentor he trusts, forcing him to navigate a world of deception, loyalty tests, and institutional rot.",
+    "core_hook": "The protagonist must investigate why an operation to exfiltrate a defector failed; his mentor suspects a mole, but the deeper he digs, the more uncertain it becomes who betrayed whom and whether his own side deserves his loyalty.",
+    "must_have_elements": [
+      "Morally gray factions",
+      "A failed exfiltration of a defector as the inciting incident",
+      "A mentor who pulls the protagonist into a highly secret investigation",
+      "A suspected mole within the intelligence apparatus",
+      "Steampunk espionage technology including clockwork surveillance, spy gadgets, airships, rail infrastructure, and steam-powered automata",
+      "A divided-city atmosphere inspired by Cold War Berlin",
+      "An ambiguous ending",
+      "The protagonist becoming more cynical by the end",
+      "Optional, minor romance only"
+    ],
+    "avoid_elements": [
+      "Disguises, masks, or identity-based costume changes that would require multiple portrait assets for the same character"
+    ],
+    "concept_summary": "This visual novel is a dark, paranoid steampunk spy thriller set in a divided city evocative of Cold War Berlin. An eager young field officer is recruited by his mentor to quietly investigate a botched defector exfiltration and the possibility of a mole, drawing him into a maze of surveillance, rival agencies, class tensions, and unreliable loyalties. The world should foreground industrial espionage tools—clockwork observation systems, rail networks, airships, automata—while keeping every faction morally compromised. The ending should remain ambiguous, with the protagonist surviving wiser and noticeably more cynical than when he began."
+  },
+  "narrative_design_spec": {
+    "story_title": "The Concordance Engine",
+    "synopsis": "In the divided steam metropolis of Eisenbruck, idealistic junior field officer Lukas Brenner is quietly recruited by his mentor Matthias Voss to investigate the failed rail exfiltration of enemy engineer Anton Halvek. What begins as a hunt for a mole inside the Directorate unspools into the Concordance, a buried arrangement linking rival powers, industrial elites, and security services in mutual repression. Aided by archival cryptanalyst Elara Weiss, pressured by Internal Security inspector Greta Falk, and drawn through the city's rail yards, safehouses, archives, and airship routes, Lukas discovers that every faction is compromised and every truth arrives damaged. This is a dark, paranoid steampunk spy thriller with morally gray loyalties, invasive clockwork surveillance, and an ambiguous ending in which Lukas survives wiser and far more cynical.",
+    "player_character": {
+      "character_data": {
+        "uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+        "name": "Lukas Brenner",
+        "portrait_image_prompt": "young man in his mid-20s, lean build, pale skin, ash-brown hair neatly parted but slightly unruly, grey eyes, clean-shaven face, modest brass-buttoned field coat over a dark waistcoat, narrow tie, leather shoulder strap, alert intelligent expression that still carries traces of idealism",
+        "dialogue_examples": [
+          "If the report is wrong, then we correct it. That is what the Service is for, isn't it?",
+          "You taught me to follow the mechanism until I find the missing gear. I did not expect the missing gear to be us.",
+          "Everyone keeps asking where my loyalty lies, as if truth and loyalty can still share a desk in this city.",
+          "I went looking for one traitor. What I found was procedure."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8",
+          "name": "Matthias Voss",
+          "portrait_image_prompt": "older man in his late 50s, gaunt face, close-cropped iron-gray hair, deep-set eyes, neatly trimmed mustache, severe cheekbones, high-collared black frock coat with discreet service decorations, leather gloves, one polished brass mechanical hand, weary but penetrating expression",
+          "dialogue_examples": [
+            "A clean file is often dirtier than a bloodied one, Brenner.",
+            "Patriotism is what men say when they need you not to inspect the invoices.",
+            "Do not mistake my trust for innocence. I chose you because you still know how to be offended.",
+            "If there is a mole, he has already learned to sign with other men's hands."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "9bcd124f-c0c7-48ed-b7bb-1c8b2c47f915",
+          "name": "Elara Weiss",
+          "portrait_image_prompt": "woman in her late 20s, slim build, fair skin, dark blonde bob cut, sharp blue eyes behind round wire spectacles, composed mouth, tailored clerk's jacket with faint ink stains at the cuffs, high-collared blouse, precise posture, restrained and observant expression",
+          "dialogue_examples": [
+            "Archives do not lie, Officer Brenner. People lie to archives, and usually with terrible handwriting.",
+            "Someone removed three minutes from this schedule with the delicacy of a jeweler and the conscience of a butcher.",
+            "You still believe every cipher hides a secret. Sometimes it hides an institution.",
+            "If I keep helping you, it is because facts are easier to live with than sleep."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "fa52dbfc-2978-411d-9187-da55ccf98e0f",
+          "name": "Greta Falk",
+          "portrait_image_prompt": "woman in her early 40s, tall athletic build, angular face, pale olive skin, dark hair pulled into a severe bun, cold green eyes, long structured security coat with brass clasps, leather gloves, thin scar across one eyebrow, controlled intimidating expression",
+          "dialogue_examples": [
+            "Internal Security does not obstruct investigations, Brenner. We conclude them.",
+            "The innocent fear surveillance because they imagine it is precise.",
+            "Your mentor mistakes sentiment for strategy. It will kill you before I do.",
+            "A stable lie keeps more people alive than an honest panic."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "b7f90e6c-845f-4138-8d60-24133cf2da09",
+          "name": "Tomas Riese",
+          "portrait_image_prompt": "man in his late 30s, broad-shouldered, weathered skin, dark hair worn rough, heavy jaw with stubble, tired brown eyes, grease-stained railway worker's coat, thick wool scarf, calloused hands, guarded cynical expression",
+          "dialogue_examples": [
+            "Rails do not choose sides, officer. Men in offices choose, and the tracks take the blame.",
+            "I changed one switch under pressure. In this city, that is enough to own a man forever.",
+            "Workers vanish through official doors just as easily as secret ones.",
+            "If you want a villain, start with the people who bill for the barricades."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "ac7da0c2-f86a-4b7d-8b00-c3450000eb7e",
+          "name": "Mirelle Soren",
+          "portrait_image_prompt": "woman in her mid-30s, medium height, warm brown skin, black hair pinned back in loose coils, observant dark eyes, practical high-collared dress beneath a worn medical apron, rolled sleeves, strong steady hands, compassionate but unsentimental expression",
+          "dialogue_examples": [
+            "I mend flesh. I do not mend causes.",
+            "Your defector bled like any other frightened man, though his hands had designed crueler things than bullets.",
+            "Every side calls me a collaborator the moment I refuse to sort the wounded by flag.",
+            "Truth is expensive here. I charge less than the ministries."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "name": "Directorate Annex",
+          "location_image_prompt": "an austere intelligence ministry annex with narrow corridors, dark wood paneling, brass filing cabinets, wall maps threaded with pins, humming pneumatic tubes, coded telegraph desks, frosted glass offices, regulator clocks, and soot-streaked windows"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "name": "Cinder Gate Rail Yard",
+          "location_image_prompt": "a sprawling border rail yard split by iron fences and checkpoint gantries, multiple steam locomotive tracks, semaphore towers, armored guard posts, clockwork surveillance lenses, wet cobblestones, barbed wire, coal smoke, and industrial brick walls"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "b7468222-8fc8-4601-aa81-d6c940d1543b",
+          "name": "Brassmarket Safehouse",
+          "location_image_prompt": "a cramped hidden room inside a decaying workers' tenement, patched plaster walls, exposed pipes, a coal stove, a concealed medical table, stacked crates, a coded telegraph set, worn rugs, secret compartments, and rattling factory windows"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "dc4271a2-7ade-4948-ab0c-20e53c6e5126",
+          "name": "Pneumatic Archive Vault",
+          "location_image_prompt": "a subterranean records vault with towering shelves of ledgers, brass pneumatic tubes, rotating ladders, punch-card sorters, locked document cages, index wheels, archive automata, iron catwalks, dust, and oil-stained stone floors"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "602e9b51-bfb8-4a01-a3b8-5e2f65c103b9",
+          "name": "North Tower Airship Mooring",
+          "location_image_prompt": "a monumental airship mooring tower with suspended gangways, tethered zeppelins, steam winches, cargo cranes, customs cages, signal beacons, heavy cables, brass navigation instruments, and a smog-choked city skyline divided by walls and rail lines"
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "80630c36-1e58-451f-a350-1d054f09cd19",
+        "scene_name": "intro",
+        "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+        "non_player_character_uuids": [
+          "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+        ],
+        "narrative_summary": "In the Directorate Annex, idealistic junior field officer Lukas Brenner is summoned by mentor Matthias Voss after the overnight rail exfiltration of enemy engineer Anton Halvek ends in bloodshed at Cinder Gate. Voss bypasses normal channels and privately tasks Lukas with re-creating the failed operation, revealing that a checkpoint override and a sudden surveillance blackout suggest an insider leak. He warns Lukas that official reports are already being rewritten and that he must trust procedure even less than people."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "16a9ec73-d9ec-4086-a90c-5a845e3af9c0",
+          "scene_name": "act1_scene1",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "non_player_character_uuids": [
+            "b7f90e6c-845f-4138-8d60-24133cf2da09",
+            "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+          ],
+          "narrative_summary": "At Cinder Gate Rail Yard, Lukas questions railway switchman Tomas Riese and inspects the ruined exfil route. A smashed clockwork camera spool and impossible signal timings prove the border response was pre-positioned, while Tomas's evasions suggest coercion rather than ideology. Internal Security inspector Greta Falk arrives, asserts jurisdiction, and leaves Lukas with the unnerving realization that his unofficial investigation is already being watched."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "e98ffd18-d83d-45a1-8049-a33c4aeb047d",
+          "scene_name": "act1_scene2",
+          "location_uuid": "dc4271a2-7ade-4948-ab0c-20e53c6e5126",
+          "non_player_character_uuids": [
+            "9bcd124f-c0c7-48ed-b7bb-1c8b2c47f915"
+          ],
+          "narrative_summary": "With quiet help from cryptanalyst Elara Weiss in the Pneumatic Archive Vault, Lukas traces the rail override through sealed timetables, camera maintenance logs, and pneumatic dispatches. They discover Halvek was not merely a defector but an engineer tied to worker-monitoring automata sold across faction lines. The incriminating authorization cipher points toward Voss—or someone with access to his restricted key plates—deepening the mole hunt and sparking a cautious mutual trust between Lukas and Elara."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "a0238b44-9848-4808-84f3-2ff02155b0f1",
+          "scene_name": "act2_scene1",
+          "location_uuid": "b7468222-8fc8-4601-aa81-d6c940d1543b",
+          "non_player_character_uuids": [
+            "ac7da0c2-f86a-4b7d-8b00-c3450000eb7e"
+          ],
+          "narrative_summary": "In a hidden clinic inside Brassmarket, doctor and courier Mirelle Soren admits she treated Halvek before the exfiltration. Halvek claimed to possess ledgers exposing 'the Concordance,' a covert arrangement between rival ministries and industrial interests to trade surveillance technology, engineers, and dissidents while preserving the city's division. Mirelle gives Lukas a brass token linked to off-book airship manifests and hints that Tomas delayed the train after threats were made against people he could not protect."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "73926cb7-9a39-4986-bcc6-9d56c709a7ab",
+          "scene_name": "act2_scene2",
+          "location_uuid": "602e9b51-bfb8-4a01-a3b8-5e2f65c103b9",
+          "non_player_character_uuids": [
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8",
+            "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+          ],
+          "narrative_summary": "Following Mirelle's lead to the North Tower Airship Mooring, Lukas uncovers sealed cargo records and prisoner transfer routes that both sides officially deny. He catches Voss and Falk circling the same evidence from different angles, and each offers a partial explanation: Falk insists Voss engineered the failure, while Voss argues a single mole is a comforting lie hiding a larger arrangement. Lukas leaves convinced the betrayal is systemic, but still unable to tell whether his mentor is exposing it or managing it."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "6c0ae471-1510-4bed-8b57-65d304e9d0a8",
+          "scene_name": "act3_scene1",
+          "location_uuid": "dc4271a2-7ade-4948-ab0c-20e53c6e5126",
+          "non_player_character_uuids": [
+            "9bcd124f-c0c7-48ed-b7bb-1c8b2c47f915",
+            "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+          ],
+          "narrative_summary": "Back in the Pneumatic Archive Vault, Lukas and Elara assemble fragments of ledgers, route codes, and arrest lists into a picture of the Concordance as a long-standing bilateral policy rather than a lone traitor's scheme. Falk corners them and offers Lukas a survivable compromise: surrender the documents, let Voss take the blame, and spare Eisenbruck a purge that would fall hardest on workers' districts. Elara presses the harder question of whether releasing the truth would liberate anyone or merely hand the machine a new excuse for violence."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "cf0b8f3a-5ecd-41a0-b80e-1f6bd68a4d7c",
+          "scene_name": "act3_scene2",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "non_player_character_uuids": [
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8",
+            "fa52dbfc-2978-411d-9187-da55ccf98e0f",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09",
+            "ac7da0c2-f86a-4b7d-8b00-c3450000eb7e"
+          ],
+          "narrative_summary": "At Cinder Gate during a covert exchange meant to recover the last intact ledger, Lukas confronts Voss as Tomas and Mirelle arrive with their own pieces of the truth and Falk moves to arrest everyone involved. Voss admits he launched Halvek's exfiltration to seize proof of the Concordance, but his account of why the escape failed remains evasive—he may have stalled it to prevent mass reprisals, or to protect the very system he condemns. In the chaos of steam, gunfire, and clockwork patrol automata, the full evidence is lost aboard a departing airship or destroyed on the tracks, and Voss vanishes without a confirmed fate."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "5a19b76d-3e50-4121-ba19-5136a40bd05f",
+        "scene_name": "outro",
+        "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+        "non_player_character_uuids": [
+          "9bcd124f-c0c7-48ed-b7bb-1c8b2c47f915",
+          "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+        ],
+        "narrative_summary": "Back at the Directorate Annex, the affair is officially reduced to a rogue smuggling ring, and Lukas is quietly commended, reassigned, and invited to become useful in the same ways Voss once was. Elara leaves him a surviving scrap of the ledger and no reassurance, while Falk makes clear that stability has won for now. Looking out over divided Eisenbruck, Lukas keeps the fragment instead of filing it, no longer certain who betrayed whom and far less able to believe loyalty and justice can coexist."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/4ebf4e14-c098-462c-b43b-55b25ccb32e2.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/b7f90e6c-845f-4138-8d60-24133cf2da09.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/fa52dbfc-2978-411d-9187-da55ccf98e0f.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/bg 62af2baf-1bbc-4c90-893b-25c162b8597b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/KARLA_GAMES/the _concordance _engine/IMAGES/bg 671a4b2a-2771-4c37-9747-bf6feefdf3f3.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "The Concordance Engine",
+      "scene_name": "intro",
+      "scene_uuid": "80630c36-1e58-451f-a350-1d054f09cd19",
+      "source_scene_summary": "In the Directorate Annex, idealistic junior field officer Lukas Brenner is summoned by mentor Matthias Voss after the overnight rail exfiltration of enemy engineer Anton Halvek ends in bloodshed at Cinder Gate. Voss bypasses normal channels and privately tasks Lukas with re-creating the failed operation, revealing that a checkpoint override and a sudden surveillance blackout suggest an insider leak. He warns Lukas that official reports are already being rewritten and that he must trust procedure even less than people.",
+      "location_name": "Directorate Annex",
+      "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+      "player_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+      "non_player_character_uuids": [
+        "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+      ],
+      "dramatic_question": "Will Lukas accept Voss's off-book account of the Cinder Gate bloodshed once he realizes the official version is already being falsified?",
+      "scene_goal": "Learn why Voss summoned him and what really happened at Cinder Gate.",
+      "scene_turn": "A routine summons turns into a covert assignment: Lukas leaves knowing the failed exfiltration bears signs of an insider leak and that Directorate procedure may already be hiding the truth.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_summons",
+          "purpose": "Establish the setting, the aftershock of the overnight disaster, and Lukas's initial unease.",
+          "summary": "Before dawn, Lukas is hurried through the Directorate Annex's dim corridors, past chattering telegraph desks and clerks who suddenly stop speaking when he passes. The building feels less alarmed than controlled, as if the ministry has already begun deciding what version of the night will be allowed to exist.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "hushed unease",
+          "revelation": "The Annex is already in quiet damage-control mode over a serious overnight incident.",
+          "tension_change": "rise",
+          "player_goal": "Reach Voss and understand the emergency before rumor hardens into orders.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas enters Voss's office already sensing that the institution is behaving defensively."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_closed_door_test",
+          "purpose": "Establish the mentor-protege dynamic and let the player define Lukas's initial reading of the crisis.",
+          "summary": "Voss receives Lukas in private, closes the office off from the corridor, and asks what he thinks happened at Cinder Gate before offering any briefing. The conversation doubles as a test of Lukas's instincts: whether he still defaults to the official frame or reaches for the hidden mechanism underneath it.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "controlled suspicion",
+          "revelation": "Voss does not trust the normal chain of briefing enough to begin with the official report.",
+          "tension_change": "rise",
+          "player_goal": "Read Voss's intent and answer without sounding naive or reckless.",
+          "interactive": true,
+          "choice_prompt": "How does Lukas initially frame the Cinder Gate disaster?",
+          "branch_outcomes": [
+            "He treats it as a failed operation, emphasizing discipline and procedure.",
+            "He treats it as an ambush, emphasizing enemy initiative.",
+            "He treats it as sabotage, signaling early suspicion of an internal problem."
+          ],
+          "exit_state": "Voss gauges how Lukas thinks under pressure and how much skepticism he is ready to tolerate."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_the_failed_exfiltration",
+          "purpose": "Deliver the core incident and define the immediate stakes of the investigation.",
+          "summary": "Voss reveals that the overnight operation was a clandestine rail exfiltration of enemy engineer Anton Halvek and that it ended in bloodshed at Cinder Gate. Too many people died for a supposedly compartmentalized move, and the speed of the response makes simple bad luck hard to believe.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+          ],
+          "focal_character_uuid": "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8",
+          "mood": "grave urgency",
+          "revelation": "Anton Halvek was being moved by Directorate hands, and the operation failed catastrophically.",
+          "tension_change": "rise",
+          "player_goal": "Understand what happened and why this disaster matters enough for Voss to intervene personally.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The incident stops being corridor gossip and becomes a lethal operational failure tied directly to Lukas's service."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_impossible_anomalies",
+          "purpose": "Introduce the concrete evidence that points toward an insider leak rather than mere incompetence.",
+          "summary": "Voss presents the two details he cannot reconcile: a checkpoint override that should have required protected authorization and a surveillance blackout that erased the crucial minutes. Lukas is pushed to think like an investigator, deciding which irregularity to pull first and realizing neither fits an ordinary failure.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "forensic dread",
+          "revelation": "The exfiltration was likely compromised by someone with privileged access inside the system.",
+          "tension_change": "twist",
+          "player_goal": "Determine whether the disaster points to error, interception, or betrayal.",
+          "interactive": true,
+          "choice_prompt": "Which anomaly does Lukas press first?",
+          "branch_outcomes": [
+            "He focuses on the checkpoint override, foregrounding abuse of internal authorization.",
+            "He focuses on the surveillance blackout, foregrounding deliberate tampering with oversight."
+          ],
+          "exit_state": "Lukas reaches the same disturbing conclusion as Voss: the route did not fail by chance."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_off_book_mandate",
+          "purpose": "Launch the plot by giving Lukas a covert assignment and a practical next step.",
+          "summary": "Voss bypasses normal channels and privately orders Lukas to re-create the failed operation from the yard outward before committees and archivists flatten it into acceptable language. He wants witness accounts, timings, and physical traces gathered quietly, starting at Cinder Gate itself.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+          ],
+          "focal_character_uuid": "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8",
+          "mood": "covert resolve",
+          "revelation": "Voss believes the formal record is already being manipulated, which is why he is working outside procedure.",
+          "tension_change": "rise",
+          "player_goal": "Accept the assignment and understand how far outside protocol Voss expects him to go.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas receives an unofficial mandate to investigate Cinder Gate immediately and discreetly."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_trust_procedure_least",
+          "purpose": "Land the scene's thematic warning and propel Lukas into the first investigative scene.",
+          "summary": "As Lukas prepares to leave, Voss warns that official reports are already being rewritten and tells him to trust procedure even less than people. The statement hits harder than any direct accusation, because it suggests the machinery Lukas serves may be the thing best designed to bury the truth.",
+          "location_uuid": "62af2baf-1bbc-4c90-893b-25c162b8597b",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "2ad3fc32-a12d-43c6-b8ff-43b7ba4621e8"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "ominous clarity",
+          "revelation": "The cover-up may be systemic, embedded in routine process rather than hidden in one obvious liar.",
+          "tension_change": "rise",
+          "player_goal": "Leave with enough clarity to act before the false story becomes permanent.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas departs for Cinder Gate carrying a covert brief, suspicion of an insider leak, and his first serious doubt about Directorate procedure."
+        }
+      ]
+    },
+    {
+      "story_title": "The Concordance Engine",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "16a9ec73-d9ec-4086-a90c-5a845e3af9c0",
+      "source_scene_summary": "At Cinder Gate Rail Yard, Lukas questions railway switchman Tomas Riese and inspects the ruined exfil route. A smashed clockwork camera spool and impossible signal timings prove the border response was pre-positioned, while Tomas's evasions suggest coercion rather than ideology. Internal Security inspector Greta Falk arrives, asserts jurisdiction, and leaves Lukas with the unnerving realization that his unofficial investigation is already being watched.",
+      "location_name": "Cinder Gate Rail Yard",
+      "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+      "player_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+      "non_player_character_uuids": [
+        "b7f90e6c-845f-4138-8d60-24133cf2da09",
+        "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+      ],
+      "dramatic_question": "Can Lukas reconstruct the truth of the Cinder Gate ambush before fear, missing evidence, and Internal Security lock the story into an official lie?",
+      "scene_goal": "Question Tomas and inspect the yard closely enough to determine whether the failed exfiltration was caused by local sabotage, panic, or an insider leak.",
+      "scene_turn": "What begins as a search for a compromised rail worker becomes proof of advance warning from higher up, and Lukas learns his covert investigation is already under Internal Security scrutiny.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "purpose": "Establish the aftermath, the urgency of disappearing evidence, and the sense that the scene is already being managed.",
+          "summary": "Lukas arrives at the rail yard to find blood scrubbed from cobbles, damaged trackwork already being reset, and checkpoint personnel behaving as if the night's violence is becoming routine paperwork. Tomas waits nearby under visible strain, making the only immediate witness look almost as endangered as the evidence.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "grim and forensic",
+          "revelation": "The site is being cleaned and normalized unusually fast, suggesting the official account is already hardening.",
+          "tension_change": "rise",
+          "player_goal": "Secure what evidence remains and identify where the exfiltration broke down.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas understands he has very little time to get an honest sequence of events before the yard is sanitized."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "purpose": "Make Tomas a morally ambiguous witness rather than a simple villain.",
+          "summary": "Lukas walks Tomas through the switch sequence from the night of the failed exfiltration. Tomas repeats the approved version at first, then falters when asked about the last-minute route change, revealing fear and shame rather than conviction.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09"
+          ],
+          "focal_character_uuid": "b7f90e6c-845f-4138-8d60-24133cf2da09",
+          "mood": "guarded and brittle",
+          "revelation": "Tomas personally altered at least one switch on the route, but he does not read as an ideological conspirator.",
+          "tension_change": "rise",
+          "player_goal": "Get Tomas to admit what he changed and why.",
+          "interactive": true,
+          "choice_prompt": "How does Lukas handle Tomas's evasions: reassure him, lean on procedure, or accuse him outright?",
+          "branch_outcomes": [
+            "Reassurance draws out hints that Tomas acted under personal pressure.",
+            "Procedural pressure forces Tomas to confirm he changed the route but keeps him defensive.",
+            "A direct accusation makes Tomas clam up, yet his panic still suggests fear rather than zeal."
+          ],
+          "exit_state": "Lukas confirms Tomas touched the route himself, but the motive remains obscured."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "purpose": "Introduce physical proof that the failure involved deliberate tampering.",
+          "summary": "Inspecting the signal housing and surveillance fixtures, Lukas finds a smashed clockwork camera spool with crushed teeth and its recording strip torn away too cleanly to be random damage. The supposed surveillance blackout stops looking like bad luck and starts looking engineered.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "focused and uneasy",
+          "revelation": "The camera covering the exfil route was deliberately disabled before or during the interception.",
+          "tension_change": "rise",
+          "player_goal": "Determine whether the surveillance failure was accidental or staged.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The investigation shifts from witness testimony to hard evidence of sabotage."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "purpose": "Turn the scattered clues into the core deduction that the ambush was prepared in advance.",
+          "summary": "Comparing semaphore positions, switch intervals, and the recorded movement of checkpoint personnel, Lukas reconstructs the route minute by minute and hits an impossibility: border forces were already in place before any legitimate alarm could have reached them. The interception was not a rapid response but a waiting one.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "analytical and ominous",
+          "revelation": "The border response was pre-positioned, proving advance warning from inside the system.",
+          "tension_change": "twist",
+          "player_goal": "Test whether the timing supports the official story of a normal security reaction.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas stops treating the yard as an isolated failure and starts treating it as part of a larger arrangement."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "purpose": "Deepen Tomas's role as a coerced link in the chain without fully clearing or condemning him.",
+          "summary": "Pressed with the impossible timings, Tomas refuses to name names and barely defends himself, insisting only that men in his position do not get to choose the shape of disasters. His evasions feel less like loyalty to a cause than terror of consequences extending beyond his own arrest.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09"
+          ],
+          "focal_character_uuid": "b7f90e6c-845f-4138-8d60-24133cf2da09",
+          "mood": "strained and human",
+          "revelation": "Tomas appears coerced or trapped, not driven by ideology.",
+          "tension_change": "rise",
+          "player_goal": "Learn who pressured Tomas and whether he can be turned into a usable witness.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Tomas is recast from likely culprit to frightened intermediary, widening the scope of the conspiracy."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "purpose": "Introduce Greta Falk as the institutional counterforce and show that Lukas's covert inquiry is already exposed.",
+          "summary": "Greta Falk arrives with cold composure and enough prior knowledge to make the encounter feel staged rather than coincidental. She asserts Internal Security jurisdiction, evaluates the damaged camera evidence without surprise, and makes clear that Lukas is not investigating in a blind spot at all.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+            "b7f90e6c-845f-4138-8d60-24133cf2da09",
+            "fa52dbfc-2978-411d-9187-da55ccf98e0f"
+          ],
+          "focal_character_uuid": "fa52dbfc-2978-411d-9187-da55ccf98e0f",
+          "mood": "cold and intrusive",
+          "revelation": "Internal Security is already tracking the case closely and may also be tracking Lukas's movements.",
+          "tension_change": "rise",
+          "player_goal": "Protect his authority and keep as much of his working theory hidden as possible.",
+          "interactive": true,
+          "choice_prompt": "When Falk asserts jurisdiction, does Lukas comply, invoke Voss, or challenge her authority?",
+          "branch_outcomes": [
+            "Compliance keeps the exchange outwardly civil but gives Falk control of the scene.",
+            "Invoking Voss sharpens Falk's interest in Lukas's chain of command and mentor.",
+            "Open challenge earns Lukas a pointed warning and marks him as someone Falk will remember."
+          ],
+          "exit_state": "Greta leaves having asserted dominance over the investigation and made Lukas feel newly visible."
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "purpose": "Land the emotional aftermath and point Lukas toward the next investigative step.",
+          "summary": "Left with copied timings, damaged impressions from the spool, and a witness too frightened to speak plainly, Lukas recognizes that the yard itself will not yield the full truth for long. If the physical scene is already being managed, the next answers must come from sealed logs, dispatch records, and ciphers elsewhere in the system.",
+          "location_uuid": "671a4b2a-2771-4c37-9747-bf6feefdf3f3",
+          "present_character_uuids": [
+            "4ebf4e14-c098-462c-b43b-55b25ccb32e2"
+          ],
+          "focal_character_uuid": "4ebf4e14-c098-462c-b43b-55b25ccb32e2",
+          "mood": "unnerved but determined",
+          "revelation": "The remaining trail is likely in records and authorizations, not in the yard's surviving witnesses.",
+          "tension_change": "hold",
+          "player_goal": "Leave with enough preserved detail to continue the investigation elsewhere.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Lukas departs convinced the leak came from above the rail workers and that documentary proof is his only path forward."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 183,
+      "g": 146,
+      "b": 72,
+      "a": 255,
+      "hex_string": "#B79248"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 208,
+      "b": 198,
+      "a": 255,
+      "hex_string": "#D6D0C6"
+    },
+    "idle_small_color": {
+      "r": 188,
+      "g": 182,
+      "b": 172,
+      "a": 255,
+      "hex_string": "#BCB6AC"
+    },
+    "hover_color": {
+      "r": 236,
+      "g": 224,
+      "b": 196,
+      "a": 255,
+      "hex_string": "#ECE0C4"
+    },
+    "selected_color": {
+      "r": 200,
+      "g": 168,
+      "b": 106,
+      "a": 255,
+      "hex_string": "#C8A86A"
+    },
+    "insensitive_color": {
+      "r": 118,
+      "g": 112,
+      "b": 104,
+      "a": 255,
+      "hex_string": "#767068"
+    },
+    "muted_color": {
+      "r": 76,
+      "g": 71,
+      "b": 66,
+      "a": 255,
+      "hex_string": "#4C4742"
+    },
+    "hover_muted_color": {
+      "r": 96,
+      "g": 89,
+      "b": 82,
+      "a": 255,
+      "hex_string": "#605952"
+    },
+    "text_color": {
+      "r": 231,
+      "g": 228,
+      "b": 220,
+      "a": 255,
+      "hex_string": "#E7E4DC"
+    },
+    "interface_text_color": {
+      "r": 244,
+      "g": 239,
+      "b": 229,
+      "a": 255,
+      "hex_string": "#F4EFE5"
+    },
+    "reasoning": "I chose a restrained brass-and-ash palette to match the steampunk espionage setting: warm metallic accents evoke machinery, rails, and ministry fittings, while cool off-whites keep text readable against dark wood, soot, and steel UI panels. The hover and selected states are slightly brighter and warmer for clarity without breaking the noir mood. Muted and insensitive colors stay low-contrast and smoky, fitting the atmosphere of secrecy and compromise while preserving usability."
+  }
+}

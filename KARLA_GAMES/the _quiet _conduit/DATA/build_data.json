@@ -1,0 +1,1167 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/a5d8d3e7-343a-411f-af4e-7a9cf426499b.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/352d2dc3-6cb5-44b1-a543-a20f94b2df72.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/d5ef8912-cb4f-4cd9-8842-51d1d57a16ce.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/bg 4764382e-6707-45ac-8f6a-14250b8eba2c.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/the _quiet _conduit/IMAGES/bg 0d4bfe02-2c3b-4258-bbb4-8775406477f4.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "701854f1-ebeb-4496-b87f-2c7d953afc17",
+      "scene_name": "intro",
+      "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01",
+          "source_purpose": "Establish the bureaucratic tone of the world and Elias's unease before the meeting begins.",
+          "source_exit_state": "Elias enters Vale's office primed to distrust any story that arrives this neatly packaged.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "4764382e-6707-45ac-8f6a-14250b8eba2c"
+            },
+            {
+              "type": "narration",
+              "text": "Message tubes hiss overhead as clerks sort carbons beneath shaded lamps."
+            },
+            {
+              "type": "narration",
+              "text": "By the time Elias reaches Vale's corridor, the killing at Iron Gate has already been reduced to routing slips and stamped urgency."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "A public death before dawn, and the Annex has already filed it smooth."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02",
+          "source_purpose": "Introduce Vale, the failed extraction, and the official account Elias is meant to question.",
+          "source_exit_state": "Elias knows the sanctioned version of events and senses Vale has not summoned him merely to repeat it.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Come in, Voss. Shut the door."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Iron Gate. Extraction window at first light. The defector is dead."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "The bulletin said border confusion."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "That is the bulletin."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "The report says the detail lost sequence, orders crossed, shots followed, and the wrong man ended up on the ground."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "A useful explanation. Also a very fast one."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "You didn't summon me for the bulletin."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03",
+          "source_purpose": "Show Elias's analytical competence and seed the core suspicion driving the story.",
+          "source_exit_state": "The anomaly shifts from the gunfire itself to the bureaucratic readiness surrounding it.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Vale slides the file across. The paper is still warm from the duplicator."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Witness abstracts, ammunition count, route sketch, censure language."
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "This was reconciled in hours."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Precisely."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "A clean story is a convenience, Voss, not a fact."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "The blame lands everywhere except on a person."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Which means someone may have needed the fog in place before the shooting ended."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04",
+          "source_purpose": "Give the player an early roleplaying choice that defines Elias's posture toward Vale and the assignment.",
+          "source_exit_state": "Elias and Vale establish the tone of their collaboration, but the assignment remains deliberately deniable.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "So tell me whether that troubles you enough to be useful."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_04_choice_01",
+              "prompt": "How does Elias answer Vale's implied distrust of the official story?",
+              "options": [
+                {
+                  "option_id": "comply",
+                  "option_text": "Keep it quiet. I'll review Iron Gate and report only to you.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "I'll keep it narrow, keep it quiet, and report to you alone."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "text": "Good. I need quiet loyalty more than enthusiasm."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "inquire",
+                  "option_text": "Before I move, tell me what in this file is wrong.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Before I step near Iron Gate, tell me what in this file bothers you most."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "character_expression": "confused",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "text": "For now, trust sequence more than signatures. The paperwork itself may be compromised."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "skeptical",
+                  "option_text": "If this is off-book, say so.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "You're asking for an unofficial inquiry and leaving the words off the page."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+                      "text": "Correct. If this goes bad, it must look like your curiosity, not my order."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05",
+          "source_purpose": "Deliver the inciting mission and frame the internal stakes of the investigation.",
+          "source_exit_state": "Elias receives an off-book mandate to investigate the failed extraction without institutional cover.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Then hear the part that will not appear in the report."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "You will conduct a discreet damage assessment at Iron Gate."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Begin with signal logs, search rotations, and the list of personnel who knew the crossing window."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Treat the failure as a leak until the evidence forces a kinder interpretation."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "You think warning reached the checkpoint before the defector did."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "I think open scrutiny will warn the wrong people faster than any courier tube."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "Ask small questions. Notice routine answers."
+            },
+            {
+              "type": "line",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72",
+              "text": "If there is rot, it will be dressed as routine."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "352d2dc3-6cb5-44b1-a543-a20f94b2df72"
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06",
+          "source_purpose": "Close the scene on Elias's altered understanding and launch the next investigation step.",
+          "source_exit_state": "Elias leaves the Annex as a quiet investigator pursuing a death that may expose institutional betrayal.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Vale offers no written order, only the file and a look that makes the omission deliberate."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Iron Gate first. If the lie was ready that quickly, it didn't begin at the border."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "narration",
+              "text": "He leaves the office with a dead man's file under his arm and a new suspicion lodged higher than the checkpoint."
+            },
+            {
+              "type": "narration",
+              "text": "By the time the message tubes hiss again behind him, the investigation has already turned inward."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Elias leaves the Directorate Annex with a deniable order to investigate Iron Gate as a suspected internal leak, no longer willing to accept the official story as a simple border mishap.",
+      "notes_and_work_product_summary": "Six source beats were mapped in order with one interactive choice in beat 4. Dialogue keeps Vale terse and controlled, Elias observant and analytical, and portrait flow maintains a single visible speaker with narration-only transitions at scene open and close."
+    },
+    {
+      "scene_uuid": "ab3f4d05-2177-41f0-b5bc-1a5ef7e2a863",
+      "scene_name": "act1_scene1",
+      "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the checkpoint's atmosphere, Brenn's controlled stance, and the polished official account Elias is expected to accept.",
+          "source_exit_state": "Elias recognizes that Brenn will cooperate only within strict procedural limits.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "0d4bfe02-2c3b-4258-bbb4-8775406477f4"
+            },
+            {
+              "type": "narration",
+              "text": "Steam drifts across Iron Gate. Searchlamps rake the wire while shift bells echo off wet iron."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Captain Brenn. Directorate review. I need the night's sequence and your board log."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Poor visibility, sudden movement, challenged at range, necessary response. That's the sequence, and it accords with standing rules."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "You seem eager to save us both time."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "I prefer clean paperwork, Voss. You'll have the records within procedure."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Let the player define Elias's interview posture while exposing Brenn's sensitivity around the sequence of alerts.",
+          "source_exit_state": "Brenn permits Elias to review the checkpoint materials, but the interview becomes adversarial beneath its formal tone.",
+          "events": [
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "How does Elias open the interview: procedural courtesy or direct skepticism?",
+              "options": [
+                {
+                  "option_id": "procedural_courtesy",
+                  "option_text": "Keep it formal and ask for the sequence by the book.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Captain, walk me through the first alarm and the order of movement as entered."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "text": "Initial bell, lane spread, tower watch. You'll have the log, though I fail to see why the clock interests you more than the shooting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Because bullets are noisy. Minutes are honest."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "direct_skepticism",
+                  "option_text": "Call out the polished story and press the timing immediately.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Your men were moving before the body fell. Start with the first alarm, Captain, not the speech."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "text": "Mind your tone. The shot was lawful. If you want the timing, read the board and stop implying theater."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Theater doesn't stamp ledgers."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Introduce the signal log as the first hard source of contradiction.",
+          "source_exit_state": "Elias leaves the booth with a recorded timing anomaly that demands physical verification.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Inside the signal booth, brass toggles and semaphore tabs still smell of hot dust."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Routine watch until 22:14. Active search pattern at 22:16."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Prudent caution. Fog, dead ground, a bad week."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "First visual contact isn't entered until 22:19."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Prudent caution does not wait for a signature from the dark."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Then I'll see how prudent it looks from the lane."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Use physical evidence to confirm that the checkpoint response was prepared rather than improvised.",
+          "source_exit_state": "The spent rounds and firing positions corroborate the suspicious timing in the log.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The barricade lane still glitters with spent brass beneath the searchlamps."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Three shooters here, two by the drum shield, one covering the cut-through. These aren't men bunching under surprise."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Containment positions. We train for crossings."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "You were settled into them before the runner hit the lamps."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Before he reached the wire. That is the difference between order and a funeral."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "It's also the difference between surprise and warning."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Cross-check the last source of evidence and force Brenn to address the contradiction.",
+          "source_exit_state": "Brenn can no longer sustain the 'field confusion' story without addressing the source of the early alert.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The tower observer's note is blunt: first sighting, 22:19, east wash."
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_05_choice_01",
+              "prompt": "Does Elias press Brenn directly on the falsified sequence, or let him explain who controls the signal board?",
+              "options": [
+                {
+                  "option_id": "press_directly",
+                  "option_text": "Call the sequence false and force Brenn to react.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Your board calls active search three minutes before first sighting. That sequence is false."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "text": "My report states what my post received. If you dislike the sequence, question the board, not my men."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "I intend to question everything that arrived dressed as fact."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "ask_chain_of_command",
+                  "option_text": "Stay cool and make Brenn explain who can trigger the board.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "Who can light an active search on your board before the tower sees anything?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+                      "text": "Signal authority runs through the booth and posted command. My men answer the lamps. We do not compose them."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+                      "text": "So the order reached Iron Gate already wearing a seal."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Deliver Brenn's key admission and redirect suspicion upstream.",
+          "source_exit_state": "Elias's suspicion shifts decisively away from border panic and toward an internal leak or prearranged instruction.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "Then say it plainly, Captain."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "sad",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Plainly? The board changed before anyone on the line had eyes on the runner."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "My men followed the signal board. If the signal was wrong, ask who set it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "And that signal reached Iron Gate through proper channels."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce",
+              "text": "Official enough for the gate to move on it. I guard a gate, Voss. I do not decide what is worth crossing."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce"
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07",
+          "source_purpose": "Land the scene's conclusion and propel Elias toward the next lead.",
+          "source_exit_state": "Elias departs with proof of advance warning and a new conviction that the real breach lies inside the service, setting up his move toward the safehouse trail.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "When Brenn returns to his men, Elias recopies the times beside the tower note and his sketch of the firing lane."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "The report is neat enough to be false."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            },
+            {
+              "type": "narration",
+              "text": "Set in order, the minutes refuse the official story. The defector did not stumble into confusion. He ran into a reception prepared moments in advance."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b",
+              "text": "If he was met at the wall, the trail starts with whoever shepherded him there."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "a5d8d3e7-343a-411f-af4e-7a9cf426499b"
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Elias leaves Iron Gate with documentary and physical proof that the checkpoint was warned in advance, shifting his investigation away from border confusion and toward an internal leak in the service.",
+      "notes_and_work_product_summary": "Adapted all seven source beats in order, with interactive choices in beats 2 and 5. The scene escalates from Brenn's polished official account to signal-log contradiction, physical corroboration on the firing lane, tower-note confirmation, and Brenn's admission that the early alert arrived through proper channels."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 184,
+      "g": 156,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#B89C5C"
+    },
+    "idle_color": {
+      "r": 208,
+      "g": 198,
+      "b": 182,
+      "a": 255,
+      "hex_string": "#D0C6B6"
+    },
+    "idle_small_color": {
+      "r": 176,
+      "g": 168,
+      "b": 156,
+      "a": 255,
+      "hex_string": "#B0A89C"
+    },
+    "hover_color": {
+      "r": 220,
+      "g": 208,
+      "b": 166,
+      "a": 255,
+      "hex_string": "#DCD0A6"
+    },
+    "selected_color": {
+      "r": 170,
+      "g": 182,
+      "b": 188,
+      "a": 255,
+      "hex_string": "#AAB6BC"
+    },
+    "insensitive_color": {
+      "r": 112,
+      "g": 108,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#706C66"
+    },
+    "muted_color": {
+      "r": 72,
+      "g": 70,
+      "b": 66,
+      "a": 255,
+      "hex_string": "#484642"
+    },
+    "hover_muted_color": {
+      "r": 92,
+      "g": 88,
+      "b": 82,
+      "a": 255,
+      "hex_string": "#5C5852"
+    },
+    "text_color": {
+      "r": 236,
+      "g": 232,
+      "b": 224,
+      "a": 255,
+      "hex_string": "#ECE8E0"
+    },
+    "interface_text_color": {
+      "r": 222,
+      "g": 214,
+      "b": 202,
+      "a": 255,
+      "hex_string": "#DED6CA"
+    },
+    "reasoning": "The palette follows the game’s restrained steampunk spy-thriller tone: brass-gold accents echo machinery, seals, and pneumatic fittings, while cool gray-blue selection states reflect intelligence work, paperwork, and institutional distance. Text is kept warm and light for strong readability against dark wood, soot, and iron-heavy backgrounds. Muted UI elements are deep charcoal to fit the industrial setting without drawing attention, and hover/selected states are slightly brighter but still subdued to preserve the atmosphere of bureaucracy, secrecy, and moral compromise."
+  },
+  "character_dict": {
+    "a5d8d3e7-343a-411f-af4e-7a9cf426499b": "Elias Voss",
+    "352d2dc3-6cb5-44b1-a543-a20f94b2df72": "Matthes Vale",
+    "91b8f5b4-2f19-48e7-a47b-630dea6ddb49": "Anja Rehn",
+    "0de60f10-18a4-4e9e-bca9-12cf1586cfc6": "Marta Kessel",
+    "d5ef8912-cb4f-4cd9-8842-51d1d57a16ce": "Oskar Brenn",
+    "3c5dd4cf-eef3-4ca4-927b-2bb67e56f38a": "Sabine Erhardt"
+  }
+}

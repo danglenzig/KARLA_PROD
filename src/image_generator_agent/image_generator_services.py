@@ -100,26 +100,26 @@ Return a short confirmation after generation.
 STYLE_CHOOSER_INSTRUCTIONS: str = f"""
 Your only job is to choose a thematically appropriate art style to use for image generation in downstream agents, based on the provided story synopsis. You can choose from the following:
 
-COMIC: Toon-shaded illustration in the style of 1970s American comic books, with bold black ink outlines, flat cel shading, slightly gritty print texture, warm paper tones, halftone shading, and dramatic graphic lighting. Keep the image visually clean and readable, not photorealistic, not glossy, not 3D. No text, no logos, no symbols, no signage.
-ANIME: Clean modern anime illustration with crisp linework, expressive faces, smooth cel shading, controlled highlights, and a polished visual novel look. Use soft gradients only where needed. Keep the composition uncluttered and character-focused. No text, no logos, no symbols.
-PAINTERLY: Atmospheric fantasy illustration with visible brushwork, soft edge variation, rich color transitions, and cinematic light falloff. The scene should feel hand-painted and storybook-like, not photorealistic. No text, no symbols, no signage.
-NOIR: High-contrast noir illustration with deep shadows, limited color palette, hard-edged lighting, and moody urban atmosphere. Use dramatic silhouette shapes and restrained detail. Keep it graphic and readable rather than photographic. No text, no logos, no signage.
-PULP: Retro pulp magazine illustration with bold composition, exaggerated motion, saturated colors, simplified anatomy, and vintage printing texture. It should feel like a classic paperback cover, not a movie poster. No text, no typography, no cover titles.
-WATERCOLOR: Gentle watercolor illustration with soft washes, delicate outlines, warm natural light, and subtle paper texture. The scene should feel hand-made, calm, and emotionally clear. No text, no logos, no signage.
-CLEAN: Clean editorial illustration with minimal shapes, restrained palette, strong silhouette readability, and polished vector-like finish. The image should feel professional and modern, with no clutter and no visible text.
-HORROR_VHS: Grainy analog horror illustration with muted colors, low-key lighting, imperfect texture, and a slightly degraded late-20th-century feel. Keep it eerie but readable. No text, no subtitles, no signs, no labels.
-SCI_FI: Sleek sci-fi concept illustration with hard surface design, luminous accents, environmental depth, and crisp speculative detail. Keep the layout clear and technically believable. No text, no interface labels.
-SATURDAY_MORNING: Bright, exaggerated cartoon illustration with thick outlines, simplified shapes, cheerful color blocking, and high legibility. The composition should be playful and expressive without becoming noisy. No text, no speech bubbles, no logos.
-PIXEL_ART: Detailed 16-bit retro pixel art illustration with a limited color palette, clean sprite-like character definition, crisp dithering, and atmospheric environment tiling. Keep the pixels sharp and unblurred. No text, no logos, no UI elements, no health bars.
-CYBERPUNK: Neon-drenched futuristic illustration with high-contrast volumetric glow, wet street reflections, dark urban haze, and sharp high-tech detail. Use saturated magenta and cyan accents against heavy ambient shadows. No text, no logos, no signage, no holographic signs.
-GOTHIC_DARK_FANTASY: Somber dark fantasy illustration with heavy cross-hatching, intricate line detail, desaturated earthy tones, and a romantic macabre atmosphere. Focus on deep shadows and dramatic silhouetting. No text, no typography, no symbols.
-SYNTHWAVE: Retro 1980s synthwave illustration with vibrant neon gradients, chrome highlights, dramatic horizon sun lighting, and clean vector shapes. Palette focused on deep purple, hot pink, and electric cyan. No text, no titles, no logos.
-CHARCOAL_SKETCH: Expressive monochrome sketch with visible charcoal and graphite grain, sweeping dynamic linework, and soft paper texture. Emphasize contrast and form over fine surface detail. No text, no watermarks, no signatures.
-CHIBI: Playful super-deformed anime illustration with exaggerated head proportions, simplified body shapes, soft pastel colors, and bright cheerful lighting. Focus on high visual readability and emotional expression. No text, no speech bubbles, no logos.
-UKIYO_E: Traditional Japanese woodblock print illustration with flat color fields, fine organic ink outlines, subtle fibrous paper grain, and stylized natural movement. Soft earthy mineral pigments throughout. No text, no red seals, no calligraphic stamps.
-PAPER_CUTOUT: Layered papercraft illustration with distinct drop shadows, subtle physical cardstock texture, clean geometry, and tangible spatial depth. The composition should look physically hand-cut and assembled. No text, no signs, no logos.
-CINEMATIC_CG: High-end visual novel cinematic CG with shallow depth of field, natural atmospheric scattering, precise dynamic lighting, and realistic material rendering. Sharp character focus with soft background blur. No text, no UI overlay, no subtitles.
-STAINED_GLASS: Luminous stained glass window illustration with thick dark lead solder lines, rich jewel-toned color segments, and radiant backlighting spilling through translucent glass panels. No text, no letters, no logos.
+COMIC: {ImageStyle.COMIC}
+ANIME: {ImageStyle.ANIME}
+PAINTERLY: {ImageStyle.PAINTERLY}
+NOIR: {ImageStyle.NOIR}
+PULP: {ImageStyle.PULP}
+WATERCOLOR: {ImageStyle.WATERCOLOR}
+CLEAN: {ImageStyle.CLEAN}
+HORROR_VHS: {ImageStyle.HORROR_VHS}
+SCI_FI: {ImageStyle.SCI_FI}
+SATURDAY_MORNING: {ImageStyle.SATURDAY_MORNING}
+PIXEL_ART: {ImageStyle.PIXEL_ART}
+CYBERPUNK: {ImageStyle.CYBERPUNK}
+GOTHIC_DARK_FANTASY: {ImageStyle.GOTHIC_DARK_FANTASY}
+SYNTHWAVE: {ImageStyle.SYNTHWAVE}
+CHARCOAL_SKETCH: {ImageStyle.CHARCOAL_SKETCH}
+CHIBI: {ImageStyle.CHARCOAL_SKETCH}
+UKIYO_E: {ImageStyle.UKIYO_E}
+PAPER_CUTOUT: {ImageStyle.PAPER_CUTOUT}
+CINEMATIC_CG: {ImageStyle.CINEMATIC_CG}
+STAINED_GLASS: {ImageStyle.STAINED_GLASS}
 
 Briefly explain your reasoning in the provided output field.
 

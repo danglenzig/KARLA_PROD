@@ -1,0 +1,1897 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/881e9c3f-6503-4011-bf2f-0f695c7118c2.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/99cba24e-4193-4f14-92c1-27fb625451f8.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/f7ca2379-8dbb-4385-b914-98ac82c570e6.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/fc747068-e248-4030-a404-a5d66982d03c.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/bg ee4a1186-3614-48d7-be75-173479055ae3.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/bg a3c65122-6518-4689-8149-11e695fbcd71.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "ca7b7332-6053-4b47-8963-9ce224abf4c1",
+      "scene_name": "intro",
+      "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_errand_routine",
+          "source_purpose": "Establish Rook's retired daily life, the trailer park's comic cyberpunk tone, and the scene's initial low-stakes goal.",
+          "source_exit_state": "Rook's mundane objective and Gutterlight's trashy normalcy are established.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3"
+            },
+            {
+              "type": "narration",
+              "text": "Gutterlight's Main Strip flickers under failing neon, steam leaks, and six overlapping arguments."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "All I need is a regulator coil."
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Five-minute errand. Then I go home before the sink and the lights start dating again."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "narration",
+              "text": "Around here, low-grade chaos isn't an emergency. It's weather."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_babs_tollbooth",
+          "source_purpose": "Introduce Babs as the park's overbearing unofficial authority and show how Rook navigates local power with deadpan resignation.",
+          "source_exit_state": "Rook is delayed, and Babs' control over the neighborhood is clear.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "Hold it. Main Strip transit toll."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "For walking?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "For walking with intent. Loitering's complimentary. Purpose costs extra."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "I'm buying a regulator coil."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "Utility errand. Special category. My notice board covered it this morning."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Your notice board is a toaster with threats taped to it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "And my camera gull still caught you ignoring it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "How much to satisfy the empire?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "One chit and the pleasure of hearing me be right when your trailer caves in."
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_cherry_intercept",
+          "source_purpose": "Establish Cherry's aggressive flirtation, optional romance tone, and the comic texture of Rook's social life in the park.",
+          "source_exit_state": "Cherry's rapport with Rook is defined, but his simple errand is still not done.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "narration",
+              "text": "A streak of neon hair and discount chrome slides into his path before he can keep moving."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Hey, Lot 9 daddy. Doing home repair? That's embarrassingly domestic."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "I'm replacing a part, not starting a lifestyle brand."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Shame. I could improve your morning in at least three unsafe ways."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "If any of those ways involve public nudity, I require a permit."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Rook handle Cherry's aggressive flirting?",
+              "options": [
+                {
+                  "option_id": "flirt_back",
+                  "option_text": "Flirt back and meet her energy.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Careful. I might mistake competence for seduction."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Then let me be dangerously helpful."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "shut_her_down",
+                  "option_text": "Shut her down and keep distance.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Cherry, not today."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Aw. Rejection with eye contact. My favorite flavor."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "deadpan_deflect",
+                  "option_text": "Deflect with dry humor.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Put that on a flyer. 'Cherry Nitro: now voiding warranties and boundaries.'"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Knew you liked me. That's practically pillow talk for you."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_sable_appears",
+          "source_purpose": "Snap the scene from neighborhood comedy into personal unease by reintroducing Sable and forcing the player to set Rook's initial emotional stance toward her.",
+          "source_exit_state": "Sable is back in Rook's orbit, and the mood of the scene turns instantly serious.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "narration",
+              "text": "Then the strip tilts. At the far end of the lane, a black coat cuts through the junk-stall glow like it doesn't belong to this planet."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Rook."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Whoa. You know Funeral Glamour."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "She looks like she charges by the corpse."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_04_choice_01",
+              "prompt": "How does Rook greet Sable after her sudden return?",
+              "options": [
+                {
+                  "option_id": "open_hostility",
+                  "option_text": "Meet her with open hostility.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "You got a lot of nerve showing up here."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "You got harder to find. Not impossible."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "sarcastic_control",
+                  "option_text": "Hide the shock behind sarcasm.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Great. My day was missing a haunting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "And yet you still went pale."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "strictly_professional",
+                  "option_text": "Go straight to business.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "If you're here, skip the reunion and get to the problem."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Good. You remember how this works."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_kill_squad_warning",
+          "source_purpose": "Deliver the inciting threat and let the player define whether Rook responds with trust, suspicion, or gallows humor.",
+          "source_exit_state": "The danger is named, and Rook is forced out of routine into crisis mode.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "narration",
+              "text": "Sable steps in close, voice low enough to slip under the hiss of generators."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Yakuza kill squad. In the district already. They're asking for both of us."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Okay. That's either very bad or the sexiest exit strategy I've ever heard."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "No syndicate operations on my strip without prior notice."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_05_choice_01",
+              "prompt": "How does Rook answer Sable's warning?",
+              "options": [
+                {
+                  "option_id": "question_motives",
+                  "option_text": "Question Sable's motives first.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Why tell me now? You bring them here?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "No. I got here first."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "accept_tactical_reality",
+                  "option_text": "Slip straight into professional mode.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Numbers. Hardware. Time."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Small squad. Suppressed pistols, blades, district scans. Not much time."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "gallows_humor",
+                  "option_text": "Mask the alarm with gallows humor.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Kill squad. Around here that's just aggressive networking."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Keep joking while walking."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_retreat_to_trailer",
+          "source_purpose": "Close the scene by committing Rook to private action and bridging directly into the next scene's fuller exposition.",
+          "source_exit_state": "Rook and Sable head for his trailer, the errand is abandoned, and the coming conflict is now unavoidable.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Shopping trip's over."
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Sable, trailer. If this is real, you can brief me behind something bullet-resistant."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "That's awful. Also if anybody shoots at you, text me first."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "If armed professionals damage park utilities, I am invoicing the survivors."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Lead the way."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "narration",
+              "text": "Rook turns back toward Lot 9 without the part he came for. Behind him, Cherry's grin thins, Babs starts pricing catastrophe, and the lie of retirement finally runs out of room."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Rook abandons his errand and takes Sable to his trailer after learning a Yakuza kill squad is already in the district looking for them both.",
+      "notes_and_work_product_summary": "Six beats preserved in source order. Beats 3 through 5 each contain one local choice that defines Cherry rapport and Rook's initial stance toward Sable and the threat. Portrait staging keeps only the current speaker visible, with narration used for tonal transitions."
+    },
+    {
+      "scene_uuid": "205cfda1-7967-4a9a-9b72-e755f1d77c4c",
+      "scene_name": "act1_scene1",
+      "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01_lockdown",
+          "source_purpose": "Establish the cramped trailer setting and immediately trap Rook and Sable in close quarters with each other.",
+          "source_exit_state": "The trailer is locked down, and neither of them can avoid the conversation anymore.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71"
+            },
+            {
+              "type": "narration",
+              "text": "Rook slams the trailer door. Locks catch in layers, shutters bite down over the windows, and the tiny room somehow gets even smaller."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "There. Now if this is a social call, you're several explosions too late."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Retirement looks smaller than I imagined."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Fortified. Small is just the insult attached to it."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "You have a shotgun under the dish rack."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "And one over it. Sit down and explain why you're here."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "You sealed me in before hello."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Hello."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02_name_the_threat",
+          "source_purpose": "Deliver the core threat and reconnect it to Rook and Sable's shared past.",
+          "source_exit_state": "The threat is named, and their shared history is dragged into the open.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "A Yakuza kill squad entered Gutterlight twenty minutes ago."
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "They're here for both of us. The Lotus Ledger finally came due."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_02_choice_01",
+              "prompt": "How does Rook react when Sable names the Lotus Ledger?",
+              "options": [
+                {
+                  "option_id": "bitter",
+                  "option_text": "Answer with bitterness.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "You vanish for years, then walk back in carrying the name of the job that wrecked my life. Efficient entrance."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Save the betrayal speech. I came for survival, not closure."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "pragmatic",
+                  "option_text": "Answer with dry pragmatism.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Fine. How many, how armed, how close?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Better. Enough, disciplined, and close enough that your shutters were the correct decision."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "familiar",
+                  "option_text": "Answer with reluctant familiarity.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "You still know the exact phrase that poisons a room."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "sad",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "And you still hear me before I finish speaking. Useful habit."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03_old_job_old_wounds",
+          "source_purpose": "Deepen distrust and clarify that this is not a random attack but fallout from unfinished business.",
+          "source_exit_state": "Rook accepts the danger is immediate, but still withholds the most important piece of information.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "The cover around our last job finally collapsed."
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Burner accounts, fake couriers, decoy trails. All of it is ash. They're working from real intelligence now."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Meaning they stopped hunting rumors and started hunting the people who mattered."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Meaning someone talked, or someone got lazy."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Your left hand twitches when you lie. It's halfway to a confession."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "And you get quieter when you're frightened. You've been whispering since I arrived."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Congratulations. We still ruin each other efficiently."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Then stop holding back facts. They are not coming here on a guess."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04_the_real_shard",
+          "source_purpose": "Force Rook's confession and turn Gutterlight itself into the center of the conflict.",
+          "source_exit_state": "Sable learns the ledger is local, making Gutterlight itself part of the battlefield.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Where is the real shard, Rook?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "How does Rook frame his confession about hiding the real shard in the park network?",
+              "options": [
+                {
+                  "option_id": "brilliance",
+                  "option_text": "Present it as tactical brilliance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Inside Lot 9's illegal utility web. Buried under stolen amperage, fake junctions, and enough trash engineering to make a syndicate analyst weep."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "surprised",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "You hid blackmail inside a trailer park power scam. I hate how much I respect that."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "necessity",
+                  "option_text": "Present it as grim necessity.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "I kept the real shard local. Spliced it into the park network because no serious criminal would search a place this trashy unless they were desperate."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "Grim. Offensive. Efficient. You really did build a retirement plan out of lowered expectations."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "wound",
+                  "option_text": "Admit he never fully let the past go.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "I couldn't dump the last piece of that job. So I hid it where I hid myself: under Lot 9, behind junk and bad wiring."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "sad",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "That may be the most honest stupid thing you've ever told me."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05_cherry_at_the_window",
+          "source_purpose": "Puncture the mercenary intensity, seed Cherry's route, and show that Lot 9 notices everything.",
+          "source_exit_state": "Cherry leaves either rebuffed, emboldened, or lightly recruited into the crisis.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A rapid knock rattles the shutter, followed by the kind of grin you can hear through metal."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Hey, Lot 9 daddy, you doing a panic lockdown or hosting secret company? I can source ammo, stimulants, and bad ideas wholesale."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Cherry."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+              "text": "Mm. Full-name voice. Serious emergency."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Is neighborhood surveillance always this flirtatious?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_05_choice_01",
+              "prompt": "What does Rook do with Cherry's very eager offer to help?",
+              "options": [
+                {
+                  "option_id": "shut_down",
+                  "option_text": "Shut Cherry down and send her away.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Go home, Cherry. No ammo, no stimulants, and absolutely no peeking through my shutters."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "sad",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Rude. If you die without me, I'm haunting you flirtatiously."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "You made the correct choice sound unnecessarily cruel."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "banter",
+                  "option_text": "Banter back and keep her invested.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Keep the stimulants. Maybe leave the ammo and the appalling confidence."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Ooh, stress flirting. I'll be outside getting more emotionally involved."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "You collect complications like souvenirs."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "task",
+                  "option_text": "Give Cherry a small watch errand.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+                      "text": "Take the north lane. If you spot suits who look too expensive for tetanus, yell before they get close."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+                      "text": "Recon with sexual tension. Copy that."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+                      "text": "You've deputized the neighborhood firecracker. Bold."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06_babs_noise_complaint",
+          "source_purpose": "Ground the stakes in neighborhood reality and let Babs deflate the remaining noir cool.",
+          "source_exit_state": "Rook and Sable are reminded that any plan in Lot 9 will have witnesses, interference, and local rules.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "Before the room can settle, something heavy raps the trailer wall with managerial disgust."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "Lot 9 is spiking power like a bargain crematorium. If y'all are plotting violence in there, keep it under my fuse limit."
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "And if that suspiciously elegant woman is staying, she owes guest parking."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "We're having a conversation, Babs."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "Then have it quieter. Last time somebody whispered in this park, three dryers caught fire and a tenant got married."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Is she your landlord or your commanding officer?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Worse. She collects rent."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+              "text": "And no gunfight near the laundry again. Blood clots the drains."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "fc747068-e248-4030-a404-a5d66982d03c"
+            }
+          ]
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07_reluctant_plan",
+          "source_purpose": "End the scene with a concrete next step and re-form the core duo under pressure.",
+          "source_exit_state": "Rook and Sable leave the trailer as uneasy partners with a shared objective and a destination.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "If the shard is feeding through the grid, they will find the anomaly eventually."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Not before we do."
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Bug Zap at the SpinCycle can trace which relay my little retirement mistake is piggybacking."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "The laundromat mechanic."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "Around here that's a specialist."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "Then we move now."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "We're not partners."
+            },
+            {
+              "type": "line",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+              "text": "We're two people trying to keep my trailer park from turning into a massacre."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+              "text": "That's the closest you've come to yes."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8"
+            },
+            {
+              "type": "narration",
+              "text": "The locks come off in practiced reverse. A moment later, the trailer door opens on two people who do not trust each other and move like they remember exactly how."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Rook and Sable leave the trailer as uneasy partners, headed for Bug Zap at the SpinCycle to trace the relay before the Yakuza reach the Lotus Ledger hidden in Gutterlight's utility network.",
+      "notes_and_work_product_summary": "Adapted all 7 source beats in order. Interactive beats 2, 4, and 5 each contain exactly one choice and end on that choice. Branches are short, local reactions that return cleanly to the next beat with no visible character portrait carried over."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 255,
+      "g": 112,
+      "b": 67,
+      "a": 255,
+      "hex_string": "#FF7043"
+    },
+    "idle_color": {
+      "r": 196,
+      "g": 203,
+      "b": 214,
+      "a": 255,
+      "hex_string": "#C4CBD6"
+    },
+    "idle_small_color": {
+      "r": 159,
+      "g": 167,
+      "b": 179,
+      "a": 255,
+      "hex_string": "#9FA7B3"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 160,
+      "b": 90,
+      "a": 255,
+      "hex_string": "#FFA05A"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 195,
+      "b": 120,
+      "a": 255,
+      "hex_string": "#FFC378"
+    },
+    "insensitive_color": {
+      "r": 92,
+      "g": 98,
+      "b": 108,
+      "a": 255,
+      "hex_string": "#5C626C"
+    },
+    "muted_color": {
+      "r": 68,
+      "g": 74,
+      "b": 84,
+      "a": 255,
+      "hex_string": "#444A54"
+    },
+    "hover_muted_color": {
+      "r": 92,
+      "g": 100,
+      "b": 112,
+      "a": 255,
+      "hex_string": "#5C6470"
+    },
+    "text_color": {
+      "r": 231,
+      "g": 236,
+      "b": 242,
+      "a": 255,
+      "hex_string": "#E7ECF2"
+    },
+    "interface_text_color": {
+      "r": 243,
+      "g": 242,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#F3F2EC"
+    },
+    "reasoning": "A gritty cyberpunk palette fits the trashy neon setting while keeping text highly readable. Warm orange accents echo busted signage, danger, and the story’s sarcastic energy, while the main text stays near-white for clarity on dark UI panels. Cool gray-blue idle states keep menus legible without competing with the neon accent, and muted button colors are subdued to suit the filthy industrial atmosphere. The slightly brighter hover and selected tones provide clear feedback without feeling too clean or glossy."
+  },
+  "character_dict": {
+    "881e9c3f-6503-4011-bf2f-0f695c7118c2": "Rook Vane",
+    "99cba24e-4193-4f14-92c1-27fb625451f8": "Sable Koi",
+    "f7ca2379-8dbb-4385-b914-98ac82c570e6": "Cherry Nitro",
+    "fc747068-e248-4030-a404-a5d66982d03c": "Babs Gasket",
+    "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2": "Bug Zap"
+  }
+}

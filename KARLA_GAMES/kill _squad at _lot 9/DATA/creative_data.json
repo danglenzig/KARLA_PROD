@@ -1,0 +1,653 @@
+{
+  "concept": {
+    "premise": "A deadpan retired mercenary hiding out in a filthy cyberpunk trailer park is forced back into action when his former partner—a terrifying assassin with an unnervingly calm presence—shows up seeking his help. The two have to survive a Yakuza kill squad while navigating the absurd, low-rent chaos of the trailer park and its aggressively trashy residents.",
+    "genre": "Cyberpunk character comedy",
+    "tone": "Satirical, ridiculous, neon-grimy, and Adult Swim-style absurdist humor with a deadpan straight-man lead",
+    "setting": "A super-trashy trailer park on the outskirts of a giant mega-city, where low-end cyberware, busted neon signage, junk tech, and bizarre locals collide with the looming presence of high-tech urban sprawl.",
+    "protagonist": "A retired mercenary who was once one of the best in the business. Now living off the grid, he serves as a deadpan straight man: competent, dangerous, and profoundly out of place among the chaotic trailer park residents surrounding him.",
+    "core_hook": "The protagonist’s former partner, now a terrifying assassin, comes to town and reveals that a Yakuza kill squad is hunting them both, forcing the ex-partners into an uneasy reunion and reluctant team-up.",
+    "must_have_elements": [
+      "A super-trashy cyberpunk trailer park as the primary setting",
+      "A deadpan retired merc protagonist contrasted against ridiculous local residents",
+      "A former-partner rival dynamic between the protagonist and the assassin",
+      "A Yakuza kill squad as the main external threat",
+      "Strong emphasis on character comedy over pure action or mystery",
+      "Genre trope play and satire of cyberpunk conventions",
+      "Weird side characters and low-rent technology",
+      "Branching dialogue as the main player interaction",
+      "Light optional romance with the protagonist’s super-horny speed-freak neighbor"
+    ],
+    "avoid_elements": [],
+    "concept_summary": "This Ren'Py visual novel is a satirical cyberpunk character comedy set in a trashy trailer park just outside a sprawling mega-city. The player follows a once-legendary retired mercenary, now trying to stay off the grid, whose deadpan professionalism is constantly undercut by the absurd residents around him. When his former partner—a chillingly calm assassin—arrives with news that a Yakuza kill squad is after them both, the story kicks into an uneasy buddy-crime survival spiral full of trope parody, low-rent future tech, and escalating neighborhood chaos. Optional branching dialogue can also steer a light romance with the protagonist’s wildly inappropriate speed-freak neighbor."
+  },
+  "narrative_design_spec": {
+    "story_title": "Kill Squad at Lot 9",
+    "synopsis": "On the filthy outskirts of a towering megacity, retired mercenary Rook Vane is hiding in Gutterlight Trailer Park, a low-rent cyberpunk wasteland full of busted neon, junk tech, and residents who make organized crime seem almost professional. His attempt at a quiet life collapses when Sable Koi, his terrifyingly calm former partner, arrives with news that a Yakuza kill squad is coming for both of them over the Lotus Ledger, a blackmail shard tied to one of their last jobs. Forced into an uneasy reunion, Rook and Sable must survive ambushes, recruit help from the park's absurd locals, and turn trashy infrastructure into a defense plan. The story leans hard into character comedy and cyberpunk satire, with branching dialogue shaping Rook's rapport with Sable, his willingness to involve the neighborhood weirdos, and a light optional romance with his super-horny speed-freak neighbor, Cherry Nitro.",
+    "player_character": {
+      "character_data": {
+        "uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+        "name": "Rook Vane",
+        "portrait_image_prompt": "middle-aged cyberpunk man, lean weathered build, close-cropped dark hair with gray at the temples, rough stubble, tired eyes, small scar through one eyebrow, worn practical synth-leather jacket over a plain shirt, discreet combat cybernetic ports at neck and wrist, deadpan expression",
+        "dialogue_examples": [
+          "If this is a social call, you're several explosions too late.",
+          "I retired because murder had fewer interruptions.",
+          "You can call it a kill squad. Around here that's just aggressive networking.",
+          "I'm not helping because I miss you. I'm helping because they'd ruin my trailer."
+        ]
+      }
+    },
+    "non_player_characters": [
+      {
+        "character_data": {
+          "uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "name": "Sable Koi",
+          "portrait_image_prompt": "tall cyberpunk woman, sleek black bob, sharp eyes, pale composed face, immaculate tailored combat coat, elegant high-collar outfit, subtle blade-sheath cybernetic implants along arms and neck, minimal ornamentation, unreadably calm expression",
+          "dialogue_examples": [
+            "You always did confuse caution with personality.",
+            "The Yakuza are five blocks away. We can argue while moving.",
+            "I didn't come for forgiveness. I came because you're still useful.",
+            "Calm down, Rook. I'm only lethal when rushed."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+          "name": "Cherry Nitro",
+          "portrait_image_prompt": "young woman, wiry rave-punk build, bright dyed hair in messy twin tails, exaggerated makeup, cheap chrome facial studs, colorful patched streetwear, visible budget speedware implants and cable ports, manic grin, flirtatious expression",
+          "dialogue_examples": [
+            "Hey, Lot 9 daddy, you busy later or just emotionally unavailable?",
+            "I can source ammo, stimulants, and bad ideas wholesale.",
+            "Nothing says chemistry like mutual gunfire.",
+            "If I save your life, I'm absolutely flirting harder."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+          "name": "Babs Gasket",
+          "portrait_image_prompt": "older heavyset woman, towering lacquered beehive hair, smeared heavy makeup, leopard-print housecoat, gaudy cyberpunk jewelry, nicotine-stained chrome fingers, reading glasses on a chain, deeply unimpressed expression",
+          "dialogue_examples": [
+            "No decapitations near the laundry again. It upsets the tourists.",
+            "You break it, you buy it, and if you die on it, your estate buys it.",
+            "This park has rules. Most of them are mine and all of them are loud.",
+            "Property value is a state of mind, sweetheart."
+          ]
+        }
+      },
+      {
+        "character_data": {
+          "uuid": "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2",
+          "name": "Bug Zap",
+          "portrait_image_prompt": "thin jittery man, unshaven face, wild frizzy hair with singe marks, mismatched cyber eyes, solder-burned hands, patched utility vest stuffed with tools, homemade antenna implants, paranoid eager expression",
+          "dialogue_examples": [
+            "I built a scanner out of vape parts and municipal hatred.",
+            "Good news: the signal is local. Bad news: local means us.",
+            "Paranoia is just predictive maintenance for the soul.",
+            "If this explodes, it confirms my math or my enemies."
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "location_data": {
+          "uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "name": "Lot 9 Trailer Interior",
+          "location_image_prompt": "cramped cyberpunk trailer interior, patched metal walls, hanging wires, hidden weapon case under a sagging cot, old fan, flickering cheap holo-screen, mismatched storage crates, grimy kitchenette, low-rent future tech mixed with stubborn personal tidiness"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "name": "Gutterlight Trailer Park Main Strip",
+          "location_image_prompt": "super-trashy cyberpunk trailer park lane, rows of battered trailers, busted neon signs, oily puddles, tangled power cables, illegal vendor carts, piles of junk tech, gaudy decorations, distant megacity skyline looming beyond the lot"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "4be82f97-1e7a-4c98-bfd9-f744330b246b",
+          "name": "SpinCycle Laundry & Noodle Bar",
+          "location_image_prompt": "ramshackle combo laundromat and noodle bar, dented washing machines beside a steaming food counter, plastic stools, sticky floor, overloaded vending machines, blinking ad screens, graffiti, cheap neon menu boards, cluttered low-end cyberware charging stations"
+        }
+      },
+      {
+        "location_data": {
+          "uuid": "9c85b25d-8a9e-4d1d-a1d1-5d5301e674d9",
+          "name": "Storm Drain Junkyard Edge",
+          "location_image_prompt": "trash-choked drainage canal at the edge of a cyberpunk trailer park, heaps of scrap metal, broken appliances, rusted catwalks, leaking pipes, hacked security drones, hidden smuggler access tunnel, massive city overpass looming nearby"
+        }
+      }
+    ],
+    "intro_scene": {
+      "scene_data": {
+        "uuid": "ca7b7332-6053-4b47-8963-9ce224abf4c1",
+        "scene_name": "intro",
+        "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+        "non_player_character_uuids": [
+          "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+          "fc747068-e248-4030-a404-a5d66982d03c"
+        ],
+        "narrative_summary": "Rook tries to complete a simple errand through Gutterlight's daily chaos, deadpanning his way past Babs Gasket's petty authority and Cherry Nitro's relentless flirting. The absurd routine shatters when Sable Koi appears without warning and quietly tells him a Yakuza kill squad has entered the district looking for them both. The scene establishes the park's trashy social ecosystem and gives the player early dialogue choices for how Rook reacts to Sable's return."
+      }
+    },
+    "act_one": [
+      {
+        "scene_data": {
+          "uuid": "205cfda1-7967-4a9a-9b72-e755f1d77c4c",
+          "scene_name": "act1_scene1",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "narrative_summary": "Inside Rook's heavily fortified but embarrassingly small trailer, Sable reveals the Yakuza are hunting them over the Lotus Ledger, a blackmail shard from their final job. Rook grudgingly admits he hid the real shard inside Gutterlight's illegal utility network because no serious criminal would ever search a place this trashy. Their old partner dynamic flares back to life through sharp banter, suspicion, and forced cooperation, while Cherry and Babs keep puncturing every cool mercenary moment."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "0955dcec-7e80-45ea-be20-6f32fc5efbe2",
+          "scene_name": "act1_scene2",
+          "location_uuid": "4be82f97-1e7a-4c98-bfd9-f744330b246b",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+          ],
+          "narrative_summary": "Rook and Sable visit Bug Zap at the SpinCycle Laundry & Noodle Bar to trace the ledger's signal through the park's jury-rigged power grid. Bug points them toward an old relay beneath the storm drain, but a Yakuza probe team interrupts, turning the laundromat into a low-rent firefight full of boiling broth, spinning dryers, and panicked regulars. Player dialogue choices determine whether Rook relies more on Sable's ruthless competence, Cherry's chaotic enthusiasm, or his own detached control."
+        }
+      }
+    ],
+    "act_two": [
+      {
+        "scene_data": {
+          "uuid": "050d6115-1c5f-4775-8d30-916cba9dc78e",
+          "scene_name": "act2_scene1",
+          "location_uuid": "9c85b25d-8a9e-4d1d-a1d1-5d5301e674d9",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+          ],
+          "narrative_summary": "Following Bug's improvised tech, Rook and Sable search the storm-drain junkyard for the buried relay that hides the Lotus Ledger. As they navigate traps made from broken consumer tech and busted city infrastructure, they unpack the resentment behind their split and the way each of them romanticized the other's choices. They discover the park has been unknowingly drawing power through the same relay, meaning Gutterlight itself is now the center of the Yakuza's problem."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "49578feb-595e-4da2-9817-4c3e85726521",
+          "scene_name": "act2_scene2",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c",
+            "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+          ],
+          "narrative_summary": "Back at Lot 9, Rook turns his trailer into a planning bunker while Babs, Bug, and Cherry all offer help that is useful, terrible, or both. This is the main character-comedy breather, letting the player deepen Rook's repartee with Sable, encourage or deflect Cherry's aggressively sexual flirting, and decide how much truth the residents deserve. By the end of the scene, the group commits to defending the park by weaponizing its trashy infrastructure."
+        }
+      }
+    ],
+    "act_three": [
+      {
+        "scene_data": {
+          "uuid": "e5d0e067-a730-46dc-a935-d33cb9f138a6",
+          "scene_name": "act3_scene1",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c",
+            "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+          ],
+          "narrative_summary": "The Yakuza kill squad launches a full assault on Gutterlight Trailer Park and discovers that the residents are territorial lunatics with jury-rigged cyberware, power tools, and deep personal grievances. Rook ends up directing the defense in spite of himself, while Sable becomes a horrifyingly calm engine of violence and every cyberpunk action cliché gets undercut by noise complaints and malfunctioning vending machines. Player choices can flavor Rook as a reluctant neighborhood hero, a brutally efficient tactician, or a man openly annoyed that this is now his life."
+        }
+      },
+      {
+        "scene_data": {
+          "uuid": "4be6c211-01f5-4298-96a7-a56a57f62e0e",
+          "scene_name": "act3_scene2",
+          "location_uuid": "9c85b25d-8a9e-4d1d-a1d1-5d5301e674d9",
+          "non_player_character_uuids": [
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+          ],
+          "narrative_summary": "Rook and Sable lure the surviving Yakuza through the storm-drain junkyard to the power relay containing the Lotus Ledger. Fighting in perfect sync for the first time in years, they use the shard as bait long enough to eliminate the remaining attackers, then destroy it so neither of them has to keep running for someone else's leverage. Cherry and Bug provide chaotic support that makes the final victory feel both competent and gloriously stupid."
+        }
+      }
+    ],
+    "outro_scene": {
+      "scene_data": {
+        "uuid": "db2dfc8e-666d-4e04-97b0-fd633f7c8a92",
+        "scene_name": "outro",
+        "location_uuid": "4be82f97-1e7a-4c98-bfd9-f744330b246b",
+        "non_player_character_uuids": [
+          "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+          "fc747068-e248-4030-a404-a5d66982d03c",
+          "37dc4e9b-e18b-4861-a380-3bc05d3cd5d2"
+        ],
+        "narrative_summary": "In the aftermath, Gutterlight processes the night of organized violence as equal parts trauma, gossip, and neighborhood celebration. Rook and Sable decide what their partnership means now that survival is no longer hypothetical, while Babs monetizes the damage and Bug immediately starts mythologizing the event. Depending on earlier dialogue choices, Cherry can land a surprisingly sincere romantic beat, and Rook quietly admits that the trailer park may have become the closest thing he has to a home."
+      }
+    }
+  },
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/881e9c3f-6503-4011-bf2f-0f695c7118c2.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/99cba24e-4193-4f14-92c1-27fb625451f8.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/f7ca2379-8dbb-4385-b914-98ac82c570e6.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/fc747068-e248-4030-a404-a5d66982d03c.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/bg ee4a1186-3614-48d7-be75-173479055ae3.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/kill _squad at _lot 9/IMAGES/bg a3c65122-6518-4689-8149-11e695fbcd71.png"
+    ]
+  },
+  "beat_sheets": [
+    {
+      "story_title": "Kill Squad at Lot 9",
+      "scene_name": "intro",
+      "scene_uuid": "ca7b7332-6053-4b47-8963-9ce224abf4c1",
+      "source_scene_summary": "Rook tries to complete a simple errand through Gutterlight's daily chaos, deadpanning his way past Babs Gasket's petty authority and Cherry Nitro's relentless flirting. The absurd routine shatters when Sable Koi appears without warning and quietly tells him a Yakuza kill squad has entered the district looking for them both. The scene establishes the park's trashy social ecosystem and gives the player early dialogue choices for how Rook reacts to Sable's return.",
+      "location_name": "Gutterlight Trailer Park Main Strip",
+      "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+      "player_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+      "non_player_character_uuids": [
+        "99cba24e-4193-4f14-92c1-27fb625451f8",
+        "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+        "fc747068-e248-4030-a404-a5d66982d03c"
+      ],
+      "dramatic_question": "Can Rook keep his shabby, low-profile routine intact, or will Sable's sudden return drag his old mercenary life back into the open?",
+      "scene_goal": "Finish a mundane park errand and get back to his trailer with his quiet routine intact.",
+      "scene_turn": "A routine walk through Lot 9 turns into the start of a survival crisis when Sable returns and warns that a Yakuza kill squad is in the district hunting them both.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_errand_routine",
+          "purpose": "Establish Rook's retired daily life, the trailer park's comic cyberpunk tone, and the scene's initial low-stakes goal.",
+          "summary": "Rook heads down the Main Strip on a painfully ordinary errand, trying to grab a replacement utility part before something else in his trailer breaks. The lane's busted neon, junk vendors, and constant public nonsense frame Gutterlight as a place where low-level chaos is simply the local weather.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "dryly comedic",
+          "revelation": null,
+          "tension_change": "hold",
+          "player_goal": "Get the errand done quickly and go home.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook's mundane objective and Gutterlight's trashy normalcy are established."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_babs_tollbooth",
+          "purpose": "Introduce Babs as the park's overbearing unofficial authority and show how Rook navigates local power with deadpan resignation.",
+          "summary": "Babs Gasket intercepts Rook and stalls his progress with a petty rule, a tiny fee, or some loudly invented piece of trailer-park bureaucracy. Their exchange shows that Babs treats Lot 9 like her own tiny kingdom and that Rook survives her rule mostly by refusing to sound impressed.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+          "mood": "petty and needling",
+          "revelation": "Babs effectively governs Lot 9 through sheer volume, surveillance, and shamelessly improvised bureaucracy.",
+          "tension_change": "hold",
+          "player_goal": "Get past Babs without wasting more time or patience.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook is delayed, and Babs' control over the neighborhood is clear."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_cherry_intercept",
+          "purpose": "Establish Cherry's aggressive flirtation, optional romance tone, and the comic texture of Rook's social life in the park.",
+          "summary": "Before Rook can recover, Cherry Nitro swoops in with shameless flirting, bad ideas, and an offer to improve his day in several questionable ways. Rook can encourage her, reject her, or deadpan around her advances while Babs offers zero useful commentary.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+          "mood": "playful and chaotic",
+          "revelation": "Cherry is intensely into Rook and treats his boundaries as part of the flirtation game.",
+          "tension_change": "fall",
+          "player_goal": "Get through Cherry's ambush without encouraging more than he intends.",
+          "interactive": true,
+          "choice_prompt": "How does Rook handle Cherry's aggressive flirting?",
+          "branch_outcomes": [
+            "Rook flirts back, encouraging Cherry's interest and creating a warmer, more openly suggestive dynamic.",
+            "Rook shuts her down, keeping emotional distance even if Cherry treats the rebuff like a challenge.",
+            "Rook deflects with dry humor, preserving the comic tension without clearly inviting or rejecting her."
+          ],
+          "exit_state": "Cherry's rapport with Rook is defined, but his simple errand is still not done."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_sable_appears",
+          "purpose": "Snap the scene from neighborhood comedy into personal unease by reintroducing Sable and forcing the player to set Rook's initial emotional stance toward her.",
+          "summary": "The rhythm of the strip breaks when Sable Koi appears at the edge of the lane, immaculate and unnervingly calm amid the junk-stall clutter. Rook gets a first-response choice that frames the reunion as bitter, sarcastic, or strictly professional.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "cold shock",
+          "revelation": "Sable has found Rook in the one place he assumed his old life would never bother to search.",
+          "tension_change": "twist",
+          "player_goal": "Find out why Sable is here without giving her emotional ground.",
+          "interactive": true,
+          "choice_prompt": "How does Rook greet Sable after her sudden return?",
+          "branch_outcomes": [
+            "Rook meets her with open hostility, foregrounding old hurt and distrust.",
+            "Rook hides the shock behind sarcasm, keeping the reunion sharp but controlled.",
+            "Rook goes straight to business, signaling that whatever this is, he wants facts before feelings."
+          ],
+          "exit_state": "Sable is back in Rook's orbit, and the mood of the scene turns instantly serious."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_kill_squad_warning",
+          "purpose": "Deliver the inciting threat and let the player define whether Rook responds with trust, suspicion, or gallows humor.",
+          "summary": "Ignoring the audience, Sable steps close and quietly tells Rook that a Yakuza kill squad has entered the district and is asking for both of them. Babs and Cherry puncture the cool mercenary vibe with alarm and curiosity, but the specificity of Sable's warning makes it impossible to dismiss as drama.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "mood": "quietly urgent",
+          "revelation": "A Yakuza kill squad is already in the district looking for both Rook and Sable.",
+          "tension_change": "rise",
+          "player_goal": "Decide whether to challenge Sable, believe her, and start moving before the threat closes in.",
+          "interactive": true,
+          "choice_prompt": "How does Rook answer Sable's warning?",
+          "branch_outcomes": [
+            "He questions Sable's motives first, emphasizing distrust even as he starts to take the danger seriously.",
+            "He accepts the tactical reality and slips back into old professional habits with minimal discussion.",
+            "He masks alarm with gallows humor, keeping emotional distance while acknowledging the threat."
+          ],
+          "exit_state": "The danger is named, and Rook is forced out of routine into crisis mode."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_retreat_to_trailer",
+          "purpose": "Close the scene by committing Rook to private action and bridging directly into the next scene's fuller exposition.",
+          "summary": "Rook abandons the errand, cuts off the public spectacle, and tells Sable to come to his trailer if she wants the rest of the conversation. He leaves the strip knowing his retirement is functionally over, while Babs and Cherry clock that whatever just walked back into Lot 9 is going to become everyone's problem.",
+          "location_uuid": "ee4a1186-3614-48d7-be75-173479055ae3",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "grimly focused",
+          "revelation": "Rook believes the warning enough to bring Sable somewhere private and defensible.",
+          "tension_change": "rise",
+          "player_goal": "Get Sable somewhere private before the kill squad or the neighbors complicate things further.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook and Sable head for his trailer, the errand is abandoned, and the coming conflict is now unavoidable."
+        }
+      ]
+    },
+    {
+      "story_title": "Kill Squad at Lot 9",
+      "scene_name": "act1_scene1",
+      "scene_uuid": "205cfda1-7967-4a9a-9b72-e755f1d77c4c",
+      "source_scene_summary": "Inside Rook's heavily fortified but embarrassingly small trailer, Sable reveals the Yakuza are hunting them over the Lotus Ledger, a blackmail shard from their final job. Rook grudgingly admits he hid the real shard inside Gutterlight's illegal utility network because no serious criminal would ever search a place this trashy. Their old partner dynamic flares back to life through sharp banter, suspicion, and forced cooperation, while Cherry and Babs keep puncturing every cool mercenary moment.",
+      "location_name": "Lot 9 Trailer Interior",
+      "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+      "player_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+      "non_player_character_uuids": [
+        "99cba24e-4193-4f14-92c1-27fb625451f8",
+        "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+        "fc747068-e248-4030-a404-a5d66982d03c"
+      ],
+      "dramatic_question": "Will Rook and Sable stop posturing long enough to admit the Lotus Ledger is hidden in Lot 9 and make a plan before the Yakuza close in?",
+      "scene_goal": "Learn why Sable is back, confirm the threat, and regain control of the situation by deciding what to do about the Lotus Ledger.",
+      "scene_turn": "Rook goes from treating Sable as an unwanted disruption to admitting the real ledger is hidden in Gutterlight's utility network, forcing a reluctant partnership and a concrete retrieval plan.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01_lockdown",
+          "purpose": "Establish the cramped trailer setting and immediately trap Rook and Sable in close quarters with each other.",
+          "summary": "Rook seals Sable inside his trailer with far more locks, shutters, and hidden weapons than his 'retired' lifestyle should require. The scene undercuts their cool ex-mercenary aura by making them navigate a space too small for their grudges and their elbows.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "claustrophobic, dry, defensive",
+          "revelation": "Rook's 'quiet life' is built inside a heavily fortified shoebox, suggesting he never truly stopped preparing for violence.",
+          "tension_change": "rise",
+          "player_goal": "Secure the trailer and force Sable to explain why she came.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "The trailer is locked down, and neither of them can avoid the conversation anymore."
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02_name_the_threat",
+          "purpose": "Deliver the core threat and reconnect it to Rook and Sable's shared past.",
+          "summary": "Sable bluntly reveals that a Yakuza kill squad is in the district and that the reason is the Lotus Ledger, a blackmail shard from their last job. Rook's response can lean hostile, pragmatic, or dangerously familiar, setting the emotional tone of their reunion.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8"
+          ],
+          "focal_character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "mood": "icy, urgent, accusatory",
+          "revelation": "The Yakuza are hunting both of them specifically over the Lotus Ledger.",
+          "tension_change": "rise",
+          "player_goal": "Decide how Rook emotionally frames Sable's return and the mention of their final job.",
+          "interactive": true,
+          "choice_prompt": "How does Rook react when Sable names the Lotus Ledger?",
+          "branch_outcomes": [
+            "Rook answers with bitterness, foregrounding betrayal and unresolved anger.",
+            "Rook answers with deadpan pragmatism, focusing on the threat rather than the history.",
+            "Rook answers with reluctant familiarity, hinting the old bond is not fully dead."
+          ],
+          "exit_state": "The threat is named, and their shared history is dragged into the open."
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03_old_job_old_wounds",
+          "purpose": "Deepen distrust and clarify that this is not a random attack but fallout from unfinished business.",
+          "summary": "Sable explains that the cover around their last job finally collapsed and the hunt has narrowed to the people who actually mattered. Their argument reveals that neither trusts the other's motives, but both still instinctively read each other's tells like no time has passed.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8"
+          ],
+          "focal_character_uuid": "99cba24e-4193-4f14-92c1-27fb625451f8",
+          "mood": "barbed, suspicious, intimate in spite of itself",
+          "revelation": "Whatever decoy trail protected them after the final job has failed, so the Yakuza are working from real intelligence now.",
+          "tension_change": "rise",
+          "player_goal": "Figure out whether Sable is telling the truth and what leverage she still has.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook accepts the danger is immediate, but still withholds the most important piece of information."
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04_the_real_shard",
+          "purpose": "Force Rook's confession and turn Gutterlight itself into the center of the conflict.",
+          "summary": "Pressed on where the ledger actually is, Rook grudgingly admits he never surrendered the real shard and buried it inside Gutterlight's illegal utility network because no serious syndicate would ever search somewhere this trashy. Sable is half impressed, half furious that his retirement strategy was to turn a trailer park into a criminal blind spot.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "reluctantly candid, tense, darkly funny",
+          "revelation": "Rook still has the real Lotus Ledger, hidden in Lot 9's jury-rigged utility infrastructure.",
+          "tension_change": "twist",
+          "player_goal": "Choose how much pride, shame, or defensiveness Rook shows when admitting the truth.",
+          "interactive": true,
+          "choice_prompt": "How does Rook frame his confession about hiding the real shard in the park network?",
+          "branch_outcomes": [
+            "He presents it as tactical brilliance, inviting Sable's contemptuous respect.",
+            "He presents it as grim necessity, earning a more practical response from Sable.",
+            "He admits he could not fully let the past go, exposing a softer wound beneath the sarcasm."
+          ],
+          "exit_state": "Sable learns the ledger is local, making Gutterlight itself part of the battlefield."
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05_cherry_at_the_window",
+          "purpose": "Puncture the mercenary intensity, seed Cherry's route, and show that Lot 9 notices everything.",
+          "summary": "Cherry pops up at the trailer door or window after noticing the lockdown and Sable's arrival, cheerfully offering ammo, stimulants, and escalating flirtation as if these are the same category of emergency support. Her intrusion embarrasses Rook, entertains or irritates Sable, and reminds the player that privacy is impossible in Lot 9.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "f7ca2379-8dbb-4385-b914-98ac82c570e6"
+          ],
+          "focal_character_uuid": "f7ca2379-8dbb-4385-b914-98ac82c570e6",
+          "mood": "raucous, flirtatious, disruptive",
+          "revelation": "Cherry is observant, fearless around danger, and eager to involve herself in Rook's problems.",
+          "tension_change": "fall",
+          "player_goal": "Decide whether to shut Cherry out, indulge her, or give her a small role.",
+          "interactive": true,
+          "choice_prompt": "What does Rook do with Cherry's very eager offer to help?",
+          "branch_outcomes": [
+            "Rook firmly shuts Cherry down, preserving secrecy but bruising her enthusiasm.",
+            "Rook banters back and lets her stay emotionally invested, strengthening the flirt route.",
+            "Rook gives Cherry a minor errand or watch task, testing whether her chaos can be useful."
+          ],
+          "exit_state": "Cherry leaves either rebuffed, emboldened, or lightly recruited into the crisis."
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06_babs_noise_complaint",
+          "purpose": "Ground the stakes in neighborhood reality and let Babs deflate the remaining noir cool.",
+          "summary": "Before the room can recover, Babs makes her presence known with a barked warning about power spikes, suspicious company, and any gunfight that might interfere with laundry, rent, or her authority. The interruption forces Rook and Sable to reckon with the fact that Lot 9 is not just cover; it is a community with opinions and very loud management.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8",
+            "fc747068-e248-4030-a404-a5d66982d03c"
+          ],
+          "focal_character_uuid": "fc747068-e248-4030-a404-a5d66982d03c",
+          "mood": "petty, comic, grounding",
+          "revelation": "Babs already senses danger and treats anything that happens in the park as her business.",
+          "tension_change": "hold",
+          "player_goal": "Keep Babs from escalating the situation while avoiding a full explanation.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook and Sable are reminded that any plan in Lot 9 will have witnesses, interference, and local rules."
+        },
+        {
+          "beat_index": 7,
+          "beat_name": "act1_scene1_beat_07_reluctant_plan",
+          "purpose": "End the scene with a concrete next step and re-form the core duo under pressure.",
+          "summary": "With the truth out and time short, Rook and Sable agree they need to trace the utility-network hideaway before the Yakuza stumble onto it themselves. Rook names Bug Zap at the SpinCycle as the only local gremlin likely to map the signal fast enough, and the old partnership snaps back into motion with grim efficiency.",
+          "location_uuid": "a3c65122-6518-4689-8149-11e695fbcd71",
+          "present_character_uuids": [
+            "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+            "99cba24e-4193-4f14-92c1-27fb625451f8"
+          ],
+          "focal_character_uuid": "881e9c3f-6503-4011-bf2f-0f695c7118c2",
+          "mood": "grim, efficient, reluctantly aligned",
+          "revelation": "Bug Zap is their best lead for locating the relay and getting to the ledger first.",
+          "tension_change": "rise",
+          "player_goal": "Commit to working with Sable long enough to retrieve the shard and stay ahead of the kill squad.",
+          "interactive": false,
+          "choice_prompt": null,
+          "branch_outcomes": null,
+          "exit_state": "Rook and Sable leave the trailer as uneasy partners with a shared objective and a destination."
+        }
+      ]
+    }
+  ],
+  "color_scheme": {
+    "accent_color": {
+      "r": 255,
+      "g": 112,
+      "b": 67,
+      "a": 255,
+      "hex_string": "#FF7043"
+    },
+    "idle_color": {
+      "r": 196,
+      "g": 203,
+      "b": 214,
+      "a": 255,
+      "hex_string": "#C4CBD6"
+    },
+    "idle_small_color": {
+      "r": 159,
+      "g": 167,
+      "b": 179,
+      "a": 255,
+      "hex_string": "#9FA7B3"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 160,
+      "b": 90,
+      "a": 255,
+      "hex_string": "#FFA05A"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 195,
+      "b": 120,
+      "a": 255,
+      "hex_string": "#FFC378"
+    },
+    "insensitive_color": {
+      "r": 92,
+      "g": 98,
+      "b": 108,
+      "a": 255,
+      "hex_string": "#5C626C"
+    },
+    "muted_color": {
+      "r": 68,
+      "g": 74,
+      "b": 84,
+      "a": 255,
+      "hex_string": "#444A54"
+    },
+    "hover_muted_color": {
+      "r": 92,
+      "g": 100,
+      "b": 112,
+      "a": 255,
+      "hex_string": "#5C6470"
+    },
+    "text_color": {
+      "r": 231,
+      "g": 236,
+      "b": 242,
+      "a": 255,
+      "hex_string": "#E7ECF2"
+    },
+    "interface_text_color": {
+      "r": 243,
+      "g": 242,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#F3F2EC"
+    },
+    "reasoning": "A gritty cyberpunk palette fits the trashy neon setting while keeping text highly readable. Warm orange accents echo busted signage, danger, and the story’s sarcastic energy, while the main text stays near-white for clarity on dark UI panels. Cool gray-blue idle states keep menus legible without competing with the neon accent, and muted button colors are subdued to suit the filthy industrial atmosphere. The slightly brighter hover and selected tones provide clear feedback without feeling too clean or glossy."
+  }
+}

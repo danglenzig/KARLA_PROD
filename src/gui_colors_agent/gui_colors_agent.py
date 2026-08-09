@@ -33,17 +33,8 @@ class GuiColorAgent():
         return run_result.final_output
 
 async def main():
-    try:
-        with open('/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/json/test_nd_spec.json', 'r') as f:
-            json_str = f.read().strip()
-            nd_spec: NarrativeDesignOutput = NarrativeDesignOutput.model_validate_json(json_str)
-
-            colors: GuiColorScheme = await GuiColorAgent().run_workflow(nd_spec)
-
-            print(colors.model_dump_json(indent=2))
-
-    except Exception as e:
-        print(e)
+    # use for module testing
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

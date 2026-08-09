@@ -75,8 +75,6 @@ async def write_rpy_script(game_name: str, script: str, filename: str):
 async def main():
 
     game_title: str = ""
-    #image_style = ImageStyle.PULP
-    
 
     #===============================
     #  Stage 1: Get the StoryConcept
@@ -200,15 +198,8 @@ async def main():
     )
     await write_json_data(game_title, build_data.model_dump_json(indent=2), 'build_data.json')
 
-    # TODO: ...
-    # ## get the .rpy script form the script assembler
-    # ## write the .rpy script to the games folder
-
     script_rpy = await RenPyScriptAssembler().run_workflow(build_data)
     await write_rpy_script(game_title, script_rpy, 'script.rpy')
-
-
-
 
 if __name__ == "__main__":
     asyncio.run(main())

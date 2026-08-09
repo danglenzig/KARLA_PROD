@@ -5,6 +5,9 @@ from pydantic import (
 )
 
 class StoryConcept(BaseModel):
+    """
+    A model representing a high-level visual novel story concept
+    """
     premise: str = Field(..., description="The core story premise")
     genre: str | None = Field(default=None, description="The genre of the story")
     tone: str | None = Field(default=None, description="The emotional tone of the story")

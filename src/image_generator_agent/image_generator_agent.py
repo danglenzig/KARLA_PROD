@@ -162,29 +162,8 @@ class ImageGenerator:
 
 
 async def main():
-    try:
-        with open('/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/json/test_nd_spec.json', 'r') as f:
-
-            json_str = f.read().strip()
-            nd_spec: NarrativeDesignOutput = NarrativeDesignOutput.model_validate_json(json_str)
-            synopsis: str = nd_spec.synopsis
-            print(f"\n{synopsis}\n\n")
-
-            chooser_agent: Agent = get_art_style_chooser_agent()
-            run_result: RunResult = await Runner.run(
-                chooser_agent,
-                f"""Choose a thematically appropriate art style for this visual novel story concept:
-                {synopsis}"""
-            )
-            art_style: ArtStyle = run_result.final_output_as(ArtStyle)
-            print(art_style.model_dump_json(indent=2))
-            style_prompt: str = get_style_prompt(art_style)
-            print(f"\n{style_prompt}")
-
-            manifest: ArtAssetManifest = await ImageGenerator().get_demo_manifest("test_game", nd_spec, style_prompt)
-
-    except Exception as e:
-        print(e)
+    # Use main for isolated module testing
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

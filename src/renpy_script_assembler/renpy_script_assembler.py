@@ -197,43 +197,8 @@ class RenPyScriptAssembler():
         return script_rpy
 
 async def main():
-    test_path = "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/json"
-    file: str = 'test_creative_data.json'
-    try:
-        with open(f'{test_path}/{file}', 'r') as f:
-            json_str = f.read().strip()
-            creative_data: DemoCreativeData = DemoCreativeData.model_validate_json(json_str)
-
-        with open (f'{test_path}/intro_dialogue_scene.json', 'r') as f:
-            json_str = f.read().strip()
-            intro_dialogue_scene: DialogueScene = DialogueScene.model_validate_json(json_str)
-
-        with open(f'{test_path}/first_scene_dialogue_scene.json', 'r') as f:
-            json_str = f.read().strip()
-            first_dialogue_scene: DialogueScene = DialogueScene.model_validate_json(json_str)
-
-        char_dict: dict[str,str] = {}
-        character_catalogue = creative_data.narrative_design_spec.get_character_catalog()
-        for id in character_catalogue:
-            char_dict[id] = character_catalogue[id]['name']
-
-        build_data: DemoBuildData = DemoBuildData(
-            art_assets=creative_data.art_assets,
-            dialogue_scenes=[intro_dialogue_scene, first_dialogue_scene],
-            gui_colors=creative_data.color_scheme,
-            character_dict=char_dict
-        )
-
-        rpy_script = await RenPyScriptAssembler().run_workflow(build_data)
-
-        with open(f'{test_path}/script.rpy', 'w') as f:
-            f.write(rpy_script)
-
-            
-            
-
-    except Exception as e:
-        print(e)
+    # use for module testing
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -86,36 +86,8 @@ class DialogueAgent():
             return run_result.final_output_as(DialogueScene)
 
 async def main():
-    print("FOO")
-    file: str = 'test_creative_data.json'
-    try:
-        with open(f'/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/json/{file}', 'r') as f:
-            json_str = f.read().strip()
-            creative_data: DemoCreativeData = DemoCreativeData.model_validate_json(json_str)
-
-            nd_spec: NarrativeDesignOutput = creative_data.narrative_design_spec
-            intro_beat_sheet: SceneBeatSheet = creative_data.beat_sheets[0]
-            first_scene_beat_sheet: SceneBeatSheet = creative_data.beat_sheets[1]
-
-            #print(f"{nd_spec.model_dump_json(indent=2)}\n\n")
-            #print(f"{intro_beat_sheet.model_dump_json(indent=2)}\n\n")
-
-            result_intro: DialogueScene = await DialogueAgent().run_scene_workflow(nd_spec,intro_beat_sheet)
-            result_first_scene: DialogueScene = await DialogueAgent().run_scene_workflow(nd_spec, first_scene_beat_sheet)
-
-            test_folder_path = f"/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_REFACTOR/json"
-            intro_path: str = f"{test_folder_path}/intro_dialogue_scene.json"
-            first_scene_path: str = f"{test_folder_path}/first_scene_dialogue_scene.json"
-
-            with open(intro_path, 'w') as f:
-                f.write(result_intro.model_dump_json(indent=2))
-            with open (first_scene_path, 'w') as f:
-                f.write(result_first_scene.model_dump_json(indent=2))
-
-            
-
-    except Exception as e:
-        print(e)
+    # use for module testing
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -73,9 +73,7 @@ class DiscoveryAgent():
         return summary_result.final_output_as(StoryConcept)
     
 async def main():
-    test_result: StoryConcept = await DiscoveryAgent().run_workflow()
-    print("\n\n")
-    print(test_result.model_dump_json(indent=2))
+    pass
 
 if __name__ == "__main__":
     asyncio.run(main())

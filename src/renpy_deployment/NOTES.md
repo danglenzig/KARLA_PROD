@@ -1,8 +1,8 @@
-The implementation shape I would use is this:
+The plan:
 
 - Create one blank Ren'Py project manually once, using the same SDK version you plan to support. Treat that folder as your Karla seed template.
 
-- After Stage 5, right after the current script assembly/write in orchestrator.py:201, add a publish step that copies the seed template to a new target folder named after the generated game title.
+- After orchestrator Stage 5, right after the current script assembly/write, add a publish step that copies the seed template to a new target folder named after the generated game title.
 
 - In that copied project, patch game/options.rpy so config.name, config.save_directory, and build.name match the generated title. The Ren'Py template-project docs explicitly say the launcher does this when it creates from a template; if you bypass the launcher and use copytree, you need to do that part yourself.
 

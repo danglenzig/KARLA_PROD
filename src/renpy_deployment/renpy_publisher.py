@@ -3,14 +3,16 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
+import asyncio
 
 SRC_ROOT: Path = Path(__file__).parent.parent # this is the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
 
 from image_generator_agent.image_generator_models import ArtAssetManifest
+from misc_models.misc_models import DemoCreativeData
 
-SEED_PROJECT_PATH: str = "/mnt/c/RenPy/BLANK_PROJECT/"
-DEFAULT_RENPY_ROOT: Path = Path("/mnt/c/RenPy")
+SEED_PROJECT_PATH: str = "/mnt/c/RENPY/BLANK_PROJECT/"
+DEFAULT_RENPY_ROOT: Path = Path("/mnt/c/RENPY")
 
 class RenPyPublisher():
     _INVALID_WINDOWS_FILENAME_CHARS: set[str] = set('<>:"/\\|?*')
@@ -132,7 +134,7 @@ class RenPyPublisher():
 
         raise FileNotFoundError(
             "Could not find a Ren'Py SDK with renpy.sh under the target root. "
-            "Expected something like /mnt/c/RenPy/renpy-8.5.2-sdk"
+            "Expected something like /mnt/c/RENPY/renpy-8.5.2-sdk"
         )
 
     def _run_renpy_command(self, sdk_path: Path, project_path: Path, *args: str) -> subprocess.CompletedProcess[str]:
@@ -171,7 +173,7 @@ class RenPyPublisher():
 
             art_manifest: ArtAssetManifest, # contains path strings to where the generated images live
 
-            target_folder_path:str = "/mnt/c/RenPy/",
+            target_folder_path:str = "/mnt/c/RENPY/",
     )->bool:
 
         r"""
@@ -180,7 +182,7 @@ class RenPyPublisher():
             - if game_title is not a valid Windows folder name, raise an error
             - if using the function defauts, there should now be a new windows folder:
                 - In Windows File Explorer: "C:\RENPY\{game_title}\"
-                - Seen from the linux venv of this tool, it's: "/mnt/c/RenPy/{game_title}/
+                - Seen from the linux venv of this tool, it's: "/mnt/c/RENPY/{game_title}/
 
         2) Copy the *entire contents* of SEED_PROJECT_PATH into ^^that new folder.
             - if SEED_PROJECT_PATH is doesn't exist or is empty, raise an error
@@ -230,4 +232,24 @@ class RenPyPublisher():
 
         return True
 
-        
+async def main():
+
+    game_path_str: str = "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/"
+    game_title: str = "velvet _freight"
+    creative_data_path_str: str = f"{game_path_str}{game_title}/DATA/creative_data.json"
+    script_path_str: str = f"{game_path_str}{game_title}/RENPY_SCRIPTS/script.rpy"
+
+    with open(creative_data_path_str, 'r') as f:
+        json_str = f.read().strip()
+    creative_data: DemoCreativeData = DemoCreativeData.model_validate_json(json_str)
+    art_manifest: ArtAssetManifest = creative_data.art_assets
+
+    success = await RenPyPublisher().run_workflow(
+        game_title=game_title,
+        script_file_path=script_path_str,
+        art_manifest=art_manifest
+    )
+    
+
+if __name__ == "__main__":
+    asyncio.run(main())

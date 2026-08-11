@@ -1,0 +1,1459 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/14f94de8-7127-4fff-beb3-50c00f13dcab.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/e06ba997-fdf3-40d9-aaf1-dc8ff92852b2.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/0a46137d-f40c-47ac-b8ed-b723085cb3d4.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/1c5209d3-70bb-49e6-862b-9cae267905cf.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/c0d2a851-92e9-449b-8764-07c56091c36a.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/4da21dc2-2224-4d5f-a3ad-cd244ff489a4.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/bg a816bc5c-c53c-44bf-b409-eeabb26e6eef.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/madame_massacrevs.the_mergerfrom_hell/IMAGES/bg 6cfadebb-681b-4ece-b23c-90d13309d877.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "3f726deb-72ea-455c-b72d-65b978e57021",
+      "scene_name": "intro",
+      "location_uuid": "a816bc5c-c53c-44bf-b409-eeabb26e6eef",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01_on_air_disaster_glamour",
+          "source_purpose": "Introduce Maddie in full horror-host mode and establish the show's shabby-camp identity through a problem she must instantly perform through.",
+          "source_exit_state": "Maddie proves she can dominate the camera even when the set literally falls apart around her.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "a816bc5c-c53c-44bf-b409-eeabb26e6eef"
+            },
+            {
+              "type": "narration",
+              "text": "Red tally light. Studio B's cardboard crypt glows in thrift-store blue."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Good evening, my little grave robbers. Tonight we raise the dead, the ratings, and possibly several workplace complaints."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "narration",
+              "text": "Behind her, a foam tombstone lists sideways and the mechanical raven coughs out one sad spark before dying."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_01_choice_01",
+              "prompt": "How does Maddie cover the collapsing prop on-air?",
+              "options": [
+                {
+                  "option_id": "sultry_double_entendre",
+                  "option_text": "Purr through it with a dirty double entendre.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Mmm. Even the scenery can't stay upright once I get properly atmospheric."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "acid_camp_wit",
+                  "option_text": "Savage the malfunction with acid camp.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Behold our deluxe effects package, darling. Engineered to survive almost half a sentence."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "cursed_grandeur",
+                  "option_text": "Declare the set genuinely cursed.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "surprised",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Do you see it, darlings? The crypt itself bends in worship. At last, a set with proper reverence."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02_tina_patch_and_rumor",
+          "source_purpose": "Ground the comedy in real station decline and seed the first rumors that the budget crisis is connected to a sale.",
+          "source_exit_state": "Maddie starts to suspect the station's decay is tied to an impending ownership change.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The floor manager calls a reset. Tina barrels in with gaffer tape between her teeth and a screwdriver in hand."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "text": "Don't move. If this headstone falls again, I'm invoicing it for harassment."
+            },
+            {
+              "type": "line",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "text": "Engineering's been begging for replacements for weeks. Management keeps sending memos instead of parts."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Ah yes, the elegant economy of letting my graveyard decompose on schedule."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "text": "It's everywhere. No new orders, no repairs, no patience. Crew says they're starving departments because buyers are circling."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "confused",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Buyers? How vulgar. If strangers are coming for the station, I'd at least like better candlelight."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03_rex_flirtation_drop_in",
+          "source_purpose": "Introduce Rex's chemistry with Maddie and give the rumor a wider station context through playful banter.",
+          "source_exit_state": "Maddie and Rex's attraction is clear, and the rumor now feels like a station-wide pressure rather than backstage chatter.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A familiar cologne and a louder tie drift in from the newsroom."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Heard your mausoleum threw itself at the floor. I came to help. Or hover supportively and look terrific."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Rex, if I need rescue from a collapsing crypt, I'll send up a flare and a garter."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "That's the nicest thing anybody's almost said to me all week."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Seriously, though, the newsroom's jumpy. Outside suits, closed-door chatter, Blaine saying 'synergy' like he's been body-snatched."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Maddie handle Rex's shameless mid-taping flirtation?",
+              "options": [
+                {
+                  "option_id": "escalate_flirting",
+                  "option_text": "Turn the flirtation up.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Missed you, darling? I budget for you right under fake blood and poor judgment."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "text": "Good. I was worried I ranked below the fog machine."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "teasing_distance",
+                  "option_text": "Keep him teasingly at a distance.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Enjoy the view and keep moving, quarterback. If doom is coming, I'd like it to catch me camera-ready."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "text": "Bossy. Terrifying. Deeply attractive."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "cooler_facade",
+                  "option_text": "Cover worry with colder jokes.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "If suits want this dump, they can fight the mold, the unions, and my better angles."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "text": "Yeah. That's the part making everybody sweat."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04_dottie_buyer_warning",
+          "source_purpose": "Bring in Dottie as the pragmatic authority figure and confirm that the sale threat is real enough to affect how everyone behaves.",
+          "source_exit_state": "Maddie can no longer dismiss the sale as rumor; management is bracing for real outside interference.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A clipboard slices into the mood with the force of an executioner's blade."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "If this is romance, log it after wrap. We are behind."
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "And yes, the buyer gossip is real enough that I have started hating strangers in advance."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Well, there goes the fun version of my panic."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Polished ownership loves cheap content, obedient faces, and no local fingerprints. A personality like yours is exactly what they sand off first."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_04_choice_01",
+              "prompt": "How does Maddie answer Dottie's warning about the buyers?",
+              "options": [
+                {
+                  "option_id": "promise_professionalism",
+                  "option_text": "Promise just enough professionalism to keep Dottie onside.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "You'll get a clean segment, a finished tape, and only the minimum amount of sinful improvisation."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "text": "A modest miracle. Keep going."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "defend_weirdness",
+                  "option_text": "Argue that her weirdness is the station's strongest asset.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "My weirdness is the product, Dottie. You can syndicate movies. You can't syndicate me."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "text": "Then remind them before they inventory you."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "gallows_humor",
+                  "option_text": "Deflect with gallows humor while refusing to sound scared.",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "If buyers want bland, they've brought the wrong coffin."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "text": "Good. Stay difficult."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05_back_to_camera",
+          "source_purpose": "Show Maddie's professionalism and why the station's messy local personality is worth defending before the intrusion arrives.",
+          "source_exit_state": "The set regains its rhythm, making the station's oddball identity feel vivid and defensible.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "The red light returns. The fog machine coughs once, thinks better of it, and dies. Nobody calls cut."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Welcome back, darlings. Tonight's mist is tragically shy, the graveyard is emotionally unstable, and I remain your only reliable apparition."
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "So let us proceed the old-fashioned way: with nerve, neckline, and a criminal lack of oversight."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "text": "Fog cue's dead."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Then imagine the smoke. Terror is always more intimate when it has to touch you directly."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "narration",
+              "text": "Off camera, even the exhausted crew laughs instead of wincing."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Tell me that's not a closer."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Keep rolling. The breakdown is testing well."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Around here, sweetheart, the cheap thrills are handmade."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06_acheron_hijack",
+          "source_purpose": "Deliver the inciting intrusion by transforming vague economic anxiety into a specific, embodied antagonist.",
+          "source_exit_state": "The scene ends with Maddie's familiar production problems replaced by a concrete corporate menace she can no longer ignore.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A side monitor crackles. Instead of the next feed, glossy black graphics bloom across the screen like oil on holy water."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf",
+              "text": "That is absolutely not one of our carts."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "1c5209d3-70bb-49e6-862b-9cae267905cf"
+            },
+            {
+              "type": "narration",
+              "text": "Chrome lettering replaces the station fuzz: ACHERON MEDIA GROUP. The promo is too sleek for Studio B, all mirrored skylines and antiseptic confidence."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "surprised",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Huh. I hate it on sight."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Nobody approved this."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "narration",
+              "text": "Then the spot lands on a man in a charcoal suit, immaculate hair, and a smile so polished it feels sharpened. LUCIEN VALE looks into the camera as if the building already belongs to him."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Oh, I don't like that at all. He smiles like a foreclosure with cuff links."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "narration",
+              "text": "The smile never flickers. In the dusty glow of the set, it feels less like a promotion than an arrival."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Maddie finishes the taping with style, learns the station-sale rumors are real, and watches Acheron Media intrude directly into Studio B, turning vague budget dread into the concrete threat of Lucien Vale.",
+      "notes_and_work_product_summary": "Six beats preserved in source order with three interactive choices for Maddie's playable voice. Lucien Vale is introduced only through narration on the hijacked monitor to preserve the beat's intrusion while avoiding a speaking or portrait event for a character without a scene UUID entry."
+    },
+    {
+      "scene_uuid": "080cf831-0b92-4090-8b6d-3d322557960c",
+      "scene_name": "act1_scene1",
+      "location_uuid": "6cfadebb-681b-4ece-b23c-90d13309d877",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the newsroom's anxious atmosphere and show how vulnerable the station already is to promises of rescue or modernization.",
+          "source_exit_state": "Maddie realizes the station is already half-defeated by insecurity before any contract has been signed.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "6cfadebb-681b-4ece-b23c-90d13309d877"
+            },
+            {
+              "type": "narration",
+              "text": "The newsroom smells like burnt coffee, hot tape, and fear. Every desk is muttering about cable, ratings, or whether a computer bulletin board is about to steal television's job."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Sales is acting like cable's about to eat local sports alive, and now weather says viewers will get news from a phone line."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "text": "Bulletin boards are not a phone line, Rex. They are a frontier, and frontiers reward reassuring faces."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "If the future arrives making modem noises, darling, I reserve the right to meet it with a torch."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Meet nothing with a torch until the buyer leaves. Nobody drools, nobody panics, and nobody says the word obsolete."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "confused",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "That your pep talk or your eulogy?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "narration",
+              "text": "Before the man even arrives, half the station already looks ready to thank him for putting it out of its misery."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Introduce Lucien in person and let his presence immediately shift the power dynamic in the room.",
+          "source_exit_state": "Lucien establishes himself as charming, prepared, and subtly predatory.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Positions, children. Try to look like a functioning broadcaster."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "narration",
+              "text": "Lucien Vale enters in an immaculate charcoal suit that makes the newsroom's stained carpet look personally insulted."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Dottie Graves. Operational backbone."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Rex Rundle, dependable sports numbers. Blaine Bixby, exceptional audience trust."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "And Madame Massacre. Volatile presentation. Remarkably durable retention."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "text": "Mr. Vale, welcome. We're thrilled to explore what Acheron can do for us."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "You always greet people like livestock at auction?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Only when they're worth preparing for."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Lay out the corporate threat in public language and expose the first visible fractures among the staff.",
+          "source_exit_state": "The conflict clarifies from vague sale anxiety into a direct threat to the station's identity.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "The market is fragmenting. Cable multiplies channels. Digital platforms multiply distraction."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Local stations are left defending nostalgia with shrinking margins and inconsistent identities."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Acheron offers coherence: shared resources, unified branding, and a trustworthy image scaled across markets."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+              "text": "There's wisdom in polish. Our viewers deserve consistency."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "Our viewers deserve to know what town they're in."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Our viewers deserve all of you to stop auditioning for my ulcer."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Unified branding. Such a tasteful phrase for stuffing everybody into the same coffin."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Give the player control over Maddie's first public challenge and force Lucien off his prepared script.",
+          "source_exit_state": "Lucien is pulled out of sterile executive mode and into a live sparring match on Maddie's terms.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "One question, Maddie. Singular."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_04_choice_01",
+              "prompt": "How does Maddie challenge Lucien's takeover pitch in front of the staff?",
+              "options": [
+                {
+                  "option_id": "flirt_mockery",
+                  "option_text": "Smile and mock him",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Mr. Vale, are you here to buy the station or seduce it to death? Because that tie is making very aggressive promises."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "text": "Okay, that's the first interesting sentence in this meeting."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "character_expression": "angry",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "text": "Rex."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "text": "If this station could be seduced, Madame, it might have spared itself years of decline."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "local_defiance",
+                  "option_text": "Defend local television",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "What you call decline, we call a town seeing its own face on the screen. People come here for local blood, not beige perfection."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+                      "text": "Damn right. Nobody cheers for weather from six states away."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+                      "character_expression": "angry",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4",
+                      "text": "Some of us are trying to sound employable."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "4da21dc2-2224-4d5f-a3ad-cd244ff489a4"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "text": "Local affection has value, Madame. Value simply decays without structure."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+                    }
+                  ]
+                },
+                {
+                  "option_id": "polite_question",
+                  "option_text": "Ask a polite question with teeth",
+                  "branch_events": [
+                    {
+                      "type": "show_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+                      "text": "Perhaps you can clarify modernization. Which parts of this station do you improve, and which parts do you erase?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+                      "text": "Yes. Answer that one."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "character_expression": "cocky",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+                      "text": "A practical question. I appreciate precision. Acheron retains what integrates cleanly and releases what no longer serves the whole."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Transform Maddie's sniping into genuine alarm by revealing the occult undertone in Lucien's language.",
+          "source_exit_state": "Maddie's assessment of Lucien shifts from smug buyer to possible supernatural threat.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Independent signals become stronger when they are bound together under superior stewardship."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "When a weakened structure opens itself to guidance, separate identities cease competing and begin serving a single purpose."
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "After that, resistance doesn't vanish. It becomes unnecessary."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+            },
+            {
+              "type": "narration",
+              "text": "Nobody else seems bothered. They just hear slick executive poison. I hear binding, surrender, inhabitation—the cadence of an invocation hiding inside merger talk."
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "End the scene on a sharpened threat and set Maddie's investigative intent going into the next confrontation.",
+          "source_exit_state": "Lucien gains public footing with the staff, but Maddie privately commits to investigating him as something more dangerous than a corporate raider.",
+          "events": [
+            {
+              "type": "show_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4",
+              "text": "Enough. We still have newscasts to put on and ad slots to fill. Back to work."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "0a46137d-f40c-47ac-b8ed-b723085cb3d4"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "character_expression": "cocky",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a",
+              "text": "Of course. Madame Massacre, I look forward to discussing your brand in greater detail."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "c0d2a851-92e9-449b-8764-07c56091c36a"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "character_expression": "angry",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2",
+              "text": "I officially miss the kind of sleaze you can tackle."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "character_expression": "cocky",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab",
+              "text": "Then let's dig into Acheron before Mr. Perfect decides my show needs a focus-group exorcism."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "14f94de8-7127-4fff-beb3-50c00f13dcab"
+            },
+            {
+              "type": "narration",
+              "text": "The room may have swallowed his inevitability. I haven't. If Lucien Vale is only a corporate vulture, fine. If he's something worse, I'm finding the teeth."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Lucien wins public footing in the newsroom by framing modernization as inevitable, but Maddie's sparring reveals occult undertones in his merger language, pushing her from contempt into active suspicion and setting her on an investigation of Acheron.",
+      "notes_and_work_product_summary": "Adapted all 6 source beats in order. Beat 4 contains the scene's only interactive choice with three short local branches that vary Maddie's tactic while keeping continuity intact. Portrait staging uses one visible speaker at a time and clears portraits before narration."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 196,
+      "g": 47,
+      "b": 94,
+      "a": 255,
+      "hex_string": "#C42F5E"
+    },
+    "idle_color": {
+      "r": 232,
+      "g": 219,
+      "b": 206,
+      "a": 255,
+      "hex_string": "#E8DBCE"
+    },
+    "idle_small_color": {
+      "r": 209,
+      "g": 191,
+      "b": 173,
+      "a": 255,
+      "hex_string": "#D1BFAD"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 126,
+      "b": 84,
+      "a": 255,
+      "hex_string": "#FF7E54"
+    },
+    "selected_color": {
+      "r": 255,
+      "g": 206,
+      "b": 95,
+      "a": 255,
+      "hex_string": "#FFCE5F"
+    },
+    "insensitive_color": {
+      "r": 137,
+      "g": 124,
+      "b": 116,
+      "a": 255,
+      "hex_string": "#897C74"
+    },
+    "muted_color": {
+      "r": 88,
+      "g": 74,
+      "b": 79,
+      "a": 255,
+      "hex_string": "#584A4F"
+    },
+    "hover_muted_color": {
+      "r": 120,
+      "g": 94,
+      "b": 98,
+      "a": 255,
+      "hex_string": "#785E62"
+    },
+    "text_color": {
+      "r": 244,
+      "g": 235,
+      "b": 226,
+      "a": 255,
+      "hex_string": "#F4EBE2"
+    },
+    "interface_text_color": {
+      "r": 255,
+      "g": 246,
+      "b": 232,
+      "a": 255,
+      "hex_string": "#FFF6E8"
+    },
+    "reasoning": "The palette mixes horror-host glamour with early-1990s broadcast grit: deep crimson for the campy supernatural core, warm bone and parchment tones for readable text, and a smoky muted rose-gray range for inactive UI states. Hover and selected colors are brighter and more theatrical to fit the showbiz/comedy tone, while the overall contrast stays high enough for legibility against dark, studio-like backgrounds."
+  },
+  "character_dict": {
+    "14f94de8-7127-4fff-beb3-50c00f13dcab": "Madame Massacre",
+    "e06ba997-fdf3-40d9-aaf1-dc8ff92852b2": "Rex Rundle",
+    "c0d2a851-92e9-449b-8764-07c56091c36a": "Lucien Vale",
+    "0a46137d-f40c-47ac-b8ed-b723085cb3d4": "Dottie Graves",
+    "1c5209d3-70bb-49e6-862b-9cae267905cf": "Tina \"Packet\" Morales",
+    "4da21dc2-2224-4d5f-a3ad-cd244ff489a4": "Blaine Bixby"
+  }
+}

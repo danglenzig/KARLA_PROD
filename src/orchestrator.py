@@ -104,7 +104,7 @@ async def main():
     else:
         print("### NarrativeDesignAgent output content validated")
 
-    game_title = to_snake(nd_output.story_title)
+    game_title = to_snake(nd_output.story_title).replace(" ","")
 
     stage_two_json_dumps = [
         write_json_data(game_title, story_concept.model_dump_json(indent=2), "story_concept.json"),

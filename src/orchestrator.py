@@ -35,6 +35,7 @@ from gui_colors_agent.gui_colors_agent import GuiColorAgent
 from dialogue_agent.dialogue_agent_models import DialogueScene
 from dialogue_agent.dialogue_agent import DialogueAgent
 from renpy_script_assembler.renpy_script_assembler import RenPyScriptAssembler
+from renpy_deployment.renpy_publisher import RenPyPublisher
 
 def get_data_folder_path(game_name: str)->str:
     try:
@@ -59,7 +60,7 @@ async def write_json_data(game_name: str ,in_json: str, filename: str):
     except Exception as e:
         print(e)
 
-async def write_rpy_script(game_name: str, script: str, filename: str):
+async def write_rpy_script(game_name: str, script: str, filename: str)->str:
     games_folder_path = os.getenv('GAMES_FOLDER_PATH')
     rpy_folder_name = os.getenv('RENPY_SCRIPTS_FOLDER_NAME')
     if not os.path.isdir(games_folder_path):
@@ -71,6 +72,7 @@ async def write_rpy_script(game_name: str, script: str, filename: str):
     script_path = f"{games_folder_path}/{game_name}/{rpy_folder_name}/{filename}"
     with open(script_path, 'w') as f:
         f.write(script)
+    return script_path
 
 async def main():
 
@@ -199,7 +201,23 @@ async def main():
     await write_json_data(game_title, build_data.model_dump_json(indent=2), 'build_data.json')
 
     script_rpy = await RenPyScriptAssembler().run_workflow(build_data)
-    await write_rpy_script(game_title, script_rpy, 'script.rpy')
+    script_path: str = await write_rpy_script(game_title, script_rpy, 'script.rpy')
+
+    print("+==================")
+    print("| Stage 6: Publish.")
+    print("+==================\n\n")
+
+    publish_success: bool = await RenPyPublisher().run_workflow(
+        game_title=game_title,
+        script_file_path=script_path,
+        art_manifest=art_manifest
+    )
+    if not publish_success:
+        print("Something bad happened")
+        # TODO: raise an appropriate error (what?)
+    
+
+    
 
 if __name__ == "__main__":
     asyncio.run(main())

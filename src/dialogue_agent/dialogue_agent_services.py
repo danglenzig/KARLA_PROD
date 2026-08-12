@@ -105,7 +105,7 @@ DIALOGUE RULES
 - Most lines should be short enough to read comfortably in a visual novel dialogue box.
 - Characters should sound distinct from one another.
 - Use the provided character examples and scene tone as voice anchors, not as lines to copy.
-- Preserve the story's tone: bawdy, campy, fast-talking, character-driven, with retro horror, screwball workplace-comedy, etc. energy where appropriate.
+- Preserve the story's tone: (for example: bawdy, campy, fast-talking, character-driven, retro horror, screwball workplace-comedy, etc.) energy where appropriate.
 - Let subtext, conflict, and personality carry scenes instead of exposition dumps.
 - Avoid repetitive line rhythms and filler banter.
 - Narration should be used sparingly and only when it improves clarity, tone, or transitions.

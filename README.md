@@ -105,57 +105,38 @@ sequenceDiagram
     participant USER as User
     participant ORCH as Orchestrator
     participant DISC as Discovery Agent
-    participant CONC as Concept Schematizer
-    participant NARR as Narrative Design_Agent
-    participant BEAT as Scene Beats Agent
-    participant ARTS as Image Generation Agent
-    participant COLO as RenPy GUI Customizer
+    participant NARR as Narrative Design Agent
+    participant BEAT as Scene Beat Agent
+    participant ARTS as Image Generator
+    participant COLO as GUI Color Agent
     participant DIAL as Dialogue Agent
-    participant RNPY as RenPy Project Assembler
+    participant RNPY as Ren'Py Assembler
 
-    activate ORCH
-    USER->>ORCH: Starts program
-    activate DISC
-    ORCH->>DISC:
-    Note over DISC,USER: Interactive conversation
-    activate CONC
-    DISC->>CONC: SQLite session db
-    CONC->>ORCH: StoryConcept
-    deactivate CONC
-    deactivate DISC
+    USER->>ORCH: Starts program (python3 -m src.orchestrator)
+    ORCH->>DISC: Interactive discovery session
+    DISC-->>ORCH: StoryConcept
 
-    activate NARR
-    ORCH->>NARR: StoryConcept
-    NARR->>ORCH: NarrativeDesignOutputSchema
-    deactivate NARR
-    
-    par [Async concurrency]
-        activate BEAT
-        activate ARTS
-        activate COLO
-        activate DIAL
-        rect rgb(128,128,128)
-        note right of ORCH: NarrativeDesignOutputSchema
-        ORCH->>BEAT:
-        ORCH->>ARTS:
-        ORCH->>COLO:
-        ORCH->>DIAL:
-        end
-        BEAT->>ORCH: SceneBeatSheet
-        ARTS->>ORCH: ArtAssetManifest
-        COLO->>ORCH: GuiColorScheme
-        DIAL->>ORCH: DialogueManifest
-        deactivate BEAT
-        deactivate ARTS
-        deactivate COLO
-        deactivate DIAL
+    ORCH->>NARR: WorkflowTextInput(concept_summary)
+    NARR-->>ORCH: NarrativeDesignOutputSchema
+
+    par Stage 2 (async)
+        ORCH->>ARTS: get_demo_manifest(title_snake, nd_json, style)
+        ORCH->>BEAT: run_workflow(nd_json, intro_uuid)
+        ORCH->>BEAT: run_workflow(nd_json, act1_scene1_uuid)
+        ORCH->>COLO: run_workflow(nd_json)
+        ARTS-->>ORCH: ArtAssetManifest
+        BEAT-->>ORCH: SceneBeatSheet (intro)
+        BEAT-->>ORCH: SceneBeatSheet (act1 scene1)
+        COLO-->>ORCH: GuiColorScheme
     end
-    
-    activate RNPY
-    ORCH->>RNPY: GameSpec
-    deactivate ORCH
-    RNPY->>USER: Finished game
-    deactivate RNPY
+
+    ORCH->>DIAL: run_workflow(nd_json, beat_sheet_intro)
+    ORCH->>DIAL: run_workflow(nd_json, beat_sheet_scene1)
+    DIAL-->>ORCH: DialogueScene × 2
+
+    ORCH->>RNPY: DemoBuildData(assets, dialogues, colors, character_dict)
+    RNPY-->>ORCH: script.rpy
+    ORCH-->>USER: Data JSONs + Ren'Py script + images
 ```
 
 ## Tech focus

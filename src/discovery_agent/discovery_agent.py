@@ -1,6 +1,8 @@
 # src/discovery_agent/discovery_agent.py
 
 # TODO: discovery -> summarizer handoff with hitl approval
+# https://openai.github.io/openai-agents-python/handoffs/
+# https://openai.github.io/openai-agents-python/human_in_the_loop/
 
 from dotenv import load_dotenv
 load_dotenv()

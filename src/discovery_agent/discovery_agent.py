@@ -1,5 +1,7 @@
 # src/discovery_agent/discovery_agent.py
 
+# TODO: discovery -> summarizer handoff with hitl approval
+
 from dotenv import load_dotenv
 load_dotenv()
 

@@ -37,6 +37,7 @@ class ChatWindow():
             if initializing:
                 initializing = False
                 self.window['-CHAT_LOG-'].update(initial_response)
+                self.window.refresh() # <-- This doesn't do shit
 
             if event == 'Get Started':
                 self.window['Get Started'].update(disabled= True)
@@ -65,7 +66,12 @@ class ChatWindow():
                     self.window['Generate VN'].update(disabled =False)
 
             if event == 'Generate VN':
-                print("TODO...")
+                # TODO: hand off the concept to the game creation pipeline
+                #  ^^this can take up to 5 minutes
+                # for now just print the concept json dump.
+                concept: StoryConcept = await self.discovery_agent.get_concept_summary()
+                concept_json = concept.model_dump_json(indent=2)
+                print(concept_json)
                 break
 
 

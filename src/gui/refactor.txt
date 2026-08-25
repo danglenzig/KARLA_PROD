@@ -1,0 +1,331 @@
+import asyncio
+import threading
+from pathlib import Path
+from uuid import uuid4
+import sys
+
+import PySimpleGUI as sg
+
+# This file lives in src/gui/, so parent.parent is src/
+# You were already doing this correctly.
+SRC_ROOT: Path = Path(__file__).parent.parent
+sys.path.insert(0, str(SRC_ROOT))
+
+from discovery_agent.discovery_agent import GUIDiscoveryAgent
+from discovery_agent.discovery_agent_models import DiscoveryAgentResponse, StoryConcept
+
+
+# These are custom event names that our background workers will send
+# back into the PySimpleGUI event loop.
+#
+# PySimpleGUI works best when the window loop handles events like:
+# - button clicks
+# - window close
+# - "background task finished"
+#
+# So instead of waiting directly for the agent call inside the GUI loop,
+# we will have a worker thread send one of these events when it finishes.
+
+EVENT_INITIAL_RESPONSE = "-INITIAL_RESPONSE-"
+EVENT_DISCOVERY_RESPONSE = "-DISCOVERY_RESPONSE-"
+EVENT_CONCEPT_SUMMARY = "-CONCEPT_SUMMARY-"
+EVENT_WORK_ERROR = "-WORK_ERROR-"
+
+
+class ChatWindow:
+    def __init__(self):
+
+        # Give this chat session a unique ID so the discovery agent can keep
+        # one SQLite-backed conversation history for this window instance.
+        self.session_id = str(uuid4())
+
+        # This is your Stage 1 backend wrapper.
+        # The GUI talks to this object rather than to the OpenAI runner directly.
+        self.discovery_agent = GUIDiscoveryAgent(self.session_id)
+
+        # Keep actual app state in Python variables, not inside the widgets.
+        #
+        # That is an important GUI habit:
+        # widgets are for display and input, not for being your source of truth.
+        self.chat_lines: list[str] = []
+        self.busy: bool = False
+        self.concept_is_ready: bool = False
+
+        # Build the layout.
+        #
+        # Multiline:
+        # - used as read-only transcript display
+        # - disabled=True prevents the user from editing it
+        #
+        # Status text:
+        # - gives the user feedback while requests are in flight
+        #
+        # Input:
+        # - single-line message box for the user's message
+        #
+        # Buttons:
+        # - Submit sends a chat turn
+        # - Generate VN is disabled until the discovery agent says the concept is ready
+        # - Quit exits the app
+        self.layout = [
+            [
+                sg.Multiline(
+                    default_text="",
+                    key="-CHAT_LOG-",
+                    size=(100, 26),
+                    disabled=True,
+                    autoscroll=True,
+                    expand_x=True,
+                    expand_y=True,
+                )
+            ],
+            [
+                sg.Text(
+                    "Status: starting discovery interview...",
+                    key="-STATUS-",
+                    expand_x=True,
+                )
+            ],
+            [
+                sg.Input(
+                    key="-INPUT-",
+                    expand_x=True,
+                    disabled=True,
+                ),
+                sg.Button(
+                    "Submit",
+                    bind_return_key=True,
+                    disabled=True,
+                ),
+            ],
+            [
+                sg.Button("Generate VN", disabled=True),
+                sg.Button("Quit"),
+            ],
+        ]
+
+        # Create the actual window.
+        #
+        # finalize=True gives us a fully created window immediately, which is
+        # useful when we want to start background work right away.
+        #
+        # resizable=True is just nice quality-of-life.
+        self.window = sg.Window(
+            f"Karla Chat {self.session_id}",
+            self.layout,
+            finalize=True,
+            resizable=True,
+        )
+
+    def append_chat(self, speaker: str, text: str) -> None:
+
+        # Store the transcript in Python state first.
+        self.chat_lines.append(f"{speaker}: {text}")
+
+        # Then rebuild the widget display from that state.
+        #
+        # This is cleaner than reading the old widget contents, appending text,
+        # and writing it back. The widget becomes a view of the data, not the data itself.
+        self.window["-CHAT_LOG-"].update("\n\n".join(self.chat_lines))
+
+    def set_busy(self, busy: bool, status_text: str) -> None:
+        # Track whether the app is currently waiting for a background request.
+        self.busy = busy
+
+        # Update the small status line so the user knows what is happening.
+        self.window["-STATUS-"].update(f"Status: {status_text}")
+
+        # While busy, prevent another Submit from stacking on top of the current one.
+        self.window["Submit"].update(disabled=busy)
+        self.window["-INPUT-"].update(disabled=busy)
+
+        # Generate VN should only be enabled when:
+        # 1. we are not busy
+        # 2. the discovery agent has said the concept is ready
+        self.window["Generate VN"].update(
+            disabled=busy or not self.concept_is_ready
+        )
+
+    def run_async_task(self, coro_factory, finished_event_name: str) -> None:
+        # This helper is the core of the pattern.
+        #
+        # PySimpleGUI does not want you to block its event loop for a long task.
+        # So we:
+        # 1. start a background thread
+        # 2. run one async coroutine inside that thread with asyncio.run(...)
+        # 3. send the result back to the window with write_event_value(...)
+        #
+        # Important detail:
+        # we pass in a *factory* (a callable that returns a coroutine),
+        # not a coroutine object itself. That keeps creation of the coroutine
+        # inside the worker thread.
+        def worker() -> None:
+            try:
+                result = asyncio.run(coro_factory())
+                self.window.write_event_value(finished_event_name, result)
+            except Exception as exc:
+                # Any exception from the background task gets turned into a GUI event.
+                # That lets the main window loop decide how to present the error.
+                self.window.write_event_value(EVENT_WORK_ERROR, str(exc))
+
+        # daemon=True means the thread will not prevent program exit.
+        threading.Thread(target=worker, daemon=True).start()
+
+    def request_initial_prompt(self) -> None:
+        # This replaces the old "Get Started" workaround.
+        #
+        # Instead of blocking before the event loop begins, we:
+        # 1. mark the app busy
+        # 2. start the initial discovery message in the background
+        # 3. let the GUI loop keep running immediately
+        self.set_busy(True, "starting discovery interview...")
+
+        self.run_async_task(
+            lambda: self.discovery_agent.handle_user_input(
+                "Okay let's get started."
+            ),
+            EVENT_INITIAL_RESPONSE,
+        )
+
+    def handle_submit(self, user_message: str) -> None:
+        # Clean up the user input.
+        cleaned_message = user_message.strip()
+
+        # Ignore empty messages and refuse to submit while a request is active.
+        if not cleaned_message or self.busy:
+            return
+
+        # Show the user message immediately in the transcript.
+        self.append_chat("USER", cleaned_message)
+
+        # Clear the input box after submission.
+        self.window["-INPUT-"].update("")
+
+        # Lock the UI while waiting for the next agent response.
+        self.set_busy(True, "waiting for discovery agent...")
+
+        # Start the discovery-agent call in the background.
+        self.run_async_task(
+            lambda: self.discovery_agent.handle_user_input(cleaned_message),
+            EVENT_DISCOVERY_RESPONSE,
+        )
+
+    def handle_discovery_response(self, response: DiscoveryAgentResponse) -> None:
+        # When the background agent call finishes, the GUI loop receives
+        # either EVENT_INITIAL_RESPONSE or EVENT_DISCOVERY_RESPONSE.
+        #
+        # In both cases, the payload is the same kind of object:
+        # DiscoveryAgentResponse.
+        self.append_chat("AGENT", response.response_text)
+
+        # Save whether the agent believes it has enough information now.
+        self.concept_is_ready = response.concept_is_ready
+
+        # If the concept is ready, tell the user and enable Generate VN.
+        #
+        # Notice that we are *not* forcing the conversation to stop.
+        # The user can still keep chatting if they want to refine the idea.
+        if self.concept_is_ready:
+            self.window["-STATUS-"].update(
+                "Status: concept is ready. You can keep chatting or generate the VN."
+            )
+
+        # Unlock the input again.
+        self.set_busy(False, "ready")
+
+    def handle_generate_vn(self) -> None:
+        # Refuse to start generation if:
+        # - a task is already running
+        # - discovery is not ready yet
+        if self.busy or not self.concept_is_ready:
+            return
+
+        # For now, Stage 1 hands off by asking the summarizer for a StoryConcept.
+        self.set_busy(True, "building concept summary...")
+
+        self.run_async_task(
+            self.discovery_agent.get_concept_summary,
+            EVENT_CONCEPT_SUMMARY,
+        )
+
+    def handle_concept_summary(self, concept: StoryConcept) -> None:
+        # The summary is ready.
+        self.set_busy(False, "concept summary ready")
+
+        # For now, show the result in a popup.
+        #
+        # Later, instead of a popup, this could trigger:
+        # - the full orchestrator
+        # - a confirmation screen
+        # - a saved JSON preview panel
+        sg.popup_scrolled(
+            concept.model_dump_json(indent=2),
+            title="Story Concept",
+            size=(100, 30),
+        )
+
+    def handle_error(self, error_message: str) -> None:
+        # Show errors inside the transcript so the user sees them in the app.
+        self.append_chat("SYSTEM", f"Error: {error_message}")
+
+        # Also unlock the app so the user can try again.
+        self.set_busy(False, "request failed")
+
+    def run(self) -> None:
+        # Kick off the initial discovery question as soon as the window starts.
+        self.request_initial_prompt()
+
+        # This is the one true GUI event loop.
+        #
+        # PySimpleGUI programs generally live here:
+        # read an event, inspect it, update the window, repeat.
+        while True:
+            event, values = self.window.read()
+
+            # Standard exit path.
+            if event in (sg.WINDOW_CLOSED, "Quit"):
+                break
+
+            # User clicked Submit.
+            if event == "Submit":
+                self.handle_submit(values["-INPUT-"])
+
+            # User clicked Generate VN.
+            elif event == "Generate VN":
+                self.handle_generate_vn()
+
+            # Background discovery work finished.
+            #
+            # PySimpleGUI stores the event payload in values[event].
+            elif event in (EVENT_INITIAL_RESPONSE, EVENT_DISCOVERY_RESPONSE):
+                response: DiscoveryAgentResponse = values[event]
+                self.handle_discovery_response(response)
+
+            # Background summarizer work finished.
+            elif event == EVENT_CONCEPT_SUMMARY:
+                concept: StoryConcept = values[event]
+                self.handle_concept_summary(concept)
+
+            # Background worker failed.
+            elif event == EVENT_WORK_ERROR:
+                self.handle_error(values[event])
+
+        # Clean shutdown when the loop ends.
+        self.window.close()
+
+
+def main() -> None:
+    # Create the window object.
+    chat_window = ChatWindow()
+
+    # Run the synchronous GUI loop.
+    chat_window.run()
+
+
+if __name__ == "__main__":
+    # Normal Python entry point.
+    #
+    # Notice we do NOT use asyncio.run(main()) here anymore.
+    # The GUI itself is synchronous. Only the agent calls are async, and those
+    # get their own asyncio.run(...) inside worker threads.
+    main()

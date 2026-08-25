@@ -17,9 +17,10 @@ from agents import (
 
 SRC_ROOT: Path = Path(__file__).parent.parent # this is the src/ folder
 sys.path.insert(0, str(SRC_ROOT))
-from discovery_agent.discovery_agent_models import StoryConcept
+from discovery_agent.discovery_agent_models import StoryConcept, DiscoveryAgentResponse
 from discovery_agent.discovery_agent_services import (
     get_discovery_agent,
+    get_gui_discovery_agent,
     get_discovery_summarizer_agent
 )
 
@@ -75,6 +76,32 @@ class DiscoveryAgent():
         )
 
         return summary_result.final_output_as(StoryConcept)
+
+class GUIDiscoveryAgent():
+
+    def __init__(self, session_id: str):
+        self.session_id = session_id
+        self.gui_discovery_agent = get_gui_discovery_agent(GPT_MODEL)
+        self.discovery_summarizer_agent = get_discovery_summarizer_agent(GPT_MODEL)
+        self.convo_session: SQLiteSession = SQLiteSession(session_id)
+
+    async def handle_user_input(self, user_message: str)->DiscoveryAgentResponse:
+        run_result: RunResult = await Runner.run(
+            self.gui_discovery_agent,
+            user_message,
+            session=self.convo_session
+        )
+        return run_result.final_output_as(DiscoveryAgentResponse)
+
+    async def get_concept_summary(self):
+        summary_result: RunResult = await Runner.run(
+            self.discovery_summarizer_agent,
+            "Summarize the conversation session into a StoryConcept",
+            session=self.convo_session
+        )
+        return summary_result.final_output_as(StoryConcept)
+
+    
     
 async def main():
     pass

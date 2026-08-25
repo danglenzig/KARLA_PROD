@@ -4,6 +4,15 @@ from pydantic import (
     BaseModel, Field
 )
 
+
+class DiscoveryAgentResponse(BaseModel):
+    """
+    A model representing one user-agent interaction in an ongoing conversation
+    """
+    session_id: str = Field(..., description="The SQLite session associate with this conversation")
+    concept_is_ready: bool = Field(..., description="Whether or not you have enough information yet to formulate story concept. When you set this value to True, the orchectrator will hand off the session history to the next agent, and your work will be complete.")
+    response_text: str = Field(..., description="The text of your next message to the user")
+
 class StoryConcept(BaseModel):
     """
     A model representing a high-level visual novel story concept

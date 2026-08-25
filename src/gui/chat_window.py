@@ -56,6 +56,8 @@ class KarlaGUI():
             concept_is_ready=False
         )
 
+        sg.theme('NeonYellow1')
+
         # Build the layout
         # Multiline:
         # - used as read-only transcript display

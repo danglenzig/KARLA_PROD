@@ -1,14 +1,4 @@
-# src/orchestrator.py
 
-"""
---DEPRECATED--
-  Program entrypoint is now src/karla_main/karla_main.py
-"""
-
-from dotenv import load_dotenv
-from pydantic import BaseModel # this is what provides the validation magic
-import asyncio
-from pathlib import Path
 import sys
 from datetime import datetime
 from camel_converter import to_camel, to_snake
@@ -22,23 +12,30 @@ sys.path.insert(0, str(SRC_ROOT))
 
 from misc_models.misc_models import DemoCreativeData
 from misc_models.misc_models import DemoBuildData
+
 from discovery_agent.discovery_agent_models import StoryConcept
 from discovery_agent.discovery_agent import DiscoveryAgent
+
 from narrative_design_agent.narrative_design_agent_models import (
     NarrativeDesignOutput,
     NarrativeDesignContentValidationResult,
 )
 from narrative_design_agent.narrative_design_agent import NarrativeDesignAgent
 from narrative_design_agent.narrative_design_content_validator import get_nd_spec_validation_results
+
 from image_generator_agent.image_styles import ImageStyle
 from image_generator_agent.image_generator_agent import ImageGenerator
 from image_generator_agent.image_generator_models import ArtAssetManifest
+
 from beat_sheet_agent.beat_sheet_models import SceneBeatSheet
 from beat_sheet_agent.beat_sheet_agent import SceneBeatAgent
+
 from gui_colors_agent.gui_colors_models import GuiColorScheme
 from gui_colors_agent.gui_colors_agent import GuiColorAgent
+
 from dialogue_agent.dialogue_agent_models import DialogueScene
 from dialogue_agent.dialogue_agent import DialogueAgent
+
 from renpy_script_assembler.renpy_script_assembler import RenPyScriptAssembler
 from renpy_deployment.renpy_publisher import RenPyPublisher
 

@@ -1,0 +1,23 @@
+{
+  "premise": "A newly graduated, idealistic academy scientist arrives at a remote deep-space exomicrobiology research station owned by a ruthless frontier corporation, only to get dragged into her assigned mentor’s wildly irresponsible side hustle: manufacturing and dealing a dangerous designer party drug derived from alien lab samples. As station life spirals through petty schemes, bureaucratic stupidity, and chemically enhanced disasters, she must navigate toxic affection, compromised ethics, and an ensemble of spectacular workplace lunatics.",
+  "genre": "Retrofuturistic atompunk satirical sci-fi comedy",
+  "tone": "Chaotic, bananas, irreverent, and aggressively funny, in the vein of Sealab 2021 and Aqua Teen Hunger Force, with a gradual undercurrent of cynicism.",
+  "setting": "A remote exomicrobiology research space station stranded in the far reaches of deep space, operating under corporate frontier capitalism. The station is retrofuturistic, dysfunctional, under-supervised, and populated by a bizarre but mostly humanoid research crew.",
+  "protagonist": "A young female academy graduate: book-smart, naive, idealistic, and newly assigned to the station. She begins as earnest and eager to do real science, but her arc pushes her toward becoming more jaded, cynical, and morally compromised.",
+  "core_hook": "The protagonist’s designated mentor and onboarding buddy—a manipulative but weirdly protective junior science officer—has discovered how to synthesize a dangerous designer drug from alien microbiology samples and is secretly dealing it to the crew. Instead of exposing him outright, she gets pulled into the operation and the escalating chaos around it.",
+  "must_have_elements": [
+    "A ridiculous ensemble workplace cast with strong space-office-comedy energy, like The Office in space",
+    "Dialogue-driven structure with branching conversations as the primary gameplay mechanic",
+    "An ambiguous, messy relationship between protagonist and mentor: toxic older-brother energy, mutual affection, and no clean moral framing",
+    "A protagonist arc centered on disillusionment and growing cynicism",
+    "Corporate frontier capitalism as the broader social and institutional backdrop",
+    "Mostly humanoid-shaped characters for practical portrait design in Ren'Py",
+    "Content bold enough to warrant a parental warning"
+  ],
+  "avoid_elements": [
+    "Non-humanoid main cast designs that would complicate portrait-based VN production",
+    "Gameplay systems that overshadow the dialogue and branching conversation focus",
+    "Grim, humorless nihilism that abandons the comedic satirical core"
+  ],
+  "concept_summary": "This visual novel is a chaotic atompunk workplace sci-fi comedy set on a remote corporate exomicrobiology station at the edge of deep space. The player follows a brilliant but naive new academy grad who arrives ready to do meaningful science, only to be folded into her mentor’s deeply illegal side business manufacturing alien-derived party drugs for the crew. Through a dialogue-driven structure and a ridiculous ensemble cast, the story should deliver escalating station-wide absurdity, corrosive corporate satire, and a messy central relationship where manipulation, loyalty, affection, and exploitation are constantly tangled together. Over the course of the story, the protagonist’s optimism should erode into hard-earned cynicism without losing the show’s chaotic comedic energy."
+}

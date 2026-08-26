@@ -173,7 +173,7 @@ class RenPyPublisher():
 
             art_manifest: ArtAssetManifest, # contains path strings to where the generated images live
 
-            target_folder_path:str = "/mnt/c/RENPY/",
+            target_folder_path:str = "/mnt/c/RENPY/", # TODO change this to environment variable
     )->bool:
 
         r"""

@@ -92,8 +92,9 @@ class KarlaMain():
         self.build_data: DemoBuildData | None = None
         self.script_path: str = ""
         self.callback_dict: dict[str, callable] = {
-            'set_story_concept': self.set_story_concept
-        } # currently contains only one thing, but want to keep it as dict for future flexibility
+            #'set_story_concept': self.set_story_concept,
+            'build_from_concept': self.build_from_concept
+        }
 
     async def get_narrative_design(self):
         if not self.story_concept:
@@ -122,8 +123,8 @@ class KarlaMain():
         #========================
         # Stage 2 is now complete
         #========================
-        # we don't need to come back to this function, so use asyncio.run(...), versus await
-        asyncio.run(self.get_art_assets_and_scene_beats())
+        #asyncio.run(self.get_art_assets_and_scene_beats())
+        await self.get_art_assets_and_scene_beats()
 
     async def get_art_assets_and_scene_beats(self):
         if not self.nd_output:
@@ -161,7 +162,8 @@ class KarlaMain():
         # Stage 3 is now complete
         #========================
 
-        asyncio.run(self.get_dialogue_scenes())
+        #asyncio.run(self.get_dialogue_scenes())
+        await self.get_dialogue_scenes()
 
     async def get_dialogue_scenes(self):
         if not self.creative_data:
@@ -181,11 +183,12 @@ class KarlaMain():
         # Stage 4 is now complete
         #========================
 
-        asyncio.run(self.build_renpy_assets())
+        # asyncio.run(self.build_renpy_assets())
+        await self.build_renpy_assets()
 
     async def build_renpy_assets(self):
-        if not self.dialogue_scene_lists or len(self.dialogue_scene_lists <= 0):
-            raise ValueError("### KarlaMain: Can't generate renpy assets because dialogue_scene_lists is None or empty")
+        if not self.dialogue_scene_lists:
+            raise ValueError("### KarlaMain: Can't generate renpy assets because dialogue_scene_lists is None")
 
         self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: creating .rpy scripts...")
 
@@ -209,7 +212,8 @@ class KarlaMain():
         # Stage 5 is now complete
         #========================
 
-        asyncio.run(self.publish_renpy_game())
+        #asyncio.run(self.publish_renpy_game())
+        await self.publish_renpy_game()
 
     async def publish_renpy_game(self):
         if not self.build_data:
@@ -242,8 +246,11 @@ class KarlaMain():
         #=================================================
         # Kick off Stage 2: Generate narrative design spec
         #=================================================
-        # This function is not async, so use asyncio.run(...), versus await (and so on down the pipeline...)
-        asyncio.run(self.get_narrative_design(self.story_concept))
+        #asyncio.run(self.get_narrative_design())
+
+    async def build_from_concept(self, delivered_concept: StoryConcept)->None:
+        self.set_story_concept(delivered_concept)
+        await self.get_narrative_design()
 
 
 

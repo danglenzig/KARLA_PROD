@@ -29,6 +29,7 @@ EVENT_INITIAL_RESPONSE = "-INITIAL_RESPONSE-"
 EVENT_DISCOVERY_RESPONSE = "-DISCOVERY_RESPONSE-"
 EVENT_CONCEPT_SUMMARY = "-CONCEPT_SUMMARY-"
 EVENT_WORK_ERROR = "-WORK_ERROR-"
+EVENT_VN_BUILD_COMPLETE = "-VN_BUILD_COMPLETE-"
 
 
 class ChatState(BaseModel):
@@ -274,18 +275,25 @@ class KarlaGUI():
     def handle_concept_summary(self, concept: StoryConcept):
 
         # The summary is ready
-        self.set_busy(False, "concept summary ready")
+        #self.set_busy(False, "concept summary ready")
 
         # disable further interaction
-        self.window["Submit"].update(disabled=True)
-        self.window["-INPUT-"].update(disabled=True)
+        #self.window["Submit"].update(disabled=True)
+        #self.window["-INPUT-"].update(disabled=True)
 
 
         sg.popup_scrolled(
             concept.model_dump_json(indent=2),
             title="Story Concept",
-            #non_blocking=True, # <--let's think about how we want this
+            non_blocking=True, # <--let's think about how we want this
             size=(100, 30),
+        )
+
+    def start_vn_build(self, build_callable, concept: StoryConcept):
+        self.set_busy(True, "Starting VN build")
+        self.run_async_task(
+            lambda: build_callable(concept),
+            EVENT_VN_BUILD_COMPLETE
         )
 
     def handle_error(self, error_message: str) -> None:
@@ -299,7 +307,7 @@ class KarlaGUI():
         self.window["-STATUS-"].update(status_message)
 
 
-    def run(self, callback_dict: dict[str, callable] | None = None) -> None:
+    def run(self, callback_dict: dict[str, callable]) -> None:
 
         # Kick it off with the initial discovery question
         # This will pop off EVENT_INITIAL_RESPONSE when complete
@@ -336,11 +344,15 @@ class KarlaGUI():
 
             elif event == EVENT_CONCEPT_SUMMARY:
                 concept: StoryConcept = values[event]
-                if callback_dict:
-                    callback_dict['set_story_concept'](concept)
                 self.handle_concept_summary(concept)
-                
+                self.start_vn_build(callback_dict['build_from_concept'], concept)
 
+            elif event == EVENT_VN_BUILD_COMPLETE:
+                self.set_busy(False, "VN Build complete")
+
+            #=========================
+            # catch updates and errors
+            #=========================
             elif event == EVENT_WORK_ERROR:
                 self.handle_error(values[event])
 
@@ -355,9 +367,7 @@ class KarlaGUI():
         gc.collect()
 
 def main():
-    karla_gui: KarlaGUI = KarlaGUI()
-    karla_gui.run()
-    print(f"### main: All done.")
+    pass
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,290 @@
+{
+  "story_title": "Ghost Sugar Station",
+  "synopsis": "In this retrofuturistic atompunk sci-fi comedy, idealistic academy graduate Leda Quinn arrives at a remote corporate exomicrobiology station expecting frontier science and finds a barely supervised workplace circus instead. Her assigned mentor, the smug and weirdly protective junior science officer Rook Vantas, pulls her into his illegal side hustle: cooking and dealing a dangerous alien-derived party drug called Ghost Sugar to the crew. As audits, overdoses, petty blackmail, morale initiatives, and chemically enhanced disasters pile up, Leda navigates a cast of spectacularly unwell coworkers, a messy bond with Rook that mixes exploitation and affection, and a corporate system that rewards whatever keeps the paperwork pretty. The story is dialogue-driven, aggressively funny, and adult in content, with Leda's arc bending from earnest idealism toward hard-earned cynicism without losing the chaotic comic energy.",
+  "player_character": {
+    "character_data": {
+      "uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+      "name": "Leda Quinn",
+      "portrait_image_prompt": "young woman in her early 20s, intelligent eyes, neat dark bob haircut, earnest expression, slim build, crisp retrofuturistic academy science uniform with a white collar and practical insignia, posture that is formal and slightly nervous",
+      "dialogue_examples": [
+        "I came here to map alien microbial ecologies, not explain why the freezer smells like nightclub regret.",
+        "There has to be a procedure for this. A real one. Preferably one that doesn't end in prison.",
+        "I'm not helping you commit a felony; I'm just... temporarily standing near the felony.",
+        "Is everyone on this station like this, or did I arrive during a gas leak?"
+      ]
+    }
+  },
+  "non_player_characters": [
+    {
+      "character_data": {
+        "uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+        "name": "Rook Vantas",
+        "portrait_image_prompt": "lean man in his late 20s, sharp features, messy black hair slicked back badly, half-lidded tired eyes, crooked grin, light stubble, rumpled lab coat over a retro station jumpsuit, posture of lazy confidence",
+        "dialogue_examples": [
+          "Relax, rookie. If it were truly illegal, corporate would've filed the right paperwork first.",
+          "I'm not corrupt, Leda, I'm creatively underfunded.",
+          "You have a very honest face. It's either going to save us or ruin my whole week.",
+          "If I didn't like you, I would've let security blame this on you hours ago."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+        "name": "Helene Wren",
+        "portrait_image_prompt": "middle-aged woman with severe cheekbones, immaculate silver-black coiffed hair, thin cat-eye glasses, tight corporate smile, tailored atompunk executive suit, rigidly composed posture",
+        "dialogue_examples": [
+          "There is no crisis, only unauthorized narrative.",
+          "I need this station to look productive, sober, and ideally profitable, in that order.",
+          "Please stop using the phrase 'alien rave mold' in official correspondence.",
+          "Morale is a resource, and I will requisition it if I must."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+        "name": "Marisol \"Mags\" Ortega",
+        "portrait_image_prompt": "broad-shouldered woman in her 30s, medium-dark skin, cropped curls, grease-smudged coveralls, heavy utility belt, strong forearms, skeptical expression, practical no-nonsense stance",
+        "dialogue_examples": [
+          "I can get you anything except innocence, and even that depends on shipping delays.",
+          "The station runs on duct tape, favors, and lies that are almost true.",
+          "If Rook says 'tiny harmless errand,' inventory goes missing and somebody hallucinates teeth.",
+          "You seem nice. Fix that before it gets expensive."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "496bea19-d2af-44d2-9286-aed9dbe34019",
+        "name": "Pruitt Vale",
+        "portrait_image_prompt": "lanky man in his 40s, pale complexion, anxious eyes, precise side-parted hair, narrow mustache, overtidy pastel compliance uniform, clipped posture, strained smile",
+        "dialogue_examples": [
+          "I'm not accusing anyone of misconduct; I'm just circulating a concern-shaped memorandum.",
+          "If this form is unsigned, the disaster becomes unofficial, which is frankly worse.",
+          "I support transparency, provided it passes through three approvals and becomes meaningless.",
+          "I do not enjoy blackmail. I enjoy leverage with compliance options."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e15303bd-fbfb-4ee5-9f89-416c0e661b87",
+        "name": "Jax Ketter",
+        "portrait_image_prompt": "tall muscular man in his 30s, square jaw, buzz cut, handsome in a slightly foolish way, security uniform stretched across broad shoulders, mirrored visor pushed up on his forehead, swaggering stance",
+        "dialogue_examples": [
+          "Nobody panics until I say panic. Then we panic tactically.",
+          "Criminal minds hate me because I understand vibes and corridors.",
+          "This station has one dealer, two saboteurs, or a ghost. I'm prepared for all three.",
+          "For the record, I can absolutely conduct an interrogation without flexing. I simply choose not to."
+        ]
+      }
+    },
+    {
+      "character_data": {
+        "uuid": "e6ad8592-cab4-4df2-9800-e38108c9add4",
+        "name": "Sima Roan",
+        "portrait_image_prompt": "gaunt woman in her 30s, sharp nose, tired hooded eyes, asymmetrical haircut with one shaved temple, medical coat hanging loosely over scrubs, deadpan expression, long deft fingers",
+        "dialogue_examples": [
+          "Tell me what was ingested, inhaled, absorbed, or licked, and I can start guessing.",
+          "I became a physician to help people, then I met this station.",
+          "If your pupils are doing that on purpose, we have discovered a new problem.",
+          "Ethics are important. So is keeping the patient from exploding."
+        ]
+      }
+    }
+  ],
+  "locations": [
+    {
+      "location_data": {
+        "uuid": "8518c07f-2852-4e34-a860-71a46b578040",
+        "name": "Docking Ring Arrival Bay",
+        "location_image_prompt": "retrofuturistic space station docking bay with circular blast doors, chrome-and-mint industrial walls, battered luggage trolleys, observation windows facing deep space, corporate propaganda posters, painted floor lines, utilitarian atompunk design"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "cd4eec91-fe06-49ab-9335-be9fae2bbcd3",
+        "name": "Exomicrobiology Wet Lab",
+        "location_image_prompt": "cluttered atompunk exomicrobiology laboratory with analog dials, glass specimen cylinders, bubbling analyzers, sample lockers with hazard labels, stained metal counters, wire racks of research equipment, retro sci-fi control panels"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "ba8dbdfa-7dcc-4de4-a945-2d7a1eeebd11",
+        "name": "Neon Canteen Lounge",
+        "location_image_prompt": "retro-future crew lounge and canteen with vinyl booths, card tables, vending machines, a jukebox-like station intercom, cracked panoramic port window, sticky floor, garish mascot branding, worn chrome trim"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "b24bc776-b113-444e-9c21-80bf6fd8efdb",
+        "name": "Admin Annex",
+        "location_image_prompt": "cramped corporate office corridor on a space station with tiny cubicles, pneumatic mail tubes, filing cabinets, compliance posters, wall calendars, old terminals, stacked forms, humming atompunk bureaucracy aesthetic"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "93bcad8a-af19-4384-afab-ec14d9c23dee",
+        "name": "Station Infirmary",
+        "location_image_prompt": "compact retrofuturistic medbay with reclining diagnostic chair, atomic-age medical monitors, pill dispensers, privacy curtains, stainless cabinets, rolling instrument carts, institutional space station design"
+      }
+    },
+    {
+      "location_data": {
+        "uuid": "62c4dbee-3328-467c-886d-3605f0a65ef4",
+        "name": "Waste Reclamation Deck",
+        "location_image_prompt": "grimy maintenance and reclamation deck with exposed pipes, algae vats, condensers, chemical drums, catwalks, drip pans, industrial service panels, hidden corners suitable for illicit station work"
+      }
+    }
+  ],
+  "intro_scene": {
+    "scene_data": {
+      "uuid": "f4e75714-a7b9-4004-be5a-e1c059b9008c",
+      "scene_name": "intro",
+      "location_uuid": "8518c07f-2852-4e34-a860-71a46b578040",
+      "non_player_character_uuids": [
+        "d4f45107-18dc-493b-87c0-a92e07557d52",
+        "315279c1-8cda-4173-89f0-b12b3349ed51"
+      ],
+      "narrative_summary": "Leda arrives at the remote station expecting serious frontier science and gets a chaotic onboarding from Director Helene Wren and her assigned mentor, Rook Vantas, who immediately reveals that the station is held together by bad policy and worse judgment. Through first-impression dialogue choices, the player establishes Leda's attitude toward authority, rule-breaking, and Rook's unsettling mix of charm, condescension, and protectiveness."
+    }
+  },
+  "act_one": [
+    {
+      "scene_data": {
+        "uuid": "1d468ecf-01ba-439d-a29c-ba23fb352341",
+        "scene_name": "act1_scene1",
+        "location_uuid": "cd4eec91-fe06-49ab-9335-be9fae2bbcd3",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+        ],
+        "narrative_summary": "On her first shift in the wet lab, Leda is introduced to the station's bizarre alien cultures and quickly learns that Rook has been skimming samples for an illegal synthesis project he downplays as 'supplemental research.' When Mags arrives to complain about disappearing equipment, Leda must choose whether to tell the truth, improvise her first lie, or test how much leverage Rook already thinks he has over her."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "c415106b-17d6-4718-95b9-e0627f3f022d",
+        "scene_name": "act1_scene2",
+        "location_uuid": "ba8dbdfa-7dcc-4de4-a945-2d7a1eeebd11",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "496bea19-d2af-44d2-9286-aed9dbe34019",
+          "e15303bd-fbfb-4ee5-9f89-416c0e661b87",
+          "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+        ],
+        "narrative_summary": "Rook drags Leda to the Neon Canteen under the pretense of 'social integration,' but the outing is really a Ghost Sugar distribution round among the station's needy and ridiculous staff. The player navigates branching conversations with customers, skeptics, and pests, deciding whether Leda acts scandalized, complicit, or disturbingly competent at sales."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "6bb78e14-2f80-44fd-a5de-d5292e052edb",
+        "scene_name": "act1_scene3",
+        "location_uuid": "b24bc776-b113-444e-9c21-80bf6fd8efdb",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "315279c1-8cda-4173-89f0-b12b3349ed51",
+          "496bea19-d2af-44d2-9286-aed9dbe34019"
+        ],
+        "narrative_summary": "A petty discrepancy report turns into an absurd compliance review over missing reagents, forcing Leda and Rook to bluff their way past Pruitt while Helene cares only about preserving station optics. The scene sharpens the corporate satire by showing that the bureaucracy is less interested in ethics than in whether the paperwork can be made to agree with itself."
+      }
+    }
+  ],
+  "act_two": [
+    {
+      "scene_data": {
+        "uuid": "a6aeec47-d472-4550-adc0-30e382eb774a",
+        "scene_name": "act2_scene1",
+        "location_uuid": "93bcad8a-af19-4384-afab-ec14d9c23dee",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "e6ad8592-cab4-4df2-9800-e38108c9add4"
+        ],
+        "narrative_summary": "After a crew member has a spectacularly bad reaction to Ghost Sugar, the infirmary fills with rumors, symptoms, and pathetic excuses. Sima corners Leda for honest answers while Rook minimizes the danger and leans on their growing bond, pushing the player to decide whether guilt makes Leda pull back or dig in deeper."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "01bbbf43-efea-4c82-b286-283cfb86158d",
+        "scene_name": "act2_scene2",
+        "location_uuid": "62c4dbee-3328-467c-886d-3605f0a65ef4",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+          "e15303bd-fbfb-4ee5-9f89-416c0e661b87"
+        ],
+        "narrative_summary": "With the wet lab under scrutiny and demand increasing, Rook relocates production to the waste reclamation deck and ropes Mags into laundering supplies through station maintenance. Jax begins a theatrical investigation into the station's sudden wave of bizarre behavior, and Leda must manage suspicion, damage control, and increasingly personal arguments with Rook about how reckless this has become."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "6aab4568-f799-46af-bea1-162242be15de",
+        "scene_name": "act2_scene3",
+        "location_uuid": "ba8dbdfa-7dcc-4de4-a945-2d7a1eeebd11",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "315279c1-8cda-4173-89f0-b12b3349ed51",
+          "496bea19-d2af-44d2-9286-aed9dbe34019",
+          "e15303bd-fbfb-4ee5-9f89-416c0e661b87"
+        ],
+        "narrative_summary": "Helene stages a mandatory morale mixer and remote corporate check-in at the Neon Canteen, only for a contaminated batch of Ghost Sugar to turn the event into a chemically enhanced public-relations catastrophe. In the middle of panic and spin, Leda can protect Rook, help Helene rewrite reality, or use the chaos to gain leverage over the station's most compromised authority figures."
+      }
+    }
+  ],
+  "act_three": [
+    {
+      "scene_data": {
+        "uuid": "b7e29117-f163-4109-95c7-493ee0deb860",
+        "scene_name": "act3_scene1",
+        "location_uuid": "cd4eec91-fe06-49ab-9335-be9fae2bbcd3",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "e6ad8592-cab4-4df2-9800-e38108c9add4"
+        ],
+        "narrative_summary": "Supply shortages, corporate pressure, and mounting station dependency leave Rook desperate enough to propose using a quarantined alien strain for a stronger and riskier version of Ghost Sugar. Leda's scientific talent becomes essential, and the player defines whether she still thinks she is being dragged along or finally admits she has become an active architect of the scheme."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "cbae3a5f-baff-49e9-adad-776d470fa0ce",
+        "scene_name": "act3_scene2",
+        "location_uuid": "8518c07f-2852-4e34-a860-71a46b578040",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "315279c1-8cda-4173-89f0-b12b3349ed51",
+          "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+          "496bea19-d2af-44d2-9286-aed9dbe34019",
+          "e15303bd-fbfb-4ee5-9f89-416c0e661b87"
+        ],
+        "narrative_summary": "A long-delayed corporate courier docks just as accusations, blackmail, and missing evidence converge in the arrival bay. Different crew members try to recruit Leda into sacrificing someone else, and she learns in plain terms that the corporation will happily bury the truth as long as a plausible report and a profitable chain of command survive."
+      }
+    },
+    {
+      "scene_data": {
+        "uuid": "4d84e97e-e67a-457a-9d99-855bf53c7ebe",
+        "scene_name": "act3_scene3",
+        "location_uuid": "62c4dbee-3328-467c-886d-3605f0a65ef4",
+        "non_player_character_uuids": [
+          "d4f45107-18dc-493b-87c0-a92e07557d52",
+          "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+          "e15303bd-fbfb-4ee5-9f89-416c0e661b87",
+          "e6ad8592-cab4-4df2-9800-e38108c9add4"
+        ],
+        "narrative_summary": "The new batch triggers a station-wide blackout and euphoric cascade of sabotage, exposing the whole operation and driving Leda and Rook into a final confrontation at their makeshift cook site. Their messy relationship peaks here, with the player's choices determining whether Leda saves him, sells him out, outplays him, or transforms their disaster into a colder, more mutual form of partnership."
+      }
+    }
+  ],
+  "outro_scene": {
+    "scene_data": {
+      "uuid": "e412c865-77e9-4117-8d89-b665067b8efd",
+      "scene_name": "outro",
+      "location_uuid": "8518c07f-2852-4e34-a860-71a46b578040",
+      "non_player_character_uuids": [
+        "d4f45107-18dc-493b-87c0-a92e07557d52",
+        "315279c1-8cda-4173-89f0-b12b3349ed51"
+      ],
+      "narrative_summary": "In the aftermath, corporate headquarters classifies the scandal as a productivity incident, redistributes blame according to convenience, and keeps the station running because shutting it down would cost money. Leda's final exchange with Rook, under Helene's polished damage control, reveals how much of her academy idealism has survived and how much has curdled into frontier pragmatism, leaving her future morally compromised and darkly funny rather than neatly resolved."
+    }
+  }
+}

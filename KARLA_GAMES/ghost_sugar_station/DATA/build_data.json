@@ -1,0 +1,1609 @@
+{
+  "art_assets": {
+    "character_portrait_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/b8076494-b958-4049-bde7-d26e4de5afba.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/d4f45107-18dc-493b-87c0-a92e07557d52.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/315279c1-8cda-4173-89f0-b12b3349ed51.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/e6991b20-4c14-432f-9ea0-936c151b9f5b.png"
+    ],
+    "scene_background_paths": [
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/bg 8518c07f-2852-4e34-a860-71a46b578040.png",
+      "/mnt/c/SchoolRepos/PYTHON/KARLA_RECOVER/KARLA_PROD/KARLA_GAMES/ghost_sugar_station/IMAGES/bg cd4eec91-fe06-49ab-9335-be9fae2bbcd3.png"
+    ]
+  },
+  "dialogue_scenes": [
+    {
+      "scene_uuid": "f4e75714-a7b9-4004-be5a-e1c059b9008c",
+      "scene_name": "intro",
+      "location_uuid": "8518c07f-2852-4e34-a860-71a46b578040",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "intro_beat_01",
+          "source_purpose": "Establish Leda's expectations, the station's shabby reality, and the comedy of immediate disillusionment.",
+          "source_exit_state": "Leda is already suppressing disappointment and preparing to rely on procedure.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "8518c07f-2852-4e34-a860-71a46b578040"
+            },
+            {
+              "type": "narration",
+              "text": "The Docking Ring Arrival Bay looks like a corporate brochure that lost a fight: flickering welcome signage, dented cargo tugs, and a heroic poster promising FRONTIER EXCELLENCE over a wall patched three different colors."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "Okay. Cosmetic decay. Not operational decay. Those are still different categories."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "narration",
+              "text": "Leda smooths her academy collar, shoulders her case, and turns toward the nearest terminal still pretending to follow procedure."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "intro_beat_02",
+          "source_purpose": "Introduce Helene as the face of corporate authority and let the player define Leda's instinctive attitude toward that authority.",
+          "source_exit_state": "Helene forms an early read on Leda as compliant, earnest, or potentially troublesome, while keeping her corporate smile fixed.",
+          "events": [
+            {
+              "type": "narration",
+              "text": "A brisk heel-click announces authority several seconds before the woman attached to it arrives."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "Leda Quinn. Welcome to Ghost Sugar Station. Please disregard the arrival bay's transitional aesthetic; maintenance is resolving a minor infrastructure presentation issue."
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "I'm Director Helene Wren. We value adaptability, discretion, and the good sense not to confuse visible wear with institutional weakness."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_02_choice_01",
+              "prompt": "How does Leda respond to Helene's glossy version of the station's condition?",
+              "options": [
+                {
+                  "option_id": "deferential",
+                  "option_text": "Answer professionally and defer to chain of command.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Understood, Director. I'm ready to follow station procedure and make myself useful."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "text": "Excellent. A respect for chain of command is tremendously calming."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "earnest",
+                  "option_text": "Respond with sincere enthusiasm for the science.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "happy",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "I can work around the scenery. I came here to do real science."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "text": "How refreshing. Preserve that sincerity until the station teaches you budgeting."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "skeptical",
+                  "option_text": "Test the limits with dry skepticism.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Is \"presentation issue\" the official term for the sparks, or is that management poetry?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "character_expression": "happy",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+                      "text": "A lively wit. Use it judiciously; candor has a habit of becoming paperwork."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "intro_beat_03",
+          "source_purpose": "Introduce Rook's voice, chemistry with Leda, and his immediate habit of blurring mentorship with provocation.",
+          "source_exit_state": "Rook becomes amused, challenged, or intrigued by Leda, and their core dynamic is set in motion.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "narration",
+              "text": "A side hatch bangs open. A man in a rumpled lab coat strolls in late, carrying a tablet like it personally disappointed him."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Did I miss the inspirational portion, or are we still pretending the bay always smells like warm sealant?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "Mr. Vantas. Since you have elected to appear, you will complete Ms. Quinn's onboarding."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Rook Vantas. Junior science officer, occasional miracle worker, and apparently your mentor."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "You look very academy. We'll have to see what survives transit."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_03_choice_01",
+              "prompt": "How does Leda answer Rook's smug, overly familiar introduction?",
+              "options": [
+                {
+                  "option_id": "formal",
+                  "option_text": "Keep it formal and professional.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Junior Science Officer Vantas. I'd prefer to keep this professional."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Formal already. Good. Makes the collapse into first-name terms more dramatic."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "sharp",
+                  "option_text": "Push back and demand something useful.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "If you're mentoring me, start with one useful sentence and work up to being irritating."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Oh, excellent. Spine. That'll keep this interesting."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "banter",
+                  "option_text": "Match his banter and play along.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "cocky",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Tragic for both of us. Do you come with a manual, or just warnings?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "No manual. Warnings, yes. Usually right after the damage."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "intro_beat_04",
+          "source_purpose": "Show the station's broken operating logic by contrasting official policy with lived reality.",
+          "source_exit_state": "Leda understands that official procedure and practical survival are already in conflict.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "Orientation is simple. Log every incident, observe all safety postings, and escalate deviations through appropriate channels."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "narration",
+              "text": "Behind her, a luggage drone bumps a bulkhead, drops three unsigned requisition forms, and continues smoking in a straight line."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Translation: if something breaks, first determine who'd be embarrassed by the truth."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "happy",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "Productivity here depends on initiative within approved parameters."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "narration",
+              "text": "A ceiling strip flickers twice, dies completely, then returns only over the corporate mission statement."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Translation: approved parameters expand and contract around whoever's filing the report."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "So there are two stations. The official one, and the one people actually survive inside."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "There is one station, Ms. Quinn. Its administration simply requires interpretive skill."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "intro_beat_05",
+          "source_purpose": "Let the player define Leda's first stance toward rule-breaking once Rook drops the public act.",
+          "source_exit_state": "Rook recalibrates Leda as a liability, a cautious survivor, or someone with unsettling potential.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "narration",
+              "text": "An intercom chirps Helene's code, followed by the phrase \"containment glass\" and a pause too diplomatic to include the screaming."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51",
+              "text": "Mr. Vantas will finish your orientation. Do keep it aligned with policy, or at least printable."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "315279c1-8cda-4173-89f0-b12b3349ed51"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Printable, yes. Lawful is aspirational."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "narration",
+              "text": "Helene departs at executive speed, already composing a better version of whatever just happened."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "All right. Real version."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "This station runs on favors, omissions, and knowing when a follow-up question is basically self-harm."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "If you try to correct every violation before lunch, you'll die tired and nobody will thank you."
+            },
+            {
+              "type": "choice",
+              "choice_id": "intro_beat_05_choice_01",
+              "prompt": "When Rook says the station survives on selective blindness, how does Leda respond?",
+              "options": [
+                {
+                  "option_id": "rules",
+                  "option_text": "Insist that rules exist for a reason.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "angry",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Rules exist for a reason. If procedure's being ignored, what is the proper process?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "The proper process is deciding whether a report fixes the problem or just volunteers your name for it."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "cautious",
+                  "option_text": "Agree to keep your head down for now.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "sad",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "I'm not endorsing that. I'm saying I'd like to survive my first day before I start objecting on principle."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Sensibly put. Caution is rarer here than oxygen."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "probe",
+                  "option_text": "Press for specifics about what gets ignored.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "confused",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Selective blindness to what, exactly? Bad paperwork? Bad science? Or worse?"
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "cocky",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Now you're asking useful questions. We'll start with paperwork and graduate into the worse."
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "intro_beat_06",
+          "source_purpose": "Land the scene turn by sending Leda into the station under Rook's guidance and Helene's warped institutional logic.",
+          "source_exit_state": "Leda follows Rook into the station, professionally composed on the surface and already morally off-balance underneath.",
+          "events": [
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Come on, academy. Wet lab's inward. Avoid the blue handrail unless you want a rash and a meeting."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "That sounds like a lesson someone had to learn the hard way."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Second lesson: if someone says \"temporary workaround,\" ask how many years it's been temporary."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "And the first lesson?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Nobody here survives by being the first person to say the quiet part out loud."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Stick with me and you'll at least learn which truths are expensive."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "narration",
+              "text": "Leda follows him into the station with her posture intact, her confidence dented, and the uneasy sense that her first real orientation has nothing to do with science."
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "Leda leaves the arrival bay outwardly professional but already off-balance, caught between Helene's optics-first authority and Rook's seductive cynicism about how the station really works.",
+      "notes_and_work_product_summary": "Six source beats preserved in order. Interactive choices in beats 2, 3, and 5 establish Leda's first impressions of authority, Rook, and station rule-breaking. Portrait flow keeps one visible speaker at a time, with narration used for environmental comedy and transitions."
+    },
+    {
+      "scene_uuid": "1d468ecf-01ba-439d-a29c-ba23fb352341",
+      "scene_name": "act1_scene1",
+      "location_uuid": "cd4eec91-fe06-49ab-9335-be9fae2bbcd3",
+      "dialogue_beats": [
+        {
+          "beat_index": 1,
+          "beat_name": "act1_scene1_beat_01",
+          "source_purpose": "Establish the wet lab's chaotic tone and Rook's boundary-testing mentorship style.",
+          "source_exit_state": "Leda realizes the station does real science inside a work culture that treats procedure as optional décor.",
+          "events": [
+            {
+              "type": "set_background",
+              "location_uuid": "cd4eec91-fe06-49ab-9335-be9fae2bbcd3"
+            },
+            {
+              "type": "narration",
+              "text": "The wet lab hums with incubators, stained counters, and warning placards half-obscured by old coffee rings."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Welcome to exomicrobiology. If anything in here blinks at you, blink second."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "Is that the official safety briefing?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "No, this is orientation. The safety briefing is a laminated card nobody reads until they're on fire."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "First shift with me is simple: learn the lab, don't panic, and try not to narc on the local culture."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "You make procedure sound like a decorative theme."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Around here it mostly is."
+            }
+          ]
+        },
+        {
+          "beat_index": 2,
+          "beat_name": "act1_scene1_beat_02",
+          "source_purpose": "Showcase the bizarre alien biology and let Leda demonstrate real competence.",
+          "source_exit_state": "Rook starts seeing Leda as useful rather than merely new.",
+          "events": [
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Counter three has a filter-feeding mat that sulks when you sing near it."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "And this sweet-smelling beauty sheds crystals when it's stressed. Very dramatic organism."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "Its chamber seal is flexing. If you keep agitating it, you'll get crystals and a contamination bloom."
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "The shimmer at the rim isn't part of the growth pattern. Someone's been opening it too often."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "surprised",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Well, hell. You were supposed to miss that for at least a day."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "You actually know what you're looking at."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "happy",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "I did spend four years earning the uniform."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Good. I can work with competence."
+            }
+          ]
+        },
+        {
+          "beat_index": 3,
+          "beat_name": "act1_scene1_beat_03",
+          "source_purpose": "Seed suspicion by linking the strange cultures to subtle inventory fraud.",
+          "source_exit_state": "Leda has enough evidence to know something off-book is happening around Rook's bench.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "narration",
+              "text": "At the bench terminal, the numbers go wrong before the handwriting does: two vials logged full sit stubbornly half-empty."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "Either your cultures evaporate selectively, or these records are lying to me."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Frontier accounting. Everything shrinks under stress."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "narration",
+              "text": "Under Rook's station, a compact heating rig is tucked behind solvent packs—portable, polished, and absolutely not station issue."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "Does frontier accounting also explain the illegal-looking machine under your bench?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Illegal-looking is an aesthetic, not a category."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Call it a side setup."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "neutral",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "For what, exactly?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Something small. Something useful. Something easier to discuss when you like me more."
+            }
+          ]
+        },
+        {
+          "beat_index": 4,
+          "beat_name": "act1_scene1_beat_04",
+          "source_purpose": "Reveal Rook's illegal side project and define the manipulative intimacy of his pitch.",
+          "source_exit_state": "The moral stakes of Leda's assignment become impossible to ignore.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "narration",
+              "text": "Before she can press further, Rook palms a capillary tube, lifts a glittering trace from the crystal culture, and corrects the bench log in one smooth motion."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "angry",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "That is not a side setup. That's theft with handwriting."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "cocky",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Please. Theft is such an ugly word for supplemental research."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Tiny volumes. Private synthesis."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "People call it Ghost Sugar when they're being tacky."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "confused",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "You're making a drug out of stress crystals in a station lab."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "I'm making rent, favors, and crew morale out of material corporate barely notices."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "You keep quiet, I keep teaching you."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "That's adulthood on this rock."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "character_expression": "sad",
+              "screen_position": "left"
+            },
+            {
+              "type": "line",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+              "text": "You say that like I'm supposed to find it reassuring."
+            }
+          ]
+        },
+        {
+          "beat_index": 5,
+          "beat_name": "act1_scene1_beat_05",
+          "source_purpose": "Force Leda's private dilemma into a public pressure situation through Mags's arrival.",
+          "source_exit_state": "Leda is forced to declare herself before she has fully processed what she has learned.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+            },
+            {
+              "type": "narration",
+              "text": "The hatch slams open hard enough to rattle the specimen lights."
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "text": "Rook. My filters are gone, my spare seals are gone, and somebody walked off with a heatproof stir plate the size of a confession."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "happy",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Mags, good morning to you too."
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Have you ruled out sabotage by goblins, entropy, or maintenance folklore?"
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "text": "If you say goblins again, I'm invoicing them through your lungs."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "We're doing legitimate bench work."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "character_expression": "neutral",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "text": "Uh-huh."
+            },
+            {
+              "type": "line",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "text": "Rookie, you look like you just watched the lab equipment confess. What is actually going on over here?"
+            }
+          ]
+        },
+        {
+          "beat_index": 6,
+          "beat_name": "act1_scene1_beat_06",
+          "source_purpose": "Make Leda's first corruption choice explicit and establish the relationship vector for her and Rook.",
+          "source_exit_state": "By the end of her first shift, Leda has chosen an angle inside Rook's scheme, Mags is left suspicious or newly informed, and the secret now binds the scene's relationships instead of merely threatening them.",
+          "events": [
+            {
+              "type": "hide_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "character_expression": "neutral",
+              "screen_position": "right"
+            },
+            {
+              "type": "line",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+              "text": "Careful, Leda. First reports have a way of becoming biographies."
+            },
+            {
+              "type": "hide_character",
+              "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+            },
+            {
+              "type": "show_character",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "character_expression": "angry",
+              "screen_position": "center"
+            },
+            {
+              "type": "line",
+              "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+              "text": "And missing gear has a way of becoming my problem. Answer the question."
+            },
+            {
+              "type": "choice",
+              "choice_id": "act1_scene1_beat_06_choice_01",
+              "prompt": "When Mags asks about the missing gear and Rook's off-book work, how does Leda answer?",
+              "options": [
+                {
+                  "option_id": "tell_truth",
+                  "option_text": "Tell Mags exactly what you saw.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "He's skimming the crystal culture and falsifying the log."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Your missing gear is under his bench."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "Thought so."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "Off-record, for today. The stir plate comes back clean and immediately."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "surprised",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "You really did choose the difficult version."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Good to know your honesty has teeth."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "cover_for_rook",
+                  "option_text": "Cover for Rook with a lab excuse.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Bench recalibration. He borrowed maintenance parts because the requisition queue moves slower than mold."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "Nothing is stolen. It's just unofficially in one place."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "That is the most academy lie I've heard all quarter."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "Fine. Keep your mystery pile. When my stir plate comes back warped, I charge interest."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "happy",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "See? You're adapting beautifully."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "narration",
+                      "text": "The cover story lands in Leda's mouth like solvent and sugar."
+                    }
+                  ]
+                },
+                {
+                  "option_id": "test_leverage",
+                  "option_text": "Force Rook to explain himself.",
+                  "branch_events": [
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "character_expression": "neutral",
+                      "screen_position": "left"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "I think Rook should answer that."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba",
+                      "text": "He seems to have a private doctrine on borrowing station property."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "b8076494-b958-4049-bde7-d26e4de5afba"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "surprised",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Private doctrine. Brutal."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "Mags, you'll get every piece back intact, two maintenance favors, and first refusal on my next truly clean solvent batch."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "character_expression": "neutral",
+                      "screen_position": "center"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "There it is. Not innocence. Negotiation."
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b",
+                      "text": "Fine. Now I know what you owe, and I know the rookie's already in the room when it comes due."
+                    },
+                    {
+                      "type": "hide_character",
+                      "character_uuid": "e6991b20-4c14-432f-9ea0-936c151b9f5b"
+                    },
+                    {
+                      "type": "show_character",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "character_expression": "neutral",
+                      "screen_position": "right"
+                    },
+                    {
+                      "type": "line",
+                      "character_uuid": "d4f45107-18dc-493b-87c0-a92e07557d52",
+                      "text": "You do enjoy testing load-bearing walls, don't you?"
+                    }
+                  ]
+                }
+              ],
+              "ends_beat": true
+            }
+          ]
+        }
+      ],
+      "scene_exit_state": "By the end of her first wet-lab shift, Leda has either exposed, covered, or leveraged Rook's off-book Ghost Sugar setup; Mags leaves suspicious or newly informed, and the shared secret now binds all three relationships.",
+      "notes_and_work_product_summary": "Adapted all 6 source beats in order. Beat 6 contains one choice with three short local branches aligned to truth, cover, and leverage outcomes. Portrait staging keeps one visible speaker at a time and clears portraits before narration."
+    }
+  ],
+  "gui_colors": {
+    "accent_color": {
+      "r": 103,
+      "g": 231,
+      "b": 198,
+      "a": 255,
+      "hex_string": "#67E7C6"
+    },
+    "idle_color": {
+      "r": 214,
+      "g": 226,
+      "b": 236,
+      "a": 255,
+      "hex_string": "#D6E2EC"
+    },
+    "idle_small_color": {
+      "r": 169,
+      "g": 184,
+      "b": 196,
+      "a": 255,
+      "hex_string": "#A9B8C4"
+    },
+    "hover_color": {
+      "r": 255,
+      "g": 168,
+      "b": 92,
+      "a": 255,
+      "hex_string": "#FFA85C"
+    },
+    "selected_color": {
+      "r": 127,
+      "g": 197,
+      "b": 255,
+      "a": 255,
+      "hex_string": "#7FC5FF"
+    },
+    "insensitive_color": {
+      "r": 102,
+      "g": 111,
+      "b": 120,
+      "a": 255,
+      "hex_string": "#666F78"
+    },
+    "muted_color": {
+      "r": 54,
+      "g": 62,
+      "b": 72,
+      "a": 255,
+      "hex_string": "#363E48"
+    },
+    "hover_muted_color": {
+      "r": 77,
+      "g": 88,
+      "b": 102,
+      "a": 255,
+      "hex_string": "#4D5866"
+    },
+    "text_color": {
+      "r": 240,
+      "g": 244,
+      "b": 248,
+      "a": 255,
+      "hex_string": "#F0F4F8"
+    },
+    "interface_text_color": {
+      "r": 248,
+      "g": 238,
+      "b": 220,
+      "a": 255,
+      "hex_string": "#F8EEDC"
+    },
+    "reasoning": "I chose a cool retrofuturistic base of chrome-blue and soft off-white to fit the atompunk station and keep dialogue highly readable. The teal accent echoes lab instrumentation and Ghost Sugar’s eerie synthetic vibe, while the warm orange hover color adds comic-energy contrast and helps interactive elements feel lively. Muted slate tones support the industrial UI, and the selected blue keeps active states clear without clashing with the station’s mint-chrome aesthetic. The text colors stay bright and slightly desaturated for strong contrast against dark panels, with a faintly warm interface text tone to match the showy corporate propaganda and lounge neon."
+  },
+  "character_dict": {
+    "b8076494-b958-4049-bde7-d26e4de5afba": "Leda Quinn",
+    "d4f45107-18dc-493b-87c0-a92e07557d52": "Rook Vantas",
+    "315279c1-8cda-4173-89f0-b12b3349ed51": "Helene Wren",
+    "e6991b20-4c14-432f-9ea0-936c151b9f5b": "Marisol \"Mags\" Ortega",
+    "496bea19-d2af-44d2-9286-aed9dbe34019": "Pruitt Vale",
+    "e15303bd-fbfb-4ee5-9f89-416c0e661b87": "Jax Ketter",
+    "e6ad8592-cab4-4df2-9800-e38108c9add4": "Sima Roan"
+  }
+}

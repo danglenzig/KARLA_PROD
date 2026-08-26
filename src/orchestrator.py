@@ -1,5 +1,10 @@
 # src/orchestrator.py
 
+"""
+--DEPRECATED--
+  Program entrypoint is now src/karla_main/karla_main.py
+"""
+
 from dotenv import load_dotenv
 from pydantic import BaseModel # this is what provides the validation magic
 import asyncio

@@ -163,6 +163,7 @@ class KarlaMain():
             raise ValueError("### KarlaMain: Can't generate dialogue scenes because creative_data is None")
 
         self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: creating dialogues and branching...")
+        # ...
 
 
 

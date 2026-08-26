@@ -88,9 +88,12 @@ class KarlaMain():
         self.nd_output: NarrativeDesignOutput | None = None
         self.nd_validation: NarrativeDesignContentValidationResult | None = None
         self.creative_data: DemoCreativeData | None = None
+        self.dialogue_scene_lists: list[DialogueScene] | None = None
+        self.build_data: DemoBuildData | None = None
+        self.script_path: str = ""
         self.callback_dict: dict[str, callable] = {
             'set_story_concept': self.set_story_concept
-        }
+        } # currently contains only one thing, but want to keep it as dict for future flexibility
 
     async def get_narrative_design(self):
         if not self.story_concept:
@@ -104,6 +107,7 @@ class KarlaMain():
         self.nd_validation = get_nd_spec_validation_results(self.nd_output)
         if self.nd_validation.has_problems:
             raise ValueError(f"### KarlaMain: NarrativeDesignAgent output content validation failed:\n\n{self.nd_validation.comments}")
+        self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: narrative design output validated. writing jsons...")
         print("### KarlaMain: NarrativeDesignAgent output content validated")
 
         self.game_title = to_snake(self.nd_output.story_title).replace(" ","")
@@ -122,32 +126,33 @@ class KarlaMain():
         asyncio.run(self.get_art_assets_and_scene_beats())
 
     async def get_art_assets_and_scene_beats(self):
-        if not self. nd_output:
+        if not self.nd_output:
             raise ValueError("### KarlaMain: Can't generate art assets because nd_output is None")
 
         self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: gathering art assets and scene beats...")
 
         stage_three_coroutines = [
             ImageGenerator().get_demo_manifest(self.game_title, self.nd_output), # gets art assets for intro and act1 scene 1 only
-            SceneBeatAgent().run_workflow(self.nd_output, self.nd_output.intro_scene.scene_data.uuid),
-            SceneBeatAgent().run_workflow(self.nd_output, self.nd_output.act_one[0].scene_data.uuid),
+            SceneBeatAgent().run_workflow(self.nd_output, self.nd_output.intro_scene.scene_data.uuid), # intro beats
+            SceneBeatAgent().run_workflow(self.nd_output, self.nd_output.act_one[0].scene_data.uuid), # scene 1 beats
             GuiColorAgent().run_workflow(self.nd_output)
         ]
 
-        stage_three_gather = asyncio.gather(*stage_three_coroutines)
+        stage_three_gather   = asyncio.gather(*stage_three_coroutines)
         stage_three_products = await stage_three_gather
-        art_manifest: ArtAssetManifest = stage_three_products[0]
-        intro_beats: SceneBeatSheet = stage_three_products[1]
-        first_scene_beats: SceneBeatSheet = stage_three_products[2]
-        color_scheme: GuiColorScheme = stage_three_products[3]
+
+        art_manifest: ArtAssetManifest        = stage_three_products[0]
+        intro_beats: SceneBeatSheet           = stage_three_products[1]
+        first_scene_beats: SceneBeatSheet     = stage_three_products[2]
+        color_scheme: GuiColorScheme          = stage_three_products[3]
         beat_sheet_list: list[SceneBeatSheet] = [intro_beats, first_scene_beats]
 
         self.creative_data = DemoCreativeData(
-            concept=self.story_concept,
-            narrative_design_spec=self.nd_output,
-            art_assets=art_manifest,
-            beat_sheets=beat_sheet_list,
-            color_scheme=color_scheme
+            concept               = self.story_concept,
+            narrative_design_spec = self.nd_output,
+            art_assets            = art_manifest,
+            beat_sheets           = beat_sheet_list,
+            color_scheme          = color_scheme
         )
 
         await write_json_data(self.game_title, self.creative_data.model_dump_json(indent=2), "creative_data.json")
@@ -163,26 +168,81 @@ class KarlaMain():
             raise ValueError("### KarlaMain: Can't generate dialogue scenes because creative_data is None")
 
         self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: creating dialogues and branching...")
-        # ...
 
+        stage_four_coroutines = [
+            DialogueAgent().run_scene_workflow(self.nd_output, self.creative_data.beat_sheets[0]), # intro
+            DialogueAgent().run_scene_workflow(self.nd_output, self.creative_data.beat_sheets[1]), # act1 scene1
+        ]
+
+        stage_four_gather         = asyncio.gather(*stage_four_coroutines)
+        self.dialogue_scene_lists = await stage_four_gather
+
+        #========================
+        # Stage 4 is now complete
+        #========================
+
+        asyncio.run(self.build_renpy_assets())
+
+    async def build_renpy_assets(self):
+        if not self.dialogue_scene_lists or len(self.dialogue_scene_lists <= 0):
+            raise ValueError("### KarlaMain: Can't generate renpy assets because dialogue_scene_lists is None or empty")
+
+        self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: creating .rpy scripts...")
+
+        char_dict: dict[str,str] = {}
+        character_catalogue = self.nd_output.get_character_catalog()
+        for id in character_catalogue:
+            char_dict[id] = character_catalogue[id]['name']
+
+        self.build_data = DemoBuildData(
+            art_assets      = self.creative_data.art_assets,
+            dialogue_scenes = self.dialogue_scene_lists,
+            gui_colors      = self.creative_data.color_scheme,
+            character_dict  = char_dict
+        )
+
+        await write_json_data(self.game_title, self.build_data.model_dump_json(indent=2), 'build_data.json')
+        script_rpy = await RenPyScriptAssembler().run_workflow(self.build_data)
+        self.script_path: str = await write_rpy_script(self.game_title, script_rpy, 'script.rpy')
+
+        #========================
+        # Stage 5 is now complete
+        #========================
+
+        asyncio.run(self.publish_renpy_game())
+
+    async def publish_renpy_game(self):
+        if not self.build_data:
+            raise ValueError("### KarlaMain: Can't publish because buiöd_data is None")
+
+        self.karla_gui.window.write_event_value("-STATUS_UPDATE-", "Status: publishing Ren'Py game...")
+
+        publish_success: bool = await RenPyPublisher().run_workflow(
+            game_title       = self.game_title,
+            script_file_path = self.script_path,
+            art_manifest     = self.creative_data.art_assets
+        )
+
+        if not publish_success:
+            raise RuntimeError("### KarlaMain: Publishing stage failed")
+        
 
 
     def set_story_concept(self, delivered_concept: StoryConcept):
         #========================
         # Stage 1 is now complete
         #========================
-        if StoryConcept:
+
+        if delivered_concept:
             self.story_concept = delivered_concept
             print(f"""
 ### KarlaMain: Story concept is set:
 {self.story_concept.model_dump_json(indent = 2)}
 """)
-            
-
         #=================================================
         # Kick off Stage 2: Generate narrative design spec
         #=================================================
-        # This function is not async, so use asyncio.run(...), versus await
+        # This function is not async, so use asyncio.run(...), versus await (and so on down the pipeline...)
         asyncio.run(self.get_narrative_design(self.story_concept))
 
 

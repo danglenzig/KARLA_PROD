@@ -344,7 +344,7 @@ class KarlaGUI():
             elif event == EVENT_WORK_ERROR:
                 self.handle_error(values[event])
 
-            elif event == "-STATUS_UPDATE":
+            elif event == "-STATUS_UPDATE-":
                 self.handle_status_update(values[event])
         
         # Best practice from the PySimpleGUI docs

@@ -276,12 +276,15 @@ class KarlaGUI():
         # The summary is ready
         self.set_busy(False, "concept summary ready")
 
-        # For now, let's just show the result in a popup
-        # TODO: Later, we'll trigger the whole downstream content pipeline
+        # disable further interaction
+        self.window["Submit"].update(disabled=True)
+        self.window["-INPUT-"].update(disabled=True)
+
 
         sg.popup_scrolled(
             concept.model_dump_json(indent=2),
             title="Story Concept",
+            #non_blocking=True, # <--let's think about how we want this
             size=(100, 30),
         )
 
@@ -292,7 +295,11 @@ class KarlaGUI():
         # Also unlock the app so the user can try again
         self.set_busy(False, "request failed")
 
-    def run(self) -> None:
+    def handle_status_update(self, status_message: str) -> None:
+        self.window["-STATUS-"].update(status_message)
+
+
+    def run(self, callback_dict: dict[str, callable] | None = None) -> None:
 
         # Kick it off with the initial discovery question
         # This will pop off EVENT_INITIAL_RESPONSE when complete
@@ -329,10 +336,16 @@ class KarlaGUI():
 
             elif event == EVENT_CONCEPT_SUMMARY:
                 concept: StoryConcept = values[event]
+                if callback_dict:
+                    callback_dict['set_story_concept'](concept)
                 self.handle_concept_summary(concept)
+                
 
             elif event == EVENT_WORK_ERROR:
                 self.handle_error(values[event])
+
+            elif event == "-STATUS_UPDATE":
+                self.handle_status_update(values[event])
         
         # Best practice from the PySimpleGUI docs
         # close the app, clean up, and force garbage collection

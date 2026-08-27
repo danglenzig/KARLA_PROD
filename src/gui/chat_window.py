@@ -30,6 +30,7 @@ EVENT_DISCOVERY_RESPONSE = "-DISCOVERY_RESPONSE-"
 EVENT_CONCEPT_SUMMARY = "-CONCEPT_SUMMARY-"
 EVENT_WORK_ERROR = "-WORK_ERROR-"
 EVENT_VN_BUILD_COMPLETE = "-VN_BUILD_COMPLETE-"
+EVENT_QUIT_HANDLED = "-QUIT_HANDLED-"
 
 
 class ChatState(BaseModel):
@@ -296,6 +297,12 @@ class KarlaGUI():
             EVENT_VN_BUILD_COMPLETE
         )
 
+    def notify_quit(self, quit_callable):
+        self.run_async_task(
+            lambda: quit_callable(),
+            EVENT_QUIT_HANDLED
+        )
+
     def handle_error(self, error_message: str) -> None:
         # do this if we get the evant EVENT_WORK_ERROR
         self.append_chat("SYSTEM", f"Error: {error_message}")
@@ -323,6 +330,7 @@ class KarlaGUI():
             # standard exit path
             if event == sg.WINDOW_CLOSED or event == "Quit":
                 break
+                #self.notify_quit(callback_dict['handle_gui_quit']) # <--I'd like to do this instead: let KarlaMain notify permission to quit
 
             #==============================
             # catch user interaction events
@@ -358,6 +366,9 @@ class KarlaGUI():
 
             elif event == "-STATUS_UPDATE-":
                 self.handle_status_update(values[event])
+
+            elif event == EVENT_QUIT_HANDLED:
+                break
         
         # Best practice from the PySimpleGUI docs
         # close the app, clean up, and force garbage collection

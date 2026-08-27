@@ -93,7 +93,8 @@ class KarlaMain():
         self.script_path: str = ""
         self.callback_dict: dict[str, callable] = {
             #'set_story_concept': self.set_story_concept,
-            'build_from_concept': self.build_from_concept
+            'build_from_concept': self.build_from_concept,
+            'handle_gui_quit': self.handle_gui_quit
         }
 
     async def get_narrative_design(self):
@@ -252,6 +253,20 @@ class KarlaMain():
         self.set_story_concept(delivered_concept)
         await self.get_narrative_design()
 
+    async def handle_gui_quit(self):
+        # TODO...
+        # How do I safely and cleanly interrupt any ongoing agent runs?
+        #   If any of the stages are in an "await" state, what happens when
+        #    the gui tries to invoke this callback?
+        # Maybe I can add a state variable "early_quit_requested" (or something like that)
+        #   and then check that before every "await <next thing>" line.
+        #   ^^ that's feasible, but some of these agent runs can take
+        #    minutes.
+        #   And back to the question above: what happens when the gui invokes this
+        #    callback?
+        #   
+        # What to do...?
+        self.karla_gui.window.write_event_value("-QUIT_HANDLED-", "Status: Quit handled")
 
 
     def run(self):
